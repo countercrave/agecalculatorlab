@@ -1,0 +1,297 @@
+# Age Calculator Lab
+
+> 161 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 100 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
+
+Written and reviewed by Navjeet Kamboj. Results are informational: clinical, legal, financial, school, employment and benefits decisions are governed by the relevant manual, policy or authority.
+
+## Guides
+- [How to Calculate Exact Age in Years, Months and Days](https://www.agecalculatorlab.com/articles/calculate-exact-age-years-months-days/): Exact age is a calendar interval built from three separate counts, which is why dividing days by 365 never reproduces it.
+- [Chronological Age: What It Measures and What It Doesn't](https://www.agecalculatorlab.com/articles/chronological-age-explained/): Chronological age is elapsed calendar time between two dates — objective, reproducible, and different from every other kind of age.
+- [Calendar Age vs Decimal Age: Which One Does Your Form Want?](https://www.agecalculatorlab.com/articles/calendar-age-vs-decimal-age/): Calendar age preserves years, months and days; decimal age expresses the same span as a fraction of an average year.
+- [Working Out Your Age on a Past Date](https://www.agecalculatorlab.com/articles/calculate-age-on-past-date/): A historical age calculation uses the event date as the reference point, not today — and that is the input people forget to change.
+- [How Old Will I Be on a Future Date?](https://www.agecalculatorlab.com/articles/calculate-age-on-future-date/): Future-age planning compares a birth date with a specific target date — and near a birthday, the year alone is not enough.
+- [Leap-Day Birthdays: Ageing Normally, Celebrating Awkwardly](https://www.agecalculatorlab.com/articles/leap-day-birthdays-age-calculation/): People born on 29 February age continuously like everyone else — it is the anniversary convention in non-leap years that varies.
+- [Why Month Length Changes the Answer](https://www.agecalculatorlab.com/articles/why-month-length-changes-age-results/): Months run from 28 to 31 days, so any calculation that treats them as a fixed size drifts away from the calendar immediately.
+- [Age Difference vs Date Difference: Same Arithmetic, Different Question](https://www.agecalculatorlab.com/articles/age-difference-vs-date-difference/): Age difference compares two birth dates; date difference compares any two dates. The calculation is identical and the interpretation is not.
+- [Finding a Birth Year From a Known Age](https://www.agecalculatorlab.com/articles/find-birth-year-from-age/): An age and a date usually identify a range of possible birth dates, not one — because the birthday may or may not have passed.
+- [How Many Days Old Am I?](https://www.agecalculatorlab.com/articles/how-many-days-old-am-i/): Total days lived is a count of midnights crossed, which makes it exact — no month lengths, no conventions, no rounding.
+- [Age in Weeks, Months and Hours: Picking the Right Unit](https://www.agecalculatorlab.com/articles/age-in-weeks-months-hours-guide/): Each unit answers a different question, and some of them are exact while others are derived approximations.
+- [Why Every Age You Record Needs Its Date](https://www.agecalculatorlab.com/articles/record-reference-date-with-age/): Age is elapsed time, so a recorded age is only true on one day — and nothing in the number signals when that day was.
+- [Chronological Age for Standardised Assessments](https://www.agecalculatorlab.com/articles/chronological-age-standardized-assessments/): Norm-referenced tests select an age band from the child's age on the test date, which makes the reference date as important as the arithmetic.
+- [The Y;M;D Format for Age Records](https://www.agecalculatorlab.com/articles/ymd-semicolon-format-guide/): Y;M;D writes completed years, months and days as three separate fields — it is a presentation format for a calendar result, not a decimal number.
+- [Choosing the Correct Assessment Date](https://www.agecalculatorlab.com/articles/choose-assessment-date-age-calculation/): The reference date is a decision made by the test manual, not a convenience — and it is the input most often left on a default.
+- [BRIGANCE Age Calculation: What the Calculator Does and Doesn't Do](https://www.agecalculatorlab.com/articles/brigance-age-calculation-basics/): BRIGANCE screening workflows need chronological age on the screening date, in the format the product materials specify.
+- [Pearson-Style Chronological Age Calculation](https://www.agecalculatorlab.com/articles/pearson-style-age-calculation/): Several widely used instruments record calendar age in years, months and days for norm-table selection — the format is shared, the rules are not.
+- [The Age Calculation Errors That Actually Occur in School Evaluations](https://www.agecalculatorlab.com/articles/age-calculation-errors-school-evaluations/): Almost every real error is an input problem or a reference-date problem — not a failure of arithmetic.
+- [Age Bands and Cutoff Dates: Working Near a Boundary](https://www.agecalculatorlab.com/articles/age-bands-cutoff-dates/): A band turns a continuous age into a category, which means a one-day difference at the wrong point changes the category.
+- [Documenting an Age Calculation So It Can Be Rebuilt](https://www.agecalculatorlab.com/articles/document-age-calculations/): A recorded age that cannot be reproduced is not evidence — it is a number someone once believed.
+- [Corrected Age for Premature Babies: A Parent's Guide](https://www.agecalculatorlab.com/articles/corrected-age-premature-babies/): Corrected age subtracts how early a baby arrived from their chronological age, so development is compared against the right timeline.
+- [Adjusted Age vs Chronological Age: Which Number Goes Where](https://www.agecalculatorlab.com/articles/adjusted-vs-chronological-age/): The two ages answer different questions, and most confusion comes from a record that shows one without saying which.
+- [Gestational Age vs Fetal Age: Two Weeks Apart by Definition](https://www.agecalculatorlab.com/articles/gestational-age-vs-fetal-age/): Gestational age counts from the last menstrual period; fetal age estimates time since conception, and is about two weeks less.
+- [How Due Dates Are Calculated — and What They Actually Predict](https://www.agecalculatorlab.com/articles/pregnancy-due-date-calculation/): The standard model adds 280 days to the last menstrual period, producing the centre of a range rather than a scheduled event.
+- [Tracking a Baby's Age in Weeks](https://www.agecalculatorlab.com/articles/track-baby-age-in-weeks/): Weeks are the right unit in early infancy because a calendar month is too coarse for how fast things change.
+- [Tracking a Baby's Age in Calendar Months](https://www.agecalculatorlab.com/articles/track-baby-age-in-months/): Calendar-month age advances on the matching day of each month, which means it does not advance every 30 days.
+- [When Does Corrected Age Stop Being Used?](https://www.agecalculatorlab.com/articles/when-to-stop-corrected-age/): There is no universal cutoff — the point at which correction stops depends on the purpose, the child and the guidance being followed.
+- [Corrected Age: A Worked Example, Step by Step](https://www.agecalculatorlab.com/articles/prematurity-age-calculation-example/): Doing the two calculations separately — chronological age, then the prematurity interval — is what keeps the result reproducible.
+- [How a Birthday Countdown Actually Works](https://www.agecalculatorlab.com/articles/birthday-countdown-guide/): Build this year's birthday first, then advance a year only if it has already gone — that single rule handles every case including the day itself.
+- [What a Golden Birthday Is, and When Yours Falls](https://www.agecalculatorlab.com/articles/golden-birthday-explained/): Your golden birthday is the one where your age matches the day of the month you were born — turning 18 on the 18th.
+- [Half Birthdays: Six Months, Not 182 Days](https://www.agecalculatorlab.com/articles/half-birthday-planning/): A half birthday is six calendar months after your birthday, which is somewhere between 181 and 184 days depending on where it falls.
+- [When Will You Be 10,000 Days Old?](https://www.agecalculatorlab.com/articles/ten-thousand-days-old/): Ten thousand days is about 27 years and 4 months — and unlike a birthday, the exact date requires actual counting.
+- [Your Billion-Second Birthday](https://www.agecalculatorlab.com/articles/billion-seconds-birthday/): One billion seconds is 11,574 days — about 31 years and 8 months — and the exact moment depends on a birth time most people do not have.
+- [Planning a Milestone Birthday Date](https://www.agecalculatorlab.com/articles/milestone-birthday-planning/): A milestone birthday is a calendar anniversary, so it is found by adding whole years to the birth date — not by adding days.
+- [Working Out School Starting Age](https://www.agecalculatorlab.com/articles/school-starting-age-guide/): School entry compares a child's date of birth with an official cutoff date, and the cutoff is local, specific and subject to change.
+- [Kindergarten Cutoff Dates: Reading the Rule Precisely](https://www.agecalculatorlab.com/articles/kindergarten-cutoff-date/): A cutoff is a policy boundary, and the wording around it decides outcomes for children born within a day of it.
+- [Calculating Age on an Exam Date](https://www.agecalculatorlab.com/articles/age-on-exam-date/): Exam age limits are measured on a date named by the awarding body, which is often not the date you register.
+- [Estimating Age at Graduation](https://www.agecalculatorlab.com/articles/graduation-age-calculation/): Graduation age is exact once the ceremony date is fixed, and a planning estimate until then.
+- [Finding the Date You Reach Driving Age](https://www.agecalculatorlab.com/articles/driving-age-eligibility-date/): The birthday is one condition among several — graduated licensing systems add training, supervision and waiting periods on top.
+- [The Date You Reach Voting Age — and the Deadline That Matters More](https://www.agecalculatorlab.com/articles/voting-age-date-guide/): Reaching voting age is a birthday calculation; being able to vote usually depends on a registration deadline weeks earlier.
+- [Calculating Years of Service Accurately](https://www.agecalculatorlab.com/articles/years-of-service-calculation/): Calendar duration is arithmetic; credited service is policy. The two are frequently different and only one of them decides entitlements.
+- [Work Anniversaries and Service Milestones](https://www.agecalculatorlab.com/articles/work-anniversary-guide/): A work anniversary repeats the start date each year; a service milestone counts completed years. They usually agree and occasionally do not.
+- [Calculating a Retirement Date From a Target Age](https://www.agecalculatorlab.com/articles/retirement-date-target-age/): Reaching a target age is arithmetic. When benefits actually start is a plan rule, and the two dates are rarely the same.
+- [Career Length vs Employment Duration](https://www.agecalculatorlab.com/articles/career-length-calculation/): Employment duration measures one continuous role; career length spans several, and the gaps and overlaps have to be handled deliberately.
+- [Planning With Business Days: Buffers That Survive December](https://www.agecalculatorlab.com/articles/business-days-date-planning/): Business-day planning fails in the same place every time — the final fortnight, where weekends and holidays cluster.
+- [Dog Years to Human Years: Why Size Changes Everything](https://www.agecalculatorlab.com/articles/dog-years-human-years/): The seven-to-one rule fails at both ends — dogs mature far faster in year one, then age at rates that depend heavily on size.
+- [Cat Years to Human Years](https://www.agecalculatorlab.com/articles/cat-years-human-years/): Cats mature fast and then age slowly, and unlike dogs, size and breed make comparatively little difference.
+- [Estimating a Tree's Age From Its Trunk](https://www.agecalculatorlab.com/articles/estimate-tree-age/): Measure the circumference, convert to diameter, multiply by a species growth factor — and treat the result as a broad estimate.
+- [Your Age on Other Planets](https://www.agecalculatorlab.com/articles/planetary-age-explained/): Divide your Earth age by another planet's orbital period and you get how many of its years you have lived through.
+- [Estimating How Many Heartbeats You Have Lived](https://www.agecalculatorlab.com/articles/heartbeats-lived-estimate/): Multiply elapsed minutes by an assumed average heart rate — an arithmetic exercise whose answer is entirely governed by the rate you pick.
+- [Estimating Lifetime Breaths](https://www.agecalculatorlab.com/articles/breaths-lived-estimate/): Elapsed minutes multiplied by an assumed breathing rate — a calculation dominated entirely by the rate you assume.
+- [How Much of Your Life Have You Spent Asleep?](https://www.agecalculatorlab.com/articles/sleep-time-lived-estimate/): Days lived multiplied by average nightly sleep, divided by 24 — a straight-line model that ignores how much sleep changes across a life.
+- [Western Zodiac Date Ranges and Why Sources Disagree](https://www.agecalculatorlab.com/articles/zodiac-sign-date-ranges/): Sun-sign dates come from a fixed tropical scheme, but cusp dates shift by a day between years and between sources.
+- [Chinese Zodiac Years and the Lunar New Year Boundary](https://www.agecalculatorlab.com/articles/chinese-zodiac-year-boundaries/): The animal changes at Lunar New Year, not on 1 January — so January and early-February births frequently belong to the previous year's animal.
+- [Birthstones and Birth Flowers by Month](https://www.agecalculatorlab.com/articles/birthstone-birth-flower-guide/): Both are month-based traditions with more than one authoritative list, so the answer depends on which tradition you are following.
+- [Life Path Numbers: The Method and Its Variations](https://www.agecalculatorlab.com/articles/life-path-number-guide/): Reduce the digits of a birth date to a single number, keeping 11, 22 and 33 — though practitioners disagree on how to reduce.
+- [Adding Months to a Date Without Breaking It](https://www.agecalculatorlab.com/articles/add-months-to-date-safely/): Adding a month means moving the month and keeping the day number — except when the destination month is too short to hold it.
+- [Business Days vs Calendar Days: Reading the Definition](https://www.agecalculatorlab.com/articles/business-days-vs-calendar-days/): A business-day count depends on three separate decisions, and the phrase itself specifies none of them.
+- [Gregorian Leap Year Rules, and Why the Shortcut Fails](https://www.agecalculatorlab.com/articles/gregorian-leap-year-rules/): Divisible by four, except centuries, except centuries divisible by four hundred — three rules that exist to correct an eleven-minute error.
+- [Years, Months and Days Between Two Dates: A Worked Example](https://www.agecalculatorlab.com/articles/date-difference-worked-example/): Following the count step by step shows exactly where the common shortcuts go wrong.
+- [Weekday, Day of Year and Week Number: Three Different Labels](https://www.agecalculatorlab.com/articles/weekday-and-day-of-year/): One date carries several positional labels, and each uses a different convention — including which year it belongs to.
+- [Inclusive vs Exclusive Date Counting](https://www.agecalculatorlab.com/articles/inclusive-exclusive-date-counting/): Two tools counting the same two dates can differ by one, two, or zero — depending on which endpoints each decided to count.
+- [Completed Age vs Running Age](https://www.agecalculatorlab.com/articles/completed-age-vs-running-age/): Completed age counts birthdays already reached; running age describes the year of life in progress, and is one higher.
+- [Why Two Age Calculators Give Different Answers](https://www.agecalculatorlab.com/articles/why-age-calculators-disagree/): Almost every disagreement is a convention difference rather than an error — and there are only about six conventions in play.
+- [February 29 Birthdays: Anniversaries, Gaps and Legal Age](https://www.agecalculatorlab.com/articles/february-29-birthday-timeline/): A leap-day birth date recurs every four years, with an eight-year gap around most century years — and the legal anniversary is decided by jurisdiction.
+- [Finding the Midpoint Between Two Dates](https://www.agecalculatorlab.com/articles/date-midpoint-explained/): The midpoint is the halfway instant, which lands on a whole date only when the span contains an even number of days.
+- [Inclusive Date Counting: Ten Cases Where It Changes the Answer](https://www.agecalculatorlab.com/articles/inclusive-date-counting-examples/): The convention is simple; recognising which one a real document means is the hard part. These are the cases that come up.
+- [Adding Business Days Without Losing Count](https://www.agecalculatorlab.com/articles/add-business-days-correctly/): Adding business days means stepping forward one day at a time and only counting the ones that qualify — not multiplying by a ratio.
+- [Recurring Date Schedules: Rules That Survive the Year](https://www.agecalculatorlab.com/articles/recurring-date-schedules/): A repeating schedule is a rule plus a set of exceptions, and the failure mode is baking the exceptions into the rule.
+- [Documenting Employment Tenure and Anniversaries](https://www.agecalculatorlab.com/articles/documenting-employment-tenure/): Tenure records fail at handover, so the test of a good one is whether a stranger can rebuild the figure without asking you.
+- [Planning Age Across Several Life Milestones at Once](https://www.agecalculatorlab.com/articles/age-on-multiple-milestones/): When one birth date has to be checked against a series of future dates, calculate each independently rather than stepping from one to the next.
+- [A Date Input Checklist Worth Running Before You Calculate](https://www.agecalculatorlab.com/articles/calendar-date-quality-checklist/): Nearly every wrong date result comes from a wrong date input, and inputs are checkable in a way that outputs are not.
+- [When a Calculator Is Not the Final Authority](https://www.agecalculatorlab.com/articles/calculator-results-official-decisions/): A calculator produces arithmetic. Whether that arithmetic decides anything depends on a rule it has no knowledge of.
+- [What Actually Happens to the Dates You Type Into a Calculator](https://www.agecalculatorlab.com/articles/privacy-browser-calculators/): A browser-based calculator computes on your device, so the values never reach a server — but that is a property of how it is built, not a promise.
+- [Korean Age Explained: Why Two Numbers Can Both Be Right](https://www.agecalculatorlab.com/articles/korean-age-explained/): Korean age counts calendar years rather than completed birthdays, so it can sit one or two years above international age for the same person.
+- [East Asian Age Reckoning: Kazoedoshi, Virtual Age and Modern Practice](https://www.agecalculatorlab.com/articles/east-asian-age-reckoning/): Traditional year-count age appears across East Asia under different names, with different survival rates in modern official use.
+- [Measuring Age in Quarters: When Three-Month Blocks Beat Years](https://www.agecalculatorlab.com/articles/age-in-quarters-guide/): Quarters give a coarser unit than months and a finer one than years, which suits reporting cycles, developmental checkpoints and cohort tracking.
+- [ISO Week Numbering Explained: Week 1, Week-Years and the Dates They Cover](https://www.agecalculatorlab.com/articles/iso-week-numbering-explained/): ISO-8601 weeks always start on Monday and always contain a Thursday, which is why week 1 can begin in the previous December.
+- [Fiscal Quarters Explained: Why Q1 Is Not Always January](https://www.agecalculatorlab.com/articles/fiscal-quarters-explained/): A fiscal quarter is a three-month block measured from an organisation's chosen financial year start, which is often not January.
+- [Quarter End Dates: Planning Backwards From a Hard Deadline](https://www.agecalculatorlab.com/articles/quarter-end-dates-planning/): Quarter ends are fixed points that generate a cascade of earlier deadlines, and most of the risk sits in the days you did not count.
+- [Calculating Working Hours Between Two Dates](https://www.agecalculatorlab.com/articles/working-hours-between-dates/): Working hours are a product of two decisions — which days count and how long a day is — and both need to be stated before the number means anything.
+- [Time Zone Date Arithmetic: Why Two Clocks Disagree About Elapsed Time](https://www.agecalculatorlab.com/articles/timezone-date-arithmetic/): Local times are labels, not instants. Comparing them directly produces intervals that can be off by a full day.
+- [Countdown Conventions: What 'Days Until' Actually Counts](https://www.agecalculatorlab.com/articles/countdown-conventions/): Two countdowns to the same date can differ by a day without either being wrong, because they disagree about whether today counts.
+- [Holiday Countdown Maths: Fixed Dates, Moving Dates and Observed Dates](https://www.agecalculatorlab.com/articles/holiday-countdown-math/): Some holidays sit on the same date every year, some move with a lunar or ecclesiastical rule, and some shift when they land on a weekend.
+- [Weeks Between Two Dates: Complete Weeks, Remainders and Part-Weeks](https://www.agecalculatorlab.com/articles/weeks-between-dates-guide/): A week count is a division with a remainder, and how you handle the remainder decides whether the answer is useful.
+- [Day-Count Milestones: 1,000 Days, 10,000 Days and the Dates They Land On](https://www.agecalculatorlab.com/articles/day-count-milestones/): Day-count milestones are exact because they are pure addition — no month lengths, no leap-year adjustments, no convention to argue about.
+- [Planning Milestone Birthdays at a Fixed Interval](https://www.agecalculatorlab.com/articles/milestone-birthday-intervals/): Milestone birthdays are calendar anniversaries, so they are found by adding whole years to a birth date rather than by adding days.
+- [Quarter Birthdays and Other Fractional Birthday Traditions](https://www.agecalculatorlab.com/articles/quarter-birthday-explained/): A quarter birthday is three calendar months after a birth date, and like half birthdays it needs an end-of-month rule to be well defined.
+- [Reverse Due Date Calculation: Working Backwards From Gestational Age](https://www.agecalculatorlab.com/articles/reverse-due-date-explained/): If you know the current gestational age, you can recover the implied last menstrual period and project the estimated due date from it.
+- [IVF Due Dates: Why Transfer Date Gives a More Precise Estimate](https://www.agecalculatorlab.com/articles/ivf-due-date-dating/): With IVF the conception date is known rather than estimated, so the due date is calculated from the transfer date and the embryo's age.
+- [Pregnancy Countdowns: Reading Days Remaining Alongside Gestational Age](https://www.agecalculatorlab.com/articles/pregnancy-countdown-guide/): A countdown to a due date and a gestational age describe the same pregnancy from opposite ends, and each is useful for different questions.
+- [Working Days in a Month: Why the Count Swings by Three](https://www.agecalculatorlab.com/articles/working-days-in-month/): Months contain between 19 and 23 weekdays before holidays, which is enough variation to distort any monthly plan built on an average.
+- [Calculating a Notice Period End Date](https://www.agecalculatorlab.com/articles/notice-period-calculation/): Notice periods can be defined in working days, calendar days, weeks or months, and each definition produces a different end date from the same start.
+- [Probation Period End Dates and the Review That Should Precede Them](https://www.agecalculatorlab.com/articles/probation-period-end-dates/): A probation period defined in months ends on a calendar anniversary, and the review that decides its outcome has to happen before that date.
+- [Long Service Milestones: Continuous Service and the Dates That Break It](https://www.agecalculatorlab.com/articles/long-service-leave-dates/): Long service entitlements depend on continuous service, which is a defined term rather than simply the time since the start date.
+- [Term Date Planning: Building a Repeating Academic Schedule](https://www.agecalculatorlab.com/articles/term-date-planning/): A term schedule is a repeating rule plus a set of exceptions, and the exceptions are what make it worth calculating rather than typing.
+- [Measuring Semester Length in Weeks, Days and Teaching Time](https://www.agecalculatorlab.com/articles/semester-length-planning/): A semester has a calendar length and a teaching length, and the gap between them is where planning goes wrong.
+- [Calculating Age at Marriage for Records and Genealogy](https://www.agecalculatorlab.com/articles/age-at-marriage-records/): Age on a wedding date is a straightforward calendar calculation, but the records it comes from often are not.
+- [Sleep Debt Arithmetic: What the Number Can and Cannot Tell You](https://www.agecalculatorlab.com/articles/sleep-debt-arithmetic/): Sleep debt is a simple subtraction repeated across nights, and its usefulness depends entirely on the target you subtract from.
+- [Lifetime Screen Time Estimates and Why They Are So Sensitive](https://www.agecalculatorlab.com/articles/screen-time-estimates/): Lifetime totals multiply a daily average across thousands of days, which magnifies any error in the average by the same factor.
+
+## Universal Chronology calculators
+- [Age Calculator](https://www.agecalculatorlab.com/tools/age-calculator/): Exact chronological age in completed years, calendar months and remaining days.
+- [Exact Age Calculator](https://www.agecalculatorlab.com/tools/exact-age-calculator/): A detailed calendar-accurate age result for any reference date.
+- [Age Difference Calculator](https://www.agecalculatorlab.com/tools/age-difference-calculator/): The exact calendar gap between two dates of birth.
+- [Age in Days Calculator](https://www.agecalculatorlab.com/tools/age-in-days-calculator/): Total elapsed days since a date of birth.
+- [Age in Weeks Calculator](https://www.agecalculatorlab.com/tools/age-in-weeks-calculator/): Completed weeks and remaining days since birth.
+- [Age in Months Calculator](https://www.agecalculatorlab.com/tools/age-in-months-calculator/): Age expressed as complete calendar months plus remaining days.
+- [Age in Hours Calculator](https://www.agecalculatorlab.com/tools/age-in-hours-calculator/): A day-resolution estimate of elapsed lifetime hours.
+- [Age in Minutes Calculator](https://www.agecalculatorlab.com/tools/age-in-minutes-calculator/): A day-resolution estimate of elapsed lifetime minutes.
+- [Age in Seconds Calculator](https://www.agecalculatorlab.com/tools/age-in-seconds-calculator/): A day-resolution estimate of elapsed lifetime seconds.
+- [Age in Specific Units Calculator](https://www.agecalculatorlab.com/tools/age-in-specific-units-calculator/): The same elapsed age represented across multiple time units.
+- [Date of Birth Calculator](https://www.agecalculatorlab.com/tools/date-of-birth-calculator/): An estimated birth date from age and a selected reference date.
+- [Reverse Age Calculator](https://www.agecalculatorlab.com/tools/reverse-age-calculator/): A calendar date inferred by subtracting a stated age from a reference date.
+- [Age on a Date Calculator](https://www.agecalculatorlab.com/tools/age-on-date-calculator/): Chronological age on a past or future date.
+- [How Old Was I Calculator](https://www.agecalculatorlab.com/tools/how-old-was-i-calculator/): Age at an earlier event or historical reference date.
+- [How Old Will I Be Calculator](https://www.agecalculatorlab.com/tools/how-old-will-i-be-calculator/): Age on a planned future date.
+- [Birth Year From Age Calculator](https://www.agecalculatorlab.com/tools/birth-year-from-age-calculator/): A likely birth year and date range from age information.
+- [Decimal Age Calculator](https://www.agecalculatorlab.com/tools/decimal-age-calculator/): Elapsed age represented as an approximate decimal number of years.
+- [Age at Last Birthday Calculator](https://www.agecalculatorlab.com/tools/age-last-birthday-calculator/): Completed whole-year age at the most recent birthday.
+- [Age at Next Birthday Calculator](https://www.agecalculatorlab.com/tools/age-next-birthday-calculator/): The next birthday date and age that will be reached.
+- [Age Nearest Birthday Calculator](https://www.agecalculatorlab.com/tools/age-nearest-birthday-calculator/): The nearest annual birthday and its calendar distance.
+- [Age Gap Calculator](https://www.agecalculatorlab.com/tools/age-gap-calculator/): The elapsed gap between two personal dates.
+- [Age Range Calculator](https://www.agecalculatorlab.com/tools/age-range-calculator/): Whether a calculated age falls within a custom minimum and maximum range.
+- [Birthday Age Calculator](https://www.agecalculatorlab.com/tools/birthday-age-calculator/): The upcoming birthday date, weekday and turning age.
+- [Age Timeline Calculator](https://www.agecalculatorlab.com/tools/age-timeline-calculator/): Age on a past, current or future milestone date with surrounding birthday context.
+- [Korean Age Calculator](https://www.agecalculatorlab.com/tools/korean-age-calculator/): Korean age reckoning alongside international age for the same birth date.
+- [East Asian Age Calculator](https://www.agecalculatorlab.com/tools/east-asian-age-calculator/): Traditional East Asian year-count age compared with international age.
+- [Age in Quarters Calculator](https://www.agecalculatorlab.com/tools/age-in-quarters-calculator/): Elapsed age expressed in three-month quarters.
+
+## Clinical & Academic calculators
+- [Chronological Age Calculator](https://www.agecalculatorlab.com/tools/chronological-age-calculator/): Chronological age on an assessment date.
+- [Pearson Age Calculator](https://www.agecalculatorlab.com/tools/pearson-age-calculator/): Calendar age formatting for Pearson-style assessment workflows.
+- [BRIGANCE Age Calculator](https://www.agecalculatorlab.com/tools/brigance-age-calculator/): Chronological age preparation for BRIGANCE assessment records.
+- [Assessment Age Calculator](https://www.agecalculatorlab.com/tools/assessment-age-calculator/): Age on a specific testing or evaluation date.
+- [Test Age Calculator](https://www.agecalculatorlab.com/tools/test-age-calculator/): Calendar age at the date a test is administered.
+- [Developmental Age Difference Calculator](https://www.agecalculatorlab.com/tools/developmental-age-difference-calculator/): The date-based difference between chronological and comparison ages.
+
+## Biological & Health calculators
+- [Biological Age Calculator](https://www.agecalculatorlab.com/tools/biological-age-calculator/): A non-diagnostic wellness-age estimate based on lifestyle inputs.
+- [Heart Age Calculator](https://www.agecalculatorlab.com/tools/heart-age-calculator/): An educational heart-health age index using simple risk-related inputs.
+- [Metabolic Age Calculator](https://www.agecalculatorlab.com/tools/metabolic-age-calculator/): An educational metabolic-age comparison based on basic body and activity inputs.
+- [Fitness Age Calculator](https://www.agecalculatorlab.com/tools/fitness-age-calculator/): A lifestyle-oriented fitness age estimate for self-reflection.
+- [Body Age Calculator](https://www.agecalculatorlab.com/tools/body-age-calculator/): A general body-age index derived from age and lifestyle markers.
+- [Health Age Calculator](https://www.agecalculatorlab.com/tools/health-age-calculator/): A broad wellness-age estimate that highlights modifiable lifestyle factors.
+- [Brain Age Calculator](https://www.agecalculatorlab.com/tools/brain-age-calculator/): A recreational cognitive-lifestyle age estimate rather than a diagnostic result.
+- [Lifestyle Age Calculator](https://www.agecalculatorlab.com/tools/lifestyle-age-calculator/): An educational age adjustment based on sleep activity and smoking status.
+
+## Pregnancy & Pediatric calculators
+- [Gestational Age Calculator](https://www.agecalculatorlab.com/tools/gestational-age-calculator/): Gestational age from the first day of the last menstrual period.
+- [Pregnancy Due Date Calculator](https://www.agecalculatorlab.com/tools/pregnancy-due-date-calculator/): An estimated due date from the last menstrual period and cycle length.
+- [Conception Date Calculator](https://www.agecalculatorlab.com/tools/conception-date-calculator/): An estimated conception window from LMP or due date.
+- [Pregnancy Week Calculator](https://www.agecalculatorlab.com/tools/pregnancy-week-calculator/): Pregnancy week and day on a selected date.
+- [Trimester Calculator](https://www.agecalculatorlab.com/tools/trimester-calculator/): The estimated pregnancy trimester and gestational week.
+- [Fetal Age Calculator](https://www.agecalculatorlab.com/tools/fetal-age-calculator/): An approximate fetal age derived from gestational age.
+- [Adjusted Age Calculator](https://www.agecalculatorlab.com/tools/adjusted-age-calculator/): Corrected age for a child born before 40 weeks gestation.
+- [Corrected Age Calculator](https://www.agecalculatorlab.com/tools/corrected-age-calculator/): Chronological age adjusted for weeks of prematurity.
+- [Baby Age in Weeks Calculator](https://www.agecalculatorlab.com/tools/baby-age-in-weeks/): A baby’s chronological age in completed weeks and days.
+- [Baby Age in Months Calculator](https://www.agecalculatorlab.com/tools/baby-age-in-months-calculator/): A baby’s chronological age in calendar months and days.
+- [Premature Baby Age Calculator](https://www.agecalculatorlab.com/tools/premature-baby-age-calculator/): Chronological and corrected age for prematurity-related planning.
+- [Reverse Due Date Calculator](https://www.agecalculatorlab.com/tools/reverse-due-date-calculator/): The estimated due date and LMP implied by a current gestational week and day.
+- [IVF Due Date Calculator](https://www.agecalculatorlab.com/tools/ivf-due-date-calculator/): An estimated due date calculated from an embryo transfer date and embryo day.
+- [Pregnancy Countdown Calculator](https://www.agecalculatorlab.com/tools/pregnancy-countdown-calculator/): Days remaining until an estimated due date, with trimester context.
+
+## Birthday & Milestones calculators
+- [Birthday Countdown Calculator](https://www.agecalculatorlab.com/tools/birthday-countdown-calculator/): Time remaining until the next birthday.
+- [Next Birthday Calculator](https://www.agecalculatorlab.com/tools/next-birthday-calculator/): The next birthday date weekday and turning age.
+- [Golden Birthday Calculator](https://www.agecalculatorlab.com/tools/golden-birthday-calculator/): The birthday when age matches the day number of birth.
+- [10,000 Days Old Calculator](https://www.agecalculatorlab.com/tools/10000-days-old-calculator/): The calendar date on which 10,000 elapsed days are reached.
+- [Billion Seconds Calculator](https://www.agecalculatorlab.com/tools/billion-seconds-calculator/): The date corresponding to one billion elapsed seconds.
+- [Milestone Birthday Calculator](https://www.agecalculatorlab.com/tools/milestone-birthday-calculator/): The date of a custom milestone birthday.
+- [Half Birthday Calculator](https://www.agecalculatorlab.com/tools/half-birthday-calculator/): The approximate calendar midpoint between annual birthdays.
+- [Birthday Weekday Calculator](https://www.agecalculatorlab.com/tools/birthday-weekday-calculator/): The weekday of a selected birthday year.
+- [Birthday Number Calculator](https://www.agecalculatorlab.com/tools/birthday-number-calculator/): A recreational numerology number derived from a birth date.
+- [Custom Day Milestone Calculator](https://www.agecalculatorlab.com/tools/custom-day-milestone-calculator/): The date reached after a user-selected number of elapsed days.
+- [Leap-Day Birthday Timeline](https://www.agecalculatorlab.com/tools/leap-day-birthday-timeline/): Upcoming February 29 birthdays and non-leap-year anniversary context.
+- [Custom Milestone Timeline](https://www.agecalculatorlab.com/tools/custom-milestone-timeline/): Dates for several upcoming custom year milestones.
+- [1,000 Days Old Calculator](https://www.agecalculatorlab.com/tools/1000-days-old-calculator/): The calendar date on which a person completes 1,000 days of life.
+- [20,000 Days Old Calculator](https://www.agecalculatorlab.com/tools/20000-days-old-calculator/): The calendar date on which a person completes 20,000 days of life.
+- [Million Minutes Calculator](https://www.agecalculatorlab.com/tools/million-minutes-calculator/): The date on which one million minutes of life have elapsed.
+- [Next Milestone Birthday Calculator](https://www.agecalculatorlab.com/tools/next-milestone-birthday-calculator/): The next four milestone birthdays at a chosen interval.
+- [Quarter Birthday Calculator](https://www.agecalculatorlab.com/tools/quarter-birthday-calculator/): The three-month quarter birthday date measured from a birth date.
+
+## Professional & Education calculators
+- [Age at Event Calculator](https://www.agecalculatorlab.com/tools/age-at-event-calculator/): Age on an event date such as graduation employment or another milestone.
+- [School Starting Age Calculator](https://www.agecalculatorlab.com/tools/school-starting-age-calculator/): Age on a chosen school-entry date compared with a custom minimum age.
+- [Kindergarten Eligibility Calculator](https://www.agecalculatorlab.com/tools/kindergarten-eligibility-calculator/): Age on a selected kindergarten cutoff date under a user-entered rule.
+- [Academic Year Age Calculator](https://www.agecalculatorlab.com/tools/academic-year-age-calculator/): Student age on a chosen academic-year reference date.
+- [School Grade Age Calculator](https://www.agecalculatorlab.com/tools/school-grade-age-calculator/): Age on a school cutoff date for a custom grade-entry rule.
+- [Exam Age Calculator](https://www.agecalculatorlab.com/tools/exam-age-calculator/): Age on an exam date compared with a user-entered age requirement.
+- [Sports Eligibility Age Calculator](https://www.agecalculatorlab.com/tools/sports-eligibility-age-calculator/): Age on a sports cutoff date compared with a custom age range.
+- [Graduation Age Calculator](https://www.agecalculatorlab.com/tools/graduation-age-calculator/): Age on a graduation or completion date.
+- [Driving Age Date Calculator](https://www.agecalculatorlab.com/tools/driving-age-date-calculator/): The date a selected driving-age threshold is reached.
+- [Voting Age Date Calculator](https://www.agecalculatorlab.com/tools/voting-age-date-calculator/): The date a selected voting-age threshold is reached.
+- [Work Anniversary Countdown](https://www.agecalculatorlab.com/tools/work-anniversary-countdown/): The next employment anniversary and completed service duration.
+- [Term Date Planner](https://www.agecalculatorlab.com/tools/term-date-planner-calculator/): The next scheduled date in a repeating academic or term calendar.
+- [Semester Length Calculator](https://www.agecalculatorlab.com/tools/semester-length-calculator/): The length of a semester or term in weeks, days and calendar months.
+- [Age at Marriage Calculator](https://www.agecalculatorlab.com/tools/age-at-marriage-calculator/): Exact age on a wedding or civil partnership date.
+- [Anniversary Milestone Calculator](https://www.agecalculatorlab.com/tools/anniversary-milestone-calculator/): The date of a chosen anniversary milestone and the countdown to it.
+
+## Finance & Professional calculators
+- [Retirement Age Calculator](https://www.agecalculatorlab.com/tools/retirement-age-calculator/): A chosen retirement-age milestone date.
+- [RMD Age Calculator](https://www.agecalculatorlab.com/tools/rmd-age-calculator/): A planning date for a user-entered required-distribution age.
+- [Years of Service Calculator](https://www.agecalculatorlab.com/tools/years-of-service-calculator/): Exact employment service duration between two dates.
+- [Work Anniversary Calculator](https://www.agecalculatorlab.com/tools/work-anniversary-calculator/): The next employment anniversary and completed service years.
+- [Pension Age Date Calculator](https://www.agecalculatorlab.com/tools/pension-age-date-calculator/): The date a chosen pension-planning age is reached.
+- [Early Retirement Date Calculator](https://www.agecalculatorlab.com/tools/early-retirement-date-calculator/): The date a selected early-retirement target age is reached.
+- [Employment Duration Calculator](https://www.agecalculatorlab.com/tools/employment-duration-calculator/): Calendar duration of employment or service.
+- [Service Milestone Calculator](https://www.agecalculatorlab.com/tools/service-milestone-calculator/): A future employment milestone based on a chosen service year.
+- [Career Length Calculator](https://www.agecalculatorlab.com/tools/career-length-calculator/): Elapsed career duration between start and reference dates.
+- [Working Days in Month Calculator](https://www.agecalculatorlab.com/tools/working-days-in-month-calculator/): The number of weekdays in a selected calendar month.
+- [Notice Period End Date Calculator](https://www.agecalculatorlab.com/tools/notice-period-end-date-calculator/): The end date of a notice period counted in working days.
+- [Probation Period End Calculator](https://www.agecalculatorlab.com/tools/probation-period-end-calculator/): The calendar end date of a probation period expressed in months.
+- [Long Service Leave Calculator](https://www.agecalculatorlab.com/tools/long-service-leave-calculator/): Continuous service duration used when checking long-service entitlements.
+
+## Nature & Life Cycles calculators
+- [Dog Age Calculator](https://www.agecalculatorlab.com/tools/dog-age-calculator/): Dog age expressed as an approximate human-age equivalent.
+- [Cat Age Calculator](https://www.agecalculatorlab.com/tools/cat-age-calculator/): Cat age expressed as an approximate human-age equivalent.
+- [Tree Age Calculator](https://www.agecalculatorlab.com/tools/tree-age-calculator/): An estimated tree age from trunk circumference and growth factor.
+- [Planetary Age Calculator](https://www.agecalculatorlab.com/tools/planetary-age-calculator/): An Earth age converted to approximate ages on other planets.
+- [Horse Age Calculator](https://www.agecalculatorlab.com/tools/horse-age-calculator/): Horse age expressed as a simple human-age comparison.
+- [Rabbit Age Calculator](https://www.agecalculatorlab.com/tools/rabbit-age-calculator/): Rabbit age expressed as a simple human-age comparison.
+- [Bird Age Calculator](https://www.agecalculatorlab.com/tools/bird-age-calculator/): Bird age expressed as a broad educational human-age comparison.
+- [Turtle Age Calculator](https://www.agecalculatorlab.com/tools/turtle-age-calculator/): Turtle age represented using a simplified life-stage comparison.
+- [Fish Age Calculator](https://www.agecalculatorlab.com/tools/fish-age-calculator/): An approximate human-equivalent comparison for a pet fish's age.
+
+## Life Statistics calculators
+- [Heartbeats Lived Calculator](https://www.agecalculatorlab.com/tools/heartbeats-lived-calculator/): Estimated lifetime heartbeats from age interval and average beats per minute.
+- [Breaths Lived Calculator](https://www.agecalculatorlab.com/tools/breaths-lived-calculator/): Estimated lifetime breaths from age interval and average breaths per minute.
+- [Sleep Time Lived Calculator](https://www.agecalculatorlab.com/tools/sleep-time-lived-calculator/): Estimated lifetime time spent sleeping from average hours per day.
+- [Life Progress Calculator](https://www.agecalculatorlab.com/tools/life-progress-calculator/): The percentage of a user-selected lifespan target already elapsed.
+- [Sleep Debt Calculator](https://www.agecalculatorlab.com/tools/sleep-debt-calculator/): Accumulated sleep shortfall over a chosen period against a nightly sleep target.
+- [Screen Time Lived Calculator](https://www.agecalculatorlab.com/tools/screen-time-lived-calculator/): An estimate of total time spent on screens across a lifetime at a stated daily average.
+
+## Culture & Birth Profile calculators
+- [Zodiac Sign Calculator](https://www.agecalculatorlab.com/tools/zodiac-sign-calculator/): Western zodiac sign associated with a birth month and day.
+- [Chinese Zodiac Calculator](https://www.agecalculatorlab.com/tools/chinese-zodiac-calculator/): Chinese zodiac animal associated with a birth year.
+- [Birthstone Calculator](https://www.agecalculatorlab.com/tools/birthstone-calculator/): Traditional birthstone associated with a birth month.
+- [Birth Flower Calculator](https://www.agecalculatorlab.com/tools/birth-flower-calculator/): Traditional birth flower associated with a birth month.
+- [Birth Color Calculator](https://www.agecalculatorlab.com/tools/birth-color-calculator/): A recreational color association based on birth month.
+- [Birth Season Calculator](https://www.agecalculatorlab.com/tools/birth-season-calculator/): Meteorological season associated with a birth month in the Northern Hemisphere.
+- [Birth Month Facts Calculator](https://www.agecalculatorlab.com/tools/birth-month-facts-calculator/): A compact recreational profile based on birth month.
+- [Life Path Number Calculator](https://www.agecalculatorlab.com/tools/life-path-number-calculator/): A recreational numerology life-path number from a birth date.
+- [Birthday Moon Phase Estimator](https://www.agecalculatorlab.com/tools/birthday-moon-phase-estimator/): An approximate lunar phase index for a birth date.
+- [Day of Week Born Calculator](https://www.agecalculatorlab.com/tools/day-of-week-born-calculator/): Weekday on which a person was born.
+- [Generation Calculator](https://www.agecalculatorlab.com/tools/generation-calculator/): A broad generational label based on birth year.
+- [Lunar Birthday Calculator](https://www.agecalculatorlab.com/tools/lunar-birthday-calculator/): The approximate moon phase on a birth date and its position in the lunar cycle.
+
+## Date Lab calculators
+- [Days Between Dates Calculator](https://www.agecalculatorlab.com/tools/days-between-dates-calculator/): Elapsed calendar days between two dates.
+- [Date Difference Calculator](https://www.agecalculatorlab.com/tools/date-difference-calculator/): Calendar difference in years months days and total days.
+- [Time Between Dates Calculator](https://www.agecalculatorlab.com/tools/time-between-dates/): Calendar duration between two selected dates.
+- [Add Days to Date Calculator](https://www.agecalculatorlab.com/tools/add-days-to-date-calculator/): A future or past date after adding calendar days.
+- [Subtract Days From Date Calculator](https://www.agecalculatorlab.com/tools/subtract-days-from-date-calculator/): A date found by subtracting calendar days.
+- [Add Weeks to Date Calculator](https://www.agecalculatorlab.com/tools/add-weeks-to-date-calculator/): A date after adding complete seven-day weeks.
+- [Subtract Weeks From Date Calculator](https://www.agecalculatorlab.com/tools/subtract-weeks-from-date-calculator/): A date found by subtracting complete weeks.
+- [Add Months to Date Calculator](https://www.agecalculatorlab.com/tools/add-months-to-date-calculator/): A calendar date shifted forward by complete months.
+- [Subtract Months From Date Calculator](https://www.agecalculatorlab.com/tools/subtract-months-from-date-calculator/): A calendar date shifted backward by complete months.
+- [Add Years to Date Calculator](https://www.agecalculatorlab.com/tools/add-years-to-date-calculator/): A calendar date shifted forward by complete years.
+- [Subtract Years From Date Calculator](https://www.agecalculatorlab.com/tools/subtract-years-from-date-calculator/): A calendar date shifted backward by complete years.
+- [Business Days Calculator](https://www.agecalculatorlab.com/tools/business-days-calculator/): Weekdays between two dates with weekends excluded.
+- [Workdays Between Dates Calculator](https://www.agecalculatorlab.com/tools/workdays-between-dates-calculator/): Monday-to-Friday workdays across a date interval.
+- [Week Number Calculator](https://www.agecalculatorlab.com/tools/week-number-calculator/): ISO week number for a selected calendar date.
+- [Day of Year Calculator](https://www.agecalculatorlab.com/tools/day-of-year-calculator/): Ordinal day number within the selected year.
+- [Days Left in Year Calculator](https://www.agecalculatorlab.com/tools/days-left-in-year-calculator/): Remaining calendar days before the end of the year.
+- [Leap Year Calculator](https://www.agecalculatorlab.com/tools/leap-year-calculator/): Whether a selected year follows the Gregorian leap-year rule.
+- [Weekday Calculator](https://www.agecalculatorlab.com/tools/weekday-calculator/): Day of the week for any valid calendar date.
+- [Months Between Dates Calculator](https://www.agecalculatorlab.com/tools/months-between-dates-calculator/): Complete calendar months and residual days between dates.
+- [Years Between Dates Calculator](https://www.agecalculatorlab.com/tools/years-between-dates-calculator/): Complete calendar years plus remaining months and days.
+- [Date Midpoint Calculator](https://www.agecalculatorlab.com/tools/date-midpoint-calculator/): The exact midpoint date between two calendar dates.
+- [Inclusive Date Count Calculator](https://www.agecalculatorlab.com/tools/inclusive-date-count-calculator/): The number of calendar days with explicit start- and end-date inclusion.
+- [Business Date Shift Calculator](https://www.agecalculatorlab.com/tools/business-date-shift-calculator/): A date moved forward or backward by weekdays.
+- [Recurring Date Calculator](https://www.agecalculatorlab.com/tools/recurring-date-calculator/): The next occurrence in a repeating day, week, month or year schedule.
+- [ISO Week to Date Converter](https://www.agecalculatorlab.com/tools/iso-week-to-date-calculator/): The calendar dates covered by a given ISO-8601 week number and week-year.
+- [Fiscal Quarter Calculator](https://www.agecalculatorlab.com/tools/fiscal-quarter-calculator/): The fiscal quarter, quarter start and quarter end for any date and fiscal-year start month.
+- [Quarter End Date Calculator](https://www.agecalculatorlab.com/tools/quarter-end-date-calculator/): The last day of the calendar or fiscal quarter containing a chosen date.
+- [Working Hours Between Dates Calculator](https://www.agecalculatorlab.com/tools/working-hours-between-dates-calculator/): Scheduled working hours between two dates using a chosen working day length.
+- [Time Zone Date Difference Calculator](https://www.agecalculatorlab.com/tools/timezone-date-difference-calculator/): The real elapsed interval between two local date-times in different UTC offsets.
+- [Countdown to Any Date Calculator](https://www.agecalculatorlab.com/tools/countdown-to-date-calculator/): Days, weeks and weekdays remaining until any chosen target date.
+- [Days Until Christmas Calculator](https://www.agecalculatorlab.com/tools/days-until-christmas-calculator/): The number of days remaining until the next 25 December.
+- [Days Until New Year Calculator](https://www.agecalculatorlab.com/tools/days-until-new-year-calculator/): The number of days remaining until the next 1 January.
+- [Weeks Between Dates Calculator](https://www.agecalculatorlab.com/tools/weeks-between-dates-calculator/): Complete weeks and remaining days between two calendar dates.
+- [Public Holidays Between Dates](https://www.agecalculatorlab.com/tools/public-holidays-between-dates-calculator/): The public holidays falling between two dates in a chosen jurisdiction, including substitute days.
+
+## Reference
+- [All categories](https://www.agecalculatorlab.com/categories/)
+- [All guides](https://www.agecalculatorlab.com/articles/)
+- [Methodology](https://www.agecalculatorlab.com/methodology/)
+- [Author](https://www.agecalculatorlab.com/author/navjeet-kamboj/)
+- [Disclaimer](https://www.agecalculatorlab.com/disclaimer/)

@@ -1,0 +1,8 @@
+{
+  "name": "Age Calculator Lab",
+  "short_name": "AgeCalcLab",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0e6bff"
+}
