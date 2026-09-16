@@ -1509,6 +1509,504 @@
 </section>
 
 
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     AGE CALCULATOR LAB — SECTION 2: CALCULATOR FINDER
+     Fast interactive launcher & search across all 161 focused calculation tools
+     ══════════════════════════════════════════════════════════════════════════ -->
+<style>
+  .aclx-finder {
+    --fnd-ink: #102923;
+    --fnd-muted: #5d7069;
+    --fnd-deep: #042f2a;
+    --fnd-green: #08745a;
+    --fnd-mint: #dff5ec;
+    --fnd-mint-soft: #f1faf6;
+    --fnd-paper: #f8fcfa;
+    --fnd-white: #ffffff;
+    --fnd-line: #d4e2dd;
+    --fnd-coral: #ff754d;
+    --fnd-coral-dark: #ad3d21;
+    --fnd-gold: #f5cb6d;
+    padding: clamp(48px, 6vw, 76px) 0;
+    background: var(--fnd-white);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    border-bottom: 1px solid var(--fnd-line);
+    position: relative;
+  }
+  .aclx-finder, .aclx-finder * { box-sizing: border-box; }
+
+  .aclx-finder-wrap {
+    width: min(calc(100% - 40px), 1200px);
+    margin-inline: auto;
+  }
+
+  .aclx-finder-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+
+  .aclx-finder-title-group {
+    max-width: 600px;
+  }
+
+  .aclx-finder-eyebrow {
+    margin: 0 0 8px;
+    color: var(--fnd-green);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .aclx-finder-title-group h2 {
+    margin: 0;
+    font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+    font-size: clamp(1.85rem, 3vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -.03em;
+    color: var(--fnd-ink);
+    font-weight: 700;
+  }
+
+  .aclx-finder-search-box {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .aclx-finder-search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--fnd-muted);
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+  }
+
+  .aclx-finder-search-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px 0 44px;
+    border: 1.5px solid var(--fnd-line);
+    border-radius: 12px;
+    font: inherit;
+    font-size: .92rem;
+    color: var(--fnd-ink);
+    background: var(--fnd-paper);
+    transition: all .18s ease;
+  }
+
+  .aclx-finder-search-input:focus {
+    outline: none;
+    border-color: var(--fnd-green);
+    background: #ffffff;
+    box-shadow: 0 0 0 3.5px rgba(8, 116, 90, .14);
+  }
+
+  .aclx-finder-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .aclx-finder-pill {
+    padding: 7px 14px;
+    border: 1px solid var(--fnd-line);
+    border-radius: 999px;
+    color: #3b544d;
+    background: var(--fnd-paper);
+    font: inherit;
+    font-size: .8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .16s ease;
+  }
+
+  .aclx-finder-pill:hover {
+    border-color: var(--fnd-green);
+    color: var(--fnd-green);
+    background: var(--fnd-mint-soft);
+  }
+
+  .aclx-finder-pill[aria-pressed="true"] {
+    border-color: var(--fnd-green);
+    color: #ffffff;
+    background: var(--fnd-green);
+  }
+
+  .aclx-finder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 16px;
+  }
+
+  .aclx-finder-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid var(--fnd-line);
+    border-radius: 16px;
+    background: #ffffff;
+    text-decoration: none;
+    color: var(--fnd-ink);
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  }
+
+  .aclx-finder-card:hover {
+    transform: translateY(-2.5px);
+    border-color: #92c9b6;
+    box-shadow: 0 10px 24px rgba(4, 47, 42, .07);
+  }
+
+  .aclx-finder-card-top {
+    margin-bottom: 14px;
+  }
+
+  .aclx-finder-card-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .aclx-finder-card-tag {
+    font-size: .7rem;
+    font-weight: 850;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--fnd-green);
+    background: var(--fnd-mint-soft);
+    padding: 3px 8px;
+    border-radius: 6px;
+    border: 1px solid #cce8dd;
+  }
+
+  .aclx-finder-card-badge {
+    font-size: .68rem;
+    font-weight: 800;
+    color: #ad3d21;
+    background: #fff0eb;
+    padding: 3px 7px;
+    border-radius: 6px;
+  }
+
+  .aclx-finder-card h3 {
+    margin: 0 0 6px;
+    font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+    font-size: 1.12rem;
+    line-height: 1.25;
+    color: var(--fnd-ink);
+    font-weight: 700;
+  }
+
+  .aclx-finder-card p {
+    margin: 0;
+    color: var(--fnd-muted);
+    font-size: .84rem;
+    line-height: 1.5;
+  }
+
+  .aclx-finder-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: .8rem;
+    font-weight: 750;
+    color: var(--fnd-green);
+    margin-top: 14px;
+  }
+
+  .aclx-finder-card:hover .aclx-finder-card-cta {
+    color: #034836;
+  }
+
+  .aclx-finder-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--fnd-line);
+  }
+
+  .aclx-finder-count {
+    color: var(--fnd-muted);
+    font-size: .85rem;
+    font-weight: 600;
+  }
+
+  .aclx-finder-count strong {
+    color: var(--fnd-ink);
+  }
+
+  .aclx-finder-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--fnd-white) !important;
+    background: var(--fnd-green);
+    font-size: .86rem;
+    font-weight: 750;
+    text-decoration: none;
+    transition: background .16s ease;
+  }
+
+  .aclx-finder-all-btn:hover {
+    background: var(--fnd-deep);
+  }
+</style>
+
+<section class="aclx-finder" id="calculator-finder" aria-labelledby="aclx-finder-title">
+  <div class="aclx-finder-wrap">
+
+    <div class="aclx-finder-head">
+      <div class="aclx-finder-title-group">
+        <p class="aclx-finder-eyebrow">Instant Tool Launcher</p>
+        <h2 id="aclx-finder-title">Explore 161 specialized calculators for any date task</h2>
+      </div>
+
+      <div class="aclx-finder-search-box">
+        <svg class="aclx-finder-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16ZM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <input type="text" class="aclx-finder-search-input" id="aclx-tool-search" placeholder="Search by name, task, or unit (e.g. weeks, pregnancy, school)..." aria-label="Search calculators">
+      </div>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="aclx-finder-pills" role="toolbar" aria-label="Filter calculators by category">
+      <button class="aclx-finder-pill" data-category="all" aria-pressed="true">All 161 Calculators</button>
+      <button class="aclx-finder-pill" data-category="chronology" aria-pressed="false">Universal Chronology</button>
+      <button class="aclx-finder-pill" data-category="clinical" aria-pressed="false">Clinical &amp; Assessments</button>
+      <button class="aclx-finder-pill" data-category="pregnancy" aria-pressed="false">Pregnancy &amp; Pediatric</button>
+      <button class="aclx-finder-pill" data-category="milestones" aria-pressed="false">Birthday &amp; Milestones</button>
+      <button class="aclx-finder-pill" data-category="professional" aria-pressed="false">School &amp; Employment</button>
+      <button class="aclx-finder-pill" data-category="datelab" aria-pressed="false">Date Lab</button>
+    </div>
+
+    <!-- Quick Tool Cards Grid -->
+    <div class="aclx-finder-grid" id="aclx-tools-grid">
+
+      <a class="aclx-finder-card" href="./tools/chronological-age-calculator/" data-cat="chronology clinical" data-keywords="chronological age exact years months days assessment report format wisc">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Chronology</span>
+            <span class="aclx-finder-card-badge">Clinical Standard</span>
+          </div>
+          <h3>Chronological Age Calculator</h3>
+          <p>Exact calendar interval formatted as Y;M;D for WISC-V, CELF-5, and clinical reports.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/age-difference-calculator/" data-cat="chronology milestones" data-keywords="age difference compare gap two people partner sibling who is older">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Comparison</span>
+            <span class="aclx-finder-card-badge">Popular</span>
+          </div>
+          <h3>Age Difference Calculator</h3>
+          <p>Find the exact gap in years, months, and days between two birth dates with full timeline comparison.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/corrected-age-calculator/" data-cat="clinical pregnancy" data-keywords="corrected age adjusted prematurity nicu premature baby gestational milestone">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Pediatric</span>
+            <span class="aclx-finder-card-badge">AAP Method</span>
+          </div>
+          <h3>Corrected Age Calculator</h3>
+          <p>Calculate adjusted developmental age for premature infants using official pediatric subtraction.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/days-between-dates-calculator/" data-cat="datelab" data-keywords="days between dates total count duration calendar span business">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Date Lab</span>
+            <span class="aclx-finder-card-badge">Accurate</span>
+          </div>
+          <h3>Days Between Dates Calculator</h3>
+          <p>Exact count of calendar days between two dates with optional inclusive day toggles.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/weeks-between-dates-calculator/" data-cat="datelab pregnancy" data-keywords="weeks between dates remainder quotient 7 days calendar interval">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Date Lab</span>
+            <span class="aclx-finder-card-badge">Updated</span>
+          </div>
+          <h3>Weeks Between Dates Calculator</h3>
+          <p>Full quotient (total days ÷ 7) returning completed calendar weeks plus exact remainder days.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/birthday-countdown-calculator/" data-cat="milestones" data-keywords="birthday countdown next birthday days until turns how many days left">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Milestones</span>
+            <span class="aclx-finder-card-badge">Live Countdown</span>
+          </div>
+          <h3>Birthday Countdown Calculator</h3>
+          <p>Real-time countdown to your next birthday with leap-year handling and milestone milestones.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/school-grade-finder/" data-cat="professional" data-keywords="school grade cutoff kindergarten admission eligibility september 1 academic year">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Education</span>
+            <span class="aclx-finder-card-badge">Cutoff Aware</span>
+          </div>
+          <h3>School Grade &amp; Cutoff Finder</h3>
+          <p>Determine classroom readiness and academic grade placement by exact date cutoff rules.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/years-of-service-calculator/" data-cat="professional" data-keywords="years of service employment tenure pension seniority retirement leave date">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Employment</span>
+            <span class="aclx-finder-card-badge">Anniversary Rule</span>
+          </div>
+          <h3>Years of Service Calculator</h3>
+          <p>Accurate corporate service tenure, pension anniversaries, and decimal service years.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/10000-days-old-calculator/" data-cat="milestones chronology" data-keywords="10000 days old milestone 27 years golden birthday exact date reached">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Milestone</span>
+            <span class="aclx-finder-card-badge">Life Event</span>
+          </div>
+          <h3>10,000 Days Old Calculator</h3>
+          <p>Find the exact date you turn 10,000 days old (~27.4 years) and celebrate your decimal jubilee.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/dog-age-calculator/" data-cat="nature" data-keywords="dog age human years veterinary breed size puppy canine calculator">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Life Cycles</span>
+            <span class="aclx-finder-card-badge">Breed Adjusted</span>
+          </div>
+          <h3>Dog Age in Human Years</h3>
+          <p>Veterinary logarithmic curve adjusted by breed size rather than the inaccurate 7-year rule.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/gestational-age-calculator/" data-cat="pregnancy clinical" data-keywords="gestational age pregnancy due date lmp ultrasound weeks and days trimester">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Clinical</span>
+            <span class="aclx-finder-card-badge">ACOG Standard</span>
+          </div>
+          <h3>Gestational Age Calculator</h3>
+          <p>ACOG-compliant pregnancy weeks and days from last menstrual period or ultrasound date.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+      <a class="aclx-finder-card" href="./tools/date-difference-calculator/" data-cat="datelab chronology" data-keywords="date difference interval between two dates years months days calendar exact">
+        <div class="aclx-finder-card-top">
+          <div class="aclx-finder-card-meta">
+            <span class="aclx-finder-card-tag">Date Lab</span>
+            <span class="aclx-finder-card-badge">Core Engine</span>
+          </div>
+          <h3>Date Difference Calculator</h3>
+          <p>Full breakdown in years, months, and days with total days and weeks between any two dates.</p>
+        </div>
+        <span class="aclx-finder-card-cta">Launch Calculator →</span>
+      </a>
+
+    </div>
+
+    <div class="aclx-finder-footer">
+      <span class="aclx-finder-count" id="aclx-tool-count">Showing <strong>12</strong> highlighted tools from <strong>161</strong> total calculators</span>
+      <a class="aclx-finder-all-btn" href="./categories/">Browse All 161 Tools Directory →</a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  'use strict';
+  var searchInput = document.getElementById('aclx-tool-search');
+  var pills = document.querySelectorAll('.aclx-finder-pill');
+  var cards = document.querySelectorAll('.aclx-finder-card');
+  var countEl = document.getElementById('aclx-tool-count');
+
+  if (!searchInput || !cards.length) return;
+
+  var currentCat = 'all';
+
+  function filterTools() {
+    var q = searchInput.value.toLowerCase().trim();
+    var visible = 0;
+
+    cards.forEach(function(card) {
+      var title = card.querySelector('h3').textContent.toLowerCase();
+      var desc = card.querySelector('p').textContent.toLowerCase();
+      var cat = card.getAttribute('data-cat') || '';
+      var kw = card.getAttribute('data-keywords') || '';
+
+      var matchesCat = (currentCat === 'all') || cat.indexOf(currentCat) !== -1;
+      var matchesQuery = !q || title.indexOf(q) !== -1 || desc.indexOf(q) !== -1 || kw.indexOf(q) !== -1;
+
+      if (matchesCat && matchesQuery) {
+        card.style.display = 'flex';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (countEl) {
+      countEl.innerHTML = 'Showing <strong>' + visible + '</strong> tools from <strong>161</strong> total calculators';
+    }
+  }
+
+  searchInput.addEventListener('input', filterTools);
+
+  pills.forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      pills.forEach(function(p) { p.setAttribute('aria-pressed', 'false'); });
+      pill.setAttribute('aria-pressed', 'true');
+      currentCat = pill.getAttribute('data-category');
+      filterTools();
+    });
+  });
+})();
+</script>
+
+
+
 
 <script>
 
@@ -3166,6 +3664,461 @@
   </div>
 
 </section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     AGE CALCULATOR LAB — METHODOLOGY COMPARISON MATRIX & CLINICAL COMPLIANCE
+     Demonstrates why Age Calculator Lab beats generic calculators in precision
+     ══════════════════════════════════════════════════════════════════════════ -->
+<style>
+  .aclx-matrix {
+    --mtx-ink: #102923;
+    --mtx-muted: #5d7069;
+    --mtx-green: #08745a;
+    --mtx-deep: #042f2a;
+    --mtx-mint: #dff5ec;
+    --mtx-mint-soft: #f1faf6;
+    --mtx-paper: #f8fcfa;
+    --mtx-white: #ffffff;
+    --mtx-line: #d4e2dd;
+    --mtx-coral: #ff754d;
+    --mtx-gold: #f5cb6d;
+    padding: clamp(56px, 7vw, 92px) 0;
+    background: var(--mtx-paper);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    border-bottom: 1px solid var(--mtx-line);
+  }
+  .aclx-matrix, .aclx-matrix * { box-sizing: border-box; }
+
+  .aclx-matrix-wrap {
+    width: min(calc(100% - 40px), 1200px);
+    margin-inline: auto;
+  }
+
+  .aclx-matrix-head {
+    max-width: 780px;
+    margin-bottom: 36px;
+  }
+
+  .aclx-matrix-eyebrow {
+    margin: 0 0 10px;
+    color: var(--mtx-green);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .aclx-matrix-head h2 {
+    margin: 0 0 14px;
+    font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+    font-size: clamp(1.9rem, 3.2vw, 2.65rem);
+    line-height: 1.16;
+    letter-spacing: -.03em;
+    color: var(--mtx-ink);
+    font-weight: 700;
+  }
+
+  .aclx-matrix-head p {
+    margin: 0;
+    color: var(--mtx-muted);
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .aclx-table-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--mtx-line);
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(4,47,42,.05);
+    margin-bottom: 36px;
+  }
+
+  .aclx-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: .88rem;
+  }
+
+  .aclx-table th,
+  .aclx-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--mtx-line);
+  }
+
+  .aclx-table th {
+    background: #f3f8f5;
+    color: var(--mtx-ink);
+    font-weight: 800;
+    font-size: .82rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .aclx-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .aclx-table-highlight {
+    background: var(--mtx-mint-soft);
+    font-weight: 600;
+  }
+
+  .aclx-table-badge-lab {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--mtx-green);
+    color: #ffffff;
+    font-size: .74rem;
+    font-weight: 800;
+  }
+
+  .aclx-table-badge-flaw {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: #fff1ee;
+    color: #ad3d21;
+    font-size: .72rem;
+    font-weight: 750;
+  }
+
+  .aclx-standards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 880px) {
+    .aclx-standards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .aclx-standard-card {
+    padding: 24px;
+    border: 1px solid var(--mtx-line);
+    border-radius: 16px;
+    background: #ffffff;
+  }
+
+  .aclx-standard-card h3 {
+    margin: 0 0 10px;
+    font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+    font-size: 1.15rem;
+    color: var(--mtx-ink);
+    font-weight: 700;
+  }
+
+  .aclx-standard-card p {
+    margin: 0;
+    color: var(--mtx-muted);
+    font-size: .86rem;
+    line-height: 1.6;
+  }
+</style>
+
+<section class="aclx-matrix" aria-labelledby="aclx-matrix-title">
+  <div class="aclx-matrix-wrap">
+
+    <div class="aclx-matrix-head">
+      <p class="aclx-matrix-eyebrow">Technical Audit &amp; Verification</p>
+      <h2 id="aclx-matrix-title">How calculation methods compare across major platforms</h2>
+      <p>Not all age calculators use the same arithmetic. Below is a direct comparison of the calendar-anniversary model used by Age Calculator Lab versus the simplified models commonly found on the web.</p>
+    </div>
+
+    <!-- Comparative Table -->
+    <div class="aclx-table-scroll">
+      <table class="aclx-table">
+        <thead>
+          <tr>
+            <th>Calculation Method</th>
+            <th>Month Length Rule</th>
+            <th>Leap Day Handling</th>
+            <th>Boundary Drift</th>
+            <th>Primary Application</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="aclx-table-highlight">
+            <td>
+              <strong style="display:block;color:var(--mtx-green)">Calendar Anniversary (Lab Standard)</strong>
+              <span class="aclx-table-badge-lab">✓ Age Calculator Lab</span>
+            </td>
+            <td>Actual calendar days (28, 29, 30, or 31)</td>
+            <td>Feb 28 in common years; preserved in leap years</td>
+            <td><strong>0 days</strong> (100% exact)</td>
+            <td>Legal, Clinical (WISC-V, CELF-5), School Cutoffs</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Naive Average (Total Days ÷ 365.25)</strong>
+              <span style="display:block;font-size:.75rem;color:var(--mtx-muted)">Used by basic web scripts</span>
+            </td>
+            <td>Approximated as 30.4375 days</td>
+            <td>Flattened into annual decimal fraction</td>
+            <td><span class="aclx-table-badge-flaw">Up to 3 days error</span></td>
+            <td>Rough approximations only; invalid for legal use</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Commercial 30-Day Fixed Month</strong>
+              <span style="display:block;font-size:.75rem;color:var(--mtx-muted)">Used in generic financial models</span>
+            </td>
+            <td>Fixed at 30 days every month</td>
+            <td>Ignored or manually patched</td>
+            <td><span class="aclx-table-badge-flaw">Up to 2 days error</span></td>
+            <td>Banking bond 30/360 day counts; not personal age</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Clinical Semicolon (Y;M;D) Format</strong>
+              <span style="display:block;font-size:.75rem;color:var(--mtx-muted)">Supported by Age Calculator Lab</span>
+            </td>
+            <td>Real calendar month boundaries</td>
+            <td>AAP &amp; Pearson clinical compliance</td>
+            <td><strong>0 days</strong> (Exact)</td>
+            <td>Educational Psychology, SLP, OT, Neuropsych evaluations</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>East Asian / Korean Traditional Age</strong>
+              <span style="display:block;font-size:.75rem;color:var(--mtx-muted)">Supported in Cultural Category</span>
+            </td>
+            <td>Calendar year based (adds 1 on Jan 1)</td>
+            <td>Standard solar/lunar calendar</td>
+            <td>Differs by 1–2 years</td>
+            <td>Cultural customs (South Korea adopted international age in 2023)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Clinical Standards Grid -->
+    <div class="aclx-standards-grid">
+      <div class="aclx-standard-card">
+        <h3>Wechsler &amp; Pearson Compliance</h3>
+        <p>Psychological assessments such as the WISC-V, WAIS-IV, and WIAT-4 require age rounded strictly by calendar years, completed months, and elapsed days. Our formula produces the exact semicolon format (e.g. <code>10;04;12</code>) required by scoring manuals.</p>
+      </div>
+      <div class="aclx-standard-card">
+        <h3>AAP Prematurity Adjustment</h3>
+        <p>The American Academy of Pediatrics recommends calculating corrected age for preterm infants up to 24 or 36 months of age. Our corrected-age engine cleanly subtracts weeks of prematurity from chronological age to protect clinical accuracy.</p>
+      </div>
+      <div class="aclx-standard-card">
+        <h3>UTC Normalization &amp; Zero Latency</h3>
+        <p>To eliminate midnight timezone shifts and browser locale discrepancies, our JavaScript core normalizes all calendar math to UTC midnight. Everything computes on your CPU with zero external API dependencies.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     AGE CALCULATOR LAB — SECTION: LIFE MILESTONES & TIME SCALE BENCHMARKS
+     Engaging reference module for organic search queries on age benchmarks
+     ══════════════════════════════════════════════════════════════════════════ -->
+<style>
+  .aclx-milestones {
+    --mls-ink: #102923;
+    --mls-muted: #5d7069;
+    --mls-green: #08745a;
+    --mls-deep: #042f2a;
+    --mls-mint: #dff5ec;
+    --mls-mint-soft: #f1faf6;
+    --mls-paper: #f8fcfa;
+    --mls-white: #ffffff;
+    --mls-line: #d4e2dd;
+    --mls-coral: #ff754d;
+    --mls-gold: #f5cb6d;
+    padding: clamp(56px, 7vw, 92px) 0;
+    background: var(--mls-white);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    border-bottom: 1px solid var(--mls-line);
+  }
+  .aclx-milestones, .aclx-milestones * { box-sizing: border-box; }
+
+  .aclx-milestones-wrap {
+    width: min(calc(100% - 40px), 1200px);
+    margin-inline: auto;
+  }
+
+  .aclx-milestones-head {
+    max-width: 720px;
+    margin-bottom: 36px;
+  }
+
+  .aclx-milestones-eyebrow {
+    margin: 0 0 10px;
+    color: var(--mls-green);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .aclx-milestones-head h2 {
+    margin: 0 0 12px;
+    font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+    font-size: clamp(1.85rem, 3.2vw, 2.6rem);
+    line-height: 1.16;
+    letter-spacing: -.03em;
+    color: var(--mls-ink);
+    font-weight: 700;
+  }
+
+  .aclx-milestones-head p {
+    margin: 0;
+    color: var(--mls-muted);
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .aclx-milestone-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  @media (max-width: 1024px) {
+    .aclx-milestone-cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .aclx-milestone-cards { grid-template-columns: 1fr; }
+  }
+
+  .aclx-milestone-card {
+    padding: 22px;
+    border: 1px solid var(--mls-line);
+    border-radius: 18px;
+    background: var(--mls-paper);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+
+  .aclx-milestone-card:hover {
+    transform: translateY(-2.5px);
+    box-shadow: 0 10px 24px rgba(4,47,42,.07);
+    border-color: #9ecdbd;
+  }
+
+  .aclx-milestone-badge {
+    align-self: flex-start;
+    padding: 4px 9px;
+    border-radius: 6px;
+    background: var(--mls-mint-soft);
+    border: 1px solid #c8e8dc;
+    color: var(--mls-green);
+    font-size: .72rem;
+    font-weight: 850;
+    margin-bottom: 12px;
+  }
+
+  .aclx-milestone-val {
+    font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--mls-deep);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .aclx-milestone-card h3 {
+    margin: 0 0 8px;
+    font-size: .96rem;
+    color: var(--mls-ink);
+    font-weight: 750;
+  }
+
+  .aclx-milestone-card p {
+    margin: 0;
+    color: var(--mls-muted);
+    font-size: .82rem;
+    line-height: 1.55;
+  }
+
+  .aclx-milestone-link {
+    margin-top: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--mls-green);
+    font-size: .8rem;
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .aclx-milestone-link:hover { text-decoration: underline; }
+</style>
+
+<section class="aclx-milestones" aria-labelledby="aclx-milestones-title">
+  <div class="aclx-milestones-wrap">
+
+    <div class="aclx-milestones-head">
+      <p class="aclx-milestones-eyebrow">Life Milestones &amp; Time Scales</p>
+      <h2 id="aclx-milestones-title">Remarkable milestones in the journey of human age</h2>
+      <p>Your chronological age is more than just calendar years. Here is how major day, minute, and developmental milestones mark time across the human lifespan.</p>
+    </div>
+
+    <div class="aclx-milestone-cards">
+
+      <div class="aclx-milestone-card">
+        <div>
+          <span class="aclx-milestone-badge">Decimal Jubilee</span>
+          <div class="aclx-milestone-val">10,000 Days</div>
+          <h3>~27.4 Years of Life</h3>
+          <p>Reaching 10,000 days alive occurs midway through your 27th year. A major milestone in decimal chronology.</p>
+        </div>
+        <a class="aclx-milestone-link" href="./tools/10000-days-old-calculator/">Calculate your 10k day →</a>
+      </div>
+
+      <div class="aclx-milestone-card">
+        <div>
+          <span class="aclx-milestone-badge">Astronomical</span>
+          <div class="aclx-milestone-val">1 Billion</div>
+          <h3>Seconds Lived (~31.7 Yrs)</h3>
+          <p>One billion seconds of continuous heartbeats is crossed at approximately 31 years, 8 months, and 19 days.</p>
+        </div>
+        <a class="aclx-milestone-link" href="./categories/date-lab/">Explore in Date Lab →</a>
+      </div>
+
+      <div class="aclx-milestone-card">
+        <div>
+          <span class="aclx-milestone-badge">Unique Birthday</span>
+          <div class="aclx-milestone-val">Golden</div>
+          <h3>Birthday Anniversary</h3>
+          <p>Occurs on the special year when your age matches the exact day of the month you were born (e.g. turning 25 on the 25th).</p>
+        </div>
+        <a class="aclx-milestone-link" href="./tools/birthday-countdown-calculator/">Check birthday date →</a>
+      </div>
+
+      <div class="aclx-milestone-card">
+        <div>
+          <span class="aclx-milestone-badge">Preterm Clinical</span>
+          <div class="aclx-milestone-val">40 Weeks</div>
+          <h3>Full-Term Postmenstrual Age</h3>
+          <p>For premature babies, corrected age normalizes development against the standard 40-week gestation timeline.</p>
+        </div>
+        <a class="aclx-milestone-link" href="./tools/corrected-age-calculator/">Corrected age tool →</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
 
 
