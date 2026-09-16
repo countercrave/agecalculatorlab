@@ -4855,18 +4855,14 @@
   }
 
   .aclx-trust-avatar {
-    width: 52px;
-    height: 52px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--trust-green), #0da176);
-    display: grid;
-    place-items: center;
-    font-family: var(--font-display), "Fraunces", Georgia, serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--trust-white);
+    object-fit: cover;
+    object-position: center top;
     flex-shrink: 0;
-    border: 2px solid rgba(255,255,255,.18);
+    border: 2.5px solid rgba(255,255,255,.32);
+    box-shadow: 0 6px 18px rgba(0,0,0,.28);
   }
 
   .aclx-trust-author-info { min-width: 0; }
@@ -5041,7 +5037,7 @@
         <p>Age Calculator Lab is a dedicated research and tool library — not a generic script deployed without documentation. Every calculator cites its calculation method, every guide links to a primary source, and every result is produced by code that runs locally in your browser with no data sent to a server.</p>
 
         <div class="aclx-trust-author">
-          <div class="aclx-trust-avatar" aria-hidden="true">NK</div>
+          <img class="aclx-trust-avatar" src="./assets/navjeet-kamboj.webp" alt="Navjeet Kamboj — Creator & Methodologist" width="64" height="64" loading="lazy" decoding="async">
           <div class="aclx-trust-author-info">
             <strong>Navjeet Kamboj</strong>
             <span>Creator & methodologist · Age Calculator Lab<br>Calculation methodology published at <a style="color:#8fe3c3;text-decoration:underline" href="./methodology/">agecalculatorlab.com/methodology</a></span>
