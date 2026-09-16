@@ -1,5 +1,7 @@
 # Age Calculator Lab
 
+- How Old Am I?: https://www.agecalculatorlab.com/how-old-am-i/
+
 > 161 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 100 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
 
 Written and reviewed by Navjeet Kamboj. Results are informational: clinical, legal, financial, school, employment and benefits decisions are governed by the relevant manual, policy or authority.
@@ -107,7 +109,7 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [Lifetime Screen Time Estimates and Why They Are So Sensitive](https://www.agecalculatorlab.com/articles/screen-time-estimates/): Lifetime totals multiply a daily average across thousands of days, which magnifies any error in the average by the same factor.
 
 ## Universal Chronology calculators
-- [Age Calculator](https://www.agecalculatorlab.com/tools/age-calculator/): Exact chronological age in completed years, calendar months and remaining days.
+- [Age Calculator](https://www.agecalculatorlab.com/): Exact chronological age in completed years, calendar months and remaining days.
 - [Exact Age Calculator](https://www.agecalculatorlab.com/tools/exact-age-calculator/): A detailed calendar-accurate age result for any reference date.
 - [Age Difference Calculator](https://www.agecalculatorlab.com/tools/age-difference-calculator/): The exact calendar gap between two dates of birth.
 - [Age in Days Calculator](https://www.agecalculatorlab.com/tools/age-in-days-calculator/): Total elapsed days since a date of birth.

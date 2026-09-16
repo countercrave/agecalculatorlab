@@ -1,0 +1,7 @@
+/tools/age-calculator/  /  301
+# Netlify / Cloudflare Pages redirect rules
+/dog-age-calculator/  /tools/dog-age-calculator/  301
+/age-difference-calculator/  /tools/age-difference-calculator/  301
+/corrected-age-calculator/  /tools/corrected-age-calculator/  301
+/privacy-policy/  /privacy/  301
+/terms-of-use/  /terms/  301

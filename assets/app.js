@@ -24,7 +24,7 @@ function setResult(primary, metrics=[]){const primaryResult=$('#primaryResult'),
 function vals(){const o={}; $$('[data-field]').forEach(el=>o[el.id]=el.value); return o}
 function nextBirthday(dob,ref){let y=ref.getUTCFullYear(); let m=dob.getUTCMonth(),day=dob.getUTCDate(); let max=new Date(Date.UTC(y,m+1,0)).getUTCDate(); let bd=new Date(Date.UTC(y,m,Math.min(day,max))); if(bd<ref){y++; max=new Date(Date.UTC(y,m+1,0)).getUTCDate(); bd=new Date(Date.UTC(y,m,Math.min(day,max)))} return bd}
 function calc(){const c=window.CALC_CONFIG,v=vals(); try{
- if(c.mode==='age'||c.mode==='ageUnit'||c.mode==='ageUnits'){const a=parseDate(v.dob),b=parseDate(v.ref); if(!a||!b||b<a)throw Error('Please enter valid dates with the reference date on or after the birth date.'); const x=calendarDiff(a,b),td=daysBetween(a,b); if(c.mode==='age') setResult(`${x.years} years, ${x.months} months, ${x.days} days`,[['Total days',td.toLocaleString()],['Whole weeks',Math.floor(td/7).toLocaleString()],['Remaining week days',td%7],['Birth weekday',a.toLocaleDateString(undefined,{weekday:'long',timeZone:'UTC'})]]); else {let unit=c.extra.unit||'days',value;if(unit==='days')value=td; else if(unit==='weeks')value=(td/7).toFixed(2); else if(unit==='months')value=(x.years*12+x.months+(x.days/30.436875)).toFixed(2); else if(unit==='hours')value=td*24; else if(unit==='minutes')value=td*1440; else if(unit==='seconds')value=td*86400; else if(unit==='quarters')value=Math.floor((x.years*12+x.months)/3); else value=(td/365.2425).toFixed(4); setResult(`${Number(value).toLocaleString()} ${unit==='decimalYears'?'years':unit}`,[['Calendar age',`${x.years}y ${x.months}m ${x.days}d`],['Total days',td.toLocaleString()],['Whole weeks',Math.floor(td/7).toLocaleString()]]);}}
+ if(c.mode==='age'||c.mode==='ageUnit'||c.mode==='ageUnits'){const a=parseDate(v.dob),b=parseDate(v.ref); if(!a||!b||b<a)throw Error('Please enter valid dates with the reference date on or after the birth date.'); const x=calendarDiff(a,b),td=daysBetween(a,b); if(c.mode==='age'){const bd=nextBirthday(a,b),toBirthday=daysBetween(b,bd);setResult(`${x.years} years, ${x.months} months, ${x.days} days`,[['Total days',td.toLocaleString()],['Whole weeks',Math.floor(td/7).toLocaleString()],['Next birthday',fmt(bd)],['Days until birthday',toBirthday.toLocaleString()],['Born on',a.toLocaleDateString(undefined,{weekday:'long',timeZone:'UTC'})]]);} else {let unit=c.extra.unit||'days',value;if(unit==='days')value=td; else if(unit==='weeks')value=(td/7).toFixed(2); else if(unit==='months')value=(x.years*12+x.months+(x.days/30.436875)).toFixed(2); else if(unit==='hours')value=td*24; else if(unit==='minutes')value=td*1440; else if(unit==='seconds')value=td*86400; else if(unit==='quarters')value=Math.floor((x.years*12+x.months)/3); else value=(td/365.2425).toFixed(4); setResult(`${Number(value).toLocaleString()} ${unit==='decimalYears'?'years':unit}`,[['Calendar age',`${x.years}y ${x.months}m ${x.days}d`],['Total days',td.toLocaleString()],['Whole weeks',Math.floor(td/7).toLocaleString()]]);}}
  else if(c.mode==='dateDiff'||c.mode==='service'){const a=parseDate(v.start),b=parseDate(v.end);if(!a||!b)throw Error('Enter both dates.');const x=calendarDiff(a,b),td=Math.abs(daysBetween(a,b));if(c.extra&&c.extra.emphasis==='weeks'){setResult(`${Math.floor(td/7).toLocaleString()} weeks, ${td%7} days`,[['Total days',td.toLocaleString()],['Calendar duration',`${Math.abs(x.years)}y ${Math.abs(x.months)}m ${Math.abs(x.days)}d`],['Approx. months',(td/30.436875).toFixed(2)],['Weekdays',countWeekdays(a,b,[0,6]).toLocaleString()]]);return}
  setResult(`${Math.abs(x.years)} years, ${Math.abs(x.months)} months, ${Math.abs(x.days)} days`,[['Total days',td.toLocaleString()],['Whole weeks',Math.floor(td/7).toLocaleString()],['Approx. months',(td/30.436875).toFixed(2)],['Approx. years',(td/365.2425).toFixed(3)]]);}
  else if(c.mode==='birthday'){const a=parseDate(v.dob),r=parseDate(v.ref);if(!a||!r||r<a)throw Error('Enter valid dates with the reference date on or after the birth date.');const bd=nextBirthday(a,r),age=calendarDiff(a,bd).years;setResult(`${daysBetween(r,bd)} days until your next birthday`,[['Next birthday',fmt(bd)],['Turning age',age],['Weekday',bd.toLocaleDateString(undefined,{weekday:'long',timeZone:'UTC'})],['Current age',`${calendarDiff(a,r).years} years`]]);}
@@ -126,29 +126,173 @@ function initReadingProgress(){
 function initSectionTracking(){
  const links=[...$$('.article-toc a'),...$$('.jumpbar a')].filter(a=>a.getAttribute('href')?.startsWith('#'));
  if(!links.length)return;
+ 
+ links.forEach(a=>{
+  a.addEventListener('click',e=>{
+   const href=a.getAttribute('href');
+   if(!href||!href.startsWith('#'))return;
+   const targetId=href.slice(1);
+   const targetEl=document.getElementById(targetId);
+   if(targetEl){
+    e.preventDefault();
+    const headerOffset=115;
+    const elementPosition=targetEl.getBoundingClientRect().top;
+    const offsetPosition=elementPosition+window.pageYOffset-headerOffset;
+    window.scrollTo({top:offsetPosition,behavior:'smooth'});
+    if(history.replaceState){history.replaceState(null,'',href)}
+   }
+  });
+ });
+
  const targets=links.map(a=>({link:a,el:document.getElementById(a.getAttribute('href').slice(1))})).filter(t=>t.el);
  if(!targets.length)return;
- const mark=()=>{const y=window.scrollY+140; let active=targets[0];
-  targets.forEach(t=>{if(t.el.offsetTop<=y)active=t});
-  targets.forEach(t=>t.link.classList.toggle('is-current',t===active))};
- addEventListener('scroll',mark,{passive:true}); mark();
+ const mark=()=>{
+  const y=window.scrollY+130;
+  let active=targets[0];
+  targets.forEach(t=>{
+   const top=t.el.getBoundingClientRect().top+window.pageYOffset;
+   if(top<=y)active=t;
+  });
+  targets.forEach(t=>t.link.classList.toggle('is-current',t===active));
+ };
+ addEventListener('scroll',mark,{passive:true});
+ mark();
 }
+
+const SITE_SEARCH_INDEX = [{"n":"Adding Business Days Without Losing Count","u":"/articles/add-business-days-correctly/","t":"Guide"},{"n":"Adding Months to a Date Without Breaking It","u":"/articles/add-months-to-date-safely/","t":"Guide"},{"n":"Adjusted Age vs Chronological Age: Which Number Goes Where","u":"/articles/adjusted-vs-chronological-age/","t":"Guide"},{"n":"Calculating Age at Marriage for Records and Genealogy","u":"/articles/age-at-marriage-records/","t":"Guide"},{"n":"Age Bands and Cutoff Dates: Working Near a Boundary","u":"/articles/age-bands-cutoff-dates/","t":"Guide"},{"n":"The Age Calculation Errors That Actually Occur in School Evaluations","u":"/articles/age-calculation-errors-school-evaluations/","t":"Guide"},{"n":"Age Difference vs Date Difference: Same Arithmetic, Different Question","u":"/articles/age-difference-vs-date-difference/","t":"Guide"},{"n":"Measuring Age in Quarters: When Three-Month Blocks Beat Years","u":"/articles/age-in-quarters-guide/","t":"Guide"},{"n":"Age in Weeks, Months and Hours: Picking the Right Unit","u":"/articles/age-in-weeks-months-hours-guide/","t":"Guide"},{"n":"Calculating Age on an Exam Date","u":"/articles/age-on-exam-date/","t":"Guide"},{"n":"Planning Age Across Several Life Milestones at Once","u":"/articles/age-on-multiple-milestones/","t":"Guide"},{"n":"Your Billion-Second Birthday","u":"/articles/billion-seconds-birthday/","t":"Guide"},{"n":"How a Birthday Countdown Actually Works","u":"/articles/birthday-countdown-guide/","t":"Guide"},{"n":"Birthstones and Birth Flowers by Month","u":"/articles/birthstone-birth-flower-guide/","t":"Guide"},{"n":"Estimating Lifetime Breaths","u":"/articles/breaths-lived-estimate/","t":"Guide"},{"n":"BRIGANCE Age Calculation: What the Calculator Does and Doesn&#x27;t Do","u":"/articles/brigance-age-calculation-basics/","t":"Guide"},{"n":"Planning With Business Days: Buffers That Survive December","u":"/articles/business-days-date-planning/","t":"Guide"},{"n":"Business Days vs Calendar Days: Reading the Definition","u":"/articles/business-days-vs-calendar-days/","t":"Guide"},{"n":"How Old Will I Be on a Future Date?","u":"/articles/calculate-age-on-future-date/","t":"Guide"},{"n":"Working Out Your Age on a Past Date","u":"/articles/calculate-age-on-past-date/","t":"Guide"},{"n":"How to Calculate Exact Age in Years, Months and Days","u":"/articles/calculate-exact-age-years-months-days/","t":"Guide"},{"n":"When a Calculator Is Not the Final Authority","u":"/articles/calculator-results-official-decisions/","t":"Guide"},{"n":"Calendar Age vs Decimal Age: Which One Does Your Form Want?","u":"/articles/calendar-age-vs-decimal-age/","t":"Guide"},{"n":"A Date Input Checklist Worth Running Before You Calculate","u":"/articles/calendar-date-quality-checklist/","t":"Guide"},{"n":"Career Length vs Employment Duration","u":"/articles/career-length-calculation/","t":"Guide"},{"n":"Cat Years to Human Years","u":"/articles/cat-years-human-years/","t":"Guide"},{"n":"Chinese Zodiac Years and the Lunar New Year Boundary","u":"/articles/chinese-zodiac-year-boundaries/","t":"Guide"},{"n":"Choosing the Correct Assessment Date","u":"/articles/choose-assessment-date-age-calculation/","t":"Guide"},{"n":"Chronological Age: What It Measures and What It Doesn&#x27;t","u":"/articles/chronological-age-explained/","t":"Guide"},{"n":"Chronological Age for Standardised Assessments","u":"/articles/chronological-age-standardized-assessments/","t":"Guide"},{"n":"Completed Age vs Running Age","u":"/articles/completed-age-vs-running-age/","t":"Guide"},{"n":"Corrected Age for Premature Babies: A Parent&#x27;s Guide","u":"/articles/corrected-age-premature-babies/","t":"Guide"},{"n":"Countdown Conventions: What &#x27;Days Until&#x27; Actually Counts","u":"/articles/countdown-conventions/","t":"Guide"},{"n":"Years, Months and Days Between Two Dates: A Worked Example","u":"/articles/date-difference-worked-example/","t":"Guide"},{"n":"Finding the Midpoint Between Two Dates","u":"/articles/date-midpoint-explained/","t":"Guide"},{"n":"Day-Count Milestones: 1,000 Days, 10,000 Days and the Dates They Land On","u":"/articles/day-count-milestones/","t":"Guide"},{"n":"Documenting an Age Calculation So It Can Be Rebuilt","u":"/articles/document-age-calculations/","t":"Guide"},{"n":"Documenting Employment Tenure and Anniversaries","u":"/articles/documenting-employment-tenure/","t":"Guide"},{"n":"Dog Years to Human Years: Why Size Changes Everything","u":"/articles/dog-years-human-years/","t":"Guide"},{"n":"Finding the Date You Reach Driving Age","u":"/articles/driving-age-eligibility-date/","t":"Guide"},{"n":"East Asian Age Reckoning: Kazoedoshi, Virtual Age and Modern Practice","u":"/articles/east-asian-age-reckoning/","t":"Guide"},{"n":"Estimating a Tree&#x27;s Age From Its Trunk","u":"/articles/estimate-tree-age/","t":"Guide"},{"n":"February 29 Birthdays: Anniversaries, Gaps and Legal Age","u":"/articles/february-29-birthday-timeline/","t":"Guide"},{"n":"Finding a Birth Year From a Known Age","u":"/articles/find-birth-year-from-age/","t":"Guide"},{"n":"Fiscal Quarters Explained: Why Q1 Is Not Always January","u":"/articles/fiscal-quarters-explained/","t":"Guide"},{"n":"Gestational Age vs Fetal Age: Two Weeks Apart by Definition","u":"/articles/gestational-age-vs-fetal-age/","t":"Guide"},{"n":"What a Golden Birthday Is, and When Yours Falls","u":"/articles/golden-birthday-explained/","t":"Guide"},{"n":"Estimating Age at Graduation","u":"/articles/graduation-age-calculation/","t":"Guide"},{"n":"Gregorian Leap Year Rules, and Why the Shortcut Fails","u":"/articles/gregorian-leap-year-rules/","t":"Guide"},{"n":"Half Birthdays: Six Months, Not 182 Days","u":"/articles/half-birthday-planning/","t":"Guide"},{"n":"Estimating How Many Heartbeats You Have Lived","u":"/articles/heartbeats-lived-estimate/","t":"Guide"},{"n":"Holiday Countdown Maths: Fixed Dates, Moving Dates and Observed Dates","u":"/articles/holiday-countdown-math/","t":"Guide"},{"n":"How Many Days Old Am I?","u":"/articles/how-many-days-old-am-i/","t":"Guide"},{"n":"Inclusive Date Counting: Ten Cases Where It Changes the Answer","u":"/articles/inclusive-date-counting-examples/","t":"Guide"},{"n":"Inclusive vs Exclusive Date Counting","u":"/articles/inclusive-exclusive-date-counting/","t":"Guide"},{"n":"ISO Week Numbering Explained: Week 1, Week-Years and the Dates They Cover","u":"/articles/iso-week-numbering-explained/","t":"Guide"},{"n":"IVF Due Dates: Why Transfer Date Gives a More Precise Estimate","u":"/articles/ivf-due-date-dating/","t":"Guide"},{"n":"Kindergarten Cutoff Dates: Reading the Rule Precisely","u":"/articles/kindergarten-cutoff-date/","t":"Guide"},{"n":"Korean Age Explained: Why Two Numbers Can Both Be Right","u":"/articles/korean-age-explained/","t":"Guide"},{"n":"Leap-Day Birthdays: Ageing Normally, Celebrating Awkwardly","u":"/articles/leap-day-birthdays-age-calculation/","t":"Guide"},{"n":"Life Path Numbers: The Method and Its Variations","u":"/articles/life-path-number-guide/","t":"Guide"},{"n":"Long Service Milestones: Continuous Service and the Dates That Break It","u":"/articles/long-service-leave-dates/","t":"Guide"},{"n":"Planning Milestone Birthdays at a Fixed Interval","u":"/articles/milestone-birthday-intervals/","t":"Guide"},{"n":"Planning a Milestone Birthday Date","u":"/articles/milestone-birthday-planning/","t":"Guide"},{"n":"Calculating a Notice Period End Date","u":"/articles/notice-period-calculation/","t":"Guide"},{"n":"Pearson-Style Chronological Age Calculation","u":"/articles/pearson-style-age-calculation/","t":"Guide"},{"n":"Your Age on Other Planets","u":"/articles/planetary-age-explained/","t":"Guide"},{"n":"Pregnancy Countdowns: Reading Days Remaining Alongside Gestational Age","u":"/articles/pregnancy-countdown-guide/","t":"Guide"},{"n":"How Due Dates Are Calculated \u2014 and What They Actually Predict","u":"/articles/pregnancy-due-date-calculation/","t":"Guide"},{"n":"Corrected Age: A Worked Example, Step by Step","u":"/articles/prematurity-age-calculation-example/","t":"Guide"},{"n":"What Actually Happens to the Dates You Type Into a Calculator","u":"/articles/privacy-browser-calculators/","t":"Guide"},{"n":"Probation Period End Dates and the Review That Should Precede Them","u":"/articles/probation-period-end-dates/","t":"Guide"},{"n":"Quarter Birthdays and Other Fractional Birthday Traditions","u":"/articles/quarter-birthday-explained/","t":"Guide"},{"n":"Quarter End Dates: Planning Backwards From a Hard Deadline","u":"/articles/quarter-end-dates-planning/","t":"Guide"},{"n":"Why Every Age You Record Needs Its Date","u":"/articles/record-reference-date-with-age/","t":"Guide"},{"n":"Recurring Date Schedules: Rules That Survive the Year","u":"/articles/recurring-date-schedules/","t":"Guide"},{"n":"Calculating a Retirement Date From a Target Age","u":"/articles/retirement-date-target-age/","t":"Guide"},{"n":"Reverse Due Date Calculation: Working Backwards From Gestational Age","u":"/articles/reverse-due-date-explained/","t":"Guide"},{"n":"Working Out School Starting Age","u":"/articles/school-starting-age-guide/","t":"Guide"},{"n":"Lifetime Screen Time Estimates and Why They Are So Sensitive","u":"/articles/screen-time-estimates/","t":"Guide"},{"n":"Measuring Semester Length in Weeks, Days and Teaching Time","u":"/articles/semester-length-planning/","t":"Guide"},{"n":"Sleep Debt Arithmetic: What the Number Can and Cannot Tell You","u":"/articles/sleep-debt-arithmetic/","t":"Guide"},{"n":"How Much of Your Life Have You Spent Asleep?","u":"/articles/sleep-time-lived-estimate/","t":"Guide"},{"n":"When Will You Be 10,000 Days Old?","u":"/articles/ten-thousand-days-old/","t":"Guide"},{"n":"Term Date Planning: Building a Repeating Academic Schedule","u":"/articles/term-date-planning/","t":"Guide"},{"n":"Time Zone Date Arithmetic: Why Two Clocks Disagree About Elapsed Time","u":"/articles/timezone-date-arithmetic/","t":"Guide"},{"n":"Tracking a Baby&#x27;s Age in Calendar Months","u":"/articles/track-baby-age-in-months/","t":"Guide"},{"n":"Tracking a Baby&#x27;s Age in Weeks","u":"/articles/track-baby-age-in-weeks/","t":"Guide"},{"n":"The Date You Reach Voting Age \u2014 and the Deadline That Matters More","u":"/articles/voting-age-date-guide/","t":"Guide"},{"n":"Weekday, Day of Year and Week Number: Three Different Labels","u":"/articles/weekday-and-day-of-year/","t":"Guide"},{"n":"Weeks Between Two Dates: Complete Weeks, Remainders and Part-Weeks","u":"/articles/weeks-between-dates-guide/","t":"Guide"},{"n":"When Does Corrected Age Stop Being Used?","u":"/articles/when-to-stop-corrected-age/","t":"Guide"},{"n":"Why Two Age Calculators Give Different Answers","u":"/articles/why-age-calculators-disagree/","t":"Guide"},{"n":"Why Month Length Changes the Answer","u":"/articles/why-month-length-changes-age-results/","t":"Guide"},{"n":"Work Anniversaries and Service Milestones","u":"/articles/work-anniversary-guide/","t":"Guide"},{"n":"Working Days in a Month: Why the Count Swings by Three","u":"/articles/working-days-in-month/","t":"Guide"},{"n":"Calculating Working Hours Between Two Dates","u":"/articles/working-hours-between-dates/","t":"Guide"},{"n":"Calculating Years of Service Accurately","u":"/articles/years-of-service-calculation/","t":"Guide"},{"n":"The Y;M;D Format for Age Records","u":"/articles/ymd-semicolon-format-guide/","t":"Guide"},{"n":"Western Zodiac Date Ranges and Why Sources Disagree","u":"/articles/zodiac-sign-date-ranges/","t":"Guide"},{"n":"1,000 Days Old Calculator","u":"/tools/1000-days-old-calculator/","t":"Calculator"},{"n":"10,000 Days Old Calculator","u":"/tools/10000-days-old-calculator/","t":"Calculator"},{"n":"20,000 Days Old Calculator","u":"/tools/20000-days-old-calculator/","t":"Calculator"},{"n":"Academic Year Age Calculator","u":"/tools/academic-year-age-calculator/","t":"Calculator"},{"n":"Add Days to Date Calculator","u":"/tools/add-days-to-date-calculator/","t":"Calculator"},{"n":"Add Months to Date Calculator","u":"/tools/add-months-to-date-calculator/","t":"Calculator"},{"n":"Add Weeks to Date Calculator","u":"/tools/add-weeks-to-date-calculator/","t":"Calculator"},{"n":"Add Years to Date Calculator","u":"/tools/add-years-to-date-calculator/","t":"Calculator"},{"n":"Adjusted Age Calculator","u":"/tools/adjusted-age-calculator/","t":"Calculator"},{"n":"Age at Event Calculator","u":"/tools/age-at-event-calculator/","t":"Calculator"},{"n":"Age at Marriage Calculator","u":"/tools/age-at-marriage-calculator/","t":"Calculator"},{"n":"Age Difference Calculator","u":"/tools/age-difference-calculator/","t":"Calculator"},{"n":"Age Gap Calculator","u":"/tools/age-gap-calculator/","t":"Calculator"},{"n":"Age in Days Calculator","u":"/tools/age-in-days-calculator/","t":"Calculator"},{"n":"Age in Hours Calculator","u":"/tools/age-in-hours-calculator/","t":"Calculator"},{"n":"Age in Minutes Calculator","u":"/tools/age-in-minutes-calculator/","t":"Calculator"},{"n":"Age in Months Calculator","u":"/tools/age-in-months-calculator/","t":"Calculator"},{"n":"Age in Quarters Calculator","u":"/tools/age-in-quarters-calculator/","t":"Calculator"},{"n":"Age in Seconds Calculator","u":"/tools/age-in-seconds-calculator/","t":"Calculator"},{"n":"Age in Specific Units Calculator","u":"/tools/age-in-specific-units-calculator/","t":"Calculator"},{"n":"Age in Weeks Calculator","u":"/tools/age-in-weeks-calculator/","t":"Calculator"},{"n":"Age at Last Birthday Calculator","u":"/tools/age-last-birthday-calculator/","t":"Calculator"},{"n":"Age Nearest Birthday Calculator","u":"/tools/age-nearest-birthday-calculator/","t":"Calculator"},{"n":"Age at Next Birthday Calculator","u":"/tools/age-next-birthday-calculator/","t":"Calculator"},{"n":"Age on a Date Calculator","u":"/tools/age-on-date-calculator/","t":"Calculator"},{"n":"Age Range Calculator","u":"/tools/age-range-calculator/","t":"Calculator"},{"n":"Age Timeline Calculator","u":"/tools/age-timeline-calculator/","t":"Calculator"},{"n":"Anniversary Milestone Calculator","u":"/tools/anniversary-milestone-calculator/","t":"Calculator"},{"n":"Assessment Age Calculator","u":"/tools/assessment-age-calculator/","t":"Calculator"},{"n":"Baby Age in Months Calculator","u":"/tools/baby-age-in-months-calculator/","t":"Calculator"},{"n":"Baby Age in Weeks Calculator","u":"/tools/baby-age-in-weeks/","t":"Calculator"},{"n":"Billion Seconds Calculator","u":"/tools/billion-seconds-calculator/","t":"Calculator"},{"n":"Biological Age Calculator","u":"/tools/biological-age-calculator/","t":"Calculator"},{"n":"Bird Age Calculator","u":"/tools/bird-age-calculator/","t":"Calculator"},{"n":"Birth Color Calculator","u":"/tools/birth-color-calculator/","t":"Calculator"},{"n":"Birth Flower Calculator","u":"/tools/birth-flower-calculator/","t":"Calculator"},{"n":"Birth Month Facts Calculator","u":"/tools/birth-month-facts-calculator/","t":"Calculator"},{"n":"Birth Season Calculator","u":"/tools/birth-season-calculator/","t":"Calculator"},{"n":"Birth Year From Age Calculator","u":"/tools/birth-year-from-age-calculator/","t":"Calculator"},{"n":"Birthday Age Calculator","u":"/tools/birthday-age-calculator/","t":"Calculator"},{"n":"Birthday Countdown Calculator","u":"/tools/birthday-countdown-calculator/","t":"Calculator"},{"n":"Birthday Moon Phase Estimator","u":"/tools/birthday-moon-phase-estimator/","t":"Calculator"},{"n":"Birthday Number Calculator","u":"/tools/birthday-number-calculator/","t":"Calculator"},{"n":"Birthday Weekday Calculator","u":"/tools/birthday-weekday-calculator/","t":"Calculator"},{"n":"Birthstone Calculator","u":"/tools/birthstone-calculator/","t":"Calculator"},{"n":"Body Age Calculator","u":"/tools/body-age-calculator/","t":"Calculator"},{"n":"Brain Age Calculator","u":"/tools/brain-age-calculator/","t":"Calculator"},{"n":"Breaths Lived Calculator","u":"/tools/breaths-lived-calculator/","t":"Calculator"},{"n":"BRIGANCE Age Calculator","u":"/tools/brigance-age-calculator/","t":"Calculator"},{"n":"Business Date Shift Calculator","u":"/tools/business-date-shift-calculator/","t":"Calculator"},{"n":"Business Days Calculator","u":"/tools/business-days-calculator/","t":"Calculator"},{"n":"Career Length Calculator","u":"/tools/career-length-calculator/","t":"Calculator"},{"n":"Cat Age Calculator","u":"/tools/cat-age-calculator/","t":"Calculator"},{"n":"Chinese Zodiac Calculator","u":"/tools/chinese-zodiac-calculator/","t":"Calculator"},{"n":"Chronological Age Calculator","u":"/tools/chronological-age-calculator/","t":"Calculator"},{"n":"Conception Date Calculator","u":"/tools/conception-date-calculator/","t":"Calculator"},{"n":"Corrected Age Calculator","u":"/tools/corrected-age-calculator/","t":"Calculator"},{"n":"Countdown to Any Date Calculator","u":"/tools/countdown-to-date-calculator/","t":"Calculator"},{"n":"Custom Day Milestone Calculator","u":"/tools/custom-day-milestone-calculator/","t":"Calculator"},{"n":"Custom Milestone Timeline","u":"/tools/custom-milestone-timeline/","t":"Calculator"},{"n":"Date Difference Calculator","u":"/tools/date-difference-calculator/","t":"Calculator"},{"n":"Date Midpoint Calculator","u":"/tools/date-midpoint-calculator/","t":"Calculator"},{"n":"Date of Birth Calculator","u":"/tools/date-of-birth-calculator/","t":"Calculator"},{"n":"Day of Week Born Calculator","u":"/tools/day-of-week-born-calculator/","t":"Calculator"},{"n":"Day of Year Calculator","u":"/tools/day-of-year-calculator/","t":"Calculator"},{"n":"Days Between Dates Calculator","u":"/tools/days-between-dates-calculator/","t":"Calculator"},{"n":"Days Left in Year Calculator","u":"/tools/days-left-in-year-calculator/","t":"Calculator"},{"n":"Days Until Christmas Calculator","u":"/tools/days-until-christmas-calculator/","t":"Calculator"},{"n":"Days Until New Year Calculator","u":"/tools/days-until-new-year-calculator/","t":"Calculator"},{"n":"Decimal Age Calculator","u":"/tools/decimal-age-calculator/","t":"Calculator"},{"n":"Developmental Age Difference Calculator","u":"/tools/developmental-age-difference-calculator/","t":"Calculator"},{"n":"Dog Age Calculator","u":"/tools/dog-age-calculator/","t":"Calculator"},{"n":"Driving Age Date Calculator","u":"/tools/driving-age-date-calculator/","t":"Calculator"},{"n":"Early Retirement Date Calculator","u":"/tools/early-retirement-date-calculator/","t":"Calculator"},{"n":"East Asian Age Calculator","u":"/tools/east-asian-age-calculator/","t":"Calculator"},{"n":"Employment Duration Calculator","u":"/tools/employment-duration-calculator/","t":"Calculator"},{"n":"Exact Age Calculator","u":"/tools/exact-age-calculator/","t":"Calculator"},{"n":"Exam Age Calculator","u":"/tools/exam-age-calculator/","t":"Calculator"},{"n":"Fetal Age Calculator","u":"/tools/fetal-age-calculator/","t":"Calculator"},{"n":"Fiscal Quarter Calculator","u":"/tools/fiscal-quarter-calculator/","t":"Calculator"},{"n":"Fish Age Calculator","u":"/tools/fish-age-calculator/","t":"Calculator"},{"n":"Fitness Age Calculator","u":"/tools/fitness-age-calculator/","t":"Calculator"},{"n":"Generation Calculator","u":"/tools/generation-calculator/","t":"Calculator"},{"n":"Gestational Age Calculator","u":"/tools/gestational-age-calculator/","t":"Calculator"},{"n":"Golden Birthday Calculator","u":"/tools/golden-birthday-calculator/","t":"Calculator"},{"n":"Graduation Age Calculator","u":"/tools/graduation-age-calculator/","t":"Calculator"},{"n":"Half Birthday Calculator","u":"/tools/half-birthday-calculator/","t":"Calculator"},{"n":"Health Age Calculator","u":"/tools/health-age-calculator/","t":"Calculator"},{"n":"Heart Age Calculator","u":"/tools/heart-age-calculator/","t":"Calculator"},{"n":"Heartbeats Lived Calculator","u":"/tools/heartbeats-lived-calculator/","t":"Calculator"},{"n":"Horse Age Calculator","u":"/tools/horse-age-calculator/","t":"Calculator"},{"n":"How Old Was I Calculator","u":"/tools/how-old-was-i-calculator/","t":"Calculator"},{"n":"How Old Will I Be Calculator","u":"/tools/how-old-will-i-be-calculator/","t":"Calculator"},{"n":"Inclusive Date Count Calculator","u":"/tools/inclusive-date-count-calculator/","t":"Calculator"},{"n":"ISO Week to Date Converter","u":"/tools/iso-week-to-date-calculator/","t":"Calculator"},{"n":"IVF Due Date Calculator","u":"/tools/ivf-due-date-calculator/","t":"Calculator"},{"n":"Kindergarten Eligibility Calculator","u":"/tools/kindergarten-eligibility-calculator/","t":"Calculator"},{"n":"Korean Age Calculator","u":"/tools/korean-age-calculator/","t":"Calculator"},{"n":"Leap-Day Birthday Timeline","u":"/tools/leap-day-birthday-timeline/","t":"Calculator"},{"n":"Leap Year Calculator","u":"/tools/leap-year-calculator/","t":"Calculator"},{"n":"Life Path Number Calculator","u":"/tools/life-path-number-calculator/","t":"Calculator"},{"n":"Life Progress Calculator","u":"/tools/life-progress-calculator/","t":"Calculator"},{"n":"Lifestyle Age Calculator","u":"/tools/lifestyle-age-calculator/","t":"Calculator"},{"n":"Long Service Leave Calculator","u":"/tools/long-service-leave-calculator/","t":"Calculator"},{"n":"Lunar Birthday Calculator","u":"/tools/lunar-birthday-calculator/","t":"Calculator"},{"n":"Metabolic Age Calculator","u":"/tools/metabolic-age-calculator/","t":"Calculator"},{"n":"Milestone Birthday Calculator","u":"/tools/milestone-birthday-calculator/","t":"Calculator"},{"n":"Million Minutes Calculator","u":"/tools/million-minutes-calculator/","t":"Calculator"},{"n":"Months Between Dates Calculator","u":"/tools/months-between-dates-calculator/","t":"Calculator"},{"n":"Next Birthday Calculator","u":"/tools/next-birthday-calculator/","t":"Calculator"},{"n":"Next Milestone Birthday Calculator","u":"/tools/next-milestone-birthday-calculator/","t":"Calculator"},{"n":"Notice Period End Date Calculator","u":"/tools/notice-period-end-date-calculator/","t":"Calculator"},{"n":"Pearson Age Calculator","u":"/tools/pearson-age-calculator/","t":"Calculator"},{"n":"Pension Age Date Calculator","u":"/tools/pension-age-date-calculator/","t":"Calculator"},{"n":"Planetary Age Calculator","u":"/tools/planetary-age-calculator/","t":"Calculator"},{"n":"Pregnancy Countdown Calculator","u":"/tools/pregnancy-countdown-calculator/","t":"Calculator"},{"n":"Pregnancy Due Date Calculator","u":"/tools/pregnancy-due-date-calculator/","t":"Calculator"},{"n":"Pregnancy Week Calculator","u":"/tools/pregnancy-week-calculator/","t":"Calculator"},{"n":"Premature Baby Age Calculator","u":"/tools/premature-baby-age-calculator/","t":"Calculator"},{"n":"Probation Period End Calculator","u":"/tools/probation-period-end-calculator/","t":"Calculator"},{"n":"Public Holidays Between Dates","u":"/tools/public-holidays-between-dates-calculator/","t":"Calculator"},{"n":"Quarter Birthday Calculator","u":"/tools/quarter-birthday-calculator/","t":"Calculator"},{"n":"Quarter End Date Calculator","u":"/tools/quarter-end-date-calculator/","t":"Calculator"},{"n":"Rabbit Age Calculator","u":"/tools/rabbit-age-calculator/","t":"Calculator"},{"n":"Recurring Date Calculator","u":"/tools/recurring-date-calculator/","t":"Calculator"},{"n":"Retirement Age Calculator","u":"/tools/retirement-age-calculator/","t":"Calculator"},{"n":"Reverse Age Calculator","u":"/tools/reverse-age-calculator/","t":"Calculator"},{"n":"Reverse Due Date Calculator","u":"/tools/reverse-due-date-calculator/","t":"Calculator"},{"n":"RMD Age Calculator","u":"/tools/rmd-age-calculator/","t":"Calculator"},{"n":"School Grade Age Calculator","u":"/tools/school-grade-age-calculator/","t":"Calculator"},{"n":"School Starting Age Calculator","u":"/tools/school-starting-age-calculator/","t":"Calculator"},{"n":"Screen Time Lived Calculator","u":"/tools/screen-time-lived-calculator/","t":"Calculator"},{"n":"Semester Length Calculator","u":"/tools/semester-length-calculator/","t":"Calculator"},{"n":"Service Milestone Calculator","u":"/tools/service-milestone-calculator/","t":"Calculator"},{"n":"Sleep Debt Calculator","u":"/tools/sleep-debt-calculator/","t":"Calculator"},{"n":"Sleep Time Lived Calculator","u":"/tools/sleep-time-lived-calculator/","t":"Calculator"},{"n":"Sports Eligibility Age Calculator","u":"/tools/sports-eligibility-age-calculator/","t":"Calculator"},{"n":"Subtract Days From Date Calculator","u":"/tools/subtract-days-from-date-calculator/","t":"Calculator"},{"n":"Subtract Months From Date Calculator","u":"/tools/subtract-months-from-date-calculator/","t":"Calculator"},{"n":"Subtract Weeks From Date Calculator","u":"/tools/subtract-weeks-from-date-calculator/","t":"Calculator"},{"n":"Subtract Years From Date Calculator","u":"/tools/subtract-years-from-date-calculator/","t":"Calculator"},{"n":"Term Date Planner","u":"/tools/term-date-planner-calculator/","t":"Calculator"},{"n":"Test Age Calculator","u":"/tools/test-age-calculator/","t":"Calculator"},{"n":"Time Between Dates Calculator","u":"/tools/time-between-dates/","t":"Calculator"},{"n":"Time Zone Date Difference Calculator","u":"/tools/timezone-date-difference-calculator/","t":"Calculator"},{"n":"Tree Age Calculator","u":"/tools/tree-age-calculator/","t":"Calculator"},{"n":"Trimester Calculator","u":"/tools/trimester-calculator/","t":"Calculator"},{"n":"Turtle Age Calculator","u":"/tools/turtle-age-calculator/","t":"Calculator"},{"n":"Voting Age Date Calculator","u":"/tools/voting-age-date-calculator/","t":"Calculator"},{"n":"Week Number Calculator","u":"/tools/week-number-calculator/","t":"Calculator"},{"n":"Weekday Calculator","u":"/tools/weekday-calculator/","t":"Calculator"},{"n":"Weeks Between Dates Calculator","u":"/tools/weeks-between-dates-calculator/","t":"Calculator"},{"n":"Work Anniversary Calculator","u":"/tools/work-anniversary-calculator/","t":"Calculator"},{"n":"Work Anniversary Countdown","u":"/tools/work-anniversary-countdown/","t":"Calculator"},{"n":"Workdays Between Dates Calculator","u":"/tools/workdays-between-dates-calculator/","t":"Calculator"},{"n":"Working Days in Month Calculator","u":"/tools/working-days-in-month-calculator/","t":"Calculator"},{"n":"Working Hours Between Dates Calculator","u":"/tools/working-hours-between-dates-calculator/","t":"Calculator"},{"n":"Years Between Dates Calculator","u":"/tools/years-between-dates-calculator/","t":"Calculator"},{"n":"Years of Service Calculator","u":"/tools/years-of-service-calculator/","t":"Calculator"},{"n":"Zodiac Sign Calculator","u":"/tools/zodiac-sign-calculator/","t":"Calculator"},{"n":"How Old Am I","u":"/how-old-am-i/","t":"Calculator"}];
 
 function initNavigation(){
  const navDropdowns=$$('details.nav-dropdown');
  const desktopHover=()=>matchMedia('(min-width:901px) and (hover:hover)').matches;
+ 
  navDropdowns.forEach(dropdown=>{
-  dropdown.addEventListener('toggle',()=>{if(dropdown.open)navDropdowns.forEach(other=>{if(other!==dropdown)other.open=false})});
-  dropdown.addEventListener('keydown',event=>{if(event.key==='Escape'){dropdown.open=false;dropdown.querySelector('summary')?.focus()}});
-  dropdown.addEventListener('pointerenter',()=>{if(desktopHover())dropdown.open=true});
-  dropdown.addEventListener('pointerleave',()=>{if(desktopHover())dropdown.open=false});
+  let closeTimeout = null;
+  dropdown.addEventListener('toggle',()=>{
+   if(dropdown.open)navDropdowns.forEach(other=>{if(other!==dropdown)other.open=false});
+  });
+  dropdown.addEventListener('keydown',event=>{
+   if(event.key==='Escape'){dropdown.open=false;dropdown.querySelector('summary')?.focus()}
+  });
+  dropdown.addEventListener('pointerenter',()=>{
+   if(closeTimeout){clearTimeout(closeTimeout);closeTimeout=null;}
+   if(desktopHover())dropdown.open=true;
+  });
+  dropdown.addEventListener('pointerleave',()=>{
+   if(closeTimeout){clearTimeout(closeTimeout);}
+   if(desktopHover()){
+    closeTimeout=setTimeout(()=>{dropdown.open=false;},180);
+   }
+  });
  });
- document.addEventListener('click',event=>{if(!event.target.closest('.nav-dropdown'))navDropdowns.forEach(dropdown=>dropdown.open=false)});
+ document.addEventListener('click',event=>{
+  if(!event.target.closest('.nav-dropdown'))navDropdowns.forEach(dropdown=>dropdown.open=false);
+ });
  const menuBtn=$('.menu-btn'),navRoot=$('.nav');
  menuBtn?.addEventListener('click',()=>{const open=navRoot.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open))});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&navRoot?.classList.contains('open')){navRoot.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false');menuBtn?.focus()}});
  $$('.nav-links a').forEach(a=>a.addEventListener('click',()=>{navRoot?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false')}));
+ 
+ initNavSearch();
 }
+
+function initNavSearch(){
+ const navLinks = $('#primary-nav');
+ if(!navLinks || $('#navSearchWrap')) return;
+ 
+ const searchWrap = document.createElement('div');
+ searchWrap.className = 'nav-search-wrap';
+ searchWrap.id = 'navSearchWrap';
+ searchWrap.innerHTML = `
+  <div class="nav-search-box">
+   <svg class="nav-search-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"/></svg>
+   <input type="search" id="navSearchInput" class="nav-search-input" placeholder="Search calculators..." aria-label="Search calculators and guides" autocomplete="off">
+  </div>
+  <div id="navSearchResults" class="nav-search-dropdown" hidden></div>
+ `;
+ 
+ // Append to the right end of the navbar
+ navLinks.appendChild(searchWrap);
+ 
+ const input = $('#navSearchInput');
+ const results = $('#navSearchResults');
+ if(!input || !results) return;
+ 
+ let activeIdx = -1;
+ 
+ function renderResults(query){
+  const q = query.trim().toLowerCase();
+  if(!q){ results.hidden = true; results.innerHTML = ''; return; }
+  
+  const words = q.split(/\s+/);
+  const matches = SITE_SEARCH_INDEX.filter(item=>{
+   const text = (item.n + ' ' + item.t).toLowerCase();
+   return words.every(w => text.includes(w));
+  });
+  
+  if(matches.length === 0){
+   results.innerHTML = '<div class="nav-search-empty">No calculators found</div>';
+   results.hidden = false;
+   return;
+  }
+  
+  const tools = matches.filter(m=>m.t==='Calculator').slice(0, 6);
+  const guides = matches.filter(m=>m.t==='Guide').slice(0, 4);
+  
+  let html = '';
+  if(tools.length > 0){
+   html += '<div class="nav-search-group"><div class="nav-search-group-title">Calculators</div>';
+   tools.forEach(t=>{
+    html += '<a class="nav-search-item" href="' + t.u + '"><span>' + t.n + '</span><small>Calculator</small></a>';
+   });
+   html += '</div>';
+  }
+  if(guides.length > 0){
+   html += '<div class="nav-search-group"><div class="nav-search-group-title">Guides</div>';
+   guides.forEach(g=>{
+    html += '<a class="nav-search-item" href="' + g.u + '"><span>' + g.n + '</span><small>Guide</small></a>';
+   });
+   html += '</div>';
+  }
+  
+  results.innerHTML = html;
+  results.hidden = false;
+  activeIdx = -1;
+ }
+ 
+ input.addEventListener('input', e=>renderResults(e.target.value));
+ input.addEventListener('focus', e=>{ if(e.target.value.trim()) renderResults(e.target.value); });
+ 
+ document.addEventListener('click', e=>{
+  if(!e.target.closest('#navSearchWrap')){
+   results.hidden = true;
+  }
+ });
+ 
+ input.addEventListener('keydown', e=>{
+  const items = $$('.nav-search-item', results);
+  if(!items.length || results.hidden) return;
+  
+  if(e.key === 'ArrowDown'){
+   e.preventDefault();
+   activeIdx = (activeIdx + 1) % items.length;
+   items.forEach((it, i)=>it.classList.toggle('is-active', i === activeIdx));
+   items[activeIdx]?.scrollIntoView({block: 'nearest'});
+  } else if(e.key === 'ArrowUp'){
+   e.preventDefault();
+   activeIdx = (activeIdx - 1 + items.length) % items.length;
+   items.forEach((it, i)=>it.classList.toggle('is-active', i === activeIdx));
+   items[activeIdx]?.scrollIntoView({block: 'nearest'});
+  } else if(e.key === 'Enter'){
+   if(activeIdx >= 0 && items[activeIdx]){
+    e.preventDefault();
+    items[activeIdx].click();
+   }
+  } else if(e.key === 'Escape'){
+   results.hidden = true;
+  }
+ });
+}
+
 function initLiveSections(){
  const sections=$$('.visual-section,.category-block,.featured-tools,.why-strip,.category-directory-intro,.home-goals,.home-proof,.article-feature,.article-layout,.section');
  sections.forEach(section=>{
