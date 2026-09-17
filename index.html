@@ -2,1513 +2,1165 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#075433"><link rel="canonical" href="https://www.agecalculatorlab.com/"><meta name="description" content="Calculate your exact age from date of birth in years, months and days. See total days, weeks and your next birthday—free, private and instant."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="assets/style.css?v=20260824e"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.agecalculatorlab.com/#org","name":"Age Calculator Lab","url":"https://www.agecalculatorlab.com/","logo":{"@type":"ImageObject","url":"https://www.agecalculatorlab.com/assets/age-calculator-lab-logo.png","width":512,"height":512},"founder":{"@type":"Person","name":"Navjeet Kamboj","url":"https://www.agecalculatorlab.com/author/navjeet-kamboj/"},"sameAs":[],"description":"Age Calculator Lab provides 161 focused browser-based calculators and 100 practical guides for exact age, date arithmetic, pregnancy milestones, school readiness and professional planning."},{"@type":"WebSite","@id":"https://www.agecalculatorlab.com/#site","url":"https://www.agecalculatorlab.com/","name":"Age Calculator Lab","description":"161 focused age and date calculators with documented methodology. Free, private, browser-based.","publisher":{"@id":"https://www.agecalculatorlab.com/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.agecalculatorlab.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":["SoftwareApplication","WebApplication"],"@id":"https://www.agecalculatorlab.com/#age-calculator","url":"https://www.agecalculatorlab.com/","name":"Age Calculator — Exact Age in Years, Months and Days","alternateName":["Exact Age Calculator","Chronological Age Calculator","Birthday Age Calculator"],"description":"Calculate your exact age from a date of birth to any reference date. Returns completed years, calendar months, and residual days using strict calendar-anniversary arithmetic. Also shows total days, total weeks, and next birthday date.","applicationCategory":"CalculatorApplication","applicationSubCategory":"Date Calculator","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"},"featureList":["Exact age in completed years, calendar months and days","Total days and whole weeks lived","Next birthday date and countdown","Age on any past or future date","Age difference between two people","Leap-year and month-length aware arithmetic","Private: no data sent to server"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"2847","bestRating":"5","worstRating":"1"},"isPartOf":{"@id":"https://www.agecalculatorlab.com/#site"},"publisher":{"@id":"https://www.agecalculatorlab.com/#org"}},{"@type":"FAQPage","@id":"https://www.agecalculatorlab.com/#faq","mainEntity":[{"@type":"Question","name":"How is exact age calculated with leap years?","acceptedAnswer":{"@type":"Answer","text":"Leap years are handled through calendar-anniversary arithmetic. If born on February 29, the birthday anniversary falls on February 28 in non-leap years — the calendar-safe rule used in most legal and clinical contexts. All other calculations use actual month lengths: February has 28 or 29 days depending on the year, never a fixed 30-day average."}},{"@type":"Question","name":"Why do age calculators show different days?","acceptedAnswer":{"@type":"Answer","text":"The most common cause is a different month-length convention. Calculators using 30-day or 30.4375-day months will drift from those using actual month lengths. Other causes: different leap-day anniversary rules (Feb 28 vs Mar 1), inclusive versus exclusive reference-date counting, and timezone handling near midnight."}},{"@type":"Question","name":"What is Korean age and how does it differ from international age?","acceptedAnswer":{"@type":"Answer","text":"Korean age (traditional East Asian reckoning) starts at 1 at birth and adds 1 on every January 1st. International age starts at 0 and increments on the actual birthday anniversary. South Korea moved to international age for legal purposes in 2023."}},{"@type":"Question","name":"What is the difference between chronological age and biological age?","acceptedAnswer":{"@type":"Answer","text":"Chronological age is the calendar interval from birth date to today. Biological age estimates how old your body functions relative to population norms. Chronological age is precise; biological age is an approximation based on health biomarkers."}},{"@type":"Question","name":"Can I calculate my age in days, weeks, or months only?","acceptedAnswer":{"@type":"Answer","text":"Yes. The main calculator shows total days as a secondary output. For single-unit results — total days, weeks, or months — use the dedicated Date Lab tools: Days between dates, Weeks between dates, and Months between dates."}},{"@type":"Question","name":"How do I calculate age for school or legal cutoff purposes?","acceptedAnswer":{"@type":"Answer","text":"Switch the calculator to 'Age on a date' and enter the specific cutoff date (e.g., September 1 of the academic year). The result shows the exact completed years, months, and days as of that cutoff date."}},{"@type":"Question","name":"Is the date of birth data stored or shared?","acceptedAnswer":{"@type":"Answer","text":"No. Every calculation runs entirely in your browser. Date values are processed in memory and never transmitted to a server. No account is required, no cookies store your inputs, and no analytics receive your date of birth."}},{"@type":"Question","name":"What is gestational age and how is it different from chronological age?","acceptedAnswer":{"@type":"Answer","text":"Gestational age measures pregnancy duration in weeks from the first day of the last menstrual period (LMP). Chronological age begins at birth. For premature babies, corrected age (chronological age minus weeks of prematurity) is used for developmental assessment."}}]}]}</script></head><body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="container nav"><a class="brand brand-image-link" href="./" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="./assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="144" height="48"></a><button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button><nav class="nav-links" id="primary-nav" aria-label="Primary navigation"><details class="nav-dropdown nav-dropdown-categories"><summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega"><div class="nav-mega-head"><div><small>161 focused tools</small><strong>Main calculator categories</strong></div><a href="./categories/">View category directory →</a></div><div class="nav-category-grid"><a href="./categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a><a href="./categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a><a href="./categories/biological-health/"><span>Biological &amp; Health</span><small>8 tools</small></a><a href="./categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a><a href="./categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a><a href="./categories/professional-education/"><span>Professional &amp; Education</span><small>15 tools</small></a><a href="./categories/finance-professional/"><span>Finance &amp; Professional</span><small>13 tools</small></a><a href="./categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a><a href="./categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a><a href="./categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>12 tools</small></a><a href="./categories/date-lab/"><span>Date Lab</span><small>34 tools</small></a></div><div class="nav-quick-row"><span>Popular</span><a href="./">Age Calculator</a><a href="./tools/date-difference-calculator/">Date Difference</a><a href="./tools/corrected-age-calculator/">Corrected Age</a><a href="./tools/countdown-to-date-calculator/">Countdown</a></div></div></details><details class="nav-dropdown nav-dropdown-guides"><summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-guides"><div class="nav-mega-head"><div><small>100 practical guides</small><strong>Learn the method</strong></div><a href="./articles/">Browse all guides →</a></div><div class="nav-guide-grid"><a href="./articles/calculate-exact-age-years-months-days/"><small>Universal Chronology</small><span>How to Calculate Exact Age in Years, Months and Days</span></a><a href="./articles/chronological-age-explained/"><small>Universal Chronology</small><span>Chronological Age: What It Measures and What It Doesn&#x27;t</span></a><a href="./articles/calendar-age-vs-decimal-age/"><small>Universal Chronology</small><span>Calendar Age vs Decimal Age: Which One Does Your Form Want?</span></a><a href="./articles/calculate-age-on-past-date/"><small>Universal Chronology</small><span>Working Out Your Age on a Past Date</span></a><a href="./articles/calculate-age-on-future-date/"><small>Universal Chronology</small><span>How Old Will I Be on a Future Date?</span></a><a href="./articles/leap-day-birthdays-age-calculation/"><small>Universal Chronology</small><span>Leap-Day Birthdays: Ageing Normally, Celebrating Awkwardly</span></a></div></div></details><a href="./categories/">Categories</a><a href="./methodology/">Methodology</a><a class="nav-cta" href="#calculator">Open Age Calculator</a></nav></div></header><main id="main-content">
 
-<!-- AGE CALCULATOR LAB: FIRST HOMEPAGE SECTION
-
-     Self-contained section. No external libraries or assets required.
-
-     All classes and IDs use the "aclx" prefix to reduce theme conflicts. -->
-
-
-
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     AGE CALCULATOR LAB — HERO SECTION & PRIMARY AGE CALCULATOR
+     Upgraded with dual-input card, auto-calc, quick presets, 
+     mode toggle chips (Standard, Clinical, Units), big bold typographic counters,
+     celebratory milestone confetti, and 1-click clipboard copy.
+     ══════════════════════════════════════════════════════════════════════════ -->
 <style>
-
   .aclx-hero {
-
     --aclx-ink: #102923;
-
     --aclx-muted: #5d7069;
-
     --aclx-deep: #042f2a;
-
     --aclx-deep-2: #06483e;
-
     --aclx-green: #08745a;
-
     --aclx-mint: #dff5ec;
-
+    --aclx-mint-soft: #f1faf6;
     --aclx-paper: #f8fcfa;
-
     --aclx-white: #ffffff;
-
     --aclx-line: #d4e2dd;
-
     --aclx-coral: #ff754d;
-
     --aclx-coral-dark: #ad3d21;
-
     --aclx-gold: #f5cb6d;
-
     --aclx-danger: #b42318;
-
     position: relative;
-
     isolation: isolate;
-
     overflow: hidden;
-
     color: var(--aclx-white);
-
     background:
-
-      radial-gradient(circle at 12% 14%, rgba(32, 166, 123, .24), transparent 34%),
-
-      radial-gradient(circle at 91% 82%, rgba(255, 117, 77, .14), transparent 30%),
-
+      radial-gradient(circle at 12% 14%, rgba(32, 166, 123, .28), transparent 38%),
+      radial-gradient(circle at 91% 82%, rgba(255, 117, 77, .16), transparent 32%),
       var(--aclx-deep);
-
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
   }
-
-
 
   .aclx-hero,
-
   .aclx-hero * { box-sizing: border-box; }
 
-
-
   .aclx-hero::before {
-
     content: "";
-
     position: absolute;
-
     inset: 0;
-
     z-index: -1;
-
-    opacity: .14;
-
+    opacity: .12;
     background-image:
-
       linear-gradient(rgba(255,255,255,.14) 1px, transparent 1px),
-
       linear-gradient(90deg, rgba(255,255,255,.14) 1px, transparent 1px);
-
     background-size: 48px 48px;
-
-    mask-image: linear-gradient(90deg, #000, transparent 78%);
-
+    mask-image: linear-gradient(90deg, #000, transparent 80%);
   }
-
-
 
   .aclx-wrap {
-
     width: min(calc(100% - 40px), 1200px);
-
-    min-height: 720px;
-
+    min-height: 700px;
     display: grid;
-
     grid-template-columns: minmax(0, .88fr) minmax(520px, 1.12fr);
-
     align-items: center;
-
-    gap: clamp(36px, 5vw, 72px);
-
+    gap: clamp(32px, 5vw, 68px);
     margin-inline: auto;
-
-    padding-block: clamp(48px, 6vw, 78px);
-
+    padding-block: clamp(48px, 5vw, 76px);
   }
 
+  @media (max-width: 990px) {
+    .aclx-wrap {
+      grid-template-columns: 1fr;
+      min-height: auto;
+      gap: 36px;
+    }
+  }
 
-
-  .aclx-copy { max-width: 600px; }
-
-
+  .aclx-copy { max-width: 580px; }
 
   .aclx-eyebrow {
-
     display: inline-flex;
-
     align-items: center;
-
     gap: 8px;
-
     margin: 0 0 16px;
-
     color: #a9ead1;
-
-    font-size: .76rem;
-
-    font-weight: 850;
-
-    letter-spacing: .13em;
-
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .12em;
     line-height: 1.3;
-
     text-transform: uppercase;
-
   }
-
-
 
   .aclx-eyebrow::before {
-
     content: "";
-
     width: 8px;
-
     height: 8px;
-
     border-radius: 50%;
-
     background: var(--aclx-coral);
-
-    box-shadow: 0 0 0 5px rgba(255,117,77,.13);
-
+    box-shadow: 0 0 0 5px rgba(255,117,77,.16);
   }
-
-
 
   .aclx-copy h1 {
     color: #ffffff !important;
     font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-
-    max-width: 650px;
-
-    margin: 0 0 22px;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(2.75rem, 5.7vw, 5.25rem);
-
-    font-weight: 700;
-
-    line-height: .98;
-
-    letter-spacing: -.055em;
-
+    max-width: 620px;
+    margin: 0 0 20px;
+    font-size: clamp(2.4rem, 4.8vw, 3.9rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.06 !important;
+    letter-spacing: -.035em !important;
   }
-
-
 
   .aclx-copy h1 span {
-
     color: #ff9a77 !important;
-
     font-style: italic;
-
     font-weight: 600;
-
+    display: block;
   }
-
-
 
   .aclx-lede {
-
-    max-width: 570px;
-
-    margin: 0;
-
-    color: #d3e8e1;
-
-    font-size: clamp(1rem, 1.45vw, 1.18rem);
-
-    line-height: 1.68;
-
+    margin: 0 0 26px;
+    color: rgba(255, 255, 255, .88);
+    font-size: clamp(1.02rem, 1.6vw, 1.15rem);
+    line-height: 1.65;
   }
 
-
-
-  .aclx-proof {
-
+  .aclx-trust-pills {
     display: flex;
-
     flex-wrap: wrap;
-
-    gap: 9px;
-
-    margin: 26px 0 30px;
-
-    padding: 0;
-
-    list-style: none;
-
+    gap: 10px;
+    margin-bottom: 28px;
   }
 
-
-
-  .aclx-proof li {
-
+  .aclx-trust-pill {
     display: inline-flex;
-
     align-items: center;
-
-    gap: 7px;
-
-    padding: 7px 11px;
-
-    border: 1px solid rgba(255,255,255,.17);
-
+    gap: 8px;
+    padding: 7px 13px;
+    border: 1px solid rgba(255, 255, 255, .16);
     border-radius: 999px;
-
-    color: #eaf7f2;
-
-    background: rgba(255,255,255,.07);
-
-    font-size: .78rem;
-
-    font-weight: 760;
-
+    color: var(--aclx-white);
+    background: rgba(255, 255, 255, .08);
+    font-size: .8rem;
+    font-weight: 650;
+    backdrop-filter: blur(8px);
   }
 
-
-
-  .aclx-proof li::before {
-
+  .aclx-trust-pill::before {
     content: "✓";
-
-    color: #8fe3c3;
-
+    color: var(--aclx-mint);
     font-weight: 900;
-
   }
 
-
-
-  .aclx-method-note {
-
-    max-width: 540px;
-
-    display: grid;
-
-    grid-template-columns: auto 1fr;
-
-    gap: 13px;
-
-    align-items: center;
-
-    padding-top: 21px;
-
-    border-top: 1px solid rgba(255,255,255,.16);
-
-  }
-
-
-
-  .aclx-method-mark {
-
-    width: 43px;
-
-    height: 43px;
-
-    display: grid;
-
-    place-items: center;
-
-    border: 1px solid rgba(255,255,255,.16);
-
-    border-radius: 12px;
-
-    color: var(--aclx-gold);
-
-    background: rgba(255,255,255,.06);
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: .84rem;
-
-    font-weight: 800;
-
-  }
-
-
-
-  .aclx-method-note strong,
-
-  .aclx-method-note span { display: block; }
-
-
-
-  .aclx-method-note strong { color: #f3fbf8; font-size: .86rem; }
-
-  .aclx-method-note span { margin-top: 2px; color: #9fc0b6; font-size: .76rem; line-height: 1.45; }
-
-
-
+  /* ── Calculator Card ──────────────────────────────────────────────────────── */
   .aclx-card {
-
+    position: relative;
     overflow: hidden;
-
     border: 1px solid rgba(255,255,255,.38);
-
-    border-radius: 28px;
-
+    border-radius: 26px;
     color: var(--aclx-ink);
-
     background: var(--aclx-white);
-
     box-shadow: 0 30px 80px rgba(0,25,22,.28);
-
   }
-
-
 
   .aclx-card-head {
-
-    padding: 23px 26px 19px;
-
+    padding: 20px 24px 16px;
     border-top: 5px solid var(--aclx-coral);
-
     border-bottom: 1px solid var(--aclx-line);
-
     background: linear-gradient(135deg, #f9fffc, #edf9f4);
-
   }
-
-
 
   .aclx-card-kicker {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 12px;
-
-    margin-bottom: 7px;
-
+    margin-bottom: 6px;
   }
-
-
 
   .aclx-card-kicker > span:first-child {
-
     color: var(--aclx-coral-dark);
-
-    font-size: .7rem;
-
+    font-size: .72rem;
     font-weight: 900;
-
     letter-spacing: .12em;
-
     text-transform: uppercase;
-
   }
-
-
 
   .aclx-private {
-
     display: inline-flex;
-
     align-items: center;
-
     gap: 5px;
-
     color: var(--aclx-green);
-
-    font-size: .72rem;
-
+    font-size: .74rem;
     font-weight: 800;
-
   }
-
-
 
   .aclx-private svg { width: 14px; height: 14px; }
 
-
-
   .aclx-card-head h2 {
-
-    margin: 0 0 4px;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(1.55rem, 2.6vw, 2rem);
-
-    line-height: 1.18;
-
-    letter-spacing: -.025em;
-
+    margin: 0 0 3px;
+    font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+    font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+    line-height: 1.2;
+    letter-spacing: -.02em;
+    color: var(--aclx-ink);
   }
-
-
 
   .aclx-card-head p {
-
     margin: 0;
-
     color: var(--aclx-muted);
-
-    font-size: .86rem;
-
-    line-height: 1.5;
-
+    font-size: .84rem;
+    line-height: 1.45;
   }
 
+  .aclx-form { padding: 18px 24px 0; }
 
-
-  .aclx-form { padding: 19px 26px 0; }
-
-
-
+  /* Modes radio switcher */
   .aclx-modes {
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
-    gap: 5px;
-
-    margin: 0 0 17px;
-
+    gap: 6px;
+    margin: 0 0 16px;
     padding: 5px;
-
     border: 0;
-
     border-radius: 12px;
-
     background: #edf4f1;
-
   }
-
-
-
-  .aclx-sr-only {
-
-    position: absolute !important;
-
-    width: 1px !important;
-
-    height: 1px !important;
-
-    padding: 0 !important;
-
-    margin: -1px !important;
-
-    overflow: hidden !important;
-
-    clip: rect(0, 0, 0, 0) !important;
-
-    white-space: nowrap !important;
-
-    border: 0 !important;
-
-  }
-
-
 
   .aclx-mode { position: relative; cursor: pointer; }
-
   .aclx-mode input { position: absolute; opacity: 0; pointer-events: none; }
 
-
-
   .aclx-mode span {
-
-    min-height: 39px;
-
+    min-height: 38px;
     display: grid;
-
     place-items: center;
-
-    padding: 7px 8px;
-
+    padding: 6px 8px;
     border-radius: 9px;
-
     color: #526760;
-
-    font-size: .75rem;
-
-    font-weight: 850;
-
+    font-size: .76rem;
+    font-weight: 800;
     text-align: center;
-
-    transition: color .18s ease, background .18s ease, box-shadow .18s ease;
-
+    transition: all .16s ease;
   }
-
-
 
   .aclx-mode input:checked + span {
-
     color: var(--aclx-white);
-
     background: var(--aclx-deep-2);
-
-    box-shadow: 0 5px 13px rgba(4,72,62,.17);
-
+    box-shadow: 0 4px 12px rgba(4,72,62,.18);
   }
 
-
-
-  .aclx-mode input:focus-visible + span {
-
-    outline: 3px solid var(--aclx-gold);
-
-    outline-offset: 2px;
-
-  }
-
-
-
+  /* Dual Input Grid */
   .aclx-fields {
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
-    gap: 13px;
-
+    gap: 14px;
   }
 
-
+  @media (max-width: 580px) {
+    .aclx-fields { grid-template-columns: 1fr; }
+  }
 
   .aclx-field label {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 8px;
-
     margin-bottom: 6px;
-
     color: #304b43;
-
-    font-size: .8rem;
-
-    font-weight: 850;
-
+    font-size: .82rem;
+    font-weight: 800;
   }
-
-
-
-  .aclx-today {
-
-    padding: 0;
-
-    border: 0;
-
-    color: var(--aclx-green);
-
-    background: transparent;
-
-    font-size: .7rem;
-
-    font-weight: 850;
-
-    text-decoration: underline;
-
-    text-underline-offset: 3px;
-
-    cursor: pointer;
-
-  }
-
-
 
   .aclx-field input {
-
     width: 100%;
-
-    min-height: 50px;
-
-    padding: 10px 12px;
-
-    border: 1px solid #b8cbc4;
-
+    min-height: 48px;
+    padding: 8px 12px;
+    border: 1.5px solid #b8cbc4;
     border-radius: 11px;
-
     color: var(--aclx-ink);
-
     background: var(--aclx-white);
-
     font: inherit;
-
-    font-size: .9rem;
-
+    font-size: .92rem;
+    font-variant-numeric: tabular-nums;
+    transition: all .16s ease;
   }
-
-
-
-  .aclx-field input:hover { border-color: #8da99f; }
-
-
 
   .aclx-field input:focus {
-
     border-color: var(--aclx-green);
-
-    outline: 3px solid rgba(8,116,90,.13);
-
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(8,116,90,.14);
   }
 
-
-
-  .aclx-field input[aria-invalid="true"] {
-
-    border-color: var(--aclx-danger);
-
-    background: #fff4f2;
-
+  /* Quick Preset Chips */
+  .aclx-presets-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
   }
 
+  .aclx-presets-label {
+    font-size: .72rem;
+    font-weight: 800;
+    color: var(--aclx-muted);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-right: 4px;
+  }
 
+  .aclx-preset-btn {
+    padding: 4px 10px;
+    border: 1px solid #c9ded6;
+    border-radius: 8px;
+    background: #f4faf7;
+    color: #264b3f;
+    font: inherit;
+    font-size: .74rem;
+    font-weight: 750;
+    cursor: pointer;
+    transition: all .14s ease;
+  }
+
+  .aclx-preset-btn:hover {
+    border-color: var(--aclx-green);
+    color: #ffffff;
+    background: var(--aclx-green);
+  }
 
   .aclx-hidden { display: none !important; }
 
-
-
   .aclx-error {
-
-    min-height: 21px;
-
-    margin: 7px 0 0;
-
+    min-height: 18px;
+    margin: 8px 0 0;
     color: var(--aclx-danger);
-
     font-size: .76rem;
-
-    font-weight: 760;
-
+    font-weight: 750;
   }
 
-
-
-  .aclx-actions {
-
-    display: grid;
-
-    grid-template-columns: 1fr auto;
-
-    gap: 9px;
-
-    margin: 5px 0 17px;
-
-  }
-
-
-
-  .aclx-submit,
-
-  .aclx-reset,
-
-  .aclx-copy {
-
-    min-height: 48px;
-
-    border-radius: 11px;
-
-    font: inherit;
-
-    font-weight: 850;
-
-    cursor: pointer;
-
-    transition: transform .18s ease, background .18s ease, border-color .18s ease;
-
-  }
-
-
-
-  .aclx-submit {
-
-    border: 1px solid var(--aclx-green);
-
-    color: var(--aclx-white);
-
-    background: var(--aclx-green);
-
-    box-shadow: 0 9px 20px rgba(8,116,90,.2);
-
-  }
-
-
-
-  .aclx-submit:hover { background: var(--aclx-deep-2); transform: translateY(-1px); }
-
-
-
-  .aclx-reset {
-
-    padding-inline: 17px;
-
-    border: 1px solid #b8cbc4;
-
-    color: #405850;
-
-    background: var(--aclx-white);
-
-  }
-
-
-
-  .aclx-reset:hover { border-color: var(--aclx-green); color: var(--aclx-deep); }
-
-
-
-  .aclx-result {
-
-    min-height: 238px;
-
-    margin: 0 26px 22px;
-
-    padding: 18px;
-
-    border-radius: 19px;
-
-    color: var(--aclx-white);
-
+  /* ── Result Panel ─────────────────────────────────────────────────────────── */
+  .aclx-result-wrap {
+    margin: 16px 24px 22px;
+    padding: 20px;
+    border-radius: 18px;
     background: linear-gradient(145deg, var(--aclx-deep), #075a4b);
-
+    color: var(--aclx-white);
+    position: relative;
+    overflow: hidden;
   }
 
-
-
-  .aclx-result-empty {
-
-    min-height: 202px;
-
-    display: grid;
-
-    align-content: center;
-
-    justify-items: center;
-
-    text-align: center;
-
-  }
-
-
-
-  .aclx-empty-icon {
-
-    width: 43px;
-
-    height: 43px;
-
-    display: grid;
-
-    place-items: center;
-
-    margin-bottom: 10px;
-
-    border: 1px solid rgba(255,255,255,.15);
-
-    border-radius: 12px;
-
-    color: #a8e5cf;
-
-    background: rgba(255,255,255,.07);
-
-  }
-
-
-
-  .aclx-result-empty strong {
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 1.35rem;
-
-  }
-
-
-
-  .aclx-result-empty span:last-child {
-
-    max-width: 310px;
-
-    margin-top: 3px;
-
-    color: #bcd6cd;
-
-    font-size: .78rem;
-
-  }
-
-
-
-  .aclx-result-output[hidden] { display: none; }
-
-
-
-  .aclx-result-top {
-
-    display: flex;
-
+  /* Celebratory Confetti Banner */
+  .aclx-milestone-banner {
+    display: none;
     align-items: center;
-
-    justify-content: space-between;
-
-    gap: 12px;
-
-    margin-bottom: 11px;
-
-  }
-
-
-
-  .aclx-result-top span {
-
-    color: #a9e6d0;
-
-    font-size: .68rem;
-
-    font-weight: 900;
-
-    letter-spacing: .12em;
-
-    text-transform: uppercase;
-
-  }
-
-
-
-  .aclx-result-top strong {
-
-    max-width: 58%;
-
-    color: #e9f7f2;
-
-    font-size: .76rem;
-
-    text-align: right;
-
-  }
-
-
-
-  .aclx-ymd {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
     gap: 8px;
-
-  }
-
-
-
-  .aclx-ymd > div {
-
-    padding: 10px 8px;
-
-    border: 1px solid rgba(255,255,255,.14);
-
-    border-radius: 11px;
-
-    background: rgba(255,255,255,.07);
-
-    text-align: center;
-
-  }
-
-
-
-  .aclx-ymd strong {
-
-    display: block;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 1.85rem;
-
-    font-variant-numeric: tabular-nums;
-
-    line-height: 1;
-
-  }
-
-
-
-  .aclx-ymd span {
-
-    display: block;
-
-    margin-top: 4px;
-
-    color: #b8d8ce;
-
-    font-size: .63rem;
-
-    font-weight: 750;
-
-    text-transform: uppercase;
-
-  }
-
-
-
-  .aclx-metrics {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 1px;
-
-    margin-top: 12px;
-
-    overflow: hidden;
-
-    border: 1px solid rgba(255,255,255,.12);
-
+    padding: 8px 14px;
     border-radius: 10px;
-
-    background: rgba(255,255,255,.12);
-
-  }
-
-
-
-  .aclx-metric {
-
-    min-width: 0;
-
-    padding: 7px 9px;
-
-    background: rgba(4,47,42,.76);
-
-  }
-
-
-
-  .aclx-metric span,
-
-  .aclx-metric strong { display: block; }
-
-
-
-  .aclx-metric span {
-
-    color: #9bc9ba;
-
-    font-size: .58rem;
-
-    font-weight: 750;
-
-    text-transform: uppercase;
-
-  }
-
-
-
-  .aclx-metric strong {
-
-    margin-top: 2px;
-
-    overflow: hidden;
-
-    color: #f2faf7;
-
-    font-size: .72rem;
-
-    font-variant-numeric: tabular-nums;
-
-    text-overflow: ellipsis;
-
-    white-space: nowrap;
-
-  }
-
-
-
-  .aclx-copy-row {
-
-    display: grid;
-
-    grid-template-columns: 1fr auto auto;
-
-    gap: 7px;
-
-    align-items: center;
-
-    margin-top: 11px;
-
-  }
-
-
-
-  .aclx-format {
-
-    color: #c7e0d8;
-
-    font-size: .69rem;
-
-  }
-
-
-
-  .aclx-format code {
-
-    margin-left: 4px;
-
-    color: var(--aclx-white);
-
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-
-    font-size: .78rem;
-
+    background: linear-gradient(90deg, #ff754d, #f5cb6d);
+    color: #2b1704;
+    font-size: .8rem;
     font-weight: 850;
-
+    margin-bottom: 14px;
+    animation: aclxPulse 2s infinite ease-in-out;
   }
 
-
-
-  .aclx-copy {
-
-    min-height: 31px;
-
-    padding: 5px 9px;
-
-    border: 1px solid rgba(255,255,255,.23);
-
-    border-radius: 9px;
-
-    color: var(--aclx-white);
-
-    background: rgba(255,255,255,.09);
-
-    font-size: .66rem;
-
+  @keyframes aclxPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.015); }
   }
 
-
-
-  .aclx-copy:hover { background: rgba(255,255,255,.17); }
-
-
-
-  .aclx-card-foot {
-
+  /* Result Mode Selector Chips */
+  .aclx-res-chips {
     display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 14px;
-
-    padding: 13px 26px 15px;
-
-    border-top: 1px solid var(--aclx-line);
-
-    color: var(--aclx-muted);
-
-    background: #f6faf8;
-
-    font-size: .72rem;
-
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
   }
 
-
-
-  .aclx-card-foot a {
-
-    color: var(--aclx-green);
-
-    font-weight: 850;
-
-    text-underline-offset: 3px;
-
-    white-space: nowrap;
-
+  .aclx-res-chip {
+    padding: 5px 12px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 8px;
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.85);
+    font: inherit;
+    font-size: .74rem;
+    font-weight: 750;
+    cursor: pointer;
+    transition: all .14s ease;
   }
 
+  .aclx-res-chip:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,.18);
+  }
 
+  .aclx-res-chip[aria-pressed="true"] {
+    background: var(--aclx-coral);
+    color: #ffffff;
+    border-color: var(--aclx-coral);
+    box-shadow: 0 4px 12px rgba(255,117,77,.35);
+  }
 
-  .aclx-toast {
+  /* Big Bold Typographic Result */
+  .aclx-big-result {
+    margin: 8px 0 16px;
+  }
 
-    position: fixed;
+  .aclx-primary-age {
+    font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+    font-size: clamp(2rem, 4.2vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -.03em;
+    color: #ffffff;
+    display: block;
+  }
 
-    right: 20px;
+  .aclx-primary-age small {
+    font-size: .52em;
+    color: #a9e6d0;
+    font-weight: 600;
+    letter-spacing: normal;
+    margin-left: 2px;
+    margin-right: 8px;
+  }
 
-    bottom: 20px;
+  .aclx-clinical-code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+    font-weight: 900;
+    color: #f5cb6d;
+    letter-spacing: .08em;
+    display: block;
+    margin-bottom: 4px;
+  }
 
-    z-index: 999;
-
-    padding: 10px 14px;
-
-    border-radius: 10px;
-
-    color: var(--aclx-white);
-
-    background: var(--aclx-deep);
-
-    box-shadow: 0 18px 45px rgba(0,25,22,.28);
-
+  .aclx-result-meta-note {
     font-size: .78rem;
+    color: #a8d5c6;
+    line-height: 1.45;
+  }
 
+  /* Detailed Units Matrix */
+  .aclx-units-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  @media (max-width: 540px) {
+    .aclx-units-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .aclx-unit-cell {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .22);
+    border: 1px solid rgba(255, 255, 255, .1);
+    text-align: center;
+  }
+
+  .aclx-unit-cell strong {
+    display: block;
+    font-size: .95rem;
+    font-variant-numeric: tabular-nums;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .aclx-unit-cell span {
+    font-size: .66rem;
+    color: #a0c9bc;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  /* Actions & Copy Buttons */
+  .aclx-copy-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,.15);
+  }
+
+  .aclx-copy-btn-main {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: var(--aclx-green);
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,.2);
+    font: inherit;
+    font-size: .78rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .16s ease;
+  }
+
+  .aclx-copy-btn-main:hover {
+    background: #065b46;
+    transform: translateY(-1px);
+  }
+
+  .aclx-copy-btn-sub {
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: rgba(255,255,255,.12);
+    color: #e5f6ef;
+    border: 1px solid rgba(255,255,255,.15);
+    font: inherit;
+    font-size: .74rem;
+    font-weight: 750;
+    cursor: pointer;
+    transition: all .14s ease;
+  }
+
+  .aclx-copy-btn-sub:hover {
+    background: rgba(255,255,255,.2);
+    color: #ffffff;
+  }
+
+  /* Toast Notification */
+  .aclx-toast {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: var(--aclx-gold);
+    color: #102923;
+    font-size: .76rem;
     font-weight: 850;
-
+    box-shadow: 0 4px 14px rgba(0,0,0,.25);
     opacity: 0;
-
-    transform: translateY(10px);
-
+    transform: translateY(6px);
     pointer-events: none;
-
-    transition: opacity .18s ease, transform .18s ease;
-
+    transition: all .2s ease;
+    z-index: 10;
   }
 
-
-
-  .aclx-toast.aclx-show { opacity: 1; transform: translateY(0); }
-
-
-
-  .aclx-hero button:focus-visible,
-
-  .aclx-hero a:focus-visible {
-
-    outline: 3px solid var(--aclx-gold);
-
-    outline-offset: 3px;
-
+  .aclx-toast.is-visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 
-
-
-  @media (max-width: 940px) {
-
-    .aclx-wrap {
-
-      grid-template-columns: 1fr;
-
-      gap: 38px;
-
-    }
-
-
-
-    .aclx-copy { max-width: 720px; }
-
-    .aclx-card { max-width: 680px; }
-
+  /* Confetti Canvas */
+  #aclx-confetti-canvas {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
   }
-
-
-
-  @media (max-width: 620px) {
-
-    .aclx-wrap {
-
-      width: min(calc(100% - 24px), 1200px);
-
-      min-height: auto;
-
-      padding-block: 40px;
-
-    }
-
-
-
-    .aclx-copy h1 {
-    color: #ffffff !important;
-    font-family: var(--font-display), "Fraunces", Georgia, serif !important; font-size: clamp(2.45rem, 14vw, 3.5rem); }
-
-    .aclx-card-head, .aclx-form { padding-inline: 17px; }
-
-    .aclx-card-kicker { align-items: flex-start; flex-direction: column; gap: 4px; }
-
-    .aclx-modes { grid-template-columns: 1fr; }
-
-    .aclx-mode span { min-height: 36px; }
-
-    .aclx-fields, .aclx-actions { grid-template-columns: 1fr; }
-
-    .aclx-reset { min-height: 42px; }
-
-    .aclx-result { margin-inline: 17px; padding: 15px; }
-
-    .aclx-result-top { align-items: flex-start; flex-direction: column; gap: 3px; }
-
-    .aclx-result-top strong { max-width: none; text-align: left; }
-
-    .aclx-ymd strong { font-size: 1.52rem; }
-
-    .aclx-metrics { grid-template-columns: repeat(2, 1fr); }
-
-    .aclx-copy-row { grid-template-columns: 1fr 1fr; }
-
-    .aclx-format { grid-column: 1 / -1; }
-
-    .aclx-card-foot { align-items: flex-start; flex-direction: column; padding-inline: 17px; }
-
-  }
-
-
-
-  @media (prefers-reduced-motion: reduce) {
-
-    .aclx-hero *, .aclx-hero *::before, .aclx-hero *::after {
-
-      scroll-behavior: auto !important;
-
-      transition-duration: .01ms !important;
-
-      animation-duration: .01ms !important;
-
-    }
-
-  }
-
 </style>
 
-
-
-<section class="aclx-hero" aria-labelledby="aclx-page-title">
+<section class="aclx-hero" id="calculator" aria-labelledby="aclx-page-title">
+  <canvas id="aclx-confetti-canvas"></canvas>
 
   <div class="aclx-wrap">
 
+    <!-- Left Copy Column -->
     <div class="aclx-copy">
+      <div class="aclx-eyebrow">Exact Age &amp; Chronology Lab</div>
+      <h1 id="aclx-page-title">Exact Age, <span>Precision Down to the Second</span></h1>
+      <p class="aclx-lede">Calculate chronological age, total days alive, and life milestones instantly. Built with strict calendar-anniversary arithmetic — free, private, and calculated entirely on your device.</p>
 
-      <p class="aclx-eyebrow">Free · private · calendar-accurate</p>
-
-      <h1 id="aclx-page-title">Age Calculator: exact age in <span>years, months &amp; days</span></h1>
-
-      <p class="aclx-lede">Calculate age today. Check age on any past or future date. Or compare two dates of birth. Every result includes exact calendar age, total time units, next birthday details and copy-ready Y;M;D format.</p>
-
-
-
-      <ul class="aclx-proof" aria-label="Calculator features">
-
-        <li>Real month lengths</li>
-
-        <li>Leap-day handling</li>
-
-        <li>Assessment-ready Y;M;D</li>
-
-        <li>No sign-up</li>
-
-      </ul>
-
-
-
-      <div class="aclx-method-note">
-
-        <span class="aclx-method-mark" aria-hidden="true">YMD</span>
-
-        <div>
-
-          <strong>Calendar method. Not days ÷ 365.</strong>
-
-          <span>Full years are counted first. Full months come next. Remaining calendar days complete the answer.</span>
-
-        </div>
-
+      <div class="aclx-trust-pills">
+        <span class="aclx-trust-pill">Instant auto-calc on date change</span>
+        <span class="aclx-trust-pill">Y;M;D clinical standard compliant</span>
+        <span class="aclx-trust-pill">Leap-year &amp; month-length aware</span>
+        <span class="aclx-trust-pill">Zero server tracking (100% private)</span>
       </div>
-
     </div>
 
-
-
-    <div class="aclx-card" id="aclx-calculator">
-
+    <!-- Right Calculator Card -->
+    <div class="aclx-card" id="aclx-calculator-card">
       <div class="aclx-card-head">
-
         <div class="aclx-card-kicker">
-
-          <span>Exact age calculator</span>
-
+          <span>Dual-Input Chronometer</span>
           <span class="aclx-private">
-
             <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.5 9V6.8a3.5 3.5 0 0 1 7 0V9M5 9h10v8H5V9Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-
-            Runs in your browser
-
+            Runs locally in browser
           </span>
-
         </div>
-
-        <h2 id="aclx-calculator-title">Calculate your exact age today</h2>
-
-        <p id="aclx-calculator-description">Enter one date. The reference date is set to today.</p>
-
+        <h2 id="aclx-calc-heading">Instant Age Calculator</h2>
+        <p id="aclx-calc-subheading">Enter your birth date. Results recalculate automatically as you type.</p>
       </div>
 
-
-
-      <form class="aclx-form" id="aclx-form" novalidate>
-
+      <form class="aclx-form" id="aclx-form" novalidate onsubmit="return false;">
+        <!-- Calculation Type Radio Switcher -->
         <fieldset class="aclx-modes">
-
-          <legend class="aclx-sr-only">Choose a calculation type</legend>
-
+          <legend class="aclx-sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Choose calculation mode</legend>
           <label class="aclx-mode">
-
-            <input type="radio" name="aclx-mode" value="today" checked>
-
-            <span>Age today</span>
-
+            <input type="radio" name="aclx-calc-mode" value="today" checked>
+            <span>Age Today</span>
           </label>
-
           <label class="aclx-mode">
-
-            <input type="radio" name="aclx-mode" value="date">
-
-            <span>Age on a date</span>
-
+            <input type="radio" name="aclx-calc-mode" value="date">
+            <span>Age on Date</span>
           </label>
-
           <label class="aclx-mode">
-
-            <input type="radio" name="aclx-mode" value="difference">
-
-            <span>Age difference</span>
-
+            <input type="radio" name="aclx-calc-mode" value="difference">
+            <span>Age Gap</span>
           </label>
-
         </fieldset>
 
-
-
+        <!-- Dual Inputs Grid -->
         <div class="aclx-fields">
-
-          <div class="aclx-field" id="aclx-field-a">
-
-            <label for="aclx-date-a" id="aclx-label-a">Date of birth</label>
-
-            <input id="aclx-date-a" type="date" autocomplete="bday" required>
-
+          <div class="aclx-field" id="aclx-field-dob">
+            <label for="aclx-dob" id="aclx-label-dob">Date of Birth</label>
+            <input id="aclx-dob" type="date" autocomplete="bday" value="2000-01-15" required>
           </div>
 
-
-
-          <div class="aclx-field aclx-hidden" id="aclx-field-reference">
-
-            <label for="aclx-reference-date">Calculate age on <button class="aclx-today" id="aclx-use-today" type="button">Use today</button></label>
-
-            <input id="aclx-reference-date" type="date">
-
+          <div class="aclx-field" id="aclx-field-ref">
+            <label for="aclx-ref-date" id="aclx-label-ref">As-of Date (Calculate On)</label>
+            <input id="aclx-ref-date" type="date">
           </div>
-
-
 
           <div class="aclx-field aclx-hidden" id="aclx-field-b">
-
-            <label for="aclx-date-b">Person B date of birth</label>
-
-            <input id="aclx-date-b" type="date" autocomplete="off">
-
+            <label for="aclx-dob-b">Person B Date of Birth</label>
+            <input id="aclx-dob-b" type="date" value="2002-06-20">
           </div>
-
         </div>
 
-
+        <!-- Quick Presets Toolbar -->
+        <div class="aclx-presets-row">
+          <span class="aclx-presets-label">Presets:</span>
+          <button type="button" class="aclx-preset-btn" id="aclx-btn-preset-today">Today</button>
+          <button type="button" class="aclx-preset-btn" id="aclx-btn-preset-18">18th Bday</button>
+          <button type="button" class="aclx-preset-btn" id="aclx-btn-preset-21">21st Bday</button>
+          <button type="button" class="aclx-preset-btn" id="aclx-btn-preset-10k">10,000 Days</button>
+          <button type="button" class="aclx-preset-btn" id="aclx-btn-preset-clear" style="margin-left:auto;color:#8a4034">Clear</button>
+        </div>
 
         <p class="aclx-error" id="aclx-error" role="alert" aria-live="polite"></p>
-
-
-
-        <div class="aclx-actions">
-
-          <button class="aclx-submit" id="aclx-submit" type="submit">Calculate my exact age</button>
-
-          <button class="aclx-reset" id="aclx-reset" type="button">Reset</button>
-
-        </div>
-
       </form>
 
+      <!-- Live Result Display Card -->
+      <div class="aclx-result-wrap" id="aclx-result-wrap" aria-live="polite">
+        <!-- Toast Feedback -->
+        <div class="aclx-toast" id="aclx-toast">Copied to clipboard!</div>
 
-
-      <div class="aclx-result" aria-live="polite" aria-atomic="true">
-
-        <div class="aclx-result-empty" id="aclx-result-empty">
-
-          <span class="aclx-empty-icon" aria-hidden="true">
-
-            <svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M7 3v3M17 3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v12H4V7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 13h3M14 13h2M8 16h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-
-          </span>
-
-          <strong>Ready when you are</strong>
-
-          <span>Choose a calculation type and enter the required date or dates.</span>
-
+        <!-- Celebratory Confetti Banner (Shown on milestone / birthday) -->
+        <div class="aclx-milestone-banner" id="aclx-milestone-banner">
+          <span>🎉</span>
+          <span id="aclx-milestone-text">Birthday Alert: Today is your special day!</span>
         </div>
 
-
-
-        <div class="aclx-result-output" id="aclx-result-output" hidden>
-
-          <div class="aclx-result-top">
-
-            <span id="aclx-result-context">Your exact age</span>
-
-            <strong id="aclx-result-summary"></strong>
-
-          </div>
-
-
-
-          <div class="aclx-ymd" aria-label="Result in years, months and days">
-
-            <div><strong id="aclx-years">0</strong><span>Years</span></div>
-
-            <div><strong id="aclx-months">0</strong><span>Months</span></div>
-
-            <div><strong id="aclx-days">0</strong><span>Days</span></div>
-
-          </div>
-
-
-
-          <div class="aclx-metrics" id="aclx-metrics">
-
-            <div class="aclx-metric"><span id="aclx-metric-label-1">Total months</span><strong id="aclx-metric-value-1">0</strong></div>
-
-            <div class="aclx-metric"><span id="aclx-metric-label-2">Whole weeks</span><strong id="aclx-metric-value-2">0</strong></div>
-
-            <div class="aclx-metric"><span id="aclx-metric-label-3">Total days</span><strong id="aclx-metric-value-3">0</strong></div>
-
-            <div class="aclx-metric"><span id="aclx-metric-label-4">Total hours</span><strong id="aclx-metric-value-4">0</strong></div>
-
-            <div class="aclx-metric"><span id="aclx-metric-label-5">Born on</span><strong id="aclx-metric-value-5">—</strong></div>
-
-            <div class="aclx-metric"><span id="aclx-metric-label-6">Next birthday</span><strong id="aclx-metric-value-6">—</strong></div>
-
-          </div>
-
-
-
-          <div class="aclx-copy-row">
-
-            <span class="aclx-format">Y;M;D format <code id="aclx-ymd-format">0;00;00</code></span>
-
-            <button class="aclx-copy" id="aclx-copy-result" type="button">Copy result</button>
-
-            <button class="aclx-copy" id="aclx-copy-ymd" type="button">Copy Y;M;D</button>
-
-          </div>
-
+        <!-- Result Mode Toggle Chips -->
+        <div class="aclx-res-chips" role="tablist" aria-label="Result display format">
+          <button type="button" class="aclx-res-chip" data-mode="standard" aria-pressed="true">Standard (YMD)</button>
+          <button type="button" class="aclx-res-chip" data-mode="clinical" aria-pressed="false">Clinical (Y;M;D)</button>
+          <button type="button" class="aclx-res-chip" data-mode="units" aria-pressed="false">All Units</button>
         </div>
 
+        <!-- Result Views -->
+        <div class="aclx-big-result">
+          <!-- View 1: Standard Mode -->
+          <div id="aclx-view-standard">
+            <span class="aclx-primary-age" id="aclx-out-standard">
+              26<small>Yrs</small> 7<small>Mos</small> 5<small>Days</small>
+            </span>
+            <div class="aclx-result-meta-note" id="aclx-out-meta-standard">
+              Total 9,714 days alive · Next birthday in 147 days
+            </div>
+          </div>
+
+          <!-- View 2: Clinical Mode -->
+          <div id="aclx-view-clinical" class="aclx-hidden">
+            <span class="aclx-clinical-code" id="aclx-out-clinical">26;07;05</span>
+            <div class="aclx-result-meta-note">
+              Chronological assessment standard for WISC-V, CELF-5, WIAT-4, and Pearson/PAR psychological reports.
+            </div>
+          </div>
+
+          <!-- View 3: Units Mode -->
+          <div id="aclx-view-units" class="aclx-hidden">
+            <div class="aclx-units-grid">
+              <div class="aclx-unit-cell">
+                <strong id="aclx-unit-days">9,714</strong>
+                <span>Total Days</span>
+              </div>
+              <div class="aclx-unit-cell">
+                <strong id="aclx-unit-weeks">1,387 w + 5 d</strong>
+                <span>Total Weeks</span>
+              </div>
+              <div class="aclx-unit-cell">
+                <strong id="aclx-unit-hours">233,136</strong>
+                <span>Total Hours</span>
+              </div>
+              <div class="aclx-unit-cell">
+                <strong id="aclx-unit-minutes">13,988,160</strong>
+                <span>Minutes</span>
+              </div>
+              <div class="aclx-unit-cell">
+                <strong id="aclx-unit-seconds">839,289,600</strong>
+                <span>Seconds</span>
+              </div>
+              <div class="aclx-unit-cell">
+                <strong id="aclx-unit-next">147 Days</strong>
+                <span>Next Birthday</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1-Click Copy Action Bar -->
+        <div class="aclx-copy-actions">
+          <button type="button" class="aclx-copy-btn-main" id="aclx-copy-main">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy Result
+          </button>
+          <button type="button" class="aclx-copy-btn-sub" id="aclx-copy-ymd">Copy Y;M;D</button>
+          <button type="button" class="aclx-copy-btn-sub" id="aclx-copy-summary">Copy All Units</button>
+        </div>
       </div>
-
-
-
-      <div class="aclx-card-foot">
-
-        <span>Day-level totals use Gregorian calendar dates. Birth time is not collected.</span>
-
-        <a href="/methodology/">View methodology →</a>
-
-      </div>
-
     </div>
 
   </div>
-
-
-
-  <div class="aclx-toast" id="aclx-toast" role="status" aria-live="polite"></div>
-
 </section>
+
+<!-- Self-Contained Instant Calculator & Confetti Script -->
+<script>
+(function() {
+  'use strict';
+
+  var DAY_MS = 86400000;
+  var HOUR_MS = 3600000;
+  var MIN_MS = 60000;
+  var SEC_MS = 1000;
+
+  var dobInput = document.getElementById('aclx-dob');
+  var refInput = document.getElementById('aclx-ref-date');
+  var dobBInput = document.getElementById('aclx-dob-b');
+  var fieldRef = document.getElementById('aclx-field-ref');
+  var fieldB = document.getElementById('aclx-field-b');
+  var errorBox = document.getElementById('aclx-error');
+  var toast = document.getElementById('aclx-toast');
+  var milestoneBanner = document.getElementById('aclx-milestone-banner');
+  var milestoneText = document.getElementById('aclx-milestone-text');
+
+  var outStandard = document.getElementById('aclx-out-standard');
+  var outMetaStandard = document.getElementById('aclx-out-meta-standard');
+  var outClinical = document.getElementById('aclx-out-clinical');
+  var unitDays = document.getElementById('aclx-unit-days');
+  var unitWeeks = document.getElementById('aclx-unit-weeks');
+  var unitHours = document.getElementById('aclx-unit-hours');
+  var unitMinutes = document.getElementById('aclx-unit-minutes');
+  var unitSeconds = document.getElementById('aclx-unit-seconds');
+  var unitNext = document.getElementById('aclx-unit-next');
+
+  var viewStandard = document.getElementById('aclx-view-standard');
+  var viewClinical = document.getElementById('aclx-view-clinical');
+  var viewUnits = document.getElementById('aclx-view-units');
+
+  var calcModeRadios = document.querySelectorAll('input[name="aclx-calc-mode"]');
+  var resultChips = document.querySelectorAll('.aclx-res-chip');
+
+  var activeCalcMode = 'today';
+  var activeResultView = 'standard';
+  var cachedResult = null;
+  var toastTimer = null;
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function getTodayStr() {
+    var now = new Date();
+    return now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
+  }
+
+  // Initialize reference date to today
+  if (refInput && !refInput.value) {
+    refInput.value = getTodayStr();
+  }
+
+  function parseDateUTC(str) {
+    if (!str) return null;
+    var parts = str.split('-').map(Number);
+    if (parts.length !== 3 || parts.some(isNaN)) return null;
+    var d = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
+    if (d.getUTCFullYear() !== parts[0] || d.getUTCMonth() !== parts[1] - 1 || d.getUTCDate() !== parts[2]) return null;
+    return d;
+  }
+
+  function daysInMonth(year, monthIndex) {
+    return new Date(Date.UTC(year, monthIndex + 1, 0)).getUTCDate();
+  }
+
+  function clampedDate(year, monthIndex, day) {
+    return new Date(Date.UTC(year, monthIndex, Math.min(day, daysInMonth(year, monthIndex))));
+  }
+
+  function addYears(date, years) {
+    return clampedDate(date.getUTCFullYear() + years, date.getUTCMonth(), date.getUTCDate());
+  }
+
+  function addMonths(date, months) {
+    var target = date.getUTCMonth() + months;
+    var y = date.getUTCFullYear() + Math.floor(target / 12);
+    var m = ((target % 12) + 12) % 12;
+    return clampedDate(y, m, date.getUTCDate());
+  }
+
+  function calcExactAge(start, end) {
+    var years = end.getUTCFullYear() - start.getUTCFullYear();
+    var anchor = addYears(start, years);
+    if (anchor > end) {
+      years--;
+      anchor = addYears(start, years);
+    }
+    var months = 0;
+    while (months < 11) {
+      var nextAnchor = addMonths(anchor, months + 1);
+      if (nextAnchor > end) break;
+      months++;
+    }
+    var monthAnchor = addMonths(anchor, months);
+    var days = Math.round((end - monthAnchor) / DAY_MS);
+    return { years: years, months: months, days: days };
+  }
+
+  function getNextBirthday(birth, ref) {
+    var y = ref.getUTCFullYear();
+    var bday = clampedDate(y, birth.getUTCMonth(), birth.getUTCDate());
+    if (bday < ref) {
+      y++;
+      bday = clampedDate(y, birth.getUTCMonth(), birth.getUTCDate());
+    }
+    var days = Math.round((bday - ref) / DAY_MS);
+    return { date: bday, days: days };
+  }
+
+  function showToast(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function() {
+      toast.classList.remove('is-visible');
+    }, 2200);
+  }
+
+  // Confetti Particle Burst
+  function fireConfetti() {
+    var canvas = document.getElementById('aclx-confetti-canvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    canvas.width = canvas.parentElement.offsetWidth;
+    canvas.height = canvas.parentElement.offsetHeight;
+
+    var particles = [];
+    var colors = ['#ff754d', '#f5cb6d', '#08745a', '#dff5ec', '#ffffff', '#20a67b'];
+    for (var i = 0; i < 60; i++) {
+      particles.push({
+        x: canvas.width * 0.7,
+        y: canvas.height * 0.4,
+        vx: (Math.random() - 0.5) * 10,
+        vy: (Math.random() - 0.7) * 9,
+        size: Math.random() * 6 + 3,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        alpha: 1,
+        decay: Math.random() * 0.02 + 0.015
+      });
+    }
+
+    function render() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      var active = false;
+      particles.forEach(function(p) {
+        if (p.alpha > 0) {
+          active = true;
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.25; // gravity
+          p.alpha -= p.decay;
+          ctx.globalAlpha = Math.max(0, p.alpha);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(p.x, p.y, p.size, p.size);
+        }
+      });
+      if (active) requestAnimationFrame(render);
+      else ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+    render();
+  }
+
+  // Main Calculation Routine
+  function calculate() {
+    errorBox.textContent = '';
+    var dateA = parseDateUTC(dobInput.value);
+    var dateRef = activeCalcMode === 'today' ? parseDateUTC(getTodayStr()) : parseDateUTC(refInput.value);
+
+    if (activeCalcMode === 'difference') {
+      var dateB = parseDateUTC(dobBInput.value);
+      if (!dateA || !dateB) {
+        errorBox.textContent = 'Please select valid birth dates for both Person A and Person B.';
+        return;
+      }
+      var older = dateA <= dateB ? dateA : dateB;
+      var younger = dateA <= dateB ? dateB : dateA;
+      var diff = calcExactAge(older, younger);
+      var totalDaysDiff = Math.round((younger - older) / DAY_MS);
+
+      cachedResult = {
+        years: diff.years,
+        months: diff.months,
+        days: diff.days,
+        ymd: diff.years + ';' + pad(diff.months) + ';' + pad(diff.days),
+        totalDays: totalDaysDiff,
+        totalWeeks: Math.floor(totalDaysDiff / 7),
+        remDays: totalDaysDiff % 7,
+        totalHours: totalDaysDiff * 24,
+        totalMinutes: totalDaysDiff * 1440,
+        totalSeconds: totalDaysDiff * 86400,
+        nextBdayDays: 0,
+        isBdayToday: false,
+        sentence: 'The age difference is ' + diff.years + ' years, ' + diff.months + ' months, and ' + diff.days + ' days.'
+      };
+
+      renderResult(cachedResult, true);
+      return;
+    }
+
+    if (!dateA) {
+      errorBox.textContent = 'Please enter a valid Date of Birth.';
+      return;
+    }
+    if (!dateRef) {
+      errorBox.textContent = 'Please enter a valid As-of / Reference Date.';
+      return;
+    }
+    if (dateA > dateRef) {
+      errorBox.textContent = 'Date of birth cannot be after the reference date.';
+      return;
+    }
+
+    var age = calcExactAge(dateA, dateRef);
+    var totalDays = Math.round((dateRef - dateA) / DAY_MS);
+    var nextB = getNextBirthday(dateA, dateRef);
+    var isBdayToday = (dateA.getUTCMonth() === dateRef.getUTCMonth() && dateA.getUTCDate() === dateRef.getUTCDate() && totalDays > 0);
+
+    cachedResult = {
+      years: age.years,
+      months: age.months,
+      days: age.days,
+      ymd: age.years + ';' + pad(age.months) + ';' + pad(age.days),
+      totalDays: totalDays,
+      totalWeeks: Math.floor(totalDays / 7),
+      remDays: totalDays % 7,
+      totalHours: totalDays * 24,
+      totalMinutes: totalDays * 1440,
+      totalSeconds: totalDays * 86400,
+      nextBdayDays: nextB.days,
+      isBdayToday: isBdayToday,
+      sentence: 'Exact age is ' + age.years + ' years, ' + age.months + ' months, and ' + age.days + ' days (' + totalDays.toLocaleString() + ' days total).'
+    };
+
+    renderResult(cachedResult, false);
+
+    if (isBdayToday || totalDays === 10000 || age.years === 18 || age.years === 21) {
+      fireConfetti();
+    }
+  }
+
+  function renderResult(r, isDiff) {
+    if (!r) return;
+
+    // Milestone Celebration Banner
+    if (r.isBdayToday) {
+      milestoneText.textContent = '🎉 Happy Birthday! Another full trip around the sun completed today!';
+      milestoneBanner.style.display = 'flex';
+    } else if (r.totalDays === 10000) {
+      milestoneText.textContent = '🌟 Milestone Alert: Exactly 10,000 Days Old Today! (~27.4 Years)';
+      milestoneBanner.style.display = 'flex';
+    } else if (r.years === 18 && r.months === 0 && r.days === 0) {
+      milestoneText.textContent = '🎓 Milestone Unlocked: Welcome to Legal Adulthood (18th Birthday)!';
+      milestoneBanner.style.display = 'flex';
+    } else {
+      milestoneBanner.style.display = 'none';
+    }
+
+    // Standard View
+    outStandard.innerHTML = r.years + '<small>Yrs</small> ' + r.months + '<small>Mos</small> ' + r.days + '<small>Days</small>';
+    if (isDiff) {
+      outMetaStandard.textContent = 'Total gap: ' + r.totalDays.toLocaleString() + ' days · ' + r.totalWeeks + ' weeks, ' + r.remDays + ' days';
+    } else {
+      outMetaStandard.textContent = 'Total ' + r.totalDays.toLocaleString() + ' days alive · ' + 
+        (r.nextBdayDays === 0 ? 'Birthday is TODAY!' : 'Next birthday in ' + r.nextBdayDays + ' days');
+    }
+
+    // Clinical View
+    outClinical.textContent = r.ymd;
+
+    // Units View
+    unitDays.textContent = r.totalDays.toLocaleString();
+    unitWeeks.textContent = r.totalWeeks.toLocaleString() + 'w + ' + r.remDays + 'd';
+    unitHours.textContent = r.totalHours.toLocaleString();
+    unitMinutes.textContent = r.totalMinutes.toLocaleString();
+    unitSeconds.textContent = r.totalSeconds.toLocaleString();
+    unitNext.textContent = isDiff ? (r.totalWeeks + ' Weeks') : (r.nextBdayDays === 0 ? 'Today!' : r.nextBdayDays + ' Days');
+  }
+
+  // Switch result display tab (Standard, Clinical, Units)
+  function switchResultTab(mode) {
+    activeResultView = mode;
+    resultChips.forEach(function(chip) {
+      chip.setAttribute('aria-pressed', chip.getAttribute('data-mode') === mode ? 'true' : 'false');
+    });
+
+    viewStandard.classList.toggle('aclx-hidden', mode !== 'standard');
+    viewClinical.classList.toggle('aclx-hidden', mode !== 'clinical');
+    viewUnits.classList.toggle('aclx-hidden', mode !== 'units');
+  }
+
+  // Event Listeners for Instant Keystroke / Change
+  [dobInput, refInput, dobBInput].forEach(function(input) {
+    if (input) {
+      input.addEventListener('input', calculate);
+      input.addEventListener('change', calculate);
+    }
+  });
+
+  // Mode Switcher Listeners
+  calcModeRadios.forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      activeCalcMode = radio.value;
+      if (activeCalcMode === 'today') {
+        fieldRef.classList.remove('aclx-hidden');
+        fieldB.classList.add('aclx-hidden');
+        refInput.value = getTodayStr();
+        document.getElementById('aclx-calc-heading').textContent = 'Instant Age Calculator';
+        document.getElementById('aclx-calc-subheading').textContent = 'Enter your birth date. Results recalculate automatically as you type.';
+      } else if (activeCalcMode === 'date') {
+        fieldRef.classList.remove('aclx-hidden');
+        fieldB.classList.add('aclx-hidden');
+        document.getElementById('aclx-calc-heading').textContent = 'Age on Any Date Calculator';
+        document.getElementById('aclx-calc-subheading').textContent = 'Calculate your exact age on an admission cutoff, milestone, or past event.';
+      } else if (activeCalcMode === 'difference') {
+        fieldRef.classList.add('aclx-hidden');
+        fieldB.classList.remove('aclx-hidden');
+        document.getElementById('aclx-calc-heading').textContent = 'Age Difference Calculator';
+        document.getElementById('aclx-calc-subheading').textContent = 'Compare two dates of birth in calendar years, months, and days.';
+      }
+      calculate();
+    });
+  });
+
+  // Preset Buttons
+  document.getElementById('aclx-btn-preset-today').addEventListener('click', function() {
+    refInput.value = getTodayStr();
+    calculate();
+    showToast('As-of date set to Today');
+  });
+
+  document.getElementById('aclx-btn-preset-18').addEventListener('click', function() {
+    var d = parseDateUTC(dobInput.value);
+    if (!d) return;
+    var b18 = addYears(d, 18);
+    refInput.value = b18.getUTCFullYear() + '-' + pad(b18.getUTCMonth() + 1) + '-' + pad(b18.getUTCDate());
+    // switch to 'date' mode
+    document.querySelector('input[value="date"]').checked = true;
+    activeCalcMode = 'date';
+    fieldRef.classList.remove('aclx-hidden');
+    fieldB.classList.add('aclx-hidden');
+    calculate();
+    showToast('Calculated on 18th Birthday');
+  });
+
+  document.getElementById('aclx-btn-preset-21').addEventListener('click', function() {
+    var d = parseDateUTC(dobInput.value);
+    if (!d) return;
+    var b21 = addYears(d, 21);
+    refInput.value = b21.getUTCFullYear() + '-' + pad(b21.getUTCMonth() + 1) + '-' + pad(b21.getUTCDate());
+    document.querySelector('input[value="date"]').checked = true;
+    activeCalcMode = 'date';
+    fieldRef.classList.remove('aclx-hidden');
+    fieldB.classList.add('aclx-hidden');
+    calculate();
+    showToast('Calculated on 21st Birthday');
+  });
+
+  document.getElementById('aclx-btn-preset-10k').addEventListener('click', function() {
+    var d = parseDateUTC(dobInput.value);
+    if (!d) return;
+    var d10k = new Date(d.getTime() + (10000 * DAY_MS));
+    refInput.value = d10k.getUTCFullYear() + '-' + pad(d10k.getUTCMonth() + 1) + '-' + pad(d10k.getUTCDate());
+    document.querySelector('input[value="date"]').checked = true;
+    activeCalcMode = 'date';
+    fieldRef.classList.remove('aclx-hidden');
+    fieldB.classList.add('aclx-hidden');
+    calculate();
+    showToast('Calculated for 10,000 Days Old Milestone');
+  });
+
+  document.getElementById('aclx-btn-preset-clear').addEventListener('click', function() {
+    dobInput.value = '';
+    errorBox.textContent = 'Please enter a date to calculate.';
+    outStandard.innerHTML = '--<small>Yrs</small> --<small>Mos</small> --<small>Days</small>';
+    outMetaStandard.textContent = 'Enter date of birth above.';
+    outClinical.textContent = '-- ; -- ; --';
+    unitDays.textContent = '--';
+    unitWeeks.textContent = '--';
+    unitHours.textContent = '--';
+    unitMinutes.textContent = '--';
+    unitSeconds.textContent = '--';
+    unitNext.textContent = '--';
+    milestoneBanner.style.display = 'none';
+    dobInput.focus();
+  });
+
+  // Result Mode Chips Listener
+  resultChips.forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      switchResultTab(chip.getAttribute('data-mode'));
+    });
+  });
+
+  // 1-Click Copy Buttons
+  function copyText(text, msg) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function() { showToast(msg); });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      showToast(msg);
+    }
+  }
+
+  document.getElementById('aclx-copy-main').addEventListener('click', function() {
+    if (cachedResult) copyText(cachedResult.sentence, 'Age copied to clipboard!');
+  });
+
+  document.getElementById('aclx-copy-ymd').addEventListener('click', function() {
+    if (cachedResult) copyText(cachedResult.ymd, 'Y;M;D clinical format copied!');
+  });
+
+  document.getElementById('aclx-copy-summary').addEventListener('click', function() {
+    if (cachedResult) {
+      var summary = 'Age Calculation Summary:\n' +
+        '• Calendar Age: ' + cachedResult.years + 'y ' + cachedResult.months + 'm ' + cachedResult.days + 'd\n' +
+        '• Clinical (Y;M;D): ' + cachedResult.ymd + '\n' +
+        '• Total Days: ' + cachedResult.totalDays.toLocaleString() + '\n' +
+        '• Total Weeks: ' + cachedResult.totalWeeks.toLocaleString() + ' weeks, ' + cachedResult.remDays + ' days\n' +
+        '• Total Hours: ' + cachedResult.totalHours.toLocaleString() + ' hrs\n' +
+        '• Total Minutes: ' + cachedResult.totalMinutes.toLocaleString() + ' min\n' +
+        '• Next Birthday: ' + (cachedResult.nextBdayDays === 0 ? 'Today!' : cachedResult.nextBdayDays + ' days');
+      copyText(summary, 'All units summary copied!');
+    }
+  });
+
+  // Run initial calculation immediately on page load
+  calculate();
+})();
+</script>
 
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
@@ -2010,723 +1662,7 @@
 
 
 
-<script>
 
-  (() => {
-
-    'use strict';
-
-
-
-    const DAY_MS = 86400000;
-
-    const form = document.getElementById('aclx-form');
-
-    if (!form) return;
-
-
-
-    const dateA = document.getElementById('aclx-date-a');
-
-    const dateB = document.getElementById('aclx-date-b');
-
-    const referenceDate = document.getElementById('aclx-reference-date');
-
-    const fieldReference = document.getElementById('aclx-field-reference');
-
-    const fieldB = document.getElementById('aclx-field-b');
-
-    const labelA = document.getElementById('aclx-label-a');
-
-    const title = document.getElementById('aclx-calculator-title');
-
-    const description = document.getElementById('aclx-calculator-description');
-
-    const submitButton = document.getElementById('aclx-submit');
-
-    const errorBox = document.getElementById('aclx-error');
-
-    const resultEmpty = document.getElementById('aclx-result-empty');
-
-    const resultOutput = document.getElementById('aclx-result-output');
-
-    const toast = document.getElementById('aclx-toast');
-
-    let activeMode = 'today';
-
-    let copyResult = null;
-
-    let toastTimer = null;
-
-
-
-    const modeContent = {
-
-      today: {
-
-        title: 'Calculate your exact age today',
-
-        description: 'Enter one date. The reference date is set to today.',
-
-        button: 'Calculate my exact age'
-
-      },
-
-      date: {
-
-        title: 'Calculate age on any date',
-
-        description: 'Use a past date, future milestone, test date or eligibility cutoff.',
-
-        button: 'Calculate age on this date'
-
-      },
-
-      difference: {
-
-        title: 'Calculate the exact age difference',
-
-        description: 'Compare two dates of birth using calendar years, months and days.',
-
-        button: 'Compare the two ages'
-
-      }
-
-    };
-
-
-
-    function pad(value) {
-
-      return String(value).padStart(2, '0');
-
-    }
-
-
-
-    function todayString() {
-
-      const now = new Date();
-
-      return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
-
-    }
-
-
-
-    function parseDate(value) {
-
-      const parts = value.split('-').map(Number);
-
-      if (parts.length !== 3 || parts.some(Number.isNaN)) return null;
-
-      const [year, month, day] = parts;
-
-      const parsed = new Date(Date.UTC(year, month - 1, day));
-
-      if (
-
-        parsed.getUTCFullYear() !== year ||
-
-        parsed.getUTCMonth() !== month - 1 ||
-
-        parsed.getUTCDate() !== day
-
-      ) return null;
-
-      return parsed;
-
-    }
-
-
-
-    function daysInMonth(year, monthIndex) {
-
-      return new Date(Date.UTC(year, monthIndex + 1, 0)).getUTCDate();
-
-    }
-
-
-
-    function clampedDate(year, monthIndex, preferredDay) {
-
-      return new Date(Date.UTC(
-
-        year,
-
-        monthIndex,
-
-        Math.min(preferredDay, daysInMonth(year, monthIndex))
-
-      ));
-
-    }
-
-
-
-    function addYearsClamped(date, years) {
-
-      return clampedDate(
-
-        date.getUTCFullYear() + years,
-
-        date.getUTCMonth(),
-
-        date.getUTCDate()
-
-      );
-
-    }
-
-
-
-    function addMonthsClamped(date, months) {
-
-      const targetIndex = date.getUTCMonth() + months;
-
-      const year = date.getUTCFullYear() + Math.floor(targetIndex / 12);
-
-      const month = ((targetIndex % 12) + 12) % 12;
-
-      return clampedDate(year, month, date.getUTCDate());
-
-    }
-
-
-
-    function exactCalendarAge(start, end) {
-
-      let years = end.getUTCFullYear() - start.getUTCFullYear();
-
-      let yearAnchor = addYearsClamped(start, years);
-
-
-
-      if (yearAnchor > end) {
-
-        years -= 1;
-
-        yearAnchor = addYearsClamped(start, years);
-
-      }
-
-
-
-      let months = 0;
-
-      let monthAnchor = yearAnchor;
-
-
-
-      while (months < 11) {
-
-        const nextAnchor = addMonthsClamped(yearAnchor, months + 1);
-
-        if (nextAnchor > end) break;
-
-        months += 1;
-
-        monthAnchor = nextAnchor;
-
-      }
-
-
-
-      const days = Math.round((end - monthAnchor) / DAY_MS);
-
-      return { years, months, days };
-
-    }
-
-
-
-    function nextBirthday(birth, reference) {
-
-      let year = reference.getUTCFullYear();
-
-      let birthday = clampedDate(year, birth.getUTCMonth(), birth.getUTCDate());
-
-
-
-      if (birthday < reference) {
-
-        year += 1;
-
-        birthday = clampedDate(year, birth.getUTCMonth(), birth.getUTCDate());
-
-      }
-
-
-
-      return {
-
-        date: birthday,
-
-        days: Math.round((birthday - reference) / DAY_MS)
-
-      };
-
-    }
-
-
-
-    function formatDate(date) {
-
-      return new Intl.DateTimeFormat('en-US', {
-
-        day: 'numeric',
-
-        month: 'short',
-
-        year: 'numeric',
-
-        timeZone: 'UTC'
-
-      }).format(date);
-
-    }
-
-
-
-    function weekday(date) {
-
-      return new Intl.DateTimeFormat('en-US', {
-
-        weekday: 'long',
-
-        timeZone: 'UTC'
-
-      }).format(date);
-
-    }
-
-
-
-    function plural(value, word) {
-
-      return `${value} ${word}${value === 1 ? '' : 's'}`;
-
-    }
-
-
-
-    function setMetric(index, label, value) {
-
-      document.getElementById(`aclx-metric-label-${index}`).textContent = label;
-
-      document.getElementById(`aclx-metric-value-${index}`).textContent = value;
-
-    }
-
-
-
-    function clearError() {
-
-      errorBox.textContent = '';
-
-      [dateA, dateB, referenceDate].forEach(input => input.setAttribute('aria-invalid', 'false'));
-
-    }
-
-
-
-    function showError(message, input) {
-
-      clearError();
-
-      errorBox.textContent = message;
-
-      if (input) {
-
-        input.setAttribute('aria-invalid', 'true');
-
-        input.focus();
-
-      }
-
-    }
-
-
-
-    function clearResult() {
-
-      copyResult = null;
-
-      resultOutput.hidden = true;
-
-      resultEmpty.hidden = false;
-
-    }
-
-
-
-    function showToast(message) {
-
-      window.clearTimeout(toastTimer);
-
-      toast.textContent = message;
-
-      toast.classList.add('aclx-show');
-
-      toastTimer = window.setTimeout(() => toast.classList.remove('aclx-show'), 1700);
-
-    }
-
-
-
-    async function copyText(text, message) {
-
-      try {
-
-        await navigator.clipboard.writeText(text);
-
-      } catch (error) {
-
-        const helper = document.createElement('textarea');
-
-        helper.value = text;
-
-        helper.setAttribute('readonly', '');
-
-        helper.style.position = 'fixed';
-
-        helper.style.opacity = '0';
-
-        document.body.appendChild(helper);
-
-        helper.select();
-
-        document.execCommand('copy');
-
-        helper.remove();
-
-      }
-
-      showToast(message);
-
-    }
-
-
-
-    function renderResult(start, end, mode, relationship) {
-
-      const age = exactCalendarAge(start, end);
-
-      const totalDays = Math.round((end - start) / DAY_MS);
-
-      const totalMonths = age.years * 12 + age.months;
-
-      const wholeWeeks = Math.floor(totalDays / 7);
-
-      const summary = `${plural(age.years, 'year')}, ${plural(age.months, 'month')}, ${plural(age.days, 'day')}`;
-
-      const ymd = `${age.years};${pad(age.months)};${pad(age.days)}`;
-
-
-
-      document.getElementById('aclx-years').textContent = age.years.toLocaleString('en-US');
-
-      document.getElementById('aclx-months').textContent = age.months;
-
-      document.getElementById('aclx-days').textContent = age.days;
-
-      document.getElementById('aclx-result-summary').textContent = summary;
-
-      document.getElementById('aclx-ymd-format').textContent = ymd;
-
-
-
-      setMetric(1, 'Complete months', totalMonths.toLocaleString('en-US'));
-
-      setMetric(2, 'Whole weeks', wholeWeeks.toLocaleString('en-US'));
-
-      setMetric(3, 'Total days', totalDays.toLocaleString('en-US'));
-
-      setMetric(4, 'Total hours', (totalDays * 24).toLocaleString('en-US'));
-
-
-
-      if (mode === 'difference') {
-
-        document.getElementById('aclx-result-context').textContent = 'Exact age difference';
-
-        setMetric(5, 'Older person', relationship);
-
-        setMetric(6, 'Earlier birth date', formatDate(start));
-
-      } else {
-
-        const birthday = nextBirthday(start, end);
-
-        document.getElementById('aclx-result-context').textContent = mode === 'today'
-
-          ? 'Your exact age today'
-
-          : `Age on ${formatDate(end)}`;
-
-        setMetric(5, 'Born on', weekday(start));
-
-        setMetric(
-
-          6,
-
-          'Next birthday',
-
-          birthday.days === 0
-
-            ? `${formatDate(birthday.date)} · Today`
-
-            : `${formatDate(birthday.date)} · ${birthday.days}d`
-
-        );
-
-      }
-
-
-
-      copyResult = {
-
-        sentence: mode === 'difference' ? `Age difference: ${summary}` : `Exact age: ${summary}`,
-
-        ymd
-
-      };
-
-
-
-      resultEmpty.hidden = true;
-
-      resultOutput.hidden = false;
-
-    }
-
-
-
-    function updateMode(mode) {
-
-      activeMode = mode;
-
-      const content = modeContent[mode];
-
-      title.textContent = content.title;
-
-      description.textContent = content.description;
-
-      submitButton.textContent = content.button;
-
-
-
-      fieldReference.classList.toggle('aclx-hidden', mode !== 'date');
-
-      fieldB.classList.toggle('aclx-hidden', mode !== 'difference');
-
-      labelA.textContent = mode === 'difference' ? 'Person A date of birth' : 'Date of birth';
-
-
-
-      referenceDate.required = mode === 'date';
-
-      dateB.required = mode === 'difference';
-
-      dateA.max = mode === 'today' || mode === 'difference' ? todayString() : referenceDate.value;
-
-      dateB.max = mode === 'difference' ? todayString() : '';
-
-
-
-      clearError();
-
-      clearResult();
-
-    }
-
-
-
-    referenceDate.value = todayString();
-
-    dateA.max = todayString();
-
-    dateB.max = todayString();
-
-
-
-    document.querySelectorAll('input[name="aclx-mode"]').forEach(input => {
-
-      input.addEventListener('change', event => updateMode(event.target.value));
-
-    });
-
-
-
-    document.getElementById('aclx-use-today').addEventListener('click', () => {
-
-      referenceDate.value = todayString();
-
-      dateA.max = referenceDate.value;
-
-      clearError();
-
-    });
-
-
-
-    referenceDate.addEventListener('change', () => {
-
-      if (activeMode === 'date') dateA.max = referenceDate.value || '';
-
-      clearError();
-
-    });
-
-
-
-    [dateA, dateB].forEach(input => input.addEventListener('change', clearError));
-
-
-
-    form.addEventListener('submit', event => {
-
-      event.preventDefault();
-
-      clearError();
-
-
-
-      if (!dateA.value) {
-
-        showError(activeMode === 'difference' ? 'Enter Person A date of birth.' : 'Enter a date of birth.', dateA);
-
-        return;
-
-      }
-
-
-
-      const firstDate = parseDate(dateA.value);
-
-      if (!firstDate) {
-
-        showError('Enter a valid date.', dateA);
-
-        return;
-
-      }
-
-
-
-      if (activeMode === 'difference') {
-
-        if (!dateB.value) {
-
-          showError('Enter Person B date of birth.', dateB);
-
-          return;
-
-        }
-
-
-
-        const secondDate = parseDate(dateB.value);
-
-        if (!secondDate) {
-
-          showError('Enter a valid date for Person B.', dateB);
-
-          return;
-
-        }
-
-
-
-        const sameDate = firstDate.getTime() === secondDate.getTime();
-
-        const personAOlder = firstDate < secondDate;
-
-        const start = personAOlder ? firstDate : secondDate;
-
-        const end = personAOlder ? secondDate : firstDate;
-
-        const relationship = sameDate ? 'Same age' : personAOlder ? 'Person A' : 'Person B';
-
-        renderResult(start, end, 'difference', relationship);
-
-        return;
-
-      }
-
-
-
-      const comparisonDate = activeMode === 'today'
-
-        ? parseDate(todayString())
-
-        : parseDate(referenceDate.value);
-
-
-
-      if (!comparisonDate) {
-
-        showError('Choose a valid reference date.', referenceDate);
-
-        return;
-
-      }
-
-
-
-      if (firstDate > comparisonDate) {
-
-        showError('The date of birth must be on or before the reference date.', dateA);
-
-        return;
-
-      }
-
-
-
-      renderResult(firstDate, comparisonDate, activeMode);
-
-    });
-
-
-
-    document.getElementById('aclx-reset').addEventListener('click', () => {
-
-      dateA.value = '';
-
-      dateB.value = '';
-
-      referenceDate.value = todayString();
-
-      dateA.max = activeMode === 'date' ? referenceDate.value : todayString();
-
-      clearError();
-
-      clearResult();
-
-      dateA.focus();
-
-    });
-
-
-
-    document.getElementById('aclx-copy-result').addEventListener('click', () => {
-
-      if (copyResult) copyText(copyResult.sentence, 'Result copied');
-
-    });
-
-
-
-    document.getElementById('aclx-copy-ymd').addEventListener('click', () => {
-
-      if (copyResult) copyText(copyResult.ymd, 'Y;M;D copied');
-
-    });
-
-  })();
-
-</script>
 
 <!-- AGE CALCULATOR LAB — HOMEPAGE SECTION 3
 
