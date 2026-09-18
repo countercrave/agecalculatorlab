@@ -51,6 +51,26 @@
       "permanent": true
     },
     {
+      "source": "/korean-age-explained",
+      "destination": "/articles/korean-age-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age-explained/",
+      "destination": "/articles/korean-age-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age",
+      "destination": "/articles/korean-age-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age/",
+      "destination": "/articles/korean-age-explained/",
+      "permanent": true
+    },
+    {
       "source": "/privacy-policy",
       "destination": "/privacy/",
       "permanent": true

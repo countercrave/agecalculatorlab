@@ -824,6 +824,72 @@
       opacity: 1;
       transform: translateY(0);
     }
+  
+    /* Jumpbar Navigation Upgrades */
+    .jumpbar {
+      position: sticky;
+      top: var(--header-h);
+      z-index: 40;
+      background: #ffffff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: var(--brand-line) transparent;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    }
+    .jumpbar::-webkit-scrollbar {
+      height: 4px;
+    }
+    .jumpbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .jumpbar::-webkit-scrollbar-thumb {
+      background: var(--brand-line);
+      border-radius: 4px;
+    }
+    .jumpbar::-webkit-scrollbar-thumb:hover {
+      background: var(--brand);
+    }
+    .jumpbar .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      white-space: nowrap;
+      gap: 6px;
+      padding: 8px 16px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .jumpbar a {
+      padding: 6px 13px;
+      font-size: var(--t-xs);
+      font-weight: 600;
+      color: var(--ink-2);
+      text-align: center;
+      white-space: nowrap;
+      border-radius: var(--r-pill);
+      background: var(--soft);
+      border: 1px solid var(--line);
+      transition: all .15s ease;
+      flex: 0 0 auto;
+      text-decoration: none;
+      box-shadow: none;
+    }
+    .jumpbar a:hover {
+      color: var(--brand-dark);
+      background: var(--brand-soft);
+      border-color: var(--brand-line);
+      box-shadow: none;
+    }
+    .jumpbar a.is-current {
+      color: #ffffff !important;
+      background: var(--brand-dark) !important;
+      border-color: var(--brand-dark) !important;
+      box-shadow: none !important;
+    }
+
   </style>
 </head>
 <body>
@@ -928,18 +994,18 @@
     </section>
 
     <!-- Quick Navigation Jumpbar -->
-    <div class="jumpbar">
+    <div class="jumpbar" id="kJumpbar">
       <div class="container">
-        <a href="#calculator">Calculator</a>
+        <a href="#calculator" class="is-current">Calculator</a>
         <a href="#results">Results</a>
         <a href="#how-it-works">How It Works</a>
-        <a href="#comparison">Traditional vs Modern</a>
-        <a href="#formula">How to Calculate</a>
-        <a href="#timeline">Visual Timeline</a>
-        <a href="#tracker">Age Milestones</a>
+        <a href="#comparison">Systems Compared</a>
+        <a href="#formula">Formula</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#tracker">Milestones</a>
         <a href="#compare-tool">Compare 2 People</a>
         <a href="#chart">Birth Year Chart</a>
-        <a href="#law-change">2023 Law Change</a>
+        <a href="#law-change">2023 Law</a>
         <a href="#faq">FAQ</a>
       </div>
     </div>
@@ -2046,6 +2112,30 @@
     buildBirthYearChart();
     window.runKoreanCalc();
     window.runCompareTool();
+
+    // Jumpbar ScrollSpy
+    var jumpLinks = document.querySelectorAll('#kJumpbar a');
+    var trackedSections = [];
+    jumpLinks.forEach(function(link) {
+      var targetId = link.getAttribute('href').replace('#', '');
+      var el = document.getElementById(targetId);
+      if (el) trackedSections.push({ link: link, el: el });
+    });
+
+    window.addEventListener('scroll', function() {
+      var scrollPos = window.scrollY + 140;
+      var current = null;
+      for (var i = 0; i < trackedSections.length; i++) {
+        if (trackedSections[i].el.offsetTop <= scrollPos) {
+          current = trackedSections[i].link;
+        }
+      }
+      if (current) {
+        jumpLinks.forEach(function(l) { l.classList.remove('is-current'); });
+        current.classList.add('is-current');
+      }
+    }, { passive: true });
+
 
   })();
   </script>
