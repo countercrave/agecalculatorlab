@@ -43,7 +43,7 @@
           "price": "0",
           "priceCurrency": "USD"
         },
-        "description": "Calculate traditional Korean age (세는나이), Year Age (연나이), and International Age (만나이) alongside milestone timelines, age difference comparisons, and 2023 legal reform details.",
+        "description": "Calculate official International Legal Age (만 나이), Year Age (연 나이), and Traditional Korean Age (세는 나이) alongside cultural milestones (Baek-il, Dol, Hwangap), K-pop celebrity comparator, and 2023 legal reform details.",
         "publisher": {
           "@type": "Organization",
           "name": "Age Calculator Lab",
@@ -158,7 +158,7 @@
           },
           {
             "@type": "Question",
-            "name": "Why is age hierarchy so important in Korean culture?",
+            "name": "Why is age hierarchy so important in Korean culture and language?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Korean social relationships, linguistic honorifics (존댓말 vs 반말), and etiquette strictly depend on relative age. Establishing age allows speakers to choose appropriate polite grammar, titles (such as hyung, oppa, noona, unnie), and social roles. Even a one-year difference traditionally shapes social dynamics."
@@ -170,7 +170,9 @@
   }
   </script>
   <style>
-    /* Korean Age Calculator Specific Styles & Accents */
+    /* ============================================================
+       Bento Grid & Advanced Korean Age Engine Styles
+       ============================================================ */
     .korea-pill {
       display: inline-flex;
       align-items: center;
@@ -183,649 +185,18 @@
       font-weight: 700;
       border: 1px solid rgba(220, 38, 38, 0.2);
     }
-    .korea-badge-blue {
+    .korea-pill-blue {
       background: rgba(37, 99, 235, 0.08);
       color: #1d4ed8;
       border-color: rgba(37, 99, 235, 0.2);
     }
-    .k-calc-container {
-      background: var(--panel);
-      border: 1px solid var(--line-strong);
-      border-radius: var(--r-lg);
-      padding: clamp(20px, 3vw, 32px);
-      box-shadow: 0 10px 30px rgba(7, 84, 51, 0.05);
-      margin-bottom: var(--s-8);
-    }
-    .k-calc-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--s-5);
-      margin-bottom: var(--s-5);
-    }
-    @media (max-width: 768px) {
-      .k-calc-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .k-field {
-      display: flex;
-      flex-direction: column;
-      gap: var(--s-2);
-    }
-    .k-field label {
-      font-size: var(--t-sm);
-      font-weight: 600;
-      color: var(--ink);
-    }
-    .k-field input[type="date"] {
-      padding: 12px 14px;
-      border-radius: var(--r-sm);
-      border: 1.5px solid var(--line-strong);
-      font-size: var(--t-md);
-      font-family: inherit;
-      color: var(--ink);
-      background: var(--page);
-      outline: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .k-field input[type="date"]:focus {
-      border-color: var(--brand);
-      box-shadow: 0 0 0 3px var(--brand-soft);
-    }
-    .k-presets-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--s-2);
-      margin-top: var(--s-1);
-    }
-    .k-preset-chip {
-      background: var(--soft);
-      border: 1px solid var(--line);
-      border-radius: var(--r-pill);
-      padding: 4px 10px;
-      font-size: var(--t-xs);
-      color: var(--ink-2);
-      cursor: pointer;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
-    .k-preset-chip:hover {
-      background: var(--brand-soft);
-      color: var(--brand-dark);
-      border-color: var(--brand-line);
-    }
-    .k-btn-group {
-      display: flex;
-      gap: var(--s-3);
-      margin-top: var(--s-4);
-    }
-    .k-btn-primary {
-      flex: 1;
-      background: var(--brand-dark);
-      color: #ffffff;
-      padding: 14px 24px;
-      border-radius: var(--r-sm);
-      font-size: var(--t-md);
-      font-weight: 700;
-      border: none;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      transition: background 0.2s, transform 0.1s;
-    }
-    .k-btn-primary:hover {
-      background: var(--brand-deep);
-    }
-    .k-btn-primary:active {
-      transform: scale(0.99);
-    }
-    .k-btn-reset {
-      background: var(--soft);
-      color: var(--ink-2);
-      padding: 14px 20px;
-      border-radius: var(--r-sm);
-      font-size: var(--t-md);
-      font-weight: 600;
-      border: 1px solid var(--line-strong);
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .k-btn-reset:hover {
-      background: var(--line);
-      color: var(--ink);
+    .korea-pill-green {
+      background: rgba(18, 120, 74, 0.08);
+      color: #075433;
+      border-color: rgba(18, 120, 74, 0.2);
     }
 
-    /* Primary Hero Result Card */
-    .k-result-hero {
-      background: linear-gradient(135deg, #053b28 0%, #075433 100%);
-      color: #ffffff;
-      border-radius: var(--r-lg);
-      padding: clamp(24px, 4vw, 36px);
-      text-align: center;
-      margin-bottom: var(--s-6);
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 12px 32px rgba(5, 59, 40, 0.18);
-    }
-    .k-result-hero::after {
-      content: "";
-      position: absolute;
-      top: -30px;
-      right: -30px;
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(220,38,38,0.2) 0%, rgba(37,99,235,0.2) 60%, transparent 80%);
-      pointer-events: none;
-    }
-    .k-result-eyebrow {
-      display: inline-block;
-      font-size: var(--t-xs);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: 700;
-      color: #9fe2c0;
-      margin-bottom: var(--s-2);
-    }
-    .k-result-big-number {
-      font-family: var(--font-display);
-      font-size: clamp(3.2rem, 8vw, 4.8rem);
-      font-weight: 700;
-      line-height: 1;
-      margin: var(--s-1) 0 var(--s-2);
-      color: #ffffff;
-      letter-spacing: -0.02em;
-    }
-    .k-result-korean-term {
-      font-size: var(--t-lg);
-      font-weight: 600;
-      color: #d1fae5;
-    }
-    .k-result-explainer-tag {
-      display: inline-block;
-      margin-top: var(--s-3);
-      padding: 6px 14px;
-      background: rgba(255, 255, 255, 0.12);
-      border-radius: var(--r-pill);
-      font-size: var(--t-xs);
-      color: #eaf5f0;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    /* Multi-card System Breakdown */
-    .k-cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: var(--s-4);
-      margin-bottom: var(--s-6);
-    }
-    .k-sys-card {
-      background: var(--panel);
-      border: 1px solid var(--line-strong);
-      border-radius: var(--r-md);
-      padding: var(--s-5);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .k-sys-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-    }
-    .k-sys-card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: var(--s-2);
-    }
-    .k-sys-tag {
-      font-size: var(--t-xs);
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: var(--r-pill);
-    }
-    .k-sys-val {
-      font-family: var(--font-display);
-      font-size: var(--t-3xl);
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.1;
-      margin: var(--s-2) 0;
-    }
-    .k-sys-title {
-      font-size: var(--t-sm);
-      font-weight: 700;
-      color: var(--ink);
-      margin-bottom: 2px;
-    }
-    .k-sys-korean {
-      font-size: var(--t-xs);
-      color: var(--muted);
-      margin-bottom: var(--s-2);
-    }
-    .k-sys-desc {
-      font-size: var(--t-xs);
-      color: var(--ink-2);
-      line-height: 1.5;
-      margin-top: auto;
-      border-top: 1px dashed var(--line);
-      padding-top: var(--s-2);
-    }
-
-    /* Status Difference Callout */
-    .k-diff-alert {
-      background: var(--brand-soft);
-      border: 1px solid var(--brand-line);
-      border-radius: var(--r-md);
-      padding: var(--s-4) var(--s-5);
-      margin-bottom: var(--s-6);
-      display: flex;
-      align-items: flex-start;
-      gap: var(--s-3);
-    }
-    .k-diff-alert-icon {
-      font-size: 1.5rem;
-      line-height: 1;
-    }
-    .k-diff-alert h4 {
-      font-size: var(--t-base);
-      font-weight: 700;
-      color: var(--brand-deep);
-      margin: 0 0 4px;
-    }
-    .k-diff-alert p {
-      font-size: var(--t-sm);
-      color: var(--ink-2);
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    /* Shareable Social Card Container */
-    .k-share-card-container {
-      background: var(--soft);
-      border: 1.5px solid var(--line-strong);
-      border-radius: var(--r-lg);
-      padding: var(--s-6);
-      margin-bottom: var(--s-8);
-    }
-    .k-share-card-preview {
-      background: #ffffff;
-      border: 2px solid var(--ink);
-      border-radius: var(--r-md);
-      padding: var(--s-6);
-      max-width: 480px;
-      margin: 0 auto var(--s-4);
-      position: relative;
-      box-shadow: 4px 4px 0px var(--ink);
-    }
-    .k-share-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: var(--t-xs);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #b91c1c;
-      margin-bottom: var(--s-2);
-    }
-    .k-share-title {
-      font-family: var(--font-display);
-      font-size: var(--t-2xl);
-      color: var(--ink);
-      margin: 0 0 var(--s-3);
-      line-height: 1.2;
-    }
-    .k-share-rows {
-      display: flex;
-      flex-direction: column;
-      gap: var(--s-2);
-      margin-bottom: var(--s-4);
-      font-size: var(--t-sm);
-      color: var(--ink-2);
-    }
-    .k-share-row {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px dotted var(--line-strong);
-      padding-bottom: 4px;
-    }
-    .k-share-row strong {
-      color: var(--ink);
-    }
-    .k-share-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: var(--t-xs);
-      color: var(--muted);
-      padding-top: var(--s-2);
-      border-top: 1px solid var(--line);
-    }
-    .k-share-actions {
-      display: flex;
-      justify-content: center;
-      gap: var(--s-3);
-      flex-wrap: wrap;
-    }
-    .k-btn-share {
-      background: var(--brand);
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: var(--r-pill);
-      font-weight: 600;
-      font-size: var(--t-sm);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: background 0.2s;
-    }
-    .k-btn-share:hover {
-      background: var(--brand-dark);
-    }
-    .k-btn-copy {
-      background: #ffffff;
-      color: var(--ink);
-      border: 1px solid var(--line-strong);
-      padding: 10px 20px;
-      border-radius: var(--r-pill);
-      font-weight: 600;
-      font-size: var(--t-sm);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s;
-    }
-    .k-btn-copy:hover {
-      background: var(--soft-2);
-      border-color: var(--ink);
-    }
-
-    /* Step-by-Step Visual Timeline Graphic */
-    .k-timeline-graphic {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: var(--s-4);
-      position: relative;
-      margin: var(--s-6) 0;
-    }
-    @media (max-width: 768px) {
-      .k-timeline-graphic {
-        grid-template-columns: 1fr;
-      }
-    }
-    .k-timeline-node {
-      background: var(--panel);
-      border: 1px solid var(--line-strong);
-      border-radius: var(--r-md);
-      padding: var(--s-4);
-      position: relative;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-    }
-    .k-timeline-step-num {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: var(--brand-dark);
-      color: #fff;
-      font-size: var(--t-xs);
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: var(--s-2);
-    }
-    .k-timeline-date {
-      font-weight: 700;
-      color: var(--ink);
-      font-size: var(--t-sm);
-      margin-bottom: 2px;
-    }
-    .k-timeline-badge {
-      display: inline-block;
-      font-size: var(--t-xs);
-      padding: 2px 6px;
-      border-radius: 4px;
-      background: var(--brand-soft);
-      color: var(--brand-dark);
-      font-weight: 600;
-      margin-bottom: var(--s-2);
-    }
-    .k-timeline-ages {
-      font-size: var(--t-xs);
-      color: var(--ink-2);
-      line-height: 1.4;
-    }
-
-    /* Comparison Table / Responsive Cards */
-    .k-table-wrap {
-      overflow-x: auto;
-      margin: var(--s-6) 0;
-      border-radius: var(--r-md);
-      border: 1px solid var(--line-strong);
-      background: var(--panel);
-    }
-    .k-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: var(--t-sm);
-    }
-    .k-table th {
-      background: var(--soft);
-      color: var(--ink);
-      font-weight: 700;
-      padding: 14px 16px;
-      border-bottom: 2px solid var(--line-strong);
-    }
-    .k-table td {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--line);
-      color: var(--ink-2);
-    }
-    .k-table tr:last-child td {
-      border-bottom: none;
-    }
-    .k-table tr:hover td {
-      background: var(--soft-2);
-    }
-    @media (max-width: 640px) {
-      .k-table thead {
-        display: none;
-      }
-      .k-table, .k-table tbody, .k-table tr, .k-table td {
-        display: block;
-        width: 100%;
-      }
-      .k-table tr {
-        margin-bottom: var(--s-4);
-        border: 1px solid var(--line-strong);
-        border-radius: var(--r-sm);
-        background: var(--panel);
-        padding: var(--s-2);
-      }
-      .k-table td {
-        border-bottom: 1px dashed var(--line);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 10px;
-      }
-      .k-table td::before {
-        content: attr(data-label);
-        font-weight: 700;
-        color: var(--ink);
-        font-size: var(--t-xs);
-      }
-    }
-
-    /* 2-Person Comparison Tool */
-    .k-compare-box {
-      background: var(--panel);
-      border: 1.5px solid var(--brand-line);
-      border-radius: var(--r-lg);
-      padding: clamp(20px, 3vw, 32px);
-      margin: var(--s-6) 0;
-    }
-    .k-compare-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--s-5);
-      margin-bottom: var(--s-5);
-    }
-    @media (max-width: 640px) {
-      .k-compare-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .k-compare-result-card {
-      background: var(--soft);
-      border-radius: var(--r-md);
-      padding: var(--s-4) var(--s-5);
-      border: 1px solid var(--line-strong);
-    }
-
-    /* Interactive Timeline Milestones Table */
-    .k-milestone-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: var(--t-sm);
-    }
-    .k-milestone-table th {
-      background: var(--soft);
-      padding: 10px 14px;
-      text-align: left;
-      font-weight: 700;
-      color: var(--ink);
-      border-bottom: 1.5px solid var(--line-strong);
-    }
-    .k-milestone-table td {
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--line);
-      color: var(--ink-2);
-    }
-    .k-milestone-table tr:hover td {
-      background: var(--brand-soft);
-    }
-
-    /* Birth Year Chart Filter */
-    .k-chart-filter-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--s-4);
-      margin-bottom: var(--s-4);
-      flex-wrap: wrap;
-    }
-    .k-chart-search {
-      padding: 8px 14px;
-      border-radius: var(--r-pill);
-      border: 1.5px solid var(--line-strong);
-      font-size: var(--t-sm);
-      font-family: inherit;
-      width: 220px;
-    }
-    .k-chart-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-      gap: var(--s-3);
-      max-height: 480px;
-      overflow-y: auto;
-      padding: 4px;
-      border: 1px solid var(--line);
-      border-radius: var(--r-md);
-      background: var(--panel);
-    }
-    .k-chart-item {
-      padding: var(--s-3);
-      border: 1px solid var(--line);
-      border-radius: var(--r-sm);
-      background: var(--page);
-      text-align: center;
-      transition: all 0.2s;
-    }
-    .k-chart-item.highlight {
-      background: var(--brand-soft);
-      border-color: var(--brand);
-      transform: scale(1.02);
-      box-shadow: 0 4px 10px rgba(18, 120, 74, 0.12);
-    }
-    .k-chart-year {
-      font-weight: 700;
-      font-size: var(--t-sm);
-      color: var(--ink);
-    }
-    .k-chart-k-age {
-      font-family: var(--font-display);
-      font-size: var(--t-xl);
-      font-weight: 700;
-      color: var(--brand-dark);
-      line-height: 1.2;
-      margin: 2px 0;
-    }
-    .k-chart-intl-age {
-      font-size: var(--t-xs);
-      color: var(--muted);
-    }
-
-    /* Worked Examples Cards */
-    .k-worked-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--s-5);
-      margin: var(--s-6) 0;
-    }
-    @media (max-width: 768px) {
-      .k-worked-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .k-worked-card {
-      background: var(--panel);
-      border: 1px solid var(--line-strong);
-      border-radius: var(--r-md);
-      padding: var(--s-5);
-      position: relative;
-    }
-    .k-worked-card h4 {
-      font-size: var(--t-base);
-      font-weight: 700;
-      color: var(--ink);
-      margin-top: 0;
-      margin-bottom: var(--s-2);
-    }
-
-    /* Copy toast notification */
-    #kCopyToast {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: var(--ink);
-      color: #ffffff;
-      padding: 12px 20px;
-      border-radius: var(--r-pill);
-      font-size: var(--t-sm);
-      font-weight: 600;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.3s ease;
-      pointer-events: none;
-      z-index: 9999;
-    }
-    #kCopyToast.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  
-    /* Jumpbar Navigation Upgrades */
+    /* Jumpbar pill navigation */
     .jumpbar {
       position: sticky;
       top: var(--header-h);
@@ -837,20 +208,14 @@
       -webkit-overflow-scrolling: touch;
       scrollbar-width: thin;
       scrollbar-color: var(--brand-line) transparent;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     }
     .jumpbar::-webkit-scrollbar {
       height: 4px;
     }
-    .jumpbar::-webkit-scrollbar-track {
-      background: transparent;
-    }
     .jumpbar::-webkit-scrollbar-thumb {
       background: var(--brand-line);
       border-radius: 4px;
-    }
-    .jumpbar::-webkit-scrollbar-thumb:hover {
-      background: var(--brand);
     }
     .jumpbar .container {
       display: flex;
@@ -875,21 +240,608 @@
       transition: all .15s ease;
       flex: 0 0 auto;
       text-decoration: none;
-      box-shadow: none;
     }
     .jumpbar a:hover {
       color: var(--brand-dark);
       background: var(--brand-soft);
       border-color: var(--brand-line);
-      box-shadow: none;
     }
     .jumpbar a.is-current {
       color: #ffffff !important;
       background: var(--brand-dark) !important;
       border-color: var(--brand-dark) !important;
-      box-shadow: none !important;
     }
 
+    /* Hero Controller Glass Card */
+    .k-hero-controller {
+      background: #ffffff;
+      border: 1.5px solid var(--line-strong);
+      border-radius: var(--r-xl);
+      padding: clamp(20px, 4vw, 36px);
+      box-shadow: 0 16px 40px rgba(7, 84, 51, 0.06);
+      margin-bottom: var(--s-8);
+      position: relative;
+    }
+    .k-controller-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--s-3);
+      margin-bottom: var(--s-5);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: var(--s-4);
+    }
+    .k-mode-toggle {
+      display: inline-flex;
+      background: var(--soft);
+      padding: 4px;
+      border-radius: var(--r-pill);
+      border: 1px solid var(--line);
+    }
+    .k-mode-btn {
+      padding: 8px 16px;
+      border-radius: var(--r-pill);
+      border: none;
+      font-size: var(--t-xs);
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--ink-2);
+      background: transparent;
+      transition: all 0.2s;
+    }
+    .k-mode-btn.active {
+      background: var(--brand-dark);
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .k-kst-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: var(--t-xs);
+      color: var(--ink-2);
+      background: var(--brand-soft);
+      padding: 6px 12px;
+      border-radius: var(--r-pill);
+      border: 1px solid var(--brand-line);
+      font-weight: 600;
+    }
+    .k-input-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--s-5);
+      margin-bottom: var(--s-4);
+    }
+    @media (max-width: 768px) {
+      .k-input-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .k-input-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .k-input-field label {
+      font-size: var(--t-sm);
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .k-input-field input[type="date"] {
+      padding: 14px 16px;
+      border-radius: var(--r-sm);
+      border: 1.5px solid var(--line-strong);
+      font-size: var(--t-md);
+      font-family: inherit;
+      color: var(--ink);
+      background: var(--page);
+      outline: none;
+      transition: all 0.2s;
+    }
+    .k-input-field input[type="date"]:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px var(--brand-soft);
+    }
+    .k-presets-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: var(--s-2);
+    }
+    .k-chip {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: var(--r-pill);
+      padding: 5px 12px;
+      font-size: var(--t-xs);
+      color: var(--ink-2);
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .k-chip:hover {
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      border-color: var(--brand-line);
+    }
+    .k-action-row {
+      display: flex;
+      gap: var(--s-3);
+      margin-top: var(--s-4);
+    }
+    .k-btn-main {
+      flex: 1;
+      background: var(--brand-dark);
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: var(--r-sm);
+      font-size: var(--t-md);
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .k-btn-main:hover {
+      background: var(--brand-deep);
+    }
+    .k-btn-main:active {
+      transform: scale(0.99);
+    }
+    .k-btn-clear {
+      background: var(--soft);
+      color: var(--ink-2);
+      padding: 14px 20px;
+      border-radius: var(--r-sm);
+      font-size: var(--t-md);
+      font-weight: 600;
+      border: 1px solid var(--line-strong);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .k-btn-clear:hover {
+      background: var(--line);
+      color: var(--ink);
+    }
+    .k-inline-error {
+      display: none;
+      background: rgba(220, 38, 38, 0.08);
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      color: #b91c1c;
+      padding: 10px 16px;
+      border-radius: var(--r-sm);
+      font-size: var(--t-sm);
+      margin-top: var(--s-3);
+      font-weight: 600;
+    }
+
+    /* Bento Grid Results Layout */
+    .k-bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: var(--s-4);
+      margin-bottom: var(--s-8);
+    }
+    @media (max-width: 900px) {
+      .k-bento-grid {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    /* Bento Card 1: Official International Age (Span 7) */
+    .k-bento-card-official {
+      grid-column: span 7;
+      background: linear-gradient(135deg, #053b28 0%, #075433 100%);
+      color: #ffffff;
+      border-radius: var(--r-lg);
+      padding: clamp(24px, 4vw, 36px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(5, 59, 40, 0.16);
+      border: 2px solid #08745a;
+    }
+    .k-bento-card-official::after {
+      content: "";
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .k-bento-official-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #6ee7b7;
+      padding: 4px 12px;
+      border-radius: var(--r-pill);
+      font-size: var(--t-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: var(--s-3);
+    }
+    .k-bento-big-age {
+      font-family: var(--font-display);
+      font-size: clamp(3.2rem, 6vw, 4.8rem);
+      font-weight: 700;
+      line-height: 1;
+      color: #ffffff;
+      margin: var(--s-1) 0;
+      letter-spacing: -0.02em;
+    }
+    .k-bento-korean-subtitle {
+      font-size: var(--t-lg);
+      font-weight: 600;
+      color: #d1fae5;
+      margin-bottom: var(--s-3);
+    }
+    .k-bento-official-note {
+      font-size: var(--t-xs);
+      color: #a7f3d0;
+      line-height: 1.6;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: var(--s-3);
+      margin-top: auto;
+    }
+
+    /* Bento Card 2: Year Age / Statutory Exceptions (Span 5) */
+    .k-bento-card-statutory {
+      grid-column: span 5;
+      background: #ffffff;
+      border: 1.5px solid #2563eb;
+      border-radius: var(--r-lg);
+      padding: clamp(20px, 3vw, 28px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.06);
+    }
+    .k-statutory-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--s-2);
+    }
+    .k-statutory-val {
+      font-family: var(--font-display);
+      font-size: var(--t-3xl);
+      font-weight: 700;
+      color: #1d4ed8;
+      line-height: 1;
+      margin: var(--s-1) 0 var(--s-3);
+    }
+    .k-statutory-badge-box {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-2);
+      margin-top: auto;
+      border-top: 1px dashed var(--line);
+      padding-top: var(--s-3);
+    }
+    .k-statutory-status-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--soft);
+      padding: 8px 12px;
+      border-radius: var(--r-xs);
+      font-size: var(--t-xs);
+    }
+    .k-statutory-status-item strong {
+      color: var(--ink);
+    }
+    .k-status-pill {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--r-pill);
+    }
+    .k-status-pill.legal {
+      background: rgba(18, 120, 74, 0.12);
+      color: #075433;
+    }
+    .k-status-pill.underage {
+      background: rgba(220, 38, 38, 0.12);
+      color: #b91c1c;
+    }
+
+    /* Bento Card 3: Traditional Counting Age (Span 6) */
+    .k-bento-card-traditional {
+      grid-column: span 6;
+      background: #ffffff;
+      border: 1.5px solid #d97706;
+      border-radius: var(--r-lg);
+      padding: clamp(20px, 3vw, 28px);
+      box-shadow: 0 8px 24px rgba(217, 119, 6, 0.06);
+    }
+    .k-trad-age-val {
+      font-family: var(--font-display);
+      font-size: var(--t-3xl);
+      font-weight: 700;
+      color: #b45309;
+      line-height: 1;
+      margin: var(--s-1) 0 var(--s-2);
+    }
+
+    /* Bento Card 4: System Difference & Explanation (Span 6) */
+    .k-bento-card-difference {
+      grid-column: span 6;
+      background: var(--soft);
+      border: 1.5px solid var(--line-strong);
+      border-radius: var(--r-lg);
+      padding: clamp(20px, 3vw, 28px);
+    }
+    .k-diff-val {
+      font-family: var(--font-display);
+      font-size: var(--t-3xl);
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      margin: var(--s-1) 0 var(--s-2);
+    }
+
+    /* Bento Card 5: Cultural Lifecycle Milestones (12 Col) */
+    .k-bento-lifecycle {
+      background: var(--panel);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--r-lg);
+      padding: clamp(20px, 3vw, 32px);
+      margin-bottom: var(--s-8);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+    }
+    .k-milestones-stepper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--s-3);
+      margin-top: var(--s-4);
+    }
+    .k-milestone-step-card {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      padding: var(--s-4);
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .k-milestone-step-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+      border-color: var(--brand-line);
+    }
+    .k-milestone-icon {
+      font-size: 1.6rem;
+      margin-bottom: var(--s-1);
+    }
+    .k-milestone-name {
+      font-weight: 700;
+      font-size: var(--t-sm);
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+    .k-milestone-hangul {
+      font-size: var(--t-xs);
+      color: var(--muted);
+      margin-bottom: var(--s-2);
+    }
+    .k-milestone-date {
+      font-size: var(--t-sm);
+      font-weight: 700;
+      color: var(--brand-dark);
+      background: #ffffff;
+      padding: 4px 8px;
+      border-radius: var(--r-xs);
+      border: 1px solid var(--line);
+      margin-bottom: var(--s-2);
+    }
+    .k-milestone-desc {
+      font-size: 11px;
+      color: var(--ink-2);
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* Bento Card 6: Interactive Korean Honorifics & Speech Level */
+    .k-honorifics-box {
+      background: #ffffff;
+      border: 1.5px solid var(--brand-line);
+      border-radius: var(--r-lg);
+      padding: clamp(20px, 3vw, 32px);
+      margin-bottom: var(--s-8);
+      box-shadow: 0 8px 24px rgba(7, 84, 51, 0.05);
+    }
+    .k-honorifics-controller {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--s-4);
+      margin: var(--s-4) 0;
+    }
+    @media (max-width: 768px) {
+      .k-honorifics-controller {
+        grid-template-columns: 1fr;
+      }
+    }
+    .k-honorific-card-result {
+      background: var(--soft);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--r-md);
+      padding: var(--s-5);
+      text-align: center;
+    }
+    .k-honorific-title-display {
+      font-family: var(--font-display);
+      font-size: var(--t-2xl);
+      color: var(--brand-dark);
+      font-weight: 700;
+      margin: var(--s-2) 0;
+    }
+
+    /* Bento Card 7: K-Pop Idol & Celebrity Comparator */
+    .k-idol-box {
+      background: var(--panel);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--r-lg);
+      padding: clamp(20px, 3vw, 32px);
+      margin-bottom: var(--s-8);
+    }
+    .k-idol-filter-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--s-3);
+      margin-bottom: var(--s-4);
+    }
+    .k-idol-rail {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: var(--s-3);
+      max-height: 400px;
+      overflow-y: auto;
+      padding: 4px;
+    }
+    .k-idol-card {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      padding: var(--s-3) var(--s-4);
+      display: flex;
+      align-items: center;
+      gap: var(--s-3);
+      transition: all 0.2s;
+    }
+    .k-idol-card:hover {
+      background: #ffffff;
+      border-color: var(--brand);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+    }
+    .k-idol-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: var(--t-sm);
+      flex-shrink: 0;
+      border: 1.5px solid var(--brand-line);
+    }
+    .k-idol-info h4 {
+      font-size: var(--t-sm);
+      margin: 0;
+      color: var(--ink);
+    }
+    .k-idol-info small {
+      font-size: 11px;
+      color: var(--muted);
+      display: block;
+    }
+    .k-idol-badge {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      background: #ffffff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--line);
+      margin-top: 2px;
+      display: inline-block;
+    }
+
+    /* Social Share 9:16 Story Card Component */
+    .k-share-section {
+      background: var(--soft);
+      border: 1.5px solid var(--line-strong);
+      border-radius: var(--r-xl);
+      padding: clamp(20px, 4vw, 36px);
+      margin-bottom: var(--s-8);
+      text-align: center;
+    }
+    .k-story-card {
+      background: #ffffff;
+      border: 2px solid var(--ink);
+      border-radius: var(--r-lg);
+      padding: var(--s-6);
+      max-width: 380px;
+      margin: 0 auto var(--s-5);
+      box-shadow: 6px 6px 0px var(--ink);
+      text-align: left;
+      position: relative;
+    }
+    .k-story-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--s-4);
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: var(--s-2);
+    }
+    .k-story-title {
+      font-family: var(--font-display);
+      font-size: var(--t-2xl);
+      color: var(--ink);
+      line-height: 1.2;
+      margin: 0 0 var(--s-3);
+    }
+    .k-story-stat-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px dashed var(--line-strong);
+      font-size: var(--t-sm);
+    }
+    .k-story-stat-row strong {
+      color: var(--ink);
+    }
+    .k-story-footer {
+      margin-top: var(--s-4);
+      padding-top: var(--s-2);
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--t-xs);
+      color: var(--muted);
+    }
+
+    /* Toast Notification */
+    #kToast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--ink);
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: var(--r-pill);
+      font-size: var(--t-sm);
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 9999;
+    }
+    #kToast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 </head>
 <body>
@@ -939,12 +891,12 @@
               <a href="../../articles/">Browse all guides →</a>
             </div>
             <div class="nav-guide-grid">
+              <a href="../../articles/korean-age-explained/"><small>Universal Chronology</small><span>Korean Age: What Is It and How Does It Work?</span></a>
               <a href="../../articles/calculate-exact-age-years-months-days/"><small>Universal Chronology</small><span>How to Calculate Exact Age in Years, Months and Days</span></a>
               <a href="../../articles/chronological-age-explained/"><small>Universal Chronology</small><span>Chronological Age: What It Measures and What It Doesn't</span></a>
               <a href="../../articles/calendar-age-vs-decimal-age/"><small>Universal Chronology</small><span>Calendar Age vs Decimal Age: Which One Does Your Form Want?</span></a>
               <a href="../../articles/calculate-age-on-past-date/"><small>Universal Chronology</small><span>Working Out Your Age on a Past Date</span></a>
               <a href="../../articles/calculate-age-on-future-date/"><small>Universal Chronology</small><span>How Old Will I Be on a Future Date?</span></a>
-              <a href="../../articles/leap-day-birthdays-age-calculation/"><small>Universal Chronology</small><span>Leap-Day Birthdays: Ageing Normally, Celebrating Awkwardly</span></a>
             </div>
           </div>
         </details>
@@ -963,19 +915,19 @@
           <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="../../">Home</a> / <a href="../../categories/universal-chronology/">Universal Chronology</a> / Korean Age Calculator
           </nav>
-          <span class="eyebrow"><span class="korea-pill">🇰🇷 한국 나이 계산기</span> Universal Chronology · Cultural Age Systems</span>
+          <span class="eyebrow"><span class="korea-pill">🇰🇷 한국 나이 정밀 계산기</span> Universal Chronology · Cultural Age Systems</span>
           <h1>Korean Age Calculator</h1>
-          <p class="lead">Calculate your Korean age, international age, and traditional Korean age system using your date of birth. See the exact difference between Korean age and your completed calendar age instantly.</p>
+          <p class="lead">Calculate your official International Legal Age (만 나이), statutory Year Age (연 나이), and traditional Korean age (세는 나이) from your date of birth. Fully compliant with South Korea's landmark 2023 Civil Act reform.</p>
           <div class="trust-row">
-            <span class="trust-pill">✓ 100% Browser-Side Privacy</span>
-            <span class="trust-pill">✓ 2023 Legal Reform Context</span>
-            <span class="trust-pill">✓ Instant 3-System Breakdown</span>
-            <span class="trust-pill">✓ 1-Click Shareable Card</span>
+            <span class="trust-pill">✓ 2023 Civil Act Standard (만 나이)</span>
+            <span class="trust-pill">✓ Korea Standard Time (KST) Engine</span>
+            <span class="trust-pill">✓ Alcohol &amp; Military Status</span>
+            <span class="trust-pill">✓ Cultural Lifecycle Milestones</span>
           </div>
           <div class="meta-row">
             <span>Updated: September 2026</span>
-            <span>Standard: Gregorian &amp; Korean Traditions</span>
-            <span>Data: Private &amp; Client-Side</span>
+            <span>Standard: Civil Act Art. 158/160</span>
+            <span>Data: 100% Client-Side Privacy</span>
           </div>
           <div class="author-mini">
             <img decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="46" height="46" loading="lazy">
@@ -988,7 +940,7 @@
         </div>
         <figure class="tool-featured-media">
           <img fetchpriority="high" decoding="async" src="../../assets/thumbnails/calculators/korean-age-calculator.webp" alt="Korean Age Calculator UI preview" width="1280" height="720">
-          <figcaption>Traditional Korean Age, Year Age, and International Age calculator</figcaption>
+          <figcaption>Official International Age, Year Age, and Traditional Korean Age Calculator</figcaption>
         </figure>
       </div>
     </section>
@@ -998,175 +950,314 @@
       <div class="container">
         <a href="#calculator" class="is-current">Calculator</a>
         <a href="#results">Results</a>
+        <a href="#milestones">Life Milestones</a>
+        <a href="#honorifics">Honorifics</a>
+        <a href="#idols">K-Pop Idols</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#comparison">Systems Compared</a>
         <a href="#formula">Formula</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#tracker">Milestones</a>
-        <a href="#compare-tool">Compare 2 People</a>
+        <a href="#law-change">2023 Law Reform</a>
         <a href="#chart">Birth Year Chart</a>
-        <a href="#law-change">2023 Law</a>
         <a href="#faq">FAQ</a>
       </div>
     </div>
 
-    <!-- Section 1 & 2: Calculator Engine & Dual Inputs -->
+    <!-- Section: Bento Calculator Engine & Inputs -->
     <section class="section" id="calculator">
       <div class="container">
-        <div class="k-calc-container">
-          <div class="visual-heading" style="margin-bottom: var(--s-5);">
-            <span class="kicker">Interactive Calculation Engine</span>
-            <h2>Calculate Your Korean Age</h2>
-            <p>Select your date of birth below. The calculator computes your traditional Korean age (세는나이), modern international age (만나이), and administrative Year Age (연나이) in real-time.</p>
+        <div class="k-hero-controller">
+          <div class="k-controller-top">
+            <div>
+              <span class="korea-pill" style="margin-bottom: 4px;">Algorithmic Engine</span>
+              <h2 style="font-size: var(--t-2xl); margin: 2px 0 0;">Calculate Your Korean Age</h2>
+            </div>
+
+            <!-- Mode Switcher -->
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <div class="k-mode-toggle" role="tablist">
+                <button type="button" class="k-mode-btn active" id="btnModeToday" onclick="window.setEngineMode('today')">Age Today (KST)</button>
+                <button type="button" class="k-mode-btn" id="btnModeTarget" onclick="window.setEngineMode('target')">Target Date</button>
+              </div>
+              <div class="k-kst-badge" id="kstLiveClockBadge">
+                <span>🕒 Seoul (KST):</span>
+                <strong id="kstClockDisplay">Loading KST...</strong>
+              </div>
+            </div>
           </div>
 
-          <form id="koreanAgeForm" onsubmit="event.preventDefault(); window.runKoreanCalc();">
-            <div class="k-calc-grid">
-              <div class="k-field">
-                <label for="kDob">Date of Birth (생년월일)</label>
-                <input type="date" id="kDob" name="dob" value="1995-03-15" required aria-label="Date of Birth">
+          <form id="koreanEngineForm" onsubmit="event.preventDefault(); window.runCalculation();">
+            <div class="k-input-grid">
+              <div class="k-input-field">
+                <label for="inputDob">Date of Birth (생년월일)</label>
+                <input type="date" id="inputDob" value="2000-08-15" min="1900-01-01" required aria-label="Date of Birth">
                 <div class="k-presets-row">
-                  <span class="k-preset-chip" onclick="window.setPreset('1990-05-20')">1990 (Sample)</span>
-                  <span class="k-preset-chip" onclick="window.setPreset('1995-12-31')">Dec 31, 1995 (Classic)</span>
-                  <span class="k-preset-chip" onclick="window.setPreset('2000-01-01')">2000 (Sample)</span>
-                  <span class="k-preset-chip" onclick="window.setPreset('2005-08-14')">2005 (Sample)</span>
+                  <span class="k-chip" onclick="window.applyPreset('1997-09-01')">1997 (Jungkook)</span>
+                  <span class="k-chip" onclick="window.applyPreset('1995-12-30')">1995 (V BTS)</span>
+                  <span class="k-chip" onclick="window.applyPreset('2000-04-11')">2000 (Karina)</span>
+                  <span class="k-chip" onclick="window.applyPreset('2004-08-31')">2004 (Wonyoung)</span>
+                  <span class="k-chip" onclick="window.applyPreset('2025-12-31')">Dec 31 Baby</span>
                 </div>
               </div>
 
-              <div class="k-field">
-                <label for="kRef">Calculate Age On (기준일)</label>
-                <input type="date" id="kRef" name="ref" aria-label="Calculation Reference Date">
+              <div class="k-input-field" id="targetDateFieldWrap" style="display: none;">
+                <label for="inputTargetDate">Calculation Date (기준일)</label>
+                <input type="date" id="inputTargetDate" aria-label="Calculation Reference Date">
                 <div class="k-presets-row">
-                  <span class="k-preset-chip" onclick="window.setRefPreset('today')">Today (Default)</span>
-                  <span class="k-preset-chip" onclick="window.setRefPreset('new_year')">Next Jan 1st</span>
-                  <span class="k-preset-chip" onclick="window.setRefPreset('2023-06-28')">June 28, 2023 (Law Reform)</span>
+                  <span class="k-chip" onclick="window.applyTargetPreset('today')">Today (KST)</span>
+                  <span class="k-chip" onclick="window.applyTargetPreset('new_year')">Jan 1, 2027</span>
+                  <span class="k-chip" onclick="window.applyTargetPreset('2023-06-28')">June 28, 2023 (Law Reform)</span>
                 </div>
               </div>
             </div>
 
-            <div class="k-btn-group">
-              <button type="submit" class="k-btn-primary" id="kCalcBtn">
-                <span>🇰🇷 Calculate Korean Age</span>
+            <!-- Inline Error Banner -->
+            <div class="k-inline-error" id="kInlineError" role="alert"></div>
+
+            <div class="k-action-row">
+              <button type="submit" class="k-btn-main">
+                <span>🇰🇷 Calculate Korean Age Breakdown</span>
               </button>
-              <button type="button" class="k-btn-reset" id="kResetBtn" onclick="window.resetKoreanCalc()">
+              <button type="button" class="k-btn-clear" onclick="window.resetEngine()">
                 <span>Reset</span>
               </button>
             </div>
           </form>
         </div>
 
-        <!-- Section 3: Visual Result Card Section -->
+        <!-- Bento Grid Results Section -->
         <div id="results" class="section-live" style="scroll-margin-top: 80px;">
-          <!-- Primary Hero Result -->
-          <div class="k-result-hero" id="kHeroResultCard" role="region" aria-live="polite">
-            <span class="k-result-eyebrow">🇰🇷 Your Traditional Korean Age</span>
-            <div class="k-result-big-number" id="kPrimaryAgeDisplay">32</div>
-            <div class="k-result-korean-term">Years Old · 세는나이 (Seneun Na-i)</div>
-            <div class="k-result-explainer-tag" id="kHeroSubTag">
-              Born 1 year old · Gained +1 year every January 1st
-            </div>
-          </div>
+          <div class="k-bento-grid">
+            <!-- Card 1: Official International Legal Age (만 나이 - Man Nai) -->
+            <article class="k-bento-card-official">
+              <div>
+                <span class="k-bento-official-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Official Legal Age (Post-2023 Standard)
+                </span>
+                <div style="font-size: var(--t-sm); font-weight: 700; color: #a7f3d0;">만 나이 (Man Na-i) · Civil Act Standard</div>
+                <div class="k-bento-big-age" id="resManNaiDisplay">26</div>
+                <div class="k-bento-korean-subtitle" id="resManNaiDetail">26 Years, 1 Month, 3 Days</div>
+              </div>
+              <div class="k-bento-official-note">
+                <strong>South Korea Legal Mandate:</strong> Under the June 28, 2023 Civil Act reform, this completed calendar age is the sole legal standard for passports, court contracts, hospital medications, voting rights, and retirement benefits.
+              </div>
+            </article>
 
-          <!-- 4 Comparison Cards Grid -->
-          <div class="k-cards-grid">
-            <!-- Card 1: Traditional Korean Age -->
-            <article class="k-sys-card">
-              <div class="k-sys-card-header">
-                <span class="k-sys-tag korea-pill">Traditional</span>
+            <!-- Card 2: Year Age / Statutory Exceptions (연 나이 - Yeon Nai) -->
+            <article class="k-bento-card-statutory">
+              <div>
+                <div class="k-statutory-header">
+                  <span class="k-sys-tag korea-pill-blue">Statutory Exception</span>
+                  <span style="font-size: 1.2rem;">🎂</span>
+                </div>
+                <div style="font-size: var(--t-sm); font-weight: 700; color: var(--ink);">Year / Calendar Age</div>
+                <div style="font-size: var(--t-xs); color: var(--muted); margin-bottom: 4px;">연 나이 (Yeon Na-i) = Target Year − Birth Year</div>
+                <div class="k-statutory-val" id="resYeonNaiDisplay">26</div>
+              </div>
+              <div class="k-statutory-badge-box">
+                <div class="k-statutory-status-item">
+                  <span>🍺 Alcohol &amp; Tobacco (Youth Act):</span>
+                  <span class="k-status-pill legal" id="badgeAlcoholStatus">LEGAL</span>
+                </div>
+                <div class="k-statutory-status-item">
+                  <span>🪖 Military Conscription Draft:</span>
+                  <span class="k-status-pill legal" id="badgeMilitaryStatus">Eligible (19+)</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3: Traditional Counting Age (세는 나이 - Seneun Nai) -->
+            <article class="k-bento-card-traditional">
+              <div class="k-statutory-header">
+                <span class="k-sys-tag" style="background: rgba(217, 119, 6, 0.1); color: #b45309;">Cultural Standard</span>
                 <span style="font-size: 1.2rem;">🇰🇷</span>
               </div>
-              <div class="k-sys-title">Traditional Korean Age</div>
-              <div class="k-sys-korean">세는나이 (Seneun Na-i)</div>
-              <div class="k-sys-val" id="cardTradAge">32</div>
-              <p class="k-sys-desc">Considers you 1 year old at birth and increments everyone's age by +1 year on January 1st of every calendar year.</p>
+              <div style="font-size: var(--t-sm); font-weight: 700; color: var(--ink);">Traditional Korean Age</div>
+              <div style="font-size: var(--t-xs); color: var(--muted); margin-bottom: 4px;">세는 나이 (Seneun Na-i) = Year Diff + 1</div>
+              <div class="k-trad-age-val" id="resSeneunNaiDisplay">27 세</div>
+              <p style="font-size: var(--t-xs); color: var(--ink-2); line-height: 1.5; margin: 0;">
+                Gained 1 year at birth to honor prenatal life, plus 1 year every January 1st. Used in casual conversation, social hierarchy, and K-pop profiles.
+              </p>
             </article>
 
-            <!-- Card 2: International Age -->
-            <article class="k-sys-card">
-              <div class="k-sys-card-header">
-                <span class="k-sys-tag" style="background: rgba(18, 120, 74, 0.1); color: var(--brand-dark);">Official Standard</span>
-                <span style="font-size: 1.2rem;">🌎</span>
-              </div>
-              <div class="k-sys-title">International Age</div>
-              <div class="k-sys-korean">만 나이 (Man Na-i)</div>
-              <div class="k-sys-val" id="cardIntlAge">31 yrs</div>
-              <p class="k-sys-desc">Starts at 0 at birth and increases strictly on your birthday. South Korea's official legal standard since June 28, 2023.</p>
-            </article>
-
-            <!-- Card 3: Year Age -->
-            <article class="k-sys-card">
-              <div class="k-sys-card-header">
-                <span class="k-sys-tag korea-badge-blue">Administrative</span>
-                <span style="font-size: 1.2rem;">🎂</span>
-              </div>
-              <div class="k-sys-title">Year Age</div>
-              <div class="k-sys-korean">연 나이 (Yeon Na-i)</div>
-              <div class="k-sys-val" id="cardYearAge">31</div>
-              <p class="k-sys-desc">Current Year minus Birth Year. Starts at 0 at birth and increases on Jan 1st. Still used for military conscription and youth laws.</p>
-            </article>
-
-            <!-- Card 4: Age Difference -->
-            <article class="k-sys-card">
-              <div class="k-sys-card-header">
-                <span class="k-sys-tag" style="background: rgba(194, 87, 31, 0.1); color: #c2571f;">Difference</span>
+            <!-- Card 4: System Difference & Explanation -->
+            <article class="k-bento-card-difference">
+              <div class="k-statutory-header">
+                <span class="k-sys-tag" style="background: rgba(194, 87, 31, 0.1); color: #c2571f;">Age Gap Analysis</span>
                 <span style="font-size: 1.2rem;">⚖️</span>
               </div>
-              <div class="k-sys-title">System Gap</div>
-              <div class="k-sys-korean">나이 차이 (Difference)</div>
-              <div class="k-sys-val" id="cardDiffVal">+1 Year</div>
-              <p class="k-sys-desc" id="cardDiffDesc">Korean age is currently 1 year higher than your international age because your birthday has occurred this calendar year.</p>
+              <div style="font-size: var(--t-sm); font-weight: 700; color: var(--ink);">Traditional vs Legal Gap</div>
+              <div style="font-size: var(--t-xs); color: var(--muted); margin-bottom: 4px;">Traditional Age − International Age</div>
+              <div class="k-diff-val" id="resDiffDisplay">+1 Year</div>
+              <p style="font-size: var(--t-xs); color: var(--ink-2); line-height: 1.5; margin: 0;" id="resDiffExplanation">
+                Your traditional Korean age is currently 1 year higher than your international legal age because your birthday has already occurred this calendar year.
+              </p>
             </article>
           </div>
 
-          <!-- Status Callout -->
-          <div class="k-diff-alert" id="kDiffAlert">
-            <div class="k-diff-alert-icon">💡</div>
-            <div>
-              <h4 id="kAlertTitle">Why is your Korean age different from your international age?</h4>
-              <p id="kAlertBody">In South Korea, your traditional age is calculated based on the calendar year rather than your exact birthdate. Because you gained 1 year at birth and turn a year older every January 1st, your traditional Korean age is currently 1 year older than your completed international calendar age.</p>
+          <!-- Section: Cultural Lifecycle Milestones (Baek-il, Dol, Hwangap) -->
+          <div class="k-bento-lifecycle" id="milestones">
+            <div class="visual-heading" style="margin-bottom: var(--s-3);">
+              <span class="kicker">Korean Lifecycle Chronology</span>
+              <h3 style="font-size: var(--t-xl);">Your Korean Lifecycle Milestones</h3>
+              <p>Key cultural celebrations calculated from your birth date according to traditional customs:</p>
+            </div>
+            <div class="k-milestones-stepper">
+              <div class="k-milestone-step-card">
+                <div class="k-milestone-icon">👶</div>
+                <div class="k-milestone-name">100th Day Celebration</div>
+                <div class="k-milestone-hangul">백일 (Baek-il)</div>
+                <div class="k-milestone-date" id="mDateBaekil">Nov 22, 2000</div>
+                <p class="k-milestone-desc">DOB + 99 days (day of birth is Day 1). Celebrates infant survival with white rice cakes (Baekseolgi).</p>
+              </div>
+
+              <div class="k-milestone-step-card">
+                <div class="k-milestone-icon">🎂</div>
+                <div class="k-milestone-name">First Birthday Banquet</div>
+                <div class="k-milestone-hangul">돌 / 돌잔치 (Doljanchi)</div>
+                <div class="k-milestone-date" id="mDateDol">Aug 15, 2001</div>
+                <p class="k-milestone-desc">Child wears hanbok and participates in Doljabi ritual (picking an object to foretell their future).</p>
+              </div>
+
+              <div class="k-milestone-step-card">
+                <div class="k-milestone-icon">🎓</div>
+                <div class="k-milestone-name">Coming of Age Day</div>
+                <div class="k-milestone-hangul">성년의 날 (Sungnyun-ui Nal)</div>
+                <div class="k-milestone-date" id="mDateComingOfAge">May 20, 2019</div>
+                <p class="k-milestone-desc">Celebrated on the 3rd Monday of May in the year turning international age 19. Traditional adulthood gifts: roses, perfume.</p>
+              </div>
+
+              <div class="k-milestone-step-card">
+                <div class="k-milestone-icon">🎊</div>
+                <div class="k-milestone-name">60th Rebirth Cycle</div>
+                <div class="k-milestone-hangul">환갑 / 회갑 (Hwangap)</div>
+                <div class="k-milestone-date" id="mDateHwangap">Aug 15, 2060</div>
+                <p class="k-milestone-desc">60th birthday (Korean age 61). Marks completing the 60-year lunar sexagenary zodiac cycle (Ganji).</p>
+              </div>
+
+              <div class="k-milestone-step-card">
+                <div class="k-milestone-icon">🌸</div>
+                <div class="k-milestone-name">70th Longevity Banquet</div>
+                <div class="k-milestone-hangul">칠순 (Chilsun)</div>
+                <div class="k-milestone-date" id="mDateChilsun">Aug 15, 2070</div>
+                <p class="k-milestone-desc">Celebrated at Korean age 71 (70 full solar years). Historic longevity milestone banquet for parents.</p>
+              </div>
             </div>
           </div>
 
-          <!-- Shareable Social Result Card (USP) -->
-          <div class="k-share-card-container">
+          <!-- Section: Interactive Korean Honorifics & Speech Level Card -->
+          <div class="k-honorifics-box" id="honorifics">
+            <div class="visual-heading" style="margin-bottom: var(--s-3);">
+              <span class="kicker">Linguistic &amp; Cultural Etiquette</span>
+              <h3 style="font-size: var(--t-xl);">Korean Honorifics: What Do People Call You?</h3>
+              <p>In Korea, social titles and grammatical politeness levels strictly depend on gender and relative birth years:</p>
+            </div>
+
+            <div class="k-honorifics-controller">
+              <div class="k-input-field">
+                <label for="selectMyGender">My Gender</label>
+                <select id="selectMyGender" class="k-input-field input" onchange="window.updateHonorifics()" style="padding: 10px; border-radius: 8px; border: 1.5px solid var(--line-strong);">
+                  <option value="male">I am Male (남성)</option>
+                  <option value="female" selected>I am Female (여성)</option>
+                </select>
+              </div>
+
+              <div class="k-input-field">
+                <label for="selectOtherGender">Other Person's Gender</label>
+                <select id="selectOtherGender" class="k-input-field input" onchange="window.updateHonorifics()" style="padding: 10px; border-radius: 8px; border: 1.5px solid var(--line-strong);">
+                  <option value="male" selected>They are Male (남성)</option>
+                  <option value="female">They are Female (여성)</option>
+                </select>
+              </div>
+
+              <div class="k-input-field">
+                <label for="selectRelAge">Their Relative Age to Me</label>
+                <select id="selectRelAge" class="k-input-field input" onchange="window.updateHonorifics()" style="padding: 10px; border-radius: 8px; border: 1.5px solid var(--line-strong);">
+                  <option value="older" selected>They are Older than me</option>
+                  <option value="same">Same Birth Year (Same Age)</option>
+                  <option value="younger">They are Younger than me</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="k-honorific-card-result">
+              <span class="k-sys-tag korea-pill" id="honorificRelationTag">Social Title</span>
+              <div class="k-honorific-title-display" id="honorificTitleDisplay">Oppa (오빠 - Older Brother)</div>
+              <div style="font-weight: 700; color: var(--ink); margin-bottom: 4px;" id="honorificSpeechLevel">Speech Level: Jondaenmal (존댓말 - Polite / Honorific)</div>
+              <p style="font-size: var(--t-sm); color: var(--ink-2); max-width: 620px; margin: 0 auto;" id="honorificDescription">
+                A female addresses an older male friend or brother as 'Oppa'. You should use polite honorific speech endings (-yo / -seumnida).
+              </p>
+            </div>
+          </div>
+
+          <!-- Section: K-Pop Idol & Celebrity Comparator -->
+          <div class="k-idol-box" id="idols">
+            <div class="k-idol-filter-row">
+              <div>
+                <span class="kicker">Pop Culture &amp; Idol Matching</span>
+                <h3 style="font-size: var(--t-xl); margin: 2px 0 0;">K-Pop Idols Who Share Your Birth Year</h3>
+              </div>
+              <div style="font-size: var(--t-xs); color: var(--muted);">
+                Showing stars born in <strong id="idolBirthYearLabel" style="color: var(--brand-dark);">2000</strong>
+              </div>
+            </div>
+
+            <div class="k-presets-row" style="margin-bottom: var(--s-3);">
+              <span class="k-chip" onclick="window.filterIdolYear(1997)">1997 Idols (Jungkook, Rosé, Cha Eun-woo)</span>
+              <span class="k-chip" onclick="window.filterIdolYear(1995)">1995 Idols (V, Jimin, Jisoo)</span>
+              <span class="k-chip" onclick="window.filterIdolYear(2000)">2000 Idols (Karina, Hyunjin, Felix)</span>
+              <span class="k-chip" onclick="window.filterIdolYear(2004)">2004 Idols (Wonyoung, Minji)</span>
+              <span class="k-chip" onclick="window.resetIdolFilter()">Match My DOB</span>
+            </div>
+
+            <div class="k-idol-rail" id="kIdolRail">
+              <!-- Dynamically populated via JS -->
+            </div>
+          </div>
+
+          <!-- Section: Social Share & Story Graphic Generator (9:16 Card) -->
+          <div class="k-share-section">
             <div class="visual-heading centered" style="margin-bottom: var(--s-4);">
-              <span class="kicker">Viral &amp; Social Feature</span>
-              <h3 style="font-size: var(--t-xl);">Share Your Korean Age</h3>
-              <p>Generate a customized social summary card to share with friends, family, or K-pop/K-drama communities.</p>
+              <span class="kicker">Shareable Result Card</span>
+              <h3 style="font-size: var(--t-xl);">Export Your Korean Age Story</h3>
+              <p>Share your verified Korean and International age profile on Instagram, TikTok, X, or messaging apps.</p>
             </div>
 
-            <div class="k-share-card-preview" id="kShareCardPreview">
-              <div class="k-share-badge">🇰🇷 My Korean Age Profile</div>
-              <div class="k-share-title" id="shareCardTitle">I am 32 in Korean Age!</div>
-              <div class="k-share-rows">
-                <div class="k-share-row">
-                  <span>Traditional Korean Age (세는나이):</span>
-                  <strong id="shareTradAge">32 Years Old</strong>
+            <div class="k-story-card" id="kStoryCardPreview">
+              <div class="k-story-header">
+                <span style="font-weight: 800; font-size: var(--t-xs); letter-spacing: 0.08em; color: #b91c1c;">🇰🇷 KOREAN AGE LAB</span>
+                <small style="font-weight: 700; color: var(--muted);">2023 Law Verified</small>
+              </div>
+              <div class="k-story-title" id="storyCardTitle">I am 27 in Korean Age!</div>
+              <div style="display: flex; flex-direction: column; gap: 4px; margin-bottom: var(--s-4);">
+                <div class="k-story-stat-row">
+                  <span>⚖️ International Legal Age:</span>
+                  <strong id="storyManNai">26 Years Old</strong>
                 </div>
-                <div class="k-share-row">
-                  <span>International Age (만나이):</span>
-                  <strong id="shareIntlAge">31 Years Old</strong>
+                <div class="k-story-stat-row">
+                  <span>🇰🇷 Traditional Korean Age:</span>
+                  <strong id="storySeneunNai">27 Years Old</strong>
                 </div>
-                <div class="k-share-row">
-                  <span>Year Age (연나이):</span>
-                  <strong id="shareYearAge">31 Years Old</strong>
+                <div class="k-story-stat-row">
+                  <span>🎂 Year / Calendar Age:</span>
+                  <strong id="storyYeonNai">26 Years Old</strong>
                 </div>
-                <div class="k-share-row">
-                  <span>Traditional Age Difference:</span>
-                  <strong id="shareDiff">+1 Year Older</strong>
+                <div class="k-story-stat-row">
+                  <span>🍺 Alcohol Purchase Status:</span>
+                  <strong id="storyAlcohol">Legal in Korea</strong>
                 </div>
               </div>
-              <div class="k-share-footer">
-                <span>Verified by AgeCalculatorLab.com</span>
-                <span>Korea Chronology Lab</span>
+              <div class="k-story-footer">
+                <span>AgeCalculatorLab.com</span>
+                <span>Seoul Time Engine</span>
               </div>
             </div>
 
-            <div class="k-share-actions">
-              <button type="button" class="k-btn-share" onclick="window.shareResult()">
-                <span>📤 Share Result</span>
+            <div style="display: flex; justify-content: center; gap: var(--s-3); flex-wrap: wrap;">
+              <button type="button" class="k-btn-main" style="max-width: 240px;" onclick="window.shareStory()">
+                <span>📤 Share Story Card</span>
               </button>
-              <button type="button" class="k-btn-copy" onclick="window.copyResultText()">
+              <button type="button" class="k-btn-clear" onclick="window.copyStoryText()">
                 <span>📋 Copy Summary Text</span>
               </button>
             </div>
@@ -1175,12 +1266,12 @@
       </div>
     </section>
 
-    <!-- Section 4: How Old Am I in Korean Age? & How the System Works -->
+    <!-- Section: How Does the Korean Age System Work? -->
     <section class="section soft" id="how-it-works">
       <div class="container paired-section">
         <div class="sticky-cell">
           <div class="kicker">System Fundamentals</div>
-          <h2>How Old Am I in Korean Age?</h2>
+          <h2>How Does the Korean Age System Work?</h2>
           <p>Understanding the dual principles of East Asian age reckoning: birth conception and the collective New Year transition.</p>
           <div class="callout" style="margin-top: var(--s-4);">
             <strong>Quick Rule of Thumb:</strong><br>
@@ -1190,7 +1281,7 @@
         </div>
 
         <div class="content-cell">
-          <h2>How Does the Korean Age System Work?</h2>
+          <h2>The Mechanics of Seneun Na-i</h2>
           <p>The traditional Korean age system, known natively as <em>Seneun Na-i</em> (세는나이, meaning "counting age"), is a cultural reckoning method deeply rooted in ancient East Asian traditions. Unlike the Western international standard that measures the exact passage of calendar days from delivery, traditional Korean age is built upon two core principles:</p>
 
           <div class="facts-grid" style="margin: var(--s-5) 0;">
@@ -1211,12 +1302,11 @@
             <li><strong>January 1 (Day 2):</strong> Just 24 hours later, the entire country crosses the New Year threshold. Everyone gains one year, making this infant <strong>2 years old</strong> in Korean age despite having lived for less than 48 hours!</li>
             <li><strong>Under International Law:</strong> The same infant is officially 0 years old (1 day old) internationally, creating a 2-year difference between systems.</li>
           </ul>
-          <p>This demonstrates why traditional Korean age is an ordinal counter of calendar cycles experienced, rather than an elapsed duration of hours and days.</p>
         </div>
       </div>
     </section>
 
-    <!-- Section 5: Traditional Korean Age vs International Age (Comparison) -->
+    <!-- Section: Comparison Matrix -->
     <section class="section" id="comparison">
       <div class="container">
         <div class="visual-heading centered">
@@ -1237,59 +1327,42 @@
             </thead>
             <tbody>
               <tr>
-                <td data-label="Feature / Aspect"><strong>Age at Moment of Birth</strong></td>
+                <td data-label="Feature"><strong>Age at Moment of Birth</strong></td>
                 <td data-label="Traditional Korean Age">1 year old</td>
                 <td data-label="Year Age">0 years old</td>
                 <td data-label="International Age">0 years old (hours/days old)</td>
               </tr>
               <tr>
-                <td data-label="Feature / Aspect"><strong>When Does Age Increase?</strong></td>
+                <td data-label="Feature"><strong>When Does Age Increase?</strong></td>
                 <td data-label="Traditional Korean Age">Every January 1st</td>
                 <td data-label="Year Age">Every January 1st</td>
                 <td data-label="International Age">On exact date of birth</td>
               </tr>
               <tr>
-                <td data-label="Feature / Aspect"><strong>Calculation Formula</strong></td>
+                <td data-label="Feature"><strong>Calculation Formula</strong></td>
                 <td data-label="Traditional Korean Age"><code>Current Year − Birth Year + 1</code></td>
                 <td data-label="Year Age"><code>Current Year − Birth Year</code></td>
                 <td data-label="International Age">Completed calendar years</td>
               </tr>
               <tr>
-                <td data-label="Feature / Aspect"><strong>Difference from Actual Age</strong></td>
+                <td data-label="Feature"><strong>Difference from Actual Age</strong></td>
                 <td data-label="Traditional Korean Age">+1 or +2 years older</td>
                 <td data-label="Year Age">+0 or +1 year older</td>
                 <td data-label="International Age">Baseline standard (0 difference)</td>
               </tr>
               <tr>
-                <td data-label="Feature / Aspect"><strong>Current Legal Status</strong></td>
+                <td data-label="Feature"><strong>Current Legal Status</strong></td>
                 <td data-label="Traditional Korean Age">Informal &amp; cultural only</td>
                 <td data-label="Year Age">Used in Military &amp; Youth laws</td>
                 <td data-label="International Age"><strong>Official legal standard (since June 2023)</strong></td>
               </tr>
-              <tr>
-                <td data-label="Feature / Aspect"><strong>Everyday Social Role</strong></td>
-                <td data-label="Traditional Korean Age">Friendship hierarchy, social honorifics</td>
-                <td data-label="Year Age">Draft eligibility, tobacco/alcohol sales</td>
-                <td data-label="International Age">Contracts, medical records, passports</td>
-              </tr>
             </tbody>
           </table>
-        </div>
-
-        <div class="facts-grid" style="margin-top: var(--s-6);">
-          <article>
-            <strong>The 2023 Legal Harmonization</strong>
-            <p>Prior to June 2023, South Korea's simultaneous use of three different age reckonings generated substantial legal confusion, social security disputes, and administrative disputes. Standardizing to international age aligned Korean administrative law with global trade and civic norms.</p>
-          </article>
-          <article>
-            <strong>Why Traditional Age Still Thrives</strong>
-            <p>In Korean culture, age dictates grammar: polite speech (존댓말 - <em>jondaenmal</em>) vs casual speech (반말 - <em>banmal</em>), and social titles like <em>Hyung</em> (older brother for males) or <em>Unnie</em> (older sister for females). People born in the same calendar year consider each other peers (친구 - <em>chingu</em>).</p>
-          </article>
         </div>
       </div>
     </section>
 
-    <!-- Section 6: How to Calculate Korean Age (Formula & Worked Steps) -->
+    <!-- Section: How to Calculate Korean Age Formula -->
     <section class="section soft" id="formula">
       <div class="container paired-section">
         <div class="sticky-cell">
@@ -1310,204 +1383,11 @@
               • If your birthday <strong>has passed</strong> this year: <code>Korean Age = International Age + 1</code>
             </p>
           </div>
-
-          <h3>Worked Arithmetic Examples for 2026</h3>
-          <div class="k-worked-grid">
-            <div class="k-worked-card">
-              <span class="k-sys-tag" style="background: rgba(220, 38, 38, 0.1); color: #b91c1c; margin-bottom: 8px; display: inline-block;">Example 1: Birthday Not Passed</span>
-              <h4>Born: December 10, 1995</h4>
-              <p>Assuming the calculation date is September 18, 2026 (birthday is still ahead in December):</p>
-              <ul>
-                <li><strong>Current Year:</strong> 2026</li>
-                <li><strong>Birth Year:</strong> 1995</li>
-                <li><strong>Korean Age:</strong> 2026 − 1995 + 1 = <strong>32 Years Old</strong></li>
-                <li><strong>International Age:</strong> 30 completed years (will turn 31 on Dec 10)</li>
-                <li><strong>Difference:</strong> 32 − 30 = <strong>2 Years Difference</strong></li>
-              </ul>
-            </div>
-
-            <div class="k-worked-card">
-              <span class="k-sys-tag" style="background: rgba(18, 120, 74, 0.1); color: var(--brand-dark); margin-bottom: 8px; display: inline-block;">Example 2: Birthday Already Passed</span>
-              <h4>Born: March 10, 1995</h4>
-              <p>Assuming the calculation date is September 18, 2026 (birthday already passed in March):</p>
-              <ul>
-                <li><strong>Current Year:</strong> 2026</li>
-                <li><strong>Birth Year:</strong> 1995</li>
-                <li><strong>Korean Age:</strong> 2026 − 1995 + 1 = <strong>32 Years Old</strong></li>
-                <li><strong>International Age:</strong> 31 completed years</li>
-                <li><strong>Difference:</strong> 32 − 31 = <strong>1 Year Difference</strong></li>
-              </ul>
-            </div>
-          </div>
-          <p class="privacy-note">Notice that in both examples above, the person was born in 1995 and has the exact same Korean age of 32 in 2026, regardless of whether their birthday falls in March or December. Traditional Korean age depends strictly on the birth year.</p>
         </div>
       </div>
     </section>
 
-    <!-- Section 7: Interactive Visual Timeline Example -->
-    <section class="section" id="timeline">
-      <div class="container">
-        <div class="visual-heading centered">
-          <span class="kicker">Step-by-Step Breakdown</span>
-          <h2>Korean Age Example: The Lifecycle of a December 31 Birth</h2>
-          <p>See how traditional Korean age and international age diverge immediately at birth and converge over time.</p>
-        </div>
-
-        <div class="k-timeline-graphic">
-          <div class="k-timeline-node">
-            <div class="k-timeline-step-num">1</div>
-            <div class="k-timeline-date">Dec 31, 1995</div>
-            <div class="k-timeline-badge">Day of Birth</div>
-            <div class="k-timeline-ages">
-              <strong>Korean Age: 1</strong><br>
-              International Age: 0 days<br>
-              <em>Baby starts with 1 year of life.</em>
-            </div>
-          </div>
-
-          <div class="k-timeline-node">
-            <div class="k-timeline-step-num">2</div>
-            <div class="k-timeline-date">Jan 1, 1996</div>
-            <div class="k-timeline-badge">1 Day Later (New Year)</div>
-            <div class="k-timeline-ages">
-              <strong>Korean Age: 2</strong><br>
-              International Age: 1 day<br>
-              <em>New calendar year adds +1 year.</em>
-            </div>
-          </div>
-
-          <div class="k-timeline-node">
-            <div class="k-timeline-step-num">3</div>
-            <div class="k-timeline-date">Dec 31, 1996</div>
-            <div class="k-timeline-badge">1st Birthday</div>
-            <div class="k-timeline-ages">
-              <strong>Korean Age: 2</strong><br>
-              International Age: 1 year<br>
-              <em>International age completes 1 full year.</em>
-            </div>
-          </div>
-
-          <div class="k-timeline-node">
-            <div class="k-timeline-step-num">4</div>
-            <div class="k-timeline-date">Jan 1, 1997</div>
-            <div class="k-timeline-badge">Second New Year</div>
-            <div class="k-timeline-ages">
-              <strong>Korean Age: 3</strong><br>
-              International Age: 1 yr, 1 day<br>
-              <em>Traditional age steps up to 3 years old.</em>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 8: "When Did You Become X in Korean Age?" Dynamic Timeline Tracker -->
-    <section class="section soft" id="tracker">
-      <div class="container paired-section">
-        <div class="sticky-cell">
-          <div class="kicker">Personal Milestone Tracker</div>
-          <h2>Your Korean Age Timeline</h2>
-          <p>Explore exactly when you crossed major life milestones in the traditional Korean age system.</p>
-          <div class="callout" style="margin-top: var(--s-4);">
-            <strong>Korean Milestone Celebrations:</strong><br>
-            • <strong>Doljanchi (돌잔치):</strong> 1st birthday celebration.<br>
-            • <strong>Hwangap (환갑):</strong> 60th birthday cycle milestone.<br>
-            • <strong>Chilsun (칠순):</strong> 70th birthday celebration.
-          </div>
-        </div>
-
-        <div class="content-cell">
-          <h3>Milestone Dates for Your Birth Date</h3>
-          <p>These dates reflect the exact moments your traditional Korean age stepped forward on New Year's Day:</p>
-          <div class="k-table-wrap">
-            <table class="k-milestone-table" id="kMilestoneTable" aria-label="Your Korean Age Milestone Timeline">
-              <thead>
-                <tr>
-                  <th scope="col">Korean Milestone</th>
-                  <th scope="col">Traditional Age</th>
-                  <th scope="col">Date Achieved</th>
-                  <th scope="col">Cultural Context</th>
-                </tr>
-              </thead>
-              <tbody id="kMilestoneTbody">
-                <!-- Dynamically populated via JS -->
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 9: Compare Korean Ages (2-Person Comparison Tool) -->
-    <section class="section" id="compare-tool">
-      <div class="container">
-        <div class="visual-heading centered">
-          <span class="kicker">Interactive Comparison Tool</span>
-          <h2>Compare Korean Ages Between Two People</h2>
-          <p>Enter two dates of birth to instantly determine their relative Korean ages and traditional social relationship title.</p>
-        </div>
-
-        <div class="k-compare-box">
-          <div class="k-compare-grid">
-            <div class="k-field">
-              <label for="p1Dob">Person 1 Date of Birth</label>
-              <input type="date" id="p1Dob" value="1995-04-12" onchange="window.runCompareTool()">
-            </div>
-            <div class="k-field">
-              <label for="p2Dob">Person 2 Date of Birth</label>
-              <input type="date" id="p2Dob" value="1997-11-05" onchange="window.runCompareTool()">
-            </div>
-          </div>
-
-          <div class="k-compare-result-card" id="kCompareResultCard">
-            <div class="k-cards-grid" style="margin-bottom: 0;">
-              <div>
-                <span class="k-sys-tag" style="background: rgba(37,99,235,0.1); color: #1d4ed8;">Person 1</span>
-                <div style="font-size: var(--t-2xl); font-weight: 700; color: var(--ink); margin-top: 4px;" id="p1KoreanAge">32 Years Old</div>
-                <small style="color: var(--muted);" id="p1IntlAge">International: 31</small>
-              </div>
-              <div>
-                <span class="k-sys-tag" style="background: rgba(220,38,38,0.1); color: #b91c1c;">Person 2</span>
-                <div style="font-size: var(--t-2xl); font-weight: 700; color: var(--ink); margin-top: 4px;" id="p2KoreanAge">30 Years Old</div>
-                <small style="color: var(--muted);" id="p2IntlAge">International: 28</small>
-              </div>
-              <div>
-                <span class="k-sys-tag" style="background: var(--brand-soft); color: var(--brand-dark);">Korean Age Gap</span>
-                <div style="font-size: var(--t-2xl); font-weight: 700; color: var(--brand-dark); margin-top: 4px;" id="compareAgeDiff">2 Years</div>
-                <small style="color: var(--muted);" id="compareSocialRelation">Senior (선배 / Hyung / Oppa / Noona / Unnie)</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 10: "How Old Would I Be in Korea?" & Korean Age Chart (Dynamic Matrix) -->
-    <section class="section soft" id="chart">
-      <div class="container">
-        <div class="visual-heading centered">
-          <span class="kicker">Lookup Reference Matrix</span>
-          <h2>How Old Would I Be in Korea? (Korean Age Chart)</h2>
-          <p>Quickly find your traditional Korean age, Year Age, and International Age range for any birth year.</p>
-        </div>
-
-        <div class="k-chart-filter-row">
-          <div>
-            <label for="chartSearchInput" style="font-size: var(--t-sm); font-weight: 600; margin-right: 8px;">Filter by Birth Year:</label>
-            <input type="number" id="chartSearchInput" class="k-chart-search" placeholder="e.g. 1995, 2000..." min="1930" max="2026" oninput="window.filterChart()">
-          </div>
-          <div style="font-size: var(--t-xs); color: var(--muted);">
-            Showing dynamically calculated values for calendar year <strong id="dynamicChartCurrentYear">2026</strong>
-          </div>
-        </div>
-
-        <div class="k-chart-grid" id="kChartGrid" role="region" aria-label="Korean Age Table by Birth Year">
-          <!-- Dynamically populated via JS for 1970 to 2026 -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 11: Did Korea Stop Using Korean Age? (2023 Legal Reform) -->
+    <!-- Section: 2023 Law Change -->
     <section class="section" id="law-change">
       <div class="container paired-section">
         <div class="sticky-cell">
@@ -1516,7 +1396,7 @@
           <p>The landmark June 28, 2023 legislative transition and what it means for citizens, travelers, and international observers.</p>
           <div class="callout" style="margin-top: var(--s-4);">
             <strong>Official Law:</strong><br>
-            Act on General Principles of Public Administration (행정기본법) &amp; Civil Act (민법) amendments enacted June 28, 2023.
+            Act on General Principles of Public Administration &amp; Civil Act amendments enacted June 28, 2023.
           </div>
         </div>
 
@@ -1524,29 +1404,35 @@
           <h3>The June 28, 2023 Legal Standardization</h3>
           <p>On <strong>June 28, 2023</strong>, the South Korean government officially implemented a sweeping legislative reform that amended the <em>General Act on Public Administration</em> and the <em>Civil Act</em>. Under this historic change, South Korea formally standardized all official government documents, civic contracts, judicial proceedings, and public communications to the <strong>International Age system (만 나이 - Man Na-i)</strong>.</p>
 
-          <p>Prior to this reform, the coexistence of three differing age reckonings created widespread friction in daily life:</p>
-          <ul>
-            <li><strong>Medical Dosages:</strong> Pediatric liquid medications and vaccine eligibilities frequently raised parental confusion when clinics referred to international age while parents reported traditional age.</li>
-            <li><strong>Workplace &amp; Retirement Contracts:</strong> Collective bargaining agreements specifying retirement age (e.g., age 60) sparked legal disputes in the Supreme Court over whether it meant traditional or calendar age.</li>
-            <li><strong>Administrative Welfare:</strong> Child allowance, senior transportation subsidies, and social pensions experienced administrative delays as citizens contested cutoff boundaries.</li>
-          </ul>
+          <p>Prior to this reform, the coexistence of three differing age reckonings created widespread friction in medical dosages, employment retirement disputes, and administrative welfare claims.</p>
 
-          <h3>The Three Notable Exceptions (Where "Year Age" Remains)</h3>
-          <p>While traditional Korean age (세는나이) is no longer utilized in any official government statute, the government retained the intermediate <strong>Year Age (연 나이 = Current Year − Birth Year)</strong> for three specific administrative frameworks:</p>
+          <h3>The Three Exceptions (Where "Year Age" Remains)</h3>
           <ol>
-            <li><strong>Military Service Conscription (병역법):</strong> South Korean men become eligible for mandatory military service physical examinations on January 1st of the calendar year they turn 19 internationally.</li>
-            <li><strong>Youth Protection Act (청소년 보호법):</strong> The legal purchase of alcohol, cigarettes, and entry into certain late-night gaming facilities becomes lawful on January 1st of the calendar year an individual turns 19, allowing entire graduating high school cohorts to celebrate adulthood together without checking individual calendar days.</li>
-            <li><strong>Elementary School Enrollment (초·중등교육법):</strong> Children enter elementary school on March 1st of the calendar year in which they reach international age 6.</li>
+            <li><strong>Military Service Conscription:</strong> Korean men become eligible for mandatory military service physical examinations on January 1st of the calendar year they turn 19 internationally.</li>
+            <li><strong>Youth Protection Act:</strong> The legal purchase of alcohol and cigarettes becomes lawful on January 1st of the calendar year an individual turns 19.</li>
+            <li><strong>Elementary School Enrollment:</strong> Children enter elementary school on March 1st of the calendar year in which they reach international age 6.</li>
           </ol>
-
-          <h3>Why Traditional Age Persists Culturally</h3>
-          <p>Despite the legal modernization, traditional Korean age remains widely utilized in colloquial social interactions. Korean language grammar relies heavily on strict hierarchical honorifics. Determining whether someone is older, younger, or the same age determines whether you address them with polite deference or casual intimacy. Because school grades are grouped strictly by birth year, classmates consider themselves lifelong equals (친구 - <em>chingu</em>). When meeting socially, Koreans still frequently ask for birth year or use traditional age to immediately establish respectful social harmony.</p>
         </div>
       </div>
     </section>
 
-    <!-- Section 12: Frequently Asked Questions (Accordion FAQs + Schema) -->
-    <section class="section soft" id="faq">
+    <!-- Section: Dynamic Birth Year Chart Matrix -->
+    <section class="section soft" id="chart">
+      <div class="container">
+        <div class="visual-heading centered">
+          <span class="kicker">Lookup Reference Matrix</span>
+          <h2>Korean Age Chart by Birth Year</h2>
+          <p>Quickly find your traditional Korean age, Year Age, and International Age range for any birth year.</p>
+        </div>
+
+        <div class="k-chart-grid" id="kChartGrid" role="region" aria-label="Korean Age Table by Birth Year">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: FAQ Section -->
+    <section class="section" id="faq">
       <div class="container paired-section">
         <div class="sticky-cell">
           <div class="kicker">Frequently Asked Questions</div>
@@ -1608,7 +1494,7 @@
       </div>
     </section>
 
-    <!-- Section 13: E-E-A-T & Author Trust Block -->
+    <!-- Author Profile Block -->
     <section class="author-section" data-author-bio>
       <div class="container">
         <div class="author-profile">
@@ -1623,91 +1509,6 @@
               <a href="https://www.instagram.com/jeet_7.7/" rel="me noopener" target="_blank">Instagram ↗</a>
               <a href="../../methodology/">Editorial methodology</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 14: Related Calculators & Guides -->
-    <section class="section soft section-live">
-      <div class="container paired-section">
-        <div class="sticky-cell">
-          <div class="kicker">Continue calculating</div>
-          <h2>Related Age Calculators</h2>
-          <p>Explore specialized chronological tools across our 160+ browser-based calculation engines.</p>
-        </div>
-        <div class="content-cell">
-          <div class="related-grid">
-            <a class="related-card" href="../../">
-              <small>Universal Chronology</small>
-              <h3>Exact Age Calculator</h3>
-              <p>Calculate exact chronological age in completed years, calendar months, days, hours, and minutes.</p>
-            </a>
-            <a class="related-card" href="../../tools/chronological-age-calculator/">
-              <small>Universal Chronology</small>
-              <h3>Chronological Age Calculator</h3>
-              <p>Precise calendar interval calculation with manual date math breakdowns and leap year handling.</p>
-            </a>
-            <a class="related-card" href="../../tools/age-difference-calculator/">
-              <small>Universal Chronology</small>
-              <h3>Age Difference Calculator</h3>
-              <p>Determine the precise calendar gap and total days between two different dates of birth.</p>
-            </a>
-            <a class="related-card" href="../../tools/age-in-days-calculator/">
-              <small>Universal Chronology</small>
-              <h3>Age in Days Calculator</h3>
-              <p>Total cumulative days lived with 10,000-day milestone countdown tracker.</p>
-            </a>
-            <a class="related-card" href="../../tools/age-in-weeks-calculator/">
-              <small>Universal Chronology</small>
-              <h3>Age in Weeks Calculator</h3>
-              <p>Completed calendar weeks and remaining days since birth.</p>
-            </a>
-            <a class="related-card" href="../../tools/age-in-months-calculator/">
-              <small>Universal Chronology</small>
-              <h3>Age in Months Calculator</h3>
-              <p>Total elapsed calendar months and remaining days for pediatric and developmental tracking.</p>
-            </a>
-            <a class="related-card" href="../../tools/date-difference-calculator/">
-              <small>Date Lab</small>
-              <h3>Date Difference Calculator</h3>
-              <p>Calculate business days, weekend days, and calendar spans between any two dates.</p>
-            </a>
-            <a class="related-card" href="../../tools/countdown-to-date-calculator/">
-              <small>Birthday &amp; Milestones</small>
-              <h3>Countdown to Date</h3>
-              <p>Live ticker and countdown progress ring toward upcoming birthdays and milestones.</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 15: Related Practical Guides -->
-    <section class="section section-live" data-related-guides>
-      <div class="container paired-section">
-        <div class="sticky-cell">
-          <div class="kicker">Learn the method</div>
-          <h2>Related Practical Guides</h2>
-          <p>Deepen your understanding of chronological models, East Asian reckoning, and calendar arithmetic.</p>
-        </div>
-        <div class="content-cell">
-          <div class="related-grid">
-            <a class="related-card" href="../../articles/korean-age-explained/">
-              <small>Cultural Chronology</small>
-              <h3>Korean Age Explained: Why Two Numbers Can Both Be Right</h3>
-              <p>Explore the cultural origins, lunar-solar traditions, and social significance behind Korea's multi-tier age counting systems.</p>
-            </a>
-            <a class="related-card" href="../../articles/calculate-exact-age-years-months-days/">
-              <small>Universal Chronology</small>
-              <h3>How to Calculate Exact Age in Years, Months and Days</h3>
-              <p>Exact age is a calendar interval, not a decimal estimate. Learn how complete years, calendar months and remaining days fit together.</p>
-            </a>
-            <a class="related-card" href="../../articles/chronological-age-explained/">
-              <small>Universal Chronology</small>
-              <h3>Chronological Age Explained: Meaning, Uses and Limits</h3>
-              <p>Chronological age measures elapsed calendar time from a starting date to a reference date. It is objective, reproducible and standardized.</p>
-            </a>
           </div>
         </div>
       </div>
@@ -1731,8 +1532,8 @@
         </div>
         <div class="footer-guides">
           <h3>Articles &amp; Guides</h3>
-          <a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a>
           <a href="../../articles/korean-age-explained/">Korean age explained</a>
+          <a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a>
           <a href="../../articles/ymd-semicolon-format-guide/">Y;M;D format</a>
           <a class="footer-guides-all" href="../../articles/">Browse all 100 guides →</a>
         </div>
@@ -1758,316 +1559,427 @@
     </div>
   </footer>
 
-  <!-- Floating Toast Notification for Copy -->
-  <div id="kCopyToast" role="alert" aria-live="assertive">✓ Copied to clipboard!</div>
+  <!-- Toast Notification -->
+  <div id="kToast" role="alert" aria-live="assertive">✓ Copied to clipboard!</div>
 
-  <!-- Interactive JavaScript Engine for Korean Age Calculator -->
+  <!-- Interactive JavaScript Engine v2.0 -->
   <script>
   (function() {
     'use strict';
 
-    // Elements
-    var kDob = document.getElementById('kDob');
-    var kRef = document.getElementById('kRef');
-    var kHeroCard = document.getElementById('kHeroResultCard');
-    var kPrimaryAgeDisplay = document.getElementById('kPrimaryAgeDisplay');
-    var kHeroSubTag = document.getElementById('kHeroSubTag');
-    var cardTradAge = document.getElementById('cardTradAge');
-    var cardIntlAge = document.getElementById('cardIntlAge');
-    var cardYearAge = document.getElementById('cardYearAge');
-    var cardDiffVal = document.getElementById('cardDiffVal');
-    var cardDiffDesc = document.getElementById('cardDiffDesc');
-    var kDiffAlert = document.getElementById('kDiffAlert');
-    var kAlertTitle = document.getElementById('kAlertTitle');
-    var kAlertBody = document.getElementById('kAlertBody');
-    var shareCardTitle = document.getElementById('shareCardTitle');
-    var shareTradAge = document.getElementById('shareTradAge');
-    var shareIntlAge = document.getElementById('shareIntlAge');
-    var shareYearAge = document.getElementById('shareYearAge');
-    var shareDiff = document.getElementById('shareDiff');
-    var kMilestoneTbody = document.getElementById('kMilestoneTbody');
-    var kChartGrid = document.getElementById('kChartGrid');
-    var dynamicChartCurrentYear = document.getElementById('dynamicChartCurrentYear');
-    var kCopyToast = document.getElementById('kCopyToast');
+    // State
+    var engineMode = 'today'; // 'today' or 'target'
+    var currentDob = '2000-08-15';
+    var idolFilterYear = 2000;
 
-    // Default reference date to today in YYYY-MM-DD
-    function getTodayString() {
-      var now = new Date();
-      var y = now.getFullYear();
-      var m = String(now.getMonth() + 1).padStart(2, '0');
-      var d = String(now.getDate()).padStart(2, '0');
+    // Celebrity Database
+    var celebrityList = [
+      { name: 'Jungkook', group: 'BTS', year: 1997, dob: 'Sep 1, 1997' },
+      { name: 'Rosé', group: 'BLACKPINK', year: 1997, dob: 'Feb 11, 1997' },
+      { name: 'Lisa', group: 'BLACKPINK', year: 1997, dob: 'Mar 27, 1997' },
+      { name: 'Cha Eun-woo', group: 'ASTRO / Actor', year: 1997, dob: 'Mar 30, 1997' },
+      { name: 'Mingyu', group: 'SEVENTEEN', year: 1997, dob: 'Apr 6, 1997' },
+      { name: 'Jaehyun', group: 'NCT', year: 1997, dob: 'Feb 14, 1997' },
+      { name: 'V (Taehyung)', group: 'BTS', year: 1995, dob: 'Dec 30, 1995' },
+      { name: 'Jimin', group: 'BTS', year: 1995, dob: 'Oct 13, 1995' },
+      { name: 'Jisoo', group: 'BLACKPINK', year: 1995, dob: 'Jan 3, 1995' },
+      { name: 'Nayeon', group: 'TWICE', year: 1995, dob: 'Sep 22, 1995' },
+      { name: 'Karina', group: 'aespa', year: 2000, dob: 'Apr 11, 2000' },
+      { name: 'Hyunjin', group: 'Stray Kids', year: 2000, dob: 'Mar 20, 2000' },
+      { name: 'Felix', group: 'Stray Kids', year: 2000, dob: 'Sep 15, 2000' },
+      { name: 'Soobin', group: 'TXT', year: 2000, dob: 'Dec 5, 2000' },
+      { name: 'Haechan', group: 'NCT', year: 2000, dob: 'Jun 6, 2000' },
+      { name: 'Wonyoung', group: 'IVE', year: 2004, dob: 'Aug 31, 2004' },
+      { name: 'Minji', group: 'NewJeans', year: 2004, dob: 'May 7, 2004' },
+      { name: 'Hanni', group: 'NewJeans', year: 2004, dob: 'Oct 6, 2004' },
+      { name: 'Jungwon', group: 'ENHYPEN', year: 2004, dob: 'Feb 9, 2004' },
+      { name: 'Jennie', group: 'BLACKPINK', year: 1996, dob: 'Jan 16, 1996' },
+      { name: 'Jin', group: 'BTS', year: 1992, dob: 'Dec 4, 1992' },
+      { name: 'Suga', group: 'BTS', year: 1993, dob: 'Mar 9, 1993' },
+      { name: 'RM', group: 'BTS', year: 1994, dob: 'Sep 12, 1994' },
+      { name: 'J-Hope', group: 'BTS', year: 1994, dob: 'Feb 18, 1994' },
+      { name: 'IU', group: 'Soloist / Actress', year: 1993, dob: 'May 16, 1993' },
+      { name: 'Son Heung-min', group: 'Football Icon', year: 1992, dob: 'Jul 8, 1992' },
+      { name: 'Haerin', group: 'NewJeans', year: 2006, dob: 'May 15, 2006' },
+      { name: 'Danielle', group: 'NewJeans', year: 2005, dob: 'Apr 11, 2005' },
+      { name: 'Hyein', group: 'NewJeans', year: 2008, dob: 'Apr 21, 2008' }
+    ];
+
+    // Helper: get KST date object
+    function getKSTNow() {
+      try {
+        var str = new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' });
+        return new Date(str);
+      } catch (e) {
+        return new Date();
+      }
+    }
+
+    function formatYMD(date) {
+      var y = date.getFullYear();
+      var m = String(date.getMonth() + 1).padStart(2, '0');
+      var d = String(date.getDate()).padStart(2, '0');
       return y + '-' + m + '-' + d;
     }
 
-    if (kRef && !kRef.value) {
-      kRef.value = getTodayString();
-    }
-
-    // Helper: Parse YYYY-MM-DD safely
     function parseYMD(str) {
       if (!str) return null;
-      var parts = str.split('-');
-      if (parts.length !== 3) return null;
-      var y = parseInt(parts[0], 10);
-      var m = parseInt(parts[1], 10) - 1;
-      var d = parseInt(parts[2], 10);
-      return new Date(y, m, d);
+      var parts = str.split('-').map(Number);
+      if (parts.length !== 3 || isNaN(parts[0]) || isNaN(parts[1]) || isNaN(parts[2])) return null;
+      return { year: parts[0], month: parts[1] - 1, day: parts[2] };
     }
 
-    // Helper: Format Date
-    function formatDateNice(date) {
+    function formatDateNice(y, m, d) {
       var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      return months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+      return months[m] + ' ' + d + ', ' + y;
     }
 
-    // Primary Calculation
-    window.runKoreanCalc = function() {
-      var dobStr = kDob.value;
-      var refStr = kRef.value || getTodayString();
+    function isLeapYear(year) {
+      return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    }
 
-      var birthDate = parseYMD(dobStr);
-      var refDate = parseYMD(refStr);
+    // Live KST clock update
+    function updateKSTClock() {
+      var kst = getKSTNow();
+      var clockEl = document.getElementById('kstClockDisplay');
+      if (clockEl) {
+        var m = String(kst.getMonth() + 1).padStart(2, '0');
+        var d = String(kst.getDate()).padStart(2, '0');
+        var hh = String(kst.getHours()).padStart(2, '0');
+        var mm = String(kst.getMinutes()).padStart(2, '0');
+        clockEl.textContent = kst.getFullYear() + '-' + m + '-' + d + ' ' + hh + ':' + mm;
+      }
+    }
+    setInterval(updateKSTClock, 1000);
+    updateKSTClock();
 
-      if (!birthDate || !refDate || refDate < birthDate) {
-        if (kHeroSubTag) kHeroSubTag.textContent = 'Please enter a valid birth date on or before the reference date.';
+    // Mode Switcher
+    window.setEngineMode = function(mode) {
+      engineMode = mode;
+      var btnToday = document.getElementById('btnModeToday');
+      var btnTarget = document.getElementById('btnModeTarget');
+      var targetWrap = document.getElementById('targetDateFieldWrap');
+      var targetInput = document.getElementById('inputTargetDate');
+
+      if (mode === 'today') {
+        btnToday.classList.add('active');
+        btnTarget.classList.remove('active');
+        targetWrap.style.display = 'none';
+      } else {
+        btnTarget.classList.add('active');
+        btnToday.classList.remove('active');
+        targetWrap.style.display = 'flex';
+        if (!targetInput.value) {
+          targetInput.value = formatYMD(getKSTNow());
+        }
+      }
+      window.runCalculation();
+    };
+
+    // Preset Applicators
+    window.applyPreset = function(dob) {
+      document.getElementById('inputDob').value = dob;
+      window.runCalculation();
+    };
+
+    window.applyTargetPreset = function(type) {
+      var targetInput = document.getElementById('inputTargetDate');
+      var kst = getKSTNow();
+      if (type === 'today') {
+        targetInput.value = formatYMD(kst);
+      } else if (type === 'new_year') {
+        targetInput.value = '2027-01-01';
+      } else if (type === '2023-06-28') {
+        targetInput.value = '2023-06-28';
+      }
+      window.runCalculation();
+    };
+
+    window.resetEngine = function() {
+      document.getElementById('inputDob').value = '2000-08-15';
+      window.setEngineMode('today');
+    };
+
+    // Main Engine
+    window.runCalculation = function() {
+      var errEl = document.getElementById('kInlineError');
+      errEl.style.display = 'none';
+
+      var dobStr = document.getElementById('inputDob').value;
+      var dob = parseYMD(dobStr);
+      if (!dob) {
+        errEl.textContent = 'Please enter a valid birth date in YYYY-MM-DD format.';
+        errEl.style.display = 'block';
         return;
       }
 
-      var bYear = birthDate.getFullYear();
-      var rYear = refDate.getFullYear();
+      if (dob.year < 1900) {
+        errEl.textContent = 'Birth year must be 1900 or later.';
+        errEl.style.display = 'block';
+        return;
+      }
 
-      // 1. Traditional Korean Age (세는나이): Current Year - Birth Year + 1
-      var tradKoreanAge = (rYear - bYear) + 1;
+      var target;
+      if (engineMode === 'target') {
+        var targetStr = document.getElementById('inputTargetDate').value;
+        target = parseYMD(targetStr);
+        if (!target) {
+          errEl.textContent = 'Please select a valid calculation date.';
+          errEl.style.display = 'block';
+          return;
+        }
+      } else {
+        var kst = getKSTNow();
+        target = { year: kst.getFullYear(), month: kst.getMonth(), day: kst.getDate() };
+      }
 
-      // 2. Year Age (연 나이): Current Year - Birth Year
-      var yearAge = rYear - bYear;
+      var dobDate = new Date(dob.year, dob.month, dob.day);
+      var targetDate = new Date(target.year, target.month, target.day);
 
-      // 3. International Age (만 나이): Exact calendar completion
-      var intlAge = rYear - bYear;
+      if (dobDate > targetDate) {
+        errEl.textContent = 'Birth date cannot be in the future relative to the calculation date (' + formatDateNice(target.year, target.month, target.day) + ').';
+        errEl.style.display = 'block';
+        return;
+      }
+
+      currentDob = dobStr;
+      idolFilterYear = dob.year;
+
+      // 1. Traditional Korean Age (세는 나이): Calendar Year Diff + 1
+      var seneunNai = (target.year - dob.year) + 1;
+
+      // 2. Year Age (연 나이): Calendar Year Diff
+      var yeonNai = target.year - dob.year;
+
+      // 3. International Legal Age (만 나이)
+      // BUG-03: Feb 29 leap day anniversary on common years occurs on Feb 28 per Civil Act
+      var bdayTargetMonth = dob.month;
+      var bdayTargetDay = dob.day;
+      if (dob.month === 1 && dob.day === 29 && !isLeapYear(target.year)) {
+        bdayTargetDay = 28;
+      }
+
       var birthdayHasPassed = false;
-
-      var bMonth = birthDate.getMonth();
-      var bDay = birthDate.getDate();
-      var rMonth = refDate.getMonth();
-      var rDay = refDate.getDate();
-
-      if (rMonth > bMonth || (rMonth === bMonth && rDay >= bDay)) {
+      if (target.month > bdayTargetMonth || (target.month === bdayTargetMonth && target.day >= bdayTargetDay)) {
         birthdayHasPassed = true;
-      } else {
-        intlAge -= 1;
       }
 
-      // Elapsed months & days for rich display
-      var completedMonths = 0;
+      var manNai = target.year - dob.year;
+      if (!birthdayHasPassed) {
+        manNai -= 1;
+      }
+
+      // Exact completed months & days
+      var mMonths = target.month - dob.month;
+      var mDays = target.day - dob.day;
+      if (mDays < 0) {
+        mMonths -= 1;
+        var prevMonthDays = new Date(target.year, target.month, 0).getDate();
+        mDays += prevMonthDays;
+      }
+      if (mMonths < 0) {
+        mMonths += 12;
+      }
+
+      var ageDiff = seneunNai - manNai;
+
+      // Update Bento Results UI
+      document.getElementById('resManNaiDisplay').textContent = manNai + ' Years Old';
+      document.getElementById('resManNaiDetail').textContent = manNai + ' Years, ' + mMonths + ' Months, ' + mDays + ' Days';
+      document.getElementById('resYeonNaiDisplay').textContent = yeonNai;
+      document.getElementById('resSeneunNaiDisplay').textContent = seneunNai + ' 세';
+      document.getElementById('resDiffDisplay').textContent = '+' + ageDiff + ' ' + (ageDiff === 1 ? 'Year' : 'Years');
+
+      var diffExp = document.getElementById('resDiffExplanation');
       if (birthdayHasPassed) {
-        completedMonths = (rMonth - bMonth);
-        if (rDay < bDay) completedMonths -= 1;
+        diffExp.textContent = 'Your traditional Korean age is 1 year older than your legal age because your ' + target.year + ' birthday has already passed (you gained 1 year at birth).';
       } else {
-        completedMonths = 12 - (bMonth - rMonth);
-        if (rDay < bDay) completedMonths -= 1;
-      }
-      if (completedMonths < 0) completedMonths = 0;
-
-      // 4. Difference
-      var ageDiff = tradKoreanAge - intlAge;
-
-      // Update Hero Result Card
-      kPrimaryAgeDisplay.textContent = tradKoreanAge;
-      kHeroSubTag.textContent = 'Born 1 year old in ' + bYear + ' · Gained +1 year on every Jan 1st (' + rYear + ')';
-
-      // Update 4 Comparison Cards
-      cardTradAge.textContent = tradKoreanAge;
-      cardYearAge.textContent = yearAge;
-      cardIntlAge.textContent = intlAge + ' yrs';
-      cardDiffVal.textContent = '+' + ageDiff + ' ' + (ageDiff === 1 ? 'Year' : 'Years');
-
-      if (birthdayHasPassed) {
-        cardDiffDesc.textContent = 'Your Korean age is 1 year older because your birthday has occurred in ' + rYear + ' (gained 1 year at birth).';
-        kAlertTitle.textContent = 'Your Korean age is currently +1 year older than your international age';
-        kAlertBody.textContent = 'Because your birthday has already occurred in ' + rYear + ', your international age completed a full year. However, your traditional Korean age gained 1 year at birth and incremented on January 1st, remaining exactly 1 year higher.';
-      } else {
-        cardDiffDesc.textContent = 'Your Korean age is 2 years older because your birthday has not occurred yet in ' + rYear + ' (+1 at birth, +1 on Jan 1st).';
-        kAlertTitle.textContent = 'Your Korean age is currently +2 years older than your international age';
-        kAlertBody.textContent = 'Because your birthday has not yet occurred in ' + rYear + ', your international age has not yet incremented. In contrast, traditional Korean reckoning gave you 1 year at birth and another on January 1st, making your Korean age 2 years ahead right now.';
+        diffExp.textContent = 'Your traditional Korean age is 2 years older than your legal age because your ' + target.year + ' birthday has not occurred yet (+1 at birth, +1 on Jan 1st).';
       }
 
-      // Update Share Card
-      shareCardTitle.textContent = 'I am ' + tradKoreanAge + ' in Korean Age!';
-      shareTradAge.textContent = tradKoreanAge + ' Years Old';
-      shareIntlAge.textContent = intlAge + ' Years Old';
-      shareYearAge.textContent = yearAge + ' Years Old';
-      shareDiff.textContent = '+' + ageDiff + ' ' + (ageDiff === 1 ? 'Year Older' : 'Years Older');
+      // Update Statutory Badges
+      var alcoholBadge = document.getElementById('badgeAlcoholStatus');
+      var militaryBadge = document.getElementById('badgeMilitaryStatus');
+      var alcoholYear = dob.year + 19;
 
-      // Update Personal Milestone Table
-      renderMilestones(birthDate);
+      if (yeonNai >= 19) {
+        alcoholBadge.textContent = 'LEGAL (Unlocked Jan 1, ' + alcoholYear + ')';
+        alcoholBadge.className = 'k-status-pill legal';
+        militaryBadge.textContent = 'Eligible for Draft Physicals (Age 19+)';
+        militaryBadge.className = 'k-status-pill legal';
+      } else {
+        alcoholBadge.textContent = 'UNDERAGE (Unlocks Jan 1, ' + alcoholYear + ')';
+        alcoholBadge.className = 'k-status-pill underage';
+        militaryBadge.textContent = 'Exempt until Jan 1, ' + alcoholYear;
+        militaryBadge.className = 'k-status-pill underage';
+      }
 
-      // Highlight in Birth Year Chart
-      highlightBirthYearInChart(bYear);
+      // Update Cultural Milestones
+      // 100 Days (Baek-il): DOB + 99 days
+      var bDateObj = new Date(dob.year, dob.month, dob.day + 99);
+      document.getElementById('mDateBaekil').textContent = formatDateNice(bDateObj.getFullYear(), bDateObj.getMonth(), bDateObj.getDate());
+
+      // Dol: 1 year after DOB
+      var dolDateObj = new Date(dob.year + 1, dob.month, dob.day);
+      document.getElementById('mDateDol').textContent = formatDateNice(dolDateObj.getFullYear(), dolDateObj.getMonth(), dolDateObj.getDate());
+
+      // Coming of Age: 3rd Monday of May in the year turning 19
+      var coaYear = dob.year + 19;
+      var may1 = new Date(coaYear, 4, 1);
+      var dow = may1.getDay();
+      var firstMon = (dow <= 1) ? (1 - dow + 1) : (8 - dow + 1);
+      var thirdMon = firstMon + 14;
+      document.getElementById('mDateComingOfAge').textContent = formatDateNice(coaYear, 4, thirdMon);
+
+      // Hwangap: DOB + 60 years
+      var hDateObj = new Date(dob.year + 60, dob.month, dob.day);
+      document.getElementById('mDateHwangap').textContent = formatDateNice(hDateObj.getFullYear(), hDateObj.getMonth(), hDateObj.getDate());
+
+      // Chilsun: DOB + 70 years
+      var cDateObj = new Date(dob.year + 70, dob.month, dob.day);
+      document.getElementById('mDateChilsun').textContent = formatDateNice(cDateObj.getFullYear(), cDateObj.getMonth(), cDateObj.getDate());
+
+      // Update Social Story Preview Card
+      document.getElementById('storyCardTitle').textContent = 'I am ' + seneunNai + ' in Korean Age!';
+      document.getElementById('storyManNai').textContent = manNai + ' Years Old';
+      document.getElementById('storySeneunNai').textContent = seneunNai + ' Years Old';
+      document.getElementById('storyYeonNai').textContent = yeonNai + ' Years Old';
+      document.getElementById('storyAlcohol').textContent = yeonNai >= 19 ? 'Legal to Drink in Korea' : 'Underage until Jan 1, ' + alcoholYear;
+
+      // Update Idols
+      renderIdols(dob.year);
+
+      // Update Honorifics
+      window.updateHonorifics();
     };
 
-    // Render Milestone Tracker Table
-    function renderMilestones(birthDate) {
-      if (!kMilestoneTbody) return;
-      var bYear = birthDate.getFullYear();
-      var bMonth = birthDate.getMonth();
-      var bDay = birthDate.getDate();
+    // Render K-Pop Idols
+    function renderIdols(year) {
+      var label = document.getElementById('idolBirthYearLabel');
+      var rail = document.getElementById('kIdolRail');
+      if (!rail) return;
+      if (label) label.textContent = year;
 
-      var milestones = [
-        { label: 'First Breath at Birth', age: 1, dateStr: formatDateNice(birthDate), note: 'Considered 1 year old immediately at birth (prenatal life).' },
-        { label: 'Second Korean Age Year', age: 2, dateStr: 'Jan 1, ' + (bYear + 1), note: 'First New Year transition (+1 collective year).' },
-        { label: 'Primary School Entry', age: 8, dateStr: 'Jan 1, ' + (bYear + 7), note: 'Traditional milestone for entering Korean elementary school.' },
-        { label: 'Middle School Transition', age: 14, dateStr: 'Jan 1, ' + (bYear + 13), note: 'Secondary education milestone age in Korea.' },
-        { label: 'High School Transition', age: 17, dateStr: 'Jan 1, ' + (bYear + 16), note: 'Preparation for Suneung (college entrance exam).' },
-        { label: 'Coming of Age (성년의 날)', age: 20, dateStr: 'Jan 1, ' + (bYear + 19), note: 'Traditional adulthood and high school graduation milestone.' },
-        { label: 'Thirties Milestone', age: 30, dateStr: 'Jan 1, ' + (bYear + 29), note: 'Stepping into full adulthood and professional life.' },
-        { label: 'Forties Milestone', age: 40, dateStr: 'Jan 1, ' + (bYear + 39), note: 'Known historically as the age of No Doubts (불혹 - Bulhok).' },
-        { label: 'Hwangap (환갑 / 回甲)', age: 61, dateStr: 'Jan 1, ' + (bYear + 60), note: 'Completion of the 60-year sexagenary lunar zodiac cycle.' },
-        { label: 'Chilsun (칠순 / 七旬)', age: 71, dateStr: 'Jan 1, ' + (bYear + 70), note: 'Celebrated traditional 70th milestone banquet.' },
-        { label: 'Palsun (팔순 / 八旬)', age: 81, dateStr: 'Jan 1, ' + (bYear + 80), note: 'Revered 80th longevity milestone banquet.' }
-      ];
+      var curYear = getKSTNow().getFullYear();
+      var matches = celebrityList.filter(function(c) { return c.year === year; });
 
-      var htmlRows = '';
-      for (var i = 0; i < milestones.length; i++) {
-        var m = milestones[i];
-        htmlRows += '<tr>' +
-          '<td><strong>' + m.label + '</strong></td>' +
-          '<td><span class="k-sys-tag korea-pill">' + m.age + ' 세</span></td>' +
-          '<td>' + m.dateStr + '</td>' +
-          '<td>' + m.note + '</td>' +
-          '</tr>';
+      if (matches.length === 0) {
+        rail.innerHTML = '<div style="grid-column: 1/-1; padding: 16px; text-align: center; color: var(--muted); font-size: var(--t-sm);">No featured celebrities from ' + year + ' currently in database. Try clicking the 1997, 1995, 2000, or 2004 chips above!</div>';
+        return;
       }
-      kMilestoneTbody.innerHTML = htmlRows;
-    }
-
-    // Build Dynamic Birth Year Reference Chart (1970 to 2026)
-    function buildBirthYearChart() {
-      if (!kChartGrid) return;
-      var curYear = (new Date()).getFullYear();
-      if (dynamicChartCurrentYear) dynamicChartCurrentYear.textContent = curYear;
 
       var html = '';
-      for (var y = curYear; y >= 1970; y--) {
-        var kAge = curYear - y + 1;
-        var yAge = curYear - y;
-        var intlRange = (yAge - 1) + ' or ' + yAge;
-        if (y === curYear) intlRange = '0';
+      matches.forEach(function(c) {
+        var kAge = (curYear - c.year) + 1;
+        var initials = c.name.split(' ').map(function(w){return w[0];}).join('').slice(0, 2);
+        html += '<div class="k-idol-card">' +
+          '<div class="k-idol-avatar">' + initials + '</div>' +
+          '<div class="k-idol-info">' +
+            '<h4>' + c.name + '</h4>' +
+            '<small>' + c.group + ' · ' + c.dob + '</small>' +
+            '<span class="k-idol-badge">Korean Age: ' + kAge + ' 세</span>' +
+          '</div>' +
+        '</div>';
+      });
+      rail.innerHTML = html;
+    }
 
-        html += '<div class="k-chart-item" id="chartYear_' + y + '" data-year="' + y + '">' +
+    window.filterIdolYear = function(yr) {
+      renderIdols(yr);
+    };
+
+    window.resetIdolFilter = function() {
+      renderIdols(idolFilterYear);
+    };
+
+    // Korean Honorifics Widget
+    window.updateHonorifics = function() {
+      var myGender = document.getElementById('selectMyGender').value;
+      var otherGender = document.getElementById('selectOtherGender').value;
+      var relAge = document.getElementById('selectRelAge').value;
+
+      var tagEl = document.getElementById('honorificRelationTag');
+      var titleEl = document.getElementById('honorificTitleDisplay');
+      var speechEl = document.getElementById('honorificSpeechLevel');
+      var descEl = document.getElementById('honorificDescription');
+
+      if (relAge === 'same') {
+        tagEl.textContent = 'Peer / Equal Hierarchy';
+        titleEl.textContent = 'Chingu (친구 - Same-Age Friend)';
+        speechEl.textContent = 'Speech Level: Banmal (반말 - Casual Speech)';
+        descEl.textContent = 'In Korea, people born in the same calendar year are lifelong peers. You can speak comfortably as equals after mutually agreeing to drop honorifics.';
+      } else if (relAge === 'younger') {
+        var term = otherGender === 'male' ? 'Namdongsaeng (남동생 - Younger Brother)' : 'Yeodongsaeng (여동생 - Younger Sister)';
+        tagEl.textContent = 'Junior Hierarchy (동생)';
+        titleEl.textContent = term;
+        speechEl.textContent = 'Speech Level: You use Banmal (반말); they address you with Jondaenmal (존댓말)';
+        descEl.textContent = 'Because you are older, Korean etiquette permits you to address them casually. In return, they will speak to you with polite respect and deference.';
+      } else {
+        // Other person is older
+        tagEl.textContent = 'Senior Hierarchy (선배 / 손윗사람)';
+        speechEl.textContent = 'Speech Level: Jondaenmal (존댓말 - Polite / Honorific Ending -yo / -seumnida)';
+        if (myGender === 'male' && otherGender === 'male') {
+          titleEl.textContent = 'Hyung (형 - Older Brother)';
+          descEl.textContent = 'A male calls an older male friend or brother "Hyung". You should speak politely using honorific speech endings.';
+        } else if (myGender === 'female' && otherGender === 'male') {
+          titleEl.textContent = 'Oppa (오빠 - Older Brother)';
+          descEl.textContent = 'A female calls an older male friend or brother "Oppa". It is a term of polite closeness and respect.';
+        } else if (myGender === 'male' && otherGender === 'female') {
+          titleEl.textContent = 'Noona (누나 - Older Sister)';
+          descEl.textContent = 'A male calls an older female friend or sister "Noona". It acknowledges seniority while showing friendly respect.';
+        } else {
+          titleEl.textContent = 'Unnie (언니 - Older Sister)';
+          descEl.textContent = 'A female calls an older female friend or sister "Unnie". It is an affectionate and respectful term widely used among women.';
+        }
+      }
+    };
+
+    // Dynamic Birth Year Chart (1970 to 2026)
+    function buildBirthYearChart() {
+      var grid = document.getElementById('kChartGrid');
+      if (!grid) return;
+      var curYear = getKSTNow().getFullYear();
+      var html = '';
+      for (var y = curYear; y >= 1970; y--) {
+        var kAge = (curYear - y) + 1;
+        var yAge = curYear - y;
+        var intl = (yAge > 0 ? (yAge - 1) + ' or ' + yAge : '0');
+        html += '<div class="k-chart-item" id="chartYear_' + y + '">' +
           '<div class="k-chart-year">' + y + '</div>' +
           '<div class="k-chart-k-age">' + kAge + ' <span style="font-size: 0.9rem; font-family: var(--font-body); font-weight: 500;">세</span></div>' +
-          '<div class="k-chart-intl-age">Intl: ' + intlRange + ' yrs</div>' +
-          '</div>';
+          '<div class="k-chart-intl-age">Legal: ' + intl + ' yrs</div>' +
+        '</div>';
       }
-      kChartGrid.innerHTML = html;
+      grid.innerHTML = html;
     }
 
-    function highlightBirthYearInChart(birthYear) {
-      var allItems = document.querySelectorAll('.k-chart-item');
-      allItems.forEach(function(item) {
-        item.classList.remove('highlight');
-      });
-      var target = document.getElementById('chartYear_' + birthYear);
-      if (target) {
-        target.classList.add('highlight');
-      }
-    }
-
-    window.filterChart = function() {
-      var q = document.getElementById('chartSearchInput').value.trim();
-      var items = document.querySelectorAll('.k-chart-item');
-      items.forEach(function(item) {
-        var y = item.getAttribute('data-year');
-        if (!q || y.indexOf(q) !== -1) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    };
-
-    // Presets
-    window.setPreset = function(dob) {
-      kDob.value = dob;
-      window.runKoreanCalc();
-    };
-
-    window.setRefPreset = function(type) {
-      var now = new Date();
-      if (type === 'today') {
-        kRef.value = getTodayString();
-      } else if (type === 'new_year') {
-        kRef.value = (now.getFullYear() + 1) + '-01-01';
-      } else if (type === '2023-06-28') {
-        kRef.value = '2023-06-28';
-      }
-      window.runKoreanCalc();
-    };
-
-    window.resetKoreanCalc = function() {
-      kDob.value = '1995-03-15';
-      kRef.value = getTodayString();
-      window.runKoreanCalc();
-    };
-
-    // 2-Person Comparison Mini Tool
-    window.runCompareTool = function() {
-      var p1 = parseYMD(document.getElementById('p1Dob').value);
-      var p2 = parseYMD(document.getElementById('p2Dob').value);
-      var curYear = (new Date()).getFullYear();
-
-      if (!p1 || !p2) return;
-
-      var p1KAge = curYear - p1.getFullYear() + 1;
-      var p2KAge = curYear - p2.getFullYear() + 1;
-      var diff = Math.abs(p1KAge - p2KAge);
-
-      var p1Intl = curYear - p1.getFullYear();
-      var p2Intl = curYear - p2.getFullYear();
-
-      document.getElementById('p1KoreanAge').textContent = p1KAge + ' Years Old';
-      document.getElementById('p2KoreanAge').textContent = p2KAge + ' Years Old';
-      document.getElementById('p1IntlAge').textContent = 'Birth year: ' + p1.getFullYear();
-      document.getElementById('p2IntlAge').textContent = 'Birth year: ' + p2.getFullYear();
-
-      document.getElementById('compareAgeDiff').textContent = diff + ' ' + (diff === 1 ? 'Year' : 'Years');
-
-      var relElem = document.getElementById('compareSocialRelation');
-      if (diff === 0) {
-        relElem.textContent = 'Same Korean Age: Friends / Peers (친구 - Chingu!)';
-      } else if (p1KAge > p2KAge) {
-        relElem.textContent = 'Person 1 is Senior: Hyung / Oppa / Noona / Unnie to Person 2';
-      } else {
-        relElem.textContent = 'Person 2 is Senior: Hyung / Oppa / Noona / Unnie to Person 1';
-      }
-    };
-
-    // Share and Copy
+    // Toast Notification & Share Handlers
     function showToast(msg) {
-      if (!kCopyToast) return;
-      kCopyToast.textContent = msg;
-      kCopyToast.classList.add('show');
-      setTimeout(function() {
-        kCopyToast.classList.remove('show');
-      }, 2500);
+      var t = document.getElementById('kToast');
+      if (!t) return;
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(function() { t.classList.remove('show'); }, 2500);
     }
 
-    window.copyResultText = function() {
-      var trad = cardTradAge.textContent;
-      var intl = cardIntlAge.textContent;
-      var diff = cardDiffVal.textContent;
-      var text = '🇰🇷 My Korean Age Profile:
-' +
-        '• Traditional Korean Age: ' + trad + ' years old
-' +
-        '• International Age: ' + intl + '
-' +
-        '• System Difference: ' + diff + '
-' +
-        'Calculated at Age Calculator Lab: https://www.agecalculatorlab.com/tools/korean-age-calculator/';
+    window.copyStoryText = function() {
+      var dob = document.getElementById('inputDob').value;
+      var man = document.getElementById('resManNaiDisplay').textContent;
+      var sen = document.getElementById('resSeneunNaiDisplay').textContent;
+      var yeon = document.getElementById('resYeonNaiDisplay').textContent;
+
+      var lines = [
+        '🇰🇷 My Korean Age Profile (Born: ' + dob + '):',
+        '• International Legal Age (만 나이): ' + man,
+        '• Traditional Korean Age (세는 나이): ' + sen,
+        '• Year Age (연 나이): ' + yeon,
+        'Verified under South Korea 2023 Civil Act: https://www.agecalculatorlab.com/tools/korean-age-calculator/'
+      ];
+      var text = lines.join('\n');
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).then(function() {
-          showToast('✓ Korean age summary copied to clipboard!');
+          showToast('✓ Profile summary copied to clipboard!');
         }).catch(function() {
           fallbackCopy(text);
         });
@@ -2083,35 +1995,22 @@
       ta.select();
       document.execCommand('copy');
       document.body.removeChild(ta);
-      showToast('✓ Korean age summary copied to clipboard!');
+      showToast('✓ Profile summary copied to clipboard!');
     }
 
-    window.shareResult = function() {
-      var trad = cardTradAge.textContent;
-      var intl = cardIntlAge.textContent;
-      var title = 'My Korean Age is ' + trad + ' (International: ' + intl + ')';
-      var text = 'I am ' + trad + ' years old in traditional Korean age! Check yours here:';
-      var url = 'https://www.agecalculatorlab.com/tools/korean-age-calculator/';
-
+    window.shareStory = function() {
+      var sen = document.getElementById('resSeneunNaiDisplay').textContent;
+      var man = document.getElementById('resManNaiDisplay').textContent;
       if (navigator.share) {
         navigator.share({
-          title: title,
-          text: text,
-          url: url
+          title: 'My Korean Age is ' + sen + ' (Legal: ' + man + ')',
+          text: "Check your official Korean age under South Korea's 2023 law:",
+          url: 'https://www.agecalculatorlab.com/tools/korean-age-calculator/'
         }).catch(function() {});
       } else {
-        window.copyResultText();
+        window.copyStoryText();
       }
     };
-
-    // Auto-calculate on input changes
-    if (kDob) kDob.addEventListener('change', window.runKoreanCalc);
-    if (kRef) kRef.addEventListener('change', window.runKoreanCalc);
-
-    // Initial setup on page load
-    buildBirthYearChart();
-    window.runKoreanCalc();
-    window.runCompareTool();
 
     // Jumpbar ScrollSpy
     var jumpLinks = document.querySelectorAll('#kJumpbar a');
@@ -2136,6 +2035,9 @@
       }
     }, { passive: true });
 
+    // Initial Execution
+    buildBirthYearChart();
+    window.runCalculation();
 
   })();
   </script>
