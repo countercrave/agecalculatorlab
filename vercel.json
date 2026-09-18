@@ -41,6 +41,16 @@
       "permanent": true
     },
     {
+      "source": "/korean-age-calculator",
+      "destination": "/tools/korean-age-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age-calculator/",
+      "destination": "/tools/korean-age-calculator/",
+      "permanent": true
+    },
+    {
       "source": "/privacy-policy",
       "destination": "/privacy/",
       "permanent": true
