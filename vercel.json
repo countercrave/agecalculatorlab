@@ -119,6 +119,36 @@
       "source": "/korean-age-vs-international-age/",
       "destination": "/articles/korean-age-vs-international-age/",
       "permanent": true
+    },
+    {
+      "source": "/korean-age-system-change",
+      "destination": "/articles/korean-age-system-change/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age-system-change/",
+      "destination": "/articles/korean-age-system-change/",
+      "permanent": true
+    },
+    {
+      "source": "/did-korea-change-age-system",
+      "destination": "/articles/korean-age-system-change/",
+      "permanent": true
+    },
+    {
+      "source": "/did-korea-change-age-system/",
+      "destination": "/articles/korean-age-system-change/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age-2023",
+      "destination": "/articles/korean-age-system-change/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age-2023/",
+      "destination": "/articles/korean-age-system-change/",
+      "permanent": true
     }
   ],
   "cleanUrls": true,

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8F6"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EAF2EE"/>
+    </linearGradient>
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="100%" stop-color="#084E3A"/>
+    </linearGradient>
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF754D"/>
+      <stop offset="100%" stop-color="#E05328"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#042F2A" flood-opacity="0.08"/>
+    </filter>
+    <filter id="subtleShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#042F2A" flood-opacity="0.06"/>
+    </filter>
+    <pattern id="koreanLattice" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 L 20 0 L 40 20 L 20 40 Z" fill="none" stroke="#D2E3DB" stroke-width="0.75" stroke-opacity="0.4"/>
+      <circle cx="20" cy="20" r="2.5" fill="#C0D6CC" fill-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#koreanLattice)"/>
+
+  <!-- Top Decorative Header Bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#forestGrad)"/>
+
+  <!-- Editorial Category Tag -->
+  <g transform="translate(80, 48)">
+    <rect x="0" y="0" width="220" height="32" rx="16" fill="#042F2A" fill-opacity="0.06"/>
+    <text x="110" y="21" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" letter-spacing="1.5" text-anchor="middle">LEGAL REFORM TIMELINE</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="80" y="116" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#042F2A" letter-spacing="-0.5">The 2023 Korean Age System Switch</text>
+  <text x="80" y="146" font-family="'Inter', sans-serif" font-size="15" fill="#5D7069">How South Korea unified fragmented age counting into the standardized Full-Age (만 나이) civil standard.</text>
+
+  <!-- Central Transition Hub / Divider (The June 28 Pillar) -->
+  <g transform="translate(600, 180)">
+    <!-- Vertical Glow line -->
+    <line x1="0" y1="40" x2="0" y2="440" stroke="#08745A" stroke-width="3" stroke-dasharray="6,4"/>
+
+    <!-- Central 2023 Emblem -->
+    <circle cx="0" cy="180" r="76" fill="#FFFFFF" filter="url(#shadow)" stroke="#075433" stroke-width="3"/>
+    <circle cx="0" cy="180" r="68" fill="url(#forestGrad)"/>
+    <text x="0" y="174" font-family="'Fraunces', serif" font-size="32" font-weight="700" fill="#FFFFFF" text-anchor="middle">2023</text>
+    <text x="0" y="200" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF9A77" text-anchor="middle" letter-spacing="1">CIVIL ACT</text>
+
+    <!-- Transition Badge -->
+    <rect x="-85" y="280" width="170" height="42" rx="21" fill="url(#coralGrad)" filter="url(#subtleShadow)"/>
+    <text x="0" y="306" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0D2B23" text-anchor="middle" letter-spacing="0.5">JUNE 28, 2023</text>
+
+    <!-- Transition arrow marker -->
+    <path d="M -20 340 L 0 355 L 20 340" fill="none" stroke="#08745A" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Left Side: BEFORE 2023 (Historical Coexistence) -->
+  <g transform="translate(80, 210)">
+    <!-- Section Title Card -->
+    <rect x="0" y="0" width="440" height="52" rx="10" fill="#FFFFFF" filter="url(#subtleShadow)" stroke="#DDE7E2"/>
+    <rect x="0" y="0" width="6" height="52" rx="3" fill="#5D7069"/>
+    <text x="24" y="24" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#5D7069" letter-spacing="1.5">BEFORE JUNE 28, 2023</text>
+    <text x="24" y="42" font-family="'Fraunces', serif" font-size="17" font-weight="600" fill="#042F2A">Three Coexisting Counting Methods</text>
+
+    <!-- Method 1: Traditional Age -->
+    <g transform="translate(0, 68)">
+      <rect x="0" y="0" width="440" height="74" rx="10" fill="#FFFFFF" filter="url(#subtleShadow)" stroke="#E2ECE8"/>
+      <rect x="16" y="14" width="44" height="44" rx="8" fill="#F4F8F6" stroke="#DDE7E2"/>
+      <text x="38" y="42" font-family="'Fraunces', serif" font-size="18" font-weight="700" fill="#075433" text-anchor="middle">세</text>
+      <text x="74" y="33" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">Traditional Korean Age (세는 나이)</text>
+      <text x="74" y="52" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">Age 1 at birth • +1 on every Jan 1st</text>
+    </g>
+
+    <!-- Method 2: Year Age -->
+    <g transform="translate(0, 154)">
+      <rect x="0" y="0" width="440" height="74" rx="10" fill="#FFFFFF" filter="url(#subtleShadow)" stroke="#E2ECE8"/>
+      <rect x="16" y="14" width="44" height="44" rx="8" fill="#F4F8F6" stroke="#DDE7E2"/>
+      <text x="38" y="42" font-family="'Fraunces', serif" font-size="18" font-weight="700" fill="#075433" text-anchor="middle">연</text>
+      <text x="74" y="33" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">Year / Calendar Age (연 나이)</text>
+      <text x="74" y="52" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">Current Year - Birth Year (No birthday adjustment)</text>
+    </g>
+
+    <!-- Method 3: Full Age (Non-standardized) -->
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="440" height="74" rx="10" fill="#FFFFFF" filter="url(#subtleShadow)" stroke="#E2ECE8"/>
+      <rect x="16" y="14" width="44" height="44" rx="8" fill="#F4F8F6" stroke="#DDE7E2"/>
+      <text x="38" y="42" font-family="'Fraunces', serif" font-size="18" font-weight="700" fill="#075433" text-anchor="middle">만</text>
+      <text x="74" y="33" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">Full International Age (만 나이)</text>
+      <text x="74" y="52" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">Counted from 0 • Increments on birthday</text>
+    </g>
+
+    <!-- Cause of reform note -->
+    <text x="12" y="340" font-family="'Inter', sans-serif" font-size="12" font-style="italic" fill="#8C3A1A">⚠️ Coexistence created legal ambiguity, contract disputes and global confusion.</text>
+  </g>
+
+  <!-- Right Side: AFTER 2023 (Standardized Legal Framework) -->
+  <g transform="translate(680, 210)">
+    <!-- Section Title Card -->
+    <rect x="0" y="0" width="440" height="52" rx="10" fill="url(#forestGrad)" filter="url(#subtleShadow)"/>
+    <text x="24" y="24" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FF9A77" letter-spacing="1.5">OFFICIAL STANDARD TODAY</text>
+    <text x="24" y="42" font-family="'Fraunces', serif" font-size="17" font-weight="600" fill="#FFFFFF">Standardized Full Age (만 나이)</text>
+
+    <!-- Standardized Certificate Card -->
+    <rect x="0" y="68" width="440" height="246" rx="12" fill="#FFFFFF" filter="url(#shadow)" stroke="#08745A" stroke-width="1.5"/>
+
+    <!-- Document Header -->
+    <rect x="20" y="88" width="400" height="36" rx="6" fill="#F4F8F6"/>
+    <text x="36" y="111" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">대한민국 정부 법제처 (MOLEG Standard)</text>
+    <circle cx="396" cy="106" r="8" fill="#075433"/>
+    <path d="M 393 106 L 395 108 L 399 104" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+
+    <!-- Official Document Text Lines -->
+    <text x="36" y="152" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#075433">✓ Civil Act (민법) Articles 158-161</text>
+    <text x="52" y="172" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">All official legal ages computed by full calendar years from birth.</text>
+
+    <text x="36" y="202" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#075433">✓ Administrative Documents &amp; Passports</text>
+    <text x="52" y="222" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">Uniform full-age standard across government portals and forms.</text>
+
+    <text x="36" y="252" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#075433">✓ Private Contracts &amp; Commercial Terms</text>
+    <text x="52" y="272" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">Eliminated insurance and banking age calculation ambiguities.</text>
+
+    <!-- Cultural caveat note -->
+    <rect x="0" y="326" width="440" height="42" rx="8" fill="#F4F8F6" stroke="#DDE7E2"/>
+    <text x="20" y="352" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#042F2A">📌 Cultural usage &amp; speech honorifics persist informally in daily life.</text>
+  </g>
+
+  <!-- Bottom Citation Footnote -->
+  <text x="80" y="640" font-family="'Inter', sans-serif" font-size="11" fill="#7B9C91">Source: Ministry of Government Legislation (MOLEG), Republic of Korea • Promulgated Dec 2022, Enacted June 28, 2023</text>
+  <text x="1120" y="640" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="end">AgeCalculatorLab.com</text>
+</svg>
