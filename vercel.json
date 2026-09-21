@@ -1,6 +1,32 @@
 {
   "redirects": [
     {
+      "source": "/tools/ssc-cgl-age-calculator",
+      "destination": "/ssc-cgl-age-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ssc-cgl-age-calculator/",
+      "destination": "/ssc-cgl-age-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/ssc-cgl-age-calculator",
+      "destination": "/ssc-cgl-age-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/ssc-age-calculator",
+      "destination": "/ssc-cgl-age-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/ssc-age-calculator/",
+      "destination": "/ssc-cgl-age-calculator/",
+      "permanent": true
+    },
+
+    {
       "source": "/tools/age-calculator/",
       "destination": "/",
       "permanent": true
