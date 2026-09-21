@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgDash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FCFA"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDF5F1"/>
+    </linearGradient>
+    <linearGradient id="forestHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="100%" stop-color="#08543E"/>
+    </linearGradient>
+    <linearGradient id="coralAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF754D"/>
+      <stop offset="100%" stop-color="#E55328"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F9FBFB"/>
+    </linearGradient>
+    <filter id="dashShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#042F2A" flood-opacity="0.08"/>
+    </filter>
+    <filter id="subtlePill" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#042F2A" flood-opacity="0.05"/>
+    </filter>
+    <pattern id="dotGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1.5" fill="#CADCD4" fill-opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgDash)"/>
+  <rect width="1200" height="675" fill="url(#dotGrid)"/>
+
+  <!-- Top Decorative Green Accent Bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#forestHeader)"/>
+
+  <!-- Top Eyebrow Badge -->
+  <g transform="translate(80, 52)">
+    <rect x="0" y="0" width="230" height="32" rx="16" fill="#042F2A" fill-opacity="0.06"/>
+    <text x="115" y="21" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" letter-spacing="1.5" text-anchor="middle">PERSONAL AGE PROFILE</text>
+  </g>
+
+  <!-- Headline & Subtitle -->
+  <text x="80" y="120" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#042F2A" letter-spacing="-0.5">Your Korean Age Profile Dashboard</text>
+  <text x="80" y="150" font-family="'Inter', sans-serif" font-size="15" fill="#5D7069">Simulated personal calculation comparing International Legal Age against Traditional Korean Age.</text>
+
+  <!-- Central Dashboard Main Frame -->
+  <g transform="translate(80, 184)" filter="url(#dashShadow)">
+    <rect width="1040" height="420" rx="18" fill="url(#cardGrad)" stroke="#DDE7E2" stroke-width="1.5"/>
+
+    <!-- Dashboard Top Bar -->
+    <rect width="1040" height="68" rx="18" fill="#F4F8F6"/>
+    <!-- Top inner corners mask -->
+    <rect y="40" width="1040" height="28" fill="#F4F8F6"/>
+    <line x1="0" y1="68" x2="1040" y2="68" stroke="#DDE7E2" stroke-width="1"/>
+
+    <!-- User Profile Info Left -->
+    <g transform="translate(32, 22)">
+      <circle cx="16" cy="14" r="14" fill="#075433"/>
+      <text x="16" y="19" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">KR</text>
+      <text x="42" y="14" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#042F2A">BIRTH DATE: 15 JUNE 2000</text>
+      <text x="42" y="32" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">Zodiac: Metal Dragon (용띠) • Weekday: Thursday</text>
+    </g>
+
+    <!-- Calculation Status Right -->
+    <g transform="translate(860, 24)">
+      <rect width="148" height="26" rx="13" fill="#E8F4EC" stroke="#C3E0CE"/>
+      <circle cx="18" cy="13" r="4" fill="#12784A"/>
+      <text x="82" y="17" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">ACTIVE PROFILE</text>
+    </g>
+
+    <!-- Two Main Value Panels -->
+    <!-- Left Card: International Legal Age -->
+    <g transform="translate(48, 104)" filter="url(#subtlePill)">
+      <rect width="440" height="180" rx="14" fill="#FFFFFF" stroke="#DDE7E2"/>
+      <rect x="24" y="24" width="170" height="26" rx="13" fill="#F4F8F6"/>
+      <text x="109" y="41" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#08745A" text-anchor="middle" letter-spacing="1">INTERNATIONAL AGE</text>
+      <text x="24" y="82" font-family="'Fraunces', serif" font-size="17" font-weight="600" fill="#042F2A">만 나이 (Man Nai)</text>
+
+      <!-- Big Number -->
+      <text x="24" y="152" font-family="'Inter', sans-serif" font-size="58" font-weight="800" fill="#042F2A">26</text>
+      <text x="106" y="136" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#5D7069">Years Old</text>
+
+      <!-- Subtext -->
+      <text x="240" y="120" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069" text-anchor="start">• Starts at 0 at birth</text>
+      <text x="240" y="140" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069" text-anchor="start">• Increments on 15 June</text>
+      <text x="240" y="160" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#075433" text-anchor="start">Official Legal Standard</text>
+    </g>
+
+    <!-- Right Card: Traditional Korean Age -->
+    <g transform="translate(552, 104)" filter="url(#subtlePill)">
+      <rect width="440" height="180" rx="14" fill="#FFFFFF" stroke="#FF9A77" stroke-width="1.5"/>
+      <rect x="24" y="24" width="190" height="26" rx="13" fill="#FFF7ED"/>
+      <text x="119" y="41" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#C2410C" text-anchor="middle" letter-spacing="1">TRADITIONAL KOREAN</text>
+      <text x="24" y="82" font-family="'Fraunces', serif" font-size="17" font-weight="600" fill="#042F2A">세는 나이 (Seneun Nai)</text>
+
+      <!-- Big Number -->
+      <text x="24" y="152" font-family="'Inter', sans-serif" font-size="58" font-weight="800" fill="#E05328">27</text>
+      <text x="106" y="136" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#5D7069">Years Old</text>
+
+      <!-- Subtext -->
+      <text x="240" y="120" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069" text-anchor="start">• Starts at 1 at birth</text>
+      <text x="240" y="140" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069" text-anchor="start">• Increments every 1 Jan</text>
+      <text x="240" y="160" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#C2410C" text-anchor="start">Social &amp; Cultural Custom</text>
+    </g>
+
+    <!-- Bottom Difference Scale / Meter -->
+    <g transform="translate(48, 314)">
+      <rect width="944" height="76" rx="12" fill="#F4F8F6" stroke="#DDE7E2"/>
+
+      <!-- Label Left -->
+      <text x="24" y="36" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#5D7069" letter-spacing="1">SYSTEM DIFFERENCE</text>
+      <text x="24" y="56" font-family="'Fraunces', serif" font-size="16" font-weight="600" fill="#042F2A">Traditional Age is 1 Year Higher</text>
+
+      <!-- Visual Meter Bar Center -->
+      <g transform="translate(380, 24)">
+        <rect width="360" height="28" rx="14" fill="#FFFFFF" stroke="#D2E3DB"/>
+        <!-- Active Progress Fill for +1 -->
+        <rect x="4" y="4" width="176" height="20" rx="10" fill="#075433"/>
+        <text x="92" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Legal: 26y</text>
+        <rect x="184" y="4" width="172" height="20" rx="10" fill="url(#coralAccent)"/>
+        <text x="270" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#0D2B23" text-anchor="middle">Traditional: 27y</text>
+      </g>
+
+      <!-- Difference Badge Right -->
+      <g transform="translate(800, 20)">
+        <rect width="120" height="36" rx="8" fill="url(#coralAccent)"/>
+        <text x="60" y="23" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#0D2B23" text-anchor="middle">+1 YEAR</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Brand Footnote -->
+  <text x="80" y="642" font-family="'Inter', sans-serif" font-size="11" fill="#7B9C91">Age Calculator Lab • Dynamic Chronological Profile Engine • Universal Chronology Standard</text>
+  <text x="1120" y="642" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="end">AgeCalculatorLab.com</text>
+</svg>

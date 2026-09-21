@@ -66,6 +66,47 @@
       "permanent": true
     },
     {
+      "source": "/how-old-am-i-in-korean-age",
+      "destination": "/articles/how-old-am-i-in-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/how-old-am-i-in-korean-age/",
+      "destination": "/articles/how-old-am-i-in-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/my-korean-age",
+      "destination": "/articles/how-old-am-i-in-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/my-korean-age/",
+      "destination": "/articles/how-old-am-i-in-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-my-korean-age",
+      "destination": "/articles/how-old-am-i-in-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-my-korean-age/",
+      "destination": "/articles/how-old-am-i-in-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age-system-change",
+      "destination": "/articles/korean-age-system-change/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age-system-change/",
+      "destination": "/articles/korean-age-system-change/",
+      "permanent": true
+    },
+
+    {
       "source": "/korean-age/",
       "destination": "/articles/korean-age-explained/",
       "permanent": true

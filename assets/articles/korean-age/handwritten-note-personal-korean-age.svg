@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="journalDesk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBE6DE"/>
+      <stop offset="100%" stop-color="#DCD4C7"/>
+    </linearGradient>
+    <linearGradient id="journalPage" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFEFA"/>
+      <stop offset="100%" stop-color="#FBF7EE"/>
+    </linearGradient>
+    <filter id="pageShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="12" stdDeviation="18" flood-color="#2D2820" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Natural Desk Background -->
+  <rect width="800" height="600" fill="url(#journalDesk)"/>
+
+  <!-- Journal Page Centered with slight tilt -->
+  <g transform="translate(140, 50) rotate(1.2)" filter="url(#pageShadow)">
+    <rect width="520" height="500" rx="8" fill="url(#journalPage)" stroke="#D6CDBF"/>
+
+    <!-- Bookmark Ribbon top -->
+    <rect x="420" y="-12" width="22" height="60" rx="2" fill="#075433"/>
+    <polygon points="420,48 431,40 442,48" fill="url(#journalPage)"/>
+
+    <!-- Left Notebook Red Margin -->
+    <line x1="72" y1="0" x2="72" y2="500" stroke="#F09985" stroke-width="1.2" opacity="0.65"/>
+
+    <!-- Ruled Blue Lines -->
+    <line x1="24" y1="80" x2="500" y2="80" stroke="#CCDED6" stroke-width="1" opacity="0.6"/>
+    <line x1="24" y1="130" x2="500" y2="130" stroke="#CCDED6" stroke-width="1" opacity="0.6"/>
+    <line x1="24" y1="180" x2="500" y2="180" stroke="#CCDED6" stroke-width="1" opacity="0.6"/>
+    <line x1="24" y1="230" x2="500" y2="230" stroke="#CCDED6" stroke-width="1" opacity="0.6"/>
+    <line x1="24" y1="280" x2="500" y2="280" stroke="#CCDED6" stroke-width="1" opacity="0.6"/>
+    <line x1="24" y1="330" x2="500" y2="330" stroke="#CCDED6" stroke-width="1" opacity="0.6"/>
+    <line x1="24" y1="380" x2="500" y2="380" stroke="#CCDED6" stroke-width="1" opacity="0.6"/>
+    <line x1="24" y1="430" x2="500" y2="430" stroke="#CCDED6" stroke-width="1" opacity="0.6"/>
+
+    <!-- Journal Header: MY AGE -->
+    <text x="96" y="70" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="700" fill="#042F2A">MY AGE</text>
+    <path d="M 96 76 Q 160 79 210 75" fill="none" stroke="#FF754D" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Born Line -->
+    <text x="96" y="122" font-family="'Inter', sans-serif" font-size="17" font-weight="600" fill="#5D7069">Born:</text>
+    <text x="156" y="122" font-family="'Inter', sans-serif" font-size="19" font-weight="700" fill="#075433">June 15, 2000</text>
+
+    <!-- International Age Line -->
+    <text x="96" y="172" font-family="'Inter', sans-serif" font-size="17" font-weight="600" fill="#5D7069">International Age:</text>
+    <text x="270" y="172" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#042F2A">26</text>
+
+    <!-- Traditional Korean Age Line -->
+    <text x="96" y="222" font-family="'Inter', sans-serif" font-size="17" font-weight="600" fill="#5D7069">Traditional Korean:</text>
+    <text x="270" y="222" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#E05328">27</text>
+
+    <!-- Yellow Highlighter under Difference -->
+    <rect x="92" y="254" width="220" height="28" rx="4" fill="#FEF08A" opacity="0.75" transform="rotate(-0.5)"/>
+    <text x="96" y="274" font-family="'Inter', sans-serif" font-size="18" font-weight="800" fill="#991B1B">Difference: +1 Year</text>
+
+    <!-- Hand-Drawn Annotation Arrow -->
+    <path d="M 320 190 C 370 185, 390 210, 350 240" fill="none" stroke="#08745A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 358 232 L 348 242 L 344 228" fill="none" stroke="#08745A" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Annotation Callout Note -->
+    <text x="360" y="210" font-family="'Inter', sans-serif" font-size="13" font-style="italic" font-weight="600" fill="#075433">different counting</text>
+    <text x="360" y="228" font-family="'Inter', sans-serif" font-size="13" font-style="italic" font-weight="600" fill="#075433">systems!</text>
+
+    <!-- Study Insight Bullets -->
+    <text x="96" y="324" font-family="'Inter', sans-serif" font-size="13" fill="#3D5A51">• Why +1? 1 at birth, but birthday already passed this year.</text>
+    <text x="96" y="348" font-family="'Inter', sans-serif" font-size="13" fill="#3D5A51">• If birthday was in December, difference would be +2 years!</text>
+    
+    <text x="96" y="390" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Official Civil Law Note:</text>
+    <text x="96" y="412" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">Under 2023 Civil Act reform, my official legal age is 26.</text>
+    <text x="96" y="432" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069">Traditional 27 remains for social seniority and speech honorifics.</text>
+
+    <!-- Hand-drawn heart/star doodle in corner -->
+    <path d="M 460 450 Q 465 440 470 450 Q 475 460 460 472 Q 445 460 450 450 Z" fill="none" stroke="#FF754D" stroke-width="1.8"/>
+  </g>
+</svg>
