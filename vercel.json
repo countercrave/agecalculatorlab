@@ -109,6 +109,16 @@
       "source": "/calculate-korean-age/",
       "destination": "/articles/how-to-calculate-korean-age/",
       "permanent": true
+    },
+    {
+      "source": "/korean-age-vs-international-age",
+      "destination": "/articles/korean-age-vs-international-age/",
+      "permanent": true
+    },
+    {
+      "source": "/korean-age-vs-international-age/",
+      "destination": "/articles/korean-age-vs-international-age/",
+      "permanent": true
     }
   ],
   "cleanUrls": true,
