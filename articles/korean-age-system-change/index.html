@@ -263,71 +263,7 @@
       gap: 8px;
     }
 
-    /* Article Two-Column Body with Sticky TOC */
-    .article-layout {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 56px;
-      align-items: start;
-    }
 
-    @media (max-width: 1024px) {
-      .article-layout {
-        grid-template-columns: 1fr;
-        gap: 36px;
-      }
-    }
-
-    .article-sidebar {
-      position: sticky;
-      top: 96px;
-    }
-
-    @media (max-width: 1024px) {
-      .article-sidebar {
-        position: static;
-      }
-    }
-
-    .toc-card {
-      background: #F8FCFA;
-      border: 1px solid #DDE7E2;
-      border-radius: 14px;
-      padding: 22px;
-      box-shadow: 0 4px 16px rgba(4, 47, 42, 0.04);
-    }
-
-    .toc-title {
-      font-family: var(--font-display, "Fraunces", Georgia, serif);
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: #042F2A;
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #DDE7E2;
-    }
-
-    .toc-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-size: 0.88rem;
-    }
-
-    .toc-list a {
-      color: #3D5A51;
-      text-decoration: none;
-      transition: color 140ms ease, padding-left 140ms ease;
-      display: block;
-      line-height: 1.4;
-    }
-
-    .toc-list a:hover {
-      color: #075433;
-      padding-left: 4px;
-      text-decoration: underline;
-    }
 
     /* Main Article Content Styling */
     .article-content {
@@ -915,7 +851,8 @@
   </header>
 
   <main class="article-wrap">
-    <!-- Breadcrumbs -->
+    <div class="container">
+      <!-- Breadcrumbs -->
     <nav class="article-breadcrumbs" aria-label="Breadcrumb">
       <a href="../../">Home</a>
       <span>/</span>
@@ -943,32 +880,30 @@
       </div>
     </div>
 
-    <!-- Article Grid: Sidebar TOC + Main Content -->
-    <div class="article-layout">
-      <!-- Sticky Sidebar Table of Contents -->
-      <aside class="article-sidebar" aria-label="Table of contents">
-        <div class="toc-card">
-          <div class="toc-title">In This Guide</div>
-          <ul class="toc-list">
-            <li><a href="#quick-answer">Did Korea Get Rid of Korean Age?</a></li>
-            <li><a href="#what-changed-2023">What Changed in Korea in 2023?</a></li>
-            <li><a href="#three-systems">Three Coexisting Ways of Counting</a></li>
-            <li><a href="#why-korea-changed">Why Did South Korea Change the System?</a></li>
-            <li><a href="#study-note">Official Government Directive Note</a></li>
-            <li><a href="#is-it-still-used">Is Korean Age Still Used Today?</a></li>
-            <li><a href="#what-did-not-change">What Did NOT Change? (Exceptions)</a></li>
-            <li><a href="#decision-path">Decision Flowchart: Which Age Applies?</a></li>
-            <li><a href="#younger-explanation">Why Koreans Became 1 to 2 Years Younger</a></li>
-            <li><a href="#same-person-labels">Conceptual Analysis: Same Person, Two Labels</a></li>
-            <li><a href="#legislative-timeline">The Legislative Timeline (2022–2023)</a></li>
-            <li><a href="#faq-section">Frequently Asked Questions</a></li>
-            <li><a href="#calculator-tool">Compare Both Systems Instantly</a></li>
-          </ul>
-        </div>
-      </aside>
+  </div>
 
-      <!-- Main Editorial Body -->
-      <article class="article-content">
+  <!-- Main Layout with Sticky TOC -->
+  <div class="container article-layout">
+    <aside class="article-toc" aria-label="On this page">
+      <strong>On this page</strong>
+      <a href="#quick-answer">Did Korea Get Rid of Korean Age?</a>
+      <a href="#what-changed-2023">What Changed in 2023?</a>
+      <a href="#three-systems">Three Ways of Counting</a>
+      <a href="#why-korea-changed">Why Korea Changed the Law</a>
+      <a href="#study-note">Official Directive Note</a>
+      <a href="#is-it-still-used">Is It Still Used Today?</a>
+      <a href="#what-did-not-change">Statutory Exceptions</a>
+      <a href="#decision-path">Practical Decision Path</a>
+      <a href="#younger-explanation">Why Koreans Became Younger</a>
+      <a href="#same-person-labels">Same Person, Two Labels</a>
+      <a href="#legislative-timeline">Legislative Timeline</a>
+      <a href="#calculator-tool">Compare Both Systems</a>
+      <a href="#faq-section">Frequently Asked Questions</a>
+      <a href="#cluster-links">Korean Age Knowledge Base</a>
+    </aside>
+
+    <!-- Main Editorial Body -->
+    <article class="article-body article-content">
         <!-- Section 1: Quick Answer Box -->
         <section id="quick-answer">
           <div class="quick-answer-box">
@@ -1431,26 +1366,55 @@
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer" style="background: #042F2A; color: #A9C9BD; padding: 48px 0 28px; margin-top: 80px; border-top: 1px solid rgba(255,255,255,0.08);">
-    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-        <div>
-          <span style="font-family: var(--font-display, serif); font-size: 1.25rem; font-weight: 700; color: #FFFFFF;">Age Calculator Lab</span>
-          <p style="font-size: 0.85rem; color: #B4D1C7; margin-top: 4px;">Precision chronological tools, calendar research &amp; cultural age systems.</p>
+    <footer class="footer">
+    <div class="container">
+      <div class="footer-grid footer-grid-rich">
+        <div class="footer-brand-panel">
+          <a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a>
+          <p>161 focused calculators and 100 practical guides for age, dates, milestones and planning. No registration required.</p>
+          <a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a>
         </div>
-        <div style="display: flex; gap: 20px; font-size: 0.88rem;">
-          <a href="../../categories/" style="color: #A9C9BD; text-decoration: none;">Calculators</a>
-          <a href="../../articles/" style="color: #A9C9BD; text-decoration: none;">Guides</a>
-          <a href="../../methodology/" style="color: #A9C9BD; text-decoration: none;">Methodology</a>
-          <a href="../../privacy/" style="color: #A9C9BD; text-decoration: none;">Privacy</a>
+        <div>
+          <h3>Calculators</h3>
+          <a href="../../">Exact Age</a>
+          <a href="../../tools/chronological-age-calculator/">Chronological Age</a>
+          <a href="../../tools/age-difference-calculator/">Age Difference</a>
+          <a href="../../tools/korean-age-calculator/">Korean Age Calculator</a>
+          <a href="../../categories/">All categories</a>
+        </div>
+        <div class="footer-guides">
+          <h3>Articles &amp; Guides</h3>
+          <a href="../../articles/how-old-am-i-in-korean-age/">How old am I in Korean age?</a>
+          <a href="../../articles/korean-age-system-change/">Did Korea change its age system?</a>
+          <a href="../../articles/korean-age-vs-international-age/">Korean age vs international age</a>
+          <a href="../../articles/how-to-calculate-korean-age/">How to calculate Korean age</a>
+          <a href="../../articles/korean-age-explained/">Korean age explained</a>
+          <a class="footer-guides-all" href="../../articles/">Browse all 100 guides →</a>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="../../categories/">Categories</a>
+          <a href="../../methodology/">Methodology</a>
+          <a href="../../about/">About</a>
+          <a href="../../disclaimer/">Disclaimer</a>
+        </div>
+        <div>
+          <h3>Important</h3>
+          <a href="../../privacy/">Privacy</a>
+          <a href="../../terms/">Terms</a>
+          <a href="../../contact/">Contact</a>
+          <a href="../../sitemap.xml">Sitemap</a>
         </div>
       </div>
-      <div style="padding-top: 20px; font-size: 0.8rem; color: #7B9C91; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-        <span>&copy; 2026 Age Calculator Lab. All rights reserved.</span>
-        <span>Educational and informational reference based on official statutory guidelines.</span>
+      <div class="copyright">
+        <span>© 2026 Age Calculator Lab.</span>
+        <span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span>
       </div>
     </div>
   </footer>
+
+  <!-- Global App Script -->
+  <script src="../../assets/app.js?v=20260824c"></script>
 
   <!-- Scripts: Reading Progress & FAQ Accordion -->
   <script>
