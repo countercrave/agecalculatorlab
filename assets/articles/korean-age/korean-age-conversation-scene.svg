@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="cafeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF9"/>
+      <stop offset="50%" stop-color="#F7F3EE"/>
+      <stop offset="100%" stop-color="#EFE8DF"/>
+    </linearGradient>
+    <linearGradient id="bubbleGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075433"/>
+      <stop offset="100%" stop-color="#042F2A"/>
+    </linearGradient>
+    <linearGradient id="bubbleGradB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FCFA"/>
+    </linearGradient>
+    <filter id="sceneShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#042F2A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#cafeBg)"/>
+  
+  <!-- Architectural Cafe Elements (Minimalist Interior Line Art) -->
+  <line x1="80" y1="520" x2="1120" y2="520" stroke="#D6CCC2" stroke-width="2"/>
+  <line x1="600" y1="80" x2="600" y2="520" stroke="#E6DDD4" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- Top Context Header -->
+  <g transform="translate(80, 40)">
+    <rect width="260" height="30" rx="15" fill="#042F2A" fill-opacity="0.07"/>
+    <text x="130" y="20" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" letter-spacing="1.5" text-anchor="middle">PRACTICAL CONVERSATION DIALOGUE</text>
+    <text x="0" y="65" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="700" fill="#042F2A">Polite Age Exchange in Modern Korean</text>
+    <text x="0" y="90" font-family="'Inter', sans-serif" font-size="14" fill="#6A6258">Everyday polite speech level (해요체 - Haeyoche) used between peers, colleagues, and acquaintances.</text>
+  </g>
+
+  <!-- Left Side: Speaker A (Asking the Question) -->
+  <g transform="translate(100, 160)">
+    <!-- Speaker Profile Avatar Placeholder / Stylized Graphic -->
+    <g transform="translate(30, 240)">
+      <circle cx="60" cy="60" r="50" fill="#E2EBE6" stroke="#08745A" stroke-width="2"/>
+      <circle cx="60" cy="45" r="20" fill="#075433"/>
+      <path d="M 30 90 Q 60 70 90 90" fill="#075433"/>
+      <rect x="15" y="120" width="90" height="24" rx="12" fill="#075433"/>
+      <text x="60" y="136" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">PERSON A</text>
+    </g>
+
+    <!-- Speech Bubble A -->
+    <g filter="url(#sceneShadow)">
+      <path d="M 0 20 Q 0 0 20 0 L 380 0 Q 400 0 400 20 L 400 150 Q 400 170 380 170 L 120 170 L 80 205 L 90 170 L 20 170 Q 0 170 0 150 Z" fill="url(#bubbleGradA)"/>
+      
+      <!-- Speech Badge -->
+      <rect x="24" y="22" width="60" height="20" rx="10" fill="#FF754D"/>
+      <text x="54" y="36" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">QUESTION</text>
+
+      <!-- Hangul Question -->
+      <text x="24" y="80" font-family="'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="34" font-weight="700" fill="#FFFFFF">몇 살이에요?</text>
+      <text x="24" y="112" font-family="'Inter', sans-serif" font-size="15" font-weight="600" fill="#FF9A77">[ myeot sal-ieyo? ]</text>
+      
+      <!-- English Translation -->
+      <text x="24" y="146" font-family="'Inter', sans-serif" font-size="15" font-weight="500" fill="#D3E5DE">"How old are you?" (Polite Standard)</text>
+    </g>
+
+    <!-- Grammatical breakdown note -->
+    <g transform="translate(0, 390)">
+      <rect width="400" height="70" rx="10" fill="#FFFFFF" stroke="#DDE7E2" stroke-width="1.5"/>
+      <text x="18" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">GRAMMAR BREAKDOWN:</text>
+      <text x="18" y="48" font-family="'Inter', sans-serif" font-size="12" fill="#3D5A51">몇 (how many) + 살 (years old) + 이에요 (polite "to be")</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Speaker B (Giving the Answer) -->
+  <g transform="translate(700, 160)">
+    <!-- Speaker Profile Avatar Graphic -->
+    <g transform="translate(30, 240)">
+      <circle cx="60" cy="60" r="50" fill="#FFF0EB" stroke="#FF754D" stroke-width="2"/>
+      <circle cx="60" cy="45" r="20" fill="#E55328"/>
+      <path d="M 30 90 Q 60 70 90 90" fill="#E55328"/>
+      <rect x="15" y="120" width="90" height="24" rx="12" fill="#E55328"/>
+      <text x="60" y="136" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">PERSON B</text>
+    </g>
+
+    <!-- Speech Bubble B -->
+    <g filter="url(#sceneShadow)">
+      <path d="M 0 20 Q 0 0 20 0 L 380 0 Q 400 0 400 20 L 400 150 Q 400 170 380 170 L 120 170 L 80 205 L 90 170 L 20 170 Q 0 170 0 150 Z" fill="url(#bubbleGradB)" stroke="#DDE7E2" stroke-width="1.5"/>
+      
+      <!-- Speech Badge -->
+      <rect x="24" y="22" width="60" height="20" rx="10" fill="#08745A"/>
+      <text x="54" y="36" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">RESPONSE</text>
+
+      <!-- Hangul Answer -->
+      <text x="24" y="80" font-family="'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="34" font-weight="700" fill="#042F2A">저는 스무 살이에요.</text>
+      <text x="24" y="112" font-family="'Inter', sans-serif" font-size="15" font-weight="600" fill="#E55328">[ jeoneun seumu sal-ieyo ]</text>
+      
+      <!-- English Translation -->
+      <text x="24" y="146" font-family="'Inter', sans-serif" font-size="15" font-weight="500" fill="#3D5A51">"I am 20 years old." (Polite Standard)</text>
+    </g>
+
+    <!-- Grammatical breakdown note -->
+    <g transform="translate(0, 390)">
+      <rect width="400" height="70" rx="10" fill="#FFFFFF" stroke="#DDE7E2" stroke-width="1.5"/>
+      <text x="18" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#C2410C">GRAMMAR BREAKDOWN:</text>
+      <text x="18" y="48" font-family="'Inter', sans-serif" font-size="12" fill="#3D5A51">저 (I) + 는 (topic) + 스무 (20) + 살 (years) + 이에요</text>
+    </g>
+  </g>
+
+  <!-- Outer Frame -->
+  <rect x="1" y="1" width="1198" height="673" fill="none" stroke="#DDE7E2" stroke-width="1"/>
+</svg>

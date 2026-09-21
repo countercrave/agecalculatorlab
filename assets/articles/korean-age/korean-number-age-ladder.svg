@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="ladderBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8F6"/>
+      <stop offset="100%" stop-color="#EAF2EE"/>
+    </linearGradient>
+    <filter id="ladderCardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#042F2A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#ladderBg)"/>
+
+  <!-- Top Banner -->
+  <g transform="translate(48, 32)">
+    <rect width="180" height="26" rx="13" fill="#042F2A" fill-opacity="0.08"/>
+    <text x="90" y="17" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">FLASHCARD PROGRESSION</text>
+    <text x="0" y="58" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#042F2A">Native Korean Age Number Ladder</text>
+    <text x="0" y="78" font-family="'Inter', sans-serif" font-size="13" fill="#5D7069">Korean ages exclusively use native numbers (하나, 둘, 셋...) with the counter 살.</text>
+  </g>
+
+  <!-- Flashcard Stack (Vertical Progression: 1, 3, 5, 10, 20, 30) -->
+  
+  <!-- Step 1: 1 Year Old (한 살) -->
+  <g transform="translate(48, 126)" filter="url(#ladderCardShadow)">
+    <rect width="704" height="60" rx="10" fill="#FFFFFF" stroke="#DDE7E2" stroke-width="1.2"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#075433"/>
+    <text x="36" y="38" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#075433">1</text>
+    <text x="120" y="38" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#042F2A">한 살</text>
+    <text x="240" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#08745A">[ han sal ]</text>
+    <text x="440" y="37" font-family="'Inter', sans-serif" font-size="14" fill="#3D5A51">1 Year Old</text>
+    <text x="590" y="37" font-family="'Inter', sans-serif" font-size="12" fill="#718B82">hana → han (contraction)</text>
+  </g>
+
+  <!-- Step 2: 3 Years Old (세 살) -->
+  <g transform="translate(48, 198)" filter="url(#ladderCardShadow)">
+    <rect width="704" height="60" rx="10" fill="#FFFFFF" stroke="#DDE7E2" stroke-width="1.2"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#075433"/>
+    <text x="36" y="38" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#075433">3</text>
+    <text x="120" y="38" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#042F2A">세 살</text>
+    <text x="240" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#08745A">[ se sal ]</text>
+    <text x="440" y="37" font-family="'Inter', sans-serif" font-size="14" fill="#3D5A51">3 Years Old</text>
+    <text x="590" y="37" font-family="'Inter', sans-serif" font-size="12" fill="#718B82">set → se (contraction)</text>
+  </g>
+
+  <!-- Step 3: 5 Years Old (다섯 살) -->
+  <g transform="translate(48, 270)" filter="url(#ladderCardShadow)">
+    <rect width="704" height="60" rx="10" fill="#FFFFFF" stroke="#DDE7E2" stroke-width="1.2"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#075433"/>
+    <text x="36" y="38" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#075433">5</text>
+    <text x="120" y="38" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#042F2A">다섯 살</text>
+    <text x="240" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#08745A">[ daseot sal ]</text>
+    <text x="440" y="37" font-family="'Inter', sans-serif" font-size="14" fill="#3D5A51">5 Years Old</text>
+    <text x="590" y="37" font-family="'Inter', sans-serif" font-size="12" fill="#718B82">Regular form</text>
+  </g>
+
+  <!-- Step 4: 10 Years Old (열 살) -->
+  <g transform="translate(48, 342)" filter="url(#ladderCardShadow)">
+    <rect width="704" height="60" rx="10" fill="#FFFFFF" stroke="#DDE7E2" stroke-width="1.2"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#D97706"/>
+    <text x="30" y="38" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#D97706">10</text>
+    <text x="120" y="38" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#042F2A">열 살</text>
+    <text x="240" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#D97706">[ yeol sal ]</text>
+    <text x="440" y="37" font-family="'Inter', sans-serif" font-size="14" fill="#3D5A51">10 Years Old</text>
+    <text x="590" y="37" font-family="'Inter', sans-serif" font-size="12" fill="#718B82">Decade base</text>
+  </g>
+
+  <!-- Step 5: 20 Years Old (스무 살) - Highlight milestone -->
+  <g transform="translate(48, 414)" filter="url(#ladderCardShadow)">
+    <rect width="704" height="60" rx="10" fill="#FFFBF9" stroke="#FF754D" stroke-width="1.6"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#FF754D"/>
+    <text x="30" y="38" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#E55328">20</text>
+    <text x="120" y="38" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#042F2A">스무 살</text>
+    <text x="240" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#E55328">[ seumu sal ]</text>
+    <text x="440" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#C2410C">20 Years Old (Adulthood)</text>
+    <text x="590" y="37" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E55328">seumul → seumu!</text>
+  </g>
+
+  <!-- Step 6: 30 Years Old (서른 살) -->
+  <g transform="translate(48, 486)" filter="url(#ladderCardShadow)">
+    <rect width="704" height="60" rx="10" fill="#FFFFFF" stroke="#DDE7E2" stroke-width="1.2"/>
+    <rect x="0" y="0" width="8" height="60" rx="4" fill="#08745A"/>
+    <text x="30" y="38" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#08745A">30</text>
+    <text x="120" y="38" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#042F2A">서른 살</text>
+    <text x="240" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#08745A">[ seoreun sal ]</text>
+    <text x="440" y="37" font-family="'Inter', sans-serif" font-size="14" fill="#3D5A51">30 Years Old</text>
+    <text x="590" y="37" font-family="'Inter', sans-serif" font-size="12" fill="#718B82">Decade milestone</text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="400" y="574" font-family="'Inter', sans-serif" font-size="12" fill="#5D7069" text-anchor="middle">Tip: Sino-Korean numbers (일, 이, 삼...) are never paired with 살 in spoken Korean.</text>
+
+  <!-- Outer border -->
+  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#DDE7E2" stroke-width="1"/>
+</svg>

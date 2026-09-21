@@ -71,6 +71,47 @@
       "permanent": true
     },
     {
+      "source": "/age-in-korean",
+      "destination": "/articles/age-in-korean/",
+      "permanent": true
+    },
+    {
+      "source": "/age-in-korean/",
+      "destination": "/articles/age-in-korean/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-say-your-age-in-korean",
+      "destination": "/articles/age-in-korean/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-say-your-age-in-korean/",
+      "destination": "/articles/age-in-korean/",
+      "permanent": true
+    },
+    {
+      "source": "/my-age-in-korean",
+      "destination": "/articles/age-in-korean/",
+      "permanent": true
+    },
+    {
+      "source": "/my-age-in-korean/",
+      "destination": "/articles/age-in-korean/",
+      "permanent": true
+    },
+    {
+      "source": "/how-old-are-you-in-korean",
+      "destination": "/articles/age-in-korean/",
+      "permanent": true
+    },
+    {
+      "source": "/how-old-are-you-in-korean/",
+      "destination": "/articles/age-in-korean/",
+      "permanent": true
+    },
+
+    {
       "source": "/how-old-am-i-in-korean-age/",
       "destination": "/articles/how-old-am-i-in-korean-age/",
       "permanent": true
