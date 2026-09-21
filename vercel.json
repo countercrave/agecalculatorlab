@@ -89,6 +89,26 @@
       "source": "/terms-of-use/",
       "destination": "/terms/",
       "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-korean-age",
+      "destination": "/articles/how-to-calculate-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-korean-age/",
+      "destination": "/articles/how-to-calculate-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/calculate-korean-age",
+      "destination": "/articles/how-to-calculate-korean-age/",
+      "permanent": true
+    },
+    {
+      "source": "/calculate-korean-age/",
+      "destination": "/articles/how-to-calculate-korean-age/",
+      "permanent": true
     }
   ],
   "cleanUrls": true,
