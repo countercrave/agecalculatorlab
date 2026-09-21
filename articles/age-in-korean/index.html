@@ -634,15 +634,62 @@
 </head>
 <body>
   <!-- Site Header -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner" style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; padding: 0 24px;">
-      <a href="../../" class="site-brand" aria-label="Age Calculator Lab Home">
-        <img src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab" width="180" height="42">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+        <img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab" width="144" height="48">
       </a>
-      <nav class="header-nav" style="display: flex; align-items: center; gap: 28px;">
-        <a href="../../categories/" style="color: #0D2B23; font-weight: 500; font-size: 0.95rem;">Calculators</a>
-        <a href="../../articles/" style="color: #0D2B23; font-weight: 500; font-size: 0.95rem;">Guides</a>
-        <a href="../../tools/korean-age-calculator/" style="background: #075433; color: #FFFFFF; padding: 8px 18px; border-radius: 9999px; font-weight: 600; font-size: 0.9rem; text-decoration: none;">Korean Age Calculator</a>
+      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <details class="nav-dropdown nav-dropdown-categories">
+          <summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="nav-mega">
+            <div class="nav-mega-head">
+              <div><small>161 focused tools</small><strong>Main calculator categories</strong></div>
+              <a href="../../categories/">View category directory →</a>
+            </div>
+            <div class="nav-category-grid">
+              <a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+              <a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+              <a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>8 tools</small></a>
+              <a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+              <a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+              <a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>15 tools</small></a>
+              <a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>13 tools</small></a>
+              <a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+              <a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+              <a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>12 tools</small></a>
+              <a href="../../categories/date-lab/"><span>Date Lab</span><small>34 tools</small></a>
+            </div>
+            <div class="nav-quick-row">
+              <span>Popular</span>
+              <a href="../../">Age Calculator</a>
+              <a href="../../tools/date-difference-calculator/">Date Difference</a>
+              <a href="../../tools/corrected-age-calculator/">Corrected Age</a>
+              <a href="../../tools/countdown-to-date-calculator/">Countdown</a>
+            </div>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-dropdown-guides">
+          <summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="nav-mega nav-mega-guides">
+            <div class="nav-mega-head">
+              <div><small>100 practical guides</small><strong>Learn the method</strong></div>
+              <a href="../../articles/">Browse all guides →</a>
+            </div>
+            <div class="nav-guide-grid">
+              <a href="../../articles/calculate-exact-age-years-months-days/"><small>Universal Chronology</small><span>How to Calculate Exact Age in Years, Months and Days</span></a>
+              <a href="../../articles/chronological-age-explained/"><small>Universal Chronology</small><span>Chronological Age: What It Measures and What It Doesn't</span></a>
+              <a href="../../articles/calendar-age-vs-decimal-age/"><small>Universal Chronology</small><span>Calendar Age vs Decimal Age: Which One Does Your Form Want?</span></a>
+              <a href="../../articles/calculate-age-on-past-date/"><small>Universal Chronology</small><span>Working Out Your Age on a Past Date</span></a>
+              <a href="../../articles/calculate-age-on-future-date/"><small>Universal Chronology</small><span>How Old Will I Be on a Future Date?</span></a>
+              <a href="../../articles/leap-day-birthdays-age-calculation/"><small>Universal Chronology</small><span>Leap-Day Birthdays: Ageing Normally, Celebrating Awkwardly</span></a>
+            </div>
+          </div>
+        </details>
+        <a href="../../categories/">Categories</a>
+        <a href="../../methodology/">Methodology</a>
+        <a class="nav-cta" href="../../">Open Age Calculator</a>
       </nav>
     </div>
   </header>
