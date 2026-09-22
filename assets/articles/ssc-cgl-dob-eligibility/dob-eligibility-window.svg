@@ -114,7 +114,7 @@
       <g transform="translate(20, 118)">
         <rect width="540" height="36" rx="6" fill="#064e3b" fill-opacity="0.8"/>
         <text x="270" y="23" font-size="12" font-weight="700" fill="#ecfdf5" text-anchor="middle">
-          Age on 01-Aug-2026: 26 Years 1 Month 17 Days &bull; 100% Eligible
+          Age on 01-Aug-2026: 26 Years 1 Month 17 Days &#8226; 100% Eligible
         </text>
       </g>
     </g>
@@ -133,13 +133,13 @@
     <!-- Footer Summary inside container -->
     <g transform="translate(60, 290)">
       <text x="0" y="18" font-size="12" font-weight="500" fill="#94a3b8">
-        Crucial Reckoning Date: <tspan font-weight="700" fill="#e2e8f0">01 August 2026</tspan> &bull; Official Formula: <tspan font-style="italic" fill="#cbd5e1">"Born not earlier than 02-08-1996 and not later than 01-08-2008"</tspan>
+        Crucial Reckoning Date: <tspan font-weight="700" fill="#e2e8f0">01 August 2026</tspan> &#8226; Official Formula: <tspan font-style="italic" fill="#cbd5e1">"Born not earlier than 02-08-1996 and not later than 01-08-2008"</tspan>
       </text>
     </g>
   </g>
 
   <!-- Bottom Brand Footnote -->
   <text x="80" y="625" font-size="12" font-weight="600" fill="#64748b">
-    Age Calculator Lab &bull; SSC CGL Eligibility Research &bull; Source: Staff Selection Commission Official Notification
+    Age Calculator Lab &#8226; SSC CGL Eligibility Research &#8226; Source: Staff Selection Commission Official Notification
   </text>
 </svg>

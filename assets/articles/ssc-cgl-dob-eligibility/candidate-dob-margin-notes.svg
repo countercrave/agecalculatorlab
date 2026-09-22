@@ -58,10 +58,10 @@
 
     <!-- Notebook Header -->
     <text x="75" y="45" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#0f172a">
-      SSC CGL 2026 &mdash; Candidate Self-Check Notes
+      SSC CGL 2026 &#8212; Candidate Self-Check Notes
     </text>
     <text x="75" y="65" font-size="11" font-weight="600" fill="#64748b">
-      Personal Eligibility Calculation &bull; Target: Inspector (Central Excise / IT)
+      Personal Eligibility Calculation &#8226; Target: Inspector (Central Excise / IT)
     </text>
 
     <!-- Left Handwritten Calculation Block (Student ballpoint pen) -->
@@ -152,7 +152,7 @@
     <g transform="translate(75, 495)">
       <line x1="0" y1="0" x2="485" y2="0" stroke="#f1f5f9" stroke-width="1"/>
       <text x="0" y="18" font-size="11" font-weight="600" fill="#94a3b8">
-        Crucial Reference Date: 01 August 2026 &bull; Age Calculator Lab Study Resource
+        Crucial Reference Date: 01 August 2026 &#8226; Age Calculator Lab Study Resource
       </text>
     </g>
 
