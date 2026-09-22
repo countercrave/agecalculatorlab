@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#021612" />
+      <stop offset="100%" stop-color="#0B2B23" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg3)" />
+  <rect x="24" y="24" width="1152" height="627" rx="16" fill="none" stroke="#1D4D40" stroke-width="1.5" />
+
+  <!-- Top Title Ribbon -->
+  <g transform="translate(60, 45)">
+    <rect width="1080" height="74" rx="10" fill="#021A14" stroke="#184D40" stroke-width="1" />
+    <text x="30" y="30" fill="#34D399" font-family="'Inter', sans-serif" font-size="12" font-weight="800" letter-spacing="2">CASE STUDY &#8226; ONE CANDIDATE, FOUR POST RULES</text>
+    <text x="30" y="56" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700">Same Candidate, Different Eligibility: How Post Bands Divide Applicants</text>
+  </g>
+
+  <!-- Central Candidate Dossier -->
+  <g transform="translate(420, 150)">
+    <rect width="360" height="150" rx="12" fill="#04271F" stroke="#34D399" stroke-width="2" />
+    <rect x="20" y="16" width="320" height="30" rx="6" fill="#064E3B" />
+    <text x="180" y="36" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle">SAMPLE CANDIDATE PROFILE</text>
+    
+    <text x="25" y="74" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Date of Birth: <tspan fill="#34D399">15 June 1996</tspan></text>
+    <text x="25" y="98" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Category: <tspan fill="#FBBF24">General (Unreserved)</tspan></text>
+    <text x="25" y="122" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Age on 01-Aug-2026: <tspan fill="#F472B6">30 Yrs, 1 Mo, 17 Days</tspan></text>
+  </g>
+
+  <!-- 4 Outcome Cards Below -->
+  <g transform="translate(60, 335)">
+    <!-- Post 1: Tax Asst (18-27) -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="230" rx="10" fill="#031E18" stroke="#EF4444" stroke-width="1.5" />
+      <rect x="15" y="15" width="220" height="34" rx="6" fill="#450A0A" />
+      <text x="125" y="37" fill="#FCA5A5" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle">TAX ASSISTANT (18&#8211;27)</text>
+
+      <text x="20" y="75" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Post Limit: 27 Yrs</text>
+      <text x="20" y="98" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Candidate is 30.1 yrs</text>
+
+      <rect x="15" y="125" width="220" height="85" rx="8" fill="#1C1917" stroke="#EF4444" stroke-width="1" />
+      <text x="125" y="155" fill="#EF4444" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">&#10008; OVERAGE</text>
+      <text x="125" y="180" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Exceeds ceiling by 3.1 yrs.</text>
+      <text x="125" y="196" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Ineligible under General.</text>
+    </g>
+
+    <!-- Post 2: ASO in MEA (20-30) -->
+    <g transform="translate(276, 0)">
+      <rect width="250" height="230" rx="10" fill="#031E18" stroke="#EF4444" stroke-width="1.5" />
+      <rect x="15" y="15" width="220" height="34" rx="6" fill="#450A0A" />
+      <text x="125" y="37" fill="#FCA5A5" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle">ASO IN CSS/MEA (20&#8211;30)</text>
+
+      <text x="20" y="75" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Post Limit: 30 Yrs</text>
+      <text x="20" y="98" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Candidate is 30.1 yrs</text>
+
+      <rect x="15" y="125" width="220" height="85" rx="8" fill="#1C1917" stroke="#EF4444" stroke-width="1" />
+      <text x="125" y="155" fill="#EF4444" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">&#10008; OVERAGE</text>
+      <text x="125" y="180" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Exceeds 30 by 47 days.</text>
+      <text x="125" y="196" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Ineligible under General.</text>
+    </g>
+
+    <!-- Post 3: Excise Inspector (18-30) -->
+    <g transform="translate(552, 0)">
+      <rect width="250" height="230" rx="10" fill="#031E18" stroke="#EF4444" stroke-width="1.5" />
+      <rect x="15" y="15" width="220" height="34" rx="6" fill="#450A0A" />
+      <text x="125" y="37" fill="#FCA5A5" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle">EXCISE INSPECTOR (18&#8211;30)</text>
+
+      <text x="20" y="75" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Post Limit: 30 Yrs</text>
+      <text x="20" y="98" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Candidate is 30.1 yrs</text>
+
+      <rect x="15" y="125" width="220" height="85" rx="8" fill="#1C1917" stroke="#EF4444" stroke-width="1" />
+      <text x="125" y="155" fill="#EF4444" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">&#10008; OVERAGE</text>
+      <text x="125" y="180" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Born 15-Jun vs Cutoff 02-Aug.</text>
+      <text x="125" y="196" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Ineligible under General.</text>
+    </g>
+
+    <!-- Post 4: JSO (18-32) -->
+    <g transform="translate(828, 0)">
+      <rect width="250" height="230" rx="10" fill="#031E18" stroke="#10B981" stroke-width="2" />
+      <rect x="15" y="15" width="220" height="34" rx="6" fill="#064E3B" />
+      <text x="125" y="37" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle">STATISTICAL OFFICER (18&#8211;32)</text>
+
+      <text x="20" y="75" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Post Limit: 32 Yrs</text>
+      <text x="20" y="98" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Candidate is 30.1 yrs</text>
+
+      <rect x="15" y="125" width="220" height="85" rx="8" fill="#064E3B" stroke="#10B981" stroke-width="1.5" />
+      <text x="125" y="155" fill="#34D399" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">&#10004; 100% ELIGIBLE</text>
+      <text x="125" y="180" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Under 32 max ceiling.</text>
+      <text x="125" y="196" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Eligible if math/stat met!</text>
+    </g>
+  </g>
+
+  <!-- Connectors from Dossier to Cards -->
+  <line x1="500" y1="300" x2="185" y2="335" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="550" y1="300" x2="400" y2="335" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="650" y1="300" x2="675" y2="335" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="700" y1="300" x2="950" y2="335" stroke="#10B981" stroke-width="2" />
+</svg>
