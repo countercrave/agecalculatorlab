@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#041D17" />
+      <stop offset="50%" stop-color="#082D24" />
+      <stop offset="100%" stop-color="#0D3B30" />
+    </linearGradient>
+    <linearGradient id="grad-standard" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="grad-obc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="grad-scst" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.9" />
+    </linearGradient>
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#164E40" stroke-width="0.7" stroke-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="675" fill="url(#bg-grad)" />
+  <rect width="1200" height="675" fill="url(#grid-pattern)" />
+
+  <!-- Outer Border -->
+  <rect x="24" y="24" width="1152" height="627" rx="16" fill="none" stroke="#236353" stroke-width="1.5" />
+
+  <!-- Header Ribbon -->
+  <rect x="60" y="50" width="1080" height="80" rx="10" fill="#021812" stroke="#1B4D40" stroke-width="1" />
+  <text x="85" y="88" fill="#34D399" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="800" letter-spacing="2">CONCEPTUAL DATA VISUALIZATION &#8226; STATUTORY RELAXATION CORRIDORS</text>
+  <text x="85" y="114" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700">How Category Age Relaxation Shifts the Permissible DOB Corridor</text>
+
+  <!-- Subtitle / Methodology Note -->
+  <text x="60" y="160" fill="#A7F3D0" font-family="'Inter', -apple-system, sans-serif" font-size="13">
+    Key Principle: Age relaxation extends the earliest allowed birth date backwards (leftwards); the latest cutoff (01-Aug-2008) stays rigidly fixed.
+  </text>
+
+  <!-- Right Boundary Reference Line (Latest DOB / 18 Yrs Entry) -->
+  <line x1="980" y1="180" x2="980" y2="540" stroke="#34D399" stroke-width="2" stroke-dasharray="6 4" />
+  <rect x="860" y="185" width="230" height="32" rx="6" fill="#064E3B" stroke="#34D399" stroke-width="1" />
+  <text x="975" y="206" fill="#A7F3D0" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">LATEST DOB: 01 AUG 2008 (FIXED)</text>
+
+  <!-- Left Extension Direction Arrow -->
+  <line x1="380" y1="195" x2="100" y2="195" stroke="#F59E0B" stroke-width="2" />
+  <polygon points="90,195 105,189 105,201" fill="#F59E0B" />
+  <text x="240" y="188" fill="#FBBF24" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">&#8592; EARLIER PERMITTED DOB (OLDER CANDIDATES)</text>
+
+  <!-- Layer 1: Standard / UR Corridor -->
+  <g transform="translate(60, 230)">
+    <rect x="0" y="0" width="1080" height="85" rx="10" fill="#04221A" stroke="#1B4D40" stroke-width="1" />
+    <text x="25" y="32" fill="#FFFFFF" font-family="'Inter', -apple-system, sans-serif" font-size="14" font-weight="700">STANDARD / UNRESERVED (UR)</text>
+    <text x="25" y="54" fill="#94A3B8" font-family="'Inter', -apple-system, sans-serif" font-size="12">Base 18&#8211;30 Post Band &#8226; Max Base Age: 30 Yrs</text>
+    <rect x="440" y="18" width="480" height="48" rx="8" fill="url(#grad-standard)" />
+    <text x="455" y="46" fill="#FFFFFF" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="700">02 AUG 1996</text>
+    <text x="680" y="46" fill="#ECFDF5" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">12-Year Base Eligible Corridor</text>
+    <text x="905" y="46" fill="#FFFFFF" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="end">01 AUG 2008</text>
+  </g>
+
+  <!-- Layer 2: OBC Corridor (+3 Years) -->
+  <g transform="translate(60, 330)">
+    <rect x="0" y="0" width="1080" height="85" rx="10" fill="#04221A" stroke="#1B4D40" stroke-width="1" />
+    <text x="25" y="32" fill="#FDE68A" font-family="'Inter', -apple-system, sans-serif" font-size="14" font-weight="700">OTHER BACKWARD CLASSES (OBC)</text>
+    <text x="25" y="54" fill="#94A3B8" font-family="'Inter', -apple-system, sans-serif" font-size="12">+3 Years Upper Relaxation &#8226; Max Age: 33 Yrs</text>
+    <rect x="300" y="18" width="620" height="48" rx="8" fill="url(#grad-obc)" />
+    <text x="315" y="46" fill="#FFFFFF" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="700">02 AUG 1993</text>
+    <text x="610" y="46" fill="#FEF3C7" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">15-Year Extended Corridor (+3 Years Window)</text>
+    <text x="905" y="46" fill="#FFFFFF" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="end">01 AUG 2008</text>
+  </g>
+
+  <!-- Layer 3: SC / ST Corridor (+5 Years) -->
+  <g transform="translate(60, 430)">
+    <rect x="0" y="0" width="1080" height="85" rx="10" fill="#04221A" stroke="#1B4D40" stroke-width="1" />
+    <text x="25" y="32" fill="#DDD6FE" font-family="'Inter', -apple-system, sans-serif" font-size="14" font-weight="700">SCHEDULED CASTE / TRIBE (SC / ST)</text>
+    <text x="25" y="54" fill="#94A3B8" font-family="'Inter', -apple-system, sans-serif" font-size="12">+5 Years Upper Relaxation &#8226; Max Age: 35 Yrs</text>
+    <rect x="180" y="18" width="740" height="48" rx="8" fill="url(#grad-scst)" />
+    <text x="195" y="46" fill="#FFFFFF" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="700">02 AUG 1991</text>
+    <text x="550" y="46" fill="#EDE9FE" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">17-Year Extended Corridor (+5 Years Window)</text>
+    <text x="905" y="46" fill="#FFFFFF" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="end">01 AUG 2008</text>
+  </g>
+
+  <!-- Bottom Clarification Card -->
+  <g transform="translate(60, 535)">
+    <rect x="0" y="0" width="1080" height="85" rx="10" fill="#021812" stroke="#1B4D40" stroke-width="1" />
+    <text x="25" y="32" fill="#38BDF8" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="700">STATUTORY RECKONING PRINCIPLE:</text>
+    <text x="25" y="56" fill="#CBD5E1" font-family="'Inter', -apple-system, sans-serif" font-size="12">
+      Age relaxation acts exclusively on the upper-age ceiling (Earliest permissible birth date). It never lowers the minimum age requirement (18 or 20 completed years as on 01-08-2026).
+    </text>
+  </g>
+</svg>
