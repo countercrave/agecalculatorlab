@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#091b15; font-family:'Inter',system-ui,-apple-system,sans-serif;">
+  <defs>
+    <linearGradient id="splitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071b14"/>
+      <stop offset="100%" stop-color="#04140f"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="pillShadow" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#10b981" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#splitBg)"/>
+
+  <!-- Top Badge -->
+  <g transform="translate(80, 50)">
+    <rect width="250" height="32" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.3"/>
+    <text x="20" y="21" font-size="12" font-weight="700" fill="#a7f3d0" letter-spacing="1">STATUTORY RECKONING</text>
+  </g>
+
+  <!-- Heading -->
+  <text x="80" y="125" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#ffffff">Date of Birth vs Crucial Cutoff Date</text>
+  <text x="80" y="156" font-size="15" fill="#94a3b8">SSC measures eligibility strictly between these two fixed calendar anchor points</text>
+
+  <!-- Split Comparison Layout -->
+  <g transform="translate(80, 205)">
+
+    <!-- LEFT CARD: Candidate's Date of Birth -->
+    <g transform="translate(0, 0)" filter="url(#cardShadow)">
+      <rect width="400" height="330" rx="16" fill="#132c23" stroke="#2a4d3f" stroke-width="1.5"/>
+      <rect width="400" height="56" rx="16" fill="#1b3d31"/>
+      <text x="32" y="35" font-size="13" font-weight="800" fill="#a7f3d0" letter-spacing="1">ANCHOR POINT A</text>
+      
+      <g transform="translate(32, 85)">
+        <text x="0" y="16" font-size="12" font-weight="700" fill="#6ee7b7" letter-spacing="0.5">YOUR DATE OF BIRTH</text>
+        <text x="0" y="58" font-family="'Fraunces', Georgia, serif" font-size="36" font-weight="800" fill="#ffffff">15 Jun 2000</text>
+        <text x="0" y="90" font-size="13" font-weight="600" fill="#94a3b8">Recorded in 10th / Matric Certificate</text>
+        
+        <line x1="0" y1="120" x2="336" y2="120" stroke="#ffffff" stroke-opacity="0.08"/>
+        
+        <text x="0" y="150" font-size="12" font-weight="600" fill="#cbd5e1">Proof Accepted:</text>
+        <text x="0" y="172" font-size="12" fill="#94a3b8">Only Secondary School Board Certificate</text>
+        <text x="0" y="192" font-size="11" fill="#f87171">&#x2715; Aadhaar / Passport affidavit not valid</text>
+      </g>
+    </g>
+
+    <!-- CENTER CONNECTION ARTERY -->
+    <g transform="translate(400, 100)">
+      <!-- Connecting Line -->
+      <line x1="0" y1="65" x2="240" y2="65" stroke="#10b981" stroke-width="3" stroke-dasharray="6,4"/>
+      
+      <!-- Central Age Badge -->
+      <g transform="translate(45, 25)" filter="url(#pillShadow)">
+        <rect width="150" height="80" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
+        <text x="75" y="24" font-size="10.5" font-weight="800" fill="#a7f3d0" text-anchor="middle" letter-spacing="0.5">COMPUTED AGE</text>
+        <text x="75" y="52" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="800" fill="#ffffff" text-anchor="middle">26 Years</text>
+        <text x="75" y="68" font-size="10" font-weight="600" fill="#6ee7b7" text-anchor="middle">1 Month 17 Days</text>
+      </g>
+
+      <!-- Label below connection -->
+      <text x="120" y="140" font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="0.5">STATUTORY INTERVAL</text>
+    </g>
+
+    <!-- RIGHT CARD: Crucial Cutoff Date -->
+    <g transform="translate(640, 0)" filter="url(#cardShadow)">
+      <rect width="400" height="330" rx="16" fill="#132c23" stroke="#2a4d3f" stroke-width="1.5"/>
+      <rect width="400" height="56" rx="16" fill="#1b3d31"/>
+      <text x="32" y="35" font-size="13" font-weight="800" fill="#38bdf8" letter-spacing="1">ANCHOR POINT B</text>
+      
+      <g transform="translate(32, 85)">
+        <text x="0" y="16" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="0.5">CRUCIAL RECKONING DATE</text>
+        <text x="0" y="58" font-family="'Fraunces', Georgia, serif" font-size="36" font-weight="800" fill="#ffffff">01 Aug 2026</text>
+        <text x="0" y="90" font-size="13" font-weight="600" fill="#94a3b8">Mandated by DoPT Recruitment Guidelines</text>
+        
+        <line x1="0" y1="120" x2="336" y2="120" stroke="#ffffff" stroke-opacity="0.08"/>
+        
+        <text x="0" y="150" font-size="12" font-weight="600" fill="#cbd5e1">Cycle Rule:</text>
+        <text x="0" y="172" font-size="12" fill="#94a3b8">Fixed for the entire SSC CGL 2026 cycle</text>
+        <text x="0" y="192" font-size="11" fill="#38bdf8">&#x2713; Independent of current application date</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Bottom Footnote -->
+  <text x="80" y="625" font-size="12" font-weight="600" fill="#64748b">
+    Age Calculator Lab &bull; SSC CGL Eligibility Engine &bull; Note: Crucial date formula verified against DoPT O.M. standards
+  </text>
+</svg>

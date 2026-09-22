@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0a1d17; font-family:'Inter',system-ui,-apple-system,sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071b14"/>
+      <stop offset="50%" stop-color="#0d281e"/>
+      <stop offset="100%" stop-color="#05150f"/>
+    </linearGradient>
+    <linearGradient id="windowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#059669" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="corridorGlow" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#10b981" flood-opacity="0.2"/>
+    </filter>
+    <filter id="markerGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#38bdf8" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+
+  <!-- Top Badge -->
+  <g transform="translate(80, 50)">
+    <rect width="270" height="32" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.3"/>
+    <circle cx="18" cy="16" r="4.5" fill="#10b981"/>
+    <text x="32" y="21" font-size="12" font-weight="700" fill="#a7f3d0" letter-spacing="1.5">DATE OF BIRTH CORRIDOR</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="80" y="125" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#ffffff">SSC CGL DOB Eligibility Window 2026</text>
+  <text x="80" y="156" font-size="15" fill="#94a3b8">Statutory birth date boundaries for the 18–30 Inspector cadre (Reckoned as of 01 August 2026)</text>
+
+  <!-- Visual Corridor Container -->
+  <g transform="translate(80, 210)">
+    
+    <!-- Outer Timeline Card -->
+    <rect x="0" y="0" width="1040" height="340" rx="16" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- Axis Year Markers along the top -->
+    <g transform="translate(0, 45)">
+      <line x1="60" y1="0" x2="980" y2="0" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+      
+      <!-- 1992 -->
+      <line x1="120" y1="-8" x2="120" y2="8" stroke="#ffffff" stroke-opacity="0.3"/>
+      <text x="120" y="-16" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">1992</text>
+
+      <!-- 1996 Cutoff boundary -->
+      <line x1="330" y1="-12" x2="330" y2="12" stroke="#10b981" stroke-width="2"/>
+      <text x="330" y="-18" font-size="13" font-weight="700" fill="#34d399" text-anchor="middle">1996</text>
+
+      <!-- 2000 (Candidate) -->
+      <line x1="550" y1="-8" x2="550" y2="8" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="550" y="-16" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">2000</text>
+
+      <!-- 2004 -->
+      <line x1="740" y1="-8" x2="740" y2="8" stroke="#ffffff" stroke-opacity="0.3"/>
+      <text x="740" y="-16" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">2004</text>
+
+      <!-- 2008 Cutoff boundary -->
+      <line x1="910" y1="-12" x2="910" y2="12" stroke="#10b981" stroke-width="2"/>
+      <text x="910" y="-18" font-size="13" font-weight="700" fill="#34d399" text-anchor="middle">2008</text>
+    </g>
+
+    <!-- Zone 1: Too Early (< 02 Aug 1996) -->
+    <g transform="translate(60, 90)">
+      <rect x="0" y="0" width="270" height="150" rx="8" fill="#ef4444" fill-opacity="0.08" stroke="#ef4444" stroke-opacity="0.25" stroke-dasharray="4,4"/>
+      <rect x="16" y="16" width="100" height="22" rx="4" fill="#7f1d1d" fill-opacity="0.8"/>
+      <text x="24" y="32" font-size="11" font-weight="800" fill="#fca5a5" letter-spacing="0.5">TOO EARLY</text>
+      
+      <text x="16" y="64" font-size="13" font-weight="700" fill="#f87171">Born on or before</text>
+      <text x="16" y="84" font-size="15" font-weight="800" fill="#ffffff">01 August 1996</text>
+      <text x="16" y="112" font-size="12" font-weight="600" fill="#fca5a5">Status: Overage (Age &gt; 30)</text>
+    </g>
+
+    <!-- Zone 2: Valid DOB Eligibility Window (02 Aug 1996 to 01 Aug 2008) -->
+    <g transform="translate(330, 80)" filter="url(#corridorGlow)">
+      <rect x="0" y="0" width="580" height="170" rx="10" fill="url(#windowGrad)" stroke="#10b981" stroke-width="2"/>
+      
+      <!-- Top header bar inside window -->
+      <rect x="0" y="0" width="580" height="34" rx="10" fill="#065f46" fill-opacity="0.7"/>
+      <text x="290" y="22" font-size="12" font-weight="800" fill="#a7f3d0" text-anchor="middle" letter-spacing="1">
+        &#x2713; STATUTORY ELIGIBLE DOB WINDOW (18–30 POSTS)
+      </text>
+
+      <!-- Earliest Limit Boundary Tag -->
+      <g transform="translate(20, 48)">
+        <rect width="135" height="48" rx="6" fill="#022c22" stroke="#10b981" stroke-opacity="0.5"/>
+        <text x="12" y="20" font-size="10" font-weight="700" fill="#6ee7b7">EARLIEST PERMITTED</text>
+        <text x="12" y="38" font-size="13" font-weight="800" fill="#ffffff">02 Aug 1996</text>
+      </g>
+
+      <!-- Latest Limit Boundary Tag -->
+      <g transform="translate(425, 48)">
+        <rect width="135" height="48" rx="6" fill="#022c22" stroke="#10b981" stroke-opacity="0.5"/>
+        <text x="12" y="20" font-size="10" font-weight="700" fill="#6ee7b7">LATEST PERMITTED</text>
+        <text x="12" y="38" font-size="13" font-weight="800" fill="#ffffff">01 Aug 2008</text>
+      </g>
+
+      <!-- Candidate DOB Marker in the middle -->
+      <g transform="translate(260, 40)" filter="url(#markerGlow)">
+        <!-- Marker Line down -->
+        <line x1="30" y1="0" x2="30" y2="70" stroke="#38bdf8" stroke-width="2.5"/>
+        <circle cx="30" cy="70" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+        
+        <!-- Marker Tag Box -->
+        <rect x="-35" y="-30" width="130" height="32" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+        <text x="30" y="-18" font-size="9" font-weight="800" fill="#7dd3fc" text-anchor="middle">CANDIDATE DOB</text>
+        <text x="30" y="-6" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">15 June 2000</text>
+      </g>
+
+      <!-- Bottom verification banner inside valid window -->
+      <g transform="translate(20, 118)">
+        <rect width="540" height="36" rx="6" fill="#064e3b" fill-opacity="0.8"/>
+        <text x="270" y="23" font-size="12" font-weight="700" fill="#ecfdf5" text-anchor="middle">
+          Age on 01-Aug-2026: 26 Years 1 Month 17 Days &bull; 100% Eligible
+        </text>
+      </g>
+    </g>
+
+    <!-- Zone 3: Too Late (> 01 Aug 2008) -->
+    <g transform="translate(910, 90)">
+      <rect x="0" y="0" width="70" height="150" rx="8" fill="#ef4444" fill-opacity="0.08" stroke="#ef4444" stroke-opacity="0.25" stroke-dasharray="4,4"/>
+      <rect x="10" y="16" width="50" height="22" rx="4" fill="#7f1d1d" fill-opacity="0.8"/>
+      <text x="35" y="32" font-size="9" font-weight="800" fill="#fca5a5" text-anchor="middle">LATE</text>
+      
+      <text x="12" y="68" font-size="10" font-weight="700" fill="#f87171">&gt; 01 Aug</text>
+      <text x="12" y="84" font-size="12" font-weight="800" fill="#ffffff">2008</text>
+      <text x="12" y="112" font-size="9.5" font-weight="600" fill="#fca5a5">&lt; 18 Yrs</text>
+    </g>
+
+    <!-- Footer Summary inside container -->
+    <g transform="translate(60, 290)">
+      <text x="0" y="18" font-size="12" font-weight="500" fill="#94a3b8">
+        Crucial Reckoning Date: <tspan font-weight="700" fill="#e2e8f0">01 August 2026</tspan> &bull; Official Formula: <tspan font-style="italic" fill="#cbd5e1">"Born not earlier than 02-08-1996 and not later than 01-08-2008"</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Brand Footnote -->
+  <text x="80" y="625" font-size="12" font-weight="600" fill="#64748b">
+    Age Calculator Lab &bull; SSC CGL Eligibility Research &bull; Source: Staff Selection Commission Official Notification
+  </text>
+</svg>

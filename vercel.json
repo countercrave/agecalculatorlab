@@ -35,6 +35,16 @@
       "destination": "/articles/ssc-cgl-age-limit/",
       "permanent": true
     },
+    {
+      "source": "/ssc-cgl-dob-eligibility",
+      "destination": "/articles/ssc-cgl-dob-eligibility/",
+      "permanent": true
+    },
+    {
+      "source": "/ssc-cgl-dob-eligibility/",
+      "destination": "/articles/ssc-cgl-dob-eligibility/",
+      "permanent": true
+    },
 
     {
       "source": "/tools/age-calculator/",

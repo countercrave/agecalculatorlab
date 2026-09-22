@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#091b15; font-family:'Inter',system-ui,-apple-system,sans-serif;">
+  <defs>
+    <linearGradient id="oneDayBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061a13"/>
+      <stop offset="100%" stop-color="#03110c"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="boundaryGlow" x="-20%" y="-10%" width="140%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#f59e0b" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#oneDayBg)"/>
+
+  <!-- Top Badge -->
+  <g transform="translate(80, 50)">
+    <rect width="250" height="32" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.4"/>
+    <circle cx="18" cy="16" r="4.5" fill="#f59e0b"/>
+    <text x="32" y="21" font-size="12" font-weight="700" fill="#fde68a" letter-spacing="1">BOUNDARY CASE STUDY</text>
+  </g>
+
+  <!-- Heading -->
+  <text x="80" y="125" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#ffffff">One Day Can Decide SSC CGL Eligibility</text>
+  <text x="80" y="156" font-size="15" fill="#94a3b8">The crucial date boundary is exact: "Not later than 01 August 2008" (for minimum age 18)</text>
+
+  <!-- Two Cards Comparison Layout -->
+  <g transform="translate(80, 205)">
+
+    <!-- CARD 1: 01 August 2008 (Eligible) -->
+    <g transform="translate(40, 0)" filter="url(#boxShadow)">
+      <!-- Card Body -->
+      <rect width="440" height="340" rx="16" fill="#0d2e24" stroke="#10b981" stroke-width="2"/>
+      
+      <!-- Card Header -->
+      <rect width="440" height="54" rx="16" fill="#065f46"/>
+      <circle cx="32" cy="27" r="10" fill="#10b981"/>
+      <text x="32" y="32" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">&#x2713;</text>
+      <text x="56" y="33" font-size="14" font-weight="800" fill="#a7f3d0" letter-spacing="0.5">STATUTORILY ELIGIBLE</text>
+
+      <!-- Date Box -->
+      <g transform="translate(32, 85)">
+        <text x="0" y="16" font-size="12" font-weight="700" fill="#6ee7b7">DATE OF BIRTH</text>
+        <text x="0" y="60" font-family="'Fraunces', Georgia, serif" font-size="42" font-weight="800" fill="#ffffff">01 AUG 2008</text>
+        
+        <rect x="0" y="80" width="376" height="32" rx="6" fill="#064e3b"/>
+        <text x="16" y="101" font-size="13" font-weight="700" fill="#a7f3d0">
+          Age on 01-Aug-2026: Exactly 18 Years 0 Days
+        </text>
+
+        <line x1="0" y1="130" x2="376" y2="130" stroke="#ffffff" stroke-opacity="0.1"/>
+
+        <text x="0" y="158" font-size="13" font-weight="700" fill="#ecfdf5">Verdict: Valid &amp; Permitted</text>
+        <text x="0" y="180" font-size="12" fill="#a7f3d0">
+          Meets the notification clause: <tspan font-weight="700">"Not later than 01-08-2008"</tspan>.
+        </text>
+        <text x="0" y="200" font-size="12" fill="#94a3b8">
+          Candidate has completed exactly 18 years on the cutoff date.
+        </text>
+      </g>
+    </g>
+
+    <!-- CENTRAL BOUNDARY CUTOFF LINE -->
+    <g transform="translate(520, 0)">
+      <line x1="0" y1="10" x2="0" y2="330" stroke="#f59e0b" stroke-width="3" stroke-dasharray="6,4" filter="url(#boundaryGlow)"/>
+      <rect x="-42" y="145" width="84" height="40" rx="8" fill="#78350f" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="0" y="163" font-size="10" font-weight="800" fill="#fde68a" text-anchor="middle">24-HOUR</text>
+      <text x="0" y="177" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">CUTOFF</text>
+    </g>
+
+    <!-- CARD 2: 02 August 2008 (Ineligible) -->
+    <g transform="translate(560, 0)" filter="url(#boxShadow)">
+      <!-- Card Body -->
+      <rect width="440" height="340" rx="16" fill="#2d1518" stroke="#ef4444" stroke-width="2"/>
+      
+      <!-- Card Header -->
+      <rect width="440" height="54" rx="16" fill="#7f1d1d"/>
+      <circle cx="32" cy="27" r="10" fill="#ef4444"/>
+      <text x="32" y="32" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">&#x2715;</text>
+      <text x="56" y="33" font-size="14" font-weight="800" fill="#fca5a5" letter-spacing="0.5">STATUTORILY INELIGIBLE</text>
+
+      <!-- Date Box -->
+      <g transform="translate(32, 85)">
+        <text x="0" y="16" font-size="12" font-weight="700" fill="#f87171">DATE OF BIRTH</text>
+        <text x="0" y="60" font-family="'Fraunces', Georgia, serif" font-size="42" font-weight="800" fill="#ffffff">02 AUG 2008</text>
+        
+        <rect x="0" y="80" width="376" height="32" rx="6" fill="#451a1a"/>
+        <text x="16" y="101" font-size="13" font-weight="700" fill="#fca5a5">
+          Age on 01-Aug-2026: 17 Years 364 Days
+        </text>
+
+        <line x1="0" y1="130" x2="376" y2="130" stroke="#ffffff" stroke-opacity="0.1"/>
+
+        <text x="0" y="158" font-size="13" font-weight="700" fill="#fee2e2">Verdict: Underage by 1 Day</text>
+        <text x="0" y="180" font-size="12" fill="#fca5a5">
+          Violates clause: Born after the cutoff date of 01-08-2008.
+        </text>
+        <text x="0" y="200" font-size="12" fill="#94a3b8">
+          SSC portal will reject application at registration stage.
+        </text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Bottom Footnote -->
+  <text x="80" y="625" font-size="12" font-weight="600" fill="#64748b">
+    Age Calculator Lab &bull; SSC CGL Eligibility Research &bull; Note: Boundary date principles apply identically to upper-age limits
+  </text>
+</svg>
