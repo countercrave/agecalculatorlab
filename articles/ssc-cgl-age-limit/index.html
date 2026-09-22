@@ -26,11 +26,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="/assets/style.css?v=20260824e">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="stylesheet" href="../../assets/style.css?v=20260824e">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -102,7 +102,7 @@
             "name": "What is the age limit for SSC CGL 2026?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The SSC CGL age limit is not a single uniform number. It varies depending on the specific post cadre, spanning four distinct age bands: 18–27 years (Tax Assistant, Auditor, UDC), 20–30 years (Assistant Section Officer in CSS, MEA, IB), 18–30 years (Inspectors in Income Tax, Central Excise, Preventive Officer), and 18–32 years (Junior Statistical Officer). All ages are reckoned as of 1 August 2026."
+              "text": "The SSC CGL age limit is post-specific, categorized into four primary age bands: 18–27 years (Tax Assistant, Auditor, UDC), 20–30 years (Assistant Section Officer in CSS, MEA, IB), 18–30 years (Inspectors in Income Tax, Central Excise, Preventive Officer), and 18–32 years (Junior Statistical Officer). All ages are reckoned as of 1 August 2026."
             }
           },
           {
@@ -118,7 +118,7 @@
             "name": "Is the SSC CGL age limit 27 or 30 years?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It depends strictly on the post you target. Group C clerical and support roles such as Auditor, Accountant, and Tax Assistant have a maximum age limit of 27 years. In contrast, Group B executive roles such as Assistant Section Officer (ASO) and Central Excise Inspector permit candidates up to 30 years."
+              "text": "It depends strictly on the post. Group C clerical and support roles such as Auditor, Accountant, and Tax Assistant have a maximum age limit of 27 years. Group B executive roles such as Assistant Section Officer (ASO) and Central Excise Inspector permit candidates up to 30 years."
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "Can I apply for SSC CGL at age 32?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, but with specific conditions. General category candidates aged 32 can only apply for the Junior Statistical Officer (JSO) cadre, which has an 18–32 band (requiring Statistics or 60% in 12th Mathematics). However, reserved category candidates (OBC, SC, ST, PwBD) aged 32 can apply for virtually all SSC CGL posts using their respective age relaxations."
+              "text": "Yes, with specific conditions. General category candidates aged 32 can only apply for the Junior Statistical Officer (JSO) cadre, which has an 18–32 band (requiring Statistics or 60% in 12th Mathematics). However, reserved category candidates (OBC, SC, ST, PwBD) aged 32 can apply for virtually all SSC CGL posts using their respective age relaxations."
             }
           },
           {
@@ -174,7 +174,7 @@
             "name": "Does the SSC CGL age limit change every year?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The base age brackets (18–27, 20–30, etc.) and category relaxations remain stable under DoPT recruitment rules. However, the crucial reckoning date shifts each examination cycle (typically between 1 January and 1 August depending on Tier-I exam scheduling), which alters the eligible date of birth range."
+              "text": "The base age brackets (18–27, 20–30, etc.) and category relaxations remain stable under DoPT recruitment rules. However, the crucial reckoning date shifts each examination cycle (between 1 January and 1 August), which alters the eligible date of birth range."
             }
           },
           {
@@ -192,931 +192,850 @@
   </script>
 
   <style>
-    /* ── Typography & Scoped Variables ── */
-    :root {
-      --aclx-deep: #0b241c;
-      --aclx-dark: #075433;
-      --aclx-mid: #10b981;
-      --aclx-card: #f8faf8;
-      --aclx-line: #e2e8f0;
-      --aclx-ink: #1e293b;
-      --aclx-ink-2: #475569;
-      --aclx-muted: #64748b;
-      --aclx-coral: #ea580c;
-      --aclx-coral-dark: #c2410c;
+    /* Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--coral, #FF754D);
+      width: 0%;
+      z-index: 1000;
+      transition: width 80ms linear;
     }
 
-    /* ── Editorial Breadcrumb ── */
-    .art-breadcrumb-wrap {
-      background: #fafaf9;
-      border-bottom: 1px solid var(--aclx-line);
-      padding: 12px 0;
-      font-size: 0.8125rem;
-    }
-    .art-breadcrumb ol {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 6px;
-      margin: 0;
-      padding: 0;
-    }
-    .art-breadcrumb li {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--aclx-muted);
-    }
-    .art-breadcrumb a {
-      color: var(--aclx-ink-2);
-      text-decoration: none;
-      transition: color 0.15s ease;
-    }
-    .art-breadcrumb a:hover {
-      color: var(--aclx-dark);
-      text-decoration: underline;
-    }
-    .art-breadcrumb-sep {
-      color: #94a3b8;
-      user-select: none;
+    /* Article Hero & Layout */
+    .article-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
     }
 
-    /* ── Article Header ── */
-    .art-hero {
-      padding: 32px 0 24px;
-      border-bottom: 1px solid var(--aclx-line);
-      background: linear-gradient(180deg, #ffffff 0%, #fbfdfc 100%);
+    @media (max-width: 640px) {
+      .article-wrap {
+        padding: 20px 16px 60px;
+      }
     }
-    .art-meta-pills {
+
+    .article-breadcrumbs {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 8px;
-      margin-bottom: 14px;
-    }
-    .art-pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 4px 10px;
-      border-radius: 9999px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-    }
-    .art-pill-primary {
-      background: rgba(7, 84, 51, 0.08);
-      color: #075433;
-      border: 1px solid rgba(7, 84, 51, 0.2);
-    }
-    .art-pill-date {
-      background: rgba(234, 88, 12, 0.08);
-      color: #c2410c;
-      border: 1px solid rgba(234, 88, 12, 0.25);
-    }
-    .art-pill-read {
-      background: #f1f5f9;
-      color: #475569;
-      border: 1px solid #cbd5e1;
-    }
-    .art-hero h1 {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: clamp(2.1rem, 4vw, 3.2rem) !important;
-      font-weight: 700 !important;
-      line-height: 1.15 !important;
-      color: var(--aclx-deep) !important;
-      margin: 0 0 16px;
-      letter-spacing: -0.02em;
-    }
-    .art-hero h1 span {
-      color: var(--aclx-coral-dark);
-      font-style: italic;
-    }
-    .art-lead {
-      font-size: clamp(1.05rem, 1.3vw, 1.2rem);
-      line-height: 1.65;
-      color: var(--aclx-ink);
-      margin-bottom: 20px;
-      max-width: 900px;
-    }
-
-    /* ── E-E-A-T Source & Last-Verified Bar ── */
-    .art-eeat-bar {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 16px;
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      border-left: 4px solid #10b981;
-      border-radius: 8px;
-      padding: 12px 18px;
-      font-size: 0.84rem;
-      color: #166534;
+      font-size: 0.85rem;
+      color: #5D7069;
       margin-bottom: 24px;
     }
-    .art-eeat-bar strong {
-      color: #064e3b;
-    }
-    .art-eeat-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+
+    .article-breadcrumbs a {
+      color: #08745A;
+      text-decoration: none;
     }
 
-    /* ── Above-The-Fold CTA Banner ── */
-    .art-cta-banner {
+    .article-breadcrumbs a:hover {
+      text-decoration: underline;
+    }
+
+    .article-hero {
+      margin-bottom: 32px;
+    }
+
+    .article-meta {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      background: linear-gradient(135deg, #075433, #0b3d26);
-      border-radius: 12px;
-      padding: 16px 24px;
-      color: #ffffff;
-      box-shadow: 0 8px 24px rgba(7, 84, 51, 0.15);
-      margin-bottom: 28px;
-    }
-    .art-cta-banner h2 {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin: 0 0 4px;
-      color: #ffffff;
-    }
-    .art-cta-banner p {
-      margin: 0;
-      font-size: 0.875rem;
-      color: #a7f3d0;
-    }
-    .art-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 22px;
-      background: #facc15;
-      color: #713f12;
-      font-weight: 700;
-      font-size: 0.9375rem;
-      border-radius: 9999px;
-      text-decoration: none;
-      transition: all 0.15s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    }
-    .art-cta-btn:hover {
-      background: #fde047;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      gap: 12px;
+      font-size: 0.85rem;
+      color: #5D7069;
+      margin-bottom: 16px;
     }
 
-    /* ── Hero Figure ── */
-    .art-figure {
-      margin: 0 0 32px;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid var(--aclx-line);
-      background: #ffffff;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-    }
-    .art-figure img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    .art-figure figcaption {
-      padding: 10px 16px;
-      font-size: 0.8125rem;
-      color: var(--aclx-muted);
-      background: #f8fafc;
-      border-top: 1px solid var(--aclx-line);
-      text-align: center;
+    .article-meta span strong {
+      color: #042F2A;
     }
 
-    /* ── Sticky Navigation Jumpbar (Table of Contents) ── */
-    .jumpbar {
-      position: sticky;
-      top: var(--header-h, 72px);
-      z-index: 40;
-      background: #ffffff;
-      border-top: 1px solid var(--aclx-line);
-      border-bottom: 1px solid var(--aclx-line);
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: thin;
-      scrollbar-color: var(--brand-line, #d4ebd8) transparent;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    }
-    .jumpbar::-webkit-scrollbar {
-      height: 4px;
-    }
-    .jumpbar::-webkit-scrollbar-thumb {
-      background: var(--aclx-line);
-      border-radius: 4px;
-    }
-    .jumpbar .container {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      white-space: nowrap;
-      gap: 6px;
-      padding: 8px 16px;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .jumpbar a {
-      display: inline-flex;
-      align-items: center;
-      padding: 6px 14px;
-      font-size: 0.8125rem;
-      font-weight: 600;
-      color: var(--aclx-ink-2);
-      text-align: center;
-      white-space: nowrap;
-      border-radius: 9999px;
-      background: var(--aclx-card);
-      border: 1px solid var(--aclx-line);
-      transition: all .15s ease;
-      flex: 0 0 auto;
-      text-decoration: none;
-    }
-    .jumpbar a:hover {
-      color: var(--aclx-dark);
-      background: rgba(7, 84, 51, 0.06);
-      border-color: rgba(7, 84, 51, 0.25);
-    }
-    .jumpbar a.is-current {
-      color: #ffffff !important;
-      background: var(--aclx-dark) !important;
-      border-color: var(--aclx-dark) !important;
-    }
-
-    /* ── Editorial Content Sections ── */
-    section[id] {
-      scroll-margin-top: 130px;
-    }
-    .art-section {
-      padding: 40px 0;
-      border-bottom: 1px solid var(--aclx-line);
-    }
-    .art-section:last-of-type {
-      border-bottom: none;
-    }
-    .art-section-kicker {
-      display: inline-block;
-      font-size: 0.75rem;
+    .article-title {
+      font-family: var(--font-display, "Fraunces", Georgia, serif);
+      font-size: clamp(2rem, 3.8vw, 3.1rem);
       font-weight: 700;
-      color: var(--aclx-coral-dark);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
-    }
-    .art-section h2 {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: clamp(1.6rem, 2.5vw, 2.2rem) !important;
-      font-weight: 700 !important;
-      line-height: 1.25 !important;
-      color: var(--aclx-deep);
-      margin: 0 0 16px;
+      color: #042F2A;
+      line-height: 1.15;
+      margin-bottom: 20px;
       letter-spacing: -0.01em;
     }
-    .art-section h3 {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+
+    .article-lead {
+      font-size: 1.18rem;
+      line-height: 1.68;
+      color: #2D4A41;
+      max-width: 860px;
+      margin-bottom: 24px;
+    }
+
+    /* Verification Status Banner */
+    .verification-status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-left: 4px solid #10B981;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 0.85rem;
+      color: #166534;
+      margin-bottom: 28px;
+    }
+
+    .verification-status-bar strong {
+      color: #064E3B;
+    }
+
+    /* Hero Graphic Container */
+    .hero-graphic-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #DDE7E2;
+      box-shadow: 0 12px 32px rgba(4, 47, 42, 0.08);
+      margin-bottom: 44px;
+      background: #FFFFFF;
+    }
+
+    .hero-graphic-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-caption {
+      padding: 12px 20px;
+      background: #F4F8F6;
+      font-size: 0.85rem;
+      color: #5D7069;
+      border-top: 1px solid #DDE7E2;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* Main Article Content Styling */
+    .article-content {
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      color: #0D2B23;
+    }
+
+    .article-content h2 {
+      font-family: var(--font-display, "Fraunces", Georgia, serif);
+      font-size: clamp(1.6rem, 2.4vw, 2.1rem);
       font-weight: 700;
+      color: #042F2A;
+      line-height: 1.25;
+      margin: 48px 0 20px;
+      padding-top: 16px;
+      border-top: 1px solid #EAEFEA;
+    }
+
+    .article-content h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .article-content h3 {
+      font-family: var(--font-display, "Fraunces", Georgia, serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #075433;
+      margin: 32px 0 14px;
       line-height: 1.35;
-      color: #0f172a;
-      margin: 28px 0 12px;
     }
-    .art-section p, .art-section li {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: var(--aclx-ink);
+
+    .article-content p {
+      margin-bottom: 22px;
     }
-    .art-section p {
-      margin: 0 0 16px;
+
+    .article-content ul, .article-content ol {
+      margin: 0 0 24px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
-    .art-section ul, .art-section ol {
-      margin: 0 0 20px 24px;
-      padding: 0;
+
+    .article-content li strong {
+      color: #042F2A;
     }
-    .art-section li {
+
+    /* Prominent Quick Answer Box */
+    .quick-answer-box {
+      background: #F4F8F6;
+      border-left: 5px solid #075433;
+      border-top: 1px solid #DDE7E2;
+      border-right: 1px solid #DDE7E2;
+      border-bottom: 1px solid #DDE7E2;
+      border-radius: 0 12px 12px 0;
+      padding: 26px 30px;
+      margin: 36px 0;
+    }
+
+    .quick-answer-label {
+      font-family: var(--font-body, "Inter", sans-serif);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #08745A;
       margin-bottom: 8px;
     }
 
-    /* ── Quick Answer Box ── */
-    .art-quick-box {
-      background: #f8fafc;
-      border: 1px solid #cbd5e1;
-      border-radius: 14px;
-      padding: 24px;
-      margin: 24px 0 32px;
-    }
-    .art-quick-title {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: 1.25rem;
+    .quick-answer-h3 {
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: 1.45rem;
       font-weight: 700;
-      color: var(--aclx-deep);
-      margin: 0 0 12px;
+      color: #042F2A;
+      margin-bottom: 14px;
     }
-    .art-table {
+
+    .quick-answer-body {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: #1A3D33;
+      margin-bottom: 0 !important;
+    }
+
+    /* Data Tables */
+    .article-table-wrap {
+      overflow-x: auto;
+      margin: 28px 0;
+      border-radius: 10px;
+      border: 1px solid #DDE7E2;
+      box-shadow: 0 4px 12px rgba(4, 47, 42, 0.03);
+    }
+
+    .article-table {
       width: 100%;
       border-collapse: collapse;
       font-size: 0.9375rem;
-      background: #ffffff;
-      border-radius: 8px;
-      overflow: hidden;
-      border: 1px solid var(--aclx-line);
-    }
-    .art-table th {
-      background: #f1f5f9;
-      padding: 12px 16px;
-      font-weight: 700;
-      color: #334155;
-      text-align: left;
-      border-bottom: 2px solid var(--aclx-line);
-    }
-    .art-table td {
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--aclx-line);
-      color: var(--aclx-ink);
-    }
-    .art-table tr:last-child td {
-      border-bottom: none;
-    }
-    .art-table tr:hover td {
-      background: #fbfcfd;
+      background: #FFFFFF;
     }
 
-    /* ── Searchable Post Directory ── */
-    .post-search-toolbar {
+    .article-table th {
+      background: #F4F8F6;
+      padding: 14px 16px;
+      font-weight: 700;
+      color: #042F2A;
+      text-align: left;
+      border-bottom: 2px solid #DDE7E2;
+    }
+
+    .article-table td {
+      padding: 13px 16px;
+      border-bottom: 1px solid #EAEFEA;
+      color: #0D2B23;
+    }
+
+    .article-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .article-table tr:hover td {
+      background: #F9FCFB;
+    }
+
+    /* Visual Embed Container */
+    .article-visual-box {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #DDE7E2;
+      box-shadow: 0 8px 24px rgba(4, 47, 42, 0.06);
+      margin: 40px 0;
+      background: #FFFFFF;
+    }
+
+    .article-visual-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .article-visual-caption {
+      padding: 12px 18px;
+      background: #F8FCFA;
+      font-size: 0.85rem;
+      color: #5D7069;
+      border-top: 1px solid #DDE7E2;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    /* Specialized Utility CTA Card */
+    .calculator-cta-card {
+      background: linear-gradient(135deg, #042F2A 0%, #075433 100%);
+      color: #FFFFFF;
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin: 48px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      box-shadow: 0 12px 32px rgba(4, 47, 42, 0.16);
+    }
+
+    .cta-text-box {
+      max-width: 520px;
+    }
+
+    .cta-h3 {
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .cta-desc {
+      font-size: 1rem;
+      color: #D3E5DE;
+      line-height: 1.5;
+      margin-bottom: 0 !important;
+    }
+
+    .cta-btn-link {
+      background: #FF754D;
+      color: #0D2B23 !important;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 14px 28px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 160ms ease;
+      white-space: nowrap;
+    }
+
+    .cta-btn-link:hover {
+      background: #ff8e6b;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255, 117, 77, 0.35);
+      text-decoration: none;
+    }
+
+    /* Post Search and Filter Toolbar */
+    .post-filter-toolbar {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       align-items: center;
-      margin-bottom: 16px;
+      margin: 20px 0 16px;
     }
+
     .post-search-input {
       flex: 1 1 240px;
       padding: 10px 16px;
-      border: 1px solid var(--aclx-line);
+      border: 1px solid #DDE7E2;
       border-radius: 8px;
       font-size: 0.9375rem;
-      background: #ffffff;
-      color: var(--aclx-ink);
+      background: #FFFFFF;
+      color: #0D2B23;
     }
+
     .post-search-input:focus {
       outline: none;
-      border-color: var(--aclx-dark);
+      border-color: #075433;
       box-shadow: 0 0 0 3px rgba(7, 84, 51, 0.12);
     }
-    .filter-btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .filter-btn {
-      padding: 8px 14px;
+
+    .post-filter-btn {
+      padding: 7px 14px;
       font-size: 0.8125rem;
       font-weight: 600;
-      border-radius: 9999px;
-      background: #f1f5f9;
-      border: 1px solid #cbd5e1;
-      color: #475569;
+      border-radius: 999px;
+      background: #F4F8F6;
+      border: 1px solid #DDE7E2;
+      color: #2D4A41;
       cursor: pointer;
       transition: all 0.15s ease;
     }
-    .filter-btn:hover {
-      background: #e2e8f0;
-      color: #0f172a;
-    }
-    .filter-btn.active {
-      background: var(--aclx-dark);
-      color: #ffffff;
-      border-color: var(--aclx-dark);
+
+    .post-filter-btn:hover {
+      background: #E8F4EC;
+      color: #075433;
     }
 
-    /* ── Interactive Post Cards Grid ── */
-    .post-card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      margin: 24px 0 32px;
+    .post-filter-btn.active {
+      background: #075433;
+      color: #FFFFFF;
+      border-color: #075433;
     }
-    .post-card {
-      background: #ffffff;
-      border: 1px solid var(--aclx-line);
+
+    /* Interactive Post Cards */
+    .post-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 28px 0;
+    }
+
+    .post-card-box {
+      background: #FFFFFF;
+      border: 1px solid #DDE7E2;
       border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-    .post-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    }
-    .post-card-head {
+      box-shadow: 0 4px 12px rgba(4, 47, 42, 0.04);
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 12px;
+      border-top: 4px solid #075433;
     }
+
+    .post-card-box.featured {
+      border-top-color: #FF754D;
+      background: #FDFEFE;
+    }
+
     .post-card-title {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
+      font-family: var(--font-display, "Fraunces", serif);
       font-size: 1.15rem;
       font-weight: 700;
-      color: var(--aclx-deep);
-      margin: 0;
+      color: #042F2A;
+      margin: 0 0 4px;
     }
-    .post-badge {
-      display: inline-block;
-      padding: 3px 8px;
-      border-radius: 6px;
-      font-size: 0.75rem;
-      font-weight: 800;
-      background: #f1f5f9;
-      color: #0f172a;
+
+    .post-card-cadre {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #08745A;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
     }
-    .post-card-body p {
+
+    .post-card-desc {
       font-size: 0.875rem;
-      color: var(--aclx-ink-2);
-      margin: 0 0 12px;
-    }
-    .post-card-limits {
-      display: flex;
-      gap: 12px;
-      background: #f8fafc;
-      padding: 10px 14px;
-      border-radius: 8px;
-      font-size: 0.8125rem;
+      color: #5D7069;
+      line-height: 1.5;
       margin-bottom: 14px;
     }
-    .post-card-limits strong {
-      color: var(--aclx-deep);
+
+    .post-card-stats {
+      background: #F4F8F6;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.8125rem;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
     }
-    .post-card-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+
+    .post-card-stats strong {
+      color: #042F2A;
+    }
+
+    .post-card-btn {
       font-size: 0.8125rem;
       font-weight: 700;
-      color: var(--aclx-dark);
+      color: #075433;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
-    .post-card-link:hover {
+
+    .post-card-btn:hover {
       text-decoration: underline;
     }
 
-    /* ── Date Stamp Highlight Box ── */
-    .date-stamp-box {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 24px;
-      background: #fff7ed;
-      border: 2px dashed #ea580c;
-      border-radius: 12px;
-      padding: 24px;
-      margin: 24px 0 32px;
-    }
-    .date-stamp-number {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: clamp(2rem, 3vw, 2.75rem);
-      font-weight: 800;
-      color: #9a3412;
-      line-height: 1;
-      white-space: nowrap;
-    }
-    .date-stamp-desc {
-      flex: 1 1 280px;
-    }
-    .date-stamp-desc strong {
-      color: #7c2d12;
-      font-size: 1.05rem;
-    }
-
-    /* ── Interactive Relaxation Calculator Component ── */
-    .relax-calc-widget {
-      background: #ffffff;
-      border: 1px solid var(--aclx-line);
-      border-radius: 14px;
-      padding: 24px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-      margin: 24px 0 32px;
-    }
-    .relax-calc-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-bottom: 20px;
-    }
-    .relax-calc-field label {
-      display: block;
-      font-size: 0.8125rem;
-      font-weight: 700;
-      color: var(--aclx-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 6px;
-    }
-    .relax-calc-select {
-      width: 100%;
-      padding: 10px 14px;
-      border: 1px solid var(--aclx-line);
-      border-radius: 8px;
-      font-size: 0.9375rem;
-      background: #ffffff;
-      color: var(--aclx-ink);
-    }
-    .relax-result-strip {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      border-radius: 10px;
-      padding: 16px 20px;
-    }
-    .relax-result-label {
-      font-size: 0.9375rem;
-      color: #166534;
-      font-weight: 600;
-    }
-    .relax-result-val {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: #064e3b;
-    }
-    .relax-caveat {
-      margin-top: 10px;
-      font-size: 0.8125rem;
-      color: #b45309;
-      background: #fefce8;
-      border: 1px solid #fef08a;
-      border-radius: 6px;
-      padding: 8px 12px;
-    }
-
-    /* ── Interactive DOB Window Corridor ── */
-    .dob-corridor-widget {
-      background: #ffffff;
-      border: 1px solid var(--aclx-line);
-      border-radius: 14px;
-      padding: 24px;
-      margin: 24px 0 32px;
-    }
-    .dob-corridor-visual {
-      position: relative;
-      height: 80px;
-      background: #f8fafc;
-      border-radius: 8px;
-      border: 1px solid #e2e8f0;
-      margin: 30px 0 20px;
-      overflow: hidden;
-    }
-    .dob-corridor-span {
-      position: absolute;
-      top: 18px;
-      height: 44px;
-      background: linear-gradient(90deg, #10b981, #059669);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 0.8125rem;
-    }
-    .dob-user-marker {
-      position: absolute;
-      top: 4px;
-      width: 4px;
-      height: 72px;
-      background: #dc2626;
-      border-radius: 2px;
-      z-index: 5;
-      transition: left 0.3s ease;
-    }
-    .dob-user-pin {
-      position: absolute;
-      top: -24px;
-      left: -40px;
-      width: 84px;
-      text-align: center;
-      background: #dc2626;
-      color: #ffffff;
-      font-size: 0.75rem;
-      font-weight: 800;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-
-    /* ── Process Flow Graphic ── */
-    .process-flow {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      justify-content: space-between;
-      margin: 24px 0 32px;
-    }
-    .process-step {
-      flex: 1 1 180px;
-      background: #f8fafc;
-      border: 1px solid var(--aclx-line);
-      border-radius: 10px;
-      padding: 16px;
-      text-align: center;
-    }
-    .process-num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: var(--aclx-dark);
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 0.8125rem;
-      margin-bottom: 8px;
-    }
-    .process-text {
-      font-weight: 700;
-      font-size: 0.875rem;
-      color: var(--aclx-deep);
-    }
-    .process-arrow {
-      color: var(--aclx-muted);
-      font-size: 1.25rem;
-      user-select: none;
-    }
-
-    /* ── Common Mistakes Cards ── */
-    .mistakes-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin: 24px 0 32px;
-    }
-    .mistake-card {
-      background: #ffffff;
-      border: 1px solid #fecaca;
-      border-left: 4px solid #ef4444;
-      border-radius: 10px;
-      padding: 18px;
-    }
-    .mistake-num {
-      font-size: 0.75rem;
-      font-weight: 800;
-      color: #dc2626;
-      letter-spacing: 0.05em;
-    }
-    .mistake-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #991b1b;
-      margin: 4px 0 8px;
-    }
-    .mistake-desc {
-      font-size: 0.875rem;
-      color: #4b5563;
-      margin: 0;
-      line-height: 1.55;
-    }
-
-    /* ── Eligibility Mistake Detector (Checklist) ── */
-    .checklist-widget {
-      background: #f8fafc;
-      border: 1px solid var(--aclx-line);
-      border-radius: 14px;
-      padding: 24px;
-      margin: 24px 0 32px;
-    }
-    .checklist-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 10px 0;
-      border-bottom: 1px solid #f1f5f9;
-      cursor: pointer;
-    }
-    .checklist-item:last-child {
-      border-bottom: none;
-    }
-    .checklist-item input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      margin-top: 3px;
-      cursor: pointer;
-      accent-color: var(--aclx-dark);
-    }
-    .checklist-label {
-      font-size: 0.9375rem;
-      color: var(--aclx-ink);
-      line-height: 1.5;
-    }
-    .checklist-status {
-      margin-top: 16px;
-      padding: 12px 16px;
-      border-radius: 8px;
-      font-size: 0.875rem;
-      font-weight: 700;
-      text-align: center;
-      background: #f1f5f9;
-      color: #64748b;
-      transition: all 0.2s ease;
-    }
-    .checklist-status.ready {
-      background: #ecfdf5;
-      color: #065f46;
-      border: 1px solid #a7f3d0;
-    }
-
-    /* ── "Can I Apply?" Mini Decision Tool ── */
-    .decision-widget {
-      background: linear-gradient(135deg, #f9fffc, #edf9f4);
-      border: 1px solid #a7f3d0;
-      border-radius: 14px;
-      padding: 24px;
-      margin: 24px 0 32px;
-    }
-    .decision-input-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 20px;
-    }
-    .decision-input {
-      width: 100px;
-      padding: 10px 14px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--aclx-deep);
-      text-align: center;
-    }
-    .decision-bands-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-    }
-    .decision-band-card {
-      background: #ffffff;
-      border: 1px solid var(--aclx-line);
-      border-radius: 8px;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .decision-band-name {
-      font-size: 0.875rem;
-      font-weight: 700;
-      color: var(--aclx-ink);
-    }
-    .decision-band-status {
-      font-size: 0.8125rem;
-      font-weight: 800;
-      padding: 3px 8px;
-      border-radius: 6px;
-    }
-    .status-yes {
-      background: #ecfdf5;
-      color: #047857;
-    }
-    .status-no {
-      background: #fef2f2;
-      color: #b91c1c;
-    }
-
-    /* ── FAQ Accordion ── */
-    .faq-list {
-      margin: 24px 0 32px;
-    }
-    .faq-item {
-      border: 1px solid var(--aclx-line);
-      border-radius: 10px;
-      margin-bottom: 12px;
-      background: #ffffff;
-      overflow: hidden;
-    }
-    .faq-question {
-      padding: 18px 22px;
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--aclx-deep);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      user-select: none;
-    }
-    .faq-question::-webkit-details-marker {
-      display: none;
-    }
-    .faq-chevron {
-      transition: transform 0.2s ease;
-      color: var(--aclx-muted);
-    }
-    details[open] .faq-chevron {
-      transform: rotate(180deg);
-    }
-    .faq-answer {
-      padding: 0 22px 20px;
-      font-size: 0.9375rem;
-      line-height: 1.7;
-      color: var(--aclx-ink);
-      border-top: 1px solid #f1f5f9;
-      padding-top: 14px;
-    }
-
-    /* ── Author Profile Card ── */
-    .art-author-card {
+    /* Crucial Date Highlight */
+    .crucial-date-badge-box {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 20px;
-      background: #ffffff;
-      border: 1px solid var(--aclx-line);
+      background: #FFF7ED;
+      border: 2px dashed #EA580C;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+
+    .crucial-date-stamp {
+      font-family: var(--font-display, "Fraunces", Georgia, serif);
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      font-weight: 800;
+      color: #9A3412;
+      line-height: 1;
+    }
+
+    /* Interactive Relaxation Tool Component */
+    .relax-tool-card {
+      background: #F8FCFA;
+      border: 1px solid #DDE7E2;
       border-radius: 14px;
       padding: 24px;
-      margin: 40px 0 24px;
+      margin: 32px 0;
+      box-shadow: 0 4px 16px rgba(4, 47, 42, 0.04);
     }
-    .art-author-img {
-      border-radius: 50%;
-      border: 3px solid var(--aclx-line);
-      flex: 0 0 80px;
+
+    .relax-tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
     }
-    .art-author-info {
-      flex: 1 1 260px;
-    }
-    .art-author-name {
-      font-family: var(--font-display), "Fraunces", Georgia, serif !important;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--aclx-deep);
-      margin: 0 0 4px;
-    }
-    .art-author-role {
+
+    .relax-field label {
+      display: block;
       font-size: 0.8125rem;
       font-weight: 700;
-      color: var(--aclx-coral-dark);
-      margin: 0 0 8px;
+      color: #5D7069;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
     }
-    .art-author-bio {
+
+    .relax-field select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #DDE7E2;
+      border-radius: 8px;
+      font-size: 0.9375rem;
+      background: #FFFFFF;
+      color: #0D2B23;
+    }
+
+    .relax-output-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: #E8F4EC;
+      border: 1px solid #B8DCBE;
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+
+    .relax-output-label {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #075433;
+    }
+
+    .relax-output-value {
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #042F2A;
+    }
+
+    /* Process Flow Diagram */
+    .process-steps-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .process-step-item {
+      background: #FFFFFF;
+      border: 1px solid #DDE7E2;
+      border-radius: 10px;
+      padding: 18px 16px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(4, 47, 42, 0.03);
+    }
+
+    .step-number-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #075433;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-weight: 700;
+      font-size: 0.9375rem;
+      color: #042F2A;
+      margin-bottom: 4px;
+    }
+
+    .step-sub {
+      font-size: 0.8rem;
+      color: #5D7069;
+    }
+
+    /* Common Mistakes Grid */
+    .mistakes-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .mistake-box {
+      background: #FFFFFF;
+      border: 1px solid #F8D7DA;
+      border-left: 4px solid #DC2626;
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .mistake-box-num {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #DC2626;
+      letter-spacing: 0.06em;
+    }
+
+    .mistake-box-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #991B1B;
+      margin: 4px 0 8px;
+    }
+
+    .mistake-box-text {
       font-size: 0.875rem;
-      color: var(--aclx-ink-2);
-      line-height: 1.55;
+      color: #4B5563;
       margin: 0;
+      line-height: 1.55;
+    }
+
+    /* Interactive Mistake Checklist */
+    .checklist-detector {
+      background: #F4F8F6;
+      border: 1px solid #DDE7E2;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 28px 0;
+    }
+
+    .chk-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid #EAEFEA;
+      cursor: pointer;
+    }
+
+    .chk-line:last-child {
+      border-bottom: none;
+    }
+
+    .chk-line input {
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      accent-color: #075433;
+    }
+
+    .chk-status-result {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 700;
+      background: #EAEFEA;
+      color: #5D7069;
+    }
+
+    .chk-status-result.success {
+      background: #E8F4EC;
+      color: #075433;
+      border: 1px solid #B8DCBE;
+    }
+
+    /* "Can I Apply?" Decision Mini Tool */
+    .decision-mini-tool {
+      background: linear-gradient(135deg, #F8FCFA 0%, #EDF7F2 100%);
+      border: 1px solid #B8DCBE;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+
+    .dec-status-pill {
+      font-size: 0.8125rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .pill-eligible {
+      background: #E8F4EC;
+      color: #075433;
+    }
+
+    .pill-ineligible {
+      background: #FEE2E2;
+      color: #991B1B;
+    }
+
+    /* Accessible FAQ Accordions */
+    .faq-accordion {
+      margin: 32px 0 48px;
+    }
+
+    .faq-item {
+      border: 1px solid #DDE7E2;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      background: #FFFFFF;
+      overflow: hidden;
+      transition: all 160ms ease;
+    }
+
+    .faq-item.active {
+      border-color: #075433;
+      box-shadow: 0 4px 14px rgba(4, 47, 42, 0.05);
+    }
+
+    .faq-btn {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #042F2A;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq-icon {
+      font-size: 1.25rem;
+      font-weight: 400;
+      transition: transform 160ms ease;
+      color: #08745A;
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0 24px 22px;
+      font-size: 0.95rem;
+      color: #3D5A51;
+      line-height: 1.65;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* Author & Fact-Check Card */
+    .author-card {
+      background: #F8FCFA;
+      border: 1px solid #DDE7E2;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 48px 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .author-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .author-img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #075433;
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #042F2A;
+      margin-bottom: 4px;
+    }
+
+    .author-meta {
+      font-size: 0.85rem;
+      color: #5D7069;
+      margin-bottom: 8px;
+    }
+
+    .author-bio {
+      font-size: 0.92rem;
+      color: #3D5A51;
+      line-height: 1.5;
+      margin-bottom: 0 !important;
     }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress-bar" id="reading-progress"></div>
 
-  <!-- Standard Site Header -->
+  <!-- Site Header -->
   <header class="site-header">
     <div class="container nav">
-      <a class="brand brand-image-link" href="/" aria-label="Age Calculator Lab home">
-        <img decoding="async" class="brand-logo brand-logo-nav" src="/assets/age-calculator-lab-logo.png" alt="Age Calculator Lab" width="144" height="48">
+      <a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+        <img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab" width="144" height="48">
       </a>
-      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
-        <span></span>
-      </button>
+      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
       <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
         <details class="nav-dropdown nav-dropdown-categories">
           <summary>Calculators <span class="nav-chevron" aria-hidden="true">&#x2304;</span></summary>
           <div class="nav-mega">
             <div class="nav-mega-head">
               <div><small>161 focused tools</small><strong>Main calculator categories</strong></div>
-              <a href="/categories/">View category directory &rarr;</a>
+              <a href="../../categories/">View category directory &rarr;</a>
             </div>
             <div class="nav-category-grid">
-              <a href="/categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
-              <a href="/categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
-              <a href="/categories/biological-health/"><span>Biological &amp; Health</span><small>8 tools</small></a>
-              <a href="/categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
-              <a href="/categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
-              <a href="/categories/professional-education/"><span>Professional &amp; Education</span><small>15 tools</small></a>
-              <a href="/categories/finance-professional/"><span>Finance &amp; Professional</span><small>13 tools</small></a>
-              <a href="/categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
-              <a href="/categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
-              <a href="/categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>12 tools</small></a>
-              <a href="/categories/date-lab/"><span>Date Lab</span><small>34 tools</small></a>
+              <a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+              <a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+              <a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>8 tools</small></a>
+              <a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+              <a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+              <a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>15 tools</small></a>
+              <a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>13 tools</small></a>
+              <a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+              <a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+              <a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>12 tools</small></a>
+              <a href="../../categories/date-lab/"><span>Date Lab</span><small>34 tools</small></a>
             </div>
             <div class="nav-quick-row">
               <span>Popular</span>
-              <a href="/">Age Calculator</a>
-              <a href="/tools/ssc-cgl-age-calculator/">SSC CGL Age Calculator</a>
-              <a href="/tools/date-difference-calculator/">Date Difference</a>
-              <a href="/tools/corrected-age-calculator/">Corrected Age</a>
+              <a href="../../">Age Calculator</a>
+              <a href="../../tools/ssc-cgl-age-calculator/">SSC CGL Age Calculator</a>
+              <a href="../../tools/date-difference-calculator/">Date Difference</a>
+              <a href="../../tools/corrected-age-calculator/">Corrected Age</a>
             </div>
           </div>
         </details>
@@ -1125,1302 +1044,1178 @@
           <div class="nav-mega nav-mega-guides">
             <div class="nav-mega-head">
               <div><small>100 practical guides</small><strong>Learn the method</strong></div>
-              <a href="/articles/">Browse all guides &rarr;</a>
+              <a href="../../articles/">Browse all guides &rarr;</a>
             </div>
             <div class="nav-guide-grid">
-              <a href="/articles/ssc-cgl-age-limit/"><small>Competitive Exams</small><span>SSC CGL Age Limit 2026: Post-Wise Guide</span></a>
-              <a href="/articles/calculate-exact-age-years-months-days/"><small>Universal Chronology</small><span>How to Calculate Exact Age in Years, Months and Days</span></a>
-              <a href="/articles/chronological-age-explained/"><small>Universal Chronology</small><span>Chronological Age: What It Measures and What It Doesn't</span></a>
-              <a href="/articles/calendar-age-vs-decimal-age/"><small>Universal Chronology</small><span>Calendar Age vs Decimal Age: Which One Does Your Form Want?</span></a>
-              <a href="/articles/calculate-age-on-past-date/"><small>Universal Chronology</small><span>Working Out Your Age on a Past Date</span></a>
-              <a href="/articles/calculate-age-on-future-date/"><small>Universal Chronology</small><span>How Old Will I Be on a Future Date?</span></a>
+              <a href="../../articles/ssc-cgl-age-limit/"><small>Competitive Exams</small><span>SSC CGL Age Limit 2026: Post-Wise Guide</span></a>
+              <a href="../../articles/calculate-exact-age-years-months-days/"><small>Universal Chronology</small><span>How to Calculate Exact Age in Years, Months and Days</span></a>
+              <a href="../../articles/chronological-age-explained/"><small>Universal Chronology</small><span>Chronological Age: What It Measures and What It Doesn't</span></a>
+              <a href="../../articles/calendar-age-vs-decimal-age/"><small>Universal Chronology</small><span>Calendar Age vs Decimal Age: Which One Does Your Form Want?</span></a>
+              <a href="../../articles/calculate-age-on-past-date/"><small>Universal Chronology</small><span>Working Out Your Age on a Past Date</span></a>
+              <a href="../../articles/calculate-age-on-future-date/"><small>Universal Chronology</small><span>How Old Will I Be on a Future Date?</span></a>
             </div>
           </div>
         </details>
-        <a href="/categories/">Categories</a>
-        <a href="/methodology/">Methodology</a>
-        <a class="nav-cta" href="/tools/ssc-cgl-age-calculator/">Open SSC CGL Calculator</a>
+        <a href="../../categories/">Categories</a>
+        <a href="../../methodology/">Methodology</a>
+        <a class="nav-cta" href="../../tools/ssc-cgl-age-calculator/">Open SSC CGL Calculator</a>
       </nav>
     </div>
   </header>
 
-  <!-- Editorial Breadcrumb Navigation -->
-  <div class="art-breadcrumb-wrap">
+  <main class="article-wrap" id="main-content">
     <div class="container">
-      <nav class="art-breadcrumb" aria-label="Breadcrumb">
-        <ol>
-          <li><a href="/">Home</a></li>
-          <li class="art-breadcrumb-sep">/</li>
-          <li><a href="/categories/">Age Calculators</a></li>
-          <li class="art-breadcrumb-sep">/</li>
-          <li><a href="/tools/ssc-cgl-age-calculator/">SSC CGL</a></li>
-          <li class="art-breadcrumb-sep">/</li>
-          <li aria-current="page">SSC CGL Age Limit</li>
-        </ol>
+      <!-- Breadcrumbs -->
+      <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+        <a href="../../">Home</a>
+        <span>/</span>
+        <a href="../../categories/">Age Calculators</a>
+        <span>/</span>
+        <a href="../../tools/ssc-cgl-age-calculator/">SSC CGL</a>
+        <span>/</span>
+        <span style="color: #0D2B23; font-weight: 600;">SSC CGL Age Limit</span>
       </nav>
-    </div>
-  </div>
 
-  <main id="main-content">
-    <!-- Article Hero Header -->
-    <header class="art-hero">
-      <div class="container">
-        <div class="art-meta-pills">
-          <span class="art-pill art-pill-primary">Staff Selection Commission</span>
-          <span class="art-pill art-pill-date">Crucial Cutoff Date: 01 August 2026</span>
-          <span class="art-pill art-pill-read">14 Min In-Depth Read</span>
+      <!-- Article Header -->
+      <header class="article-hero">
+        <div class="article-meta">
+          <span>By <strong>Navjeet Kamboj</strong></span> &bull;
+          <span>Official Notification Analysis</span> &bull;
+          <span>Updated September 2026</span> &bull;
+          <span>14 min read</span>
         </div>
-        <h1>SSC CGL Age Limit 2026: <span>Post-Wise Age Limit, DOB &amp; Age Relaxation</span></h1>
-        
-        <!-- Direct Answer Lead Paragraph -->
-        <p class="art-lead">
-          The <strong>SSC CGL age limit varies significantly depending on the specific post cadre</strong>. For the 2026 examination cycle, the official Staff Selection Commission notification specifies four primary age bands: <strong>18–27 years, 20–30 years, 18–30 years, and 18–32 years</strong>. The applicable age is strictly reckoned as of <strong>1 August 2026</strong>, and eligible candidates belonging to reserved categories receive statutory upper-age relaxations ranging from +3 to +15 years. Being within one age band does not automatically mean every SSC CGL post is open to you.
+        <h1 class="article-title">SSC CGL Age Limit 2026: Post-Wise Age Limit, DOB &amp; Age Relaxation</h1>
+        <p class="article-lead">
+          The <strong>SSC CGL age limit varies by post</strong>. For the 2026 examination cycle, the official notification specifies different age bands including <strong>18–27, 20–30, 18–30, and 18–32 years</strong>. The applicable age is determined as on <strong>1 August 2026</strong>, and eligible candidates may receive additional upper-age relaxation under specified categories.
         </p>
+      </header>
 
-        <!-- E-E-A-T Source & Verification Bar -->
-        <div class="art-eeat-bar">
-          <div class="art-eeat-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span><strong>Rules Checked Against:</strong> Official SSC CGL Notification</span>
-          </div>
-          <div class="art-eeat-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <span><strong>Age Reckoning Date:</strong> 1 August 2026</span>
-          </div>
-          <div class="art-eeat-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span><strong>Last Verified:</strong> September 2026 (DoPT Norms)</span>
-          </div>
-        </div>
-
-        <!-- Above-The-Fold Calculator CTA -->
-        <div class="art-cta-banner">
-          <div>
-            <h2>Check Your Exact SSC CGL Age Eligibility Instantly</h2>
-            <p>Enter your date of birth and category to test all 4 age bands and 30+ Central Government cadre posts.</p>
-          </div>
-          <a href="/tools/ssc-cgl-age-calculator/" class="art-cta-btn">
-            Open SSC CGL Age Calculator &rarr;
-          </a>
-        </div>
-
-        <!-- Figure 1: Hero Infographic Visual -->
-        <figure class="art-figure">
-          <img src="/assets/articles/ssc-cgl-age-limit/age-eligibility-map.svg" alt="SSC CGL Age Eligibility Map showing 4 statutory age bands" width="1200" height="675" fetchpriority="high">
-          <figcaption>Figure 1: Statutory Post-Wise Age Eligibility Corridors for the SSC CGL 2026 Recruitment Examination.</figcaption>
-        </figure>
+      <!-- Verification / Status Banner -->
+      <div class="verification-status-bar">
+        <span><strong>Rules Checked Against:</strong> SSC CGL 2026 Official Notification</span> &bull;
+        <span><strong>Age Reckoning Date:</strong> 1 August 2026</span> &bull;
+        <span><strong>Last Verified:</strong> September 2026</span> &bull;
+        <span><strong>Official Source:</strong> Staff Selection Commission (DoPT Norms)</span>
       </div>
-    </header>
 
-    <!-- Quick Navigation Jumpbar (Sticky Table of Contents) -->
-    <div class="jumpbar" id="artJumpbar" aria-label="Table of contents quick navigation">
-      <div class="container">
-        <a href="#glance" class="is-current">At a Glance</a>
-        <a href="#post-wise">Post-Wise Rule</a>
-        <a href="#searchable-table">Post Directory Table</a>
-        <a href="#post-cards">Post Cards</a>
-        <a href="#crucial-date">Reckoning Date</a>
-        <a href="#why-date-matters">Why Date Matters</a>
-        <a href="#teacher-notes">Study Desk Notes</a>
-        <a href="#relaxations">Age Relaxations</a>
-        <a href="#relax-calculator">Relaxation Calculator</a>
-        <a href="#dob-ranges">DOB Eligibility</a>
-        <a href="#accepted-dob">Accepted Certificate</a>
-        <a href="#mistakes">Common Mistakes</a>
-        <a href="#scenarios">Candidate Cases</a>
-        <a href="#decision-tool">Can I Apply?</a>
-        <a href="#faq">FAQ</a>
+      <!-- Above-The-Fold Calculator CTA Card -->
+      <div class="calculator-cta-card" style="margin-top: 0; margin-bottom: 36px;">
+        <div class="cta-text-box">
+          <div class="quick-answer-label" style="color: #FACC15;">Transaction Tool Hub</div>
+          <h2 class="cta-h3">Check Your SSC CGL Age Eligibility</h2>
+          <p class="cta-desc">
+            Instantly test your date of birth, reservation category, and target cadre against the official 1 August 2026 crucial cutoff date.
+          </p>
+        </div>
+        <a href="../../tools/ssc-cgl-age-calculator/" class="cta-btn-link">
+          Open SSC CGL Age Calculator &rarr;
+        </a>
+      </div>
+
+      <!-- Hero Visual 1: Age Eligibility Map -->
+      <div class="hero-graphic-wrap">
+        <img src="../../assets/articles/ssc-cgl-age-limit/age-eligibility-map.svg" alt="Infographic showing the four official SSC CGL age corridors 18-27, 20-30, 18-30, and 18-32 years reckoned as on 1 August 2026." width="1200" height="675" fetchpriority="high">
+        <div class="hero-caption">
+          <span>Figure 1: Statutory Post-Wise Age Eligibility Corridors for the SSC CGL 2026 Examination Cycle.</span>
+          <span>Source: Staff Selection Commission (DoPT Norms)</span>
+        </div>
       </div>
     </div>
 
-    <div class="container">
-      
-      <!-- Section 1: At a Glance -->
-      <section class="art-section" id="glance">
-        <span class="art-section-kicker">Quick Summary</span>
-        <h2>SSC CGL Age Limit 2026 at a Glance</h2>
-        <p>
-          Unlike competitive examinations with a single cut-off ceiling (like UPSC Civil Services at 32 for General candidates across all services), the Staff Selection Commission (SSC) assigns distinct age limits to different ministry cadres. The four fundamental age bands for the Combined Graduate Level (CGL) 2026 cycle are summarized below:
-        </p>
+    <!-- Main Editorial Layout with Sticky Sidebar TOC -->
+    <div class="container article-layout">
+      <!-- Sticky Sidebar Table of Contents -->
+      <aside class="article-toc" aria-label="On this page">
+        <strong>On this page</strong>
+        <a href="#quick-answer">SSC CGL Age Limit at a Glance</a>
+        <a href="#post-wise-concept">Post-Wise Age Limit Rule</a>
+        <a href="#post-directory-table">Post-Wise Directory Table</a>
+        <a href="#post-cadre-cards">Interactive Post Cards</a>
+        <a href="#crucial-reckoning-date">Crucial Date: 01 August 2026</a>
+        <a href="#why-date-matters">Why Date Matters: Examples</a>
+        <a href="#faculty-study-notes">Senior Faculty Study Notes</a>
+        <a href="#upper-age-relaxation">Upper Age Relaxations</a>
+        <a href="#relaxation-tool">Interactive Relaxation Calculator</a>
+        <a href="#dob-eligibility-ranges">DOB Eligibility Ranges</a>
+        <a href="#accepted-dob-docs">Accepted DOB Documents</a>
+        <a href="#common-mistakes">Common Mistakes &amp; Checklist</a>
+        <a href="#candidate-case-studies">Real Candidate Case Studies</a>
+        <a href="#decision-tool">Can I Apply? Mini Tool</a>
+        <a href="#faq-section">Frequently Asked Questions</a>
+      </aside>
 
-        <div class="art-quick-box">
-          <div class="art-quick-title">Official 2026 SSC CGL Age Bands</div>
-          <table class="art-table">
-            <thead>
-              <tr>
-                <th>Age Band</th>
-                <th>Minimum Age</th>
-                <th>Maximum Base Age (UR)</th>
-                <th>Representative Cadres</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Band 1: 18–27 Yrs</strong></td>
-                <td>18 Years</td>
-                <td>27 Years</td>
-                <td>Auditor (CAG, CGA), Accountant, Tax Assistant (CBDT, CBIC), Upper Division Clerk</td>
-              </tr>
-              <tr>
-                <td><strong>Band 2: 20–30 Yrs</strong></td>
-                <td>20 Years</td>
-                <td>30 Years</td>
-                <td>Assistant Section Officer (CSS, MEA, IB, Railway, AFHQ), Sub-Inspector (CBI)</td>
-              </tr>
-              <tr>
-                <td><strong>Band 3: 18–30 Yrs</strong></td>
-                <td>18 Years</td>
-                <td>30 Years</td>
-                <td>Inspector of Income Tax, Inspector (Central Excise, Preventive Officer, Examiner), Assistant Enforcement Officer</td>
-              </tr>
-              <tr>
-                <td><strong>Band 4: 18–32 Yrs</strong></td>
-                <td>18 Years</td>
-                <td>32 Years</td>
-                <td>Junior Statistical Officer (Ministry of Statistics and Programme Implementation)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p>
-          <strong>Crucial Insight:</strong> The applicable age band depends entirely on the specific post for which you apply. Therefore, being eligible for an Inspector post (max age 30) does <em>not</em> mean you are eligible for an Auditor or Tax Assistant post (max age 27) if you are 28 or 29 years old.
-        </p>
-      </section>
-
-      <!-- Section 2: Post-Wise Differences -->
-      <section class="art-section" id="post-wise">
-        <span class="art-section-kicker">Cadre Nuances</span>
-        <h2>SSC CGL Age Limit Is Different for Different Posts</h2>
-        <p>
-          One of the most persistent misconceptions among government job aspirants is the search for a single "SSC CGL Maximum Age." In reality, the Department of Personnel and Training (DoPT), in consultation with individual user ministries (such as the Ministry of Finance, Ministry of External Affairs, and Ministry of Home Affairs), establishes Service Recruitment Rules (RRs) tailored to job responsibilities.
-        </p>
-        <p>
-          These posts are categorized into four broad functional tiers:
-        </p>
-        <ul>
-          <li><strong>Executive &amp; Field Enforcement Cadres (18–30 years):</strong> These include Inspector of Income Tax (CBDT), Inspector Central Excise (CBIC), Preventive Officer, and Assistant Enforcement Officer (ED). These posts allow applicants from age 18 to 30 because they require active field operations combined with investigatory duties.</li>
-          <li><strong>Central Secretariat Administrative Cadres (20–30 years):</strong> For prestigious posts like Assistant Section Officer (ASO) in Central Secretariat Service (CSS), Intelligence Bureau (IB), and Ministry of External Affairs (MEA), the minimum entry age is elevated to <strong>20 years</strong> because desk administration, policy drafting, and international protocol demand mature academic foundation.</li>
-          <li><strong>Clerical &amp; Ministerial Support Cadres (18–27 years):</strong> Roles such as Auditor, Junior Accountant, and Tax Assistant in Central Excise and Income Tax have a tighter ceiling of 27 years for General category candidates. These posts serve as feeder cadres for departmental promotion examinations.</li>
-          <li><strong>Specialized Technical Statistics Cadre (18–32 years):</strong> Junior Statistical Officer (JSO) offers the widest eligibility window (up to 32 years for General category). However, this band comes with mandatory educational prerequisites: either a Bachelor's Degree in any subject with at least 60% in Mathematics at 12th standard, or a Bachelor's Degree with Statistics as a subject in all three years.</li>
-        </ul>
-      </section>
-
-      <!-- Section 3: Searchable Post-Wise Table -->
-      <section class="art-section" id="searchable-table">
-        <span class="art-section-kicker">Interactive Directory</span>
-        <h2>Complete SSC CGL Post-Wise Age Limit Directory 2026</h2>
-        <p>
-          Use the interactive search and age filter below to inspect the exact age limits, cadre classifications, and pay levels for every major post notified under SSC CGL 2026:
-        </p>
-
-        <div class="post-search-toolbar">
-          <input type="text" id="postSearchInput" class="post-search-input" placeholder="🔍 Search SSC CGL post (e.g. Excise, ASO, Auditor)..." oninput="filterPostDirectory()">
-          <div class="filter-btn-group">
-            <button type="button" class="filter-btn active" data-filter="all" onclick="setBandFilter('all', this)">All Posts</button>
-            <button type="button" class="filter-btn" data-filter="18-27" onclick="setBandFilter('18-27', this)">18–27 Yrs</button>
-            <button type="button" class="filter-btn" data-filter="20-30" onclick="setBandFilter('20-30', this)">20–30 Yrs</button>
-            <button type="button" class="filter-btn" data-filter="18-30" onclick="setBandFilter('18-30', this)">18–30 Yrs</button>
-            <button type="button" class="filter-btn" data-filter="18-32" onclick="setBandFilter('18-32', this)">18–32 Yrs</button>
-          </div>
-        </div>
-
-        <div style="overflow-x: auto;">
-          <table class="art-table" id="sscPostTable">
-            <thead>
-              <tr>
-                <th>Post Name &amp; Cadre</th>
-                <th>Ministry / Department</th>
-                <th>Classification</th>
-                <th>Age Band</th>
-                <th>Min Age</th>
-                <th>Max Age (UR)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- 18 - 30 Posts -->
-              <tr data-band="18-30">
-                <td><strong>Inspector of Income Tax</strong></td>
-                <td>Central Board of Direct Taxes (CBDT)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-primary">18–30 Yrs</span></td>
-                <td>18</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="18-30">
-                <td><strong>Inspector (Central Excise)</strong></td>
-                <td>Central Board of Indirect Taxes &amp; Customs (CBIC)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-primary">18–30 Yrs</span></td>
-                <td>18</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="18-30">
-                <td><strong>Inspector (Preventive Officer)</strong></td>
-                <td>CBIC (Customs Ports)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-primary">18–30 Yrs</span></td>
-                <td>18</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="18-30">
-                <td><strong>Inspector (Examiner)</strong></td>
-                <td>CBIC (Customs Appraisement)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-primary">18–30 Yrs</span></td>
-                <td>18</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="18-30">
-                <td><strong>Assistant Enforcement Officer</strong></td>
-                <td>Directorate of Enforcement (ED), Dept of Revenue</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-primary">18–30 Yrs</span></td>
-                <td>18</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="18-30">
-                <td><strong>Sub-Inspector</strong></td>
-                <td>Central Bureau of Investigation (CBI)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-primary">20–30 Yrs</span></td>
-                <td>20</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="18-30">
-                <td><strong>Sub-Inspector</strong></td>
-                <td>National Investigation Agency (NIA)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-primary">18–30 Yrs</span></td>
-                <td>18</td>
-                <td>30 Years</td>
-              </tr>
-
-              <!-- 20 - 30 Posts -->
-              <tr data-band="20-30">
-                <td><strong>Assistant Section Officer (ASO)</strong></td>
-                <td>Central Secretariat Service (DoPT)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-date">20–30 Yrs</span></td>
-                <td>20</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="20-30">
-                <td><strong>Assistant Section Officer (ASO)</strong></td>
-                <td>Ministry of External Affairs (MEA)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-date">20–30 Yrs</span></td>
-                <td>20</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="20-30">
-                <td><strong>Assistant Section Officer (ASO)</strong></td>
-                <td>Intelligence Bureau (MHA)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-date">18–30 Yrs</span></td>
-                <td>18</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="20-30">
-                <td><strong>Assistant Section Officer (ASO)</strong></td>
-                <td>Ministry of Railways (Railway Board)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-date">20–30 Yrs</span></td>
-                <td>20</td>
-                <td>30 Years</td>
-              </tr>
-              <tr data-band="20-30">
-                <td><strong>Assistant Section Officer (ASO)</strong></td>
-                <td>Armed Forces Headquarters (MoD)</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-date">20–30 Yrs</span></td>
-                <td>20</td>
-                <td>30 Years</td>
-              </tr>
-
-              <!-- 18 - 32 Posts -->
-              <tr data-band="18-32">
-                <td><strong>Junior Statistical Officer (JSO)</strong></td>
-                <td>Ministry of Statistics &amp; Programme Implementation</td>
-                <td>Group B (Non-Gazetted)</td>
-                <td><span class="art-pill art-pill-primary">18–32 Yrs</span></td>
-                <td>18</td>
-                <td>32 Years</td>
-              </tr>
-
-              <!-- 18 - 27 Posts -->
-              <tr data-band="18-27">
-                <td><strong>Auditor</strong></td>
-                <td>Comptroller and Auditor General of India (CAG)</td>
-                <td>Group C</td>
-                <td><span class="art-pill art-pill-read">18–27 Yrs</span></td>
-                <td>18</td>
-                <td>27 Years</td>
-              </tr>
-              <tr data-band="18-27">
-                <td><strong>Auditor</strong></td>
-                <td>Controller General of Defence Accounts (CGDA)</td>
-                <td>Group C</td>
-                <td><span class="art-pill art-pill-read">18–27 Yrs</span></td>
-                <td>18</td>
-                <td>27 Years</td>
-              </tr>
-              <tr data-band="18-27">
-                <td><strong>Accountant / Junior Accountant</strong></td>
-                <td>Offices under C&amp;AG and CGA</td>
-                <td>Group C</td>
-                <td><span class="art-pill art-pill-read">18–27 Yrs</span></td>
-                <td>18</td>
-                <td>27 Years</td>
-              </tr>
-              <tr data-band="18-27">
-                <td><strong>Tax Assistant (CBDT)</strong></td>
-                <td>Central Board of Direct Taxes</td>
-                <td>Group C</td>
-                <td><span class="art-pill art-pill-read">18–27 Yrs</span></td>
-                <td>18</td>
-                <td>27 Years</td>
-              </tr>
-              <tr data-band="18-27">
-                <td><strong>Tax Assistant (CBIC)</strong></td>
-                <td>Central Board of Indirect Taxes &amp; Customs</td>
-                <td>Group C</td>
-                <td><span class="art-pill art-pill-read">18–27 Yrs</span></td>
-                <td>18</td>
-                <td>27 Years</td>
-              </tr>
-              <tr data-band="18-27">
-                <td><strong>Upper Division Clerk (UDC) / SSA</strong></td>
-                <td>Central Govt Departments / Ministries</td>
-                <td>Group C</td>
-                <td><span class="art-pill art-pill-read">18–27 Yrs</span></td>
-                <td>18</td>
-                <td>27 Years</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Section 4: Interactive Post Cards -->
-      <section class="art-section" id="post-cards">
-        <span class="art-section-kicker">Visual Explorer</span>
-        <h2>Cadre Grouping: Inspect Your Target Band</h2>
-        <p>
-          Select any of the primary job profiles below to review the specific age band, maximum base limit, and direct eligibility checks:
-        </p>
-
-        <div class="post-card-grid">
-          <!-- Card 1 -->
-          <div class="post-card">
-            <div class="post-card-head">
-              <h3 class="post-card-title">Inspector Posts</h3>
-              <span class="post-badge">18–30 Yrs</span>
-            </div>
-            <div class="post-card-body">
-              <p>Income Tax Inspector, Central Excise, Customs Preventive Officer &amp; Examiner. Direct executive enforcement roles.</p>
-              <div class="post-card-limits">
-                <span>Min: <strong>18 Yrs</strong></span>
-                <span>Max: <strong>30 Yrs</strong></span>
-                <span>OBC: <strong>33 Yrs</strong></span>
-              </div>
-              <a href="/tools/ssc-cgl-age-calculator/" class="post-card-link">Check Inspector Eligibility &rarr;</a>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="post-card">
-            <div class="post-card-head">
-              <h3 class="post-card-title">Assistant Section Officer</h3>
-              <span class="post-badge">20–30 Yrs</span>
-            </div>
-            <div class="post-card-body">
-              <p>ASO in Central Secretariat (CSS), External Affairs (MEA), Intelligence Bureau (IB) &amp; Railway Board.</p>
-              <div class="post-card-limits">
-                <span>Min: <strong>20 Yrs</strong></span>
-                <span>Max: <strong>30 Yrs</strong></span>
-                <span>SC/ST: <strong>35 Yrs</strong></span>
-              </div>
-              <a href="/tools/ssc-cgl-age-calculator/" class="post-card-link">Check ASO Eligibility &rarr;</a>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="post-card">
-            <div class="post-card-head">
-              <h3 class="post-card-title">Auditor &amp; Accountant</h3>
-              <span class="post-badge">18–27 Yrs</span>
-            </div>
-            <div class="post-card-body">
-              <p>Auditor in CAG, CGA &amp; CGDA offices. Financial audit and treasury ledger verification across India.</p>
-              <div class="post-card-limits">
-                <span>Min: <strong>18 Yrs</strong></span>
-                <span>Max: <strong>27 Yrs</strong></span>
-                <span>OBC: <strong>30 Yrs</strong></span>
-              </div>
-              <a href="/tools/ssc-cgl-age-calculator/" class="post-card-link">Check Auditor Eligibility &rarr;</a>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="post-card">
-            <div class="post-card-head">
-              <h3 class="post-card-title">Junior Statistical Officer</h3>
-              <span class="post-badge">18–32 Yrs</span>
-            </div>
-            <div class="post-card-body">
-              <p>National Sample Survey and Statistics Cadre under MoSPI. Requires 60% in 12th Maths or Degree in Statistics.</p>
-              <div class="post-card-limits">
-                <span>Min: <strong>18 Yrs</strong></span>
-                <span>Max: <strong>32 Yrs</strong></span>
-                <span>SC/ST: <strong>37 Yrs</strong></span>
-              </div>
-              <a href="/tools/ssc-cgl-age-calculator/" class="post-card-link">Check JSO Eligibility &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 5: The Crucial Reckoning Date -->
-      <section class="art-section" id="crucial-date">
-        <span class="art-section-kicker">Reckoning Standard</span>
-        <h2>What Is the Crucial Date? SSC CGL Age Calculation Date</h2>
-        <p>
-          In every official recruitment notification, the Staff Selection Commission specifies an exact <strong>"Crucial Date for Age Reckoning"</strong>. For the 2026 examination cycle, this date is legally fixed as:
-        </p>
-
-        <!-- Date Stamp Visual Callout -->
-        <div class="date-stamp-box">
-          <div class="date-stamp-number">01 AUGUST 2026</div>
-          <div class="date-stamp-desc">
-            <strong>Official Crucial Date for Age Reckoning</strong>
-            <p style="margin: 4px 0 0; font-size: 0.875rem; color: #7c2d12;">
-              In accordance with Department of Personnel &amp; Training (DoPT) Office Memorandum No. 14017/70/87-Estt.(RR) dated 14 July 1988.
-            </p>
-          </div>
-        </div>
-
-        <figure class="art-figure">
-          <img src="/assets/articles/ssc-cgl-age-limit/age-reckoning-date-stamp.svg" alt="Official Crucial Date 01 August 2026 Stamp Document" width="800" height="600" loading="lazy">
-          <figcaption>Figure 2: Official Crucial Reckoning Date Stamp for SSC CGL Examination Dossier.</figcaption>
-        </figure>
-
-        <p>
-          Under the DoPT framework, when an examination is held in the second half of the calendar year (or Tier-I is scheduled between August and December), the crucial date is universally pegged to <strong>1 August</strong> of that year. If an examination is conducted entirely in the first half of the year, the crucial date is typically set to 1 January. For SSC CGL 2026, <strong>1 August 2026</strong> is the statutory pivot.
-        </p>
-      </section>
-
-      <!-- Section 6: Why the Date Matters -->
-      <section class="art-section" id="why-date-matters">
-        <span class="art-section-kicker">Common Trap</span>
-        <h2>Why Can't I Just Check My Age Today?</h2>
-        <p>
-          Thousands of aspirants make the mistake of evaluating their age on the day they fill out the online application or on the day of the Tier-I computer-based exam. This produces critical errors in both directions:
-        </p>
+      <!-- Main Article Body -->
+      <article class="article-body article-content">
         
-        <div style="background: #f8fafc; border: 1px solid var(--aclx-line); border-radius: 12px; padding: 20px; margin: 20px 0;">
-          <h3 style="margin-top: 0;">Case Example: The August Edge Case</h3>
-          <p>Consider an aspirant born on <strong>15 September 1998</strong> applying for an Inspector post (max age 30 years):</p>
-          <ul>
-            <li><strong>Age Today (say, in September 2028):</strong> Candidate appears 30 years old.</li>
-            <li><strong>Actual Age on 1 August 2026:</strong> Exactly <strong>27 years, 10 months, and 17 days</strong>.</li>
-            <li><strong>Verdict:</strong> The candidate is <em>comfortably eligible</em> for all 30-year and even 27-year posts!</li>
-          </ul>
+        <!-- Section 1: Quick Answer Box -->
+        <section id="quick-answer">
+          <div class="quick-answer-box">
+            <div class="quick-answer-label">Executive Policy Summary</div>
+            <h2 class="quick-answer-h3">SSC CGL Age Limit 2026 at a Glance</h2>
+            <div class="quick-answer-body">
+              <p>
+                The Staff Selection Commission does not operate with a single universal maximum age limit. Instead, vacancies are structured across four statutory age brackets:
+              </p>
+              <div class="article-table-wrap" style="margin: 16px 0;">
+                <table class="article-table">
+                  <thead>
+                    <tr>
+                      <th>Age Band</th>
+                      <th>Minimum Age</th>
+                      <th>Maximum Base Age (UR)</th>
+                      <th>Representative Cadres</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Band 1</strong></td>
+                      <td>18 Years</td>
+                      <td>27 Years</td>
+                      <td>Auditor (CAG/CGDA), Accountant, Tax Assistant (CBDT/CBIC), UDC</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Band 2</strong></td>
+                      <td>20 Years</td>
+                      <td>30 Years</td>
+                      <td>Assistant Section Officer (CSS, MEA, IB, Railway), Sub-Inspector (CBI)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Band 3</strong></td>
+                      <td>18 Years</td>
+                      <td>30 Years</td>
+                      <td>Inspector (Central Excise, Income Tax, Preventive Officer, Examiner)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Band 4</strong></td>
+                      <td>18 Years</td>
+                      <td>32 Years</td>
+                      <td>Junior Statistical Officer (Statistics Cadre, MoSPI)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p style="margin-top: 12px; margin-bottom: 0;">
+                <strong>Key Takeaway:</strong> The applicable age band depends on the specific SSC CGL post. Therefore, being within one age band does not automatically mean that every SSC CGL post is available to you.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Post-Wise Rule -->
+        <section id="post-wise-concept">
+          <h2>SSC CGL Age Limit Is Different for Different Posts</h2>
           <p>
-            Conversely, consider an aspirant born on <strong>15 July 1996</strong> applying for a 30-year post:
+            Unlike recruitment tests that impose a uniform age barrier (such as state PCS exams capping general applicants at 35 or 40), the SSC CGL notification coordinates service recruitment rules for more than 30 separate ministries and executive departments. The Department of Personnel and Training (DoPT) formulates these limits based on operational demands:
           </p>
           <ul>
-            <li><strong>On 15 July 2026:</strong> Candidate turns 30.</li>
-            <li><strong>On 1 August 2026 (Crucial Date):</strong> Candidate is <strong>30 years and 17 days old</strong>.</li>
-            <li><strong>Verdict (General Category):</strong> Candidate is <em>overage by 17 days</em> and disqualified from all 30-year posts.</li>
+            <li><strong>Clerical &amp; Ministerial Support Roles (18–27 years):</strong> Posts like Tax Assistant in CBDT/CBIC and Auditor in the Comptroller and Auditor General (CAG) cap entry at 27 for General category candidates because they serve as departmental feeder lines for faster promotional ladders.</li>
+            <li><strong>Secretariat Administrative Cadres (20–30 years):</strong> High-responsibility administrative posts such as Assistant Section Officer (ASO) in Central Secretariat Service (CSS), Intelligence Bureau (IB), and Ministry of External Affairs (MEA) require an elevated entry threshold of <strong>20 years</strong>.</li>
+            <li><strong>Executive Enforcement Cadres (18–30 years):</strong> Investigatory posts like Inspector of Income Tax, Inspector Central Excise, Customs Examiner, and Assistant Enforcement Officer in the Enforcement Directorate (ED) span ages 18 to 30.</li>
+            <li><strong>Specialized Technical Statistics (18–32 years):</strong> Junior Statistical Officer (JSO) provides the broadest age bracket (up to 32 years), though it requires mandatory educational specialization (Statistics or 60% in 12th Mathematics).</li>
           </ul>
-        </div>
-        <p>
-          This is why calculating your exact age as of <strong>01-08-2026</strong> is non-negotiable before paying application fees or finalizing post preferences.
-        </p>
-      </section>
+        </section>
 
-      <!-- Section 7: Teacher's Annotated Study Desk Notes -->
-      <section class="art-section" id="teacher-notes">
-        <span class="art-section-kicker">Faculty Rulebook</span>
-        <h2>The Senior Faculty Study Desk Rulebook</h2>
-        <p>
-          Experienced competitive exam mentors summarize SSC CGL eligibility into a strict two-step hierarchy: <em>"Check the POST first, then check your AGE."</em>
-        </p>
-
-        <figure class="art-figure">
-          <img src="/assets/articles/ssc-cgl-age-limit/teacher-annotated-reference-sheet.svg" alt="Aspirant Study Desk Reference Sheet with Teacher Annotations" width="800" height="600" loading="lazy">
-          <figcaption>Figure 3: Teacher-Annotated Reference Sheet: Check Post First, Then Verify Age Band.</figcaption>
-        </figure>
-
-        <p>
-          Aspirants frequently assume that because they have completed a Bachelor's degree and are under 32, the entire spectrum of 30+ Central Government departments is accessible to them. As the reference worksheet illustrates, assuming every post allows up to 32 years leads to immediate post preference rejection during Document Verification (DV) by user departments.
-        </p>
-      </section>
-
-      <!-- Section 8: Statutory Age Relaxation -->
-      <section class="art-section" id="relaxations">
-        <span class="art-section-kicker">Statutory Reservation</span>
-        <h2>SSC CGL Upper Age Relaxation: Category Matrix</h2>
-        <p>
-          In accordance with Government of India reservation policies, candidates belonging to Scheduled Castes (SC), Scheduled Tribes (ST), Other Backward Classes (OBC), Persons with Benchmark Disabilities (PwBD), and Ex-Servicemen (ESM) receive cumulative or category-specific upper age relaxations:
-        </p>
-
-        <table class="art-table">
-          <thead>
-            <tr>
-              <th>Category Code</th>
-              <th>Category Classification</th>
-              <th>Upper-Age Relaxation</th>
-              <th>Effective Max Age (for 30-Yr Post)</th>
-              <th>Effective Max Age (for 32-Yr JSO)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>01 / 02</strong></td>
-              <td>SC / ST Candidates</td>
-              <td><strong>5 Years</strong></td>
-              <td>35 Years</td>
-              <td>37 Years</td>
-            </tr>
-            <tr>
-              <td><strong>03</strong></td>
-              <td>OBC (Non-Creamy Layer)</td>
-              <td><strong>3 Years</strong></td>
-              <td>33 Years</td>
-              <td>35 Years</td>
-            </tr>
-            <tr>
-              <td><strong>04</strong></td>
-              <td>PwBD (Unreserved / General)</td>
-              <td><strong>10 Years</strong></td>
-              <td>40 Years</td>
-              <td>42 Years</td>
-            </tr>
-            <tr>
-              <td><strong>05</strong></td>
-              <td>PwBD (OBC Non-Creamy Layer)</td>
-              <td><strong>13 Years</strong></td>
-              <td>43 Years</td>
-              <td>45 Years</td>
-            </tr>
-            <tr>
-              <td><strong>06</strong></td>
-              <td>PwBD (SC / ST)</td>
-              <td><strong>15 Years</strong></td>
-              <td>45 Years</td>
-              <td>47 Years</td>
-            </tr>
-            <tr>
-              <td><strong>07</strong></td>
-              <td>Ex-Servicemen (ESM)</td>
-              <td><strong>3 Years</strong> (after deduction of military service from actual age)</td>
-              <td>Formula-Based</td>
-              <td>Formula-Based</td>
-            </tr>
-            <tr>
-              <td><strong>08</strong></td>
-              <td>Defence Personnel disabled in operation</td>
-              <td><strong>3 Years</strong> (8 years for SC/ST)</td>
-              <td>33 Years</td>
-              <td>35 Years</td>
-            </tr>
-            <tr>
-              <td><strong>12</strong></td>
-              <td>Central Govt Civilian Employees (3 yrs service)</td>
-              <td>Up to <strong>40 Years of Age</strong> (45 for SC/ST) for Group C posts</td>
-              <td>40 Years (Group C)</td>
-              <td>N/A</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div style="background: #eff6ff; border-left: 4px solid #3b82f6; padding: 16px 20px; border-radius: 8px; margin: 24px 0;">
-          <h4 style="margin: 0 0 6px; color: #1e40af;">Important Reservation Conditions:</h4>
-          <p style="margin: 0; font-size: 0.875rem; color: #1e3a8a;">
-            Age relaxation is <strong>not universal across all posts</strong>. For example, Central Government Civilian Employee relaxations apply strictly to Group C posts. Furthermore, OBC candidates must possess a valid Non-Creamy Layer (NCL) certificate issued in the prescribed Government of India format within the crucial financial year window.
-          </p>
-        </div>
-      </section>
-
-      <!-- Section 9: Interactive Relaxation Calculator -->
-      <section class="art-section" id="relax-calculator">
-        <span class="art-section-kicker">Interactive Utility</span>
-        <h2>Test Your Potential Maximum Age Limit</h2>
-        <p>
-          Select your target post's standard base age limit and your reservation category to compute your official relaxed upper age boundary:
-        </p>
-
-        <div class="relax-calc-widget">
-          <div class="relax-calc-grid">
-            <div class="relax-calc-field">
-              <label for="relBaseAge">Target Post Base Limit</label>
-              <select id="relBaseAge" class="relax-calc-select" onchange="computeRelaxedMax()">
-                <option value="27">18–27 Years (Auditor, Tax Asst)</option>
-                <option value="30" selected>18–30 / 20–30 Years (Inspector, ASO)</option>
-                <option value="32">18–32 Years (Junior Statistical Officer)</option>
-              </select>
-            </div>
-            <div class="relax-calc-field">
-              <label for="relCategory">Reservation Category</label>
-              <select id="relCategory" class="relax-calc-select" onchange="computeRelaxedMax()">
-                <option value="0">General / UR / EWS (+0 Years)</option>
-                <option value="3" selected>OBC Non-Creamy Layer (+3 Years)</option>
-                <option value="5">SC / ST (+5 Years)</option>
-                <option value="10">PwBD Unreserved (+10 Years)</option>
-                <option value="13">PwBD OBC (+13 Years)</option>
-                <option value="15">PwBD SC / ST (+15 Years)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="relax-result-strip">
-            <span class="relax-result-label">Your Computed Potential Upper Age Limit:</span>
-            <span class="relax-result-val" id="relaxedMaxDisplay">33 Years</span>
-          </div>
-
-          <div class="relax-caveat">
-            ⚠️ <strong>Legal Note:</strong> Subject to valid category certificates, post-specific vacancy declarations in the official SSC CGL notification, and physical/medical standards.
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 10: SSC CGL DOB Eligibility -->
-      <section class="art-section" id="dob-ranges">
-        <span class="art-section-kicker">Calendar Corridor</span>
-        <h2>SSC CGL DOB Eligibility: Date of Birth Ranges</h2>
-        <p>
-          How do these age bands translate into concrete birth calendar dates? In the official notification, the Commission specifies exact <strong>"Not Earlier Than"</strong> and <strong>"Not Later Than"</strong> cut-off dates for each band:
-        </p>
-
-        <table class="art-table">
-          <thead>
-            <tr>
-              <th>Age Band</th>
-              <th>Born Not Earlier Than</th>
-              <th>Born Not Later Than</th>
-              <th>Eligible Calendar Window</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>18–27 Years</strong></td>
-              <td>02 August 1999</td>
-              <td>01 August 2008</td>
-              <td>Exact 9-Year DOB Corridor</td>
-            </tr>
-            <tr>
-              <td><strong>20–30 Years</strong></td>
-              <td>02 August 1996</td>
-              <td>01 August 2006</td>
-              <td>Exact 10-Year DOB Corridor</td>
-            </tr>
-            <tr>
-              <td><strong>18–30 Years</strong></td>
-              <td>02 August 1996</td>
-              <td>01 August 2008</td>
-              <td>Exact 12-Year DOB Corridor</td>
-            </tr>
-            <tr>
-              <td><strong>18–32 Years</strong></td>
-              <td>02 August 1994</td>
-              <td>01 August 2008</td>
-              <td>Exact 14-Year DOB Corridor (Widest)</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- Interactive DOB Window Indicator -->
-        <div class="dob-corridor-widget">
-          <h3 style="margin-top: 0;">Interactive DOB Eligibility Window</h3>
-          <p style="font-size: 0.875rem; color: var(--aclx-muted);">
-            Visualize your birth year position within the primary 18–30 inspector corridor (02-08-1996 to 01-08-2008):
+        <!-- Section 3: Searchable Post-Wise Table -->
+        <section id="post-directory-table">
+          <h2>SSC CGL Post-Wise Age Limit Directory 2026</h2>
+          <p>
+            Below is the searchable post directory populated directly from the current official notification. Use the live search bar or filter buttons to inspect age limits, pay levels, and cadre classifications:
           </p>
 
-          <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
-            <label for="userDobInput" style="font-size: 0.875rem; font-weight: 700;">Select Birth Year:</label>
-            <select id="userDobInput" class="relax-calc-select" style="max-width: 140px;" onchange="updateDobCorridor()">
-              <option value="1993">1993 (Overage)</option>
-              <option value="1995">1995 (Overage)</option>
-              <option value="1996">1996 (Cutoff)</option>
-              <option value="1998">1998 (Eligible)</option>
-              <option value="2000" selected>2000 (Eligible)</option>
-              <option value="2003">2003 (Eligible)</option>
-              <option value="2006">2006 (Eligible)</option>
-              <option value="2008">2008 (Cutoff)</option>
-              <option value="2010">2010 (Underage)</option>
-            </select>
-            <span id="dobCorridorVerdict" style="font-size: 0.875rem; font-weight: 700; color: #059669;">✓ Within Corridor</span>
-          </div>
-
-          <div class="dob-corridor-visual">
-            <!-- 18-30 Span: 1996 to 2008 (Scale 1992 to 2010 = 18 yrs span) -->
-            <!-- 1996 is 4/18 = 22.2%, width = 12/18 = 66.6% -->
-            <div class="dob-corridor-span" style="left: 22.2%; width: 66.6%;">
-              ELIGIBLE DOB CORRIDOR (18–30 YRS)
-            </div>
-            <div class="dob-user-marker" id="dobMarker" style="left: 44.4%;">
-              <div class="dob-user-pin" id="dobPin">DOB: 2000</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 11: Accepted Date of Birth Document -->
-      <section class="art-section" id="accepted-dob">
-        <span class="art-section-kicker">Document Verification</span>
-        <h2>Which Date of Birth Is Accepted for SSC CGL?</h2>
-        <p>
-          The Commission operates under rigid documentary protocols. Paragraph 5 of the official notification stipulates:
-        </p>
-        <blockquote style="background: #f8fafc; border-left: 4px solid var(--aclx-dark); margin: 16px 0; padding: 14px 20px; font-style: italic; color: #334155;">
-          "The Date of Birth as recorded in the Matriculation / Secondary Examination Certificate or an equivalent certificate only will be accepted by the Commission for determining the age and no subsequent request for its change will be considered or granted."
-        </blockquote>
-
-        <!-- CSS Process Graphic -->
-        <div class="process-flow">
-          <div class="process-step">
-            <span class="process-num">1</span>
-            <div class="process-text">10th / Matriculation Certificate</div>
-            <small style="color: var(--aclx-muted);">Original DOB Record</small>
-          </div>
-          <span class="process-arrow">&rarr;</span>
-          <div class="process-step">
-            <span class="process-num">2</span>
-            <div class="process-text">Online Application Form</div>
-            <small style="color: var(--aclx-muted);">Must Match Marksheet Exactly</small>
-          </div>
-          <span class="process-arrow">&rarr;</span>
-          <div class="process-step">
-            <span class="process-num">3</span>
-            <div class="process-text">Age Reckoning as of 01-08-2026</div>
-            <small style="color: var(--aclx-muted);">Computed by SSC Server</small>
-          </div>
-          <span class="process-arrow">&rarr;</span>
-          <div class="process-step">
-            <span class="process-num">4</span>
-            <div class="process-text">Document Verification (DV)</div>
-            <small style="color: var(--aclx-muted);">Physical Verification by Department</small>
-          </div>
-        </div>
-
-        <p>
-          <strong>Critical Warning:</strong> Discrepancies between your 10th Board Certificate and Aadhaar Card, PAN Card, or Birth Certificate are <em>not</em> grounds for relaxation. Even if your municipal birth certificate shows a different date, SSC will exclusively enforce the date shown on your 10th marksheet.
-        </p>
-      </section>
-
-      <!-- Section 12: Common Mistakes & Mistake Detector -->
-      <section class="art-section" id="mistakes">
-        <span class="art-section-kicker">Risk Prevention</span>
-        <h2>Common SSC CGL Age Eligibility Mistakes</h2>
-        <p>
-          Avoid these 6 critical blunders that lead to application rejection or disqualification at Document Verification:
-        </p>
-
-        <div class="mistakes-grid">
-          <div class="mistake-card">
-            <span class="mistake-num">MISTAKE 01</span>
-            <h3 class="mistake-title">Using Today's Age</h3>
-            <p class="mistake-desc">Calculating your current age instead of completed age as of the official 1 August 2026 cutoff.</p>
-          </div>
-          <div class="mistake-card">
-            <span class="mistake-num">MISTAKE 02</span>
-            <h3 class="mistake-title">Assuming 32 Applies to All</h3>
-            <p class="mistake-desc">Believing that the 32-year ceiling for JSO applies to Inspector or ASO posts (which cap at 30).</p>
-          </div>
-          <div class="mistake-card">
-            <span class="mistake-num">MISTAKE 03</span>
-            <h3 class="mistake-title">Ignoring Category Relaxations</h3>
-            <p class="mistake-desc">Assuming you are ineligible at age 31 without factoring in +3 years for OBC or +5 years for SC/ST.</p>
-          </div>
-          <div class="mistake-card">
-            <span class="mistake-num">MISTAKE 04</span>
-            <h3 class="mistake-title">Using Aadhaar DOB Over 10th</h3>
-            <p class="mistake-desc">Entering a birth date from Aadhaar when your 10th Matriculation certificate states a different day.</p>
-          </div>
-          <div class="mistake-card">
-            <span class="mistake-num">MISTAKE 05</span>
-            <h3 class="mistake-title">Ignoring Minimum Age Limits</h3>
-            <p class="mistake-desc">Applying for ASO cadres at age 19, overlooking the mandatory 20-year minimum entry rule.</p>
-          </div>
-          <div class="mistake-card">
-            <span class="mistake-num">MISTAKE 06</span>
-            <h3 class="mistake-title">Invalid OBC NCL Certificate</h3>
-            <p class="mistake-desc">Claiming OBC age relaxation without a certificate issued within the mandatory crucial financial window.</p>
-          </div>
-        </div>
-
-        <!-- Interactive Checklist Component -->
-        <div class="checklist-widget">
-          <h3 style="margin-top: 0;">Eligibility Mistake Detector: Before You Apply</h3>
-          <p style="font-size: 0.875rem; color: var(--aclx-muted);">Check all four verification criteria to confirm you are ready to submit:</p>
-
-          <label class="checklist-item">
-            <input type="checkbox" id="chk1" onchange="checkReadiness()">
-            <span class="checklist-label">I have calculated my age specifically as of <strong>1 August 2026</strong> (not today's date).</span>
-          </label>
-          <label class="checklist-item">
-            <input type="checkbox" id="chk2" onchange="checkReadiness()">
-            <span class="checklist-label">I verified the specific age limit band (18–27, 20–30, 18–30, or 18–32) for my selected posts.</span>
-          </label>
-          <label class="checklist-item">
-            <input type="checkbox" id="chk3" onchange="checkReadiness()">
-            <span class="checklist-label">I possess valid documentary proof (OBC-NCL, SC/ST, PwBD) if claiming upper age relaxation.</span>
-          </label>
-          <label class="checklist-item">
-            <input type="checkbox" id="chk4" onchange="checkReadiness()">
-            <span class="checklist-label">My entered DOB matches my <strong>Matriculation / 10th Class Certificate</strong> word for word.</span>
-          </label>
-
-          <div class="checklist-status" id="checklistStatus">
-            Complete all 4 verification checks above
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 13: Candidate Real-World Scenarios -->
-      <section class="art-section" id="scenarios">
-        <span class="art-section-kicker">Case Studies</span>
-        <h2>Real Candidate Eligibility Profiles</h2>
-        <p>
-          Review these three real-world candidate profiles to understand how date of birth intersects with cadre limits:
-        </p>
-
-        <figure class="art-figure">
-          <img src="/assets/articles/ssc-cgl-age-limit/candidate-corridor-profiles.svg" alt="Candidate Eligibility Case Studies A, B, and C" width="1200" height="675" loading="lazy">
-          <figcaption>Figure 4: Real-World Candidate Case Studies Across SSC CGL Age Corridors.</figcaption>
-        </figure>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 24px 0;">
-          <div style="background: #ffffff; border: 1px solid var(--aclx-line); border-radius: 10px; padding: 18px;">
-            <h3 style="margin-top: 0; font-size: 1.1rem; color: #065f46;">Candidate A (DOB: 15 June 2000)</h3>
-            <p style="font-size: 0.875rem; margin-bottom: 8px;"><strong>Age on 01-08-2026:</strong> 26 Years, 1 Month, 17 Days</p>
-            <p style="font-size: 0.875rem; margin-bottom: 8px;"><strong>Category:</strong> General (UR)</p>
-            <p style="font-size: 0.875rem; color: #047857; margin: 0;">
-              ✓ <strong>Fully Eligible for ALL Posts:</strong> 18–27 (Auditor/TA), 20–30 (ASO), 18–30 (Inspectors), and 18–32 (JSO).
-            </p>
-          </div>
-
-          <div style="background: #ffffff; border: 1px solid var(--aclx-line); border-radius: 10px; padding: 18px;">
-            <h3 style="margin-top: 0; font-size: 1.1rem; color: #d97706;">Candidate B (DOB: 10 Sept 1995)</h3>
-            <p style="font-size: 0.875rem; margin-bottom: 8px;"><strong>Age on 01-08-2026:</strong> 30 Years, 10 Months, 22 Days</p>
-            <p style="font-size: 0.875rem; margin-bottom: 8px;"><strong>Category:</strong> General (UR)</p>
-            <p style="font-size: 0.875rem; color: #b45309; margin: 0;">
-              ⚠️ <strong>Selective Eligibility:</strong> Disqualified from 18–27 and 18–30 posts. Eligible <em>only</em> for JSO (18–32) if possessing Statistics qualification.
-            </p>
-          </div>
-
-          <div style="background: #ffffff; border: 1px solid var(--aclx-line); border-radius: 10px; padding: 18px;">
-            <h3 style="margin-top: 0; font-size: 1.1rem; color: #dc2626;">Candidate C (DOB: 20 July 1994)</h3>
-            <p style="font-size: 0.875rem; margin-bottom: 8px;"><strong>Age on 01-08-2026:</strong> 32 Years, 0 Months, 12 Days</p>
-            <p style="font-size: 0.875rem; margin-bottom: 8px;"><strong>Category:</strong> General (UR)</p>
-            <p style="font-size: 0.875rem; color: #b91c1c; margin: 0;">
-              ✕ <strong>Overage as General:</strong> Over the 32-year base limit by 12 days. Can only apply if possessing OBC (+3y) or SC/ST (+5y) relaxation!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 14: Interactive "Can I Apply?" Decision Tool -->
-      <section class="art-section" id="decision-tool">
-        <span class="art-section-kicker">Instant Decision Tool</span>
-        <h2>Check Your Age Band Eligibility Instantly</h2>
-        <p>
-          Enter your completed age as of <strong>1 August 2026</strong> to instantly check which SSC CGL post bands are open to you under the Unreserved (General) category:
-        </p>
-
-        <div class="decision-widget">
-          <div class="decision-input-row">
-            <label for="decAgeInput" style="font-weight: 700; color: var(--aclx-deep);">My Age on 1 Aug 2026 (Whole Years):</label>
-            <input type="number" id="decAgeInput" class="decision-input" min="16" max="45" value="28" oninput="runDecisionChecker()">
-            <span style="font-size: 0.875rem; color: var(--aclx-muted);">(Years old)</span>
-          </div>
-
-          <div class="decision-bands-grid">
-            <div class="decision-band-card">
-              <div>
-                <div class="decision-band-name">18–27 Years Band</div>
-                <small style="color: var(--aclx-muted);">Auditor, Tax Assistant</small>
-              </div>
-              <span class="decision-band-status status-no" id="decStatus27">✕ Overage</span>
-            </div>
-
-            <div class="decision-band-card">
-              <div>
-                <div class="decision-band-name">20–30 Years Band</div>
-                <small style="color: var(--aclx-muted);">Assistant Section Officer</small>
-              </div>
-              <span class="decision-band-status status-yes" id="decStatus2030">✓ Eligible</span>
-            </div>
-
-            <div class="decision-band-card">
-              <div>
-                <div class="decision-band-name">18–30 Years Band</div>
-                <small style="color: var(--aclx-muted);">Excise &amp; IT Inspectors</small>
-              </div>
-              <span class="decision-band-status status-yes" id="decStatus30">✓ Eligible</span>
-            </div>
-
-            <div class="decision-band-card">
-              <div>
-                <div class="decision-band-name">18–32 Years Band</div>
-                <small style="color: var(--aclx-muted);">Junior Statistical Officer</small>
-              </div>
-              <span class="decision-band-status status-yes" id="decStatus32">✓ Eligible</span>
+          <div class="post-filter-toolbar">
+            <input type="text" id="postSearchInput" class="post-search-input" placeholder="🔍 Search SSC CGL post (e.g. Excise, ASO, Auditor)..." oninput="filterPostDirectory()">
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <button type="button" class="post-filter-btn active" data-filter="all" onclick="setBandFilter('all', this)">All</button>
+              <button type="button" class="post-filter-btn" data-filter="18-27" onclick="setBandFilter('18-27', this)">18–27 Yrs</button>
+              <button type="button" class="post-filter-btn" data-filter="20-30" onclick="setBandFilter('20-30', this)">20–30 Yrs</button>
+              <button type="button" class="post-filter-btn" data-filter="18-30" onclick="setBandFilter('18-30', this)">18–30 Yrs</button>
+              <button type="button" class="post-filter-btn" data-filter="18-32" onclick="setBandFilter('18-32', this)">18–32 Yrs</button>
             </div>
           </div>
 
-          <div style="margin-top: 20px; text-align: center;">
-            <a href="/tools/ssc-cgl-age-calculator/" class="art-cta-btn" style="background: var(--aclx-dark); color: #ffffff;">
-              Launch Full Post-Wise Calculator with Category Relaxations &rarr;
-            </a>
+          <div class="article-table-wrap">
+            <table class="article-table" id="sscPostTable">
+              <thead>
+                <tr>
+                  <th>SSC CGL Post</th>
+                  <th>Ministry / Department</th>
+                  <th>Classification</th>
+                  <th>Age Limit</th>
+                  <th>Min</th>
+                  <th>Max (UR)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-band="18-30">
+                  <td><strong>Inspector of Income Tax</strong></td>
+                  <td>Central Board of Direct Taxes (CBDT)</td>
+                  <td>Group B</td>
+                  <td>18–30</td>
+                  <td>18</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="18-30">
+                  <td><strong>Inspector (Central Excise)</strong></td>
+                  <td>Central Board of Indirect Taxes &amp; Customs (CBIC)</td>
+                  <td>Group B</td>
+                  <td>18–30</td>
+                  <td>18</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="18-30">
+                  <td><strong>Inspector (Preventive Officer)</strong></td>
+                  <td>CBIC (Customs)</td>
+                  <td>Group B</td>
+                  <td>18–30</td>
+                  <td>18</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="18-30">
+                  <td><strong>Inspector (Examiner)</strong></td>
+                  <td>CBIC (Customs Appraisement)</td>
+                  <td>Group B</td>
+                  <td>18–30</td>
+                  <td>18</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="18-30">
+                  <td><strong>Assistant Enforcement Officer</strong></td>
+                  <td>Directorate of Enforcement (ED)</td>
+                  <td>Group B</td>
+                  <td>18–30</td>
+                  <td>18</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="20-30">
+                  <td><strong>Sub-Inspector</strong></td>
+                  <td>Central Bureau of Investigation (CBI)</td>
+                  <td>Group B</td>
+                  <td>20–30</td>
+                  <td>20</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="18-30">
+                  <td><strong>Sub-Inspector</strong></td>
+                  <td>National Investigation Agency (NIA)</td>
+                  <td>Group B</td>
+                  <td>18–30</td>
+                  <td>18</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="20-30">
+                  <td><strong>Assistant Section Officer (ASO)</strong></td>
+                  <td>Central Secretariat Service (CSS, DoPT)</td>
+                  <td>Group B</td>
+                  <td>20–30</td>
+                  <td>20</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="20-30">
+                  <td><strong>Assistant Section Officer (ASO)</strong></td>
+                  <td>Ministry of External Affairs (MEA)</td>
+                  <td>Group B</td>
+                  <td>20–30</td>
+                  <td>20</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="20-30">
+                  <td><strong>Assistant Section Officer (ASO)</strong></td>
+                  <td>Intelligence Bureau (MHA)</td>
+                  <td>Group B</td>
+                  <td>18–30</td>
+                  <td>18</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="20-30">
+                  <td><strong>Assistant Section Officer (ASO)</strong></td>
+                  <td>Ministry of Railways</td>
+                  <td>Group B</td>
+                  <td>20–30</td>
+                  <td>20</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="20-30">
+                  <td><strong>Assistant Section Officer (ASO)</strong></td>
+                  <td>Armed Forces Headquarters (AFHQ)</td>
+                  <td>Group B</td>
+                  <td>20–30</td>
+                  <td>20</td>
+                  <td>30</td>
+                </tr>
+                <tr data-band="18-32">
+                  <td><strong>Junior Statistical Officer (JSO)</strong></td>
+                  <td>Ministry of Statistics &amp; Programme Implementation</td>
+                  <td>Group B</td>
+                  <td>18–32</td>
+                  <td>18</td>
+                  <td>32</td>
+                </tr>
+                <tr data-band="18-27">
+                  <td><strong>Auditor</strong></td>
+                  <td>Comptroller &amp; Auditor General of India (CAG)</td>
+                  <td>Group C</td>
+                  <td>18–27</td>
+                  <td>18</td>
+                  <td>27</td>
+                </tr>
+                <tr data-band="18-27">
+                  <td><strong>Auditor</strong></td>
+                  <td>Controller General of Defence Accounts (CGDA)</td>
+                  <td>Group C</td>
+                  <td>18–27</td>
+                  <td>18</td>
+                  <td>27</td>
+                </tr>
+                <tr data-band="18-27">
+                  <td><strong>Accountant / Junior Accountant</strong></td>
+                  <td>Offices under CAG &amp; CGA</td>
+                  <td>Group C</td>
+                  <td>18–27</td>
+                  <td>18</td>
+                  <td>27</td>
+                </tr>
+                <tr data-band="18-27">
+                  <td><strong>Tax Assistant</strong></td>
+                  <td>Central Board of Direct Taxes (CBDT)</td>
+                  <td>Group C</td>
+                  <td>18–27</td>
+                  <td>18</td>
+                  <td>27</td>
+                </tr>
+                <tr data-band="18-27">
+                  <td><strong>Tax Assistant</strong></td>
+                  <td>Central Board of Indirect Taxes &amp; Customs (CBIC)</td>
+                  <td>Group C</td>
+                  <td>18–27</td>
+                  <td>18</td>
+                  <td>27</td>
+                </tr>
+                <tr data-band="18-27">
+                  <td><strong>Upper Division Clerk (UDC) / SSA</strong></td>
+                  <td>Central Government Ministries / Offices</td>
+                  <td>Group C</td>
+                  <td>18–27</td>
+                  <td>18</td>
+                  <td>27</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Section 15: FAQ Section -->
-      <section class="art-section" id="faq">
-        <span class="art-section-kicker">Aspirant Support</span>
-        <h2>Frequently Asked Questions</h2>
-        <p>Authoritative answers to the most common age eligibility questions regarding the SSC CGL examination:</p>
-
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>What is the age limit for SSC CGL 2026?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              The SSC CGL age limit is post-specific rather than a single uniform number. The notification establishes four distinct age bands: 18–27 years (Tax Assistant, Auditor), 20–30 years (Assistant Section Officer), 18–30 years (Inspectors in Income Tax, Central Excise), and 18–32 years (Junior Statistical Officer). All ages are reckoned as of 1 August 2026.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>What is the maximum age for SSC CGL?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              For General (Unreserved) candidates, the maximum age is 30 years for executive posts and 32 years for JSO. With statutory category relaxations, the effective maximum age extends to 33 years for OBC, 35 years for SC/ST, and up to 40–47 years for PwBD and Ex-Servicemen.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>Is SSC CGL age limit 27 or 30 years?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              It depends strictly on the cadre. Clerical and audit feeder posts like Auditor and Tax Assistant have a 27-year ceiling for General candidates. Group B executive cadres like Inspector (Central Excise, IT) and ASO allow up to 30 years.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>Can I apply for SSC CGL at age 32?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              Yes. General candidates at age 32 can apply for the Junior Statistical Officer (JSO) post provided they meet the educational requirements (Degree with Statistics or 60% in 12th Maths). Candidates belonging to OBC, SC, ST, or PwBD categories can apply for virtually all posts at age 32 using their reservation relaxations.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>Is there age relaxation for OBC candidates in SSC CGL?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              Yes, Non-Creamy Layer OBC candidates receive a 3-year upper age relaxation above the prescribed post maximum limit. For a 30-year post, an eligible OBC candidate can apply up to 33 years of age as of 1 August 2026.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>Is there age relaxation for SC and ST candidates?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              Yes. Scheduled Caste (SC) and Scheduled Tribe (ST) candidates receive a 5-year upper age relaxation across all post cadres. This allows applications up to 32 years for 27-year posts, 35 years for 30-year posts, and 37 years for JSO.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>What is the SSC CGL age limit for PwBD candidates?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              PwBD candidates receive substantial statutory relaxations: PwBD (Unreserved/General) gets +10 years, PwBD (OBC) gets +13 years, and PwBD (SC/ST) receives +15 years above the standard post ceiling.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>Which Date of Birth is considered official by SSC?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              SSC accepts only the Date of Birth recorded in your Matriculation / 10th Secondary Examination Certificate. Discrepancies between your 10th certificate and Aadhaar or birth certificate will result in strict adherence to the 10th marksheet.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>What is the SSC CGL age calculation date for 2026?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              The crucial reckoning date for the SSC CGL 2026 examination is 1 August 2026. Your age must fall within the permissible brackets on this specific calendar date.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>Does the SSC CGL age limit change every year?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              The underlying age brackets (18–27, 20–30, etc.) remain fixed under DoPT service rules. However, the crucial date shifts with each exam cycle (between 1 January and 1 August), shifting the eligible birth date range.
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              <span>Can I use today's age to check SSC CGL eligibility?</span>
-              <span class="faq-chevron">&#x2304;</span>
-            </summary>
-            <div class="faq-answer">
-              No. Calculating your eligibility using today's age causes severe calculation errors. You must calculate your completed age as of 1 August 2026 using the official crucial date formula.
-            </div>
-          </details>
-        </div>
-      </section>
-
-      <!-- Author Bio Card -->
-      <section class="art-author-card">
-        <img loading="lazy" decoding="async" class="art-author-img" src="/assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="80" height="80">
-        <div class="art-author-info">
-          <div class="art-author-name">Navjeet Kamboj</div>
-          <div class="art-author-role">Founder &amp; Principal Chronology Researcher, Age Calculator Lab</div>
-          <p class="art-author-bio">
-            Navjeet analyzes statutory age reckoning guidelines, civil service recruitment frameworks, and calendar algorithms. All SSC CGL eligibility matrices on this site are cross-verified against official Department of Personnel &amp; Training (DoPT) service memorandums and Staff Selection Commission recruitment notices.
+        <!-- Section 4: Interactive Post Cards -->
+        <section id="post-cadre-cards">
+          <h2>Visualizing Cadre Groups: Interactive Post Cards</h2>
+          <p>
+            Rather than relying on static charts, explore these interactive HTML post cards to inspect key cadre boundaries and launch targeted eligibility checks:
           </p>
-        </div>
-      </section>
 
-      <!-- Bottom Contextual Links -->
-      <div style="background: #f8fafc; border: 1px solid var(--aclx-line); border-radius: 12px; padding: 20px 24px; margin: 32px 0;">
-        <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--aclx-deep);">Related Competitive Examination &amp; Chronology Tools</h3>
-        <p style="font-size: 0.875rem; color: var(--aclx-ink-2); margin-bottom: 12px;">Explore dedicated calculators and chronology resources:</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <a href="/tools/ssc-cgl-age-calculator/" class="art-pill art-pill-primary" style="text-decoration:none; font-size:0.8125rem;">⚡ SSC CGL Age Calculator 2026</a>
-          <a href="/tools/exact-age-calculator/" class="art-pill art-pill-read" style="text-decoration:none; font-size:0.8125rem;">Exact Age Calculator</a>
-          <a href="/tools/chronological-age-calculator/" class="art-pill art-pill-read" style="text-decoration:none; font-size:0.8125rem;">Chronological Age Calculator</a>
-          <a href="/tools/age-on-date-calculator/" class="art-pill art-pill-read" style="text-decoration:none; font-size:0.8125rem;">Age on Date Calculator</a>
-          <a href="/articles/calculate-exact-age-years-months-days/" class="art-pill art-pill-read" style="text-decoration:none; font-size:0.8125rem;">Exact Age Calculation Guide</a>
-        </div>
-      </div>
+          <div class="post-cards-grid">
+            <div class="post-card-box">
+              <div>
+                <div class="post-card-cadre">Executive Enforcement</div>
+                <h3 class="post-card-title">Inspector Posts</h3>
+                <p class="post-card-desc">Income Tax, Central Excise, Customs Preventive Officer &amp; Examiner.</p>
+              </div>
+              <div>
+                <div class="post-card-stats">
+                  <span>Age Band: <strong>18–30</strong></span>
+                  <span>Max Age: <strong>30 Years</strong></span>
+                </div>
+                <a href="../../tools/ssc-cgl-age-calculator/" class="post-card-btn">Check Inspector Eligibility &rarr;</a>
+              </div>
+            </div>
 
+            <div class="post-card-box featured">
+              <div>
+                <div class="post-card-cadre">Central Secretariat</div>
+                <h3 class="post-card-title">Assistant Section Officer</h3>
+                <p class="post-card-desc">ASO in CSS, MEA, Intelligence Bureau &amp; Railway Board.</p>
+              </div>
+              <div>
+                <div class="post-card-stats">
+                  <span>Age Band: <strong>20–30</strong></span>
+                  <span>Max Age: <strong>30 Years</strong></span>
+                </div>
+                <a href="../../tools/ssc-cgl-age-calculator/" class="post-card-btn">Check ASO Eligibility &rarr;</a>
+              </div>
+            </div>
+
+            <div class="post-card-box">
+              <div>
+                <div class="post-card-cadre">Audit &amp; Accounts</div>
+                <h3 class="post-card-title">Auditor &amp; Accountant</h3>
+                <p class="post-card-desc">Audit and accounts ledger verification in CAG, CGA &amp; CGDA.</p>
+              </div>
+              <div>
+                <div class="post-card-stats">
+                  <span>Age Band: <strong>18–27</strong></span>
+                  <span>Max Age: <strong>27 Years</strong></span>
+                </div>
+                <a href="../../tools/ssc-cgl-age-calculator/" class="post-card-btn">Check Auditor Eligibility &rarr;</a>
+              </div>
+            </div>
+
+            <div class="post-card-box">
+              <div>
+                <div class="post-card-cadre">Statistics Specialist</div>
+                <h3 class="post-card-title">Junior Statistical Officer</h3>
+                <p class="post-card-desc">MoSPI statistics wing. Widest age window under graduate level.</p>
+              </div>
+              <div>
+                <div class="post-card-stats">
+                  <span>Age Band: <strong>18–32</strong></span>
+                  <span>Max Age: <strong>32 Years</strong></span>
+                </div>
+                <a href="../../tools/ssc-cgl-age-calculator/" class="post-card-btn">Check JSO Eligibility &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 5: The Crucial Date -->
+        <section id="crucial-reckoning-date">
+          <h2>What Is the Crucial Date? SSC CGL Age Calculation Date</h2>
+          <p>
+            Your age eligibility is not judged by the day you fill out the application or the day you sit for Tier-I. The Commission freezes eligibility onto a single calendar pivot:
+          </p>
+
+          <div class="crucial-date-badge-box">
+            <div class="crucial-date-stamp">01 AUGUST 2026</div>
+            <div style="flex: 1 1 260px;">
+              <strong style="color: #7C2D12; font-size: 1.1rem; display: block; margin-bottom: 4px;">Official Crucial Reckoning Date</strong>
+              <p style="font-size: 0.875rem; color: #9A3412; margin: 0; line-height: 1.5;">
+                Governed under DoPT Office Memorandum No. 14017/70/87-Estt.(RR). For examinations held in the second half of the year, 1 August is the mandatory reckoning date.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-visual-box">
+            <img src="../../assets/articles/ssc-cgl-age-limit/age-reckoning-date-stamp.svg" alt="Official Crucial Date 01 August 2026 date-stamp dossier with handwritten notes." width="800" height="600" loading="lazy">
+            <div class="article-visual-caption">
+              <span>Figure 2: Official Age Reckoning Date Stamp for SSC CGL Examination.</span>
+              <span>DoPT Guideline Compliance</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 6: Why Date Matters -->
+        <section id="why-date-matters">
+          <h2>Why the Age Reckoning Date Matters: Worked Examples</h2>
+          <p>
+            Why can't you simply check your age today? Because your completed years on 1 August 2026 can be entirely different from your calendar age today:
+          </p>
+          <div style="background: #F8FCFA; border: 1px solid #DDE7E2; border-radius: 12px; padding: 20px; margin: 20px 0;">
+            <h3 style="margin-top: 0; color: #042F2A;">Case Study: The 1 August Boundary</h3>
+            <p>Consider an aspirant whose date of birth is <strong>15 September 1998</strong> applying for a 30-year post:</p>
+            <ul>
+              <li><strong>Current Age:</strong> Candidate appears to be 29 or 30 depending on today's date.</li>
+              <li><strong>Age on 1 August 2026:</strong> Exactly <strong>27 years, 10 months, and 17 days</strong>.</li>
+              <li><strong>Verdict:</strong> The candidate is <em>fully eligible</em> for both 18–30 inspector posts and 18–27 auditor posts!</li>
+            </ul>
+            <p style="margin-bottom: 0;">
+              Conversely, a candidate born on <strong>15 July 1996</strong> turns 30 on 15 July 2026. By 1 August 2026, they are <strong>30 years and 17 days old</strong>. Under the Unreserved category, they are overage by 17 days and disqualified from all 30-year posts.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 7: Faculty Notes -->
+        <section id="faculty-study-notes">
+          <h2>Senior Faculty Study Desk Notes</h2>
+          <p>
+            Experienced civil service mentors summarize SSC CGL eligibility into a cardinal principle: <em>"Check the POST first, then check your AGE."</em>
+          </p>
+
+          <div class="article-visual-box">
+            <img src="../../assets/articles/ssc-cgl-age-limit/teacher-annotated-reference-sheet.svg" alt="Teacher annotated SSC CGL age-limit reference sheet with handwritten notes." width="800" height="600" loading="lazy">
+            <div class="article-visual-caption">
+              <span>Figure 3: Senior Faculty Study Desk Reference: Check Post First, Then Verify Age Band.</span>
+              <span>Aspirant Mentorship Notes</span>
+            </div>
+          </div>
+
+          <p>
+            Assuming that every graduate-level post permits candidates up to age 32 is the single most common post-preference error. As the study worksheet highlights, only JSO reaches 32 years; all standard officer and inspector posts terminate at 30 years.
+          </p>
+        </section>
+
+        <!-- Section 8: Age Relaxation -->
+        <section id="upper-age-relaxation">
+          <h2>SSC CGL Upper Age Relaxation: Category Rules</h2>
+          <p>
+            The official 2026 notification outlines statutory upper age relaxations for reserved categories in accordance with Central Government civil service rules:
+          </p>
+
+          <div class="article-table-wrap">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Upper-Age Relaxation</th>
+                  <th>Effective Max (30-Yr Post)</th>
+                  <th>Effective Max (32-Yr JSO)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>SC / ST</strong></td>
+                  <td>5 Years</td>
+                  <td>35 Years</td>
+                  <td>37 Years</td>
+                </tr>
+                <tr>
+                  <td><strong>OBC (Non-Creamy Layer)</strong></td>
+                  <td>3 Years</td>
+                  <td>33 Years</td>
+                  <td>35 Years</td>
+                </tr>
+                <tr>
+                  <td><strong>PwBD (Unreserved)</strong></td>
+                  <td>10 Years</td>
+                  <td>40 Years</td>
+                  <td>42 Years</td>
+                </tr>
+                <tr>
+                  <td><strong>PwBD (OBC)</strong></td>
+                  <td>13 Years</td>
+                  <td>43 Years</td>
+                  <td>45 Years</td>
+                </tr>
+                <tr>
+                  <td><strong>PwBD (SC / ST)</strong></td>
+                  <td>15 Years</td>
+                  <td>45 Years</td>
+                  <td>47 Years</td>
+                </tr>
+                <tr>
+                  <td><strong>Ex-Servicemen (ESM)</strong></td>
+                  <td>3 Years after deduction of military service from actual age</td>
+                  <td>Formula-Based</td>
+                  <td>Formula-Based</td>
+                </tr>
+                <tr>
+                  <td><strong>Defence Personnel (Disabled)</strong></td>
+                  <td>3 Years (8 years for SC/ST)</td>
+                  <td>33 Years</td>
+                  <td>35 Years</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            <em>Note:</em> Age relaxation is category- and rule-specific and is subject to the conditions in the notification. For OBC candidates, the Non-Creamy Layer certificate must be valid for the applicable financial year.
+          </p>
+        </section>
+
+        <!-- Section 9: Interactive Relaxation Calculator -->
+        <section id="relaxation-tool">
+          <h2>Interactive Age Relaxation Calculator</h2>
+          <p>
+            Test your relaxed upper age boundary dynamically by selecting your post base limit and reservation category:
+          </p>
+
+          <div class="relax-tool-card">
+            <div class="relax-tool-grid">
+              <div class="relax-field">
+                <label for="relBaseAge">Post Base Limit</label>
+                <select id="relBaseAge" onchange="calcRelaxedMax()">
+                  <option value="27">18–27 Years (Auditor, Tax Asst)</option>
+                  <option value="30" selected>18–30 / 20–30 Years (Inspector, ASO)</option>
+                  <option value="32">18–32 Years (Junior Statistical Officer)</option>
+                </select>
+              </div>
+              <div class="relax-field">
+                <label for="relCategory">Reservation Category</label>
+                <select id="relCategory" onchange="calcRelaxedMax()">
+                  <option value="0">General / UR / EWS (+0 Years)</option>
+                  <option value="3" selected>OBC Non-Creamy Layer (+3 Years)</option>
+                  <option value="5">SC / ST (+5 Years)</option>
+                  <option value="10">PwBD Unreserved (+10 Years)</option>
+                  <option value="13">PwBD OBC (+13 Years)</option>
+                  <option value="15">PwBD SC / ST (+15 Years)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="relax-output-row">
+              <span class="relax-output-label">Potential Maximum Upper Age Limit:</span>
+              <span class="relax-output-value" id="relaxedMaxVal">33 Years</span>
+            </div>
+
+            <p style="font-size: 0.8125rem; color: #B45309; margin: 12px 0 0;">
+              ⚠️ <strong>Notice:</strong> Subject to the post, vacancy, category eligibility, and conditions in the applicable notification.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 10: DOB Eligibility Ranges -->
+        <section id="dob-eligibility-ranges">
+          <h2>SSC CGL DOB Eligibility: Eligible Date of Birth Ranges</h2>
+          <p>
+            In the official notification, age bands are formally codified into exact date of birth boundaries:
+          </p>
+
+          <div class="article-table-wrap">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th>Age Limit Band</th>
+                  <th>Born Not Earlier Than</th>
+                  <th>Born Not Later Than</th>
+                  <th>Total Eligible Span</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>18–27 Years</strong></td>
+                  <td>02 August 1999</td>
+                  <td>01 August 2008</td>
+                  <td>9 Calendar Years</td>
+                </tr>
+                <tr>
+                  <td><strong>20–30 Years</strong></td>
+                  <td>02 August 1996</td>
+                  <td>01 August 2006</td>
+                  <td>10 Calendar Years</td>
+                </tr>
+                <tr>
+                  <td><strong>18–30 Years</strong></td>
+                  <td>02 August 1996</td>
+                  <td>01 August 2008</td>
+                  <td>12 Calendar Years</td>
+                </tr>
+                <tr>
+                  <td><strong>18–32 Years</strong></td>
+                  <td>02 August 1994</td>
+                  <td>01 August 2008</td>
+                  <td>14 Calendar Years</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            For candidates born on exactly <strong>01 August 1996</strong> applying for an 18–30 post, they turn 30 on 1 August 2026 and are on the exact outer boundary of eligibility. Candidates born on <strong>02 August 1996</strong> are 29 years and 364 days old on the crucial date, placing them safely within the corridor.
+          </p>
+        </section>
+
+        <!-- Section 11: Accepted DOB Document -->
+        <section id="accepted-dob-docs">
+          <h2>Which Date of Birth Is Accepted for SSC CGL?</h2>
+          <p>
+            The 2026 notification explicitly states that the Date of Birth recorded in your <strong>Matriculation / Secondary Examination Certificate</strong> is the sole document accepted for determining age. No subsequent requests for changes will be considered.
+          </p>
+
+          <div class="process-steps-wrap">
+            <div class="process-step-item">
+              <div class="step-number-circle">1</div>
+              <div class="step-title">10th Certificate</div>
+              <div class="step-sub">Statutory Primary Record</div>
+            </div>
+            <div class="process-step-item">
+              <div class="step-number-circle">2</div>
+              <div class="step-title">Online Application</div>
+              <div class="step-sub">Exact DOB Match Mandatory</div>
+            </div>
+            <div class="process-step-item">
+              <div class="step-number-circle">3</div>
+              <div class="step-title">Crucial Date Reckoning</div>
+              <div class="step-sub">Age Computed on 01-08-2026</div>
+            </div>
+            <div class="process-step-item">
+              <div class="step-number-circle">4</div>
+              <div class="step-title">Document Verification</div>
+              <div class="step-sub">Original Marksheet Scrutiny</div>
+            </div>
+          </div>
+          <p>
+            If your Aadhaar Card or municipal birth certificate shows a different date, you must resolve the discrepancy with your state education board prior to applying, because SSC will only honor the 10th marksheet.
+          </p>
+        </section>
+
+        <!-- Section 12: Common Mistakes & Checklist -->
+        <section id="common-mistakes">
+          <h2>Common SSC CGL Age Eligibility Mistakes</h2>
+          <p>
+            Aspirants routinely fall prey to six common miscalculations during registration:
+          </p>
+
+          <div class="mistakes-cards-grid">
+            <div class="mistake-box">
+              <div class="mistake-box-num">MISTAKE 01</div>
+              <h3 class="mistake-box-title">Using Today's Age</h3>
+              <p class="mistake-box-text">Calculating current calendar age instead of age on the notification's crucial date.</p>
+            </div>
+            <div class="mistake-box">
+              <div class="mistake-box-num">MISTAKE 02</div>
+              <h3 class="mistake-box-title">Assuming 32 for All</h3>
+              <p class="mistake-box-text">Assuming 32 is the maximum for everyone when post-wise bands differ.</p>
+            </div>
+            <div class="mistake-box">
+              <div class="mistake-box-num">MISTAKE 03</div>
+              <h3 class="mistake-box-title">Ignoring Relaxation</h3>
+              <p class="mistake-box-text">Forgetting that eligible OBC (+3y) or SC/ST (+5y) candidates qualify for extensions.</p>
+            </div>
+            <div class="mistake-box">
+              <div class="mistake-box-num">MISTAKE 04</div>
+              <h3 class="mistake-box-title">Using Non-10th DOB</h3>
+              <p class="mistake-box-text">Submitting an Aadhaar DOB that diverges from the matriculation certificate.</p>
+            </div>
+            <div class="mistake-box">
+              <div class="mistake-box-num">MISTAKE 05</div>
+              <h3 class="mistake-box-title">Checking Only Age</h3>
+              <p class="mistake-box-text">Ignoring post-specific education requirements (such as Statistics for JSO).</p>
+            </div>
+            <div class="mistake-box">
+              <div class="mistake-box-num">MISTAKE 06</div>
+              <h3 class="mistake-box-title">Assuming Result is Official</h3>
+              <p class="mistake-box-text">Treating third-party calculations as official approval without verifying notification rules.</p>
+            </div>
+          </div>
+
+          <!-- Eligibility Mistake Detector Widget -->
+          <div class="checklist-detector">
+            <h3 style="margin-top: 0; color: #042F2A; font-size: 1.2rem;">Eligibility Mistake Detector: Before You Apply</h3>
+            <p style="font-size: 0.875rem; color: #5D7069;">Verify all four checkpoints to confirm compliance:</p>
+
+            <label class="chk-line">
+              <input type="checkbox" id="chkBox1" onchange="runChecklistVerification()">
+              <span>I checked my age specifically as of <strong>1 August 2026</strong>.</span>
+            </label>
+            <label class="chk-line">
+              <input type="checkbox" id="chkBox2" onchange="runChecklistVerification()">
+              <span>I checked the age limit band for my selected post cadre.</span>
+            </label>
+            <label class="chk-line">
+              <input type="checkbox" id="chkBox3" onchange="runChecklistVerification()">
+              <span>I checked applicable category relaxation and have valid certificates.</span>
+            </label>
+            <label class="chk-line">
+              <input type="checkbox" id="chkBox4" onchange="runChecklistVerification()">
+              <span>My entered DOB matches my <strong>Matriculation certificate</strong> word for word.</span>
+            </label>
+
+            <div class="chk-status-result" id="chkStatusBanner">
+              0 of 4 checked — Complete all verifications before applying
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 13: Candidate Case Studies -->
+        <section id="candidate-case-studies">
+          <h2>Real-World Candidate Eligibility Examples</h2>
+          <p>
+            How does eligibility change across real applicant age profiles? Review these three illustrative cases:
+          </p>
+
+          <div class="article-visual-box">
+            <img src="../../assets/articles/ssc-cgl-age-limit/candidate-corridor-profiles.svg" alt="Visual comparison of Candidate A (age 26), Candidate B (age 30), and Candidate C (age 32) across SSC CGL age corridors." width="1200" height="675" loading="lazy">
+            <div class="article-visual-caption">
+              <span>Figure 4: Real-World Candidate Case Studies Across SSC CGL Age Corridors.</span>
+              <span>Cadre Matrix Analysis</span>
+            </div>
+          </div>
+
+          <ul>
+            <li><strong>Candidate A (DOB: 15 June 2000, Age on 1 Aug 2026: 26):</strong> Fully within the standard age band for 18–27, 20–30, 18–30, and 18–32 posts. Can apply for any cadre.</li>
+            <li><strong>Candidate B (DOB: 10 September 1995, Age on 1 Aug 2026: 30):</strong> Disqualified from 18–27 auditor/tax assistant cadres under the General category. Eligible for 18–30 inspectors, 20–30 ASO, and 18–32 JSO.</li>
+            <li><strong>Candidate C (DOB: 20 July 1994, Age on 1 Aug 2026: 32):</strong> Exceeds 27 and 30-year limits. Under the General category, eligible <em>only</em> for JSO (18–32) if holding Statistics qualifications. However, if Candidate C belongs to OBC (+3y, max 33) or SC/ST (+5y, max 35), they are eligible for all 30-year posts.</li>
+          </ul>
+        </section>
+
+        <!-- Section 14: Can I Apply? Mini Tool -->
+        <section id="decision-tool">
+          <h2>"Can I Apply?" Age Band Decision Tool</h2>
+          <p>
+            Input your completed age as of <strong>1 August 2026</strong> to immediately review which post bands are accessible to you under Unreserved (UR) criteria:
+          </p>
+
+          <div class="decision-mini-tool">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 20px;">
+              <label for="miniToolAge" style="font-weight: 700; color: #042F2A;">My Age on 1 August 2026:</label>
+              <input type="number" id="miniToolAge" min="16" max="45" value="28" style="width: 90px; padding: 8px 12px; border: 1px solid #DDE7E2; border-radius: 8px; font-weight: 700; font-size: 1.1rem; text-align: center;" oninput="updateMiniDecision()">
+              <span style="font-size: 0.85rem; color: #5D7069;">completed years</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+              <div style="background: #FFFFFF; border: 1px solid #DDE7E2; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600; font-size: 0.875rem;">18–27 Years Band</span>
+                <span class="dec-status-pill pill-ineligible" id="mini27">✕ Overage</span>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid #DDE7E2; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600; font-size: 0.875rem;">20–30 Years Band</span>
+                <span class="dec-status-pill pill-eligible" id="mini2030">✓ Eligible</span>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid #DDE7E2; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600; font-size: 0.875rem;">18–30 Years Band</span>
+                <span class="dec-status-pill pill-eligible" id="mini30">✓ Eligible</span>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid #DDE7E2; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600; font-size: 0.875rem;">18–32 Years Band</span>
+                <span class="dec-status-pill pill-eligible" id="mini32">✓ Eligible</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+              <a href="../../tools/ssc-cgl-age-calculator/" class="cta-btn-link" style="display: inline-flex; font-size: 0.95rem; padding: 10px 22px;">
+                Check Post-Wise Eligibility in Full Calculator &rarr;
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 15: FAQ Accordion -->
+        <section id="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Answers to the most frequent inquiries from candidates preparing for the SSC CGL examination:
+          </p>
+
+          <div class="faq-accordion">
+            <div class="faq-item active">
+              <button class="faq-btn" type="button" aria-expanded="true">
+                <span>What is the age limit for SSC CGL 2026?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                The SSC CGL age limit is post-specific rather than a single uniform number. The notification establishes four distinct age bands: 18–27 years (Tax Assistant, Auditor), 20–30 years (Assistant Section Officer), 18–30 years (Inspectors in Income Tax, Central Excise), and 18–32 years (Junior Statistical Officer). All ages are reckoned as of 1 August 2026.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>What is the maximum age for SSC CGL?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                There isn't one universal maximum. For General candidates, the maximum base limit is 30 years for executive posts and 32 years for JSO. With statutory category relaxations, the effective maximum age extends to 33 years for OBC, 35 years for SC/ST, and up to 40–47 years for PwBD and Ex-Servicemen.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>Is SSC CGL age limit 27 or 30?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                It depends entirely on the post cadre. Auditor, Accountant, and Tax Assistant posts cap at 27 years for General category applicants. In contrast, Group B executive roles like Inspector (Excise, Income Tax) and Assistant Section Officer (ASO) permit candidates up to 30 years.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>Can I apply for SSC CGL at age 32?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                General category candidates aged 32 can only apply for the Junior Statistical Officer (JSO) cadre (requiring Statistics or 60% in 12th Maths). However, reserved category candidates (OBC, SC, ST, PwBD) aged 32 can apply for almost all posts using their respective age relaxations.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>Is there age relaxation for OBC in SSC CGL?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                Yes. Non-Creamy Layer OBC candidates receive a statutory upper age relaxation of 3 years above the prescribed post maximum limit. For a 30-year post, an eligible OBC candidate can apply up to 33 years of age.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>Is there age relaxation for SC/ST?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                Yes, subject to official conditions. Scheduled Caste (SC) and Scheduled Tribe (ST) candidates receive a 5-year upper age relaxation across all post cadres (allowing applications up to 32 years for 27-year posts, 35 years for 30-year posts, and 37 years for JSO).
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>What is the SSC CGL age limit for PwBD candidates?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                PwBD candidates receive substantial statutory relaxations: PwBD (Unreserved/General) gets +10 years, PwBD (OBC) gets +13 years, and PwBD (SC/ST) receives +15 years above the standard post ceiling.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>Which DOB is considered for SSC CGL?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                SSC accepts only the Date of Birth recorded in your Matriculation / Secondary Examination Certificate. Discrepancies between your 10th certificate and Aadhaar or birth certificate will result in strict adherence to the 10th marksheet.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>What is the SSC CGL age calculation date?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                The official crucial reckoning date for the SSC CGL 2026 examination cycle is 1 August 2026. Your age must fall within the permissible brackets on this specific calendar date.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>Does SSC CGL age limit change every year?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                The underlying age brackets (18–27, 20–30, etc.) remain fixed under DoPT service rules. However, the crucial date shifts with each exam cycle (between 1 January and 1 August), shifting the eligible birth date range.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-btn" type="button" aria-expanded="false">
+                <span>Can I use today's age to check SSC CGL eligibility?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                No. Calculating your eligibility using today's age causes severe calculation errors. You must calculate your completed age as of 1 August 2026 using the official age-reckoning rules or our dedicated SSC CGL Age Calculator.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 16: Knowledge Base Cluster Links -->
+        <section id="cluster-links">
+          <h2>SSC CGL Age Eligibility Knowledge Base</h2>
+          <p>
+            Explore our expanding cluster of competitive examination age resources:
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px;">
+            <a href="../../tools/ssc-cgl-age-calculator/" class="post-filter-btn" style="text-decoration:none; background:#E8F4EC; color:#075433; font-weight:700;">⚡ SSC CGL Age Calculator 2026</a>
+            <a href="../../tools/exact-age-calculator/" class="post-filter-btn" style="text-decoration:none;">Exact Age Calculator</a>
+            <a href="../../tools/chronological-age-calculator/" class="post-filter-btn" style="text-decoration:none;">Chronological Age Calculator</a>
+            <a href="../../tools/age-on-date-calculator/" class="post-filter-btn" style="text-decoration:none;">Age on Date Calculator</a>
+            <a href="../../articles/calculate-exact-age-years-months-days/" class="post-filter-btn" style="text-decoration:none;">Exact Age Calculation Guide</a>
+          </div>
+        </section>
+
+        <!-- Section 17: Author Bio & Fact-Checking -->
+        <div class="author-card">
+          <img src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" class="author-img" width="72" height="72">
+          <div>
+            <div class="author-name">Navjeet Kamboj</div>
+            <div class="author-meta">Researcher &amp; Developer &bull; Reviewed against SSC CGL Notification &amp; DoPT OMs</div>
+            <p class="author-bio">
+              Navjeet Kamboj builds chronological calculation engines and researches statutory civil service recruitment frameworks. All SSC CGL eligibility guidelines in this guide have been verified against official publications from the Staff Selection Commission (SSC) and Department of Personnel and Training (DoPT).
+            </p>
+          </div>
+        </div>
+
+      </article>
     </div>
   </main>
 
   <!-- Standard Homepage 15-Link Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-brand">Age Calculator Lab</p>
-        <p class="footer-tagline">Calendar-accurate chronological calculators, birth date analyzers and time interval tools.</p>
-        <p class="footer-tagline">&copy; 2026 Age Calculator Lab. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid footer-grid-rich">
+        <div class="footer-brand-panel">
+          <a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a>
+          <p>161 focused calculators and 100 practical guides for age, dates, milestones and planning. No registration required.</p>
+          <a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj &rarr;</a>
+        </div>
+        <div>
+          <h3>Calculators</h3>
+          <a href="../../">Exact Age</a>
+          <a href="../../tools/chronological-age-calculator/">Chronological Age</a>
+          <a href="../../tools/age-difference-calculator/">Age Difference</a>
+          <a href="../../categories/">All categories</a>
+        </div>
+        <div class="footer-guides">
+          <h3>Articles &amp; Guides</h3>
+          <a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a>
+          <a href="../../articles/ymd-semicolon-format-guide/">Y;M;D format</a>
+          <a href="../../articles/corrected-age-premature-babies/">Corrected age guide</a>
+          <a class="footer-guides-all" href="../../articles/">Browse all 100 guides &rarr;</a>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="../../categories/">Categories</a>
+          <a href="../../methodology/">Methodology</a>
+          <a href="../../about/">About</a>
+          <a href="../../disclaimer/">Disclaimer</a>
+        </div>
+        <div>
+          <h3>Important</h3>
+          <a href="../../privacy/">Privacy</a>
+          <a href="../../terms/">Terms</a>
+          <a href="../../contact/">Contact</a>
+          <a href="../../sitemap.xml">Sitemap</a>
+        </div>
       </div>
-      <div>
-        <p class="footer-title">Top tools</p>
-        <ul class="footer-links">
-          <li><a href="/">Exact Age</a></li>
-          <li><a href="/tools/chronological-age-calculator/">Chronological Age</a></li>
-          <li><a href="/tools/age-difference-calculator/">Age Difference</a></li>
-          <li><a href="/categories/">All categories &rarr;</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-title">Core guides</p>
-        <ul class="footer-links">
-          <li><a href="/articles/calculate-exact-age-years-months-days/">Calculate exact age</a></li>
-          <li><a href="/articles/ymd-semicolon-format-guide/">Y;M;D format</a></li>
-          <li><a href="/articles/corrected-age-premature-babies/">Corrected age guide</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-title">Site links</p>
-        <ul class="footer-links">
-          <li><a href="/categories/">Categories</a></li>
-          <li><a href="/methodology/">Methodology</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/disclaimer/">Disclaimer</a></li>
-          <li><a href="/privacy/">Privacy</a></li>
-          <li><a href="/terms/">Terms</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/sitemap.xml">Sitemap</a></li>
-        </ul>
+      <div class="copyright">
+        <span>&copy; 2026 Age Calculator Lab.</span>
+        <span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span>
       </div>
     </div>
   </footer>
 
-  <!-- Interactive Scripts -->
+  <!-- Scripts -->
   <script>
-    // 1. Search & Filter Post Directory Table
-    var currentBandFilter = 'all';
+  (function() {
+    'use strict';
 
-    function filterPostDirectory() {
-      var query = document.getElementById('postSearchInput').value.toLowerCase().trim();
-      var rows = document.querySelectorAll('#sscPostTable tbody tr');
+    // 1. Reading Progress Bar
+    window.addEventListener('scroll', function() {
+      var h = document.documentElement;
+      var b = document.body;
+      var st = 'scrollTop' in h ? h.scrollTop : b.scrollTop;
+      var sh = 'scrollHeight' in h ? h.scrollHeight : b.scrollHeight;
+      var percent = (st / (sh - h.clientHeight)) * 100;
+      var progEl = document.getElementById('reading-progress');
+      if (progEl) {
+        progEl.style.width = Math.min(100, Math.max(0, percent)) + '%';
+      }
+    }, { passive: true });
 
-      rows.forEach(function(row) {
-        var postText = row.innerText.toLowerCase();
-        var band = row.getAttribute('data-band');
-        var matchesQuery = !query || postText.indexOf(query) !== -1;
-        var matchesBand = (currentBandFilter === 'all') || (band === currentBandFilter);
+    // 2. Accessible FAQ Accordions
+    var faqButtons = document.querySelectorAll('.faq-btn');
+    faqButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.closest('.faq-item');
+        var isExpanded = btn.getAttribute('aria-expanded') === 'true';
 
-        row.style.display = (matchesQuery && matchesBand) ? '' : 'none';
+        faqButtons.forEach(function(otherBtn) {
+          if (otherBtn !== btn) {
+            otherBtn.setAttribute('aria-expanded', 'false');
+            otherBtn.closest('.faq-item').classList.remove('active');
+          }
+        });
+
+        btn.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+        item.classList.toggle('active', !isExpanded);
       });
-    }
+    });
 
-    function setBandFilter(band, btn) {
-      currentBandFilter = band;
-      document.querySelectorAll('.filter-btn').forEach(function(b) {
+    // 3. Post Directory Search and Filter
+    var currentBand = 'all';
+    window.filterPostDirectory = function() {
+      var q = (document.getElementById('postSearchInput').value || '').toLowerCase().trim();
+      var rows = document.querySelectorAll('#sscPostTable tbody tr');
+      rows.forEach(function(r) {
+        var txt = r.innerText.toLowerCase();
+        var band = r.getAttribute('data-band');
+        var matchQ = !q || txt.indexOf(q) !== -1;
+        var matchBand = (currentBand === 'all') || (band === currentBand);
+        r.style.display = (matchQ && matchBand) ? '' : 'none';
+      });
+    };
+
+    window.setBandFilter = function(band, btn) {
+      currentBand = band;
+      document.querySelectorAll('.post-filter-btn').forEach(function(b) {
         b.classList.remove('active');
       });
       btn.classList.add('active');
-      filterPostDirectory();
-    }
+      window.filterPostDirectory();
+    };
 
-    // 2. Interactive Relaxation Calculator
-    function computeRelaxedMax() {
+    // 4. Interactive Relaxation Calculator
+    window.calcRelaxedMax = function() {
       var base = parseInt(document.getElementById('relBaseAge').value, 10);
-      var relax = parseInt(document.getElementById('relCategory').value, 10);
-      var total = base + relax;
-      document.getElementById('relaxedMaxDisplay').innerText = total + " Years";
-    }
+      var rel = parseInt(document.getElementById('relCategory').value, 10);
+      document.getElementById('relaxedMaxVal').innerText = (base + rel) + " Years";
+    };
 
-    // 3. Interactive DOB Window Indicator
-    function updateDobCorridor() {
-      var year = parseInt(document.getElementById('userDobInput').value, 10);
-      var marker = document.getElementById('dobMarker');
-      var pin = document.getElementById('dobPin');
-      var verdict = document.getElementById('dobCorridorVerdict');
+    // 5. Checklist Detector
+    window.runChecklistVerification = function() {
+      var c1 = document.getElementById('chkBox1').checked;
+      var c2 = document.getElementById('chkBox2').checked;
+      var c3 = document.getElementById('chkBox3').checked;
+      var c4 = document.getElementById('chkBox4').checked;
+      var count = [c1, c2, c3, c4].filter(Boolean).length;
+      var banner = document.getElementById('chkStatusBanner');
 
-      // Scale: 1992 to 2010 = 18 years span
-      var minYear = 1992;
-      var totalSpan = 18;
-      var pct = ((year - minYear) / totalSpan) * 100;
-      if (pct < 2) pct = 2;
-      if (pct > 98) pct = 98;
-
-      marker.style.left = pct + '%';
-      pin.innerText = 'DOB: ' + year;
-
-      if (year >= 1996 && year <= 2008) {
-        verdict.innerText = '✓ Within 18–30 Corridor';
-        verdict.style.color = '#059669';
-      } else if (year < 1996) {
-        verdict.innerText = '✕ Overage for 18–30 Band';
-        verdict.style.color = '#dc2626';
+      if (count === 4) {
+        banner.className = 'chk-status-result success';
+        banner.innerHTML = '🎉 Ready to Apply! All 4 Eligibility Criteria Verified.';
       } else {
-        verdict.innerText = '✕ Underage for 18–30 Band';
-        verdict.style.color = '#dc2626';
+        banner.className = 'chk-status-result';
+        banner.innerHTML = count + ' of 4 checked — Complete all verifications before applying';
       }
-    }
+    };
 
-    // 4. Eligibility Mistake Detector Checklist
-    function checkReadiness() {
-      var c1 = document.getElementById('chk1').checked;
-      var c2 = document.getElementById('chk2').checked;
-      var c3 = document.getElementById('chk3').checked;
-      var c4 = document.getElementById('chk4').checked;
-      var statusEl = document.getElementById('checklistStatus');
-
-      if (c1 && c2 && c3 && c4) {
-        statusEl.className = 'checklist-status ready';
-        statusEl.innerHTML = '🎉 Ready to Apply! All 4 Eligibility Criteria Verified.';
-      } else {
-        var count = [c1, c2, c3, c4].filter(Boolean).length;
-        statusEl.className = 'checklist-status';
-        statusEl.innerHTML = count + ' of 4 verified — Check remaining criteria above';
-      }
-    }
-
-    // 5. "Can I Apply?" Mini Decision Tool
-    function runDecisionChecker() {
-      var age = parseInt(document.getElementById('decAgeInput').value, 10);
+    // 6. Mini Decision Tool
+    window.updateMiniDecision = function() {
+      var age = parseInt(document.getElementById('miniToolAge').value, 10);
       if (isNaN(age)) return;
 
-      var s27 = document.getElementById('decStatus27');
-      var s2030 = document.getElementById('decStatus2030');
-      var s30 = document.getElementById('decStatus30');
-      var s32 = document.getElementById('decStatus32');
+      var el27 = document.getElementById('mini27');
+      var el2030 = document.getElementById('mini2030');
+      var el30 = document.getElementById('mini30');
+      var el32 = document.getElementById('mini32');
 
-      // 18 - 27
+      // 18-27
       if (age >= 18 && age <= 27) {
-        s27.className = 'decision-band-status status-yes';
-        s27.innerText = '✓ Eligible';
+        el27.className = 'dec-status-pill pill-eligible';
+        el27.innerText = '✓ Eligible';
       } else {
-        s27.className = 'decision-band-status status-no';
-        s27.innerText = age > 27 ? '✕ Overage' : '✕ Underage';
+        el27.className = 'dec-status-pill pill-ineligible';
+        el27.innerText = age > 27 ? '✕ Overage' : '✕ Underage';
       }
 
-      // 20 - 30
+      // 20-30
       if (age >= 20 && age <= 30) {
-        s2030.className = 'decision-band-status status-yes';
-        s2030.innerText = '✓ Eligible';
+        el2030.className = 'dec-status-pill pill-eligible';
+        el2030.innerText = '✓ Eligible';
       } else {
-        s2030.className = 'decision-band-status status-no';
-        s2030.innerText = age > 30 ? '✕ Overage' : '✕ Underage';
+        el2030.className = 'dec-status-pill pill-ineligible';
+        el2030.innerText = age > 30 ? '✕ Overage' : '✕ Underage';
       }
 
-      // 18 - 30
+      // 18-30
       if (age >= 18 && age <= 30) {
-        s30.className = 'decision-band-status status-yes';
-        s30.innerText = '✓ Eligible';
+        el30.className = 'dec-status-pill pill-eligible';
+        el30.innerText = '✓ Eligible';
       } else {
-        s30.className = 'decision-band-status status-no';
-        s30.innerText = age > 30 ? '✕ Overage' : '✕ Underage';
+        el30.className = 'dec-status-pill pill-ineligible';
+        el30.innerText = age > 30 ? '✕ Overage' : '✕ Underage';
       }
 
-      // 18 - 32
+      // 18-32
       if (age >= 18 && age <= 32) {
-        s32.className = 'decision-band-status status-yes';
-        s32.innerText = '✓ Eligible';
+        el32.className = 'dec-status-pill pill-eligible';
+        el32.innerText = '✓ Eligible';
       } else {
-        s32.className = 'decision-band-status status-no';
-        s32.innerText = age > 32 ? '✕ Overage' : '✕ Underage';
+        el32.className = 'dec-status-pill pill-ineligible';
+        el32.innerText = age > 32 ? '✕ Overage' : '✕ Underage';
       }
-    }
+    };
 
-    // 6. Jumpbar ScrollSpy
-    (function() {
-      var jumpLinks = document.querySelectorAll('#artJumpbar a');
-      var trackedSections = [];
-      jumpLinks.forEach(function(link) {
-        var targetId = link.getAttribute('href').replace('#', '');
-        var el = document.getElementById(targetId);
-        if (el) trackedSections.push({ link: link, el: el });
-      });
+    // 7. Sidebar TOC ScrollSpy
+    var tocLinks = document.querySelectorAll('.article-toc a');
+    var trackedSections = [];
+    tocLinks.forEach(function(link) {
+      var targetId = link.getAttribute('href').replace('#', '');
+      var el = document.getElementById(targetId);
+      if (el) trackedSections.push({ link: link, el: el });
+    });
 
-      window.addEventListener('scroll', function() {
-        var scrollPos = window.scrollY + 150;
-        var current = null;
-        for (var i = 0; i < trackedSections.length; i++) {
-          if (trackedSections[i].el.offsetTop <= scrollPos) {
-            current = trackedSections[i].link;
-          }
+    window.addEventListener('scroll', function() {
+      var scrollPos = window.scrollY + 140;
+      var current = null;
+      for (var i = 0; i < trackedSections.length; i++) {
+        if (trackedSections[i].el.offsetTop <= scrollPos) {
+          current = trackedSections[i].link;
         }
-        if (current) {
-          jumpLinks.forEach(function(l) { l.classList.remove('is-current'); });
-          current.classList.add('is-current');
-        }
-      }, { passive: true });
-    })();
+      }
+      if (current) {
+        tocLinks.forEach(function(l) { l.classList.remove('is-current'); });
+        current.classList.add('is-current');
+      }
+    }, { passive: true });
+
+  })();
   </script>
 </body>
 </html>
