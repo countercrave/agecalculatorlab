@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" style="background:#f1ece1; font-family:'Inter',system-ui,sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" style="background:#f1ece1; font-family:'Inter',system-ui,-apple-system,sans-serif;">
   <defs>
     <filter id="deskShadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="3" dy="10" stdDeviation="14" flood-color="#1e293b" flood-opacity="0.14"/>
+    </filter>
+    <filter id="noteShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.10"/>
     </filter>
   </defs>
 
@@ -28,27 +31,27 @@
   </g>
 
   <!-- Main Worksheet Sheet -->
-  <g transform="translate(100, 45)" filter="url(#deskShadow)">
-    <rect width="600" height="510" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <g transform="translate(100, 35)" filter="url(#deskShadow)">
+    <rect width="600" height="530" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
     
     <!-- Red Margin line -->
-    <line x1="60" y1="0" x2="60" y2="510" stroke="#fca5a5" stroke-width="1.5"/>
+    <line x1="60" y1="0" x2="60" y2="530" stroke="#fca5a5" stroke-width="1.5"/>
 
     <!-- Heading -->
-    <text x="80" y="48" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#0f172a">Aspirant's Rulebook: SSC CGL Age Limits</text>
-    <text x="80" y="70" font-size="12" font-weight="600" fill="#64748b">Batch 2026 Core Reference Worksheet</text>
-    <line x1="80" y1="85" x2="560" y2="85" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="80" y="44" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#0f172a">Aspirant's Rulebook: SSC CGL Age Limits</text>
+    <text x="80" y="66" font-size="12" font-weight="600" fill="#64748b">Batch 2026 Core Reference Worksheet</text>
+    <line x1="80" y1="80" x2="560" y2="80" stroke="#e2e8f0" stroke-width="1.5"/>
 
     <!-- Rule 1 Callout Box with Teacher Highlighter -->
-    <rect x="80" y="105" width="480" height="85" rx="6" fill="#fef9c3" stroke="#facc15" stroke-width="1.5"/>
-    <!-- Simulated Yellow Highlighter Over Text -->
-    <rect x="95" y="118" width="230" height="22" fill="#fde047" fill-opacity="0.6"/>
-    <text x="100" y="134" font-size="14" font-weight="800" fill="#713f12">Golden Rule #1: Check POST First</text>
-    <text x="100" y="156" font-size="12" fill="#854d0e">There is NO single universal maximum age for SSC CGL.</text>
-    <text x="100" y="174" font-size="12" font-weight="600" fill="#854d0e">Your eligibility changes dynamically depending on the department!</text>
+    <rect x="80" y="96" width="480" height="76" rx="6" fill="#fef9c3" stroke="#facc15" stroke-width="1.5"/>
+    <!-- Yellow Highlighter Over Text -->
+    <rect x="95" y="106" width="240" height="20" fill="#fde047" fill-opacity="0.7" rx="3"/>
+    <text x="100" y="121" font-size="13" font-weight="800" fill="#713f12">Golden Rule #1: Check POST First</text>
+    <text x="100" y="142" font-size="12" fill="#854d0e">There is NO single universal maximum age for SSC CGL.</text>
+    <text x="100" y="159" font-size="12" font-weight="600" fill="#854d0e">Eligibility changes dynamically based on post cadre &amp; department!</text>
 
     <!-- Table of Bands -->
-    <g transform="translate(80, 210)">
+    <g transform="translate(80, 186)">
       <rect width="480" height="150" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
       <!-- Header -->
       <rect width="480" height="30" rx="6" fill="#f1f5f9"/>
@@ -80,28 +83,63 @@
       <text x="370" y="140" font-size="12" font-weight="800" fill="#db2777">32 Years</text>
     </g>
 
-    <!-- Handwritten Blue Ink Teacher Callouts -->
-    <g transform="translate(100, 395)">
-      <!-- Arrow pointing to JSO row -->
-      <path d="M 370 20 Q 390 -10 395 -30" fill="none" stroke="#2563eb" stroke-width="2"/>
-      <polygon points="395,-30 388,-20 399,-22" fill="#2563eb"/>
+    <!-- Teacher's Clean Annotation Section (Two distinct non-overlapping columns) -->
+    <g transform="translate(80, 350)">
       
-      <!-- Blue handwritten note -->
-      <text x="10" y="25" font-family="'Caveat', cursive, 'Brush Script MT', sans-serif" font-size="22" font-weight="700" fill="#1d4ed8">
-        Check POST first
-      </text>
-      <text x="60" y="52" font-family="'Caveat', cursive, 'Brush Script MT', sans-serif" font-size="26" font-weight="800" fill="#dc2626">
-        ↓ Then check AGE!
-      </text>
-      <text x="210" y="45" font-family="'Caveat', cursive, 'Brush Script MT', sans-serif" font-size="20" font-weight="600" fill="#b91c1c">
-        (Don't assume every post uses 32 years!)
-      </text>
+      <!-- Column 1: Left Sticky Note - Step-by-Step Rule -->
+      <g filter="url(#noteShadow)">
+        <g transform="rotate(-1 120 60)">
+          <rect x="0" y="4" width="245" height="110" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+          <!-- Top tape piece on sticky note -->
+          <rect x="88" y="-4" width="70" height="12" rx="2" fill="#cbd5e1" fill-opacity="0.6"/>
+          
+          <rect x="14" y="16" width="100" height="20" rx="4" fill="#2563eb"/>
+          <text x="22" y="30" font-size="10.5" font-weight="800" fill="#ffffff" letter-spacing="0.5">STEP-BY-STEP</text>
+          
+          <text x="16" y="56" font-size="14" font-weight="700" fill="#1d4ed8">
+            Check POST first
+          </text>
+          <text x="16" y="78" font-size="14" font-weight="800" fill="#dc2626">
+            &#x2193; Then check AGE!
+          </text>
+          <text x="16" y="98" font-size="11" font-weight="600" fill="#64748b">
+            Reckoned as of 01 August 2026
+          </text>
+        </g>
+      </g>
+
+      <!-- Column 2: Right Sticky Note - Critical Warning -->
+      <g transform="translate(265, 0)" filter="url(#noteShadow)">
+        <!-- Curved pointer arrow going up from this card toward the 32 Years table cell -->
+        <path d="M 125 4 C 125 -10, 140 -16, 145 -22" fill="none" stroke="#e11d48" stroke-width="2.5" stroke-linecap="round"/>
+        <polygon points="147,-25 139,-17 150,-16" fill="#e11d48"/>
+
+        <g transform="rotate(1 110 60)">
+          <rect x="0" y="4" width="215" height="110" rx="8" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5"/>
+          <!-- Top tape piece -->
+          <rect x="75" y="-4" width="65" height="12" rx="2" fill="#cbd5e1" fill-opacity="0.6"/>
+
+          <rect x="14" y="16" width="76" height="20" rx="4" fill="#e11d48"/>
+          <text x="22" y="30" font-size="10.5" font-weight="800" fill="#ffffff" letter-spacing="0.5">CRITICAL</text>
+          
+          <text x="14" y="56" font-size="13" font-weight="800" fill="#9f1239">
+            32 Years is ONLY for JSO!
+          </text>
+          <text x="14" y="76" font-size="12" font-weight="600" fill="#b91c1c">
+            Don't assume every post
+          </text>
+          <text x="14" y="94" font-size="12" font-weight="600" fill="#b91c1c">
+            allows up to 32 years.
+          </text>
+        </g>
+      </g>
+
     </g>
 
     <!-- Footer Stamp -->
-    <g transform="translate(80, 465)">
-      <line x1="0" y1="0" x2="480" y2="0" stroke="#f1f5f9" stroke-width="1"/>
-      <text x="0" y="24" font-size="11" font-weight="600" fill="#94a3b8">Crucial Cutoff Date: 01 August 2026 | Age Calculator Lab Editorial Research</text>
+    <g transform="translate(80, 484)">
+      <line x1="0" y1="0" x2="480" y2="0" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="0" y="22" font-size="11" font-weight="600" fill="#94a3b8">Crucial Cutoff Date: 01 August 2026 | Age Calculator Lab Senior Faculty Reference</text>
     </g>
   </g>
 </svg>
