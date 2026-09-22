@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
   <defs>
     <linearGradient id="winBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#1E293B"/>
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="100%" stop-color="#06483E"/>
     </linearGradient>
     <linearGradient id="corridorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#059669" stop-opacity="0.15"/>
@@ -21,14 +21,14 @@
   <g transform="translate(100, 75)">
     <text x="0" y="0" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#34D399" letter-spacing="1.5">DOB ELIGIBILITY CORRIDOR CONCEPT</text>
     <text x="0" y="34" font-family="'Fraunces', Georgia, serif" font-size="32" font-weight="700" fill="#FFFFFF">How SSC CGL Converts Age Limits into DOB Windows</text>
-    <text x="0" y="60" font-family="system-ui, sans-serif" font-size="15" fill="#94A3B8">Official SSC notices specify cutoff birth dates rather than simple year math to eliminate ambiguity</text>
+    <text x="0" y="60" font-family="system-ui, sans-serif" font-size="15" fill="#A9EAD1">Official SSC notices specify cutoff birth dates rather than simple year math to eliminate ambiguity</text>
   </g>
 
   <!-- 4 Horizontal Bands Visualization -->
   <!-- Band 1: 18-27 Years -->
   <g transform="translate(100, 190)">
-    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#94A3B8">BAND 1: 18–27 YRS (Auditor, Accountant, Tax Assistant)</text>
-    <rect x="0" y="35" width="1000" height="42" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#A9EAD1">BAND 1: 18–27 YRS (Auditor, Accountant, Tax Assistant)</text>
+    <rect x="0" y="35" width="1000" height="42" rx="8" fill="#06483E" stroke="#0C5A4E" stroke-width="1"/>
     <!-- In-range corridor: 02-08-1999 to 01-08-2008 -->
     <rect x="360" y="35" width="480" height="42" rx="6" fill="#10B981" fill-opacity="0.25" stroke="#10B981" stroke-width="1.5"/>
     
@@ -39,8 +39,8 @@
 
   <!-- Band 2: 20-30 Years -->
   <g transform="translate(100, 305)">
-    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#94A3B8">BAND 2: 20–30 YRS (Assistant Section Officer - CSS, IB, MEA, CBI)</text>
-    <rect x="0" y="35" width="1000" height="42" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#A9EAD1">BAND 2: 20–30 YRS (Assistant Section Officer - CSS, IB, MEA, CBI)</text>
+    <rect x="0" y="35" width="1000" height="42" rx="8" fill="#06483E" stroke="#0C5A4E" stroke-width="1"/>
     <!-- In-range corridor: 02-08-1996 to 01-08-2006 -->
     <rect x="230" y="35" width="500" height="42" rx="6" fill="#3B82F6" fill-opacity="0.25" stroke="#3B82F6" stroke-width="1.5"/>
     
@@ -51,8 +51,8 @@
 
   <!-- Band 3: 18-30 Years -->
   <g transform="translate(100, 420)">
-    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#94A3B8">BAND 3: 18–30 YRS (Inspector Income Tax, Central Excise, Preventive)</text>
-    <rect x="0" y="35" width="1000" height="42" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#A9EAD1">BAND 3: 18–30 YRS (Inspector Income Tax, Central Excise, Preventive)</text>
+    <rect x="0" y="35" width="1000" height="42" rx="8" fill="#06483E" stroke="#0C5A4E" stroke-width="1"/>
     <!-- In-range corridor: 02-08-1996 to 01-08-2008 -->
     <rect x="230" y="35" width="610" height="42" rx="6" fill="#8B5CF6" fill-opacity="0.25" stroke="#8B5CF6" stroke-width="1.5"/>
     
@@ -63,8 +63,8 @@
 
   <!-- Band 4: 18-32 Years -->
   <g transform="translate(100, 535)">
-    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#94A3B8">BAND 4: 18–32 YRS (Junior Statistical Officer - JSO)</text>
-    <rect x="0" y="35" width="1000" height="42" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#A9EAD1">BAND 4: 18–32 YRS (Junior Statistical Officer - JSO)</text>
+    <rect x="0" y="35" width="1000" height="42" rx="8" fill="#06483E" stroke="#0C5A4E" stroke-width="1"/>
     <!-- In-range corridor: 02-08-1994 to 01-08-2008 -->
     <rect x="140" y="35" width="700" height="42" rx="6" fill="#F59E0B" fill-opacity="0.25" stroke="#F59E0B" stroke-width="1.5"/>
     

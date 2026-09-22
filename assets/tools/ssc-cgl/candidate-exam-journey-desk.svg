@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
   <defs>
     <linearGradient id="cjdBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F8FAFC"/>
-      <stop offset="100%" stop-color="#EDF2F7"/>
+      <stop offset="0%" stop-color="#FAFAF7"/>
+      <stop offset="100%" stop-color="#F0F5F2"/>
     </linearGradient>
     <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF"/>
       <stop offset="100%" stop-color="#F1F5F9"/>
     </linearGradient>
     <filter id="cjdShadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#102923" flood-opacity="0.08"/>
     </filter>
   </defs>
 
@@ -18,7 +18,7 @@
   <!-- Top Title -->
   <g transform="translate(100, 70)">
     <text x="0" y="0" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#047857" letter-spacing="1.5">SSC CGL METHODOLOGY</text>
-    <text x="0" y="34" font-family="'Fraunces', Georgia, serif" font-size="32" font-weight="700" fill="#0F172A">The Candidate Eligibility Reckoning Pipeline</text>
+    <text x="0" y="34" font-family="'Fraunces', Georgia, serif" font-size="32" font-weight="700" fill="#102923">The Candidate Eligibility Reckoning Pipeline</text>
     <text x="0" y="60" font-family="system-ui, sans-serif" font-size="15" fill="#64748B">How official date reckoning converts your Matriculation DOB into definitive post eligibility</text>
   </g>
 
@@ -28,10 +28,10 @@
   <!-- Step 1: Matriculation DOB -->
   <g transform="translate(140, 200)" filter="url(#cjdShadow)">
     <rect width="180" height="220" rx="12" fill="url(#nodeGrad)" stroke="#E2E8F0" stroke-width="1.5"/>
-    <circle cx="90" cy="40" r="22" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
-    <text x="90" y="46" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#1D4ED8" text-anchor="middle">01</text>
+    <circle cx="90" cy="40" r="22" fill="#FFF0EB" stroke="#FF754D" stroke-width="2"/>
+    <text x="90" y="46" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#C2571F" text-anchor="middle">01</text>
     
-    <text x="90" y="95" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">10th Certificate</text>
+    <text x="90" y="95" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#102923" text-anchor="middle">10th Certificate</text>
     <text x="90" y="115" font-family="system-ui, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Matriculation Record</text>
 
     <line x1="25" y1="135" x2="155" y2="135" stroke="#E2E8F0" stroke-width="1"/>
@@ -47,7 +47,7 @@
     <circle cx="90" cy="40" r="22" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
     <text x="90" y="46" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#047857" text-anchor="middle">02</text>
     
-    <text x="90" y="95" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">Crucial Cutoff</text>
+    <text x="90" y="95" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#102923" text-anchor="middle">Crucial Cutoff</text>
     <text x="90" y="115" font-family="system-ui, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Notification Standard</text>
 
     <line x1="25" y1="135" x2="155" y2="135" stroke="#E2E8F0" stroke-width="1"/>
@@ -63,7 +63,7 @@
     <circle cx="90" cy="40" r="22" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2"/>
     <text x="90" y="46" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#B45309" text-anchor="middle">03</text>
     
-    <text x="90" y="95" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">Post Cadre Band</text>
+    <text x="90" y="95" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#102923" text-anchor="middle">Post Cadre Band</text>
     <text x="90" y="115" font-family="system-ui, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Specific Threshold</text>
 
     <line x1="25" y1="135" x2="155" y2="135" stroke="#E2E8F0" stroke-width="1"/>
@@ -75,7 +75,7 @@
 
   <!-- Step 4: Final Eligibility -->
   <g transform="translate(890, 200)" filter="url(#cjdShadow)">
-    <rect width="180" height="220" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+    <rect width="180" height="220" rx="12" fill="#102923" stroke="#334155" stroke-width="1.5"/>
     <circle cx="90" cy="40" r="22" fill="#064E3B" stroke="#10B981" stroke-width="2"/>
     <text x="90" y="46" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#34D399" text-anchor="middle">04</text>
     
@@ -92,9 +92,9 @@
   <!-- Bottom Educational Banner -->
   <g transform="translate(140, 480)">
     <rect width="930" height="100" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cjdShadow)"/>
-    <circle cx="45" cy="50" r="16" fill="#EFF6FF"/>
+    <circle cx="45" cy="50" r="16" fill="#FFF0EB"/>
     <text x="45" y="55" font-family="sans-serif" font-size="16" font-weight="700" fill="#2563EB" text-anchor="middle">i</text>
-    <text x="80" y="42" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Why checking post-specific age bands matters</text>
+    <text x="80" y="42" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#102923">Why checking post-specific age bands matters</text>
     <text x="80" y="66" font-family="system-ui, sans-serif" font-size="13" fill="#64748B">A 28-year-old UR candidate is ineligible for Auditor/Accountant (18–27) but completely eligible for Central Excise Inspector (18–30).</text>
   </g>
 </svg>
