@@ -5,16 +5,15 @@
       <stop offset="50%" stop-color="#0d281e"/>
       <stop offset="100%" stop-color="#05150f"/>
     </linearGradient>
-    <linearGradient id="windowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
-      <stop offset="50%" stop-color="#059669" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0.25"/>
+    <linearGradient id="windowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#022c22" stop-opacity="0.7"/>
     </linearGradient>
-    <filter id="corridorGlow" x="-10%" y="-20%" width="120%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#10b981" flood-opacity="0.2"/>
+    <filter id="corridorGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#10b981" flood-opacity="0.25"/>
     </filter>
-    <filter id="markerGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#38bdf8" flood-opacity="0.4"/>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
     </filter>
   </defs>
 
@@ -22,124 +21,161 @@
   <rect width="1200" height="675" fill="url(#bgGrad)"/>
 
   <!-- Top Badge -->
-  <g transform="translate(80, 50)">
+  <g transform="translate(80, 45)">
     <rect width="270" height="32" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.3"/>
     <circle cx="18" cy="16" r="4.5" fill="#10b981"/>
     <text x="32" y="21" font-size="12" font-weight="700" fill="#a7f3d0" letter-spacing="1.5">DATE OF BIRTH CORRIDOR</text>
   </g>
 
   <!-- Title & Subtitle -->
-  <text x="80" y="125" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#ffffff">SSC CGL DOB Eligibility Window 2026</text>
-  <text x="80" y="156" font-size="15" fill="#94a3b8">Statutory birth date boundaries for the 18–30 Inspector cadre (Reckoned as of 01 August 2026)</text>
+  <text x="80" y="118" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#ffffff">SSC CGL DOB Eligibility Window 2026</text>
+  <text x="80" y="148" font-size="15" fill="#94a3b8">Statutory birth date boundaries for the 18&#8211;30 Inspector cadre (Reckoned as of 01 August 2026)</text>
 
-  <!-- Visual Corridor Container -->
-  <g transform="translate(80, 210)">
+  <!-- Visual Corridor Main Canvas -->
+  <g transform="translate(80, 185)">
     
     <!-- Outer Timeline Card -->
-    <rect x="0" y="0" width="1040" height="340" rx="16" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="0" y="0" width="1040" height="390" rx="16" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
 
-    <!-- Axis Year Markers along the top -->
-    <g transform="translate(0, 45)">
-      <line x1="60" y1="0" x2="980" y2="0" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <!-- Year Scale Header Bar (1990 to 2010) -->
+    <g transform="translate(40, 35)">
+      <line x1="0" y1="0" x2="960" y2="0" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2"/>
       
       <!-- 1992 -->
-      <line x1="120" y1="-8" x2="120" y2="8" stroke="#ffffff" stroke-opacity="0.3"/>
-      <text x="120" y="-16" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">1992</text>
+      <line x1="80" y1="-6" x2="80" y2="6" stroke="#ffffff" stroke-opacity="0.3"/>
+      <text x="80" y="-14" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">1992</text>
 
-      <!-- 1996 Cutoff boundary -->
-      <line x1="330" y1="-12" x2="330" y2="12" stroke="#10b981" stroke-width="2"/>
-      <text x="330" y="-18" font-size="13" font-weight="700" fill="#34d399" text-anchor="middle">1996</text>
+      <!-- 1996 Cutoff boundary line -->
+      <line x1="250" y1="-10" x2="250" y2="10" stroke="#10b981" stroke-width="2.5"/>
+      <text x="250" y="-16" font-size="13" font-weight="800" fill="#34d399" text-anchor="middle">1996</text>
 
-      <!-- 2000 (Candidate) -->
-      <line x1="550" y1="-8" x2="550" y2="8" stroke="#38bdf8" stroke-width="1.5"/>
-      <text x="550" y="-16" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">2000</text>
+      <!-- 2000 (Candidate Year) -->
+      <line x1="510" y1="-8" x2="510" y2="8" stroke="#38bdf8" stroke-width="2"/>
+      <text x="510" y="-15" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle">2000</text>
 
       <!-- 2004 -->
-      <line x1="740" y1="-8" x2="740" y2="8" stroke="#ffffff" stroke-opacity="0.3"/>
-      <text x="740" y="-16" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">2004</text>
+      <line x1="680" y1="-6" x2="680" y2="6" stroke="#ffffff" stroke-opacity="0.3"/>
+      <text x="680" y="-14" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">2004</text>
 
-      <!-- 2008 Cutoff boundary -->
-      <line x1="910" y1="-12" x2="910" y2="12" stroke="#10b981" stroke-width="2"/>
-      <text x="910" y="-18" font-size="13" font-weight="700" fill="#34d399" text-anchor="middle">2008</text>
+      <!-- 2008 Cutoff boundary line -->
+      <line x1="770" y1="-10" x2="770" y2="10" stroke="#10b981" stroke-width="2.5"/>
+      <text x="770" y="-16" font-size="13" font-weight="800" fill="#34d399" text-anchor="middle">2008</text>
+
+      <!-- 2010 -->
+      <line x1="900" y1="-6" x2="900" y2="6" stroke="#ffffff" stroke-opacity="0.3"/>
+      <text x="900" y="-14" font-size="12" font-weight="600" fill="#64748b" text-anchor="middle">2010</text>
     </g>
 
-    <!-- Zone 1: Too Early (< 02 Aug 1996) -->
-    <g transform="translate(60, 90)">
-      <rect x="0" y="0" width="270" height="150" rx="8" fill="#ef4444" fill-opacity="0.08" stroke="#ef4444" stroke-opacity="0.25" stroke-dasharray="4,4"/>
-      <rect x="16" y="16" width="100" height="22" rx="4" fill="#7f1d1d" fill-opacity="0.8"/>
-      <text x="24" y="32" font-size="11" font-weight="800" fill="#fca5a5" letter-spacing="0.5">TOO EARLY</text>
+    <!-- THREE HORIZONTAL CORRIDORS (Cleanly separated with zero overlap) -->
+    
+    <!-- ZONE 1: Too Early (x=40, width=210) -->
+    <g transform="translate(40, 65)">
+      <rect x="0" y="0" width="200" height="230" rx="10" fill="#ef4444" fill-opacity="0.06" stroke="#ef4444" stroke-opacity="0.25" stroke-dasharray="4,4"/>
       
-      <text x="16" y="64" font-size="13" font-weight="700" fill="#f87171">Born on or before</text>
-      <text x="16" y="84" font-size="15" font-weight="800" fill="#ffffff">01 August 1996</text>
-      <text x="16" y="112" font-size="12" font-weight="600" fill="#fca5a5">Status: Overage (Age &gt; 30)</text>
+      <rect x="14" y="16" width="90" height="22" rx="4" fill="#7f1d1d" fill-opacity="0.8"/>
+      <text x="22" y="32" font-size="11" font-weight="800" fill="#fca5a5" letter-spacing="0.5">TOO EARLY</text>
+      
+      <text x="14" y="70" font-size="12" font-weight="600" fill="#f87171">Born on or before</text>
+      <text x="14" y="94" font-size="16" font-weight="800" fill="#ffffff">01 Aug 1996</text>
+      
+      <line x1="14" y1="115" x2="186" y2="115" stroke="#ef4444" stroke-opacity="0.2"/>
+      
+      <text x="14" y="142" font-size="12" font-weight="700" fill="#fca5a5">Status: OVERAGE</text>
+      <text x="14" y="164" font-size="11" fill="#cbd5e1">Age &gt; 30 Years on</text>
+      <text x="14" y="182" font-size="11" fill="#cbd5e1">01 August 2026</text>
+      <text x="14" y="208" font-size="10" font-weight="600" fill="#f87171">&#x2715; Ineligible for UR</text>
     </g>
 
-    <!-- Zone 2: Valid DOB Eligibility Window (02 Aug 1996 to 01 Aug 2008) -->
-    <g transform="translate(330, 80)" filter="url(#corridorGlow)">
-      <rect x="0" y="0" width="580" height="170" rx="10" fill="url(#windowGrad)" stroke="#10b981" stroke-width="2"/>
+    <!-- ZONE 2: Statutory Eligible DOB Window (x=260, width=520) -->
+    <g transform="translate(260, 60)" filter="url(#corridorGlow)">
+      <!-- Outer Window Box -->
+      <rect x="0" y="0" width="520" height="240" rx="12" fill="url(#windowGrad)" stroke="#10b981" stroke-width="2"/>
       
-      <!-- Top header bar inside window -->
-      <rect x="0" y="0" width="580" height="34" rx="10" fill="#065f46" fill-opacity="0.7"/>
-      <text x="290" y="22" font-size="12" font-weight="800" fill="#a7f3d0" text-anchor="middle" letter-spacing="1">
-        &#x2713; STATUTORY ELIGIBLE DOB WINDOW (18–30 POSTS)
+      <!-- Top Header Ribbon -->
+      <rect x="0" y="0" width="520" height="38" rx="12" fill="#065f46"/>
+      <text x="260" y="25" font-size="13" font-weight="800" fill="#a7f3d0" text-anchor="middle" letter-spacing="1">
+        &#x2713; STATUTORY ELIGIBLE DOB WINDOW (18&#8211;30 POSTS)
       </text>
 
-      <!-- Earliest Limit Boundary Tag -->
-      <g transform="translate(20, 48)">
-        <rect width="135" height="48" rx="6" fill="#022c22" stroke="#10b981" stroke-opacity="0.5"/>
-        <text x="12" y="20" font-size="10" font-weight="700" fill="#6ee7b7">EARLIEST PERMITTED</text>
-        <text x="12" y="38" font-size="13" font-weight="800" fill="#ffffff">02 Aug 1996</text>
-      </g>
-
-      <!-- Latest Limit Boundary Tag -->
-      <g transform="translate(425, 48)">
-        <rect width="135" height="48" rx="6" fill="#022c22" stroke="#10b981" stroke-opacity="0.5"/>
-        <text x="12" y="20" font-size="10" font-weight="700" fill="#6ee7b7">LATEST PERMITTED</text>
-        <text x="12" y="38" font-size="13" font-weight="800" fill="#ffffff">01 Aug 2008</text>
-      </g>
-
-      <!-- Candidate DOB Marker in the middle -->
-      <g transform="translate(260, 40)" filter="url(#markerGlow)">
-        <!-- Marker Line down -->
-        <line x1="30" y1="0" x2="30" y2="70" stroke="#38bdf8" stroke-width="2.5"/>
-        <circle cx="30" cy="70" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+      <!-- Inner Three Cards Layout (Earliest | Candidate | Latest) -->
+      <g transform="translate(18, 52)">
         
-        <!-- Marker Tag Box -->
-        <rect x="-35" y="-30" width="130" height="32" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
-        <text x="30" y="-18" font-size="9" font-weight="800" fill="#7dd3fc" text-anchor="middle">CANDIDATE DOB</text>
-        <text x="30" y="-6" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">15 June 2000</text>
+        <!-- Card A: Earliest Permitted (x=0, width=145) -->
+        <g filter="url(#cardShadow)">
+          <rect x="0" y="0" width="145" height="105" rx="8" fill="#032b21" stroke="#10b981" stroke-opacity="0.4"/>
+          <text x="12" y="24" font-size="10" font-weight="800" fill="#6ee7b7" letter-spacing="0.5">EARLIEST DOB</text>
+          <text x="12" y="52" font-size="15" font-weight="800" fill="#ffffff">02 Aug 1996</text>
+          <line x1="12" y1="65" x2="133" y2="65" stroke="#10b981" stroke-opacity="0.2"/>
+          <text x="12" y="82" font-size="10" font-weight="600" fill="#94a3b8">Max Base Age:</text>
+          <text x="12" y="96" font-size="11" font-weight="700" fill="#a7f3d0">30 Years 0 Days</text>
+        </g>
+
+        <!-- Card B: Candidate DOB Marker (x=165, width=155) -->
+        <g filter="url(#cardShadow)">
+          <rect x="165" y="0" width="155" height="105" rx="8" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+          <rect x="175" y="10" width="100" height="18" rx="3" fill="#0284c7"/>
+          <text x="182" y="23" font-size="9.5" font-weight="800" fill="#ffffff" letter-spacing="0.5">CANDIDATE DOB</text>
+          <text x="175" y="52" font-size="15" font-weight="800" fill="#ffffff">15 Jun 2000</text>
+          <line x1="175" y1="65" x2="310" y2="65" stroke="#38bdf8" stroke-opacity="0.3"/>
+          <text x="175" y="82" font-size="10" font-weight="600" fill="#7dd3fc">Age on 01-Aug-2026:</text>
+          <text x="175" y="96" font-size="11" font-weight="800" fill="#38bdf8">26 Yrs &#8226; ELIGIBLE</text>
+        </g>
+
+        <!-- Card C: Latest Permitted (x=340, width=145) -->
+        <g filter="url(#cardShadow)">
+          <rect x="340" y="0" width="145" height="105" rx="8" fill="#032b21" stroke="#10b981" stroke-opacity="0.4"/>
+          <text x="352" y="24" font-size="10" font-weight="800" fill="#6ee7b7" letter-spacing="0.5">LATEST DOB</text>
+          <text x="352" y="52" font-size="15" font-weight="800" fill="#ffffff">01 Aug 2008</text>
+          <line x1="352" y1="65" x2="473" y2="65" stroke="#10b981" stroke-opacity="0.2"/>
+          <text x="352" y="82" font-size="10" font-weight="600" fill="#94a3b8">Min Entry Age:</text>
+          <text x="352" y="96" font-size="11" font-weight="700" fill="#a7f3d0">18 Years 0 Days</text>
+        </g>
+
       </g>
 
-      <!-- Bottom verification banner inside valid window -->
-      <g transform="translate(20, 118)">
-        <rect width="540" height="36" rx="6" fill="#064e3b" fill-opacity="0.8"/>
-        <text x="270" y="23" font-size="12" font-weight="700" fill="#ecfdf5" text-anchor="middle">
-          Age on 01-Aug-2026: 26 Years 1 Month 17 Days &#8226; 100% Eligible
+      <!-- Bottom Status Banner inside Zone 2 -->
+      <g transform="translate(18, 172)">
+        <rect width="485" height="50" rx="8" fill="#042f24" stroke="#10b981" stroke-opacity="0.3"/>
+        <text x="242" y="22" font-size="12" font-weight="700" fill="#a7f3d0" text-anchor="middle">
+          Official Notification Clause: "Born not earlier than 02-08-1996 and not later than 01-08-2008"
+        </text>
+        <text x="242" y="38" font-size="11" font-weight="600" fill="#6ee7b7" text-anchor="middle">
+          &#x2713; All birth dates within this 12-year window are 100% eligible for Inspector vacancies
         </text>
       </g>
+
     </g>
 
-    <!-- Zone 3: Too Late (> 01 Aug 2008) -->
-    <g transform="translate(910, 90)">
-      <rect x="0" y="0" width="70" height="150" rx="8" fill="#ef4444" fill-opacity="0.08" stroke="#ef4444" stroke-opacity="0.25" stroke-dasharray="4,4"/>
-      <rect x="10" y="16" width="50" height="22" rx="4" fill="#7f1d1d" fill-opacity="0.8"/>
-      <text x="35" y="32" font-size="9" font-weight="800" fill="#fca5a5" text-anchor="middle">LATE</text>
+    <!-- ZONE 3: Too Late (x=800, width=200) -->
+    <g transform="translate(800, 65)">
+      <rect x="0" y="0" width="200" height="230" rx="10" fill="#ef4444" fill-opacity="0.06" stroke="#ef4444" stroke-opacity="0.25" stroke-dasharray="4,4"/>
       
-      <text x="12" y="68" font-size="10" font-weight="700" fill="#f87171">&gt; 01 Aug</text>
-      <text x="12" y="84" font-size="12" font-weight="800" fill="#ffffff">2008</text>
-      <text x="12" y="112" font-size="9.5" font-weight="600" fill="#fca5a5">&lt; 18 Yrs</text>
+      <rect x="14" y="16" width="80" height="22" rx="4" fill="#7f1d1d" fill-opacity="0.8"/>
+      <text x="22" y="32" font-size="11" font-weight="800" fill="#fca5a5" letter-spacing="0.5">TOO LATE</text>
+      
+      <text x="14" y="70" font-size="12" font-weight="600" fill="#f87171">Born on or after</text>
+      <text x="14" y="94" font-size="16" font-weight="800" fill="#ffffff">02 Aug 2008</text>
+      
+      <line x1="14" y1="115" x2="186" y2="115" stroke="#ef4444" stroke-opacity="0.2"/>
+      
+      <text x="14" y="142" font-size="12" font-weight="700" fill="#fca5a5">Status: UNDERAGE</text>
+      <text x="14" y="164" font-size="11" fill="#cbd5e1">Age &lt; 18 Years on</text>
+      <text x="14" y="182" font-size="11" fill="#cbd5e1">01 August 2026</text>
+      <text x="14" y="208" font-size="10" font-weight="600" fill="#f87171">&#x2715; Ineligible for 2026</text>
     </g>
 
     <!-- Footer Summary inside container -->
-    <g transform="translate(60, 290)">
-      <text x="0" y="18" font-size="12" font-weight="500" fill="#94a3b8">
-        Crucial Reckoning Date: <tspan font-weight="700" fill="#e2e8f0">01 August 2026</tspan> &#8226; Official Formula: <tspan font-style="italic" fill="#cbd5e1">"Born not earlier than 02-08-1996 and not later than 01-08-2008"</tspan>
+    <g transform="translate(40, 325)">
+      <line x1="0" y1="0" x2="960" y2="0" stroke="#ffffff" stroke-opacity="0.08"/>
+      <text x="0" y="32" font-size="12.5" font-weight="500" fill="#94a3b8">
+        Crucial Reckoning Date: <tspan font-weight="800" fill="#ffffff">01 August 2026</tspan> &#8226; Accepted Record: <tspan font-weight="700" fill="#e2e8f0">10th / Matriculation Certificate</tspan> &#8226; Category: <tspan font-weight="700" fill="#e2e8f0">General (UR)</tspan>
       </text>
     </g>
+
   </g>
 
   <!-- Bottom Brand Footnote -->
-  <text x="80" y="625" font-size="12" font-weight="600" fill="#64748b">
+  <text x="80" y="630" font-size="12" font-weight="600" fill="#64748b">
     Age Calculator Lab &#8226; SSC CGL Eligibility Research &#8226; Source: Staff Selection Commission Official Notification
   </text>
 </svg>
