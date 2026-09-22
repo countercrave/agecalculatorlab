@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="stack-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="panel-base" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="panel-cat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#FBBF24" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="panel-pwbd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="panel-combined" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#stack-bg)" />
+  <rect x="24" y="24" width="1152" height="627" rx="16" fill="none" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Header Banner -->
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="76" rx="10" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+    <text x="30" y="32" fill="#38BDF8" font-family="'Inter', sans-serif" font-size="12" font-weight="800" letter-spacing="2">STATUTORY STRUCTURE ARCHITECTURE</text>
+    <text x="30" y="58" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700">Conceptual Acrylic Panels: How Statutory Relaxations Integrate</text>
+  </g>
+
+  <!-- 4 Layered Floating Panels -->
+  <g transform="translate(80, 160)">
+    <!-- Panel 1: Base Post Cadre -->
+    <g transform="translate(0, 0)">
+      <rect width="1040" height="80" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+      <rect x="20" y="18" width="220" height="44" rx="6" fill="url(#panel-base)" />
+      <text x="130" y="45" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700" text-anchor="middle">LAYER 1: BASE CADRE</text>
+      <text x="260" y="38" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Normal Statutory Upper Age Limit</text>
+      <text x="260" y="56" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">Determined strictly by Post Notice (e.g. 27 Years for Tax Asst, 30 Years for Inspector, 32 Years for JSO)</text>
+    </g>
+
+    <!-- Connector line -->
+    <line x1="130" y1="80" x2="130" y2="105" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 2" />
+
+    <!-- Panel 2: Communal Category -->
+    <g transform="translate(0, 105)">
+      <rect width="1040" height="80" rx="10" fill="#1E293B" stroke="#FBBF24" stroke-width="1.5" />
+      <rect x="20" y="18" width="220" height="44" rx="6" fill="url(#panel-cat)" />
+      <text x="130" y="45" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700" text-anchor="middle">LAYER 2: CATEGORY</text>
+      <text x="260" y="38" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Statutory Social Category Relaxation</text>
+      <text x="260" y="56" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">OBC (+3 Years) &#8226; SC / ST (+5 Years) added to the post base ceiling</text>
+    </g>
+
+    <!-- Connector line -->
+    <line x1="130" y1="185" x2="130" y2="210" stroke="#FBBF24" stroke-width="2" stroke-dasharray="4 2" />
+
+    <!-- Panel 3: PwBD Benchmark -->
+    <g transform="translate(0, 210)">
+      <rect width="1040" height="80" rx="10" fill="#1E293B" stroke="#A78BFA" stroke-width="1.5" />
+      <rect x="20" y="18" width="220" height="44" rx="6" fill="url(#panel-pwbd)" />
+      <text x="130" y="45" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700" text-anchor="middle">LAYER 3: DISABILITY</text>
+      <text x="260" y="38" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Benchmark Disability (PwBD) Provisions</text>
+      <text x="260" y="56" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">PwBD Unreserved candidates receive +10 Years statutory upper age relaxation</text>
+    </g>
+
+    <!-- Connector line -->
+    <line x1="130" y1="290" x2="130" y2="315" stroke="#A78BFA" stroke-width="2" stroke-dasharray="4 2" />
+
+    <!-- Panel 4: Combined Specified Bands -->
+    <g transform="translate(0, 315)">
+      <rect width="1040" height="80" rx="10" fill="#1E293B" stroke="#34D399" stroke-width="1.5" />
+      <rect x="20" y="18" width="220" height="44" rx="6" fill="url(#panel-combined)" />
+      <text x="130" y="45" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700" text-anchor="middle">LAYER 4: COMBINED</text>
+      <text x="260" y="38" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Official Combined Statutory Bands</text>
+      <text x="260" y="56" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">PwBD + OBC (+13 Years) &#8226; PwBD + SC/ST (+15 Years) &#8226; Recognized as single gazetted codes</text>
+    </g>
+  </g>
+
+  <!-- Bottom Explanatory Bar -->
+  <g transform="translate(60, 580)">
+    <rect width="1080" height="55" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+    <text x="30" y="33" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">
+      &#9733; Crucial Insight: SSC does not permit arbitrary arithmetic addition of all categories. Applicants must claim a single recognized gazetted category code.
+    </text>
+  </g>
+</svg>

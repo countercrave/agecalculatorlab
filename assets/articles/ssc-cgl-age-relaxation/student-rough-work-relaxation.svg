@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <!-- Graph Grid Pattern -->
+    <pattern id="graph-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D1D5DB" stroke-width="0.5" />
+    </pattern>
+  </defs>
+
+  <!-- Study Desk Background -->
+  <rect width="1200" height="675" fill="#E5E0D5" />
+
+  <!-- Rough Notebook Page -->
+  <g transform="translate(60, 35)">
+    <!-- Page Shadow -->
+    <rect x="8" y="8" width="1080" height="605" rx="6" fill="#000000" opacity="0.14" />
+    <!-- Page Body -->
+    <rect width="1080" height="605" rx="6" fill="#FCFAF2" stroke="#CBD5E1" stroke-width="1" />
+    <!-- Grid -->
+    <rect x="40" y="40" width="1000" height="525" fill="url(#graph-grid)" />
+
+    <!-- Notebook Header -->
+    <text x="60" y="70" fill="#475569" font-family="'Courier New', monospace" font-size="15" font-weight="700">ROUGH WORK // APPLICANT SCRUTINY VERIFICATION</text>
+    <line x1="60" y1="80" x2="1000" y2="80" stroke="#94A3B8" stroke-width="1" />
+
+    <!-- Calculation Left Column -->
+    <g transform="translate(70, 110)">
+      <text x="0" y="30" fill="#1E3A8A" font-family="'Comic Sans MS', cursive" font-size="20" font-weight="700">Case Study 1: Inspector (Central Excise)</text>
+      
+      <text x="20" y="70" fill="#0F172A" font-family="'Comic Sans MS', cursive" font-size="18">Target Post Upper Limit</text>
+      <text x="320" y="70" fill="#0F172A" font-family="'Comic Sans MS', cursive" font-size="18">= 30 Years</text>
+
+      <text x="20" y="110" fill="#0F172A" font-family="'Comic Sans MS', cursive" font-size="18">Category: OBC (Non-Creamy)</text>
+      <text x="320" y="110" fill="#0F172A" font-family="'Comic Sans MS', cursive" font-size="18">= + 3 Years</text>
+
+      <line x1="20" y1="130" x2="440" y2="130" stroke="#1E3A8A" stroke-width="2" />
+
+      <!-- Big Math -->
+      <rect x="15" y="145" width="430" height="60" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5" />
+      <text x="35" y="185" fill="#1D4ED8" font-family="'Comic Sans MS', cursive" font-size="26" font-weight="800">30 + 3 = 33 YEARS MAX</text>
+
+      <!-- Arrow to check post -->
+      <path d="M 455 175 Q 520 175 560 175" fill="none" stroke="#DC2626" stroke-width="2.5" />
+      <polygon points="570,175 558,169 558,181" fill="#DC2626" />
+    </g>
+
+    <!-- Right Callout Box: Check Post Code -->
+    <g transform="translate(650, 200)">
+      <rect width="370" height="150" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="2" />
+      <text x="30" y="40" fill="#B91C1C" font-family="'Comic Sans MS', cursive" font-size="16" font-weight="700">CRITICAL CHECKPOINT:</text>
+      <text x="30" y="75" fill="#991B1B" font-family="'Comic Sans MS', cursive" font-size="14" line-height="1.5">
+        <tspan x="30" dy="0">Do NOT assume 33 applies to</tspan>
+        <tspan x="30" dy="24">Tax Assistant (18&#8211;27)!</tspan>
+        <tspan x="30" dy="28">For Tax Asst: 27 + 3 = 30 Yrs only!</tspan>
+      </text>
+    </g>
+
+    <!-- Bottom Stamp: Relaxation != Automatic Eligibility -->
+    <g transform="translate(100, 390)">
+      <rect width="900" height="150" rx="12" fill="#FFFFFF" stroke="#047857" stroke-width="2.5" />
+      
+      <!-- Big Stamp -->
+      <rect x="25" y="25" width="850" height="50" rx="8" fill="#ECFDF5" />
+      <text x="450" y="58" fill="#065F46" font-family="'Comic Sans MS', 'Chalkboard SE', cursive" font-size="24" font-weight="800" text-anchor="middle">
+        &#10004; RELAXATION &#8800; AUTOMATIC ELIGIBILITY &#10004;
+      </text>
+
+      <text x="50" y="105" fill="#334155" font-family="'Courier New', monospace" font-size="13">
+        Candidate must still fulfill:
+      </text>
+      <text x="50" y="128" fill="#047857" font-family="'Courier New', monospace" font-size="13" font-weight="700">
+        1. Essential Educational Qualification (Bachelor's Degree) before cutoff date.
+      </text>
+      <text x="490" y="128" fill="#047857" font-family="'Courier New', monospace" font-size="13" font-weight="700">
+        2. Valid Category Certificate in prescribed DoPT format.
+      </text>
+    </g>
+  </g>
+</svg>
