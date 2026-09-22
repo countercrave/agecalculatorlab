@@ -371,6 +371,74 @@
       display: block;
     }
 
+    
+    /* ── Quick Navigation Jumpbar / Table of Contents ── */
+    .jumpbar {
+      position: sticky;
+      top: var(--header-h, 72px);
+      z-index: 40;
+      background: #ffffff;
+      border-top: 1px solid var(--aclx-line);
+      border-bottom: 1px solid var(--aclx-line);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: var(--brand-line, #d4ebd8) transparent;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+    .jumpbar::-webkit-scrollbar {
+      height: 4px;
+    }
+    .jumpbar::-webkit-scrollbar-thumb {
+      background: var(--aclx-line);
+      border-radius: 4px;
+    }
+    .jumpbar .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      white-space: nowrap;
+      gap: 6px;
+      padding: 8px 16px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .jumpbar a {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 14px;
+      font-size: var(--t-xs, 0.8125rem);
+      font-weight: 600;
+      color: var(--aclx-ink-2);
+      text-align: center;
+      white-space: nowrap;
+      border-radius: 9999px;
+      background: var(--aclx-card);
+      border: 1px solid var(--aclx-line);
+      transition: all .15s ease;
+      flex: 0 0 auto;
+      text-decoration: none;
+    }
+    .jumpbar a:hover {
+      color: var(--brand-dark);
+      background: rgba(7, 84, 51, 0.06);
+      border-color: rgba(7, 84, 51, 0.25);
+    }
+    .jumpbar a.is-current {
+      color: #ffffff !important;
+      background: var(--brand-dark) !important;
+      border-color: var(--brand-dark) !important;
+    }
+    section[id], div[id].cgl-editorial-section {
+      scroll-margin-top: 130px;
+    }
+    #calculator {
+      scroll-margin-top: 130px;
+    }
+    .cgl-calc-section {
+      padding-top: 32px;
+    }
+
     /* ── Calculator Card ── */
     .cgl-calc-card {
       position: relative;
@@ -1373,9 +1441,31 @@
         <div class="cgl-hero-media-card">
           <img src="/assets/tools/ssc-cgl/career-eligibility-control-panel.svg" alt="SSC CGL Career Eligibility Control Panel" width="1200" height="675" fetchpriority="high">
         </div>
+      </div>
+    </section>
 
-        <!-- Functional Calculator Card -->
-        <section class="cgl-calc-card" id="calculator">
+    <!-- Quick Navigation Jumpbar / Table of Contents -->
+    <div class="jumpbar" id="cglJumpbar" aria-label="Table of contents navigation">
+      <div class="container">
+        <a href="#calculator" class="is-current">Calculator</a>
+        <a href="#how-calculated">Crucial Date Rule</a>
+        <a href="#age-limits">Age Limits &amp; Bands</a>
+        <a href="#age-relaxation">Category Relaxations</a>
+        <a href="#study-worksheet">Verification Worksheet</a>
+        <a href="#post-directory">Post Directory</a>
+        <a href="#scenarios">Candidate Scenarios</a>
+        <a href="#accepted-dob">Accepted DOB Docs</a>
+        <a href="#mistakes">Common Mistakes</a>
+        <a href="#august-edge-case">August 1 Edge Case</a>
+        <a href="#comparison">Calculator Comparison</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <!-- Section: Functional Calculator Card -->
+    <section class="cgl-calc-section" id="calculator">
+      <div class="container">
+        <div class="cgl-calc-card">
           <div class="cgl-calc-card-head">
             <div class="cgl-calc-kicker-row">
               <span class="cgl-calc-kicker">Eligibility Engine · 2026 Cycle</span>
@@ -1735,8 +1825,7 @@
 
             </div>
           </div>
-        </section>
-
+        </div>
       </div>
     </section>
 
@@ -2970,6 +3059,31 @@
     // Initialize on DOM ready
     document.addEventListener('DOMContentLoaded', function() {
       initDobSelects();
+      // Init ScrollSpy
+
+    // Table of Contents / Jumpbar ScrollSpy
+    var jumpLinks = document.querySelectorAll('#cglJumpbar a');
+    var trackedSections = [];
+    jumpLinks.forEach(function(link) {
+      var targetId = link.getAttribute('href').replace('#', '');
+      var el = document.getElementById(targetId);
+      if (el) trackedSections.push({ link: link, el: el });
+    });
+
+    window.addEventListener('scroll', function() {
+      var scrollPos = window.scrollY + 150;
+      var current = null;
+      for (var i = 0; i < trackedSections.length; i++) {
+        if (trackedSections[i].el.offsetTop <= scrollPos) {
+          current = trackedSections[i].link;
+        }
+      }
+      if (current) {
+        jumpLinks.forEach(function(l) { l.classList.remove('is-current'); });
+        current.classList.add('is-current');
+      }
+    }, { passive: true });
+
     });
   </script>
 </body>
