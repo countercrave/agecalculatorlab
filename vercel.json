@@ -25,6 +25,16 @@
       "destination": "/tools/ssc-cgl-age-calculator/",
       "permanent": true
     },
+    {
+      "source": "/ssc-cgl-age-limit",
+      "destination": "/articles/ssc-cgl-age-limit/",
+      "permanent": true
+    },
+    {
+      "source": "/ssc-cgl-age-limit/",
+      "destination": "/articles/ssc-cgl-age-limit/",
+      "permanent": true
+    },
 
     {
       "source": "/tools/age-calculator/",

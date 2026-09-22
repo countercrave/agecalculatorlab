@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" style="background:#f4efe6; font-family:'Inter',system-ui,sans-serif;">
+  <defs>
+    <filter id="paperShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#075433" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <!-- Desk Surface -->
+  <rect width="800" height="600" fill="#eae3d2"/>
+  
+  <!-- Desk elements / subtle wood lines -->
+  <line x1="0" y1="120" x2="800" y2="120" stroke="#dfd6c0" stroke-width="1"/>
+  <line x1="0" y1="360" x2="800" y2="360" stroke="#dfd6c0" stroke-width="1"/>
+
+  <!-- Main Official Dossier Sheet -->
+  <g transform="translate(80, 50)" filter="url(#paperShadow)">
+    <rect width="640" height="500" rx="8" fill="#ffffff"/>
+    <rect width="640" height="500" rx="8" fill="url(#dotGrid)"/>
+
+    <!-- Document Header -->
+    <rect x="0" y="0" width="640" height="8" rx="4" fill="#075433"/>
+    
+    <text x="40" y="50" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#0b241c">STAFF SELECTION COMMISSION</text>
+    <text x="40" y="72" font-size="12" font-weight="600" fill="#64748b" letter-spacing="1">COMBINED GRADUATE LEVEL EXAMINATION 2026</text>
+    <line x1="40" y1="90" x2="600" y2="90" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- Notice Paragraph Abstract -->
+    <text x="40" y="125" font-size="13" font-weight="700" fill="#1e293b">Clause 5.1 — Reckoning of Crucial Date for Age Criteria:</text>
+    <rect x="40" y="140" width="560" height="64" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="55" y="165" font-size="12" fill="#475569">"The crucial date for age reckoning is fixed in accordance with the provisions</text>
+    <text x="55" y="185" font-size="12" fill="#475569">of DoP&amp;T OM No. 14017/70/87-Estt.(RR) dated 14-07-1988 for all post cadres."</text>
+
+    <!-- Prominent Date Stamp Box -->
+    <g transform="translate(140, 235)">
+      <!-- Stamp Outer Ring -->
+      <rect x="0" y="0" width="360" height="120" rx="12" fill="#fff7ed" stroke="#c2410c" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="6" y="6" width="348" height="108" rx="8" fill="none" stroke="#ea580c" stroke-width="1"/>
+      
+      <text x="180" y="32" font-size="11" font-weight="800" fill="#c2410c" text-anchor="middle" letter-spacing="2">OFFICIAL CRUCIAL DATE</text>
+      <text x="180" y="78" font-family="'Fraunces', Georgia, serif" font-size="36" font-weight="800" fill="#9a3412" text-anchor="middle" letter-spacing="1">01 AUG 2026</text>
+      <text x="180" y="102" font-size="11" font-weight="600" fill="#ea580c" text-anchor="middle">AGE IS FROZEN ON THIS SINGLE CALENDAR DATE</text>
+    </g>
+
+    <!-- Teacher / Candidate Handwritten Annotation -->
+    <g transform="translate(110, 390) rotate(-3)">
+      <path d="M 0 0 Q 30 -20 70 -5" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="3,3"/>
+      <polygon points="70,-5 60,-12 62,-2" fill="#1d4ed8"/>
+      <text x="75" y="15" font-family="'Caveat', cursive, 'Brush Script MT', sans-serif" font-size="24" font-weight="700" fill="#1d4ed8">
+        ★ Age on today's date DOES NOT matter!
+      </text>
+      <text x="75" y="42" font-family="'Caveat', cursive, 'Brush Script MT', sans-serif" font-size="20" font-weight="600" fill="#1e40af">
+        Only your completed years on 01-08-2026 count.
+      </text>
+    </g>
+
+    <!-- Verified Badge -->
+    <g transform="translate(480, 420)">
+      <circle cx="35" cy="35" r="32" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+      <path d="M 23 35 L 31 43 L 47 27" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="35" y="58" font-size="7" font-weight="800" fill="#047857" text-anchor="middle" letter-spacing="0.5">VERIFIED</text>
+    </g>
+  </g>
+</svg>

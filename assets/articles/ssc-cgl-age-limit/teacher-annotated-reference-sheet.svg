@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" style="background:#f1ece1; font-family:'Inter',system-ui,sans-serif;">
+  <defs>
+    <filter id="deskShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="10" stdDeviation="14" flood-color="#1e293b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Desk Surface -->
+  <rect width="800" height="600" fill="#e8dfce"/>
+
+  <!-- Ruler on desk (top-right decorative) -->
+  <g transform="translate(680, 20) rotate(15)">
+    <rect width="30" height="340" rx="3" fill="#fbbf24" stroke="#d97706" stroke-width="1"/>
+    <line x1="0" y1="40" x2="12" y2="40" stroke="#78350f" stroke-width="1.5"/>
+    <line x1="0" y1="80" x2="18" y2="80" stroke="#78350f" stroke-width="1.5"/>
+    <line x1="0" y1="120" x2="12" y2="120" stroke="#78350f" stroke-width="1.5"/>
+    <line x1="0" y1="160" x2="18" y2="160" stroke="#78350f" stroke-width="1.5"/>
+    <line x1="0" y1="200" x2="12" y2="200" stroke="#78350f" stroke-width="1.5"/>
+    <line x1="0" y1="240" x2="18" y2="240" stroke="#78350f" stroke-width="1.5"/>
+  </g>
+
+  <!-- Pen on Desk (left decorative) -->
+  <g transform="translate(35, 120) rotate(-8)">
+    <rect x="0" y="0" width="16" height="320" rx="4" fill="#0f172a"/>
+    <rect x="2" y="30" width="12" height="60" rx="2" fill="#3b82f6"/>
+    <polygon points="0,320 16,320 8,350" fill="#94a3b8"/>
+    <polygon points="6,340 10,340 8,350" fill="#0284c7"/>
+  </g>
+
+  <!-- Main Worksheet Sheet -->
+  <g transform="translate(100, 45)" filter="url(#deskShadow)">
+    <rect width="600" height="510" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+    
+    <!-- Red Margin line -->
+    <line x1="60" y1="0" x2="60" y2="510" stroke="#fca5a5" stroke-width="1.5"/>
+
+    <!-- Heading -->
+    <text x="80" y="48" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#0f172a">Aspirant's Rulebook: SSC CGL Age Limits</text>
+    <text x="80" y="70" font-size="12" font-weight="600" fill="#64748b">Batch 2026 Core Reference Worksheet</text>
+    <line x1="80" y1="85" x2="560" y2="85" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- Rule 1 Callout Box with Teacher Highlighter -->
+    <rect x="80" y="105" width="480" height="85" rx="6" fill="#fef9c3" stroke="#facc15" stroke-width="1.5"/>
+    <!-- Simulated Yellow Highlighter Over Text -->
+    <rect x="95" y="118" width="230" height="22" fill="#fde047" fill-opacity="0.6"/>
+    <text x="100" y="134" font-size="14" font-weight="800" fill="#713f12">Golden Rule #1: Check POST First</text>
+    <text x="100" y="156" font-size="12" fill="#854d0e">There is NO single universal maximum age for SSC CGL.</text>
+    <text x="100" y="174" font-size="12" font-weight="600" fill="#854d0e">Your eligibility changes dynamically depending on the department!</text>
+
+    <!-- Table of Bands -->
+    <g transform="translate(80, 210)">
+      <rect width="480" height="150" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+      <!-- Header -->
+      <rect width="480" height="30" rx="6" fill="#f1f5f9"/>
+      <text x="20" y="20" font-size="11" font-weight="700" fill="#475569">POST CATEGORY</text>
+      <text x="240" y="20" font-size="11" font-weight="700" fill="#475569">AGE BAND</text>
+      <text x="370" y="20" font-size="11" font-weight="700" fill="#475569">MAX AGE (UR)</text>
+      
+      <!-- Row 1 -->
+      <line x1="0" y1="60" x2="480" y2="60" stroke="#e2e8f0"/>
+      <text x="20" y="50" font-size="12" fill="#1e293b">Auditor / Accountant / Tax Asst</text>
+      <text x="240" y="50" font-size="12" font-weight="700" fill="#059669">18 – 27 Yrs</text>
+      <text x="370" y="50" font-size="12" font-weight="800" fill="#059669">27 Years</text>
+
+      <!-- Row 2 -->
+      <line x1="0" y1="90" x2="480" y2="90" stroke="#e2e8f0"/>
+      <text x="20" y="80" font-size="12" fill="#1e293b">ASO (CSS, MEA, IB, Railway)</text>
+      <text x="240" y="80" font-size="12" font-weight="700" fill="#2563eb">20 – 30 Yrs</text>
+      <text x="370" y="80" font-size="12" font-weight="800" fill="#2563eb">30 Years</text>
+
+      <!-- Row 3 -->
+      <line x1="0" y1="120" x2="480" y2="120" stroke="#e2e8f0"/>
+      <text x="20" y="110" font-size="12" fill="#1e293b">Inspectors (Excise, IT, PO)</text>
+      <text x="240" y="110" font-size="12" font-weight="700" fill="#d97706">18 – 30 Yrs</text>
+      <text x="370" y="110" font-size="12" font-weight="800" fill="#d97706">30 Years</text>
+
+      <!-- Row 4 -->
+      <text x="20" y="140" font-size="12" fill="#1e293b">JSO (Statistics Cadre only)</text>
+      <text x="240" y="140" font-size="12" font-weight="700" fill="#db2777">18 – 32 Yrs</text>
+      <text x="370" y="140" font-size="12" font-weight="800" fill="#db2777">32 Years</text>
+    </g>
+
+    <!-- Handwritten Blue Ink Teacher Callouts -->
+    <g transform="translate(100, 395)">
+      <!-- Arrow pointing to JSO row -->
+      <path d="M 370 20 Q 390 -10 395 -30" fill="none" stroke="#2563eb" stroke-width="2"/>
+      <polygon points="395,-30 388,-20 399,-22" fill="#2563eb"/>
+      
+      <!-- Blue handwritten note -->
+      <text x="10" y="25" font-family="'Caveat', cursive, 'Brush Script MT', sans-serif" font-size="22" font-weight="700" fill="#1d4ed8">
+        Check POST first
+      </text>
+      <text x="60" y="52" font-family="'Caveat', cursive, 'Brush Script MT', sans-serif" font-size="26" font-weight="800" fill="#dc2626">
+        ↓ Then check AGE!
+      </text>
+      <text x="210" y="45" font-family="'Caveat', cursive, 'Brush Script MT', sans-serif" font-size="20" font-weight="600" fill="#b91c1c">
+        (Don't assume every post uses 32 years!)
+      </text>
+    </g>
+
+    <!-- Footer Stamp -->
+    <g transform="translate(80, 465)">
+      <line x1="0" y1="0" x2="480" y2="0" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="0" y="24" font-size="11" font-weight="600" fill="#94a3b8">Crucial Cutoff Date: 01 August 2026 | Age Calculator Lab Editorial Research</text>
+    </g>
+  </g>
+</svg>
