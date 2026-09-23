@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1728" />
+      <stop offset="50%" stop-color="#13243d" />
+      <stop offset="100%" stop-color="#0a121e" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3250" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#142338" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="emerald-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="glow-gold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg-grad)" />
+
+  <!-- Subtle Grid Pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="675" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="500" y1="0" x2="500" y2="675" />
+    <line x1="700" y1="0" x2="700" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+    <line x1="1100" y1="0" x2="1100" y2="675" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="360" x2="1200" y2="360" />
+    <line x1="0" y1="480" x2="1200" y2="480" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+  </g>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.3" stroke-width="1" />
+    <text x="110" y="18" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" text-anchor="middle">CAREER TENURE JOURNEY</text>
+    <text x="0" y="65" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">Years of Service &#8212; Career Milestone Architecture</text>
+    <text x="0" y="94" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">Exact calendar decomposition from official start date through long-service milestones</text>
+  </g>
+
+  <!-- Main Horizontal Timeline Track -->
+  <g transform="translate(80, 310)">
+    <!-- Base track line -->
+    <line x1="40" y1="0" x2="1000" y2="0" stroke="#334155" stroke-width="8" stroke-linecap="round" />
+    <!-- Active track line (completed service to 8.5 Years) -->
+    <line x1="40" y1="0" x2="680" y2="0" stroke="url(#emerald-grad)" stroke-width="8" stroke-linecap="round" />
+    <!-- Future track line (dashed) -->
+    <line x1="680" y1="0" x2="1000" y2="0" stroke="#38bdf8" stroke-width="6" stroke-dasharray="8 8" stroke-linecap="round" />
+
+    <!-- Node 0: START DATE (Year 0) -->
+    <g transform="translate(40, 0)">
+      <circle cx="0" cy="0" r="16" fill="#10b981" stroke="#ffffff" stroke-width="4" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="6" fill="#ffffff" />
+      <!-- Top Card -->
+      <g transform="translate(-70, -115)">
+        <rect width="140" height="85" rx="10" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)" />
+        <text x="70" y="24" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle">OFFICIAL START</text>
+        <text x="70" y="46" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle">15 Mar 2018</text>
+        <text x="70" y="66" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">Day 0 &#8226; Onboarding</text>
+      </g>
+      <text x="0" y="38" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Joining</text>
+    </g>
+
+    <!-- Node 1: 1 YEAR -->
+    <g transform="translate(180, 0)">
+      <circle cx="0" cy="0" r="12" fill="#10b981" stroke="#ffffff" stroke-width="3" filter="url(#shadow)" />
+      <text x="0" y="36" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">1 Year</text>
+      <text x="0" y="52" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">2019</text>
+      <g transform="translate(-45, -75)">
+        <rect width="90" height="48" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="45" y="20" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" text-anchor="middle">1st Anniv.</text>
+        <text x="45" y="36" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">&#10003; Complete</text>
+      </g>
+    </g>
+
+    <!-- Node 2: 3 YEARS -->
+    <g transform="translate(320, 0)">
+      <circle cx="0" cy="0" r="12" fill="#10b981" stroke="#ffffff" stroke-width="3" filter="url(#shadow)" />
+      <text x="0" y="36" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">3 Years</text>
+      <text x="0" y="52" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">2021</text>
+      <g transform="translate(-50, -75)">
+        <rect width="100" height="48" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="50" y="20" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Core Tenure</text>
+        <text x="50" y="36" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">&#10003; Complete</text>
+      </g>
+    </g>
+
+    <!-- Node 3: 5 YEARS -->
+    <g transform="translate(480, 0)">
+      <circle cx="0" cy="0" r="15" fill="#10b981" stroke="#ffffff" stroke-width="3.5" filter="url(#shadow)" />
+      <text x="0" y="38" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">5 Years</text>
+      <text x="0" y="54" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">2023</text>
+      <g transform="translate(-60, -95)">
+        <rect width="120" height="66" rx="8" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.5" filter="url(#shadow)" />
+        <text x="60" y="22" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">MAJOR MILESTONE</text>
+        <text x="60" y="40" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Vesting / Gratuity</text>
+        <text x="60" y="56" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">&#10003; 15 Mar 2023</text>
+      </g>
+    </g>
+
+    <!-- Node 4: CURRENT STATUS (TODAY - 8Y 6M 8D) -->
+    <g transform="translate(680, 0)">
+      <!-- Animated ripple effect ring -->
+      <circle cx="0" cy="0" r="28" fill="#fbbf24" fill-opacity="0.2" />
+      <circle cx="0" cy="0" r="18" fill="url(#gold-grad)" stroke="#ffffff" stroke-width="4" filter="url(#glow-gold)" />
+      <circle cx="0" cy="0" r="7" fill="#ffffff" />
+      
+      <!-- Prominent "YOU ARE HERE" Banner -->
+      <g transform="translate(-95, -160)">
+        <rect width="190" height="125" rx="12" fill="#0f2038" stroke="#fbbf24" stroke-width="2" filter="url(#shadow)" />
+        <rect x="15" y="12" width="160" height="22" rx="6" fill="#fbbf24" fill-opacity="0.15" />
+        <text x="95" y="27" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" letter-spacing="1" text-anchor="middle">&#9679; CURRENT POSITION</text>
+        <text x="95" y="56" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" text-anchor="middle">8Y 6M 8D</text>
+        <text x="95" y="78" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">3,114 Total Days</text>
+        <line x1="20" y1="90" x2="170" y2="90" stroke="#1e3250" stroke-width="1" />
+        <text x="95" y="108" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">As of 23 Sep 2026</text>
+      </g>
+      <text x="0" y="42" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" text-anchor="middle">&#9650; YOU ARE HERE</text>
+    </g>
+
+    <!-- Node 5: 10 YEARS (Upcoming Milestone) -->
+    <g transform="translate(840, 0)">
+      <circle cx="0" cy="0" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4 2" />
+      <text x="0" y="38" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">10 Years</text>
+      <text x="0" y="54" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">2028</text>
+      <g transform="translate(-65, -95)">
+        <rect width="130" height="66" rx="8" fill="#0f1f33" stroke="#0284c7" stroke-width="1" stroke-dasharray="4 2" />
+        <text x="65" y="22" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">NEXT BIG TARGET</text>
+        <text x="65" y="40" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">15 Mar 2028</text>
+        <text x="65" y="56" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" text-anchor="middle">538 days away</text>
+      </g>
+    </g>
+
+    <!-- Node 6: 15 / 20 YEARS (Long Service) -->
+    <g transform="translate(1000, 0)">
+      <circle cx="0" cy="0" r="12" fill="#1e293b" stroke="#64748b" stroke-width="2.5" />
+      <text x="0" y="36" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">20 Years</text>
+      <text x="0" y="52" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">2038</text>
+      <g transform="translate(-50, -75)">
+        <rect width="100" height="48" rx="8" fill="#142032" stroke="#334155" stroke-width="1" />
+        <text x="50" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Long Service</text>
+        <text x="50" y="36" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">Sabbatical / Honor</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Metric Summary Cards -->
+  <g transform="translate(60, 520)">
+    <!-- Card 1: Completed Years -->
+    <rect x="0" y="0" width="250" height="105" rx="10" fill="#13233a" stroke="#1e3a5f" stroke-width="1.5" />
+    <text x="24" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">CALENDAR TENURE</text>
+    <text x="24" y="65" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">8 Years</text>
+    <text x="24" y="88" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">6 Months &#8226; 8 Days</text>
+
+    <!-- Card 2: Decimal Years -->
+    <rect x="275" y="0" width="250" height="105" rx="10" fill="#13233a" stroke="#1e3a5f" stroke-width="1.5" />
+    <text x="299" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">DECIMAL SERVICE</text>
+    <text x="299" y="65" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">8.53 Yrs</text>
+    <text x="299" y="88" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">102.3 Decimal Months</text>
+
+    <!-- Card 3: Total Days -->
+    <rect x="550" y="0" width="250" height="105" rx="10" fill="#13233a" stroke="#1e3a5f" stroke-width="1.5" />
+    <text x="574" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">TOTAL ELAPSED DAYS</text>
+    <text x="574" y="65" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">3,114</text>
+    <text x="574" y="88" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">444 Weeks + 6 Days</text>
+
+    <!-- Card 4: Next Work Anniversary -->
+    <rect x="825" y="0" width="255" height="105" rx="10" fill="#13233a" stroke="#1e3a5f" stroke-width="1.5" />
+    <text x="849" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">NEXT ANNIVERSARY</text>
+    <text x="849" y="65" fill="#f43f5e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800">15 Mar 2027</text>
+    <text x="849" y="88" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">&#127881; 9th Year &#8226; 173 Days Away</text>
+  </g>
+</svg>
