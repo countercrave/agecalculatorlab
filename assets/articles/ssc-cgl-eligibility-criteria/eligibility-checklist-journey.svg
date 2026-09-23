@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#042F2A; font-family:'Inter', system-ui, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="50%" stop-color="#07433C"/>
+      <stop offset="100%" stop-color="#021C19"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D443D"/>
+      <stop offset="100%" stop-color="#08332E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.07" stroke="#FFFFFF" stroke-width="1">
+    <path d="M0 75 H1200 M0 150 H1200 M0 225 H1200 M0 300 H1200 M0 375 H1200 M0 450 H1200 M0 525 H1200 M0 600 H1200" />
+    <path d="M100 0 V675 M200 0 V675 M300 0 V675 M400 0 V675 M500 0 V675 M600 0 V675 M700 0 V675 M800 0 V675 M900 0 V675 M1000 0 V675 M1100 0 V675" />
+  </g>
+
+  <!-- Header Banner -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="230" height="28" rx="6" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.2"/>
+    <text x="12" y="19" fill="#34D399" font-size="12" font-weight="700" letter-spacing="1.2">OFFICIAL RECRUITMENT AUDIT</text>
+    <text x="0" y="68" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" letter-spacing="-0.5">The SSC CGL 2026 Eligibility Journey</text>
+    <text x="0" y="96" fill="#A7F3D0" font-size="15" font-weight="400">Six statutory checkpoints an aspirant must clear to achieve final examination eligibility</text>
+  </g>
+
+  <!-- Journey Pathway Line -->
+  <path d="M 120 330 H 1080" stroke="#10B981" stroke-width="4" stroke-dasharray="8 6" opacity="0.4"/>
+  <path d="M 120 330 H 940" stroke="url(#emeraldGrad)" stroke-width="4"/>
+
+  <!-- Checkpoint 1: AGE -->
+  <g transform="translate(90, 210)" filter="url(#shadow)">
+    <rect width="160" height="230" rx="14" fill="url(#cardGrad)" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="80" cy="42" r="22" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="2"/>
+    <text x="80" y="48" fill="#10B981" font-size="16" font-weight="800" text-anchor="middle">01</text>
+    <text x="80" y="92" fill="#FFFFFF" font-size="17" font-weight="700" text-anchor="middle">Age Limit</text>
+    <text x="80" y="114" fill="#A7F3D0" font-size="12" font-weight="600" text-anchor="middle">18&#8211;27 / 20&#8211;30 / 18&#8211;32</text>
+    <line x1="20" y1="128" x2="140" y2="128" stroke="#10B981" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="80" y="152" fill="#D1FAE5" font-size="11.5" text-anchor="middle">Reckoned strictly as of</text>
+    <text x="80" y="170" fill="#FCD34D" font-size="13" font-weight="700" text-anchor="middle">01-Aug-2026</text>
+    <rect x="25" y="188" width="110" height="24" rx="12" fill="#065F46"/>
+    <text x="80" y="204" fill="#34D399" font-size="11" font-weight="700" text-anchor="middle">&#10004; CHECKED</text>
+  </g>
+
+  <!-- Checkpoint 2: EDUCATION -->
+  <g transform="translate(270, 210)" filter="url(#shadow)">
+    <rect width="160" height="230" rx="14" fill="url(#cardGrad)" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="80" cy="42" r="22" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="2"/>
+    <text x="80" y="48" fill="#10B981" font-size="16" font-weight="800" text-anchor="middle">02</text>
+    <text x="80" y="92" fill="#FFFFFF" font-size="17" font-weight="700" text-anchor="middle">Graduation</text>
+    <text x="80" y="114" fill="#A7F3D0" font-size="12" font-weight="600" text-anchor="middle">Bachelor&#8217;s Degree</text>
+    <line x1="20" y1="128" x2="140" y2="128" stroke="#10B981" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="80" y="152" fill="#D1FAE5" font-size="11.5" text-anchor="middle">Result declared on or before</text>
+    <text x="80" y="170" fill="#FCD34D" font-size="13" font-weight="700" text-anchor="middle">01-Aug-2026</text>
+    <rect x="25" y="188" width="110" height="24" rx="12" fill="#065F46"/>
+    <text x="80" y="204" fill="#34D399" font-size="11" font-weight="700" text-anchor="middle">&#10004; CHECKED</text>
+  </g>
+
+  <!-- Checkpoint 3: NATIONALITY -->
+  <g transform="translate(450, 210)" filter="url(#shadow)">
+    <rect width="160" height="230" rx="14" fill="url(#cardGrad)" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="80" cy="42" r="22" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="2"/>
+    <text x="80" y="48" fill="#10B981" font-size="16" font-weight="800" text-anchor="middle">03</text>
+    <text x="80" y="92" fill="#FFFFFF" font-size="17" font-weight="700" text-anchor="middle">Nationality</text>
+    <text x="80" y="114" fill="#A7F3D0" font-size="12" font-weight="600" text-anchor="middle">Citizen of India</text>
+    <line x1="20" y1="128" x2="140" y2="128" stroke="#10B981" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="80" y="152" fill="#D1FAE5" font-size="11.5" text-anchor="middle">Or Subject of Nepal /</text>
+    <text x="80" y="170" fill="#FCD34D" font-size="12" font-weight="700" text-anchor="middle">Bhutan / GoI Cert</text>
+    <rect x="25" y="188" width="110" height="24" rx="12" fill="#065F46"/>
+    <text x="80" y="204" fill="#34D399" font-size="11" font-weight="700" text-anchor="middle">&#10004; CHECKED</text>
+  </g>
+
+  <!-- Checkpoint 4: POST REQUIREMENTS -->
+  <g transform="translate(630, 210)" filter="url(#shadow)">
+    <rect width="160" height="230" rx="14" fill="url(#cardGrad)" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="80" cy="42" r="22" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="2"/>
+    <text x="80" y="48" fill="#10B981" font-size="16" font-weight="800" text-anchor="middle">04</text>
+    <text x="80" y="92" fill="#FFFFFF" font-size="17" font-weight="700" text-anchor="middle">Post Criteria</text>
+    <text x="80" y="114" fill="#A7F3D0" font-size="12" font-weight="600" text-anchor="middle">Cadre Specifics</text>
+    <line x1="20" y1="128" x2="140" y2="128" stroke="#10B981" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="80" y="152" fill="#D1FAE5" font-size="11.5" text-anchor="middle">60% Math (JSO) /</text>
+    <text x="80" y="170" fill="#FCD34D" font-size="12" font-weight="700" text-anchor="middle">Physical (CBIC/CBI)</text>
+    <rect x="25" y="188" width="110" height="24" rx="12" fill="#065F46"/>
+    <text x="80" y="204" fill="#34D399" font-size="11" font-weight="700" text-anchor="middle">&#10004; CHECKED</text>
+  </g>
+
+  <!-- Checkpoint 5: DOCUMENTS -->
+  <g transform="translate(810, 210)" filter="url(#shadow)">
+    <rect width="160" height="230" rx="14" fill="url(#cardGrad)" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="80" cy="42" r="22" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="2"/>
+    <text x="80" y="48" fill="#F59E0B" font-size="16" font-weight="800" text-anchor="middle">05</text>
+    <text x="80" y="92" fill="#FFFFFF" font-size="17" font-weight="700" text-anchor="middle">Documents</text>
+    <text x="80" y="114" fill="#FCD34D" font-size="12" font-weight="600" text-anchor="middle">Original Proofs</text>
+    <line x1="20" y1="128" x2="140" y2="128" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="80" y="152" fill="#FEF3C7" font-size="11.5" text-anchor="middle">10th Marksheet (DOB) +</text>
+    <text x="80" y="170" fill="#FCD34D" font-size="12" font-weight="700" text-anchor="middle">Central Caste Cert</text>
+    <rect x="25" y="188" width="110" height="24" rx="12" fill="#78350F"/>
+    <text x="80" y="204" fill="#FDE68A" font-size="11" font-weight="700" text-anchor="middle">&#9888; AUDIT REQD</text>
+  </g>
+
+  <!-- Checkpoint 6: FINAL ELIGIBILITY -->
+  <g transform="translate(990, 200)" filter="url(#shadow)">
+    <rect width="140" height="250" rx="16" fill="url(#emeraldGrad)" stroke="#34D399" stroke-width="2"/>
+    <circle cx="70" cy="48" r="26" fill="#FFFFFF" fill-opacity="0.2"/>
+    <text x="70" y="56" fill="#FFFFFF" font-size="24" font-weight="900" text-anchor="middle">&#10004;</text>
+    <text x="70" y="104" fill="#FFFFFF" font-size="18" font-weight="800" text-anchor="middle">FINAL</text>
+    <text x="70" y="126" fill="#FFFFFF" font-size="18" font-weight="800" text-anchor="middle">STATUS</text>
+    <rect x="15" y="142" width="110" height="30" rx="6" fill="#FFFFFF"/>
+    <text x="70" y="162" fill="#065F46" font-size="13" font-weight="800" text-anchor="middle">ELIGIBLE</text>
+    <text x="70" y="202" fill="#ECFDF5" font-size="11" text-anchor="middle">Ready to Submit</text>
+    <text x="70" y="218" fill="#ECFDF5" font-size="11" text-anchor="middle">SSC CGL Form</text>
+  </g>
+
+  <!-- Bottom Clarification Footnote -->
+  <g transform="translate(60, 600)">
+    <text x="0" y="18" fill="#6EE7B7" font-size="13" font-weight="600">Statutory Principle:</text>
+    <text x="135" y="18" fill="#A7F3D0" font-size="13">Meeting age or graduation alone does not guarantee eligibility. Every condition across the sequence must be fulfilled simultaneously on the crucial date.</text>
+  </g>
+</svg>

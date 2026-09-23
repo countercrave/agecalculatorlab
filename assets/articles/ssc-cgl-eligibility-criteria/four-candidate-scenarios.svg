@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#03231F; font-family:'Inter', system-ui, sans-serif;">
+  <defs>
+    <linearGradient id="scenCardPass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#083831"/>
+      <stop offset="100%" stop-color="#052621"/>
+    </linearGradient>
+    <linearGradient id="scenCardFail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B1212"/>
+      <stop offset="100%" stop-color="#240B0B"/>
+    </linearGradient>
+    <linearGradient id="scenCardWarn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A2805"/>
+      <stop offset="100%" stop-color="#221803"/>
+    </linearGradient>
+    <filter id="scenShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="#03231F"/>
+
+  <!-- Section Header -->
+  <g transform="translate(60, 40)">
+    <text x="0" y="20" fill="#34D399" font-size="12" font-weight="700" letter-spacing="1">PRACTICAL ASPIRANT CASE STUDIES</text>
+    <text x="0" y="54" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="700">Four Real-World SSC CGL Eligibility Scenarios</text>
+    <text x="0" y="78" fill="#A7F3D0" font-size="14">Demonstrating how different combinations of age, graduation date, and cadre rules dictate final eligibility</text>
+  </g>
+
+  <!-- 4 Candidate Cards (Row of 4) -->
+
+  <!-- CANDIDATE A: Direct Standard Pass -->
+  <g transform="translate(60, 140)" filter="url(#scenShadow)">
+    <rect width="250" height="460" rx="14" fill="url(#scenCardPass)" stroke="#10B981" stroke-width="1.5"/>
+    <!-- Avatar / Icon -->
+    <circle cx="125" cy="50" r="28" fill="#10B981" fill-opacity="0.2"/>
+    <text x="125" y="58" fill="#34D399" font-size="22" font-weight="800" text-anchor="middle">&#128104;&#8205;&#127891;</text>
+    <text x="125" y="104" fill="#FFFFFF" font-size="17" font-weight="800" text-anchor="middle">Candidate A</text>
+    <text x="125" y="122" fill="#A7F3D0" font-size="11.5" text-anchor="middle">B.Com Graduate (2023)</text>
+    
+    <rect x="20" y="136" width="210" height="1" fill="#10B981" opacity="0.3"/>
+    
+    <!-- Specs -->
+    <text x="24" y="160" fill="#D1FAE5" font-size="11.5">Age on 01-Aug-2026:</text>
+    <text x="24" y="178" fill="#FFFFFF" font-size="13.5" font-weight="700">24 Years, 2 Months</text>
+    
+    <text x="24" y="206" fill="#D1FAE5" font-size="11.5">Category:</text>
+    <text x="24" y="224" fill="#FFFFFF" font-size="13.5" font-weight="700">Unreserved (UR)</text>
+    
+    <text x="24" y="252" fill="#D1FAE5" font-size="11.5">Target Cadre:</text>
+    <text x="24" y="270" fill="#FFFFFF" font-size="13.5" font-weight="700">Excise Inspector (18&#8211;30)</text>
+
+    <text x="24" y="298" fill="#D1FAE5" font-size="11.5">Degree Status:</text>
+    <text x="24" y="316" fill="#34D399" font-size="13" font-weight="700">Completed &amp; Awarded</text>
+
+    <!-- Verdict Box -->
+    <rect x="20" y="350" width="210" height="85" rx="8" fill="#065F46" stroke="#34D399" stroke-width="1.2"/>
+    <text x="125" y="375" fill="#34D399" font-size="13" font-weight="800" text-anchor="middle">&#10004; FULLY ELIGIBLE</text>
+    <text x="125" y="398" fill="#ECFDF5" font-size="11" text-anchor="middle">Meets age, degree, and</text>
+    <text x="125" y="415" fill="#ECFDF5" font-size="11" text-anchor="middle">nationality requirements.</text>
+  </g>
+
+  <!-- CANDIDATE B: Age Relaxation Path -->
+  <g transform="translate(335, 140)" filter="url(#scenShadow)">
+    <rect width="250" height="460" rx="14" fill="url(#scenCardPass)" stroke="#3B82F6" stroke-width="1.5"/>
+    <circle cx="125" cy="50" r="28" fill="#3B82F6" fill-opacity="0.2"/>
+    <text x="125" y="58" fill="#60A5FA" font-size="22" font-weight="800" text-anchor="middle">&#128105;&#8205;&#127891;</text>
+    <text x="125" y="104" fill="#FFFFFF" font-size="17" font-weight="800" text-anchor="middle">Candidate B</text>
+    <text x="125" y="122" fill="#BFDBFE" font-size="11.5" text-anchor="middle">B.A. Graduate (2020)</text>
+    
+    <rect x="20" y="136" width="210" height="1" fill="#3B82F6" opacity="0.3"/>
+    
+    <text x="24" y="160" fill="#DBEAFE" font-size="11.5">Age on 01-Aug-2026:</text>
+    <text x="24" y="178" fill="#FFFFFF" font-size="13.5" font-weight="700">31 Years, 6 Months</text>
+    
+    <text x="24" y="206" fill="#DBEAFE" font-size="11.5">Category:</text>
+    <text x="24" y="224" fill="#FCD34D" font-size="13.5" font-weight="700">OBC (Non-Creamy Layer)</text>
+    
+    <text x="24" y="252" fill="#DBEAFE" font-size="11.5">Target Cadre:</text>
+    <text x="24" y="270" fill="#FFFFFF" font-size="13.5" font-weight="700">Income Tax Insp (18&#8211;30)</text>
+
+    <text x="24" y="298" fill="#DBEAFE" font-size="11.5">Relaxed Limit:</text>
+    <text x="24" y="316" fill="#60A5FA" font-size="13" font-weight="700">30 + 3 = 33 Years Max</text>
+
+    <!-- Verdict Box -->
+    <rect x="20" y="350" width="210" height="85" rx="8" fill="#1E3A8A" stroke="#60A5FA" stroke-width="1.2"/>
+    <text x="125" y="375" fill="#93C5FD" font-size="13" font-weight="800" text-anchor="middle">&#10004; ELIGIBLE VIA OBC</text>
+    <text x="125" y="398" fill="#EFF6FF" font-size="11" text-anchor="middle">Age 31.5 &#8804; 33.0 OBC ceiling.</text>
+    <text x="125" y="415" fill="#EFF6FF" font-size="11" text-anchor="middle">Needs central OBC certificate.</text>
+  </g>
+
+  <!-- CANDIDATE C: Degree Cutoff Ineligibility -->
+  <g transform="translate(610, 140)" filter="url(#scenShadow)">
+    <rect width="250" height="460" rx="14" fill="url(#scenCardFail)" stroke="#EF4444" stroke-width="1.5"/>
+    <circle cx="125" cy="50" r="28" fill="#EF4444" fill-opacity="0.2"/>
+    <text x="125" y="58" fill="#F87171" font-size="22" font-weight="800" text-anchor="middle">&#128104;&#8205;&#128187;</text>
+    <text x="125" y="104" fill="#FFFFFF" font-size="17" font-weight="800" text-anchor="middle">Candidate C</text>
+    <text x="125" y="122" fill="#FECACA" font-size="11.5" text-anchor="middle">Final Year B.Tech Student</text>
+    
+    <rect x="20" y="136" width="210" height="1" fill="#EF4444" opacity="0.3"/>
+    
+    <text x="24" y="160" fill="#FEE2E2" font-size="11.5">Age on 01-Aug-2026:</text>
+    <text x="24" y="178" fill="#FFFFFF" font-size="13.5" font-weight="700">22 Years (Age is OK!)</text>
+    
+    <text x="24" y="206" fill="#FEE2E2" font-size="11.5">Category:</text>
+    <text x="24" y="224" fill="#FFFFFF" font-size="13.5" font-weight="700">Unreserved (UR)</text>
+    
+    <text x="24" y="252" fill="#FEE2E2" font-size="11.5">Target Cadre:</text>
+    <text x="24" y="270" fill="#FFFFFF" font-size="13.5" font-weight="700">Auditor / Tax Asst</text>
+
+    <text x="24" y="298" fill="#FEE2E2" font-size="11.5">Result Declaration:</text>
+    <text x="24" y="316" fill="#F87171" font-size="12.5" font-weight="700">September 2026 (&gt; Cutoff)</text>
+
+    <!-- Verdict Box -->
+    <rect x="20" y="350" width="210" height="85" rx="8" fill="#7F1D1D" stroke="#EF4444" stroke-width="1.2"/>
+    <text x="125" y="375" fill="#FCA5A5" font-size="13" font-weight="800" text-anchor="middle">&#10008; INELIGIBLE</text>
+    <text x="125" y="398" fill="#FEE2E2" font-size="11" text-anchor="middle">Result declared after</text>
+    <text x="125" y="415" fill="#FEE2E2" font-size="11" text-anchor="middle">01-Aug-2026 cutoff date.</text>
+  </g>
+
+  <!-- CANDIDATE D: Post-Specific Mismatch -->
+  <g transform="translate(885, 140)" filter="url(#scenShadow)">
+    <rect width="250" height="460" rx="14" fill="url(#scenCardWarn)" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="125" cy="50" r="28" fill="#F59E0B" fill-opacity="0.2"/>
+    <text x="125" y="58" fill="#FBBF24" font-size="22" font-weight="800" text-anchor="middle">&#128105;&#8205;&#9877;&#65039;</text>
+    <text x="125" y="104" fill="#FFFFFF" font-size="17" font-weight="800" text-anchor="middle">Candidate D</text>
+    <text x="125" y="122" fill="#FDE68A" font-size="11.5" text-anchor="middle">B.Sc Biology (Graduated 2022)</text>
+    
+    <rect x="20" y="136" width="210" height="1" fill="#F59E0B" opacity="0.3"/>
+    
+    <text x="24" y="160" fill="#FEF3C7" font-size="11.5">Age on 01-Aug-2026:</text>
+    <text x="24" y="178" fill="#FFFFFF" font-size="13.5" font-weight="700">27 Years (Age is OK!)</text>
+    
+    <text x="24" y="206" fill="#FEF3C7" font-size="11.5">Category:</text>
+    <text x="24" y="224" fill="#FFFFFF" font-size="13.5" font-weight="700">Unreserved (UR)</text>
+    
+    <text x="24" y="252" fill="#FEF3C7" font-size="11.5">Target Cadre:</text>
+    <text x="24" y="270" fill="#FCD34D" font-size="13.5" font-weight="700">JSO (Statistics Cadre)</text>
+
+    <text x="24" y="298" fill="#FEF3C7" font-size="11.5">Specific Qualification:</text>
+    <text x="24" y="316" fill="#F87171" font-size="12" font-weight="700">No Stats / &lt; 60% 12th Math</text>
+
+    <!-- Verdict Box -->
+    <rect x="20" y="350" width="210" height="85" rx="8" fill="#78350F" stroke="#F59E0B" stroke-width="1.2"/>
+    <text x="125" y="375" fill="#FDE68A" font-size="13" font-weight="800" text-anchor="middle">&#9888; POST MISMATCH</text>
+    <text x="125" y="398" fill="#FEF3C7" font-size="11" text-anchor="middle">Ineligible for JSO, but</text>
+    <text x="125" y="415" fill="#FEF3C7" font-size="11" text-anchor="middle">ELGIBLE for Excise/ASO!</text>
+  </g>
+</svg>

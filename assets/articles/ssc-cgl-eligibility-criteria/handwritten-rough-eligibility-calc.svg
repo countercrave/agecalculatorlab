@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" style="background:#F8FAFC; font-family:'Caveat', 'Comic Sans MS', cursive, sans-serif;">
+  <defs>
+    <filter id="scratchShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Scratch Paper Card -->
+  <g filter="url(#scratchShadow)">
+    <rect x="30" y="20" width="740" height="460" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <!-- Graph Grid Lines -->
+    <g stroke="#E2E8F0" stroke-width="1" opacity="0.6">
+      <path d="M30 60 H770 M30 100 H770 M30 140 H770 M30 180 H770 M30 220 H770 M30 260 H770 M30 300 H770 M30 340 H770 M30 380 H770 M30 420 H770" />
+      <path d="M100 20 V480 M180 20 V480 M260 20 V480 M340 20 V480 M420 20 V480 M500 20 V480 M580 20 V480 M660 20 V480" />
+    </g>
+  </g>
+
+  <!-- Title in Blue Ballpoint -->
+  <g fill="#1E3A8A">
+    <text x="60" y="58" font-size="26" font-weight="700">Aspirant Personal Eligibility Rough Work (SSC CGL 2026)</text>
+    <line x1="60" y1="68" x2="680" y2="68" stroke="#3B82F6" stroke-width="2"/>
+
+    <!-- Step 1: Age Math -->
+    <text x="60" y="105" font-size="21" font-weight="700">Step 1: Calculate Completed Age on 01-Aug-2026</text>
+    <text x="80" y="135" font-size="20">&#8226; Matriculation DOB = <tspan font-weight="700">14 April 1997</tspan></text>
+    <text x="80" y="165" font-size="20">&#8226; Crucial Date = <tspan font-weight="700">01 August 2026</tspan></text>
+    <text x="80" y="195" font-size="21" fill="#047857">&#8226; 2026 - 1997 = 29 Yrs &#8226; Month diff = 3 Mos, 18 Days &#10140; <tspan font-weight="700">Age: 29y 3m 18d</tspan></text>
+
+    <!-- Step 2: Post Comparison -->
+    <text x="60" y="240" font-size="21" font-weight="700">Step 2: Compare Against Target Posts</text>
+    <text x="80" y="270" font-size="20">1. Tax Assistant (18&#8211;27 Band) &#10140; 29 &gt; 27 &#10140; <tspan fill="#DC2626" font-weight="700">OVERAGE FOR UR (Closed!)</tspan></text>
+    <text x="80" y="300" font-size="20">2. Excise Inspector (18&#8211;30 Band) &#10140; 29 &lt; 30 &#10140; <tspan fill="#059669" font-weight="700">ELIGIBLE FOR UR (Open!)</tspan></text>
+    <text x="80" y="330" font-size="20">3. ASO CSS (20&#8211;30 Band) &#10140; 20 &#8804; 29 &#8804; 30 &#10140; <tspan fill="#059669" font-weight="700">ELIGIBLE FOR UR (Open!)</tspan></text>
+
+    <!-- Step 3: Education Check -->
+    <text x="60" y="375" font-size="21" font-weight="700">Step 3: Verify Educational Cutoff</text>
+    <text x="80" y="405" font-size="20">&#8226; Degree: B.Sc Maths (Awarded June 2020) &#10140; Well before 01-Aug-2026 &#10004;</text>
+
+    <!-- Circled Verdict -->
+    <rect x="60" y="425" width="670" height="42" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+    <text x="75" y="452" font-size="20" font-weight="700" fill="#065F46">&#10004; FINAL AUDIT: Eligible for Group B Executive Cadres (18&#8211;30 &amp; 20&#8211;30)!</text>
+  </g>
+</svg>
