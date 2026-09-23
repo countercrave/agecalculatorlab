@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Years of Service Calculator – Employee Tenure | Age Calculator Lab</title>
-  <meta name="description" content="Calculate your years of service in years, months and days. Check employee tenure, total service days and your next work anniversary for free.">
+  <meta name="description" content="Calculate your years of service in completed years, months and days. Check employee tenure, total service days, decimal years and your next work anniversary for free.">
   <link rel="canonical" href="https://www.agecalculatorlab.com/tools/years-of-service-calculator/">
   <meta property="og:url" content="https://www.agecalculatorlab.com/tools/years-of-service-calculator/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Years of Service Calculator – Employee Tenure">
-  <meta property="og:description" content="Calculate your years of service in years, months and days. Check employee tenure, total service days and your next work anniversary for free.">
+  <meta property="og:title" content="Years of Service Calculator – Employee Tenure | Age Calculator Lab">
+  <meta property="og:description" content="Calculate your years of service in completed years, months and days. Check employee tenure, total service days, decimal years and your next work anniversary for free.">
   <meta property="og:image" content="https://www.agecalculatorlab.com/assets/thumbnails/calculators/years-of-service-calculator.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Years of Service Calculator – Employee Tenure">
@@ -21,1353 +21,1094 @@
   <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
   <link rel="manifest" href="../../site.webmanifest">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#0B5D3B">
+  <meta name="theme-color" content="#075433">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="../../assets/style.css?v=20260824e">
 
-  <!-- WebPage & WebApplication Structured Data -->
+  <!-- WebApplication Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
+    "@type": "WebApplication",
+    "name": "Years of Service Calculator",
+    "url": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Calculate exact employee tenure in completed years, months, and days, total elapsed days, decimal service years, and next work anniversary countdown."
+  }
+  </script>
+
+  <!-- BreadcrumbList Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
       {
-        "@type": "WebPage",
-        "@id": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/#webpage",
-        "url": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/",
-        "name": "Years of Service Calculator – Employee Tenure",
-        "description": "Calculate your length of service in completed years, months, and days. Check employee tenure, total days, and next work anniversary.",
-        "breadcrumb": {
-          "@id": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/#breadcrumb"
-        }
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.agecalculatorlab.com/"
       },
       {
-        "@type": "WebApplication",
-        "@id": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/#webapp",
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Categories",
+        "item": "https://www.agecalculatorlab.com/categories/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Finance & Professional",
+        "item": "https://www.agecalculatorlab.com/categories/finance-professional/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
         "name": "Years of Service Calculator",
-        "url": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "All",
-        "browserRequirements": "Requires JavaScript. Requires HTML5.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
+        "item": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Structured Data (8 Targeted FAQs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is years of service calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Years of service is calculated by taking your official joining date and measuring elapsed time to your reference date. First, count completed calendar years, then remaining whole calendar months, and finally the residual days."
         }
       },
       {
-        "@type": "BreadcrumbList",
-        "@id": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.agecalculatorlab.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Categories",
-            "item": "https://www.agecalculatorlab.com/categories/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Finance & Professional",
-            "item": "https://www.agecalculatorlab.com/categories/finance-professional/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Years of Service Calculator",
-            "item": "https://www.agecalculatorlab.com/tools/years-of-service-calculator/"
-          }
-        ]
+        "@type": "Question",
+        "name": "Does the calculator include the end date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By default, calendar interval subtraction is exclusive of the end date. If you check 'Include the end date (+1 day)', the calculation counts your final day as a completed working day."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are decimal years calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Decimal years divide total elapsed calendar days by 365.2425 (the average days in a Gregorian calendar year accounting for quadrennial leap years)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does a leap year affect service calculation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A leap year adds February 29 (366 days in the year), increasing the total day count by 1. However, full annual calendar anniversaries remain intact on your joining calendar date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if my start date was February 29?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In non-leap years, February 29 does not occur. Under standard calendar rules, your anniversary is marked either on February 28 or March 1 depending on organizational policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do breaks in service affect my tenure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A calendar calculator measures continuous elapsed duration between two dates. If you left and rejoined, each term is calculated separately and summed, excluding the break period."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is calendar service the same as qualifying service for benefits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Calendar service measures elapsed calendar time. Qualifying service for pensions, gratuity, or severance is governed by statutory laws and employer policies that deduct unapproved leave or require minimum hours worked."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I calculate service for a past job or resume?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Switch the end date option to 'Choose a date' and select your official last working day to get your finalized tenure for your resume, LinkedIn profile, or employment verification."
+        }
       }
     ]
   }
   </script>
 
   <style>
-    /* ==========================================================================
-       Redesign: Years of Service Calculator
-       Palette: Primary #0B5D3B | Text #17251D | Sec #52635B | Result #F1F7F3 | Border #DCE6DF
-       Typography: Inter font family
-       ========================================================================== */
-    :root {
-      --svc-green: #0B5D3B;
-      --svc-green-dark: #08482E;
-      --svc-green-soft: #F1F7F3;
-      --svc-green-border: #DCE6DF;
-      --svc-text-main: #17251D;
-      --svc-text-sec: #52635B;
-      --svc-bg: #FFFFFF;
-      --svc-border: #DCE6DF;
-      --svc-card-radius: 12px;
+    /* Scoped Refinements for Years of Service Calculator */
+    .tool-hero {
+      padding: clamp(24px, 3.5vw, 38px) 0 20px;
     }
-
-    body {
-      color: var(--svc-text-main);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: var(--svc-bg);
-      margin: 0;
-      padding: 0;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* Compact Main Container */
-    .svc-container {
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    @media (max-width: 600px) {
-      .svc-container {
-        padding: 0 16px;
-      }
-    }
-
-    /* Compact Opening Hero */
-    .svc-header {
-      padding: 24px 0 16px;
-    }
-    .svc-breadcrumbs {
-      font-size: 14px;
-      line-height: 1.5;
-      color: var(--svc-text-sec);
-      margin-bottom: 8px;
-    }
-    .svc-breadcrumbs a {
-      color: var(--svc-green);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .svc-breadcrumbs a:hover {
-      text-decoration: underline;
-    }
-    .svc-header h1 {
-      font-size: 40px;
-      line-height: 1.15;
-      color: var(--svc-text-main);
-      margin: 0 0 10px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-    .svc-intro {
-      font-size: 16px;
-      line-height: 1.6;
-      color: var(--svc-text-sec);
-      margin: 0 0 12px;
-      max-width: 780px;
-    }
-    .svc-meta-line {
-      font-size: 13px;
-      color: #718279;
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    .svc-meta-line a {
-      color: var(--svc-text-sec);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-
-    @media (max-width: 768px) {
-      .svc-header {
-        padding: 18px 0 12px;
-      }
-      .svc-header h1 {
-        font-size: 30px;
-        line-height: 1.2;
-      }
-      .svc-intro {
-        font-size: 15px;
-      }
-    }
-
-    /* Calculator Grid */
-    .svc-calc-wrapper {
+    .tool-hero-grid {
       display: grid;
-      grid-template-columns: 46% 54%;
-      gap: 24px;
-      align-items: start;
-      margin-bottom: 24px;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+      gap: clamp(24px, 3vw, 40px);
+      align-items: center;
     }
-    @media (max-width: 900px) {
-      .svc-calc-wrapper {
+    @media (max-width: 860px) {
+      .tool-hero-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 20px;
+      }
+      .tool-featured-media {
+        display: none;
       }
     }
-
-    .svc-panel {
-      background: #FFFFFF;
-      border: 1px solid var(--svc-border);
-      border-radius: var(--svc-card-radius);
-      padding: 24px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    .tool-hero h1 {
+      font-size: clamp(2.1rem, 3.8vw, 2.85rem);
+      line-height: 1.12;
+      margin: 6px 0 14px;
     }
-    @media (max-width: 600px) {
-      .svc-panel {
-        padding: 18px;
-      }
-    }
-
-    .svc-panel-title {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--svc-text-main);
-      margin: 0 0 16px;
-      line-height: 1.3;
-    }
-
-    /* Form Elements */
-    .svc-form-group {
+    .tool-hero .lead {
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: var(--ink-2);
       margin-bottom: 16px;
     }
-    .svc-label {
-      display: block;
-      font-size: 15px;
+    .tool-featured-media img {
+      max-height: 250px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: var(--r-md);
+      box-shadow: var(--sh-2);
+      border: 1px solid var(--line);
+    }
+    .meta-compact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+      font-size: var(--t-xs);
+      color: var(--muted);
+      margin-top: 14px;
+      align-items: center;
+    }
+    .meta-compact a {
+      color: var(--brand-dark);
       font-weight: 600;
-      color: var(--svc-text-main);
+    }
+
+    /* Jumpbar Navigation */
+    .jumpbar {
+      position: sticky;
+      top: var(--header-h);
+      z-index: 40;
+      background: var(--page);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .jumpbar .container {
+      display: flex;
+      align-items: center;
+      gap: clamp(10px, 1.8vw, 24px);
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+      padding-block: 2px;
+    }
+    .jumpbar .container::-webkit-scrollbar { display: none; }
+    .jumpbar a {
+      padding: 12px 6px;
+      font-size: var(--t-sm);
+      font-weight: 650;
+      color: var(--muted);
+      transition: color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .jumpbar a:hover, .jumpbar a.is-current {
+      color: var(--brand-dark);
+      box-shadow: inset 0 -2px 0 var(--brand);
+    }
+
+    /* Calculator Shell and Card */
+    .calc-shell {
+      padding: clamp(24px, 3.5vw, 36px) 0 clamp(28px, 4vw, 44px);
+    }
+    .calc-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--line);
+      border-radius: var(--r-xl);
+      background: var(--panel);
+      box-shadow: var(--sh-3);
+      overflow: hidden;
+      align-items: start; /* Fixes empty space bug! Left panel hugs its natural height */
+    }
+    @media (max-width: 860px) {
+      .calc-card {
+        grid-template-columns: 1fr;
+      }
+    }
+    .calc-inputs {
+      padding: clamp(24px, 3vw, 36px);
+    }
+    .calc-inputs h2 {
+      font-size: var(--t-2xl);
+      margin: var(--s-1) 0 var(--s-4);
+    }
+    .field-row {
+      margin-bottom: 16px;
+    }
+    .field-row label {
+      display: block;
+      font-size: var(--t-sm);
+      font-weight: 650;
+      color: var(--ink-2);
       margin-bottom: 6px;
     }
-    .svc-hint {
-      font-size: 13px;
-      color: var(--svc-text-sec);
+    .field-row .hint {
+      font-size: var(--t-xs);
+      color: var(--muted);
       margin-top: 4px;
       margin-bottom: 0;
     }
-    .svc-input-date {
+    .field-row input[type="date"] {
       width: 100%;
-      height: 48px;
-      padding: 10px 14px;
-      border: 1px solid var(--svc-border);
-      border-radius: 8px;
-      font-size: 15px;
+      padding: 12px 14px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--r-sm);
+      background: var(--page);
+      color: var(--ink);
       font-family: inherit;
-      color: var(--svc-text-main);
-      background: #FFFFFF;
-      box-sizing: border-box;
-      transition: border-color 0.15s ease, box-shadow 0.15s ease;
-    }
-    .svc-input-date:focus {
       outline: none;
-      border-color: var(--svc-green);
-      box-shadow: 0 0 0 3px rgba(11, 93, 59, 0.12);
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
     }
-
-    /* Radio & Checkbox Groups */
-    .svc-toggle-group {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
+    .field-row input[type="date"]:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 22%, transparent);
     }
-    .svc-toggle-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--svc-text-main);
-      cursor: pointer;
-    }
-    .svc-toggle-label input[type="radio"],
-    .svc-toggle-label input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      accent-color: var(--svc-green);
-      margin: 0;
-      cursor: pointer;
-    }
-    .svc-checkbox-label {
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      font-size: 14px;
-      color: var(--svc-text-main);
-      cursor: pointer;
-      user-select: none;
-      margin: 12px 0;
-      line-height: 1.4;
-    }
-    .svc-checkbox-label input {
-      margin-top: 2px;
-      accent-color: var(--svc-green);
-      flex-shrink: 0;
-    }
-
-    /* Collapsible Additional Periods */
-    .svc-collapsible-btn {
-      background: none;
-      border: none;
-      color: var(--svc-green);
-      font-size: 14px;
-      font-weight: 600;
-      padding: 0;
-      margin: 8px 0 14px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    .svc-collapsible-btn:hover {
-      color: var(--svc-green-dark);
-    }
-    .svc-multi-period-box {
-      display: none;
-      background: #F9FBFA;
-      border: 1px dashed var(--svc-border);
-      border-radius: 8px;
-      padding: 14px;
-      margin-bottom: 16px;
-    }
-    .svc-multi-period-box.is-open {
-      display: block;
-    }
-
-    /* Buttons */
-    .svc-button-row {
-      display: flex;
-      gap: 12px;
-      margin-top: 18px;
-    }
-    .svc-btn-primary {
-      flex: 1;
-      height: 48px;
-      background: var(--svc-green);
-      color: #FFFFFF;
-      font-size: 15px;
-      font-weight: 600;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.15s ease, transform 0.1s ease;
-    }
-    .svc-btn-primary:hover {
-      background: var(--svc-green-dark);
-    }
-    .svc-btn-secondary {
-      height: 48px;
-      padding: 0 18px;
-      background: #FFFFFF;
-      color: var(--svc-text-sec);
-      border: 1px solid var(--svc-border);
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.15s ease, color 0.15s ease;
-    }
-    .svc-btn-secondary:hover {
-      background: #F4F7F5;
-      color: var(--svc-text-main);
-    }
-
-    /* Validation Message */
-    .svc-validation-msg {
-      font-size: 13px;
-      color: #C5221F;
-      margin-top: 6px;
-      display: none;
-    }
-    .svc-validation-msg.is-visible {
-      display: block;
-    }
-
-    /* Results Panel Styling */
-    .svc-result-panel {
-      background: var(--svc-green-soft);
-      border-color: #CCE3D5;
-    }
-    .svc-main-result-box {
-      background: #FFFFFF;
-      border: 1px solid #D1E5D8;
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin-bottom: 16px;
-    }
-    .svc-result-kicker {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      font-weight: 700;
-      color: var(--svc-green);
-      margin-bottom: 4px;
-    }
-    .svc-result-number-hero {
-      font-size: 38px;
-      font-weight: 800;
-      color: var(--svc-text-main);
-      line-height: 1.15;
-      margin: 4px 0 8px;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: -0.02em;
-    }
-    @media (max-width: 600px) {
-      .svc-result-number-hero {
-        font-size: 30px;
-      }
-    }
-    .svc-result-context {
-      font-size: 13px;
-      color: var(--svc-text-sec);
-      line-height: 1.4;
-      margin: 0;
-    }
-
-    /* Secondary Metrics Grid */
-    .svc-metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    @media (max-width: 600px) {
-      .svc-metrics-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .svc-metric-card {
-      background: #FFFFFF;
-      border: 1px solid #D8E7DD;
-      border-radius: 8px;
-      padding: 12px;
-      text-align: left;
-    }
-    .svc-metric-label {
-      font-size: 12px;
-      color: var(--svc-text-sec);
-      display: block;
-      margin-bottom: 4px;
-    }
-    .svc-metric-val {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--svc-text-main);
-      font-variant-numeric: tabular-nums;
-    }
-
-    /* Work Anniversary Box */
-    .svc-anniversary-card {
-      background: #FFFFFF;
-      border: 1px solid #D8E7DD;
-      border-left: 4px solid var(--svc-green);
-      border-radius: 8px;
-      padding: 14px 16px;
-      margin-bottom: 16px;
-    }
-    .svc-anniv-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 4px;
-    }
-    .svc-anniv-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--svc-text-main);
-    }
-    .svc-anniv-days-badge {
-      background: #E6F4EA;
-      color: var(--svc-green);
-      font-size: 12px;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-    .svc-anniv-detail {
-      font-size: 13px;
-      color: var(--svc-text-sec);
-      margin: 0;
-    }
-
-    /* Action Buttons (Copy & Print) */
-    .svc-actions-row {
-      display: flex;
-      gap: 10px;
-    }
-    .svc-action-btn {
-      flex: 1;
-      height: 42px;
-      background: #FFFFFF;
-      border: 1px solid #C4DCCE;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--svc-text-main);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      transition: background 0.15s ease;
-    }
-    .svc-action-btn:hover {
-      background: #EAF3EE;
-    }
-    .svc-action-btn:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-    .svc-copy-alert {
-      font-size: 12px;
-      color: var(--svc-green);
-      margin-top: 6px;
-      font-weight: 600;
-      display: none;
-    }
-
-    /* Full-Width Milestone Highlight Below Panels */
-    .svc-milestone-bar {
-      background: #FFFFFF;
-      border: 1px solid var(--svc-border);
-      border-radius: var(--svc-card-radius);
-      padding: 18px 22px;
-      margin-bottom: 28px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .svc-milestone-text {
-      font-size: 14px;
-      color: var(--svc-text-sec);
-    }
-    .svc-milestone-text strong {
-      color: var(--svc-text-main);
-    }
-    .svc-milestone-toggle-btn {
-      background: none;
-      border: 1px solid var(--svc-border);
-      border-radius: 6px;
-      padding: 6px 12px;
-      color: var(--svc-green);
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .svc-milestone-toggle-btn:hover {
-      background: #F4F7F5;
-    }
-
-    /* Expandable Milestones Table */
-    .svc-milestones-collapsible {
-      display: none;
-      width: 100%;
-      margin-top: 14px;
-      border-top: 1px solid var(--svc-border);
-      padding-top: 14px;
-    }
-    .svc-milestones-collapsible.is-open {
-      display: block;
-    }
-    .svc-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-      margin: 12px 0;
-    }
-    .svc-table th, .svc-table td {
-      padding: 10px 14px;
-      border: 1px solid var(--svc-border);
-      text-align: left;
-    }
-    .svc-table th {
-      background: #F8FAF9;
-      color: var(--svc-text-main);
-      font-weight: 600;
-      font-size: 13px;
-    }
-    .svc-table tr:nth-child(even) {
-      background: #FBFDFB;
-    }
-
-    /* Compact Navigation Jump Row */
-    .svc-jump-nav {
-      background: #F8FAF9;
-      border: 1px solid var(--svc-border);
-      border-radius: 8px;
-      padding: 10px 16px;
-      margin: 24px 0 32px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .svc-jump-nav span {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--svc-text-sec);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .svc-jump-nav a {
-      color: var(--svc-green);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-    }
-    .svc-jump-nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Editorial Content Sections */
-    .svc-content-section {
-      margin-bottom: 32px;
-    }
-    @media (max-width: 600px) {
-      .svc-content-section {
-        margin-bottom: 24px;
-      }
-    }
-    .svc-content-section h2 {
-      font-size: 28px;
-      line-height: 1.25;
-      color: var(--svc-text-main);
-      margin: 0 0 12px;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      scroll-margin-top: 80px;
-    }
-    @media (max-width: 768px) {
-      .svc-content-section h2 {
-        font-size: 24px;
-        line-height: 1.3;
-        margin-bottom: 10px;
-      }
-    }
-    .svc-content-section h3 {
-      font-size: 20px;
-      line-height: 1.35;
-      color: var(--svc-text-main);
-      margin: 20px 0 8px;
-      font-weight: 600;
-      scroll-margin-top: 80px;
-    }
-    @media (max-width: 768px) {
-      .svc-content-section h3 {
-        font-size: 18px;
-        line-height: 1.35;
-      }
-    }
-    .svc-content-section p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: var(--svc-text-sec);
-      margin: 0 0 12px;
-      max-width: 75ch;
-    }
-    .svc-content-section ul, .svc-content-section ol {
-      font-size: 16px;
-      line-height: 1.6;
-      color: var(--svc-text-sec);
-      margin: 0 0 16px;
-      padding-left: 24px;
-      max-width: 75ch;
-    }
-    .svc-content-section li {
-      margin-bottom: 6px;
-    }
-    .svc-content-section a {
-      color: var(--svc-green);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-
-    /* Numbered Steps List */
-    .svc-steps-list {
-      display: grid;
-      gap: 14px;
-      margin: 16px 0 24px;
-    }
-    .svc-step-card {
-      background: #FFFFFF;
-      border: 1px solid var(--svc-border);
-      border-radius: 8px;
-      padding: 16px 20px;
+    .radio-group {
       display: flex;
       gap: 16px;
-      align-items: flex-start;
+      margin-top: 6px;
+      margin-bottom: 8px;
     }
-    .svc-step-badge {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: var(--svc-green);
-      color: #FFFFFF;
-      font-weight: 700;
-      font-size: 14px;
-      display: flex;
+    .radio-label {
+      display: inline-flex;
       align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 2px;
+      gap: 6px;
+      font-size: var(--t-sm);
+      font-weight: 500;
+      color: var(--ink);
+      cursor: pointer;
     }
-    .svc-step-body h4 {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--svc-text-main);
-      margin: 0 0 4px;
+    .checkbox-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: var(--t-sm);
+      color: var(--ink);
+      cursor: pointer;
+      margin-top: 4px;
     }
-    .svc-step-body p {
-      font-size: 14px;
-      line-height: 1.5;
-      color: var(--svc-text-sec);
-      margin: 0;
+    .multi-toggle-wrap {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--line);
+    }
+    .btn-toggle-multi {
+      background: none;
+      border: none;
+      color: var(--brand-dark);
+      font-size: var(--t-sm);
+      font-weight: 650;
+      cursor: pointer;
+      padding: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-toggle-multi:hover {
+      text-decoration: underline;
+    }
+    .multi-fields-box {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: var(--r-sm);
+      padding: 14px;
+      margin-top: 10px;
+      display: none;
+    }
+    .multi-fields-box.is-open {
+      display: block;
     }
 
-    /* Accordion FAQ Styling */
-    .svc-faq-list {
+    /* Output Panel */
+    .calc-output {
+      padding: clamp(24px, 3vw, 36px);
+      background: linear-gradient(155deg, var(--inv-bg), var(--inv-bg-2));
+      color: var(--inv-ink);
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-top: 14px;
     }
-    .svc-faq-item {
-      border: 1px solid var(--svc-border);
-      border-radius: 8px;
-      background: #FFFFFF;
-      overflow: hidden;
+    .calc-output .calc-label {
+      color: #f3b184;
     }
-    .svc-faq-item summary {
-      padding: 14px 18px;
-      font-size: 16px;
+    .calc-output .result-primary {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 3.4vw, 2.65rem);
       font-weight: 600;
-      color: var(--svc-text-main);
-      cursor: pointer;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      color: #ffffff;
+      margin: 4px 0 6px;
+    }
+    .calc-output .result-sub {
+      font-size: var(--t-sm);
+      color: var(--inv-muted);
+      margin-bottom: 16px;
+    }
+    .calc-output .result-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .calc-output .metric {
+      padding: 12px 14px;
+      border: 1px solid var(--inv-line);
+      border-radius: var(--r-sm);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .calc-output .metric strong {
+      display: block;
+      font-size: var(--t-base);
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .calc-output .metric span {
+      display: block;
+      font-size: var(--t-xs);
+      color: var(--inv-muted);
+      margin-top: 2px;
+    }
+    .anniv-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--r-sm);
+      padding: 12px 14px;
+      margin-bottom: 16px;
+    }
+    .anniv-card-head {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      list-style: none;
-      user-select: none;
-    }
-    .svc-faq-item summary::-webkit-details-marker {
-      display: none;
-    }
-    .svc-faq-item summary::after {
-      content: "+";
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--svc-green);
-    }
-    .svc-faq-item[open] summary::after {
-      content: "\2212";
-    }
-    .svc-faq-item p {
-      padding: 0 18px 14px;
-      margin: 0;
-      font-size: 15px;
-      line-height: 1.55;
-      color: var(--svc-text-sec);
-    }
-
-    /* Related Links Grid */
-    .svc-related-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 14px;
-      margin: 16px 0 32px;
-    }
-    .svc-related-card {
-      background: #FFFFFF;
-      border: 1px solid var(--svc-border);
-      border-radius: 8px;
-      padding: 16px;
-      text-decoration: none;
-      display: block;
-      transition: border-color 0.15s ease, box-shadow 0.15s ease;
-    }
-    .svc-related-card:hover {
-      border-color: var(--svc-green);
-      box-shadow: 0 2px 8px rgba(11, 93, 59, 0.08);
-    }
-    .svc-related-card small {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 700;
-      color: var(--svc-green);
-      display: block;
       margin-bottom: 4px;
     }
-    .svc-related-card h3 {
-      font-size: 16px;
-      color: var(--svc-text-main);
-      margin: 0 0 4px;
-      font-weight: 600;
+    .anniv-card-badge {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      color: #a7f3d0;
     }
-    .svc-related-card p {
-      font-size: 13px;
-      color: var(--svc-text-sec);
-      margin: 0;
-      line-height: 1.4;
+    .anniv-card-countdown {
+      font-size: var(--t-xs);
+      font-weight: 700;
+      color: #7dd3fc;
+      background: rgba(125, 211, 252, 0.15);
+      padding: 2px 8px;
+      border-radius: var(--r-pill);
+    }
+    .anniv-card-date {
+      font-size: var(--t-base);
+      font-weight: 650;
+      color: #ffffff;
+    }
+    .calc-output .actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: auto;
+      padding-top: 10px;
+    }
+    .calc-output .btn-secondary {
+      padding: 9px 16px;
+      font-size: var(--t-sm);
+    }
+    .copy-status {
+      font-size: var(--t-xs);
+      color: #9fe7bd;
+      display: none;
     }
 
-    /* Author & Methodology Mini Block */
-    .svc-author-block {
-      background: #F8FAF9;
-      border: 1px solid var(--svc-border);
-      border-radius: 10px;
-      padding: 18px 22px;
-      margin: 32px 0 48px;
+    /* Below Panels: Milestones Card */
+    .milestone-section-below {
+      margin-top: 20px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      padding: 20px 24px;
+      box-shadow: var(--sh-1);
+    }
+    .milestone-section-below summary {
+      cursor: pointer;
+      font-weight: 650;
+      color: var(--brand-dark);
+      list-style: none;
       display: flex;
-      gap: 18px;
+      justify-content: space-between;
       align-items: center;
     }
-    .svc-author-avatar {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      object-fit: cover;
-      flex-shrink: 0;
+    .milestone-section-below summary::-webkit-details-marker { display: none; }
+    .milestone-section-below summary::after {
+      content: "+";
+      font-size: var(--t-xl);
+      color: var(--brand);
     }
-    .svc-author-info h4 {
-      font-size: 16px;
-      margin: 0 0 2px;
-      color: var(--svc-text-main);
+    .milestone-section-below[open] summary::after {
+      content: "–";
     }
-    .svc-author-info p {
-      font-size: 13px;
-      color: var(--svc-text-sec);
-      margin: 0 0 6px;
-      line-height: 1.45;
+    .milestone-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: var(--t-sm);
     }
-    .svc-author-links {
-      font-size: 12px;
-      display: flex;
-      gap: 12px;
+    .milestone-table th {
+      background: var(--soft);
+      color: var(--ink);
+      font-weight: 650;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid var(--line);
     }
-    .svc-author-links a {
-      color: var(--svc-green);
-      text-decoration: underline;
+    .milestone-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink-2);
+    }
+    .badge-achieved {
+      background: #dcfce7;
+      color: #15803d;
+      padding: 2px 8px;
+      border-radius: var(--r-pill);
+      font-size: var(--t-xs);
+      font-weight: 700;
+    }
+    .badge-upcoming {
+      background: #fef3c7;
+      color: #b45309;
+      padding: 2px 8px;
+      border-radius: var(--r-pill);
+      font-size: var(--t-xs);
+      font-weight: 700;
+    }
+    .multi-period-summary-card {
+      display: none;
+      margin-top: 16px;
+      padding: 14px 18px;
+      background: var(--soft-2);
+      border: 1px solid var(--brand-line);
+      border-radius: var(--r-md);
+      font-size: var(--t-sm);
+      color: var(--ink);
     }
 
-    /* Live Region / Accessibility */
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
+    /* Compact Content Spacing System */
+    .visual-section {
+      padding: clamp(38px, 4.5vw, 56px) 0;
     }
-
-    /* Print Styles */
-    @media print {
-      header, footer, .svc-jump-nav, .svc-actions-row, .svc-button-row, .svc-related-grid, .svc-author-block {
-        display: none !important;
-      }
-      body, .svc-container {
-        max-width: 100% !important;
-        padding: 0 !important;
-        color: #000000 !important;
-      }
-      .svc-panel, .svc-result-panel, .svc-main-result-box {
-        border: 1px solid #999999 !important;
-        box-shadow: none !important;
-        background: #FFFFFF !important;
-      }
-      .svc-calc-wrapper {
-        display: block !important;
-      }
+    .visual-heading {
+      margin-bottom: var(--s-6);
     }
   </style>
 </head>
 <body class="page">
-  <!-- Sitewide Header -->
-  <header class="header">
-    <div class="container header-content">
-      <a class="brand" href="../../">Age Calculator <span>Lab</span></a>
-      <nav class="nav">
-        <a class="nav-link" href="../../">Home</a>
-        <a class="nav-link" href="../../categories/">Categories</a>
-        <a class="nav-link" href="../../articles/">Articles</a>
-        <a class="nav-link active" href="../../tools/years-of-service-calculator/">Calculator</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Sitewide Header Navigation (Authentic Age Calculator Lab Header) -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+        <img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab" width="144" height="48">
+      </a>
+      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+      </button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <details class="nav-dropdown nav-dropdown-categories">
+          <summary>Calculators <span class="nav-chevron" aria-hidden="true">&#x2304;</span></summary>
+          <div class="nav-mega">
+            <div class="nav-mega-head">
+              <div><small>161 focused tools</small><strong>Main calculator categories</strong></div>
+              <a href="../../categories/">View category directory &rarr;</a>
+            </div>
+            <div class="nav-category-grid">
+              <a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+              <a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+              <a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>8 tools</small></a>
+              <a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+              <a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+              <a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>15 tools</small></a>
+              <a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>13 tools</small></a>
+              <a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+              <a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+              <a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>12 tools</small></a>
+              <a href="../../categories/date-lab/"><span>Date Lab</span><small>34 tools</small></a>
+            </div>
+            <div class="nav-quick-row">
+              <span>Popular</span>
+              <a href="../../">Age Calculator</a>
+              <a href="../../tools/date-difference-calculator/">Date Difference</a>
+              <a href="../../tools/corrected-age-calculator/">Corrected Age</a>
+              <a href="../../tools/countdown-to-date-calculator/">Countdown</a>
+            </div>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-dropdown-guides">
+          <summary>Guides <span class="nav-chevron" aria-hidden="true">&#x2304;</span></summary>
+          <div class="nav-mega nav-mega-guides">
+            <div class="nav-mega-head">
+              <div><small>100 practical guides</small><strong>Learn the method</strong></div>
+              <a href="../../articles/">Browse all guides &rarr;</a>
+            </div>
+            <div class="nav-guide-grid">
+              <a href="../../articles/calculate-exact-age-years-months-days/"><small>Universal Chronology</small><span>How to Calculate Exact Age in Years, Months and Days</span></a>
+              <a href="../../articles/chronological-age-explained/"><small>Universal Chronology</small><span>Chronological Age: What It Measures and What It Doesn't</span></a>
+              <a href="../../articles/calendar-age-vs-decimal-age/"><small>Universal Chronology</small><span>Calendar Age vs Decimal Age: Which One Does Your Form Want?</span></a>
+              <a href="../../articles/calculate-age-on-past-date/"><small>Universal Chronology</small><span>Working Out Your Age on a Past Date</span></a>
+              <a href="../../articles/calculate-age-on-future-date/"><small>Universal Chronology</small><span>How Old Will I Be on a Future Date?</span></a>
+              <a href="../../articles/leap-day-birthdays-age-calculation/"><small>Universal Chronology</small><span>Leap-Day Birthdays: Ageing Normally, Celebrating Awkwardly</span></a>
+            </div>
+          </div>
+        </details>
+        <a href="../../categories/">Categories</a>
+        <a href="../../methodology/">Methodology</a>
+        <a class="nav-cta" href="../../">Open Age Calculator</a>
       </nav>
     </div>
   </header>
 
-  <main class="svc-container" id="main-content">
-    <!-- Compact Opening Hero -->
-    <header class="svc-header">
-      <nav class="svc-breadcrumbs" aria-label="Breadcrumb">
-        <a href="../../">Home</a> / <a href="../../categories/">Categories</a> / <a href="../../categories/finance-professional/">Finance &amp; Professional</a> / Years of Service Calculator
-      </nav>
-      <h1>Years of Service Calculator</h1>
-      <p class="svc-intro">
-        Enter your joining date and an end date to calculate your length of service in years, months and days. Check total days and your next work anniversary.
-      </p>
-      <div class="svc-meta-line">
-        <span>By <a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></span>
-        <span>•</span>
-        <span>Reviewed September 2026</span>
-        <span>•</span>
-        <span>Exact Calendar Arithmetic</span>
-      </div>
-    </header>
+  <main id="main-content">
+    <!-- Compact Hero Header -->
+    <section class="hero tool-hero">
+      <div class="container tool-hero-grid">
+        <div class="tool-hero-copy">
+          <div class="breadcrumbs">
+            <a href="../../">Home</a> / <a href="../../categories/finance-professional/">Finance &amp; Professional</a> / Years of Service Calculator
+          </div>
+          <span class="eyebrow">Finance &amp; Professional · Free Online Tool</span>
+          <h1>Years of Service Calculator</h1>
+          <p class="lead">
+            Calculate your length of service in completed years, months and days. Check employee tenure, total service days, decimal years and your next work anniversary.
+          </p>
+          <div class="trust-row">
+            <span class="trust-pill">&#10003; Exact Calendar Y/M/D</span>
+            <span class="trust-pill">&#10003; Browser-Side Arithmetic</span>
+            <span class="trust-pill">&#10003; Copy &amp; Print</span>
+            <span class="trust-pill">&#10003; No Sign-Up Required</span>
+          </div>
+          <div class="meta-compact">
+            <span>By <a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></span>
+            <span>•</span>
+            <span>Reviewed September 2026</span>
+            <span>•</span>
+            <span>Category: <a href="../../categories/finance-professional/">Finance &amp; Professional</a></span>
+          </div>
+        </div>
 
-    <!-- Accessible Announcement -->
-    <div id="liveAnnouncer" class="sr-only" aria-live="polite"></div>
+        <!-- Featured Media -->
+        <figure class="tool-featured-media">
+          <img fetchpriority="high" decoding="async" src="../../assets/thumbnails/calculators/years-of-service-calculator.webp" alt="Years of Service Calculator" width="1280" height="720">
+          <figcaption class="visually-hidden">Years of Service Calculator</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Compact Sticky Navigation Jumpbar -->
+    <div class="jumpbar">
+      <div class="container">
+        <a href="#calculator" class="is-current">Calculator</a>
+        <a href="#how-to-use">How It Works</a>
+        <a href="#worked-flow">Worked Example</a>
+        <a href="#understanding-results">Understanding Results</a>
+        <a href="#date-rules">Date Rules &amp; Breaks</a>
+        <a href="#faq">FAQ</a>
+        <a href="#related-tools">Related Calculators</a>
+        <a href="#related-guides">Practical Guides</a>
+      </div>
+    </div>
+
+    <!-- Live Announcement for Accessibility -->
+    <div id="liveAnnouncer" class="visually-hidden" aria-live="polite"></div>
 
     <!-- 2-Column Calculator Component -->
-    <div class="svc-calc-wrapper">
-      <!-- INPUT PANEL (46% Desktop) -->
-      <section class="svc-panel" aria-labelledby="calc-input-heading">
-        <h2 id="calc-input-heading" class="svc-panel-title">Calculate Your Service Duration</h2>
-        
-        <form id="serviceForm" onsubmit="event.preventDefault(); runServiceCalculation();">
-          <!-- Start Date -->
-          <div class="svc-form-group">
-            <label class="svc-label" for="svcStartDate">Joining date</label>
-            <input type="date" id="svcStartDate" class="svc-input-date" value="2018-03-15" required aria-describedby="startDateHint startDateError">
-            <p id="startDateHint" class="svc-hint">The official first day of active employment.</p>
-            <div id="startDateError" class="svc-validation-msg" role="alert">Please enter a valid joining date.</div>
-          </div>
-
-          <!-- End Date Selection -->
-          <div class="svc-form-group">
-            <span class="svc-label">End-date selection</span>
-            <div class="svc-toggle-group">
-              <label class="svc-toggle-label">
-                <input type="radio" name="endDateMode" id="endModeToday" value="today" checked onchange="toggleEndDateMode()">
-                Today
-              </label>
-              <label class="svc-toggle-label">
-                <input type="radio" name="endDateMode" id="endModeCustom" value="custom" onchange="toggleEndDateMode()">
-                Choose a date
-              </label>
-            </div>
+    <section class="calc-shell" id="calculator">
+      <div class="container">
+        <div class="calc-card">
+          <!-- INPUT PANEL (Hugs natural height, no vertical stretch) -->
+          <div class="calc-inputs">
+            <div class="calc-label">Calculation Engine</div>
+            <h2>Calculate Your Service Duration</h2>
             
-            <div id="customDateWrap" style="display:none; margin-top:8px;">
-              <label class="svc-label" for="svcEndDate" style="font-size:14px;">Reference end date</label>
-              <input type="date" id="svcEndDate" class="svc-input-date" aria-describedby="endDateError">
-              <div id="endDateError" class="svc-validation-msg" role="alert">End date cannot be earlier than joining date.</div>
+            <form id="calcServiceForm" onsubmit="event.preventDefault(); runServiceCalculation();">
+              <!-- Start Date -->
+              <div class="field-row">
+                <label for="svcStartDate">Joining date</label>
+                <input type="date" id="svcStartDate" value="2018-03-15" required aria-describedby="startDateHint">
+                <p id="startDateHint" class="hint">The official first day of active employment.</p>
+              </div>
+
+              <!-- End Date Selection -->
+              <div class="field-row">
+                <label>End date reference</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="endDateMode" id="endModeToday" value="today" checked onchange="toggleEndDateMode()">
+                    Today
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="endDateMode" id="endModeCustom" value="custom" onchange="toggleEndDateMode()">
+                    Choose a date
+                  </label>
+                </div>
+                
+                <div id="customDateWrap" style="display:none; margin-top:8px;">
+                  <label for="svcEndDate" style="font-size:var(--t-xs); color:var(--muted);">Reference end date</label>
+                  <input type="date" id="svcEndDate">
+                </div>
+              </div>
+
+              <!-- Inclusive Checkbox -->
+              <div class="field-row">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="svcInclusive" onchange="runServiceCalculation()">
+                  Include the end date (+1 day)
+                </label>
+              </div>
+
+              <!-- Multi-Period / Rehire Expander -->
+              <div class="multi-toggle-wrap">
+                <button type="button" id="btnToggleMulti" class="btn-toggle-multi" aria-expanded="false" onclick="toggleMultiPeriodBox()">
+                  + Add another service period (Rehire / Multiple Terms)
+                </button>
+                <div id="multiPeriodBox" class="multi-fields-box">
+                  <p class="hint" style="margin-bottom:8px;">Enter your prior term dates to aggregate total career tenure:</p>
+                  <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                    <div>
+                      <label for="multiStart" style="font-size:var(--t-xs);">Prior Start Date</label>
+                      <input type="date" id="multiStart" onchange="runServiceCalculation()">
+                    </div>
+                    <div>
+                      <label for="multiEnd" style="font-size:var(--t-xs);">Prior End Date</label>
+                      <input type="date" id="multiEnd" onchange="runServiceCalculation()">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="actions">
+                <button type="submit" class="btn btn-primary" id="btnCalculate">Calculate Service</button>
+                <button type="button" class="btn btn-secondary" id="btnReset" onclick="resetServiceForm()">Reset</button>
+              </div>
+            </form>
+
+            <p class="privacy-note">Calculator inputs are processed locally in your browser. No personal data is stored or transmitted.</p>
+          </div>
+
+          <!-- RESULTS PANEL (Signature Age Calculator Lab Gradient) -->
+          <div class="calc-output">
+            <div class="calc-label">Your Length of Service</div>
+            <div class="result-primary" id="primaryResult" role="status" aria-live="polite">8 Years, 6 Months, 8 Days</div>
+            <div class="result-sub" id="resultSubtitle">Calculated from 15 March 2018 to 23 September 2026</div>
+
+            <!-- Key Metrics Grid (2x2) -->
+            <div class="result-grid">
+              <div class="metric">
+                <strong id="metricCompletedYears">8 Years</strong>
+                <span>Completed Years</span>
+              </div>
+              <div class="metric">
+                <strong id="metricTotalDays">3,114 Days</strong>
+                <span>Total Elapsed Days</span>
+              </div>
+              <div class="metric">
+                <strong id="metricDecimalYears">8.53 Years</strong>
+                <span>Approx. Decimal (365.2425d)</span>
+              </div>
+              <div class="metric">
+                <strong id="metricWorkingDays">2,223 Days</strong>
+                <span>Working Days (Est.)</span>
+              </div>
+            </div>
+
+            <!-- Work Anniversary Card -->
+            <div class="anniv-card" id="annivCard">
+              <div class="anniv-card-head">
+                <span class="anniv-card-badge">Next Work Anniversary</span>
+                <span class="anniv-card-countdown" id="annivCountdown">173 days away</span>
+              </div>
+              <div class="anniv-card-date" id="annivDate">9th Anniversary on 15 March 2027</div>
+            </div>
+
+            <!-- Result Actions -->
+            <div class="actions">
+              <button class="btn btn-secondary" type="button" id="btnCopy" onclick="copyServiceSummary()">Copy Summary</button>
+              <button class="btn btn-secondary" type="button" id="btnPrint" onclick="window.print()">Print</button>
+              <span id="copyFeedback" class="copy-status">Summary copied to clipboard!</span>
             </div>
           </div>
+        </div>
 
-          <!-- Inclusive Option -->
-          <label class="svc-checkbox-label">
-            <input type="checkbox" id="svcInclusive" onchange="runServiceCalculation()">
-            <span>Include the end date (+1 day, counts both first and last day)</span>
-          </label>
+        <!-- Aggregate Summary for Multi-Period (if active) -->
+        <div id="multiPeriodSummary" class="multi-period-summary-card">
+          <strong style="color:var(--brand-dark);">Aggregated Career Service:</strong>
+          <div id="multiPeriodText" style="margin-top:4px;"></div>
+        </div>
 
-          <!-- Additional Employment Periods (Collapsible) -->
-          <button type="button" class="svc-collapsible-btn" id="btnToggleMulti" aria-expanded="false" onclick="toggleMultiPeriod()">
-            + Add another service period (Rehire / Multiple Terms)
-          </button>
-
-          <div id="multiPeriodBox" class="svc-multi-period-box" aria-hidden="true">
-            <span style="font-size:13px; font-weight:700; color:var(--svc-text-main); display:block; margin-bottom:8px;">Second Service Period</span>
-            <div class="svc-form-group">
-              <label class="svc-label" for="multiStart" style="font-size:13px;">Period 2 Start</label>
-              <input type="date" id="multiStart" class="svc-input-date" style="height:42px; font-size:14px;">
+        <!-- Full-Width Below Panels: Expandable Milestone Roadmap -->
+        <div class="milestone-section-below" id="milestones">
+          <details class="milestone-details">
+            <summary>
+              <div>
+                <strong style="display:block; font-size:var(--t-base);">Career Milestones &amp; Anniversary Schedule</strong>
+                <span id="nextMilestoneHighlight" style="font-size:var(--t-xs); color:var(--muted); font-weight:normal;">Upcoming: 10-Year Milestone on 15 March 2028 (538 days away)</span>
+              </div>
+            </summary>
+            <div style="overflow-x:auto;">
+              <table class="milestone-table">
+                <thead>
+                  <tr>
+                    <th>Milestone</th>
+                    <th>Anniversary Date</th>
+                    <th>Status</th>
+                    <th>Days Until / Since</th>
+                  </tr>
+                </thead>
+                <tbody id="milestoneTableBody">
+                  <!-- Populated by JavaScript -->
+                </tbody>
+              </table>
             </div>
-            <div class="svc-form-group">
-              <label class="svc-label" for="multiEnd" style="font-size:13px;">Period 2 End</label>
-              <input type="date" id="multiEnd" class="svc-input-date" style="height:42px; font-size:14px;">
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: How It Works -->
+    <section class="visual-section how-section" id="how-to-use">
+      <div class="container">
+        <div class="visual-heading">
+          <span class="kicker">How It Works</span>
+          <h2>Calculate your years of service in three clear steps</h2>
+          <p>The calculator uses strict Gregorian calendar arithmetic rather than dividing by an arbitrary 30 or 365 days. Here is the step-by-step logic:</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <span>1</span>
+            <h3>Set Joining Date</h3>
+            <p>Input your official first working day as documented on your employment contract or onboarding records.</p>
+          </div>
+          <div class="process-step">
+            <span>2</span>
+            <h3>Choose Reference Date</h3>
+            <p>Keep "Today" for current active tenure, or choose a custom date for past roles, resignations, or future projections.</p>
+          </div>
+          <div class="process-step">
+            <span>3</span>
+            <h3>Decompose Interval</h3>
+            <p>The calculation counts completed calendar years, then remaining full calendar months, and finally the residual days.</p>
+          </div>
+          <div class="process-step">
+            <span>4</span>
+            <h3>Review Key Metrics</h3>
+            <p>View your exact Y/M/D tenure, total elapsed days, decimal years, and your upcoming anniversary milestone countdown.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Selectable HTML Worked Example -->
+    <section class="visual-section example-section" id="worked-flow">
+      <div class="container">
+        <div class="visual-heading">
+          <span class="kicker">Worked Calculation</span>
+          <h2>Worked Example: 15 March 2018 to 23 September 2026</h2>
+          <p>See exactly how calendar-anniversary arithmetic separates completed years, completed months, and remaining days without rounding errors.</p>
+        </div>
+
+        <div style="background:var(--panel); border:1px solid var(--line); border-radius:var(--r-md); padding:20px; overflow-x:auto; margin-bottom:20px; box-shadow:var(--sh-1);">
+          <table class="data-table" style="margin:0;">
+            <thead>
+              <tr>
+                <th>Step</th>
+                <th>Calendar Interval</th>
+                <th>Result Unit</th>
+                <th>Running Accumulation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Full Years</strong></td>
+                <td>15 March 2018 &rarr; 15 March 2026</td>
+                <td><strong>8 Years</strong></td>
+                <td>8 Years, 0 Months, 0 Days</td>
+              </tr>
+              <tr>
+                <td><strong>2. Full Months</strong></td>
+                <td>15 March 2026 &rarr; 15 September 2026</td>
+                <td><strong>6 Months</strong></td>
+                <td>8 Years, 6 Months, 0 Days</td>
+              </tr>
+              <tr>
+                <td><strong>3. Residual Days</strong></td>
+                <td>15 September 2026 &rarr; 23 September 2026</td>
+                <td><strong>8 Days</strong></td>
+                <td><strong>8 Years, 6 Months, 8 Days</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Total Elapsed</strong></td>
+                <td>Exact day count (exclusive of end date)</td>
+                <td><strong>3,114 Total Days</strong></td>
+                <td>~8.53 Decimal Years</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="inline-links-panel">
+          <span class="kicker">Understand the Arithmetic</span>
+          <p>
+            Notice that dividing 3,114 days by 365 yields 8.531 years. Dividing by 30-day months would produce 103.8 months. Calendar arithmetic avoids these fractional distortions by tracking actual Gregorian month lengths (28, 29, 30, or 31 days). For a comprehensive breakdown of service calculation methodology, read our guide on <a href="../../articles/how-to-calculate-years-of-service/">How to Calculate Years of Service</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Understanding Your Service Results -->
+    <section class="visual-section feature-section" id="understanding-results">
+      <div class="container">
+        <div class="visual-heading">
+          <span class="kicker">Understanding Results</span>
+          <h2>Three Ways to Express Length of Service</h2>
+          <p>Different HR systems, compensation packages, and resume formats require tenure in different formats.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <span class="visual-icon">&#128197;</span>
+            <span class="card-badge">Standard Format</span>
+            <h3>Years, Months &amp; Days</h3>
+            <p>The standard human-readable format. Preferred for service recognition awards, formal letters, resumes, and official service certificates.</p>
+          </article>
+          <article class="benefit-card">
+            <span class="visual-icon">&#128290;</span>
+            <span class="card-badge">Payroll &amp; HRIS</span>
+            <h3>Total Elapsed Days</h3>
+            <p>The pure mathematical elapsed count. Used by payroll and benefits administrators to verify probation periods (e.g. 90 or 180 days) and leave accruals.</p>
+          </article>
+          <article class="benefit-card">
+            <span class="visual-icon">&#9878;&#65039;</span>
+            <span class="card-badge">Actuarial Math</span>
+            <h3>Decimal Years</h3>
+            <p>Total days divided by 365.2425. Frequently required by severance compensation formulas, pension vesting models, and equity valuation schedules.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Date Rules and Employment Breaks -->
+    <section class="visual-section" id="date-rules">
+      <div class="container visual-split">
+        <div>
+          <span class="kicker">Calendar Rules</span>
+          <h2>Inclusivity, Leap Years &amp; Employment Breaks</h2>
+          <p>Employment date calculations encounter edge cases that require clear conventions:</p>
+          
+          <div class="method-formula">
+            <small>End Date Inclusivity</small>
+            <strong>Standard date subtraction measures elapsed calendar duration (end date minus start date). If your last working day is a full paid day of service, check "Include the end date" to add 1 completed day.</strong>
+            
+            <small>Leap Years (February 29)</small>
+            <strong>Leap years contain 366 days. While a leap year adds 1 day to the total elapsed day count, full-year calendar anniversaries remain anchored to the annual month and date.</strong>
+            
+            <small>Career Breaks &amp; Rejoining</small>
+            <strong>If you left an organization and were later rehired, the gap is not credited. Use the "Add another service period" toggle to aggregate distinct terms.</strong>
+          </div>
+        </div>
+
+        <div class="facts-grid">
+          <article>
+            <strong>Calendar Fidelity</strong>
+            <span>Preserves exact calendar anniversaries without fixed 30-day month rounding.</span>
+          </article>
+          <article>
+            <strong>Statutory Difference</strong>
+            <span>Calendar tenure measures elapsed time; statutory "qualifying service" is determined by employer policies and labor laws.</span>
+          </article>
+          <article>
+            <strong>Client-Side Privacy</strong>
+            <span>All date computations execute in your local browser memory. Zero data is sent to a server.</span>
+          </article>
+          <article>
+            <strong>No Sign-Up</strong>
+            <span>Free, private, and instant calculations with one-click copy and print options.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Related Calculators -->
+    <section class="section soft" id="related-tools">
+      <div class="container paired-section">
+        <div class="sticky-cell">
+          <span class="kicker">Continue Calculating</span>
+          <h2>Related Calculators</h2>
+          <p>Explore neighboring date and chronological tools for career, personal, and project planning.</p>
+        </div>
+        <div class="content-cell">
+          <div class="related-grid">
+            <a class="related-card" href="../date-difference-calculator/">
+              <small>Date Lab</small>
+              <h3>Date Difference Calculator</h3>
+              <p>Calculate exact calendar difference in years, months, and days between any two dates.</p>
+            </a>
+            <a class="related-card" href="../business-days-calculator/">
+              <small>Date Lab</small>
+              <h3>Business Days Calculator</h3>
+              <p>Count working weekdays between dates with weekends and custom holidays excluded.</p>
+            </a>
+            <a class="related-card" href="../chronological-age-calculator/">
+              <small>Universal Chronology</small>
+              <h3>Chronological Age Calculator</h3>
+              <p>Determine exact age in completed years, months, and days from date of birth.</p>
+            </a>
+            <a class="related-card" href="../retirement-age-calculator/">
+              <small>Finance &amp; Professional</small>
+              <h3>Retirement Age Calculator</h3>
+              <p>Determine your projected retirement date and remaining service milestones.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Practical Guides (Topical Cluster) -->
+    <section class="section soft" id="related-guides" data-related-guides>
+      <div class="container paired-section">
+        <div class="sticky-cell">
+          <span class="kicker">Learn the Method</span>
+          <h2>Practical Employment Guides</h2>
+          <p>In-depth editorial articles covering employment tenure, service calculations, and work milestones.</p>
+        </div>
+        <div class="content-cell">
+          <div class="related-grid">
+            <a class="related-card" href="../../articles/how-to-calculate-years-of-service/">
+              <small>Article #1</small>
+              <h3>How to Calculate Years of Service: Years, Months &amp; Days</h3>
+              <p>The definitive calculation methodology: Gregorian date subtraction, leap years, and decimal conversion.</p>
+            </a>
+            <a class="related-card" href="../../articles/what-is-years-of-service/">
+              <small>Article #2</small>
+              <h3>What Is Years of Service? Meaning, Tenure &amp; Length of Employment</h3>
+              <p>Understand workplace terminology: tenure vs length of service, statutory vesting, and recognition.</p>
+            </a>
+            <a class="related-card" href="../../articles/how-to-calculate-employee-tenure/">
+              <small>Article #3</small>
+              <h3>How to Calculate Employee Tenure From a Start Date</h3>
+              <p>Step-by-step tutorial on calculating active or completed tenure from joining dates and resumes.</p>
+            </a>
+            <a class="related-card" href="../../articles/how-to-calculate-work-anniversary/">
+              <small>Article #4</small>
+              <h3>How to Calculate Your Work Anniversary: Date, Next Anniversary &amp; Countdown</h3>
+              <p>Find your anniversary milestone date, track upcoming recognition years, and plan corporate celebrations.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container paired-section">
+        <div class="sticky-cell">
+          <span class="kicker">Common Questions</span>
+          <h2>Years of Service Calculator FAQ</h2>
+          <p>Clear answers to common questions about calculating tenure, month lengths, rehire rules, and legal distinctions.</p>
+        </div>
+        <div class="content-cell faq">
+          <details>
+            <summary>How is years of service calculated?</summary>
+            <p>Years of service is calculated by taking your official joining date and measuring elapsed time to your reference date. First, count completed calendar years, then remaining whole calendar months, and finally the residual days.</p>
+          </details>
+          <details>
+            <summary>Does the calculator include the end date?</summary>
+            <p>By default, calendar interval subtraction is exclusive of the end date. If you check "Include the end date (+1 day)", the calculation counts your final day as a completed working day.</p>
+          </details>
+          <details>
+            <summary>How are decimal years calculated?</summary>
+            <p>Decimal years divide total elapsed calendar days by 365.2425 (the average days in a Gregorian calendar year accounting for quadrennial leap years).</p>
+          </details>
+          <details>
+            <summary>How does a leap year affect service calculation?</summary>
+            <p>A leap year adds February 29 (366 days in the year), increasing the total day count by 1. However, full annual calendar anniversaries remain intact on your joining calendar date.</p>
+          </details>
+          <details>
+            <summary>What if my start date was February 29?</summary>
+            <p>In non-leap years, February 29 does not occur. Under standard calendar rules, your anniversary is marked either on February 28 or March 1 depending on organizational policy.</p>
+          </details>
+          <details>
+            <summary>How do breaks in service affect my tenure?</summary>
+            <p>A calendar calculator measures continuous elapsed duration between two dates. If you left and rejoined, each term is calculated separately and summed, excluding the break period.</p>
+          </details>
+          <details>
+            <summary>Is calendar service the same as qualifying service for benefits?</summary>
+            <p>No. Calendar service measures elapsed calendar time. Qualifying service for pensions, gratuity, or severance is governed by statutory laws and employer policies that deduct unapproved leave or require minimum hours worked.</p>
+          </details>
+          <details>
+            <summary>Can I calculate service for a past job or resume?</summary>
+            <p>Yes. Switch the end date option to "Choose a date" and select your official last working day to get your finalized tenure for your resume, LinkedIn profile, or employment verification.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Author Bio -->
+    <section class="author-section" data-author-bio>
+      <div class="container">
+        <div class="author-profile">
+          <img loading="lazy" decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj, author at Age Calculator Lab">
+          <div>
+            <span class="kicker">About the Author</span>
+            <h2>Navjeet Kamboj</h2>
+            <p>
+              Navjeet Kamboj is the author and editor of Age Calculator Lab. He focuses on making age, date, milestone and planning calculations easier to understand through clearly explained methods, practical examples and responsible limitations.
+            </p>
+            <div class="author-links">
+              <a href="../../author/navjeet-kamboj/">Full Author Profile</a>
+              <a href="https://in.linkedin.com/in/navjeet-kamboj" rel="me noopener" target="_blank">LinkedIn &rarr;</a>
+              <a href="https://www.instagram.com/jeet_7.7/" rel="me noopener" target="_blank">Instagram &rarr;</a>
+              <a href="../../methodology/">Editorial Methodology</a>
             </div>
-            <p class="svc-hint" style="font-size:12px;">Overlapping dates are automatically checked and deducted.</p>
-          </div>
-
-          <!-- Action Buttons -->
-          <div class="svc-button-row">
-            <button type="submit" class="svc-btn-primary">Calculate service</button>
-            <button type="button" class="svc-btn-secondary" onclick="resetServiceForm()">Reset</button>
-          </div>
-        </form>
-      </section>
-
-      <!-- RESULTS PANEL (54% Desktop) -->
-      <section class="svc-panel svc-result-panel" aria-labelledby="calc-result-heading">
-        <h2 id="calc-result-heading" class="svc-panel-title">Service Results</h2>
-
-        <!-- Main Duration Result -->
-        <div class="svc-main-result-box">
-          <div class="svc-result-kicker">Length of Service</div>
-          <div id="resultHero" class="svc-result-number-hero">8 Years, 6 Months, 8 Days</div>
-          <p id="resultContext" class="svc-result-context">
-            Calculated from 15 March 2018 to 23 September 2026 (Excluding end date).
-          </p>
-        </div>
-
-        <!-- Secondary Metrics Grid -->
-        <div class="svc-metrics-grid">
-          <div class="svc-metric-card">
-            <span class="svc-metric-label">Completed Years</span>
-            <span id="metricCompletedYears" class="svc-metric-val">8</span>
-          </div>
-          <div class="svc-metric-card">
-            <span class="svc-metric-label">Total Days</span>
-            <span id="metricTotalDays" class="svc-metric-val">3,114</span>
-          </div>
-          <div class="svc-metric-card">
-            <span class="svc-metric-label">Approx Decimal</span>
-            <span id="metricDecimalYears" class="svc-metric-val">8.53 yrs</span>
-          </div>
-        </div>
-
-        <!-- Next Work Anniversary Box -->
-        <div class="svc-anniversary-card">
-          <div class="svc-anniv-head">
-            <span class="svc-anniv-title">Next Work Anniversary</span>
-            <span id="annivDaysBadge" class="svc-anniv-days-badge">173 days remaining</span>
-          </div>
-          <p id="annivDetail" class="svc-anniv-detail">
-            15 March 2027 • 9th Work Anniversary
-          </p>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="svc-actions-row">
-          <button type="button" id="btnCopy" class="svc-action-btn" onclick="copyServiceSummary()">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            Copy summary
-          </button>
-          <button type="button" id="btnPrint" class="svc-action-btn" onclick="window.print()">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-            Print
-          </button>
-        </div>
-        <div id="copyAlert" class="svc-copy-alert">✓ Summary copied to clipboard</div>
-      </section>
-    </div>
-
-    <!-- FULL-WIDTH MILESTONE HIGHLIGHT BELOW PANELS -->
-    <div class="svc-milestone-bar">
-      <div class="svc-milestone-text">
-        <strong>Next Milestone:</strong> <span id="nextMilestoneHighlight">10-Year Decade Milestone on 15 March 2028 (538 days)</span>
-      </div>
-      <button type="button" class="svc-milestone-toggle-btn" id="btnToggleMilestones" onclick="toggleMilestonesTable()">
-        View all milestones
-      </button>
-
-      <div id="milestonesCollapsible" class="svc-milestones-collapsible">
-        <table class="svc-table" id="milestonesTable">
-          <thead>
-            <tr>
-              <th>Milestone</th>
-              <th>Completed Tenure</th>
-              <th>Exact Date</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody id="milestonesBody">
-            <!-- Dynamically populated via JS -->
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- COMPACT NAVIGATION ROW -->
-    <nav class="svc-jump-nav" aria-label="On this page">
-      <span>On this page:</span>
-      <a href="#method">Method</a>
-      <a href="#example">Example</a>
-      <a href="#results-guide">Understanding results</a>
-      <a href="#date-rules">Date rules</a>
-      <a href="#faqs">FAQs</a>
-      <a href="#related-tools">Related tools</a>
-    </nav>
-
-    <!-- SECTION 3: How Years of Service Is Calculated -->
-    <section id="method" class="svc-content-section">
-      <h2>How Years of Service Is Calculated</h2>
-      <p>
-        Years of service measures the elapsed calendar duration an employee has dedicated to an organization from their recognized joining date up to an evaluation or separation date. Rather than dividing total calendar days by an arbitrary number, exact workplace tenure uses Gregorian calendar decomposition. This method preserves annual work anniversaries and accounts for varying month lengths and leap years.
-      </p>
-
-      <div class="svc-steps-list">
-        <div class="svc-step-card">
-          <div class="svc-step-badge">1</div>
-          <div class="svc-step-body">
-            <h3>Choose Your Start and End Dates</h3>
-            <p>
-              Identify the employee's official joining date on active payroll. Choose your reference date: today for ongoing employment, the last working day for former employees, or a projected milestone date for retirement planning.
-            </p>
-          </div>
-        </div>
-
-        <div class="svc-step-card">
-          <div class="svc-step-badge">2</div>
-          <div class="svc-step-body">
-            <h3>Count Completed Years and Months</h3>
-            <p>
-              Count the whole number of calendar years elapsed between the joining date and the most recent annual anniversary. Then count the remaining whole calendar months elapsed from that anniversary date to the reference month.
-            </p>
-          </div>
-        </div>
-
-        <div class="svc-step-card">
-          <div class="svc-step-badge">3</div>
-          <div class="svc-step-body">
-            <h3>Calculate the Remaining Days</h3>
-            <p>
-              Count the leftover days between the day of the month after the last full month and the reference date. If the reference day is smaller than the start day, borrow the exact day count from the preceding calendar month.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: Years of Service Calculation Example -->
-    <section id="example" class="svc-content-section">
-      <h2>Years of Service Calculation Example</h2>
-      <p>
-        The table below shows an exact calculation for an employee who joined on 15 March 2018 evaluated as of 23 September 2026. This calculation uses standard convention, which excludes the end date.
-      </p>
-
-      <div style="overflow-x:auto;">
-        <table class="svc-table" style="max-width:650px;">
-          <thead>
-            <tr>
-              <th>Calculation stage</th>
-              <th>Example</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Joining date</strong></td>
-              <td>15 March 2018</td>
-            </tr>
-            <tr>
-              <td><strong>Reference date</strong></td>
-              <td>23 September 2026</td>
-            </tr>
-            <tr>
-              <td><strong>Completed years</strong></td>
-              <td>8 (from 15 March 2018 to 15 March 2026)</td>
-            </tr>
-            <tr>
-              <td><strong>Remaining months</strong></td>
-              <td>6 (from 15 March 2026 to 15 September 2026)</td>
-            </tr>
-            <tr>
-              <td><strong>Remaining days</strong></td>
-              <td>8 (from 15 September 2026 to 23 September 2026)</td>
-            </tr>
-            <tr>
-              <td><strong>Elapsed calendar days</strong></td>
-              <td>3,114 days (including leap years 2020 and 2024)</td>
-            </tr>
-            <tr style="background:#F1F7F3; font-weight:700;">
-              <td>Final duration</td>
-              <td style="color:var(--svc-green);">8 years, 6 months, 8 days</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>
-        Notice that two Gregorian leap years (2020 and 2024) occurred during this timeframe, adding two extra days into the total elapsed calendar days. However, because calendar decomposition anchors to the annual anniversary date (15 March), completed years advance without anniversary drift.
-      </p>
-    </section>
-
-    <!-- SECTION 5: Understanding Your Service Results -->
-    <section id="results-guide" class="svc-content-section">
-      <h2>Understanding Your Service Results</h2>
-      <p>
-        Human resources departments, payroll managers, and pension trustees report service duration in different formats depending on the administrative purpose. The table below outlines how each metric operates:
-      </p>
-
-      <div style="overflow-x:auto;">
-        <table class="svc-table">
-          <thead>
-            <tr>
-              <th>Metric</th>
-              <th>Format</th>
-              <th>Common Purpose</th>
-              <th>Calculation Basis</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Completed Years</strong></td>
-              <td>Whole integer (e.g. 8)</td>
-              <td>PTO leave accrual tiers, service award pins, vesting schedules</td>
-              <td>Advances only on the exact annual work anniversary date.</td>
-            </tr>
-            <tr>
-              <td><strong>Years, Months &amp; Days</strong></td>
-              <td>Full breakdown (8Y 6M 8D)</td>
-              <td>Employee profiles, HR audit records, resumes, tenure certificates</td>
-              <td>Exact Gregorian calendar interval decomposition.</td>
-            </tr>
-            <tr>
-              <td><strong>Total Days</strong></td>
-              <td>Calendar integer (3,114)</td>
-              <td>Statutory compliance checks, day-based probation benchmarks</td>
-              <td>Absolute count of midnight-to-midnight calendar days.</td>
-            </tr>
-            <tr>
-              <td><strong>Decimal Years</strong></td>
-              <td>Decimal (8.53 years)</td>
-              <td>Actuarial models, prorated bonuses, severance pay multipliers</td>
-              <td>Total days divided by 365.2425 (average Gregorian year length).</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>
-        <em>Note on decimal years:</em> Decimal years are always an approximation because calendar years have varying lengths (365 days in common years versus 366 days in leap years). For formal agreements, specify whether your contract relies on exact calendar decomposition or day-count fractions.
-      </p>
-    </section>
-
-    <!-- SECTION 6: Date Rules and Employment Breaks -->
-    <section id="date-rules" class="svc-content-section">
-      <h2>Date Rules and Employment Breaks</h2>
-      
-      <h3>Including the End Date</h3>
-      <p>
-        By standard legal default, date subtraction calculates the elapsed time between two points, excluding the final day. However, in workplace payroll and statutory severance contexts, the final day worked is frequently credited as a full active service day. Checking "Include the end date (+1 day)" adds that 24-hour day into the calculation, advancing the total days and adjusting the leftover day count accordingly.
-      </p>
-
-      <h3>Leap Years and Month-End Dates</h3>
-      <p>
-        If an employee joins on <strong>February 29</strong> during a leap year, standard organizational practice recognizes their work anniversary on March 1 during non-leap years (the 366th day following hire), or on February 28 under specific company social recognition policies. When another leap year arrives four years later, the anniversary returns to February 29.
-      </p>
-      <p>
-        For employees starting on the 31st of a month, annual anniversaries remain on the 31st. For shorter intermediate months (such as February, April, June, September, November), day counts借 (borrow) the authentic number of days from the preceding calendar month (e.g., 28, 29, 30, or 31 days).
-      </p>
-
-      <h3>Breaks in Employment and Rejoining</h3>
-      <p>
-        When an employee resigns and is later rehired, continuous tenure normally resets to the new start date. However, company service bridging policies, collective bargaining pacts, or statutory rules may permit multiple terms to be combined. Use the "+ Add another service period" toggle above to enter separate employment terms. Overlapping dates are automatically checked so no day is counted twice.
-      </p>
-    </section>
-
-    <!-- SECTION 7: Frequently Asked Questions -->
-    <section id="faqs" class="svc-content-section">
-      <h2>Frequently Asked Questions</h2>
-      
-      <div class="svc-faq-list">
-        <details class="svc-faq-item">
-          <summary>Does the calculation include my last working day?</summary>
-          <p>
-            By default, date difference arithmetic measures elapsed time up to the end date, which excludes the final day. If your employer credits the final working day as a full day of service, select the "Include the end date (+1 day)" option above.
-          </p>
-        </details>
-
-        <details class="svc-faq-item">
-          <summary>Do weekends count toward calendar service?</summary>
-          <p>
-            Yes. Length of service and employee tenure measure continuous calendar time, including weekends and public holidays. However, for working day estimates, only Monday through Friday are counted, excluding normal non-business days.
-          </p>
-        </details>
-
-        <details class="svc-faq-item">
-          <summary>Can I calculate service for a previous job?</summary>
-          <p>
-            Yes. Choose "Choose a date" under the end-date selection and enter your official last working day. The calculator will determine the exact tenure you accumulated throughout that previous job.
-          </p>
-        </details>
-
-        <details class="svc-faq-item">
-          <summary>Can I calculate service up to a future date?</summary>
-          <p>
-            Yes. You can enter any future date (such as a planned retirement date or career milestone) as your reference end date. The tool computes exactly how many years, months, and days of service you will have reached on that date.
-          </p>
-        </details>
-
-        <details class="svc-faq-item">
-          <summary>What happens if I joined on February 29?</summary>
-          <p>
-            During non-leap years, standard HR systems evaluate your anniversary on March 1 (or February 28 according to internal company guidelines). In both cases, completed full years advance on the anniversary day.
-          </p>
-        </details>
-
-        <details class="svc-faq-item">
-          <summary>Can I combine separate employment periods?</summary>
-          <p>
-            Yes, if your company's rehire policy allows service bridging. Use the "+ Add another service period" toggle in the calculator to add previous employment terms, which are combined into an aggregate total duration.
-          </p>
-        </details>
-
-        <details class="svc-faq-item">
-          <summary>Does unpaid leave count toward recognised service?</summary>
-          <p>
-            Calendar tenure measures total elapsed time regardless of leaves. However, formal qualifying service for pensions or statutory gratuity often excludes unpaid leaves or sabbaticals according to scheme rules.
-          </p>
-        </details>
-
-        <details class="svc-faq-item">
-          <summary>Why might my employer’s service figure differ?</summary>
-          <p>
-            Employers may calculate service using continuous calendar dates, working hours (such as 1,000 hours per year under ERISA), or specific payroll cutoff cycles. Check with your HR or pension administrator for scheme-specific rules.
-          </p>
-        </details>
-      </div>
-    </section>
-
-    <!-- SECTION 8: Related Employment Calculators & Guides -->
-    <section id="related-tools" class="svc-content-section">
-      <h2>Related Employment Calculators &amp; Guides</h2>
-      
-      <div class="svc-related-grid">
-        <a class="svc-related-card" href="../../tools/chronological-age-calculator/">
-          <small>Calculator</small>
-          <h3>Chronological Age Calculator</h3>
-          <p>Determine exact chronological age in calendar years, months, and days from birth date.</p>
-        </a>
-        <a class="svc-related-card" href="../../tools/date-difference-calculator/">
-          <small>Calculator</small>
-          <h3>Date Difference Calculator</h3>
-          <p>Calculate the exact calendar difference between any two dates with zero drift.</p>
-        </a>
-        <a class="svc-related-card" href="../../articles/how-to-calculate-years-of-service/">
-          <small>Guide</small>
-          <h3>How to Calculate Years of Service</h3>
-          <p>Step-by-step arithmetic guide on calendar decomposition, borrowing days, and Excel formulas.</p>
-        </a>
-        <a class="svc-related-card" href="../../articles/what-is-years-of-service/">
-          <small>Guide</small>
-          <h3>What Is Years of Service?</h3>
-          <p>Learn the legal, organizational, and linguistic definitions of service, tenure, and milestones.</p>
-        </a>
-        <a class="svc-related-card" href="../../articles/how-to-calculate-employee-tenure/">
-          <small>Guide</small>
-          <h3>How to Calculate Employee Tenure</h3>
-          <p>Measure employee tenure from a start date, accounting for breaks, rehires, and career gaps.</p>
-        </a>
-        <a class="svc-related-card" href="../../articles/how-to-calculate-work-anniversary/">
-          <small>Guide</small>
-          <h3>How to Calculate Your Work Anniversary</h3>
-          <p>Find your next anniversary date, countdown remaining days, and track major career milestones.</p>
-        </a>
-      </div>
-
-      <!-- Compact Author & Methodology Block -->
-      <div class="svc-author-block">
-        <img loading="lazy" decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" class="svc-author-avatar">
-        <div class="svc-author-info">
-          <h4>Created &amp; Maintained by Navjeet Kamboj</h4>
-          <p>
-            Navjeet Kamboj is the founder and technical editor of Age Calculator Lab. He designs transparent calculation models for chronological age, professional tenure, and calendar milestone tracking.
-          </p>
-          <div class="svc-author-links">
-            <a href="../../author/navjeet-kamboj/">Author Profile</a>
-            <a href="../../methodology/">Calculation Methodology</a>
-            <a href="../../about/">About Age Calculator Lab</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Strict 18-Link Homepage Footer -->
+  <!-- Sitewide Footer (Strict 18-Link Structure) -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid footer-grid-rich">
@@ -1407,99 +1148,54 @@
       </div>
       <div class="copyright">
         <span>&copy; 2026 Age Calculator Lab.</span>
+        <span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span>
       </div>
     </div>
   </footer>
 
-  <!-- Core JavaScript Engine -->
+  <!-- Calculator Engine JavaScript -->
   <script>
-    const MONTH_NAMES = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
+  (function() {
+    let lastCalc = null;
 
-    function normalizeToMidnight(d) {
-      if (!d || isNaN(d.getTime())) return null;
-      return new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0);
+    // Helper: format YYYY-MM-DD
+    function toISODate(d) {
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, '0');
+      const day = String(d.getDate()).padStart(2, '0');
+      return `${y}-${m}-${day}`;
     }
 
-    function parseInputDate(str) {
-      if (!str) return null;
-      const parts = str.split('-').map(Number);
-      if (parts.length !== 3 || isNaN(parts[0]) || isNaN(parts[1]) || isNaN(parts[2])) return null;
-      return new Date(parts[0], parts[1] - 1, parts[2], 0, 0, 0, 0);
+    // Helper: format friendly display (e.g. 15 March 2018)
+    function formatDisplayDate(d) {
+      if (!d || isNaN(d.getTime())) return '';
+      return new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(d);
     }
 
-    function formatDateDisplay(d) {
-      if (!d) return '';
-      return `${d.getDate()} ${MONTH_NAMES[d.getMonth()]} ${d.getFullYear()}`;
+    // Strictly normalize date to local midnight (00:00:00.000)
+    function parseDateToMidnight(val) {
+      if (!val) return null;
+      const parts = val.split('-');
+      if (parts.length !== 3) return null;
+      return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]), 0, 0, 0, 0);
     }
 
-    function getOrdinalSuffix(n) {
-      const s = ['th', 'st', 'nd', 'rd'];
-      const v = n % 100;
-      return n + (s[(v - 20) % 10] || s[v] || s[0]);
+    function getTodayMidnight() {
+      const now = new Date();
+      return new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0);
     }
 
-    function toggleEndDateMode() {
-      const isCustom = document.getElementById('endModeCustom').checked;
-      const wrap = document.getElementById('customDateWrap');
-      const endInput = document.getElementById('svcEndDate');
-      wrap.style.display = isCustom ? 'block' : 'none';
-      if (isCustom && !endInput.value) {
-        const now = new Date();
-        const y = now.getFullYear();
-        const m = String(now.getMonth() + 1).padStart(2, '0');
-        const d = String(now.getDate()).padStart(2, '0');
-        endInput.value = `${y}-${m}-${d}`;
-      }
-      runServiceCalculation();
-    }
-
-    function toggleMultiPeriod() {
-      const box = document.getElementById('multiPeriodBox');
-      const btn = document.getElementById('btnToggleMulti');
-      const isOpen = box.classList.contains('is-open');
-      if (isOpen) {
-        box.classList.remove('is-open');
-        box.setAttribute('aria-hidden', 'true');
-        btn.setAttribute('aria-expanded', 'false');
-        btn.textContent = '+ Add another service period (Rehire / Multiple Terms)';
-      } else {
-        box.classList.add('is-open');
-        box.setAttribute('aria-hidden', 'false');
-        btn.setAttribute('aria-expanded', 'true');
-        btn.textContent = '− Hide second service period';
-      }
-      runServiceCalculation();
-    }
-
-    function toggleMilestonesTable() {
-      const wrap = document.getElementById('milestonesCollapsible');
-      const btn = document.getElementById('btnToggleMilestones');
-      const isOpen = wrap.classList.contains('is-open');
-      if (isOpen) {
-        wrap.classList.remove('is-open');
-        btn.textContent = 'View all milestones';
-      } else {
-        wrap.classList.add('is-open');
-        btn.textContent = 'Hide milestones table';
-      }
-    }
-
-    function calculateInterval(start, end, inclusive) {
-      // Both start and end are normalized to midnight
-      let adjEnd = new Date(end.getTime());
-      if (inclusive) {
-        adjEnd.setDate(adjEnd.getDate() + 1);
+    // Exact calendar decomposition
+    function computeService(startDate, endDate, isInclusive) {
+      let end = new Date(endDate.getFullYear(), endDate.getMonth(), endDate.getDate(), 0, 0, 0, 0);
+      if (isInclusive) {
+        end.setDate(end.getDate() + 1);
       }
 
-      if (adjEnd < start) {
-        return null;
-      }
+      if (end < startDate) return null;
 
-      let y1 = start.getFullYear(), m1 = start.getMonth(), d1 = start.getDate();
-      let y2 = adjEnd.getFullYear(), m2 = adjEnd.getMonth(), d2 = adjEnd.getDate();
+      let y1 = startDate.getFullYear(), m1 = startDate.getMonth(), d1 = startDate.getDate();
+      let y2 = end.getFullYear(), m2 = end.getMonth(), d2 = end.getDate();
 
       let years = y2 - y1;
       let months = m2 - m1;
@@ -1507,9 +1203,8 @@
 
       if (days < 0) {
         months -= 1;
-        // Previous month days in Gregorian calendar
-        const prevMonthDays = new Date(y2, m2, 0).getDate();
-        days += prevMonthDays;
+        let prevMonthLastDay = new Date(y2, m2, 0).getDate();
+        days += prevMonthLastDay;
       }
 
       if (months < 0) {
@@ -1517,234 +1212,280 @@
         months += 12;
       }
 
-      const totalDays = Math.round((adjEnd.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+      const totalMs = end.getTime() - startDate.getTime();
+      const totalDays = Math.round(totalMs / 86400000);
       const decimalYears = (totalDays / 365.2425).toFixed(2);
+
+      // Estimate working days (excluding Sat & Sun)
+      let workdays = 0;
+      let cur = new Date(startDate.getTime());
+      while (cur < end) {
+        let dayOfWeek = cur.getDay();
+        if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+          workdays++;
+        }
+        cur.setDate(cur.getDate() + 1);
+      }
 
       return {
         years,
         months,
         days,
         totalDays,
-        decimalYears
+        decimalYears,
+        workdays,
+        adjustedEnd: end
       };
     }
 
-    function calculateNextWorkAnniversary(start, refDate) {
-      const sm = start.getMonth();
-      const sd = start.getDate();
-      let targetYear = refDate.getFullYear();
+    // Work Anniversary Calculation
+    function computeNextAnniversary(startDate, refDate) {
+      let y = refDate.getFullYear();
+      let m = startDate.getMonth();
+      let d = startDate.getDate();
+      
+      // Handle Feb 29
+      let maxD = new Date(y, m + 1, 0).getDate();
+      let targetDate = new Date(y, m, Math.min(d, maxD), 0, 0, 0, 0);
 
-      let isFeb29 = (sm === 1 && sd === 29);
-      function getAnnivForYear(yr) {
-        if (isFeb29) {
-          const isLeap = (yr % 4 === 0 && (yr % 100 !== 0 || yr % 400 === 0));
-          return isLeap ? new Date(yr, 1, 29, 0, 0, 0, 0) : new Date(yr, 2, 1, 0, 0, 0, 0); // March 1 default
-        }
-        return new Date(yr, sm, sd, 0, 0, 0, 0);
+      if (targetDate <= refDate) {
+        y += 1;
+        let nextMaxD = new Date(y, m + 1, 0).getDate();
+        targetDate = new Date(y, m, Math.min(d, nextMaxD), 0, 0, 0, 0);
       }
 
-      let anniv = getAnnivForYear(targetYear);
-      if (anniv <= refDate) {
-        targetYear++;
-        anniv = getAnnivForYear(targetYear);
-      }
-
-      const diffMs = anniv.getTime() - refDate.getTime();
-      const daysAway = Math.round(diffMs / (1000 * 60 * 60 * 24));
-      const completedYearsAtAnniv = targetYear - start.getFullYear();
+      const completedYears = targetDate.getFullYear() - startDate.getFullYear();
+      const daysAway = Math.round((targetDate.getTime() - refDate.getTime()) / 86400000);
 
       return {
-        date: anniv,
-        daysAway,
-        completedYears: completedYearsAtAnniv
+        nextDate: targetDate,
+        completedYears,
+        daysAway
       };
     }
 
-    let lastCalculationResult = null;
+    function getOrdinal(n) {
+      const s = ["th", "st", "nd", "rd"];
+      const v = n % 100;
+      return n + (s[(v - 20) % 10] || s[v] || s[0]);
+    }
 
-    function runServiceCalculation() {
-      const startInput = document.getElementById('svcStartDate');
-      const startError = document.getElementById('startDateError');
-      const endError = document.getElementById('endDateError');
-      const inclusive = document.getElementById('svcInclusive').checked;
-
-      startError.classList.remove('is-visible');
-      endError.classList.remove('is-visible');
-
-      const start = parseInputDate(startInput.value);
-      if (!start) {
-        startError.classList.add('is-visible');
-        return;
-      }
-
-      let end;
-      if (document.getElementById('endModeToday').checked) {
-        const now = new Date();
-        end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0);
-      } else {
-        const endInput = document.getElementById('svcEndDate');
-        end = parseInputDate(endInput.value);
-        if (!end) {
-          endError.textContent = 'Please choose a valid reference date.';
-          endError.classList.add('is-visible');
-          return;
+    // Toggle End Date Mode
+    window.toggleEndDateMode = function() {
+      const isCustom = document.getElementById('endModeCustom').checked;
+      const wrap = document.getElementById('customDateWrap');
+      wrap.style.display = isCustom ? 'block' : 'none';
+      if (isCustom) {
+        const customInput = document.getElementById('svcEndDate');
+        if (!customInput.value) {
+          customInput.value = toISODate(getTodayMidnight());
         }
       }
+      runServiceCalculation();
+    };
 
-      if (end < start) {
-        endError.textContent = 'End date cannot be earlier than joining date.';
-        endError.classList.add('is-visible');
+    // Toggle Multi-Period Box
+    window.toggleMultiPeriodBox = function() {
+      const box = document.getElementById('multiPeriodBox');
+      const btn = document.getElementById('btnToggleMulti');
+      const isOpen = box.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      btn.textContent = isOpen 
+        ? '− Hide additional service period' 
+        : '+ Add another service period (Rehire / Multiple Terms)';
+      runServiceCalculation();
+    };
+
+    // Main Calculator Runner
+    window.runServiceCalculation = function() {
+      const startInput = document.getElementById('svcStartDate').value;
+      if (!startInput) return;
+
+      const startDate = parseDateToMidnight(startInput);
+      if (!startDate) return;
+
+      const isTodayMode = document.getElementById('endModeToday').checked;
+      let endDate;
+      if (isTodayMode) {
+        endDate = getTodayMidnight();
+      } else {
+        const customVal = document.getElementById('svcEndDate').value;
+        if (!customVal) return;
+        endDate = parseDateToMidnight(customVal);
+      }
+
+      if (!endDate) return;
+
+      if (endDate < startDate) {
+        document.getElementById('primaryResult').textContent = "Invalid Date Range";
+        document.getElementById('resultSubtitle').textContent = "End date cannot be earlier than joining date.";
         return;
       }
 
-      // Check Period 1
-      let res = calculateInterval(start, end, inclusive);
+      const isInclusive = document.getElementById('svcInclusive').checked;
+      const res = computeService(startDate, endDate, isInclusive);
       if (!res) return;
 
-      // Check Multi Period if open
-      const multiBox = document.getElementById('multiPeriodBox');
-      if (multiBox.classList.contains('is-open')) {
-        const mStart = parseInputDate(document.getElementById('multiStart').value);
-        const mEnd = parseInputDate(document.getElementById('multiEnd').value);
-        if (mStart && mEnd && mEnd >= mStart) {
-          const res2 = calculateInterval(mStart, mEnd, inclusive);
-          if (res2) {
-            // Aggregate total days and re-decompose
-            const aggDays = res.totalDays + res2.totalDays;
-            // Simple aggregate
-            res.totalDays = aggDays;
-            res.decimalYears = (aggDays / 365.2425).toFixed(2);
-            // Combined duration note
+      lastCalc = { startDate, endDate, isInclusive, res };
+
+      // Update Primary Display
+      const primaryText = `${res.years} Years, ${res.months} Months, ${res.days} Days`;
+      document.getElementById('primaryResult').textContent = primaryText;
+      document.getElementById('resultSubtitle').textContent = 
+        `Calculated from ${formatDisplayDate(startDate)} to ${formatDisplayDate(endDate)}${isInclusive ? ' (Inclusive of end date)' : ''}`;
+
+      // Update 2x2 Metrics Grid
+      document.getElementById('metricCompletedYears').textContent = `${res.years} Years`;
+      document.getElementById('metricTotalDays').textContent = `${res.totalDays.toLocaleString()} Days`;
+      document.getElementById('metricDecimalYears').textContent = `${res.decimalYears} Years`;
+      document.getElementById('metricWorkingDays').textContent = `${res.workdays.toLocaleString()} Days`;
+
+      // Update Work Anniversary
+      const anniv = computeNextAnniversary(startDate, endDate);
+      document.getElementById('annivCountdown').textContent = `${anniv.daysAway.toLocaleString()} days away`;
+      document.getElementById('annivDate').textContent = `${getOrdinal(anniv.completedYears)} Anniversary on ${formatDisplayDate(anniv.nextDate)}`;
+
+      // Update Screen Reader Announcement
+      const announcer = document.getElementById('liveAnnouncer');
+      if (announcer) {
+        announcer.textContent = `Calculated tenure: ${primaryText}, ${res.totalDays.toLocaleString()} total days.`;
+      }
+
+      // Update Milestones Roadmap
+      updateMilestones(startDate, endDate);
+
+      // Handle Multi-Period Summation
+      updateMultiPeriod(res);
+    };
+
+    function updateMilestones(startDate, refDate) {
+      const milestoneYears = [1, 2, 3, 5, 10, 15, 20, 25, 30];
+      const tbody = document.getElementById('milestoneTableBody');
+      tbody.innerHTML = '';
+
+      let nextUpcomingFound = false;
+      const nextHighlightEl = document.getElementById('nextMilestoneHighlight');
+
+      milestoneYears.forEach(y => {
+        let mDate = new Date(startDate.getFullYear() + y, startDate.getMonth(), startDate.getDate(), 0, 0, 0, 0);
+        // Leap year adjustment
+        let maxD = new Date(mDate.getFullYear(), mDate.getMonth() + 1, 0).getDate();
+        if (mDate.getDate() > maxD) mDate.setDate(maxD);
+
+        const diffDays = Math.round((mDate.getTime() - refDate.getTime()) / 86400000);
+        const tr = document.createElement('tr');
+
+        let statusBadge = '';
+        let daysText = '';
+
+        if (diffDays <= 0) {
+          statusBadge = '<span class="badge-achieved">Achieved</span>';
+          daysText = `${Math.abs(diffDays).toLocaleString()} days ago`;
+        } else {
+          statusBadge = '<span class="badge-upcoming">Upcoming</span>';
+          daysText = `${diffDays.toLocaleString()} days away`;
+          if (!nextUpcomingFound) {
+            nextUpcomingFound = true;
+            if (nextHighlightEl) {
+              nextHighlightEl.textContent = `Upcoming: ${y}-Year Milestone on ${formatDisplayDate(mDate)} (${diffDays.toLocaleString()} days away)`;
+            }
           }
         }
-      }
 
-      lastCalculationResult = {
-        start,
-        end,
-        inclusive,
-        res
-      };
-
-      // Display Main Results
-      const yLabel = `${res.years} Year${res.years === 1 ? '' : 's'}`;
-      const mLabel = `${res.months} Month${res.months === 1 ? '' : 's'}`;
-      const dLabel = `${res.days} Day${res.days === 1 ? '' : 's'}`;
-      const fullText = `${yLabel}, ${mLabel}, ${dLabel}`;
-
-      document.getElementById('resultHero').textContent = fullText;
-      const incText = inclusive ? ' (Inclusive of end date)' : ' (Excluding end date)';
-      document.getElementById('resultContext').textContent = `Calculated from ${formatDateDisplay(start)} to ${formatDateDisplay(end)}${incText}.`;
-
-      // Secondary Metrics
-      document.getElementById('metricCompletedYears').textContent = res.years;
-      document.getElementById('metricTotalDays').textContent = res.totalDays.toLocaleString();
-      document.getElementById('metricDecimalYears').textContent = `${res.decimalYears} yrs`;
-
-      // Next Work Anniversary
-      const anniv = calculateNextWorkAnniversary(start, end);
-      const annivBadge = document.getElementById('annivDaysBadge');
-      if (anniv.daysAway === 0) {
-        annivBadge.textContent = 'Today is anniversary!';
-        annivBadge.style.background = '#FEF3C7';
-        annivBadge.style.color = '#92400E';
-      } else {
-        annivBadge.textContent = `${anniv.daysAway} day${anniv.daysAway === 1 ? '' : 's'} remaining`;
-        annivBadge.style.background = '#E6F4EA';
-        annivBadge.style.color = '#0B5D3B';
-      }
-      document.getElementById('annivDetail').textContent = `${formatDateDisplay(anniv.date)} • ${getOrdinalSuffix(anniv.completedYears)} Work Anniversary`;
-
-      // Milestones Table & Highlight
-      const milestoneTiers = [1, 3, 5, 10, 15, 20, 25, 30];
-      const tbody = document.getElementById('milestonesBody');
-      tbody.innerHTML = '';
-      let nextM = null;
-
-      milestoneTiers.forEach(tier => {
-        const mYear = start.getFullYear() + tier;
-        let d = start.getDate();
-        let m = start.getMonth();
-        // Leap day
-        if (m === 1 && d === 29) {
-          const isL = (mYear % 4 === 0 && (mYear % 100 !== 0 || mYear % 400 === 0));
-          if (!isL) { m = 2; d = 1; }
-        }
-        const mDate = new Date(mYear, m, d, 0, 0, 0, 0);
-        const diffDays = Math.round((mDate.getTime() - end.getTime()) / (1000 * 60 * 60 * 24));
-
-        let statusText = '';
-        if (mDate <= end) {
-          statusText = '<span style="color:#0B5D3B; font-weight:600;">✓ Achieved</span>';
-        } else if (!nextM) {
-          nextM = { tier, date: mDate, daysAway: diffDays };
-          statusText = '<span style="color:#0284C7; font-weight:700;">★ Next Target</span>';
-        } else {
-          statusText = '<span style="color:#52635B;">Upcoming</span>';
-        }
-
-        const tr = document.createElement('tr');
         tr.innerHTML = `
-          <td><strong>${getOrdinalSuffix(tier)} Anniversary</strong></td>
-          <td>${tier} Years</td>
-          <td>${formatDateDisplay(mDate)}</td>
-          <td>${statusText}</td>
+          <td><strong>${y} Year${y === 1 ? '' : 's'}</strong></td>
+          <td>${formatDisplayDate(mDate)}</td>
+          <td>${statusBadge}</td>
+          <td>${daysText}</td>
         `;
         tbody.appendChild(tr);
       });
 
-      if (nextM) {
-        document.getElementById('nextMilestoneHighlight').textContent = `${nextM.tier}-Year Milestone on ${formatDateDisplay(nextM.date)} (${nextM.daysAway} days)`;
-      } else {
-        document.getElementById('nextMilestoneHighlight').textContent = 'All standard milestone tiers achieved!';
+      if (!nextUpcomingFound && nextHighlightEl) {
+        nextHighlightEl.textContent = 'All standard career milestones (up to 30 years) achieved!';
       }
-
-      // Accessibility Announcement
-      document.getElementById('liveAnnouncer').textContent = `Calculation complete: ${fullText}, ${res.totalDays} total days.`;
-
-      // Enable Action Buttons
-      document.getElementById('btnCopy').disabled = false;
-      document.getElementById('btnPrint').disabled = false;
     }
 
-    function resetServiceForm() {
+    function updateMultiPeriod(primaryRes) {
+      const pStartInput = document.getElementById('multiStart').value;
+      const pEndInput = document.getElementById('multiEnd').value;
+      const summaryCard = document.getElementById('multiPeriodSummary');
+      const summaryText = document.getElementById('multiPeriodText');
+
+      if (!pStartInput || !pEndInput) {
+        summaryCard.style.display = 'none';
+        return;
+      }
+
+      const pStart = parseDateToMidnight(pStartInput);
+      const pEnd = parseDateToMidnight(pEndInput);
+
+      if (pStart && pEnd && pEnd >= pStart) {
+        const isInclusive = document.getElementById('svcInclusive').checked;
+        const pRes = computeService(pStart, pEnd, isInclusive);
+        if (pRes) {
+          const totalDaysCombined = primaryRes.totalDays + pRes.totalDays;
+          const combinedDecimal = (totalDaysCombined / 365.2425).toFixed(2);
+          summaryCard.style.display = 'block';
+          summaryText.innerHTML = `
+            Primary Term: <strong>${primaryRes.years}y ${primaryRes.months}m ${primaryRes.days}d</strong> (${primaryRes.totalDays.toLocaleString()} days)<br>
+            Prior Term: <strong>${pRes.years}y ${pRes.months}m ${pRes.days}d</strong> (${pRes.totalDays.toLocaleString()} days)<br>
+            Total Combined Service: <strong>${totalDaysCombined.toLocaleString()} total days (~${combinedDecimal} decimal years)</strong>
+          `;
+        }
+      } else {
+        summaryCard.style.display = 'none';
+      }
+    }
+
+    window.resetServiceForm = function() {
       document.getElementById('svcStartDate').value = '2018-03-15';
       document.getElementById('endModeToday').checked = true;
       document.getElementById('svcInclusive').checked = false;
       document.getElementById('customDateWrap').style.display = 'none';
-      const box = document.getElementById('multiPeriodBox');
-      box.classList.remove('is-open');
-      document.getElementById('btnToggleMulti').setAttribute('aria-expanded', 'false');
-      document.getElementById('btnToggleMulti').textContent = '+ Add another service period (Rehire / Multiple Terms)';
       document.getElementById('multiStart').value = '';
       document.getElementById('multiEnd').value = '';
+      const box = document.getElementById('multiPeriodBox');
+      box.classList.remove('is-open');
+      const btn = document.getElementById('btnToggleMulti');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.textContent = '+ Add another service period (Rehire / Multiple Terms)';
+      document.getElementById('multiPeriodSummary').style.display = 'none';
       runServiceCalculation();
-    }
+    };
 
-    function copyServiceSummary() {
-      if (!lastCalculationResult) return;
-      const { start, end, inclusive, res } = lastCalculationResult;
-      const text = [
-        "Years of Service Summary",
-        "------------------------",
-        `Joining Date: ${formatDateDisplay(start)}`,
-        `Reference Date: ${formatDateDisplay(end)}${inclusive ? ' (Inclusive)' : ''}`,
+    window.copyServiceSummary = function() {
+      if (!lastCalc) return;
+      const { startDate, endDate, isInclusive, res } = lastCalc;
+      const summary = [
+        "YEARS OF SERVICE SUMMARY",
+        "------------------------------------",
+        `Joining Date: ${formatDisplayDate(startDate)}`,
+        `Reference Date: ${formatDisplayDate(endDate)}${isInclusive ? ' (Inclusive)' : ''}`,
         `Length of Service: ${res.years} Years, ${res.months} Months, ${res.days} Days`,
         `Total Elapsed Days: ${res.totalDays.toLocaleString()} Days`,
-        `Approximate Decimal: ${res.decimalYears} Years`,
-        "Calculated via Age Calculator Lab: https://www.agecalculatorlab.com/tools/years-of-service-calculator/"
+        `Approx. Decimal: ${res.decimalYears} Years (365.2425d)`,
+        `Estimated Working Days: ${res.workdays.toLocaleString()} Days`,
+        "------------------------------------",
+        "Source: Age Calculator Lab",
+        "https://www.agecalculatorlab.com/tools/years-of-service-calculator/"
       ].join('\n');
 
-      navigator.clipboard.writeText(text).then(() => {
-        const alert = document.getElementById('copyAlert');
-        alert.style.display = 'block';
-        setTimeout(() => { alert.style.display = 'none'; }, 3000);
+      navigator.clipboard.writeText(summary).then(() => {
+        const feedback = document.getElementById('copyFeedback');
+        feedback.style.display = 'inline-block';
+        setTimeout(() => { feedback.style.display = 'none'; }, 3000);
       });
-    }
+    };
 
+    // Run on Load
     document.addEventListener('DOMContentLoaded', () => {
       runServiceCalculation();
     });
+  })();
   </script>
+
+  <!-- Sitewide Navigation & Search JavaScript -->
+  <script src="../../assets/app.js?v=20260824c"></script>
 </body>
 </html>
