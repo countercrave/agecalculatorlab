@@ -5,11 +5,6 @@
       <stop offset="50%" stop-color="#1e1b4b" />
       <stop offset="100%" stop-color="#064e3b" />
     </linearGradient>
-    <linearGradient id="cal-gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fef08a" />
-      <stop offset="50%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#b45309" />
-    </linearGradient>
     <linearGradient id="glow-teal" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#059669" />
       <stop offset="100%" stop-color="#10b981" />
@@ -33,109 +28,108 @@
   </g>
 
   <!-- Title & Kicker -->
-  <g transform="translate(100, 50)">
-    <rect x="0" y="0" width="230" height="30" rx="15" fill="#6366f1" fill-opacity="0.2" stroke="#818cf8" stroke-width="1.2" />
-    <text x="115" y="20" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">ANNIVERSARY ENGINE</text>
-    <text x="0" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800">Calculate Next Work Anniversary &amp; Countdown</text>
-    <text x="0" y="102" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">Determine your exact upcoming employment anniversary, completed milestone years, and remaining days.</text>
+  <g transform="translate(80, 48)">
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#6366f1" fill-opacity="0.2" stroke="#818cf8" stroke-width="1.2" />
+    <text x="110" y="19" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">ANNIVERSARY ENGINE</text>
+    <text x="0" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="800">Calculate Next Work Anniversary &amp; Countdown</text>
+    <text x="0" y="96" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">Determine your exact upcoming employment anniversary, completed milestone years, and remaining days.</text>
   </g>
 
   <!-- Main Visual: Left Start Date Card -> Center Recurring Dial -> Right Next Anniversary -->
-  <g transform="translate(100, 190)">
+  <g transform="translate(80, 185)">
     <!-- LEFT CARD: Start Date Anchor -->
     <g transform="translate(0, 0)" filter="url(#anniv-shadow)">
-      <rect x="0" y="0" width="310" height="380" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.8" />
+      <rect x="0" y="0" width="310" height="390" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.8" />
       <rect x="0" y="0" width="310" height="6" rx="3" fill="#3b82f6" />
       
       <!-- Calendar Icon Block -->
-      <g transform="translate(25, 30)">
+      <g transform="translate(25, 28)">
         <rect x="0" y="0" width="54" height="54" rx="10" fill="#0c4a6e" stroke="#0284c7" stroke-width="1.5" />
         <rect x="0" y="0" width="54" height="16" rx="4" fill="#0284c7" />
         <text x="27" y="42" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="20" font-weight="800" text-anchor="middle">14</text>
       </g>
-      <g transform="translate(92, 45)">
+      <g transform="translate(92, 42)">
         <text x="0" y="0" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">ANCHOR DATE</text>
         <text x="0" y="24" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="700">Start Date</text>
       </g>
-      <line x1="25" y1="105" x2="285" y2="105" stroke="#334155" stroke-width="1" />
+      <line x1="25" y1="102" x2="285" y2="102" stroke="#334155" stroke-width="1" />
 
       <!-- Date Box -->
-      <g transform="translate(25, 130)">
+      <g transform="translate(25, 125)">
         <rect x="0" y="0" width="260" height="74" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1.5" />
-        <text x="18" y="34" fill="#93c5fd" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">HIRE DATE</text>
-        <text x="18" y="58" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="20" font-weight="800">14 September 2021</text>
+        <text x="18" y="32" fill="#93c5fd" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">HIRE DATE</text>
+        <text x="18" y="58" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="800">14 September 2021</text>
       </g>
 
       <!-- Recurrence Note -->
-      <g transform="translate(25, 230)">
-        <rect x="0" y="0" width="260" height="110" rx="8" fill="#1e1b4b" stroke="#4338ca" stroke-width="1" />
+      <g transform="translate(25, 225)">
+        <rect x="0" y="0" width="260" height="125" rx="8" fill="#1e1b4b" stroke="#4338ca" stroke-width="1" />
         <text x="16" y="28" fill="#a5b4fc" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">&#10024; Annual Recurring Anchor:</text>
-        <text x="16" y="54" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="700">Every September 14</text>
-        <text x="16" y="78" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Re-evaluates every year</text>
-        <text x="16" y="96" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">based on reference date</text>
+        <text x="16" y="56" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="700">Every September 14</text>
+        <text x="16" y="82" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Re-evaluates every year</text>
+        <text x="16" y="102" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">based on reference date</text>
       </g>
     </g>
 
     <!-- CENTER ARROW & CYCLE BADGE -->
-    <g transform="translate(345, 110)">
-      <!-- Curved Path -->
-      <path d="M 0,75 L 110,75" fill="none" stroke="#818cf8" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6" />
-      <polygon points="110,75 95,65 95,85" fill="#818cf8" />
+    <g transform="translate(330, 115)">
+      <path d="M 0,75 L 120,75" fill="none" stroke="#818cf8" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6" />
+      <polygon points="120,75 105,67 105,83" fill="#818cf8" />
       
       <!-- Central Recurrence Badge -->
-      <g transform="translate(55, 75)">
-        <circle cx="0" cy="0" r="32" fill="#0f172a" stroke="#f59e0b" stroke-width="3" filter="url(#anniv-shadow)" />
-        <!-- Clock / Calendar Icon -->
-        <circle cx="0" cy="0" r="14" fill="none" stroke="#fbbf24" stroke-width="2" />
-        <polyline points="0,-8 0,0 5,4" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" />
+      <g transform="translate(60, 75)">
+        <circle cx="0" cy="0" r="30" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5" filter="url(#anniv-shadow)" />
+        <circle cx="0" cy="0" r="13" fill="none" stroke="#fbbf24" stroke-width="2" />
+        <polyline points="0,-7 0,0 4,4" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" />
       </g>
-      <text x="55" y="132" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Annual</text>
-      <text x="55" y="148" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Countdown</text>
+      <text x="60" y="130" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Annual</text>
+      <text x="60" y="146" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Countdown</text>
     </g>
 
     <!-- RIGHT CARD: Next Anniversary & Countdown Result -->
-    <g transform="translate(490, 0)" filter="url(#anniv-shadow)">
-      <rect x="0" y="0" width="510" height="380" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2" />
-      <rect x="0" y="0" width="510" height="6" rx="3" fill="url(#glow-teal)" />
+    <g transform="translate(470, 0)" filter="url(#anniv-shadow)">
+      <rect x="0" y="0" width="570" height="390" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+      <rect x="0" y="0" width="570" height="6" rx="3" fill="url(#glow-teal)" />
 
       <!-- Card Header -->
-      <g transform="translate(30, 30)">
-        <text x="0" y="0" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="1">NEXT UPCOMING OCCURRENCE</text>
-        <text x="0" y="32" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="26" font-weight="800">Your Next Work Anniversary</text>
+      <g transform="translate(30, 28)">
+        <text x="0" y="0" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" letter-spacing="1">NEXT UPCOMING OCCURRENCE</text>
+        <text x="0" y="28" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="24" font-weight="800">Your Next Work Anniversary</text>
       </g>
 
-      <!-- Big Highlight Date & Milestone Tier -->
-      <g transform="translate(30, 95)">
-        <!-- Date Block -->
-        <rect x="0" y="0" width="450" height="95" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1.8" />
-        <text x="24" y="38" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1">NEXT DATE</text>
-        <text x="24" y="74" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="30" font-weight="800">14 September 2027</text>
+      <!-- Date & Milestone Block -->
+      <g transform="translate(30, 88)">
+        <rect x="0" y="0" width="510" height="100" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1.8" />
         
-        <!-- Milestone Badge -->
-        <g transform="translate(330, 20)">
-          <rect x="0" y="0" width="95" height="55" rx="8" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5" />
-          <text x="47" y="26" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" text-anchor="middle">6th</text>
-          <text x="47" y="44" fill="#fde68a" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">ANNIVERSARY</text>
+        <!-- Next Date Copy -->
+        <text x="24" y="34" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">NEXT ANNIVERSARY DATE</text>
+        <text x="24" y="70" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="24" font-weight="800">14 September 2027</text>
+        
+        <!-- Milestone Badge: Positioned safely at x=365 with 120 width -->
+        <g transform="translate(365, 18)">
+          <rect x="0" y="0" width="120" height="64" rx="8" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5" />
+          <text x="60" y="32" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" text-anchor="middle">6th</text>
+          <text x="60" y="52" fill="#fde68a" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="1">ANNIVERSARY</text>
         </g>
       </g>
 
       <!-- Countdown Bar & Metrics -->
-      <g transform="translate(30, 215)">
+      <g transform="translate(30, 212)">
         <!-- Countdown Metric Block -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="215" height="125" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+          <rect x="0" y="0" width="245" height="138" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
           <text x="20" y="30" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">COUNTDOWN</text>
-          <text x="20" y="74" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="36" font-weight="800">356</text>
-          <text x="20" y="104" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Days Remaining</text>
+          <text x="20" y="76" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="38" font-weight="800">356</text>
+          <text x="20" y="106" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="13">Calendar Days Remaining</text>
         </g>
 
         <!-- Current Completed Service Block -->
-        <g transform="translate(235, 0)">
-          <rect x="0" y="0" width="215" height="125" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+        <g transform="translate(265, 0)">
+          <rect x="0" y="0" width="245" height="138" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
           <text x="20" y="30" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CURRENT SERVICE</text>
-          <text x="20" y="66" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="20" font-weight="800">5Y 9M 9D</text>
-          <text x="20" y="92" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12">&#10003; 5 Years Completed</text>
-          <text x="20" y="108" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">As of 23 Sep 2026</text>
+          <text x="20" y="68" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">5Y 9M 9D</text>
+          <text x="20" y="96" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12">&#10003; 5 Full Years Completed</text>
+          <text x="20" y="116" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Reference Date: 23 Sep 2026</text>
         </g>
       </g>
     </g>
