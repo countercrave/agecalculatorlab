@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="office-desk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="yellow-legal-pad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef9c3" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+    <filter id="pad-shadow" x="-5%" y="-5%" width="112%" height="115%">
+      <feDropShadow dx="4" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Executive Desk Surface -->
+  <rect width="800" height="600" fill="url(#office-desk)" />
+
+  <!-- Laptop Corner Outline on Left Desk -->
+  <g opacity="0.35">
+    <rect x="-120" y="40" width="220" height="420" rx="16" fill="#0f172a" stroke="#64748b" stroke-width="2" />
+    <rect x="-110" y="55" width="200" height="390" rx="8" fill="#1e293b" />
+  </g>
+
+  <!-- Legal Pad / HR Notepad -->
+  <g transform="translate(130, 45)" filter="url(#pad-shadow)">
+    <!-- Top Binding Header (Brown Leatherette Header) -->
+    <rect x="0" y="0" width="550" height="42" rx="4" fill="#78350f" />
+    <line x1="20" y1="21" x2="530" y2="21" stroke="#fef08a" stroke-width="1" stroke-dasharray="6 4" opacity="0.6" />
+
+    <!-- Yellow Lined Sheet Body -->
+    <rect x="0" y="42" width="550" height="480" rx="2" fill="url(#yellow-legal-pad)" stroke="#fef08a" stroke-width="1" />
+
+    <!-- Left Red Margin Line -->
+    <line x1="75" y1="42" x2="75" y2="522" stroke="#f87171" stroke-width="1.6" opacity="0.7" />
+
+    <!-- Lined Paper Rules -->
+    <g stroke="#93c5fd" stroke-width="0.8" opacity="0.55">
+      <line x1="75" y1="90" x2="520" y2="90" />
+      <line x1="75" y1="135" x2="520" y2="135" />
+      <line x1="75" y1="180" x2="520" y2="180" />
+      <line x1="75" y1="225" x2="520" y2="225" />
+      <line x1="75" y1="270" x2="520" y2="270" />
+      <line x1="75" y1="315" x2="520" y2="315" />
+      <line x1="75" y1="360" x2="520" y2="360" />
+      <line x1="75" y1="405" x2="520" y2="405" />
+      <line x1="75" y1="450" x2="520" y2="450" />
+      <line x1="75" y1="495" x2="520" y2="495" />
+    </g>
+
+    <!-- Natural Blue Ink Handwritten Notes -->
+    <g transform="translate(95, 60)">
+      <!-- Heading -->
+      <text x="0" y="24" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="24" font-weight="bold">Tenure Check</text>
+      <path d="M 0,34 Q 85,38 185,32" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" />
+
+      <!-- Step Entries -->
+      <g transform="translate(10, 75)">
+        <text x="0" y="0" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="19" font-weight="bold">Hire Date &#8594; <tspan fill="#1d4ed8">12 Jun 2019</tspan></text>
+        <text x="0" y="45" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="19" font-weight="bold">As Of &#8594; <tspan fill="#059669">23 Sep 2026</tspan></text>
+      </g>
+
+      <!-- Decomposed Breakdown Margin Calculations -->
+      <g transform="translate(25, 185)">
+        <text x="0" y="0" fill="#475569" font-family="'Segoe Print', cursive, sans-serif" font-size="15">&#8226; 2019 to 2026 = 7 full years (Jun 12)</text>
+        <text x="0" y="32" fill="#475569" font-family="'Segoe Print', cursive, sans-serif" font-size="15">&#8226; Jun 12 to Sep 12 = 3 months</text>
+        <text x="0" y="64" fill="#475569" font-family="'Segoe Print', cursive, sans-serif" font-size="15">&#8226; Sep 12 to Sep 23 = 11 days</text>
+      </g>
+
+      <!-- Circled Result -->
+      <g transform="translate(15, 305)">
+        <ellipse cx="140" cy="25" rx="145" ry="32" fill="none" stroke="#2563eb" stroke-width="2.8" stroke-dasharray="350 8" transform="rotate(-1 140 25)" />
+        <text x="140" y="34" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="26" font-weight="bold" text-anchor="middle">= 7Y 3M 11D</text>
+      </g>
+
+      <!-- Verification Badge -->
+      <g transform="translate(20, 395)">
+        <text x="0" y="0" fill="#15803d" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold">&#10003; Calendar tenure (100% exact)</text>
+        <text x="0" y="24" fill="#64748b" font-family="'Segoe Print', cursive, sans-serif" font-size="13">No day-drift &#8226; verified via Age Calculator Lab</text>
+      </g>
+    </g>
+  </g>
+</svg>

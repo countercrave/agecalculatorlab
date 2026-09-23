@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="dash-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="bar-teal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="dash-shadow" x="-5%" y="-5%" width="112%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#dash-bg)" />
+
+  <!-- Dashboard Window Container -->
+  <g transform="translate(100, 50)" filter="url(#dash-shadow)">
+    <!-- Browser Window Chrome -->
+    <rect x="0" y="0" width="1000" height="575" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.8" />
+    <rect x="0" y="0" width="1000" height="44" rx="14" fill="#1e293b" />
+    <!-- Window dots -->
+    <circle cx="25" cy="22" r="6" fill="#ef4444" />
+    <circle cx="45" cy="22" r="6" fill="#f59e0b" />
+    <circle cx="65" cy="22" r="6" fill="#10b981" />
+    <text x="500" y="27" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" text-anchor="middle">HR Workforce Analytics &#8226; Employee Tenure Distribution Dashboard (Sample Data)</text>
+
+    <!-- Main Dashboard Grid -->
+    <g transform="translate(40, 75)">
+      <!-- Top Metrics 3 Cards -->
+      <g transform="translate(0, 0)">
+        <!-- Metric 1 -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="290" height="85" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
+          <text x="20" y="30" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">MEDIAN TENURE</text>
+          <text x="20" y="64" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="26" font-weight="800">4.2 Years</text>
+          <text x="270" y="55" fill="#10b981" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="end">+0.3y YoY</text>
+        </g>
+        <!-- Metric 2 -->
+        <g transform="translate(315, 0)">
+          <rect x="0" y="0" width="290" height="85" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
+          <text x="20" y="30" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">10+ YEAR COHORT</text>
+          <text x="20" y="64" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="26" font-weight="800">18.4%</text>
+          <text x="270" y="55" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="end">Loyal Base</text>
+        </g>
+        <!-- Metric 3 -->
+        <g transform="translate(630, 0)">
+          <rect x="0" y="0" width="290" height="85" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1" />
+          <text x="20" y="30" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">ANNUAL RETENTION</text>
+          <text x="20" y="64" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="26" font-weight="800">89.2%</text>
+          <text x="270" y="55" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="end">Top Quartile</text>
+        </g>
+      </g>
+
+      <!-- Bottom Big Bar Chart: Tenure Distribution Brackets -->
+      <g transform="translate(0, 115)">
+        <rect x="0" y="0" width="920" height="340" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="30" y="38" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="700">Tenure Distribution by Cohort Brackets</text>
+        <text x="30" y="58" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Percentage of workforce grouped by completed calendar years of service</text>
+
+        <!-- Horizontal Bars Grid -->
+        <g transform="translate(30, 90)">
+          <!-- Bracket 1: 0 - 1 Years -->
+          <g transform="translate(0, 0)">
+            <text x="0" y="20" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">0&#8211;1 Years</text>
+            <rect x="110" y="4" width="380" height="24" rx="4" fill="#0284c7" />
+            <text x="505" y="21" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">22.5%</text>
+          </g>
+
+          <!-- Bracket 2: 1 - 3 Years -->
+          <g transform="translate(0, 48)">
+            <text x="0" y="20" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">1&#8211;3 Years</text>
+            <rect x="110" y="4" width="560" height="24" rx="4" fill="url(#bar-teal)" />
+            <text x="685" y="21" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">34.2%</text>
+          </g>
+
+          <!-- Bracket 3: 3 - 5 Years -->
+          <g transform="translate(0, 96)">
+            <text x="0" y="20" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">3&#8211;5 Years</text>
+            <rect x="110" y="4" width="320" height="24" rx="4" fill="#10b981" />
+            <text x="445" y="21" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">19.1%</text>
+          </g>
+
+          <!-- Bracket 4: 5 - 10 Years -->
+          <g transform="translate(0, 144)">
+            <text x="0" y="20" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">5&#8211;10 Years</text>
+            <rect x="110" y="4" width="220" height="24" rx="4" fill="#f59e0b" />
+            <text x="345" y="21" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">13.8%</text>
+          </g>
+
+          <!-- Bracket 5: 10+ Years -->
+          <g transform="translate(0, 192)">
+            <text x="0" y="20" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">10+ Years</text>
+            <rect x="110" y="4" width="165" height="24" rx="4" fill="#8b5cf6" />
+            <text x="290" y="21" fill="#c4b5fd" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">10.4%</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="table-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="sheet-shadow" x="-5%" y="-5%" width="115%" height="118%">
+      <feDropShadow dx="5" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#table-bg)" />
+
+  <!-- Sheet of Office Memo Paper -->
+  <g transform="translate(120, 50)" filter="url(#sheet-shadow)">
+    <rect x="0" y="0" width="560" height="500" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Top Paper Clip -->
+    <rect x="50" y="-8" width="30" height="28" rx="6" fill="none" stroke="#94a3b8" stroke-width="3" />
+
+    <!-- Memo Content -->
+    <g transform="translate(55, 45)">
+      <!-- Stamp -->
+      <rect x="320" y="5" width="130" height="34" rx="4" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+      <text x="385" y="28" fill="#1d4ed8" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">HR AUDIT FILE</text>
+
+      <!-- Title -->
+      <text x="0" y="32" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="24" font-weight="bold">Employee Report</text>
+      <line x1="0" y1="46" x2="220" y2="46" stroke="#0f172a" stroke-width="2" stroke-linecap="round" />
+
+      <!-- Handwritten Entries -->
+      <g transform="translate(10, 85)" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif">
+        <text x="0" y="0" fill="#1e3a8a" font-size="18" font-weight="bold">&#8226; Current employer:</text>
+        <text x="210" y="0" fill="#059669" font-size="20" font-weight="bold">7Y 3M 11D</text>
+
+        <text x="0" y="50" fill="#475569" font-size="18" font-weight="bold">&#8226; Previous employer:</text>
+        <text x="210" y="50" fill="#3b82f6" font-size="20" font-weight="bold">4Y 8M 0D</text>
+
+        <text x="0" y="100" fill="#64748b" font-size="16">&#8226; Employment gap:</text>
+        <text x="210" y="100" fill="#64748b" font-size="16">6 Months (Unpaid)</text>
+      </g>
+
+      <!-- Big Notice Box -->
+      <g transform="translate(0, 240)">
+        <rect x="0" y="0" width="450" height="110" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.8" />
+        <text x="20" y="36" fill="#92400e" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold">CRITICAL PRINCIPLE:</text>
+        <!-- Underlined statement -->
+        <text x="20" y="70" fill="#b45309" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold">Total career experience &#8800; current tenure</text>
+        <line x1="20" y1="80" x2="430" y2="80" stroke="#b45309" stroke-width="2" stroke-linecap="round" />
+      </g>
+
+      <!-- Signature & Date -->
+      <g transform="translate(10, 395)" font-family="'Segoe Print', cursive, sans-serif" font-size="14" fill="#64748b">
+        <text x="0" y="0">Verified by HR Operations</text>
+        <text x="320" y="0">23 Sept 2026</text>
+      </g>
+    </g>
+  </g>
+</svg>

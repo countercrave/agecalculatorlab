@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="tenure-hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="badge-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+    <linearGradient id="badge-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="accent-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="card-shadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#tenure-hero-bg)" />
+
+  <!-- Subtle Blueprint Coordinates Grid -->
+  <g stroke="#334155" stroke-width="0.8" opacity="0.3">
+    <line x1="0" y1="135" x2="1200" y2="135" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="0" y1="405" x2="1200" y2="405" />
+    <line x1="0" y1="540" x2="1200" y2="540" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+  </g>
+
+  <!-- Title & Kicker -->
+  <g transform="translate(100, 55)">
+    <rect x="0" y="0" width="220" height="30" rx="15" fill="#0ea5e9" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.2" />
+    <text x="110" y="20" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">TENURE ENGINE</text>
+    <text x="0" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800">Hire Date &#8594; Active Employee Tenure</text>
+    <text x="0" y="102" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">Decomposing elapsed calendar time into completed years, remaining months, and exact days.</text>
+  </g>
+
+  <!-- Interactive Visual Architecture: Left Card -> Process -> Right Card -->
+  <g transform="translate(100, 195)">
+    <!-- LEFT CARD: Employee Profile & Start Date -->
+    <g transform="translate(0, 0)" filter="url(#card-shadow)">
+      <rect x="0" y="0" width="320" height="375" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.8" />
+      <rect x="0" y="0" width="320" height="6" rx="3" fill="url(#badge-blue)" />
+      
+      <!-- Profile Header -->
+      <circle cx="50" cy="50" r="22" fill="#0369a1" />
+      <text x="50" y="56" fill="#bae6fd" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" text-anchor="middle">HR</text>
+      <text x="86" y="46" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="700">Employee Record</text>
+      <text x="86" y="66" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Active Corporate Profile</text>
+      <line x1="25" y1="90" x2="295" y2="90" stroke="#334155" stroke-width="1" />
+
+      <!-- Start Date Focus -->
+      <g transform="translate(25, 115)">
+        <text x="0" y="0" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">STEP 1: HIRE DATE</text>
+        <rect x="0" y="12" width="270" height="74" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1.5" />
+        <text x="18" y="42" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">12 June 2019</text>
+        <text x="18" y="66" fill="#64748b" font-family="-apple-system, sans-serif" font-size="12">Official Appointment Day</text>
+      </g>
+
+      <!-- Reference Date Focus -->
+      <g transform="translate(25, 235)">
+        <text x="0" y="0" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1">STEP 2: REFERENCE DATE</text>
+        <rect x="0" y="12" width="270" height="74" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1.5" />
+        <text x="18" y="42" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">23 Sept 2026</text>
+        <text x="18" y="66" fill="#64748b" font-family="-apple-system, sans-serif" font-size="12">Evaluation / Today's Cutoff</text>
+      </g>
+    </g>
+
+    <!-- CENTER CONNECTOR: Chronological Transformation -->
+    <g transform="translate(360, 110)">
+      <!-- Animated / Pulsed Flow Arrow -->
+      <path d="M 0,75 L 120,75" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6" />
+      <polygon points="120,75 105,65 105,85" fill="#38bdf8" />
+      
+      <!-- Center Engine Badge -->
+      <g transform="translate(60, 75)">
+        <circle cx="0" cy="0" r="32" fill="#0f172a" stroke="#10b981" stroke-width="3" filter="url(#card-shadow)" />
+        <text x="0" y="6" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="bold" text-anchor="middle">&#8722;</text>
+      </g>
+
+      <text x="60" y="135" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Calendar</text>
+      <text x="60" y="152" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Decomposition</text>
+    </g>
+
+    <!-- RIGHT CARD: Active Tenure Result -->
+    <g transform="translate(520, 0)" filter="url(#card-shadow)">
+      <rect x="0" y="0" width="480" height="375" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+      <rect x="0" y="0" width="480" height="6" rx="3" fill="url(#badge-emerald)" />
+
+      <!-- Result Header -->
+      <g transform="translate(30, 35)">
+        <text x="0" y="0" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="1">STEP 3: DECOMPOSED TENURE RESULT</text>
+        <text x="0" y="32" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="26" font-weight="800">Current Employee Tenure</text>
+      </g>
+
+      <!-- Primary Y / M / D Display Grid -->
+      <g transform="translate(30, 105)">
+        <!-- Years Block -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="130" height="110" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1.8" />
+          <text x="65" y="55" fill="#34d399" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" text-anchor="middle">7</text>
+          <text x="65" y="85" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">YEARS</text>
+        </g>
+        <!-- Months Block -->
+        <g transform="translate(145, 0)">
+          <rect x="0" y="0" width="130" height="110" rx="10" fill="#0c4a6e" stroke="#0ea5e9" stroke-width="1.8" />
+          <text x="65" y="55" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" text-anchor="middle">3</text>
+          <text x="65" y="85" fill="#bae6fd" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">MONTHS</text>
+        </g>
+        <!-- Days Block -->
+        <g transform="translate(290, 0)">
+          <rect x="0" y="0" width="130" height="110" rx="10" fill="#78350f" stroke="#f59e0b" stroke-width="1.8" />
+          <text x="65" y="55" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" text-anchor="middle">11</text>
+          <text x="65" y="85" fill="#fde68a" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">DAYS</text>
+        </g>
+      </g>
+
+      <!-- Bottom Secondary Metrics Bar -->
+      <g transform="translate(30, 245)">
+        <rect x="0" y="0" width="420" height="85" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+        <!-- Metric 1 -->
+        <g transform="translate(25, 25)">
+          <text x="0" y="0" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" text-transform="uppercase">Total Months</text>
+          <text x="0" y="26" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="700">87 Mos</text>
+        </g>
+        <!-- Metric 2 -->
+        <g transform="translate(160, 25)">
+          <text x="0" y="0" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" text-transform="uppercase">Decimal Tenure</text>
+          <text x="0" y="26" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="700">&#8776; 7.28 Yrs</text>
+        </g>
+        <!-- Metric 3 -->
+        <g transform="translate(295, 25)">
+          <text x="0" y="0" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" text-transform="uppercase">Total Days</text>
+          <text x="0" y="26" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="700">2,660 Days</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
