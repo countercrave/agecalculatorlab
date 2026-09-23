@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="lyn-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="lyn-paper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <filter id="lyn-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="3" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#lyn-bg)" />
+
+  <!-- Technical Note Paper -->
+  <g transform="translate(100, 45)" filter="url(#lyn-shadow)">
+    <rect width="600" height="510" rx="8" fill="url(#lyn-paper)" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Grid lines on paper -->
+    <g stroke="#e2e8f0" stroke-width="0.8">
+      <line x1="40" y1="60" x2="560" y2="60" />
+      <line x1="40" y1="120" x2="560" y2="120" />
+      <line x1="40" y1="180" x2="560" y2="180" />
+      <line x1="40" y1="240" x2="560" y2="240" />
+      <line x1="40" y1="300" x2="560" y2="300" />
+      <line x1="40" y1="360" x2="560" y2="360" />
+      <line x1="40" y1="420" x2="560" y2="420" />
+    </g>
+
+    <!-- Big Headline Note in Pen -->
+    <g transform="translate(60, 95)">
+      <text x="0" y="0" fill="#dc2626" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="32" font-weight="bold">365 &#8800; every calendar year</text>
+
+      <text x="0" y="65" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="24" font-weight="bold">2024 &#8594; 366 days</text>
+      <text x="270" y="65" fill="#047857" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18">(Leap Year)</text>
+
+      <!-- Crucial Rule Underlined -->
+      <g transform="translate(0, 140)">
+        <text x="0" y="0" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="21" font-weight="bold">Days &#247; 365 &#8800; exact Y/M/D service</text>
+        <!-- Double wavy underline -->
+        <path d="M 0,10 Q 20,16 40,10 T 80,10 T 120,10 T 160,10 T 200,10 T 240,10 T 280,10 T 320,10 T 360,10 T 400,10 T 440,10" fill="none" stroke="#dc2626" stroke-width="2.5" />
+        <path d="M 0,15 Q 20,21 40,15 T 80,15 T 120,15 T 160,15 T 200,15 T 240,15 T 280,15 T 320,15 T 360,15 T 400,15 T 440,15" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.6" />
+      </g>
+    </g>
+
+    <!-- Hand-drawn Mini Calendar Icon for Feb 29 -->
+    <g transform="translate(180, 310)">
+      <rect x="0" y="0" width="240" height="135" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+      <rect x="0" y="0" width="240" height="34" rx="8" fill="#ef4444" />
+      <rect x="0" y="24" width="240" height="10" fill="#ef4444" />
+      <text x="120" y="22" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">FEBRUARY 2024</text>
+      <text x="120" y="88" fill="#0f172a" font-family="-apple-system, sans-serif" font-size="44" font-weight="800" text-anchor="middle">29</text>
+      <text x="120" y="118" fill="#0284c7" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Leap Day Milestone</text>
+    </g>
+
+    <!-- Bottom summary tag -->
+    <text x="300" y="480" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13" font-style="italic" text-anchor="middle">Always use calendar anniversary arithmetic for employment tenure.</text>
+  </g>
+</svg>

@@ -1,0 +1,1234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="Y5be21WsrJ2pH_gQfwHr57ucbKKUDO1wtzNvumLDzh0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>How to Calculate Years of Service: Years, Months &amp; Days | Age Calculator Lab</title>
+  <meta name="description" content="Learn how to calculate years of service accurately in years, months, and days. Complete methodology, worked example, leap-year handling, and qualifying service rules.">
+  <link rel="canonical" href="https://www.agecalculatorlab.com/articles/how-to-calculate-years-of-service/">
+  <meta property="og:url" content="https://www.agecalculatorlab.com/articles/how-to-calculate-years-of-service/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Calculate Years of Service: Years, Months &amp; Days | Age Calculator Lab">
+  <meta property="og:description" content="Learn how to calculate exact employee tenure, completed years, months, days, decimal service years, work anniversaries, and legal qualifying service.">
+  <meta property="og:image" content="https://www.agecalculatorlab.com/assets/articles/how-to-calculate-years-of-service/how-to-calculate-years-of-service-hero.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Calculate Years of Service: Years, Months &amp; Days">
+  <meta name="twitter:description" content="Exact calendar decomposition method for calculating employee tenure, anniversary dates, decimal years, and service milestones.">
+  <meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/articles/how-to-calculate-years-of-service/how-to-calculate-years-of-service-hero.svg">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#075433">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../../assets/style.css?v=20260824e">
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Calculate Years of Service: Years, Months & Days",
+    "description": "Learn how to calculate years of service accurately in years, months, and days. Complete methodology, worked example, leap-year handling, and qualifying service rules.",
+    "url": "https://www.agecalculatorlab.com/articles/how-to-calculate-years-of-service/",
+    "datePublished": "2026-09-23",
+    "dateModified": "2026-09-23",
+    "image": "https://www.agecalculatorlab.com/assets/articles/how-to-calculate-years-of-service/how-to-calculate-years-of-service-hero.svg",
+    "articleSection": "Finance & Professional",
+    "wordCount": 2650,
+    "author": {
+      "@type": "Person",
+      "name": "Navjeet Kamboj",
+      "url": "https://www.agecalculatorlab.com/author/navjeet-kamboj/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Age Calculator Lab",
+      "url": "https://www.agecalculatorlab.com/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.agecalculatorlab.com/articles/how-to-calculate-years-of-service/"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.agecalculatorlab.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://www.agecalculatorlab.com/articles/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Finance & Professional",
+        "item": "https://www.agecalculatorlab.com/categories/finance-professional/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "How to Calculate Years of Service",
+        "item": "https://www.agecalculatorlab.com/articles/how-to-calculate-years-of-service/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Structured Data (14 Targeted FAQs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I calculate years of service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Identify your recognized employment start date and measure the elapsed time to your reference date (such as today or your last working day). Count whole calendar years to your most recent anniversary date, then whole remaining months, and finally remaining days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate years of service from my joining date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Take your official joining date from your contract or HR record as the start date. For ongoing jobs, compare it against today's date. The calculation decomposes the interval into completed calendar years, remaining months, and remaining days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you calculate employment tenure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Employment tenure is calculated by measuring continuous calendar time between hire date and evaluation date. Exact tenure calculation preserves annual anniversary dates and accounts for leap years and unequal month lengths."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate years, months and days of service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1) Count complete calendar years between start date and last anniversary. 2) Count remaining whole months up to the reference month. 3) Count remaining days up to the reference day. Combine as Y Years, M Months, D Days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is years of service calculated by dividing days by 365?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Dividing total elapsed days by 365 yields an approximate decimal number, but it ignores leap years (366 days) and variable month lengths (28 to 31 days). Exact years of service is an anniversary-based calendar calculation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate total months of service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multiply completed full years by 12, then add the remaining whole months. For example, 8 years and 6 months equals 102 completed calendar months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate total days of employment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Count the exact number of calendar days that have elapsed between your start date and reference date, factoring in all intervening 365-day common years and 366-day leap years."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What date should I use as my employment start date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the recognized service start date specified in your official employment contract, offer letter, or HR payroll system. For transferred employees (e.g. under TUPE or mergers), this may be a recognized continuous service date carried forward from a predecessor employer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What date should I use as my end date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If currently employed, use today's date. If employment ended, use your official last working day. If planning retirement or a future milestone, use your projected cutoff date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a leap year affect years of service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A leap year adds February 29 to the calendar year, which increases the total day count by 1 day. However, it does not alter annual anniversary dates for common join dates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a break in employment affect years of service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A break in employment interrupts continuous service. Unless your employer has an explicit service-bridging agreement, tenure for statutory benefits typically restarts from the rehire date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is years of service the same as work experience?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Years of service refers to elapsed tenure with a specific employer or organization. Work experience refers to the cumulative professional time accrued across all jobs and employers throughout your career."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is years of service the same as qualifying service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Calendar years of service measures elapsed time. Qualifying service is a legal determination defined by labor statutes and pension plans that may deduct unpaid leaves, unauthorized absences, or require minimum working days per year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I calculate my next work anniversary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your work anniversary recurs on the same month and day as your hire date each year. Your next anniversary is the earliest upcoming occurrence of that date following today's date."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Article-Specific Styling */
+    :root {
+      --art-emerald: #059669;
+      --art-emerald-dark: #065f46;
+      --art-navy: #0f172a;
+      --art-blue: #0284c7;
+      --art-slate-border: #e2e8f0;
+      --art-slate-bg: #f8fafc;
+    }
+
+    .article-hero {
+      padding: clamp(28px, 4vw, 50px) 0 24px;
+      background: linear-gradient(180deg, var(--soft), var(--page));
+    }
+
+    /* Early Answer Box */
+    .early-answer-box {
+      background: #ecfdf5;
+      border: 1.5px solid #a7f3d0;
+      border-left: 6px solid var(--art-emerald);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 20px 0 24px;
+    }
+    .early-answer-box p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #064e3b;
+      margin: 0;
+    }
+
+    /* Action CTA Button */
+    .cta-early-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--art-emerald-dark);
+      color: #ffffff !important;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 14px;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(5, 150, 105, 0.2);
+    }
+    .cta-early-btn:hover {
+      background: #047857;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+    }
+
+    /* Quick Answer Box */
+    .quick-answer-card {
+      background: #ffffff;
+      border: 1px solid var(--art-slate-border);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 28px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .quick-step-list {
+      display: grid;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .quick-step-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: var(--art-slate-bg);
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+    .quick-step-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--art-emerald);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Live HTML/SVG Timeline Component */
+    .timeline-visual-card {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 28px 0;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.2);
+    }
+
+    /* Card Panels */
+    .status-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .status-card {
+      background: #ffffff;
+      border: 1px solid var(--art-slate-border);
+      border-radius: 10px;
+      padding: 18px;
+      border-top: 4px solid var(--art-emerald);
+    }
+
+    /* Big Mid-Article CTA Banner */
+    .big-calc-banner {
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 60%, #047857 100%);
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 32px 28px;
+      text-align: center;
+      margin: 36px 0;
+      box-shadow: 0 6px 20px rgba(6, 78, 59, 0.2);
+    }
+    .big-calc-banner h3 {
+      font-size: 1.7rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+      font-family: 'Fraunces', serif;
+    }
+    .big-calc-banner p {
+      font-size: 1rem;
+      color: #d1fae5;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+    .big-calc-btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #065f46 !important;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .big-calc-btn:hover {
+      background: #f0fdf4;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    }
+
+    /* Figures */
+    .article-figure {
+      margin: 32px 0;
+      text-align: center;
+    }
+    .article-figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      border: 1px solid #e2e8f0;
+    }
+    .article-figure figcaption {
+      margin-top: 10px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* Comparison Box */
+    .vs-box-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .vs-card {
+      background: #ffffff;
+      border: 1px solid var(--art-slate-border);
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    /* Sticky TOC Sidebar */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+    .article-toc {
+      position: sticky;
+      top: calc(var(--header-h) + 20px);
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+      padding: 18px;
+      background: #ffffff;
+      border: 1px solid var(--art-slate-border);
+      border-radius: 12px;
+      font-size: 0.86rem;
+    }
+    .article-toc strong {
+      display: block;
+      font-size: 0.92rem;
+      color: var(--art-navy);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1.5px solid #f1f5f9;
+    }
+    .article-toc a {
+      display: block;
+      color: #475569;
+      text-decoration: none;
+      padding: 5px 0;
+      border-left: 2px solid transparent;
+      padding-left: 8px;
+      transition: all 0.2s;
+    }
+    .article-toc a:hover {
+      color: var(--art-emerald-dark);
+      border-left-color: var(--art-emerald);
+      font-weight: 600;
+    }
+
+    @media (max-width: 900px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+      }
+      .article-toc {
+        position: static;
+        max-height: none;
+      }
+      .vs-box-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+        <img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab" width="144" height="48">
+      </a>
+      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+      </button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <details class="nav-dropdown nav-dropdown-categories">
+          <summary>Calculators <span class="nav-chevron" aria-hidden="true">&#x2304;</span></summary>
+          <div class="nav-mega">
+            <div class="nav-mega-head">
+              <div><small>161 focused tools</small><strong>Main calculator categories</strong></div>
+              <a href="../../categories/">View category directory &rarr;</a>
+            </div>
+            <div class="nav-category-grid">
+              <a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+              <a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+              <a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>8 tools</small></a>
+              <a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+              <a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+              <a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>15 tools</small></a>
+              <a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>13 tools</small></a>
+              <a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+              <a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+              <a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>12 tools</small></a>
+              <a href="../../categories/date-lab/"><span>Date Lab</span><small>34 tools</small></a>
+            </div>
+            <div class="nav-quick-row">
+              <span>Popular</span>
+              <a href="../../">Age Calculator</a>
+              <a href="../../tools/date-difference-calculator/">Date Difference</a>
+              <a href="../../tools/corrected-age-calculator/">Corrected Age</a>
+              <a href="../../tools/countdown-to-date-calculator/">Countdown</a>
+            </div>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-dropdown-guides">
+          <summary>Guides <span class="nav-chevron" aria-hidden="true">&#x2304;</span></summary>
+          <div class="nav-mega nav-mega-guides">
+            <div class="nav-mega-head">
+              <div><small>100 practical guides</small><strong>Learn the method</strong></div>
+              <a href="../../articles/">Browse all guides &rarr;</a>
+            </div>
+            <div class="nav-guide-grid">
+              <a href="../../articles/calculate-exact-age-years-months-days/"><small>Universal Chronology</small><span>How to Calculate Exact Age in Years, Months and Days</span></a>
+              <a href="../../articles/chronological-age-explained/"><small>Universal Chronology</small><span>Chronological Age: What It Measures and What It Doesn't</span></a>
+              <a href="../../articles/calendar-age-vs-decimal-age/"><small>Universal Chronology</small><span>Calendar Age vs Decimal Age: Which One Does Your Form Want?</span></a>
+              <a href="../../articles/calculate-age-on-past-date/"><small>Universal Chronology</small><span>Working Out Your Age on a Past Date</span></a>
+              <a href="../../articles/calculate-age-on-future-date/"><small>Universal Chronology</small><span>How Old Will I Be on a Future Date?</span></a>
+              <a href="../../articles/leap-day-birthdays-age-calculation/"><small>Universal Chronology</small><span>Leap-Day Birthdays: Ageing Normally, Celebrating Awkwardly</span></a>
+            </div>
+          </div>
+        </details>
+        <a href="../../categories/">Categories</a>
+        <a href="../../methodology/">Methodology</a>
+        <a class="nav-cta" href="../../">Open Age Calculator</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Article Hero Section -->
+    <section class="article-hero">
+      <div class="container article-hero-grid">
+        <div class="article-hero-copy">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../../">Home</a> / <a href="../../articles/">Guides</a> / <a href="../../categories/finance-professional/">Finance &amp; Professional</a> / How to Calculate Years of Service
+          </nav>
+          <span class="eyebrow">Finance &amp; Professional &#8226; Career Methodology Pillar</span>
+          <h1>How to Calculate Years of Service: Years, Months &amp; Days</h1>
+          
+          <!-- Immediate Direct Answer (< 100 Words) -->
+          <div class="early-answer-box">
+            <p>
+              <strong>Direct Answer:</strong> Years of service is usually calculated by measuring the calendar time between an employment start date and a chosen end or reference date. For an exact result, the duration can be expressed as completed years, remaining months, and remaining days rather than simply dividing the number of days by 365.
+            </p>
+            <a href="../../tools/years-of-service-calculator/" class="cta-early-btn">
+              <span>&#129518;</span> Calculate Your Years of Service &rarr;
+            </a>
+          </div>
+
+          <div class="article-meta">
+            <span>By <strong><a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></strong></span>
+            <span>&#8226;</span>
+            <span>Updated September 2026</span>
+            <span>&#8226;</span>
+            <span>12 min read</span>
+            <span>&#8226;</span>
+            <span>Official Calculation Guide</span>
+          </div>
+        </div>
+
+        <!-- Featured Media Visual (Figure 1: Hero Timeline) -->
+        <figure class="article-featured-media">
+          <img fetchpriority="high" decoding="async" src="../../assets/articles/how-to-calculate-years-of-service/how-to-calculate-years-of-service-hero.svg" alt="How to calculate years of service timeline diagram from start date to reference date" width="1200" height="675">
+          <figcaption>Figure 1: Employment timeline decomposing elapsed service from hire date through anniversary milestones to the reference cutoff.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Main Content Layout with Sticky Sidebar TOC -->
+    <div class="container article-layout">
+      <!-- Sticky Sidebar Table of Contents -->
+      <aside class="article-toc" aria-label="On this page">
+        <strong>On this page</strong>
+        <a href="#quick-answer-steps">How Do You Calculate Years of Service?</a>
+        <a href="#not-simply-days-365">Years of Service Is Not Simply Days &divide; 365</a>
+        <a href="#worked-example">Example: Calculating 8Y 6M 8D</a>
+        <a href="#calendar-timeline">Interactive Visual Timeline</a>
+        <a href="#which-date-to-use">Which Date Should You Use?</a>
+        <a href="#next-anniversary">How to Find Your Next Anniversary</a>
+        <a href="#decimal-years">How Service Converts to Decimal Years</a>
+        <a href="#total-months">How to Calculate Total Months</a>
+        <a href="#total-days">How to Calculate Total Days</a>
+        <a href="#leap-years">Do Leap Years Affect Service?</a>
+        <a href="#month-end-dates">Month-End Starting Dates</a>
+        <a href="#breaks-in-employment">Breaks in Employment &amp; Rehire</a>
+        <a href="#qualifying-service">Calendar vs. Qualifying Service</a>
+        <a href="#use-cases">When Do People Calculate Service?</a>
+        <a href="#service-vs-experience">Years of Service vs. Experience</a>
+        <a href="#milestones-roadmap">Common Service Milestones</a>
+        <a href="#calc-cta">Calculator Tool Access</a>
+        <a href="#faq">Frequently Asked Questions</a>
+      </aside>
+
+      <!-- Main Article Body -->
+      <article class="article-body">
+        <!-- Quick Answer Box -->
+        <section class="quick-answer-card" id="quick-answer-steps">
+          <h2 style="font-size:1.3rem;margin-top:0;color:var(--art-navy);">How Do You Calculate Years of Service?</h2>
+          <p style="font-size:0.95rem;color:#475569;">
+            Whether you are evaluating employee tenure for an internal HR review, planning a work anniversary celebration, or writing a resume, follow this structured five-step calculation:
+          </p>
+
+          <div class="quick-step-list">
+            <div class="quick-step-item">
+              <span class="quick-step-num">1</span>
+              <div>
+                <strong style="color:#0f172a;display:block;">Find your official employment start date</strong>
+                <span style="font-size:0.86rem;color:#64748b;">Use the date your service actually began according to your employment contract, offer letter, or official onboarding records.</span>
+              </div>
+            </div>
+
+            <div class="quick-step-item">
+              <span class="quick-step-num">2</span>
+              <div>
+                <strong style="color:#0f172a;display:block;">Choose the end or reference date</strong>
+                <span style="font-size:0.86rem;color:#64748b;">This can be today (for current jobs), your last working day (for past jobs), or a future date (for retirement or milestone planning).</span>
+              </div>
+            </div>
+
+            <div class="quick-step-item">
+              <span class="quick-step-num">3</span>
+              <div>
+                <strong style="color:#0f172a;display:block;">Calculate complete calendar years</strong>
+                <span style="font-size:0.86rem;color:#64748b;">Count the full calendar anniversaries reached between the two dates.</span>
+              </div>
+            </div>
+
+            <div class="quick-step-item">
+              <span class="quick-step-num">4</span>
+              <div>
+                <strong style="color:#0f172a;display:block;">Calculate remaining months</strong>
+                <span style="font-size:0.86rem;color:#64748b;">After completed years, count the remaining whole calendar months up to the reference month.</span>
+              </div>
+            </div>
+
+            <div class="quick-step-item">
+              <span class="quick-step-num">5</span>
+              <div>
+                <strong style="color:#0f172a;display:block;">Calculate remaining days</strong>
+                <span style="font-size:0.86rem;color:#64748b;">Count the days left over after the last complete calendar month.</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:14px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+            <div>
+              <span style="font-size:0.82rem;font-weight:700;color:#166534;text-transform:uppercase;letter-spacing:1px;display:block;">Decomposed Result</span>
+              <strong style="font-size:1.15rem;color:#14532d;">Years + Months + Days (Exact Calendar Tenure)</strong>
+            </div>
+            <a href="../../tools/years-of-service-calculator/" class="cta-early-btn" style="margin-top:0;padding:10px 18px;font-size:0.88rem;">
+              Try the Years of Service Calculator &rarr;
+            </a>
+          </div>
+        </section>
+
+        <!-- SECTION 1: Years of Service Is Not Simply Days / 365 -->
+        <h2 id="not-simply-days-365">Years of Service Is Not Simply Days &divide; 365</h2>
+        <p>
+          A common shortcut adopted in casual spreadsheets and simplified online tools is to calculate elapsed days between two dates and divide by 365:
+        </p>
+        <div style="background:#f8fafc;padding:12px 18px;border-radius:8px;border:1px solid #cbd5e1;font-family:'JetBrains Mono',monospace;font-size:0.95rem;color:#0f172a;margin:14px 0;">
+          \(	ext{Approximate Years} = rac{	ext{Total Days}}{365}\)
+        </div>
+        <p>
+          While this mathematical formula can provide a rough floating-point decimal approximation, <strong>it does not naturally produce accurate calendar years, months, and days</strong>.
+        </p>
+
+        <p>Why does this shortcut fail for exact employment tenure?</p>
+        <ul>
+          <li><strong>Months have different lengths:</strong> Gregorian calendar months contain 28, 29, 30, or 31 days. A month is never a static 30.00 days.</li>
+          <li><strong>Leap years contain 366 days:</strong> Every fourth year inserts February 29. Dividing by 365 artificially creates an extra fraction of a year that has not actually elapsed on the calendar.</li>
+          <li><strong>Employment anniversaries are calendar dates:</strong> If you joined an organization on March 15, your 1st work anniversary occurs on March 15 of the following year—not on Day 365.</li>
+        </ul>
+
+        <!-- Visual Comparison Box -->
+        <div class="vs-box-grid">
+          <div class="vs-card" style="border-top:4px solid #94a3b8;">
+            <strong style="color:#475569;display:block;margin-bottom:6px;">Day-Count Approximation</strong>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:1.1rem;color:#0f172a;margin-bottom:8px;">
+              365 Days &asymp; 1 Year
+            </div>
+            <p style="font-size:0.86rem;color:#64748b;margin:0;">
+              Useful only for crude estimation. Drifts out of alignment during leap years and cannot determine exact anniversary days.
+            </p>
+          </div>
+
+          <div class="vs-card" style="border-top:4px solid var(--art-emerald);">
+            <strong style="color:var(--art-emerald-dark);display:block;margin-bottom:6px;">Calendar Service Principle</strong>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:1.1rem;color:var(--art-emerald-dark);margin-bottom:8px;">
+              Calendar Service = Anniversary-Based
+            </div>
+            <p style="font-size:0.86rem;color:#64748b;margin:0;">
+              Matches the legal dates on employment agreements, awards, corporate seniority rosters, and statutory vesting calendars.
+            </p>
+          </div>
+        </div>
+
+        <p style="font-size:0.88rem;color:#64748b;font-style:italic;">
+          * Note for official records: For formal employment determinations, always follow the applicable employer handbook, contract agreement, or jurisdictional statute.
+        </p>
+
+        <!-- SECTION 2: Worked Example -->
+        <h2 id="worked-example">Example: Calculating 8 Years, 6 Months &amp; 8 Days of Service</h2>
+        <p>
+          Let us examine a real-world calculation to see how Gregorian calendar arithmetic works step by step:
+        </p>
+
+        <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:20px;margin:18px 0;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+            <div>
+              <small style="color:#64748b;text-transform:uppercase;font-weight:700;">Start Date</small>
+              <div style="font-size:1.15rem;font-weight:800;color:#0f172a;">March 15, 2018</div>
+            </div>
+            <div>
+              <small style="color:#64748b;text-transform:uppercase;font-weight:700;">Reference Date</small>
+              <div style="font-size:1.15rem;font-weight:800;color:#0f172a;">September 23, 2026</div>
+            </div>
+          </div>
+
+          <div style="border-top:1px solid #f1f5f9;padding-top:12px;font-size:0.92rem;line-height:1.7;">
+            <strong>Step 1 (Full Years):</strong> March 15, 2018 &rarr; March 15, 2026 = <strong>8 Completed Years</strong>.<br>
+            <strong>Step 2 (Full Months):</strong> March 15, 2026 &rarr; September 15, 2026 = <strong>6 Completed Months</strong>.<br>
+            <strong>Step 3 (Remaining Days):</strong> September 15, 2026 &rarr; September 23, 2026 = <strong>8 Remaining Days</strong> (\(23 - 15 = 8\)).
+          </div>
+
+          <div style="background:#ecfdf5;border-radius:8px;padding:12px 16px;margin-top:14px;border:1px solid #a7f3d0;">
+            <strong style="color:#065f46;font-size:1.1rem;display:block;">
+              Final Tenure: 8 Years, 6 Months, 8 Days
+            </strong>
+            <span style="font-size:0.86rem;color:#047857;">Total elapsed duration: 3,114 calendar days (approximately 8.53 decimal years).</span>
+          </div>
+        </div>
+
+        <p>
+          You can enter these exact dates into our <a href="../../tools/years-of-service-calculator/">Years of Service Calculator</a> to verify this result and inspect the countdown to your next milestone automatically.
+        </p>
+
+        <!-- Figure 2: Handwritten HR Notebook -->
+        <figure class="article-figure">
+          <img loading="lazy" decoding="async" src="../../assets/articles/how-to-calculate-years-of-service/service-calculation-notebook.svg" alt="Handwritten HR service calculation note on office notebook paper" width="1200" height="675">
+          <figcaption>Figure 2: Handwritten HR service calculation note demonstrating the 8 Years, 6 Months, and 8 Days decomposition.</figcaption>
+        </figure>
+
+        <!-- SECTION 3: Interactive Calendar Timeline -->
+        <h2 id="calendar-timeline">Interactive Visual: Calendar Decomposition Timeline</h2>
+        <p>
+          Visualizing the calculation as a horizontal and vertical journey clarifies how each component of tenure is locked in:
+        </p>
+
+        <div class="timeline-visual-card">
+          <span style="color:#38bdf8;font-size:0.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:8px;">Calendar Step Architecture</span>
+          <pre style="font-family:'JetBrains Mono',monospace;font-size:0.9rem;line-height:1.5;color:#e2e8f0;margin:0;overflow-x:auto;">
+Mar 15, 2018 (Start Date)
+     │
+     ├──────────── 8 FULL CALENDAR YEARS ────────────┐
+     │                                                │
+Mar 15, 2026                                          │
+     │                                                │
+     ├────── 6 REMAINING MONTHS ──────┐               │
+     │                                 │               │
+Sep 15, 2026                          │               │
+     │                                 │               │
+     └────── 8 REMAINING DAYS ────────┘               │
+                                                      ↓
+                                             Sep 23, 2026 (Reference Date)
+                                             &#9654; 8 Years, 6 Months, 8 Days
+          </pre>
+        </div>
+
+        <!-- SECTION 4: Which Date Should You Use? -->
+        <h2 id="which-date-to-use">Which Date Should You Use?</h2>
+        <p>
+          A calculation is only as accurate as its anchor dates. Depending on your current career status, you will select one of three reference configurations:
+        </p>
+
+        <div class="status-card-grid">
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#128100;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">Still Employed</strong>
+            <span style="font-size:0.8rem;color:#0284c7;font-weight:600;display:block;margin-bottom:6px;">Start Date &rarr; Today's Date</span>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Measures your active tenure to the present minute. Unlocks live anniversary countdowns and real-time progress toward upcoming milestones.
+            </p>
+          </div>
+
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#128197;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">Employment Ended</strong>
+            <span style="font-size:0.8rem;color:#0284c7;font-weight:600;display:block;margin-bottom:6px;">Start Date &rarr; Last Working Day</span>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Freezes your finalized tenure for resumes, LinkedIn profiles, background check verification, and severance audits.
+            </p>
+          </div>
+
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#127919;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">Future Planning</strong>
+            <span style="font-size:0.8rem;color:#0284c7;font-weight:600;display:block;margin-bottom:6px;">Start Date &rarr; Future Reference Date</span>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Projects your calendar service on a future date, such as a retirement target, vesting cutoff, or contractual review.
+            </p>
+          </div>
+        </div>
+
+        <!-- SECTION 5: How to Find Your Next Work Anniversary -->
+        <h2 id="next-anniversary">How to Find Your Next Work Anniversary</h2>
+        <p>
+          A work anniversary repeats the recognized month and day of your employment start date each year. To determine your next anniversary:
+        </p>
+        <ol>
+          <li>Identify your hire month and day (e.g., <strong>March 15</strong>).</li>
+          <li>Check if that date has already passed in the current calendar year.</li>
+          <li>If it has passed, your next anniversary falls on the same date next year (e.g., <strong>March 15, 2027</strong>).</li>
+          <li>Subtract today's date from the next anniversary date to determine the exact number of days remaining.</li>
+        </ol>
+
+        <!-- Live Anniversary Visual Box -->
+        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:10px;padding:20px;margin:20px 0;text-align:center;">
+          <span style="color:#0284c7;font-size:0.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;">Live Anniversary Schedule Example</span>
+          <div style="font-size:1.1rem;font-weight:800;color:#0369a1;margin:10px 0;">
+            JOINED: 15 MAR 2018 &nbsp;&rarr;&nbsp; TODAY: 23 SEP 2026 &nbsp;&rarr;&nbsp; NEXT ANNIVERSARY: 15 MAR 2027
+          </div>
+          <div style="display:inline-block;background:#0284c7;color:#ffffff;font-size:0.95rem;font-weight:700;padding:6px 16px;border-radius:20px;margin-top:6px;">
+            &#127881; 9th Work Anniversary &#8226; 173 Days Away
+          </div>
+        </div>
+
+        <p>
+          Want to track your next anniversary with an active live countdown? Open our <a href="../../tools/years-of-service-calculator/">Years of Service Calculator</a>.
+        </p>
+
+        <!-- SECTION 6: Decimal Years -->
+        <h2 id="decimal-years">How Are Years of Service Converted to Decimal Years?</h2>
+        <p>
+          While calendar tenure (\(8	ext{y } 6	ext{m } 8	ext{d}\)) is standard for employee celebrations, financial institutions, actuarial models, and compensation software often require a single decimal number.
+        </p>
+        <p>
+          To convert total elapsed days to decimal years, divide the elapsed calendar days by <strong>365.2425</strong> (the average length of a Gregorian year factoring in 400-year leap cycles):
+        </p>
+        <div style="background:#f8fafc;padding:12px 18px;border-radius:8px;border:1px solid #cbd5e1;font-family:'JetBrains Mono',monospace;font-size:0.92rem;color:#0f172a;margin:14px 0;">
+          \(	ext{Decimal Years} = rac{3,114 	ext{ Days}}{365.2425} pprox 8.5258 pprox 8.53 	ext{ Years}\)
+        </div>
+        <p>
+          <strong>Critical Legal Distinction:</strong> Decimal years are a mathematical representation. They are not universally interchangeable with calendar anniversaries in legal disputes or corporate benefit thresholds.
+        </p>
+
+        <!-- SECTION 7: Total Months of Service -->
+        <h2 id="total-months">How to Calculate Total Months of Service</h2>
+        <p>
+          Certain corporate leave policies, vesting schedules, and probation guidelines express service requirements in months rather than years.
+        </p>
+        <p>
+          To calculate completed months:
+        </p>
+        <div style="background:#f8fafc;padding:12px 18px;border-radius:8px;border:1px solid #cbd5e1;font-family:'JetBrains Mono',monospace;font-size:0.92rem;color:#0f172a;margin:14px 0;">
+          \(	ext{Total Completed Months} = (	ext{Completed Years} 	imes 12) + 	ext{Remaining Months}\)
+        </div>
+        <p>
+          For our worked example: \((8 	imes 12) + 6 = 96 + 6 = \mathbf{102 	ext{ Completed Months}}\). Including the fractional remaining 8 days yields approximately <strong>102.3 decimal months</strong>.
+        </p>
+
+        <!-- SECTION 8: Total Days of Service -->
+        <h2 id="total-days">How to Calculate Total Days of Service</h2>
+        <p>
+          Total days measures the continuous elapsed calendar interval between your starting day and reference day. Because it accounts for every 365-day normal year and 366-day leap year, it serves as the foundation for daily benefit accruals and prorating.
+        </p>
+        <p>
+          If you need to calculate raw days between two independent dates without employment decomposition, check out our <a href="../../tools/date-difference-calculator/">Date Difference Calculator</a>.
+        </p>
+
+        <!-- SECTION 9: Leap Years -->
+        <h2 id="leap-years">Do Leap Years Affect Years of Service?</h2>
+        <p>
+          Yes, but in specific ways that depend on the calculation method being applied:
+        </p>
+        <ul>
+          <li><strong>In calendar calculations:</strong> A leap year adds February 29 to the year. For an employee who joined on March 15, 2018, their anniversary still falls on March 15, 2019, 2020, and every year onward. The leap year does not delay their anniversary date.</li>
+          <li><strong>In day-count calculations:</strong> Because 2020 and 2024 each contained 366 days, the total elapsed days increased by 2 days. A formula dividing total days by 365 would mistakenly report that the employee has reached their anniversary two days early!</li>
+        </ul>
+
+        <!-- Figure 3: Handwritten Leap Year Technical Note -->
+        <figure class="article-figure">
+          <img loading="lazy" decoding="async" src="../../assets/articles/how-to-calculate-years-of-service/leap-year-service-note.svg" alt="Handwritten technical note demonstrating that 365 does not equal every calendar year" width="800" height="600">
+          <figcaption>Figure 3: Technical note highlighting why simple day division produces distortion during 366-day leap years.</figcaption>
+        </figure>
+
+        <!-- SECTION 10: Month-End Starting Dates -->
+        <h2 id="month-end-dates">What Happens When Employment Starts at the End of a Month?</h2>
+        <p>
+          Starting work on the 28th, 29th, 30th, or 31st of a month introduces well-known calendar boundary conditions:
+        </p>
+        <ul>
+          <li><strong>Starting on January 31:</strong> What date completes one full month of service? February only contains 28 or 29 days. Under standard HR conventions, the first month completes on the final day of February (February 28 or 29).</li>
+          <li><strong>Starting on February 29 (Leap Day):</strong> In non-leap years, there is no February 29. Most employers celebrate the work anniversary either on February 28 or March 1. Under common calendar subtraction, a full year is recognized once March 1 begins.</li>
+        </ul>
+        <p>
+          Age Calculator Lab handles these edge cases through standardized Gregorian borrow arithmetic, ensuring consistent and predictable results.
+        </p>
+
+        <!-- SECTION 11: Breaks in Employment -->
+        <h2 id="breaks-in-employment">Does a Break in Employment Affect Years of Service?</h2>
+        <p>
+          A date calculator measures the unbroken calendar interval between two entered dates. However, in professional life, employees frequently experience career pauses, parental leave, or rehire stints:
+        </p>
+
+        <div style="background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;padding:18px;margin:18px 0;font-family:'JetBrains Mono',monospace;font-size:0.88rem;color:#0f172a;">
+          2016 ─────────── 2019 &nbsp;&nbsp;&nbsp; (Period 1: 3 Years Employment)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [BREAK] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2-Year Career Gap)<br>
+          2021 ─────────── 2026 &nbsp;&nbsp;&nbsp; (Period 2: 5 Years Employment)
+        </div>
+
+        <p>
+          <strong>Continuous Service vs. Total Service:</strong> When an employee rejoins an organization, employer policy dictates whether prior service is <em>bridged</em> or whether tenure resets to zero for seniority and statutory severance. If your employer credits prior terms, use the <strong>"Add another service period"</strong> feature in our calculator to aggregate separate stints into a combined total.
+        </p>
+
+        <!-- SECTION 12: Calendar Service vs Qualifying Service -->
+        <h2 id="qualifying-service">Is Years of Service the Same as Qualifying Service?</h2>
+        <p>
+          <strong>Short answer: Not necessarily.</strong> This is one of the most critical distinctions in employment law and HR administration.
+        </p>
+
+        <div style="background:#fffbeb;border:1.5px solid #fde68a;border-left:6px solid #d97706;border-radius:10px;padding:20px;margin:20px 0;">
+          <strong style="color:#92400e;font-size:1.05rem;display:block;margin-bottom:6px;">
+            &#9888;&#65039; Important Legal &amp; Benefit Notice
+          </strong>
+          <p style="color:#78350f;font-size:0.92rem;line-height:1.6;margin:0 0 10px;">
+            Use this calculator for date-based service measurement. For pension, gratuity, paid leave accrual, vesting, or severance determinations, verify the applicable statutory rules with your HR department or pension administrator.
+          </p>
+          <p style="color:#92400e;font-size:0.86rem;line-height:1.6;margin:0;">
+            Legally qualifying service is governed by jurisdictional labor statutes that frequently deduct periods of unauthorized absence, strike action, or extended unpaid leave (Leave Without Pay), and may require working minimums:
+          </p>
+          <ul style="color:#78350f;font-size:0.85rem;margin-top:8px;padding-left:20px;line-height:1.6;">
+            <li><strong>India:</strong> Under the <em>Payment of Gratuity Act 1972</em>, an employee must complete at least 240 days of continuous service in a 12-month period to credit a qualifying year toward the 5-year gratuity requirement.</li>
+            <li><strong>United States:</strong> Under <em>ERISA</em>, a qualified retirement plan typically credits a "Year of Service" only if an employee works at least 1,000 hours in an eligibility computation year.</li>
+            <li><strong>United Kingdom:</strong> Statutory redundancy pay requires continuous employment under the <em>Employment Rights Act 1996</em>, where certain career breaks reset the statutory clock.</li>
+          </ul>
+        </div>
+
+        <!-- SECTION 13: Where Years of Service Is Used -->
+        <h2 id="use-cases">When Do People Calculate Years of Service?</h2>
+        <p>
+          Exact service calculations are used across six primary personal and corporate workflows:
+        </p>
+
+        <div class="status-card-grid">
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#128084;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">Employment Tenure</strong>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Documenting exact duration for resumes, CVs, LinkedIn experience headers, and personal career journals.
+            </p>
+          </div>
+
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#127881;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">Work Anniversaries</strong>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Tracking upcoming anniversary dates and counting down to annual corporate recognition events.
+            </p>
+          </div>
+
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#128203;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">HR Records &amp; Audits</strong>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Verifying employee service tiers for annual leave increases, notice period brackets, and internal promotions.
+            </p>
+          </div>
+
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#128197;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">Career History</strong>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Verifying past employment intervals for background screening, visa petitions, and government security audits.
+            </p>
+          </div>
+
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#127942;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">Service Milestones</strong>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Identifying employees eligible for 5-year, 10-year, or 20-year corporate recognition awards and sabbaticals.
+            </p>
+          </div>
+
+          <div class="status-card">
+            <span style="font-size:1.6rem;display:block;margin-bottom:4px;">&#129518;</span>
+            <strong style="font-size:1rem;color:#0f172a;display:block;">Retirement Planning</strong>
+            <p style="font-size:0.85rem;color:#64748b;margin:0;">
+              Projecting calendar tenure up to a planned future retirement cutoff date to estimate career milestones.
+            </p>
+          </div>
+        </div>
+
+        <!-- SECTION 14: Years of Service vs Years of Experience -->
+        <h2 id="service-vs-experience">Years of Service vs. Years of Experience</h2>
+        <p>
+          While the two phrases sound similar, they represent fundamentally different career metrics:
+        </p>
+        <ul>
+          <li><strong>Years of Service:</strong> Measures the continuous time spent with a <em>single employer or organization</em>.</li>
+          <li><strong>Years of Experience:</strong> Measures the cumulative professional time accrued across <em>all employers and freelance roles throughout your career</em>.</li>
+        </ul>
+        <div style="background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;padding:14px;margin:14px 0;font-size:0.9rem;">
+          <strong>Practical Scenario:</strong> An engineer who worked 3 years at Company A (2018–2021) and 5 years at Company B (2021–2026) has <strong>8 years of total experience</strong>, but only <strong>5 years of service</strong> with their current employer.
+        </div>
+
+        <!-- SECTION 15: Common Service Milestones -->
+        <h2 id="milestones-roadmap">Common Years-of-Service Milestones</h2>
+        <p>
+          Organizations globally structure employee recognition and benefit upgrades around standard career checkpoints:
+        </p>
+
+        <!-- Figure 4: Career Milestone Journey Artwork -->
+        <figure class="article-figure">
+          <img loading="lazy" decoding="async" src="../../assets/articles/how-to-calculate-years-of-service/career-milestone-journey-art.svg" alt="Career milestone journey horizontal timeline showing 1, 3, 5, 10, and 20 year marks" width="1200" height="675">
+          <figcaption>Figure 4: Career milestone journey highlighting standard corporate recognition benchmarks from onboarding to master service.</figcaption>
+        </figure>
+
+        <ul>
+          <li><strong>90 Days &amp; 6 Months:</strong> Probationary completion and core onboarding confirmation.</li>
+          <li><strong>1 Year:</strong> Inaugural work anniversary and initial compensation review.</li>
+          <li><strong>3 Years:</strong> Core tenure mark demonstrating proven domain proficiency.</li>
+          <li><strong>5 Years:</strong> Major statutory and retention threshold (gratuity eligibility, 100% 401(k) vesting, senior tenure tier).</li>
+          <li><strong>10 Years:</strong> A decade of service honored through honorary sabbaticals, bronze awards, or enhanced pension multipliers.</li>
+          <li><strong>15, 20 &amp; 25 Years:</strong> Silver jubilee and master service recognition honoring career loyalty.</li>
+        </ul>
+
+        <!-- SECTION 16: Big Calculator CTA Banner -->
+        <div class="big-calc-banner" id="calc-cta">
+          <h3>Calculate Your Exact Years of Service</h3>
+          <p>
+            Enter your employment start date and reference date into our free calculation engine to compute your exact tenure in years, months, and days with a live anniversary countdown.
+          </p>
+          <a href="../../tools/years-of-service-calculator/" class="big-calc-btn">
+            Open the Years of Service Calculator &rarr;
+          </a>
+        </div>
+
+        <!-- SECTION 17: 14 Targeted FAQs -->
+        <h2 id="faq">Years of Service Calculator FAQs</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>How do I calculate years of service?</summary>
+            <p>
+              Identify your recognized employment start date and measure the elapsed time to your reference date (such as today or your last working day). Count whole calendar years to your most recent anniversary date, then whole remaining months, and finally remaining days.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I calculate years of service from my joining date?</summary>
+            <p>
+              Take your official joining date from your contract or HR record as the start date. For ongoing jobs, compare it against today's date. The calculation decomposes the interval into completed calendar years, remaining months, and remaining days.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do you calculate employment tenure?</summary>
+            <p>
+              Employment tenure is calculated by measuring continuous calendar time between hire date and evaluation date. Exact tenure calculation preserves annual anniversary dates and accounts for leap years and unequal month lengths.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I calculate years, months and days of service?</summary>
+            <p>
+              1) Count complete calendar years between start date and last anniversary. 2) Count remaining whole months up to the reference month. 3) Count remaining days up to the reference day. Combine as Y Years, M Months, D Days.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is years of service calculated by dividing days by 365?</summary>
+            <p>
+              No. Dividing total elapsed days by 365 yields an approximate decimal number, but it ignores leap years (366 days) and variable month lengths (28 to 31 days). Exact years of service is an anniversary-based calendar calculation.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I calculate total months of service?</summary>
+            <p>
+              Multiply completed full years by 12, then add the remaining whole months. For example, 8 years and 6 months equals 102 completed calendar months.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I calculate total days of employment?</summary>
+            <p>
+              Count the exact number of calendar days that have elapsed between your start date and reference date, factoring in all intervening 365-day common years and 366-day leap years.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What date should I use as my employment start date?</summary>
+            <p>
+              Use the recognized service start date specified in your official employment contract, offer letter, or HR payroll system. For transferred employees (e.g. under TUPE or mergers), this may be a recognized continuous service date carried forward from a predecessor employer.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What date should I use as my end date?</summary>
+            <p>
+              If currently employed, use today's date. If employment ended, use your official last working day. If planning retirement or a future milestone, use your projected cutoff date.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does a leap year affect years of service?</summary>
+            <p>
+              A leap year adds February 29 to the calendar year, which increases the total day count by 1 day. However, it does not alter annual anniversary dates for common join dates.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does a break in employment affect years of service?</summary>
+            <p>
+              Yes. A break in employment interrupts continuous service. Unless your employer has an explicit service-bridging agreement, tenure for statutory benefits typically restarts from the rehire date.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is years of service the same as work experience?</summary>
+            <p>
+              No. Years of service refers to elapsed tenure with a specific employer or organization. Work experience refers to the cumulative professional time accrued across all jobs and employers throughout your career.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is years of service the same as qualifying service?</summary>
+            <p>
+              No. Calendar years of service measures elapsed time. Qualifying service is a legal determination defined by labor statutes and pension plans that may deduct unpaid leaves, unauthorized absences, or require minimum working days per year.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How can I calculate my next work anniversary?</summary>
+            <p>
+              Your work anniversary recurs on the same month and day as your hire date each year. Your next anniversary is the earliest upcoming occurrence of that date following today's date.
+            </p>
+          </details>
+        </div>
+
+        <!-- Related Calculators Grid -->
+        <h2 style="margin-top:36px;">Related Calculation Tools</h2>
+        <div class="related-grid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:16px;margin:20px 0;">
+          <a class="related-card" href="../../tools/years-of-service-calculator/">
+            <small>Finance &amp; Professional</small>
+            <h3>Years of Service Calculator</h3>
+            <p>Calculate exact employee tenure, work anniversary countdown, and milestone roadmaps.</p>
+          </a>
+          <a class="related-card" href="../../tools/date-difference-calculator/">
+            <small>Date Lab</small>
+            <h3>Date Difference Calculator</h3>
+            <p>Calculate the exact calendar difference between any two dates in years, months, and days.</p>
+          </a>
+          <a class="related-card" href="../../tools/days-between-dates-calculator/">
+            <small>Date Lab</small>
+            <h3>Days Between Dates Calculator</h3>
+            <p>Count total calendar days between two dates with inclusive and exclusive options.</p>
+          </a>
+          <a class="related-card" href="../../tools/retirement-age-calculator/">
+            <small>Finance &amp; Professional</small>
+            <h3>Retirement Age Calculator</h3>
+            <p>Calculate your retirement timeline and the exact date you reach your retirement milestone.</p>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Author Profile -->
+    <section class="author-section" data-author-bio>
+      <div class="container">
+        <div class="author-profile">
+          <img decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj, author at Age Calculator Lab" width="170" height="170" loading="lazy">
+          <div>
+            <span class="kicker">About the author</span>
+            <h2>Navjeet Kamboj</h2>
+            <p>
+              Navjeet Kamboj is the founder and editor of Age Calculator Lab. He specializes in designing transparent, mathematically rigorous calculation tools for chronological age, professional tenure, and calendar milestone tracking.
+            </p>
+            <div class="author-links">
+              <a href="../../author/navjeet-kamboj/">Full author profile</a>
+              <a href="https://in.linkedin.com/in/navjeet-kamboj" rel="me noopener" target="_blank">LinkedIn &#8599;</a>
+              <a href="https://www.instagram.com/jeet_7.7/" rel="me noopener" target="_blank">Instagram &#8599;</a>
+              <a href="../../methodology/">Editorial methodology</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Strict 18-Link Homepage Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid footer-grid-rich">
+        <div class="footer-brand-panel">
+          <a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a>
+          <p>161 focused calculators and 100 practical guides for age, dates, milestones and planning. No registration required.</p>
+          <a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj &rarr;</a>
+        </div>
+        <div>
+          <h3>Calculators</h3>
+          <a href="../../">Exact Age</a>
+          <a href="../../tools/chronological-age-calculator/">Chronological Age</a>
+          <a href="../../tools/age-difference-calculator/">Age Difference</a>
+          <a href="../../categories/">All categories</a>
+        </div>
+        <div class="footer-guides">
+          <h3>Articles &amp; Guides</h3>
+          <a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a>
+          <a href="../../articles/ymd-semicolon-format-guide/">Y;M;D format</a>
+          <a href="../../articles/corrected-age-premature-babies/">Corrected age guide</a>
+          <a class="footer-guides-all" href="../../articles/">Browse all 100 guides &rarr;</a>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="../../categories/">Categories</a>
+          <a href="../../methodology/">Methodology</a>
+          <a href="../../about/">About</a>
+          <a href="../../disclaimer/">Disclaimer</a>
+        </div>
+        <div>
+          <h3>Important</h3>
+          <a href="../../privacy/">Privacy</a>
+          <a href="../../terms/">Terms</a>
+          <a href="../../contact/">Contact</a>
+          <a href="../../sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>&copy; 2026 Age Calculator Lab.</span>
+        <span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

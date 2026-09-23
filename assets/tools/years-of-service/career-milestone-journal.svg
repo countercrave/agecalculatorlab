@@ -17,8 +17,8 @@
   <rect width="800" height="600" fill="url(#wood-light)" />
 
   <!-- Coffee Cup Stain on Desk Surface -->
-  <circle cx="100" cy="120" r="45" fill="none" stroke="#78350f" stroke-width="3" opacity="0.18" />
-  <circle cx="103" cy="122" r="41" fill="none" stroke="#78350f" stroke-width="1.5" opacity="0.12" />
+  <circle cx="95" cy="115" r="42" fill="none" stroke="#78350f" stroke-width="3" opacity="0.16" />
+  <circle cx="98" cy="117" r="38" fill="none" stroke="#78350f" stroke-width="1.5" opacity="0.1" />
 
   <!-- Journal Book Body -->
   <g transform="translate(130, 40)" filter="url(#journal-shadow)">
@@ -45,51 +45,51 @@
       <line x1="60" y1="455" x2="515" y2="455" />
     </g>
 
-    <!-- Title & Date -->
-    <text x="80" y="46" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="20" font-weight="bold">My Career Timeline &amp; Milestones</text>
-    <text x="390" y="46" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Sept 2026 Update</text>
+    <!-- Title & Date Stamp (Properly Separated) -->
+    <text x="75" y="44" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold">My Career Timeline &amp; Milestones</text>
+    <text x="505" y="32" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="end">Sept 2026</text>
 
-    <!-- Handwritten Entries -->
-    <g transform="translate(80, 80)">
+    <!-- Handwritten Entries with Generous 70px Column Clearance -->
+    <g transform="translate(80, 75)">
       <!-- Entry 1: Joined -->
-      <text x="0" y="24" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16" font-weight="bold">&#8226; Joined Company:</text>
-      <text x="180" y="24" fill="#1d4ed8" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16">15 March 2018 (Engineer)</text>
+      <text x="0" y="24" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15" font-weight="bold">&#8226; Joined Company:</text>
+      <text x="215" y="24" fill="#1d4ed8" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15">15 Mar 2018 (Engineer)</text>
 
       <!-- Entry 2: 1 Year -->
-      <text x="0" y="64" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16">&#8226; 1 Year Mark (2019):</text>
-      <text x="180" y="64" fill="#16a34a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16">&#10003; First performance review</text>
+      <text x="0" y="64" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15">&#8226; 1 Year (2019):</text>
+      <text x="215" y="64" fill="#16a34a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15">&#10003; First review passed</text>
 
       <!-- Entry 3: 5 Years -->
-      <text x="0" y="104" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16" font-weight="bold">&#8226; 5 Years (2023):</text>
-      <text x="180" y="104" fill="#16a34a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16" font-weight="bold">&#10003; Promoted to Lead &#8226; Fully Vested!</text>
+      <text x="0" y="104" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15" font-weight="bold">&#8226; 5 Years (2023):</text>
+      <text x="215" y="104" fill="#16a34a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15" font-weight="bold">&#10003; Fully Vested &#8226; Lead</text>
 
-      <!-- Entry 4: Current Status -->
-      <text x="0" y="144" fill="#b45309" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16" font-weight="bold">&#9654; Current (Sept 2026):</text>
-      <text x="180" y="144" fill="#b45309" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16" font-weight="bold">8 Years, 6 Months (3,114 days)</text>
+      <!-- Entry 4: Current Status (Clear gap between 2026 and 8Y) -->
+      <text x="0" y="144" fill="#b45309" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15" font-weight="bold">&#9654; Current (2026):</text>
+      <text x="215" y="144" fill="#b45309" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15" font-weight="bold">8Y 6M 8D (3,114 days)</text>
 
-      <!-- Entry 5: 10 Years Milestone -->
-      <text x="0" y="184" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16" font-weight="bold">&#8226; 10 Years (15 Mar 2028):</text>
-      <text x="210" y="184" fill="#0369a1" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16">Long Service Award + Sabbatical</text>
+      <!-- Entry 5: 10 Years Milestone (Clear gap) -->
+      <text x="0" y="184" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15" font-weight="bold">&#8226; 10 Years (2028):</text>
+      <text x="215" y="184" fill="#0369a1" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15">Long Service Sabbatical</text>
 
       <!-- Entry 6: 15 Years -->
-      <text x="0" y="224" fill="#475569" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16">&#8226; 15 Years (2033):</text>
-      <text x="180" y="224" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="16">Senior Director tenure tier</text>
+      <text x="0" y="224" fill="#475569" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15">&#8226; 15 Years (2033):</text>
+      <text x="215" y="224" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15">Director tenure tier</text>
     </g>
 
-    <!-- Circled Callout: NEXT MILESTONE 10 YEARS -->
-    <g transform="translate(100, 340)">
+    <!-- Circled Callout: NEXT MILESTONE 10 YEARS (Clean Positioning & Ample Margins) -->
+    <g transform="translate(110, 335)">
       <!-- Hand drawn oval around callout -->
-      <ellipse cx="170" cy="40" rx="160" ry="32" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="350 10" transform="rotate(-2 170 40)" />
-      <ellipse cx="172" cy="42" rx="158" ry="30" fill="none" stroke="#3b82f6" stroke-width="1.2" opacity="0.6" transform="rotate(-1 170 40)" />
-      <text x="170" y="32" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">&#127919; NEXT MILESTONE: 10 YEARS</text>
-      <text x="170" y="54" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">538 Days Left (1.47 Years)</text>
+      <ellipse cx="155" cy="38" rx="148" ry="30" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="350 10" transform="rotate(-2 155 38)" />
+      <ellipse cx="157" cy="40" rx="146" ry="28" fill="none" stroke="#3b82f6" stroke-width="1.2" opacity="0.6" transform="rotate(-1 155 38)" />
+      <text x="155" y="30" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">&#127919; NEXT MILESTONE: 10 YEARS</text>
+      <text x="155" y="50" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">538 Days Left (1.47 Years)</text>
     </g>
 
-    <!-- Arrow pointing to 10 year entry -->
-    <path d="M 270,340 C 260,310 240,290 220,270" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="4 2" />
-    <polygon points="220,270 230,275 225,282" fill="#2563eb" />
+    <!-- Hand-drawn curved arrow pointing to 10 year entry -->
+    <path d="M 265,335 C 255,305 235,285 215,265" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="215,265 225,270 220,277" fill="#2563eb" />
 
     <!-- Bottom Journal Note -->
-    <text x="80" y="470" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12" font-style="italic">* Note: Check HR handbook for qualifying service vs calendar tenure rules.</text>
+    <text x="75" y="470" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="12" font-style="italic">* Note: Check HR handbook for qualifying service vs calendar tenure rules.</text>
   </g>
 </svg>
