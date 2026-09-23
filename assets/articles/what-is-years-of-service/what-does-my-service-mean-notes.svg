@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="desk-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="page-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fdfbf7" />
+    </linearGradient>
+    <filter id="book-shadow" x="-5%" y="-5%" width="112%" height="115%">
+      <feDropShadow dx="5" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Executive Desk Background -->
+  <rect width="800" height="600" fill="url(#desk-bg)" />
+
+  <!-- Pen resting beside book -->
+  <g transform="translate(710, 120) rotate(15)">
+    <rect x="-8" y="0" width="16" height="280" rx="6" fill="#0f172a" stroke="#cbd5e1" stroke-width="1" />
+    <path d="M -8,0 L 0,-25 L 8,0 Z" fill="#94a3b8" />
+    <polygon points="-3,-25 0,-34 3,-25" fill="#f59e0b" />
+    <rect x="-4" y="30" width="8" height="60" fill="#f59e0b" />
+  </g>
+
+  <!-- Notebook Page -->
+  <g transform="translate(90, 45)" filter="url(#book-shadow)">
+    <!-- Binder Rings / Cover Edge -->
+    <rect x="-14" y="-10" width="588" height="520" rx="10" fill="#475569" />
+    <!-- Cream Paper Body -->
+    <rect width="560" height="500" rx="6" fill="url(#page-bg)" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Red Margin Line -->
+    <line x1="75" y1="0" x2="75" y2="500" stroke="#f87171" stroke-width="1.5" opacity="0.65" />
+
+    <!-- Lined Notebook Rules -->
+    <g stroke="#cbd5e1" stroke-width="0.8" opacity="0.6">
+      <line x1="75" y1="60" x2="535" y2="60" />
+      <line x1="75" y1="105" x2="535" y2="105" />
+      <line x1="75" y1="150" x2="535" y2="150" />
+      <line x1="75" y1="195" x2="535" y2="195" />
+      <line x1="75" y1="240" x2="535" y2="240" />
+      <line x1="75" y1="285" x2="535" y2="285" />
+      <line x1="75" y1="330" x2="535" y2="330" />
+      <line x1="75" y1="375" x2="535" y2="375" />
+      <line x1="75" y1="420" x2="535" y2="420" />
+      <line x1="75" y1="465" x2="535" y2="465" />
+    </g>
+
+    <!-- Spiral Binder Holes on Left Edge -->
+    <g fill="#334155" opacity="0.4">
+      <circle cx="25" cy="40" r="7" />
+      <circle cx="25" cy="95" r="7" />
+      <circle cx="25" cy="150" r="7" />
+      <circle cx="25" cy="205" r="7" />
+      <circle cx="25" cy="260" r="7" />
+      <circle cx="25" cy="315" r="7" />
+      <circle cx="25" cy="370" r="7" />
+      <circle cx="25" cy="425" r="7" />
+      <circle cx="25" cy="480" r="7" />
+    </g>
+
+    <!-- Handwritten Content in Natural Blue Ink -->
+    <g transform="translate(95, 20)">
+      <!-- Heading -->
+      <text x="0" y="32" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="22" font-weight="bold">What does my service mean?</text>
+      <!-- Underline -->
+      <path d="M 0,42 Q 130,46 290,40" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" />
+
+      <!-- Status Entries -->
+      <g transform="translate(10, 80)">
+        <text x="0" y="0" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold">&#8226; Joined: 2020</text>
+        <text x="0" y="45" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold">&#8226; Still working: <tspan fill="#16a34a">YES &#10003;</tspan></text>
+      </g>
+
+      <!-- Three Core Deductions with Curved Arrows -->
+      <g transform="translate(30, 195)">
+        <!-- Arrow 1 -->
+        <path d="M 0,-15 C 25,-15 50,-20 80,-30" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" />
+        <polygon points="80,-30 70,-26 74,-34" fill="#2563eb" />
+        <text x="95" y="-24" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="17" font-weight="bold">&#8594; Current tenure</text>
+        <text x="95" y="-4" fill="#64748b" font-family="'Segoe Print', cursive, sans-serif" font-size="13">(Exact days, months, completed years)</text>
+
+        <!-- Arrow 2 -->
+        <path d="M 0,30 C 35,30 55,30 80,30" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" />
+        <polygon points="80,30 70,25 70,35" fill="#2563eb" />
+        <text x="95" y="34" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="17" font-weight="bold">&#8594; Work anniversary</text>
+        <text x="95" y="54" fill="#64748b" font-family="'Segoe Print', cursive, sans-serif" font-size="13">(Annual celebration date &amp; recognition)</text>
+
+        <!-- Arrow 3 -->
+        <path d="M 0,75 C 25,75 50,80 80,90" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" />
+        <polygon points="80,90 74,84 70,92" fill="#2563eb" />
+        <text x="95" y="94" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="17" font-weight="bold">&#8594; Service milestones</text>
+        <text x="95" y="114" fill="#64748b" font-family="'Segoe Print', cursive, sans-serif" font-size="13">(1y, 3y, 5y vesting, 10y sabbatical)</text>
+      </g>
+
+      <!-- Bottom Hand-Drawn Box -->
+      <g transform="translate(10, 360)">
+        <rect x="0" y="0" width="410" height="60" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.8" stroke-dasharray="6 3" />
+        <text x="15" y="26" fill="#1e40af" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="14" font-weight="bold">&#128221; Golden Rule:</text>
+        <text x="15" y="46" fill="#334155" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="13">Years of Service = Time with THIS specific employer.</text>
+      </g>
+    </g>
+  </g>
+</svg>

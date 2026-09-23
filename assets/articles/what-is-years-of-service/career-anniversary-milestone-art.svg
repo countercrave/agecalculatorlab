@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="anniv-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="badge-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="anniv-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#anniv-bg)" />
+
+  <!-- Header -->
+  <g transform="translate(100, 60)">
+    <rect x="0" y="0" width="260" height="32" rx="16" fill="#6366f1" fill-opacity="0.2" stroke="#818cf8" stroke-width="1.2" />
+    <text x="130" y="21" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">ANNIVERSARY ARCHITECTURE</text>
+    <text x="0" y="75" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800">How Years of Service Triggers Corporate Milestones</text>
+    <text x="0" y="108" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">Each completed calendar year unlocks specific recognition tiers, PTO accrual escalations, and vesting milestones.</text>
+  </g>
+
+  <!-- 4 Milestone Columns Grid -->
+  <g transform="translate(100, 220)">
+    <!-- Column 1: 1 Year -->
+    <g transform="translate(0, 0)" filter="url(#anniv-shadow)">
+      <rect x="0" y="0" width="225" height="360" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <circle cx="112" cy="70" r="42" fill="#0369a1" fill-opacity="0.2" stroke="#38bdf8" stroke-width="2" />
+      <text x="112" y="78" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" text-anchor="middle">1Y</text>
+      <text x="112" y="145" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle">First Anniversary</text>
+      <text x="112" y="170" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" text-anchor="middle">Onboarding Confirmation</text>
+      <line x1="30" y1="195" x2="195" y2="195" stroke="#334155" stroke-width="1" />
+      <g transform="translate(30, 220)" font-family="-apple-system, sans-serif" font-size="12" fill="#cbd5e1">
+        <text x="0" y="0">&#10003; 365/366 Elapsed Days</text>
+        <text x="0" y="28">&#10003; Full Performance Cycle</text>
+        <text x="0" y="56">&#10003; 401(k) / Match Entry</text>
+        <text x="0" y="84">&#10003; Standard PTO Level</text>
+      </g>
+    </g>
+
+    <!-- Column 2: 5 Years -->
+    <g transform="translate(255, 0)" filter="url(#anniv-shadow)">
+      <rect x="0" y="0" width="225" height="360" rx="14" fill="#1e293b" stroke="#059669" stroke-width="1.8" />
+      <rect x="0" y="0" width="225" height="6" rx="3" fill="#10b981" />
+      <circle cx="112" cy="70" r="42" fill="#065f46" fill-opacity="0.4" stroke="#10b981" stroke-width="2" />
+      <text x="112" y="78" fill="#34d399" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" text-anchor="middle">5Y</text>
+      <text x="112" y="145" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Vesting Cliff</text>
+      <text x="112" y="170" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12" text-anchor="middle">Tenured Pillar Status</text>
+      <line x1="30" y1="195" x2="195" y2="195" stroke="#334155" stroke-width="1" />
+      <g transform="translate(30, 220)" font-family="-apple-system, sans-serif" font-size="12" fill="#cbd5e1">
+        <text x="0" y="0">&#10003; 100% Equity / Gratuity</text>
+        <text x="0" y="28">&#10003; Tier 2 PTO Accrual (+5d)</text>
+        <text x="0" y="56">&#10003; Corporate Pin &amp; Award</text>
+        <text x="0" y="84">&#10003; Notice Period Expansion</text>
+      </g>
+    </g>
+
+    <!-- Column 3: 10 Years -->
+    <g transform="translate(510, 0)" filter="url(#anniv-shadow)">
+      <rect x="0" y="0" width="225" height="360" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2" />
+      <rect x="0" y="0" width="225" height="6" rx="3" fill="url(#badge-gold)" />
+      <circle cx="112" cy="70" r="42" fill="#78350f" fill-opacity="0.4" stroke="#fbbf24" stroke-width="2.5" />
+      <text x="112" y="78" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" text-anchor="middle">10Y</text>
+      <text x="112" y="145" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Decade Milestone</text>
+      <text x="112" y="170" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="12" text-anchor="middle">Long Service Recognition</text>
+      <line x1="30" y1="195" x2="195" y2="195" stroke="#334155" stroke-width="1" />
+      <g transform="translate(30, 220)" font-family="-apple-system, sans-serif" font-size="12" fill="#cbd5e1">
+        <text x="0" y="0">&#10003; Sabbatical Leave Eligibility</text>
+        <text x="0" y="28">&#10003; Maximum Tier PTO</text>
+        <text x="0" y="56">&#10003; Seniority Retention RIF</text>
+        <text x="0" y="84">&#10003; Formal Banquet Honor</text>
+      </g>
+    </g>
+
+    <!-- Column 4: 20+ Years -->
+    <g transform="translate(765, 0)" filter="url(#anniv-shadow)">
+      <rect x="0" y="0" width="225" height="360" rx="14" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" />
+      <circle cx="112" cy="70" r="42" fill="#4c1d95" fill-opacity="0.3" stroke="#a78bfa" stroke-width="2" />
+      <text x="112" y="78" fill="#c4b5fd" font-family="-apple-system, sans-serif" font-size="24" font-weight="800" text-anchor="middle">20Y+</text>
+      <text x="112" y="145" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Master Service</text>
+      <text x="112" y="170" fill="#c4b5fd" font-family="-apple-system, sans-serif" font-size="12" text-anchor="middle">Legacy Leader Tier</text>
+      <line x1="30" y1="195" x2="195" y2="195" stroke="#334155" stroke-width="1" />
+      <g transform="translate(30, 220)" font-family="-apple-system, sans-serif" font-size="12" fill="#cbd5e1">
+        <text x="0" y="0">&#10003; Defined Benefit Peak</text>
+        <text x="0" y="28">&#10003; Executive Severance Tier</text>
+        <text x="0" y="56">&#10003; Lifetime Privilege Club</text>
+        <text x="0" y="84">&#10003; Retirement Date Pathway</text>
+      </g>
+    </g>
+  </g>
+</svg>

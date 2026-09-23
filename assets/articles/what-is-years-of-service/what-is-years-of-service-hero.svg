@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f2922" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glow-teal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Dark Executive Background -->
+  <rect width="1200" height="675" fill="url(#bg-grad)" />
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <g stroke="#334155" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="135" x2="1200" y2="135" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="0" y1="405" x2="1200" y2="405" />
+    <line x1="0" y1="540" x2="1200" y2="540" />
+    <line x1="240" y1="0" x2="240" y2="675" />
+    <line x1="480" y1="0" x2="480" y2="675" />
+    <line x1="720" y1="0" x2="720" y2="675" />
+    <line x1="960" y1="0" x2="960" y2="675" />
+  </g>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(100, 50)">
+    <rect x="0" y="0" width="220" height="30" rx="15" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1" />
+    <text x="110" y="20" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">CONCEPTUAL FRAMEWORK</text>
+    <text x="0" y="70" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800">One Employee &#8212; One Employment Journey</text>
+    <text x="0" y="102" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">Years of service is the continuous calendar duration that bridges the hiring date with the reference evaluation point.</text>
+  </g>
+
+  <!-- Central Journey Pathway -->
+  <g transform="translate(100, 200)">
+    <!-- Connecting Horizon Rail -->
+    <line x1="80" y1="200" x2="920" y2="200" stroke="#334155" stroke-width="8" stroke-linecap="round" />
+    <line x1="80" y1="200" x2="920" y2="200" stroke="url(#glow-teal)" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6" />
+
+    <!-- Left Anchor Node: Start Date -->
+    <g transform="translate(80, 200)">
+      <circle cx="0" cy="0" r="32" fill="#1e293b" stroke="#38bdf8" stroke-width="4" filter="url(#shadow)" />
+      <!-- Calendar Icon -->
+      <rect x="-12" y="-12" width="24" height="24" rx="4" fill="none" stroke="#38bdf8" stroke-width="2" />
+      <line x1="-12" y1="-5" x2="12" y2="-5" stroke="#38bdf8" stroke-width="2" />
+      <circle cx="-4" cy="2" r="1.5" fill="#38bdf8" />
+      <circle cx="4" cy="2" r="1.5" fill="#38bdf8" />
+      <circle cx="-4" cy="7" r="1.5" fill="#38bdf8" />
+      <circle cx="4" cy="7" r="1.5" fill="#38bdf8" />
+      
+      <!-- Label Card Below -->
+      <g transform="translate(0, 50)" filter="url(#shadow)">
+        <rect x="-110" y="0" width="220" height="96" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+        <rect x="-110" y="0" width="220" height="4" rx="2" fill="#38bdf8" />
+        <text x="0" y="24" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">POINT 1</text>
+        <text x="0" y="46" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Official Start Date</text>
+        <text x="0" y="68" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" text-anchor="middle">Hire date &#8226; Joining day</text>
+        <text x="0" y="84" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" text-anchor="middle">e.g., April 10, 2018</text>
+      </g>
+    </g>
+
+    <!-- Center Hero: The Professional Employee & Active Tenure -->
+    <g transform="translate(500, 110)">
+      <!-- Backdrop Halo -->
+      <ellipse cx="0" cy="90" rx="140" ry="120" fill="#10b981" fill-opacity="0.08" filter="url(#shadow)" />
+      
+      <!-- Stylized Professional Figure Silhouette -->
+      <g fill="#10b981" opacity="0.95">
+        <!-- Head -->
+        <circle cx="0" cy="18" r="16" fill="#34d399" />
+        <!-- Torso & Suit -->
+        <path d="M -24,42 C -24,34 -14,32 0,32 C 14,32 24,34 24,42 L 20,86 L -20,86 Z" fill="#10b981" />
+        <!-- Tie -->
+        <path d="M -3,34 L 3,34 L 4,52 L 0,60 L -4,52 Z" fill="#fbbf24" />
+        <!-- Legs / Base -->
+        <path d="M -18,86 L -16,145 L -5,145 L -7,86 Z" fill="#047857" />
+        <path d="M 18,86 L 16,145 L 5,145 L 7,86 Z" fill="#047857" />
+        <!-- Briefcase -->
+        <rect x="28" y="68" width="22" height="18" rx="2" fill="#022c22" stroke="#34d399" stroke-width="1.2" />
+        <path d="M 34,68 L 34,64 L 44,64 L 44,68" fill="none" stroke="#34d399" stroke-width="1.2" />
+      </g>
+
+      <!-- Central Banner: Employment Tenure -->
+      <g transform="translate(0, -60)" filter="url(#shadow)">
+        <rect x="-140" y="0" width="280" height="64" rx="12" fill="#064e3b" stroke="#10b981" stroke-width="2" />
+        <text x="0" y="24" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="1">CONTINUOUS DURATION</text>
+        <text x="0" y="48" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" text-anchor="middle">Employment Tenure</text>
+      </g>
+
+      <!-- Floating Badge: Years, Months & Days -->
+      <g transform="translate(0, 195)" filter="url(#shadow)">
+        <rect x="-150" y="0" width="300" height="42" rx="21" fill="#0f172a" stroke="#fbbf24" stroke-width="2" />
+        <text x="0" y="26" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">&#10024; Measured in Years + Months + Days</text>
+      </g>
+    </g>
+
+    <!-- Right Anchor Node: Reference / Current Date -->
+    <g transform="translate(920, 200)">
+      <circle cx="0" cy="0" r="32" fill="#1e293b" stroke="#10b981" stroke-width="4" filter="url(#shadow)" />
+      <!-- Flag / Finish / Clock Icon -->
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#34d399" stroke-width="2" />
+      <polyline points="0,-8 0,0 6,4" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" />
+      
+      <!-- Label Card Below -->
+      <g transform="translate(0, 50)" filter="url(#shadow)">
+        <rect x="-110" y="0" width="220" height="96" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+        <rect x="-110" y="0" width="220" height="4" rx="2" fill="#10b981" />
+        <text x="0" y="24" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">POINT 2</text>
+        <text x="0" y="46" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Current / Cutoff Date</text>
+        <text x="0" y="68" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" text-anchor="middle">Today &#8226; Resignation &#8226; Future</text>
+        <text x="0" y="84" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" text-anchor="middle">e.g., April 10, 2026</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Brand Footnote -->
+  <g transform="translate(100, 625)">
+    <text x="0" y="16" fill="#64748b" font-family="-apple-system, sans-serif" font-size="13">Age Calculator Lab &#8226; Editorial Concept Series: Employment Tenure &amp; Service Duration</text>
+  </g>
+</svg>
