@@ -1,0 +1,106 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#042F2A; font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A" />
+      <stop offset="100%" stop-color="#075433" />
+    </linearGradient>
+    <linearGradient id="overlapPatternGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF754D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <filter id="shadow3" x="-2%" y="-2%" width="104%" height="106%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="675" fill="url(#bgGrad3)" />
+
+  <!-- Top Title -->
+  <g transform="translate(60, 42)">
+    <rect x="0" y="0" width="250" height="28" rx="14" fill="#FF754D" fill-opacity="0.2" stroke="#FF754D" stroke-width="1.2" />
+    <text x="125" y="19" font-size="11" font-weight="700" fill="#FF9A77" text-anchor="middle" letter-spacing="1.2">ADVANCED CHRONOLOGY AUDIT</text>
+    
+    <text x="0" y="64" font-family="'Fraunces', Georgia, serif" font-size="32" font-weight="700" fill="#FFFFFF">How Overlapping Jobs Impact Total Experience</text>
+    <text x="0" y="90" font-size="14" font-weight="400" fill="#D3E5DE">Why raw mathematical summation causes double-counting errors in career chronology.</text>
+  </g>
+
+  <!-- Main Comparison Card -->
+  <rect x="60" y="160" width="1080" height="465" rx="18" fill="#031F1C" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" filter="url(#shadow3)" />
+
+  <!-- Timeline Axis -->
+  <g transform="translate(100, 200)">
+    <!-- Time Axis Header -->
+    <text x="0" y="20" font-size="14" font-weight="700" fill="#9FE7BD">CALENDAR TIMELINE (2020 – 2024)</text>
+    
+    <!-- Timeline Grid Line -->
+    <line x1="0" y1="45" x2="1000" y2="45" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+    
+    <!-- Year Markers -->
+    <g transform="translate(0, 45)">
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="#FFFFFF" stroke-width="2" />
+      <text x="0" y="-12" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">Jan 2020</text>
+      
+      <line x1="250" y1="-5" x2="250" y2="5" stroke="#FFFFFF" stroke-width="2" />
+      <text x="250" y="-12" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">Jan 2021</text>
+      
+      <line x1="500" y1="-5" x2="500" y2="5" stroke="#FFFFFF" stroke-width="2" />
+      <text x="500" y="-12" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">Jan 2022</text>
+      
+      <line x1="625" y1="-5" x2="625" y2="5" stroke="#FF754D" stroke-width="2" />
+      <text x="625" y="-12" font-size="12" font-weight="700" fill="#FF9A77" text-anchor="middle">Jul 2022</text>
+      
+      <line x1="750" y1="-5" x2="750" y2="5" stroke="#FFFFFF" stroke-width="2" />
+      <text x="750" y="-12" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">Dec 2022</text>
+      
+      <line x1="1000" y1="-5" x2="1000" y2="5" stroke="#FFFFFF" stroke-width="2" />
+      <text x="1000" y="-12" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">Jun 2024</text>
+    </g>
+
+    <!-- Job A Bar (Jan 2020 -> Dec 2022: 36 Months) -->
+    <g transform="translate(0, 65)">
+      <rect x="0" y="0" width="750" height="42" rx="8" fill="#075433" stroke="#10B981" stroke-width="1.5" />
+      <text x="20" y="26" font-size="14" font-weight="700" fill="#FFFFFF">Job A (Full-Time)</text>
+      <text x="200" y="26" font-size="12" font-weight="500" fill="#9FE7BD">Jan 2020 → Dec 2022 (3.0 Years / 36 Months)</text>
+    </g>
+
+    <!-- Job B Bar (Jul 2022 -> Jun 2024: 24 Months) -->
+    <g transform="translate(0, 120)">
+      <rect x="625" y="0" width="375" height="42" rx="8" fill="#08745A" stroke="#34D399" stroke-width="1.5" />
+      <text x="645" y="26" font-size="14" font-weight="700" fill="#FFFFFF">Job B (Consulting / Overlap)</text>
+      <text x="880" y="26" font-size="11" font-weight="600" fill="#9FE7BD">Jul 2022 → Jun 2024 (2.0 Yrs)</text>
+    </g>
+
+    <!-- Highlight Overlap Zone (Jul 2022 -> Dec 2022: 6 Months) -->
+    <g transform="translate(625, 60)">
+      <rect x="0" y="0" width="125" height="108" rx="8" fill="#FF754D" fill-opacity="0.25" stroke="#FF754D" stroke-width="2" stroke-dasharray="4,4" />
+      <rect x="12" y="42" width="100" height="24" rx="4" fill="#FF754D" />
+      <text x="62" y="58" font-size="11" font-weight="800" fill="#042F2A" text-anchor="middle">6-MO OVERLAP</text>
+    </g>
+  </g>
+
+  <!-- Comparison Results: Raw Sum vs Unique Calendar Duration -->
+  <g transform="translate(100, 420)">
+    <!-- Box 1: Flawed Raw Sum -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="480" height="180" rx="12" fill="#1C1816" stroke="#C2410C" stroke-width="1.5" />
+      <rect x="16" y="16" width="150" height="24" rx="4" fill="#C2410C" />
+      <text x="91" y="32" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">❌ FLAWED RAW SUM</text>
+      
+      <text x="16" y="66" font-size="14" font-weight="600" fill="#FFA080">Job A (36 Mos) + Job B (24 Mos)</text>
+      <text x="16" y="105" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="700" fill="#FFFFFF">5.0 Years <tspan font-size="15" font-family="'Inter', sans-serif" fill="#CBD5E1">(60 Months)</tspan></text>
+      <text x="16" y="132" font-size="12" font-weight="500" fill="#FFB199">Double-counts the 6-month overlapping period between July 2022 and Dec 2022.</text>
+    </g>
+
+    <!-- Box 2: Accurate Unique Calendar Experience -->
+    <g transform="translate(520, 0)">
+      <rect x="0" y="0" width="480" height="180" rx="12" fill="#073A30" stroke="#10B981" stroke-width="1.5" />
+      <rect x="16" y="16" width="180" height="24" rx="4" fill="#10B981" />
+      <text x="106" y="32" font-size="11" font-weight="800" fill="#042F2A" text-anchor="middle">✓ UNIQUE CALENDAR SPAN</text>
+      
+      <text x="16" y="66" font-size="14" font-weight="600" fill="#9FE7BD">Continuous Span: Jan 2020 → Jun 2024</text>
+      <text x="16" y="105" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="700" fill="#FFFFFF">4.5 Years <tspan font-size="15" font-family="'Inter', sans-serif" fill="#34D399">(54 Months Net)</tspan></text>
+      <text x="16" y="132" font-size="12" font-weight="500" fill="#D3E5DE">Accurately merges concurrent months into single chronological career span.</text>
+    </g>
+  </g>
+</svg>

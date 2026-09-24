@@ -1,0 +1,128 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#F4F8F6; font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <defs>
+    <filter id="cardShadowSoft" x="-3%" y="-3%" width="106%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#042F2A" flood-opacity="0.08" />
+    </filter>
+    <filter id="stickyShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="3" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#042F2A" />
+      <stop offset="100%" stop-color="#075433" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Background Base -->
+  <rect width="1200" height="675" fill="#F4F8F6" />
+
+  <!-- Top Title Bar -->
+  <g transform="translate(60, 40)">
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#075433" fill-opacity="0.08" stroke="#075433" stroke-width="1.2" />
+    <text x="110" y="19" font-size="11" font-weight="700" fill="#075433" text-anchor="middle" letter-spacing="1.2">HR DESK REFERENCE NOTE</text>
+    
+    <text x="0" y="62" font-family="'Fraunces', Georgia, serif" font-size="30" font-weight="700" fill="#042F2A">Resume Audit: Experience vs Service Breakdown</text>
+    <text x="0" y="86" font-size="14" font-weight="400" fill="#5D7069">How an applicant’s complete employment timeline maps into two distinct chronological records.</text>
+  </g>
+
+  <!-- Left Card: The Career Resume Ledger (Paper Style) -->
+  <g transform="translate(60, 150)">
+    <rect x="0" y="0" width="520" height="460" rx="16" fill="#FFFFFF" stroke="#DDE7E2" stroke-width="1.5" filter="url(#cardShadowSoft)" />
+    
+    <!-- Header of Resume Sheet -->
+    <rect x="0" y="0" width="520" height="60" rx="16" fill="#075433" />
+    <text x="28" y="38" font-family="'Fraunces', Georgia, serif" font-size="18" font-weight="700" fill="#FFFFFF">Candidate Career Chronology (Resume)</text>
+    
+    <!-- Entry 1: Company A -->
+    <g transform="translate(28, 85)">
+      <circle cx="12" cy="12" r="10" fill="#E8F4EC" stroke="#075433" stroke-width="2" />
+      <text x="12" y="16" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">1</text>
+      <text x="36" y="16" font-size="15" font-weight="700" fill="#042F2A">Company A — Junior Analyst</text>
+      <text x="36" y="34" font-size="13" font-weight="500" fill="#5D7069">2016 – 2020 • 4 Years (48 Months)</text>
+      <rect x="370" y="2" width="85" height="26" rx="6" fill="#E8F4EC" />
+      <text x="412" y="19" font-size="12" font-weight="700" fill="#075433" text-anchor="middle">+ 4.0 YRS</text>
+    </g>
+
+    <!-- Connector Line -->
+    <line x1="40" y1="135" x2="40" y2="155" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="3,3" />
+
+    <!-- Entry 2: Company B -->
+    <g transform="translate(28, 165)">
+      <circle cx="12" cy="12" r="10" fill="#E8F4EC" stroke="#075433" stroke-width="2" />
+      <text x="12" y="16" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">2</text>
+      <text x="36" y="16" font-size="15" font-weight="700" fill="#042F2A">Company B — Product Lead</text>
+      <text x="36" y="34" font-size="13" font-weight="500" fill="#5D7069">2020 – 2022 • 2 Years (24 Months)</text>
+      <rect x="370" y="2" width="85" height="26" rx="6" fill="#E8F4EC" />
+      <text x="412" y="19" font-size="12" font-weight="700" fill="#075433" text-anchor="middle">+ 2.0 YRS</text>
+    </g>
+
+    <!-- Connector Line -->
+    <line x1="40" y1="215" x2="40" y2="235" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="3,3" />
+
+    <!-- Entry 3: Company C (Current) -->
+    <g transform="translate(28, 245)">
+      <circle cx="12" cy="12" r="10" fill="#FFF1EC" stroke="#FF754D" stroke-width="2" />
+      <text x="12" y="16" font-size="11" font-weight="700" fill="#FF754D" text-anchor="middle">3</text>
+      <text x="36" y="16" font-size="15" font-weight="700" fill="#042F2A">Company C (Current Role)</text>
+      <text x="36" y="34" font-size="13" font-weight="600" fill="#FF754D">2022 – Present (2026) • 4 Years</text>
+      <rect x="370" y="2" width="85" height="26" rx="6" fill="#FFF1EC" />
+      <text x="412" y="19" font-size="12" font-weight="700" fill="#C2410C" text-anchor="middle">+ 4.0 YRS</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="28" y1="315" x2="492" y2="315" stroke="#E2E8F0" stroke-width="1.5" />
+
+    <!-- Career Total Box -->
+    <g transform="translate(28, 335)">
+      <rect x="0" y="0" width="464" height="95" rx="12" fill="#F8FCFA" stroke="#10B981" stroke-width="1.5" />
+      <text x="20" y="32" font-size="13" font-weight="700" fill="#075433" letter-spacing="0.5">TOTAL CAREER EXPERIENCE (1 + 2 + 3)</text>
+      <text x="20" y="68" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="700" fill="#042F2A">10.0 Years <tspan font-size="15" font-family="'Inter', sans-serif" font-weight="500" fill="#5D7069">(120 Months)</tspan></text>
+      <text x="20" y="85" font-size="11" font-weight="500" fill="#08745A">Valid for senior job eligibility, portfolio credentials &amp; industry standing</text>
+    </g>
+  </g>
+
+  <!-- Right Sticky Note: The Employer HR Record Card -->
+  <g transform="translate(620, 150)">
+    <rect x="0" y="0" width="520" height="460" rx="16" fill="#042F2A" stroke="#075433" stroke-width="2" filter="url(#stickyShadow)" />
+    
+    <!-- Top Note Label -->
+    <g transform="translate(32, 30)">
+      <rect x="0" y="0" width="170" height="26" rx="6" fill="#FF754D" />
+      <text x="85" y="17" font-size="11" font-weight="800" fill="#042F2A" text-anchor="middle" letter-spacing="0.8">COMPANY C HR AUDIT</text>
+      
+      <text x="0" y="58" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#FFFFFF">Official Years of Service Record</text>
+      <text x="0" y="82" font-size="13" font-weight="400" fill="#D3E5DE">How Company C calculates tenure under employment policy.</text>
+    </g>
+
+    <!-- Calculation Breakdown Table inside Dark Surface -->
+    <g transform="translate(32, 135)">
+      <!-- Row 1: Start Date -->
+      <rect x="0" y="0" width="456" height="42" rx="8" fill="rgba(255,255,255,0.06)" />
+      <text x="16" y="26" font-size="13" font-weight="500" fill="#B4D1C7">Company C Hire Date:</text>
+      <text x="440" y="26" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="end">January 15, 2022</text>
+
+      <!-- Row 2: Audit Date -->
+      <rect x="0" y="50" width="456" height="42" rx="8" fill="rgba(255,255,255,0.06)" />
+      <text x="16" y="76" font-size="13" font-weight="500" fill="#B4D1C7">Current Reference Date:</text>
+      <text x="440" y="76" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="end">January 15, 2026</text>
+
+      <!-- Row 3: Prior Experience Credit -->
+      <rect x="0" y="100" width="456" height="42" rx="8" fill="rgba(255,255,255,0.06)" />
+      <text x="16" y="126" font-size="13" font-weight="500" fill="#B4D1C7">Company A &amp; B Service Credit:</text>
+      <text x="440" y="126" font-size="13" font-weight="700" fill="#FF9A77" text-anchor="end">0.00 Years (Non-Applicable)</text>
+    </g>
+
+    <!-- Official Service Result Box -->
+    <g transform="translate(32, 305)">
+      <rect x="0" y="0" width="456" height="110" rx="12" fill="rgba(255,117,77,0.12)" stroke="#FF754D" stroke-width="1.5" />
+      <text x="20" y="28" font-size="12" font-weight="800" fill="#FF9A77" letter-spacing="1">OFFICIAL COMPANY C SERVICE TENURE</text>
+      <text x="20" y="66" font-family="'Fraunces', Georgia, serif" font-size="32" font-weight="700" fill="#FFFFFF">4.0 Years <tspan font-size="16" font-family="'Inter', sans-serif" font-weight="500" fill="#D3E5DE">(48 Months / 1,461 Days)</tspan></text>
+      <text x="20" y="94" font-size="12" font-weight="500" fill="#FFD1C2">Governs: 4th Work Anniversary, 401(k) Vesting &amp; 4-Year Severance</text>
+    </g>
+  </g>
+
+  <!-- Bottom Core Rule Tag -->
+  <g transform="translate(60, 625)">
+    <rect x="0" y="0" width="1080" height="34" rx="8" fill="#042F2A" />
+    <text x="540" y="22" font-size="13" font-weight="700" fill="#9FE7BD" text-anchor="middle">KEY PRINCIPLE: Total Career Experience (10 Yrs) ≠ Single-Employer Service Tenure (4 Yrs)</text>
+  </g>
+</svg>
