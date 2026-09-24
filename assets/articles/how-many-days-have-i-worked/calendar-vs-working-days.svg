@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="100%" height="100%" style="background:#F8FCFA; border-radius:16px; font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <rect width="880" height="400" fill="#F8FCFA" rx="16" stroke="#D3E5DE" stroke-width="1"/>
+
+  <text x="40" y="45" fill="#042F2A" font-size="18" font-weight="800">1 Calendar Year: The 3 Layers of Days Worked</text>
+  <text x="40" y="70" fill="#4A6B60" font-size="13">How 365 calendar days reduce to actual desk hours across standard full-time employment.</text>
+
+  <!-- Step 1: Calendar Days -->
+  <g transform="translate(40, 95)">
+    <rect width="250" height="260" rx="12" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5"/>
+    <rect x="0" y="0" width="250" height="40" rx="12" fill="#E8F5EE"/>
+    <text x="20" y="26" fill="#075433" font-size="14" font-weight="700">1. Calendar Days</text>
+    
+    <text x="20" y="75" fill="#042F2A" font-size="32" font-weight="800" font-family="'JetBrains Mono', monospace">365</text>
+    <text x="95" y="70" fill="#4A6B60" font-size="13" font-weight="600">Days / Yr</text>
+    
+    <text x="20" y="115" fill="#0D2B23" font-size="13" font-weight="600">Definition:</text>
+    <text x="20" y="135" fill="#4A6B60" font-size="12">Total elapsed sunrises between start date and end date.</text>
+
+    <text x="20" y="175" fill="#0D2B23" font-size="13" font-weight="600">Used For:</text>
+    <text x="20" y="195" fill="#4A6B60" font-size="12">• Seniority date rank</text>
+    <text x="20" y="215" fill="#4A6B60" font-size="12">• Vesting &amp; probation periods</text>
+    <text x="20" y="235" fill="#4A6B60" font-size="12">• Immigration work permits</text>
+  </g>
+
+  <!-- Step 2: Working / Business Days -->
+  <g transform="translate(315, 95)">
+    <rect width="250" height="260" rx="12" fill="#FFFFFF" stroke="#075433" stroke-width="2"/>
+    <rect x="0" y="0" width="250" height="40" rx="12" fill="#075433"/>
+    <text x="20" y="26" fill="#FFFFFF" font-size="14" font-weight="700">2. Business Weekdays</text>
+    
+    <text x="20" y="75" fill="#075433" font-size="32" font-weight="800" font-family="'JetBrains Mono', monospace">260</text>
+    <text x="95" y="70" fill="#4A6B60" font-size="13" font-weight="600">Days / Yr (52 × 5)</text>
+    
+    <text x="20" y="115" fill="#0D2B23" font-size="13" font-weight="600">Formula:</text>
+    <text x="20" y="135" fill="#4A6B60" font-size="12">365 Days − 104 Weekend Days (52 Saturdays + 52 Sundays).</text>
+
+    <text x="20" y="175" fill="#0D2B23" font-size="13" font-weight="600">Used For:</text>
+    <text x="20" y="195" fill="#4A6B60" font-size="12">• Standard payroll scheduling</text>
+    <text x="20" y="215" fill="#4A6B60" font-size="12">• Daily wage rate conversion</text>
+    <text x="20" y="235" fill="#4A6B60" font-size="12">• Contract working days</text>
+  </g>
+
+  <!-- Step 3: Actual Worked Days -->
+  <g transform="translate(590, 95)">
+    <rect width="250" height="260" rx="12" fill="#FFFFFF" stroke="#FF754D" stroke-width="1.5"/>
+    <rect x="0" y="0" width="250" height="40" rx="12" fill="#FFF0EB"/>
+    <text x="20" y="26" fill="#C8441B" font-size="14" font-weight="700">3. Actual Worked Days</text>
+    
+    <text x="20" y="75" fill="#C8441B" font-size="32" font-weight="800" font-family="'JetBrains Mono', monospace">~230-240</text>
+    <text x="20" y="95" fill="#4A6B60" font-size="12" font-weight="600">Net on-duty days</text>
+    
+    <text x="20" y="125" fill="#0D2B23" font-size="13" font-weight="600">Deductions:</text>
+    <text x="20" y="145" fill="#4A6B60" font-size="12">260 Weekdays − 10 Public Holidays − 15–20 PTO / Sick Days.</text>
+
+    <text x="20" y="185" fill="#0D2B23" font-size="13" font-weight="600">Used For:</text>
+    <text x="20" y="205" fill="#4A6B60" font-size="12">• Hourly billable audits</text>
+    <text x="20" y="225" fill="#4A6B60" font-size="12">• Freelance / contractor logs</text>
+    <text x="20" y="245" fill="#4A6B60" font-size="12">• Real desk time tracking</text>
+  </g>
+</svg>

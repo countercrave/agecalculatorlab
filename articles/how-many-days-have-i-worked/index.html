@@ -1,0 +1,1363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Many Days Have I Worked? Calculate Total Days of Service | Age Calculator Lab</title>
+  <meta name="description" content="Calculate exactly how many days you have worked. Learn the +1 inclusive counting rule, business weekdays vs calendar days, leap year February 29 effects, and HR service auditing.">
+  <link rel="canonical" href="https://www.agecalculatorlab.com/articles/how-many-days-have-i-worked/">
+  <meta property="og:url" content="https://www.agecalculatorlab.com/articles/how-many-days-have-i-worked/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How Many Days Have I Worked? Calculate Total Days of Service">
+  <meta property="og:description" content="Calculate exactly how many days you have worked. Learn the +1 inclusive counting rule, business weekdays vs calendar days, leap year February 29 effects, and HR service auditing.">
+  <meta property="og:image" content="https://www.agecalculatorlab.com/assets/articles/how-many-days-have-i-worked/total-days-worked-hero.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Many Days Have I Worked? Calculate Total Days of Service">
+  <meta name="twitter:description" content="Interactive guide & calculator to find your exact days of service, calendar tenure vs business days, and leap year math.">
+  <meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/articles/how-many-days-have-i-worked/total-days-worked-hero.svg">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#075433">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../../assets/style.css?v=20260824e">
+
+  <!-- Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How Many Days Have I Worked? Calculate Total Days of Service",
+    "description": "Calculate exact employment tenure in total days. Comprehensive technical breakdown of inclusive date arithmetic, working days vs calendar days, leap year February 29 calculations, and HR tenure auditing.",
+    "url": "https://www.agecalculatorlab.com/articles/how-many-days-have-i-worked/",
+    "datePublished": "2026-09-24",
+    "dateModified": "2026-09-24",
+    "image": "https://www.agecalculatorlab.com/assets/articles/how-many-days-have-i-worked/total-days-worked-hero.svg",
+    "articleSection": "School & Employment",
+    "wordCount": 2280,
+    "author": {
+      "@type": "Person",
+      "name": "Navjeet Kamboj",
+      "url": "https://www.agecalculatorlab.com/author/navjeet-kamboj/",
+      "jobTitle": "Founder & Technical Editor",
+      "sameAs": [
+        "https://in.linkedin.com/in/navjeet-kamboj",
+        "https://www.instagram.com/jeet_7.7/"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Age Calculator Lab",
+      "url": "https://www.agecalculatorlab.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.agecalculatorlab.com/assets/age-calculator-lab-logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.agecalculatorlab.com/articles/how-many-days-have-i-worked/"
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.agecalculatorlab.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles",
+        "item": "https://www.agecalculatorlab.com/articles/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "School & Employment",
+        "item": "https://www.agecalculatorlab.com/categories/#school-employment"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "How Many Days Have I Worked?",
+        "item": "https://www.agecalculatorlab.com/articles/how-many-days-have-i-worked/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I calculate how many days I have worked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To calculate total calendar days of service, subtract your start date from your end (or reference) date. For formal HR tenure and payroll, you add +1 day to make the count inclusive of both your first and last shift: Total Days = (End Date - Start Date) + 1."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between calendar days worked and working business days?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Calendar days measure total elapsed elapsed days on the calendar (including weekends and holidays, totaling 365 or 366 days/year). Business or working days exclude weekends (52 Saturdays and 52 Sundays = 104 days), resulting in standard ~260 workdays per year, or ~250 days after subtracting statutory public holidays."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do HR departments add 1 day to service date calculations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard mathematical subtraction (Date B - Date A) measures elapsed time between two midnight timestamps. Because an employee works both their first day on duty and their final day before departure, HR systems use inclusive date counting: (Date B - Date A) + 1 day to ensure full payroll credit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do leap years affect my total days of service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A leap year adds February 29 (366 days in the year instead of 365). If your employment period crosses a leap day (such as Feb 29, 2020 or Feb 29, 2024), your total days worked will be 1 day higher than the same calendar span in non-leap years."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many working days are in a typical 1-year employment period?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A standard non-leap year has 365 calendar days. With a Monday-to-Friday work schedule, there are exactly 260 weekdays (52 weeks x 5 days). After accounting for ~10 observed federal or public holidays, an employee actively works approximately 250 days before paid time off (PTO)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate days worked in Microsoft Excel or Google Sheets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For calendar days including both start and end dates, use =DATEDIF(A1, B1, \"d\") + 1 or simply =(B1 - A1) + 1. For business days excluding weekends and public holidays, use the formula =NETWORKDAYS(A1, B1, Holidays_Range)."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Scoped Article Design Architecture */
+    .article-wrap {
+      padding-bottom: var(--s-16, 64px);
+    }
+    .article-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      padding-top: var(--s-8, 32px);
+      padding-bottom: var(--s-8, 32px);
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .article-hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 48px;
+        padding-top: var(--s-12, 48px);
+        padding-bottom: var(--s-12, 48px);
+      }
+    }
+    .article-hero-copy .eyebrow {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #075433;
+      margin-bottom: var(--s-2, 8px);
+    }
+    .article-hero-copy h1 {
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: clamp(2.1rem, 4vw, 3rem);
+      line-height: 1.15;
+      font-weight: 700;
+      color: #042F2A;
+      margin-bottom: var(--s-4, 16px);
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: #5D7069;
+      margin-top: var(--s-4, 16px);
+      padding-top: var(--s-3, 12px);
+      border-top: 1px solid #DDE7E2;
+    }
+    .article-meta a {
+      color: #075433;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .article-featured-media {
+      margin: 0;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #DDE7E2;
+      box-shadow: 0 10px 28px rgba(4, 47, 42, 0.08);
+      background: #FFFFFF;
+    }
+    .article-featured-media img, .article-featured-media svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .article-featured-media figcaption {
+      padding: 10px 16px;
+      font-size: 0.82rem;
+      color: #5D7069;
+      background: #F8FCFA;
+      border-top: 1px solid #DDE7E2;
+      text-align: center;
+    }
+
+    /* Early Answer Box */
+    .early-answer-box {
+      background: #F4F8F6;
+      border-left: 4px solid #075433;
+      border-radius: 0 10px 10px 0;
+      padding: 18px 22px;
+      margin: 16px 0;
+    }
+    .early-answer-box p {
+      margin: 0 0 12px;
+      font-size: 1rem;
+      line-height: 1.55;
+      color: #0D2B23;
+    }
+    .cta-early-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #075433;
+      color: #FFFFFF !important;
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .cta-early-btn:hover {
+      background: #042F2A;
+      color: #FFFFFF !important;
+    }
+
+    /* Article Layout with Sidebar TOC */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    @media (min-width: 992px) {
+      .article-layout {
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 48px;
+      }
+    }
+    .article-toc {
+      display: none;
+    }
+    @media (min-width: 992px) {
+      .article-toc {
+        display: block;
+        position: sticky;
+        top: 80px;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        padding-right: 12px;
+        border-right: 1px solid #DDE7E2;
+      }
+    }
+    .article-toc strong {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #075433;
+      margin-bottom: 14px;
+    }
+    .article-toc a {
+      display: block;
+      font-size: 0.85rem;
+      color: #5D7069;
+      text-decoration: none;
+      padding: 6px 0 6px 10px;
+      border-left: 2px solid transparent;
+      margin-bottom: 2px;
+      line-height: 1.35;
+      transition: all 0.2s ease;
+    }
+    .article-toc a:hover {
+      color: #075433;
+      border-left-color: #075433;
+      background: rgba(7, 84, 51, 0.04);
+    }
+
+    .article-body {
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      color: #2D3748;
+    }
+    .article-body h2 {
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: clamp(1.6rem, 3vw, 2.1rem);
+      font-weight: 700;
+      color: #042F2A;
+      margin: 44px 0 18px;
+      line-height: 1.25;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #E8F5EE;
+    }
+    .article-body h3 {
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #075433;
+      margin: 32px 0 14px;
+      line-height: 1.35;
+    }
+    .article-body p {
+      margin-bottom: 20px;
+    }
+    .article-body ul, .article-body ol {
+      margin: 16px 0 24px 24px;
+    }
+    .article-body li {
+      margin-bottom: 10px;
+    }
+
+    /* Comparison Table Styling */
+    .comparison-table-wrap {
+      overflow-x: auto;
+      margin: 28px 0;
+      border-radius: 12px;
+      border: 1px solid #DDE7E2;
+      box-shadow: 0 4px 14px rgba(4, 47, 42, 0.04);
+      background: #FFFFFF;
+    }
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    .comp-table th {
+      background: #042F2A;
+      color: #FFFFFF !important;
+      padding: 16px 20px;
+      font-weight: 700;
+      font-family: var(--font-display, "Fraunces", serif);
+      font-size: 1.05rem;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .comp-table th:last-child {
+      border-right: none;
+    }
+    .comp-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid #E8EFEA;
+      color: #2D3748;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .comp-table tr:nth-child(even) td {
+      background: #F8FCFA;
+    }
+    .comp-table tr:last-child td {
+      border-bottom: none;
+    }
+    .comp-table td:first-child {
+      font-weight: 700;
+      color: #042F2A;
+    }
+
+    /* Visual Infographic Cards */
+    .article-visual-card {
+      margin: 36px 0;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #DDE7E2;
+      box-shadow: 0 8px 24px rgba(4, 47, 42, 0.06);
+      background: #FFFFFF;
+    }
+    .article-visual-card img, .article-visual-card svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .article-visual-card figcaption {
+      padding: 12px 18px;
+      background: #F8FCFA;
+      font-size: 0.85rem;
+      color: #5D7069;
+      border-top: 1px solid #DDE7E2;
+      text-align: center;
+    }
+
+    /* Key Takeaways Card */
+    .takeaways-box {
+      background: #F8FCFA;
+      border: 1px solid #D3E5DE;
+      border-left: 6px solid #FF754D;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    .takeaways-box h3 {
+      color: #042F2A;
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Interactive Calculator Container */
+    .calculator-widget-card {
+      background: #FFFFFF;
+      border: 2px solid #075433;
+      border-radius: 16px;
+      padding: 32px;
+      margin: 40px 0;
+      box-shadow: 0 10px 25px rgba(7, 84, 51, 0.08);
+    }
+    .calc-header {
+      border-bottom: 1px solid #E8F5EE;
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+    .calc-header h3 {
+      color: #042F2A;
+      margin: 0 0 6px;
+      font-size: 1.45rem;
+    }
+    .calc-form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 640px) {
+      .calc-form-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .calc-field label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      color: #042F2A;
+      margin-bottom: 6px;
+    }
+    .calc-field input[type="date"] {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid #D3E5DE;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #042F2A;
+      background: #FAFCFB;
+    }
+    .calc-field input[type="date"]:focus {
+      outline: none;
+      border-color: #075433;
+      box-shadow: 0 0 0 3px rgba(7, 84, 51, 0.12);
+    }
+    .calc-options-row {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: #F8FCFA;
+      padding: 16px;
+      border-radius: 10px;
+      border: 1px solid #E8F5EE;
+      margin-bottom: 24px;
+    }
+    .calc-option-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #0D2B23;
+      cursor: pointer;
+    }
+    .calc-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #FF754D;
+      color: #FFFFFF;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .calc-btn:hover {
+      background: #F06137;
+    }
+    .calc-results-pane {
+      margin-top: 28px;
+      background: #042F2A;
+      color: #FFFFFF;
+      border-radius: 14px;
+      padding: 28px;
+      display: block;
+    }
+    .result-primary-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(2.5rem, 6vw, 3.8rem);
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1;
+    }
+    .result-primary-label {
+      color: #FF9A77;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: 6px;
+      margin-bottom: 20px;
+    }
+    .result-grid-tiles {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    @media (min-width: 640px) {
+      .result-grid-tiles {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .result-tile {
+      background: #073B32;
+      border: 1px solid #1B6349;
+      padding: 16px;
+      border-radius: 10px;
+    }
+    .result-tile-lbl {
+      color: #9FE7BD;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .result-tile-val {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    /* Formula Box */
+    .formula-box {
+      background: #042F2A;
+      color: #FFFFFF;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 28px 0;
+      border-left: 5px solid #9FE7BD;
+    }
+    .formula-box h4 {
+      color: #9FE7BD;
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+    .formula-box code {
+      display: block;
+      background: #073B32;
+      color: #FF9A77;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.95rem;
+      margin: 12px 0;
+      overflow-x: auto;
+    }
+
+    /* FAQ Accordion */
+    .faq-container {
+      margin: 40px 0;
+    }
+    .faq-item {
+      border: 1px solid #D3E5DE;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      background: #FFFFFF;
+    }
+    .faq-question {
+      padding: 18px 22px;
+      font-weight: 700;
+      font-size: 1.0625rem;
+      color: #042F2A;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #F8FCFA;
+      user-select: none;
+    }
+    .faq-question:hover {
+      background: #E8F5EE;
+    }
+    .faq-question::after {
+      content: "+";
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #075433;
+    }
+    .faq-item.open .faq-question::after {
+      content: "−";
+    }
+    .faq-answer {
+      padding: 0 22px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      color: #2D3748;
+      font-size: 0.96875rem;
+      line-height: 1.65;
+    }
+    .faq-item.open .faq-answer {
+      padding: 18px 22px;
+      max-height: 500px;
+    }
+
+    /* Standard Author Profile Box */
+    .author-card-box {
+      background: #F8FCFA;
+      border: 1px solid #D3E5DE;
+      border-radius: 14px;
+      padding: 32px;
+      margin: 48px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    @media (min-width: 640px) {
+      .author-card-box {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .author-avatar-img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 3px solid #075433;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .author-info h4 {
+      margin: 0 0 6px;
+      font-size: 1.25rem;
+      color: #042F2A;
+    }
+    .author-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #FF754D;
+      margin-bottom: 10px;
+    }
+    .author-desc {
+      font-size: 0.9375rem;
+      color: #4A6B60;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .author-socials {
+      display: flex;
+      gap: 14px;
+      font-size: 0.875rem;
+    }
+    .author-socials a {
+      color: #075433;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .author-socials a:hover {
+      text-decoration: underline;
+      color: #FF754D;
+    }
+  </style>
+</head>
+<body class="page">
+  
+  <!-- Site Header (Standard Architecture) -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+        <img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab" width="144" height="48">
+      </a>
+      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <details class="nav-dropdown nav-dropdown-categories">
+          <summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="nav-mega">
+            <div class="nav-mega-head">
+              <div><small>161 focused tools</small><strong>Main calculator categories</strong></div>
+              <a href="../../categories/">View category directory →</a>
+            </div>
+            <div class="nav-category-grid">
+              <a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+              <a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+              <a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>8 tools</small></a>
+              <a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+              <a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+              <a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>15 tools</small></a>
+              <a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>13 tools</small></a>
+              <a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+              <a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+              <a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>12 tools</small></a>
+              <a href="../../categories/date-lab/"><span>Date Lab</span><small>34 tools</small></a>
+            </div>
+            <div class="nav-quick-row">
+              <span>Popular</span>
+              <a href="../../">Age Calculator</a>
+              <a href="../../tools/date-difference-calculator/">Date Difference</a>
+              <a href="../../tools/corrected-age-calculator/">Corrected Age</a>
+              <a href="../../tools/countdown-to-date-calculator/">Countdown</a>
+            </div>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-dropdown-guides">
+          <summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="nav-mega nav-mega-guides">
+            <div class="nav-mega-head">
+              <div><small>100 practical guides</small><strong>Learn the method</strong></div>
+              <a href="../../articles/">Browse all guides →</a>
+            </div>
+            <div class="nav-guide-grid">
+              <a href="../../articles/calculate-exact-age-years-months-days/"><small>Universal Chronology</small><span>How to Calculate Exact Age in Years, Months and Days</span></a>
+              <a href="../../articles/chronological-age-explained/"><small>Universal Chronology</small><span>Chronological Age: What It Measures and What It Doesn't</span></a>
+              <a href="../../articles/calendar-age-vs-decimal-age/"><small>Universal Chronology</small><span>Calendar Age vs Decimal Age: Which One Does Your Form Want?</span></a>
+              <a href="../../articles/calculate-age-on-past-date/"><small>Universal Chronology</small><span>Working Out Your Age on a Past Date</span></a>
+              <a href="../../articles/calculate-age-on-future-date/"><small>Universal Chronology</small><span>How Old Will I Be on a Future Date?</span></a>
+              <a href="../../articles/leap-day-birthdays-age-calculation/"><small>Universal Chronology</small><span>Leap-Day Birthdays: Ageing Normally, Celebrating Awkwardly</span></a>
+            </div>
+          </div>
+        </details>
+        <a href="../../categories/">Categories</a>
+        <a href="../../methodology/">Methodology</a>
+        <a class="nav-cta" href="../../">Open Age Calculator</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="article-wrap">
+    
+    <!-- Article Hero Section -->
+    <section class="container article-hero-grid">
+      <div class="article-hero-copy">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../../">Home</a> / <a href="../../articles/">Articles</a> / <a href="../../categories/#school-employment">School &amp; Employment</a> / How Many Days Have I Worked?
+        </nav>
+        <span class="eyebrow">School &amp; Employment • Service Arithmetic</span>
+        <h1>How Many Days Have I Worked? Calculate Total Days of Service</h1>
+        
+        <!-- Immediate Opening Direct Answer -->
+        <div class="early-answer-box">
+          <p>
+            <strong>Core Rule:</strong> To find your total calendar days of service, subtract your hire date from your final or current date and add <strong>+1 day</strong> for inclusive HR tenure: <code>Total Days = (End Date − Start Date) + 1</code>. A full year equals 365 calendar days (366 in leap years), approximately 260 business weekdays, and ~235 net worked days after accounting for paid holidays and time off.
+          </p>
+          <a href="#service-days-calculator" class="cta-early-btn">
+            Calculate Your Total Days Worked &darr;
+          </a>
+        </div>
+
+        <div class="article-meta">
+          <span>By <strong><a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></strong></span>
+          <span>•</span>
+          <span>Published September 24, 2026</span>
+          <span>•</span>
+          <span>9 min read</span>
+          <span>•</span>
+          <span>2,280 words</span>
+        </div>
+      </div>
+
+      <!-- Hero Featured Media Graphic -->
+      <figure class="article-featured-media">
+        <img fetchpriority="high" decoding="async" src="../../assets/articles/how-many-days-have-i-worked/total-days-worked-hero.svg" alt="Total Days of Service digital tenure audit showing 3,112 calendar days and leap year metrics" width="880" height="460">
+        <figcaption>Figure 1: Digital service calculation breakdown showing elapsed days, weekday counts, and leap day adjustments.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Main Content Layout with Sticky Sidebar TOC -->
+    <div class="container article-layout">
+      
+      <!-- Sticky Sidebar Table of Contents -->
+      <aside class="article-toc" aria-label="On this page">
+        <strong>On this page</strong>
+        <a href="#key-takeaways">Key Takeaways</a>
+        <a href="#service-days-calculator">Interactive Service Days Calculator</a>
+        <a href="#why-track-days">Why Total Days Matter in HR</a>
+        <a href="#calendar-vs-workdays">Calendar Days vs. Working Days</a>
+        <a href="#inclusive-plus-one">The Inclusive +1 Day Rule</a>
+        <a href="#leap-year-arithmetic">Leap Year February 29 Math</a>
+        <a href="#tenure-milestones-table">Tenure Milestones Table</a>
+        <a href="#spreadsheet-formulas">Excel &amp; Sheets Formulas</a>
+        <a href="#common-pitfalls">Common Calculation Pitfalls</a>
+        <a href="#author-bio">About the Author</a>
+        <a href="#faq">Frequently Asked Questions</a>
+      </aside>
+
+      <!-- Main Article Body -->
+      <article class="article-body">
+
+        <!-- Key Takeaways Box -->
+        <div class="takeaways-box" id="key-takeaways">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF754D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Key Takeaways
+          </h3>
+          <ul>
+            <li><strong>The Inclusive "+1 Day" Rule:</strong> Simple calendar subtraction (End Date &minus; Start Date) omits your final shift. Corporate HR tenure calculations use the inclusive formula: (End Date &minus; Start Date) + 1.</li>
+            <li><strong>Calendar Days vs Business Days:</strong> 1 full year equals 365 calendar days (366 in leap years), exactly 260 business weekdays, and ~230–235 net worked desk days after public holidays and PTO.</li>
+            <li><strong>Leap Year Precision:</strong> Passing through February 29 adds an extra day of credited service that flat year multipliers (Years &times; 365) miss.</li>
+            <li><strong>High-Stakes Application:</strong> Severance thresholds, probation reviews, PTO accrual rates, and immigration work visas frequently audit exact day counts.</li>
+          </ul>
+        </div>
+
+        <!-- Interactive Calculator Widget -->
+        <section class="calculator-widget-card" id="service-days-calculator">
+          <div class="calc-header">
+            <h3>Interactive Total Days of Service Calculator</h3>
+            <p style="margin:0; color:#4A6B60; font-size:0.9375rem;">Select your employment hire date and reference/exit date to calculate total days worked, weekdays, and elapsed service duration.</p>
+          </div>
+
+          <div class="calc-form-grid">
+            <div class="calc-field">
+              <label for="work-start-date">Employment Start Date</label>
+              <input type="date" id="work-start-date" value="2022-01-15">
+            </div>
+            <div class="calc-field">
+              <label for="work-end-date">End / Reference Date</label>
+              <input type="date" id="work-end-date" value="2026-09-24">
+            </div>
+          </div>
+
+          <div class="calc-options-row">
+            <label class="calc-option-item">
+              <input type="radio" name="calc-mode" value="inclusive" checked>
+              <span><strong>Inclusive Counting (HR Standard):</strong> Both start &amp; end dates included (+1 day)</span>
+            </label>
+            <label class="calc-option-item">
+              <input type="radio" name="calc-mode" value="exclusive">
+              <span><strong>Exclusive Span:</strong> Mathematical difference (End Date &minus; Start Date)</span>
+            </label>
+          </div>
+
+          <button class="calc-btn" id="calc-days-btn" type="button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Calculate Total Days of Service
+          </button>
+
+          <!-- Results Pane -->
+          <div class="calc-results-pane" id="calc-results-box">
+            <div style="font-size:0.875rem; color:#9FE7BD; font-weight:700; letter-spacing:0.5px; text-transform:uppercase;">Calculated Tenure Result</div>
+            <div class="result-primary-number" id="res-total-days">1,714</div>
+            <div class="result-primary-label" id="res-days-label">TOTAL INCLUSIVE CALENDAR DAYS OF SERVICE</div>
+
+            <div class="result-grid-tiles">
+              <div class="result-tile">
+                <div class="result-tile-lbl">YRS, MOS &amp; DAYS</div>
+                <div class="result-tile-val" id="res-ymd">4 Yrs, 8 Mos, 10 Days</div>
+              </div>
+              <div class="result-tile">
+                <div class="result-tile-lbl">ESTIMATED WORKDAYS</div>
+                <div class="result-tile-val" id="res-workdays">1,225 Weekdays</div>
+              </div>
+              <div class="result-tile">
+                <div class="result-tile-lbl">WEEKS &amp; REMAINING</div>
+                <div class="result-tile-val" id="res-weeks">244 Wks, 6 Days</div>
+              </div>
+            </div>
+
+            <div style="margin-top:16px; padding-top:14px; border-top:1px solid #1B6349; font-size:0.875rem; color:#D3E5DE;" id="res-leap-info">
+              ✓ Leap Days Included: <strong>1 day (Feb 29, 2024)</strong> | Weekend Days: 489
+            </div>
+          </div>
+        </section>
+
+        <h2 id="why-track-days">Why Total Days of Service Is a Critical Employment Metric</h2>
+        <p>
+          Most professionals describe their tenure in broad rounded milestones: <em>"I've been with the team for three years"</em> or <em>"I just hit my 18-month mark."</em> While month- and year-based descriptions work well for resume headers and conversational summaries, enterprise HR systems, payroll software, labor statutes, and pension trustees operate on <strong>exact day-count arithmetic</strong>.
+        </p>
+        <p>
+          Calculating your exact elapsed days on payroll is essential across multiple high-stakes situations:
+        </p>
+        <ul>
+          <li><strong>Probationary Period Sign-Off:</strong> Employment agreements frequently establish a strict 90-day, 120-day, or 180-day probation window. Crossing this threshold by even a single day can alter your statutory termination protections or trigger automatic permanent status.</li>
+          <li><strong>Paid Time Off (PTO) Daily Accrual:</strong> If your employer calculates PTO accrual per pay period or per calendar day worked (such as 0.0577 hours per hour or 1.25 days per month), exact day counts prevent uncredited vacation balances upon departure.</li>
+          <li><strong>Severance Pay &amp; Statutory Notice:</strong> In many jurisdictions (such as the UK, Canada, Australia, and parts of the EU), statutory notice periods and severance formulas step up upon completing exact day milestones (e.g. 730 days for 2 full years of continuous service).</li>
+          <li><strong>401(k) and Stock Option Vesting:</strong> Graded vesting schedules often require 1,000 hours or a minimum of 365 continuous days of service per vesting year to award employer matching equity.</li>
+          <li><strong>Work Visas and Immigration Status:</strong> Immigration authorities calculating permanent residency qualification (such as Canadian Express Entry or UK Indefinite Leave to Remain) evaluate exact days of physical employment in-country.</li>
+        </ul>
+
+        <h2 id="calendar-vs-workdays">Calendar Days vs. Working Days: The 3 Layers of Employment Time</h2>
+        <p>
+          When you ask <em>"How many days have I worked?"</em>, the answer depends entirely on whether you are measuring <strong>calendar span</strong>, <strong>scheduled business days</strong>, or <strong>net physical desk time</strong>.
+        </p>
+
+        <!-- Infographic 2: Calendar vs Workdays -->
+        <figure class="article-visual-card">
+          <img src="../../assets/articles/how-many-days-have-i-worked/calendar-vs-working-days.svg" alt="Diagram breaking down 365 calendar days into 260 business weekdays and 230-240 actual worked days" width="880" height="400">
+          <figcaption>Figure 2: The three layers of annual employment duration from calendar span down to net desk time.</figcaption>
+        </figure>
+
+        <h3>1. Total Calendar Days (Elapsed Service Span)</h3>
+        <p>
+          This is the continuous chronological count of every 24-hour day that has elapsed between your hire date and reference date, including Saturdays, Sundays, and public holidays. This is the legal standard used for <strong>seniority ranking</strong>, <strong>retirement vesting</strong>, and <strong>insurance benefit eligibility</strong>.
+        </p>
+
+        <h3>2. Business / Working Days (Weekdays)</h3>
+        <p>
+          For standard 40-hour full-time roles, employees typically work Monday through Friday. A non-leap year contains 52 weeks plus 1 day. That equals exactly <strong>260 business weekdays</strong> (52 weeks &times; 5 days) and 104 weekend days. In leap years, there may be 261 or 262 weekdays depending on which day of the week January 1 lands.
+        </p>
+
+        <h3>3. Net Actual Worked Days</h3>
+        <p>
+          Net worked days deducts both weekends and non-working paid days (statutory public holidays, personal PTO, and sick leave) from the calendar total:
+        </p>
+        <div class="formula-box">
+          <h4>Net Workdays Formula</h4>
+          <code>Net Worked Days = 260 Weekdays - (10 Public Holidays + 15-20 Vacation/Sick Days) ≈ 230 to 235 Days/Year</code>
+        </div>
+
+        <h2 id="inclusive-plus-one">The Inclusive "+1 Day" Rule: Why Standard Subtraction Fails</h2>
+        <p>
+          The most frequent error in employment tenure calculations is simple mathematical subtraction:
+        </p>
+        <p style="text-align:center; font-weight:700; font-size:1.15rem; color:#C8441B;">
+          Date Difference = End Date &minus; Start Date (INCORRECT for HR Service Records)
+        </p>
+        <p>
+          Pure date subtraction measures the <em>elapsed interval</em> between two timestamps at midnight (00:00:00). If you start work on Monday morning and finish your final shift on Friday afternoon, subtracting Monday (Day 1) from Friday (Day 5) yields 5 &minus; 1 = 4 days. However, you were physically on duty for <strong>5 distinct shifts</strong>: Monday, Tuesday, Wednesday, Thursday, and Friday.
+        </p>
+
+        <!-- Infographic 3: Inclusive vs Exclusive Timeline -->
+        <figure class="article-visual-card">
+          <img src="../../assets/articles/how-many-days-have-i-worked/inclusive-vs-exclusive-timeline.svg" alt="Timeline comparing 4 days elapsed vs 5 days of inclusive service" width="880" height="340">
+          <figcaption>Figure 3: The inclusive counting rule ensures that both your first and last shifts on duty are credited to your employment record.</figcaption>
+        </figure>
+
+        <p>
+          To capture full payroll credit for both your onboarding date and your exit date, HR systems apply <strong>inclusive counting</strong>:
+        </p>
+        <div class="formula-box">
+          <h4>HR Inclusive Days of Service Formula</h4>
+          <code>Total Days of Service = (End Date - Start Date) + 1</code>
+          <p style="margin: 8px 0 0; font-size:0.875rem; color:#D3E5DE;">Note: If you resigned and your last day of work was September 24, both your first punch-in and your final departure are recognized.</p>
+        </div>
+
+        <h2 id="leap-year-arithmetic">How Leap Years Shift Your Employment Service Record</h2>
+        <p>
+          The Gregorian calendar adds February 29 once every four years (years divisible by 4, excluding century years not divisible by 400). When calculating long-term days of service, leap days introduce a subtle but critical shift:
+        </p>
+        <ul>
+          <li><strong>1 Non-Leap Calendar Year:</strong> 365 days</li>
+          <li><strong>1 Leap Calendar Year:</strong> 366 days (e.g. 2020, 2024, 2028, 2032)</li>
+          <li><strong>4 Consecutive Years containing 1 Leap Year:</strong> 365 &times; 3 + 366 = 1,461 days (Average of 365.25 days/year)</li>
+        </ul>
+        <p>
+          If an employee worked from March 1, 2023 to March 1, 2024, their total inclusive days worked equals <strong>367 days</strong> because February 29, 2024 falls directly inside their service window. A simplistic formula multiplying 1 year &times; 365 would undercount their service by 1 full day.
+        </p>
+
+        <h2 id="tenure-milestones-table">Tenure Milestone Reference Table: Days, Weeks, and Business Days</h2>
+        <p>
+          Use this reference table to map common employment anniversaries to total calendar days and expected full-time business days:
+        </p>
+
+        <div class="comparison-table-wrap">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>Employment Milestone</th>
+                <th>Standard Calendar Days</th>
+                <th>Average Business Weekdays</th>
+                <th>Estimated Net Worked Days</th>
+                <th>Typical HR Significance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>90 Days</td>
+                <td>90 Days (~3 Mos)</td>
+                <td>~64 Days</td>
+                <td>~60 Days</td>
+                <td>Standard probationary review</td>
+              </tr>
+              <tr>
+                <td>180 Days</td>
+                <td>180 Days (~6 Mos)</td>
+                <td>~128 Days</td>
+                <td>~120 Days</td>
+                <td>Extended probation / health insurance vesting</td>
+              </tr>
+              <tr>
+                <td>1 Year</td>
+                <td>365 Days (366 leap)</td>
+                <td>260 Days</td>
+                <td>~235 Days</td>
+                <td>Annual review, 401(k) match eligibility</td>
+              </tr>
+              <tr>
+                <td>2 Years</td>
+                <td>730–731 Days</td>
+                <td>520–522 Days</td>
+                <td>~470 Days</td>
+                <td>Statutory severance step-up (UK / EU)</td>
+              </tr>
+              <tr>
+                <td>3 Years</td>
+                <td>1,095–1,096 Days</td>
+                <td>780–783 Days</td>
+                <td>~705 Days</td>
+                <td>Graded equity vesting milestone (e.g. 60–75%)</td>
+              </tr>
+              <tr>
+                <td>5 Years</td>
+                <td>1,826 Days</td>
+                <td>1,304 Days</td>
+                <td>~1,175 Days</td>
+                <td>Full 100% cliff vesting, service award</td>
+              </tr>
+              <tr>
+                <td>10 Years</td>
+                <td>3,652–3,653 Days</td>
+                <td>2,608 Days</td>
+                <td>~2,350 Days</td>
+                <td>Decade tenure milestone, enhanced PTO bracket</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="spreadsheet-formulas">How to Calculate Total Days Worked in Spreadsheets</h2>
+        <p>
+          If you are building an HR audit spreadsheet or tracking contract hours in <strong>Microsoft Excel</strong> or <strong>Google Sheets</strong>, here are the exact formulas to use:
+        </p>
+
+        <h3>1. Total Calendar Days (Inclusive)</h3>
+        <p>Assuming Start Date is in cell <code>A2</code> and End Date is in cell <code>B2</code>:</p>
+        <div class="formula-box">
+          <h4>Excel &amp; Google Sheets Formula</h4>
+          <code>=(B2 - A2) + 1</code>
+          <p style="margin:8px 0 0; font-size:0.875rem; color:#D3E5DE;">Or using DATEDIF: <code>=DATEDIF(A2, B2, "d") + 1</code></p>
+        </div>
+
+        <h3>2. Business Days Excluding Weekends and Public Holidays</h3>
+        <p>To calculate exact workdays between two dates while excluding custom holiday calendars:</p>
+        <div class="formula-box">
+          <h4>NETWORKDAYS Formula</h4>
+          <code>=NETWORKDAYS(A2, B2, Holidays!$A$2:$A$15)</code>
+          <p style="margin:8px 0 0; font-size:0.875rem; color:#D3E5DE;">Where <code>Holidays!$A$2:$A$15</code> contains your organization's list of paid observed holidays.</p>
+        </div>
+
+        <h2 id="common-pitfalls">Common Pitfalls in Service Day Calculations</h2>
+        <ol>
+          <li><strong>The Midnight Boundary Trap:</strong> Most computerized databases store dates as UTC timestamps. If your start date is recorded as <code>2024-01-15T00:00:00Z</code> and your end date is <code>2024-01-15T23:59:59Z</code>, pure integer subtraction results in 0, even though you worked a full 8-hour shift.</li>
+          <li><strong>Unpaid Leave vs Active Service:</strong> Extended leaves of absence (such as unpaid sabbaticals or furloughs) may suspend your credited service days while keeping your seniority hiring date intact. Always confirm whether your organization counts <em>active days on payroll</em> or <em>elapsed calendar span</em>.</li>
+          <li><strong>Rehiring Gaps:</strong> If you left an employer and were rehired 6 months later, your total days of service is the sum of both active segments, not the total days from your original hire date.</li>
+        </ol>
+
+        <!-- Standard Author Profile Box -->
+        <div class="author-card-box" id="author-bio">
+          <img class="author-avatar-img" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="96" height="96">
+          <div class="author-info">
+            <h4>Written &amp; Fact-Checked by Navjeet Kamboj</h4>
+            <div class="author-title">Founder &amp; Technical Editor, Age Calculator Lab</div>
+            <p class="author-desc">
+              Navjeet is a software engineer and date arithmetic specialist dedicated to building hyper-accurate chronology tools. He has developed over 160 specialized calculators spanning chronological age, civil service tenure, astronomical milestones, and international calendar systems.
+            </p>
+            <div class="author-socials">
+              <a href="https://in.linkedin.com/in/navjeet-kamboj" target="_blank" rel="noopener">LinkedIn Profile</a>
+              <a href="https://www.instagram.com/jeet_7.7/" target="_blank" rel="noopener">Instagram</a>
+              <a href="../../author/navjeet-kamboj/">All Articles by Navjeet &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          
+          <div class="faq-item open">
+            <div class="faq-question">How do I calculate how many days I have worked?</div>
+            <div class="faq-answer">
+              To calculate total calendar days of service, subtract your start date from your end (or reference) date. For formal HR tenure and payroll records, you add +1 day to make the count inclusive of both your first and last shifts: Total Days = (End Date &minus; Start Date) + 1.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">What is the difference between calendar days worked and working business days?</div>
+            <div class="faq-answer">
+              Calendar days measure every elapsed 24-hour sunrise on the calendar (including weekends and holidays, totaling 365 or 366 days/year). Business or working days exclude weekends (104 weekend days per year), resulting in standard ~260 workdays per year, or ~250 days after subtracting statutory public holidays.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Why do HR departments add 1 day to service date calculations?</div>
+            <div class="faq-answer">
+              Standard mathematical subtraction (Date B &minus; Date A) measures elapsed time between two midnight timestamps. Because an employee works both their first day on duty and their final day before departure, HR systems use inclusive date counting: (Date B &minus; Date A) + 1 day to ensure full payroll credit for both working days.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How do leap years affect my total days of service?</div>
+            <div class="faq-answer">
+              A leap year adds February 29 (366 days in the year instead of 365). If your employment period crosses a leap day (such as Feb 29, 2020 or Feb 29, 2024), your total days worked will be 1 day higher than the same calendar span in non-leap years.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How many working days are in a typical 1-year employment period?</div>
+            <div class="faq-answer">
+              A standard non-leap year has 365 calendar days. With a Monday-to-Friday work schedule, there are exactly 260 weekdays (52 weeks &times; 5 days). After accounting for ~10 observed federal or public holidays, an employee actively works approximately 250 days before paid time off (PTO).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How do I calculate days worked in Microsoft Excel or Google Sheets?</div>
+            <div class="faq-answer">
+              For calendar days including both start and end dates, use <code>=DATEDIF(A1, B1, "d") + 1</code> or simply <code>=(B1 - A1) + 1</code>. For business days excluding weekends and public holidays, use the formula <code>=NETWORKDAYS(A1, B1, Holidays_Range)</code>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Do sick days and vacation days count toward total days of service?</div>
+            <div class="faq-answer">
+              Yes. For legal tenure, retirement vesting, and seniority, paid sick leave, annual vacation days, and observed holidays are fully credited as active days of service. Only unpaid leaves of absence or temporary layoffs may be deducted depending on company policy.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How does a 90-day probation period calculate in practice?</div>
+            <div class="faq-answer">
+              A 90-day probation period counts 90 consecutive calendar days from your official hire date (including weekends). To find your completion date, add 89 days to your start date. For example, if you started on January 15, your 90th day is April 14 (or April 13 in a leap year).
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Site Footer (Standard Architecture) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+          <img decoding="async" class="brand-logo" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab" width="144" height="48">
+        </a>
+        <p class="footer-summary">
+          Precision date arithmetic, chronological age calculators, and employment tenure verification. Built with strict calendar rigor.
+        </p>
+      </div>
+      <div class="footer-col">
+        <strong>Calculators</strong>
+        <ul class="footer-links">
+          <li><a href="../../tools/years-of-service-calculator/">Years of Service Calculator</a></li>
+          <li><a href="../../tools/chronological-age-calculator/">Chronological Age Calculator</a></li>
+          <li><a href="../../categories/#school-employment">School &amp; Employment</a></li>
+          <li><a href="../../categories/#biology-health">Biology &amp; Health</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <strong>Editorial &amp; Guides</strong>
+        <ul class="footer-links">
+          <li><a href="./">How Many Days Have I Worked?</a></li>
+          <li><a href="../years-of-service-vs-years-of-experience/">Years of Service vs Experience</a></li>
+          <li><a href="../korean-age-system-change/">Korean Age Reform</a></li>
+          <li><a href="../../articles/">All Articles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <strong>Company &amp; Legal</strong>
+        <ul class="footer-links">
+          <li><a href="../../author/navjeet-kamboj/">About the Author</a></li>
+          <li><a href="../../privacy/">Privacy Policy</a></li>
+          <li><a href="../../terms/">Terms of Service</a></li>
+          <li><a href="../../contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Age Calculator Lab. All rights reserved. Precise Gregorian date calculations.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive Calculator & Accordion Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // FAQ Accordion functionality
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+          faqItems.forEach(i => i.classList.remove('open'));
+          if (!isOpen) item.classList.add('open');
+        });
+      });
+
+      // Mobile Menu Toggle
+      const menuBtn = document.querySelector('.menu-btn');
+      const navLinks = document.getElementById('primary-nav');
+      if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', function() {
+          const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+          menuBtn.setAttribute('aria-expanded', !expanded);
+          navLinks.classList.toggle('active');
+        });
+      }
+
+      // Calculator logic
+      function calculateDays() {
+        const startVal = document.getElementById('work-start-date').value;
+        const endVal = document.getElementById('work-end-date').value;
+        const mode = document.querySelector('input[name="calc-mode"]:checked').value;
+
+        if (!startVal || !endVal) return;
+
+        const d1 = new Date(startVal + 'T00:00:00');
+        const d2 = new Date(endVal + 'T00:00:00');
+
+        if (d2 < d1) {
+          alert('End date cannot be earlier than start date.');
+          return;
+        }
+
+        const msPerDay = 1000 * 60 * 60 * 24;
+        let totalDays = Math.round((d2 - d1) / msPerDay);
+        if (mode === 'inclusive') {
+          totalDays += 1;
+        }
+
+        // Count weekdays and leap days in range
+        let weekdays = 0;
+        let weekends = 0;
+        let leapDays = 0;
+        let leapYearsFound = [];
+
+        let cur = new Date(d1.getTime());
+        const lastDate = (mode === 'inclusive') ? d2 : new Date(d2.getTime() - msPerDay);
+
+        while (cur <= lastDate) {
+          const dayOfWeek = cur.getDay(); // 0 = Sun, 6 = Sat
+          if (dayOfWeek === 0 || dayOfWeek === 6) {
+            weekends++;
+          } else {
+            weekdays++;
+          }
+
+          if (cur.getMonth() === 1 && cur.getDate() === 29) {
+            leapDays++;
+            leapYearsFound.push(cur.getFullYear());
+          }
+
+          cur.setDate(cur.getDate() + 1);
+        }
+
+        // Calculate Y/M/D span
+        let y1 = d1.getFullYear(), m1 = d1.getMonth(), day1 = d1.getDate();
+        let y2 = d2.getFullYear(), m2 = d2.getMonth(), day2 = d2.getDate();
+
+        if (mode === 'inclusive') {
+          let d2Inclusive = new Date(d2.getTime() + msPerDay);
+          y2 = d2Inclusive.getFullYear();
+          m2 = d2Inclusive.getMonth();
+          day2 = d2Inclusive.getDate();
+        }
+
+        let yearsDiff = y2 - y1;
+        let monthsDiff = m2 - m1;
+        let daysDiff = day2 - day1;
+
+        if (daysDiff < 0) {
+          monthsDiff--;
+          const prevMonth = new Date(y2, m2, 0);
+          daysDiff += prevMonth.getDate();
+        }
+        if (monthsDiff < 0) {
+          yearsDiff--;
+          monthsDiff += 12;
+        }
+
+        const weeks = Math.floor(totalDays / 7);
+        const remDays = totalDays % 7;
+
+        // Update UI
+        document.getElementById('res-total-days').textContent = totalDays.toLocaleString();
+        document.getElementById('res-days-label').textContent = (mode === 'inclusive') 
+          ? 'TOTAL INCLUSIVE CALENDAR DAYS OF SERVICE' 
+          : 'TOTAL ELAPSED CALENDAR DAYS SPAN';
+
+        let ymdStr = '';
+        if (yearsDiff > 0) ymdStr += `${yearsDiff} Yr${yearsDiff > 1 ? 's' : ''}, `;
+        if (monthsDiff > 0 || yearsDiff > 0) ymdStr += `${monthsDiff} Mo${monthsDiff > 1 ? 's' : ''}, `;
+        ymdStr += `${daysDiff} Day${daysDiff !== 1 ? 's' : ''}`;
+        document.getElementById('res-ymd').textContent = ymdStr;
+
+        document.getElementById('res-workdays').textContent = `${weekdays.toLocaleString()} Weekdays`;
+        document.getElementById('res-weeks').textContent = `${weeks.toLocaleString()} Wks, ${remDays} Day${remDays !== 1 ? 's' : ''}`;
+
+        let leapText = `Weekend Days: ${weekends.toLocaleString()}`;
+        if (leapDays > 0) {
+          leapText = `✓ Leap Days Encountered: <strong>${leapDays} day (${leapYearsFound.join(', ')})</strong> | ` + leapText;
+        } else {
+          leapText = `No Feb 29 Leap Days in this span | ` + leapText;
+        }
+        document.getElementById('res-leap-info').innerHTML = leapText;
+      }
+
+      const calcBtn = document.getElementById('calc-days-btn');
+      if (calcBtn) {
+        calcBtn.addEventListener('click', calculateDays);
+      }
+
+      document.querySelectorAll('input[name="calc-mode"]').forEach(r => {
+        r.addEventListener('change', calculateDays);
+      });
+      document.getElementById('work-start-date').addEventListener('change', calculateDays);
+      document.getElementById('work-end-date').addEventListener('change', calculateDays);
+
+      // Run initial calculation
+      calculateDays();
+    });
+  </script>
+</body>
+</html>
