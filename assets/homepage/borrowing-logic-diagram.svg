@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="100%" height="100%" style="background:#042F2A; border-radius:14px; font-family:'Inter', sans-serif;">
+  <rect width="640" height="320" fill="#042F2A" rx="14"/>
+
+  <!-- Title -->
+  <text x="32" y="36" fill="#9FE7BD" font-size="12" font-weight="800" letter-spacing="1">CALENDAR ARITHMETIC ENGINE</text>
+  <text x="32" y="64" fill="#FFFFFF" font-size="18" font-weight="700">Calendar Borrowing Logic (No Negative Days)</text>
+
+  <!-- 3 Steps Grid -->
+  <g transform="translate(32, 90)">
+    <rect width="176" height="190" rx="10" fill="#073B32" stroke="#1B6349" stroke-width="1.2"/>
+    <text x="16" y="28" fill="#9FE7BD" font-size="11" font-weight="700">STEP 1: TEST DATE</text>
+    <text x="16" y="62" fill="#FFFFFF" font-size="16" font-weight="800" font-family="'JetBrains Mono', monospace">17 Sep 2026</text>
+    <text x="16" y="95" fill="#D3E5DE" font-size="12">Subtract DOB:</text>
+    <text x="16" y="118" fill="#FF9A77" font-size="14" font-weight="700" font-family="'JetBrains Mono', monospace">25 Nov 2016</text>
+    <text x="16" y="155" fill="#9FE7BD" font-size="11">17 &#8722; 25 is negative!</text>
+  </g>
+
+  <g transform="translate(232, 90)">
+    <rect width="176" height="190" rx="10" fill="#073B32" stroke="#FF754D" stroke-width="1.5"/>
+    <text x="16" y="28" fill="#FF9A77" font-size="11" font-weight="700">STEP 2: BORROW</text>
+    <text x="16" y="62" fill="#FFFFFF" font-size="15" font-weight="800">Borrow Aug Days</text>
+    <text x="16" y="95" fill="#D3E5DE" font-size="12">August length =</text>
+    <text x="16" y="122" fill="#FF9A77" font-size="22" font-weight="800" font-family="'JetBrains Mono', monospace">+31 Days</text>
+    <text x="16" y="155" fill="#9FE7BD" font-size="11">Sep months &#8722; 1 = 8</text>
+  </g>
+
+  <g transform="translate(432, 90)">
+    <rect width="176" height="190" rx="10" fill="#0D4539" stroke="#9FE7BD" stroke-width="1.5"/>
+    <text x="16" y="28" fill="#9FE7BD" font-size="11" font-weight="700">STEP 3: NET CALC</text>
+    <text x="16" y="58" fill="#FFFFFF" font-size="13" font-weight="700">17 + 31 &#8722; 25</text>
+    <text x="16" y="95" fill="#9FE7BD" font-size="28" font-weight="800" font-family="'JetBrains Mono', monospace">23 Days</text>
+    <text x="16" y="132" fill="#FFFFFF" font-size="13" font-weight="700">Years: 9 | Mos: 9</text>
+    <text x="16" y="160" fill="#D3E5DE" font-size="12">Result: 9Y; 9M; 23D</text>
+  </g>
+</svg>

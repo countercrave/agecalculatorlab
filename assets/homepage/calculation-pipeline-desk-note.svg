@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" height="100%" style="background:#FFFDF9; border-radius:14px; font-family:'Inter', sans-serif;">
+  <defs>
+    <filter id="paperShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#042F2A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Paper background with subtle grid lines -->
+  <rect width="640" height="400" fill="#FFFDF9" rx="14" stroke="#E6E0D4" stroke-width="1.5"/>
+  <line x1="60" y1="0" x2="60" y2="400" stroke="#F4C7C3" stroke-width="1.5" stroke-dasharray="4 2"/>
+  
+  <!-- Horizontal ruled lines -->
+  <line x1="60" y1="70" x2="600" y2="70" stroke="#EBE5D8" stroke-width="1"/>
+  <line x1="60" y1="120" x2="600" y2="120" stroke="#EBE5D8" stroke-width="1"/>
+  <line x1="60" y1="170" x2="600" y2="170" stroke="#EBE5D8" stroke-width="1"/>
+  <line x1="60" y1="220" x2="600" y2="220" stroke="#EBE5D8" stroke-width="1"/>
+  <line x1="60" y1="270" x2="600" y2="270" stroke="#EBE5D8" stroke-width="1"/>
+  <line x1="60" y1="320" x2="600" y2="320" stroke="#EBE5D8" stroke-width="1"/>
+  <line x1="60" y1="370" x2="600" y2="370" stroke="#EBE5D8" stroke-width="1"/>
+
+  <!-- Paper Tape at Top -->
+  <rect x="250" y="8" width="140" height="24" rx="2" fill="#E8D8B8" opacity="0.65" transform="rotate(-1 320 20)"/>
+
+  <!-- Handwritten Style Text -->
+  <text x="90" y="58" fill="#1C382F" font-size="17" font-weight="700" font-family="'JetBrains Mono', monospace">DATE ARITHMETIC AUDIT</text>
+  
+  <text x="90" y="108" fill="#4A6B60" font-size="14" font-weight="600">Date of Birth (DOB):</text>
+  <text x="290" y="108" fill="#042F2A" font-size="17" font-weight="800" font-family="'JetBrains Mono', monospace">15 Jan 2000</text>
+
+  <text x="90" y="158" fill="#4A6B60" font-size="14" font-weight="600">Reference Date (Today):</text>
+  <text x="290" y="158" fill="#042F2A" font-size="17" font-weight="800" font-family="'JetBrains Mono', monospace">24 Sep 2026</text>
+
+  <!-- Step Breakdown -->
+  <text x="90" y="208" fill="#075433" font-size="14" font-weight="700">1. Full Years (2000 &#8594; 2026):</text>
+  <text x="360" y="208" fill="#075433" font-size="16" font-weight="800" font-family="'JetBrains Mono', monospace">26 Years (Jan 15)</text>
+
+  <text x="90" y="258" fill="#075433" font-size="14" font-weight="700">2. Full Months (Jan &#8594; Sep):</text>
+  <text x="360" y="258" fill="#075433" font-size="16" font-weight="800" font-family="'JetBrains Mono', monospace">8 Months (Sep 15)</text>
+
+  <text x="90" y="308" fill="#075433" font-size="14" font-weight="700">3. Residual Days (15 &#8594; 24):</text>
+  <text x="360" y="308" fill="#075433" font-size="16" font-weight="800" font-family="'JetBrains Mono', monospace">9 Days</text>
+
+  <!-- Result Stamp -->
+  <rect x="90" y="338" width="490" height="42" rx="8" fill="#075433"/>
+  <text x="110" y="365" fill="#9FE7BD" font-size="13" font-weight="700">EXACT AGE:</text>
+  <text x="210" y="366" fill="#FFFFFF" font-size="18" font-weight="800" font-family="'JetBrains Mono', monospace">26Y  8M  9D</text>
+  <text x="380" y="365" fill="#FF9A77" font-size="13" font-weight="600">(9,749 Total Days)</text>
+</svg>
