@@ -277,6 +277,66 @@
       "source": "/korean-age-2023/",
       "destination": "/articles/korean-age-system-change/",
       "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-years-of-service",
+      "destination": "/articles/how-to-calculate-years-of-service/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-years-of-service/",
+      "destination": "/articles/how-to-calculate-years-of-service/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-years-of-service",
+      "destination": "/articles/what-is-years-of-service/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-years-of-service/",
+      "destination": "/articles/what-is-years-of-service/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-employee-tenure",
+      "destination": "/articles/how-to-calculate-employee-tenure/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-employee-tenure/",
+      "destination": "/articles/how-to-calculate-employee-tenure/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-work-anniversary",
+      "destination": "/articles/how-to-calculate-work-anniversary/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-calculate-work-anniversary/",
+      "destination": "/articles/how-to-calculate-work-anniversary/",
+      "permanent": true
+    },
+    {
+      "source": "/years-of-service-vs-years-of-experience",
+      "destination": "/articles/years-of-service-vs-years-of-experience/",
+      "permanent": true
+    },
+    {
+      "source": "/years-of-service-vs-years-of-experience/",
+      "destination": "/articles/years-of-service-vs-years-of-experience/",
+      "permanent": true
+    },
+    {
+      "source": "/how-many-days-have-i-worked",
+      "destination": "/articles/how-many-days-have-i-worked/",
+      "permanent": true
+    },
+    {
+      "source": "/how-many-days-have-i-worked/",
+      "destination": "/articles/how-many-days-have-i-worked/",
+      "permanent": true
     }
   ],
   "cleanUrls": true,
