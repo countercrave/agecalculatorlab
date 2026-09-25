@@ -947,7 +947,7 @@
     margin-inline: auto;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     padding: 8px 0;
   }
 
@@ -976,6 +976,49 @@
     .aclx-switcher-label { display: none; }
   }
 
+  /* Wrap container for arrows + scrollable tabs */
+  .aclx-switcher-nav-controls {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .aclx-switcher-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .16s ease;
+    flex-shrink: 0;
+    padding: 0;
+    line-height: 1;
+    user-select: none;
+  }
+  .aclx-switcher-arrow:hover {
+    background: #ff754d;
+    border-color: #ff754d;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 10px rgba(255, 117, 77, 0.4);
+  }
+  .aclx-switcher-arrow:disabled {
+    opacity: 0.2;
+    cursor: default;
+    pointer-events: none;
+    transform: none;
+  }
+
   .aclx-switcher-tabs {
     flex: 1 1 auto;
     min-width: 0;
@@ -983,12 +1026,31 @@
     align-items: center;
     gap: 6px;
     overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(169, 234, 209, 0.55) rgba(255, 255, 255, 0.08);
     -webkit-overflow-scrolling: touch;
-    padding: 2px 4px;
+    padding: 3px 2px 5px 2px;
+    cursor: grab;
   }
-  .aclx-switcher-tabs::-webkit-scrollbar { display: none; }
+  .aclx-switcher-tabs:active {
+    cursor: grabbing;
+  }
+  .aclx-switcher-tabs::-webkit-scrollbar {
+    height: 4px;
+  }
+  .aclx-switcher-tabs::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+  }
+  .aclx-switcher-tabs::-webkit-scrollbar-thumb {
+    background: rgba(169, 234, 209, 0.55);
+    border-radius: 999px;
+  }
+  .aclx-switcher-tabs::-webkit-scrollbar-thumb:hover {
+    background: #ff754d;
+  }
 
   .aclx-switch-tab {
     display: inline-flex;
@@ -1007,6 +1069,7 @@
     text-decoration: none;
     transition: all .16s ease;
     flex-shrink: 0;
+    user-select: none;
   }
 
   .aclx-switch-tab:hover {
@@ -1015,7 +1078,7 @@
     border-color: rgba(255, 255, 255, 0.35);
   }
 
-  .aclx-switch-tab.active, .aclx-switch-tab[aria-selected="true"] {
+  .aclx-switch-tab.active, .aclx-switch-tab[aria-selected="true"], .aclx-switch-tab.is-active {
     background: #ff754d;
     color: #ffffff;
     border-color: #ff754d;
@@ -1056,18 +1119,25 @@
       <span class="aclx-switcher-title">Table of Contents</span>
     </div>
 
-    <div class="aclx-switcher-tabs" role="tablist" aria-label="Homepage sections">
-      <a class="aclx-switch-tab" href="#page-contents"><span>Contents</span></a>
-      <a class="aclx-switch-tab" href="#calculator-finder"><span>Tool Finder</span></a>
-      <a class="aclx-switch-tab" href="#calculation-audit"><span>Audit &amp; Math</span></a>
-      <a class="aclx-switch-tab" href="#life-milestones"><span>Milestones</span></a>
-      <a class="aclx-switch-tab" href="#clinical-engine"><span>Clinical (Y;M;D)</span></a>
-      <a class="aclx-switch-tab" href="#prematurity-module"><span>Corrected Age</span></a>
-      <a class="aclx-switch-tab" href="#pet-epigenetic"><span>Pet Age</span></a>
-      <a class="aclx-switch-tab" href="#guides-directory"><span>Guides</span></a>
-      <a class="aclx-switch-tab" href="#knowledge-base"><span>Knowledge Hub</span></a>
-      <a class="aclx-switch-tab" href="#formula-guide"><span>Formulas</span></a>
-      <a class="aclx-switch-tab" href="#privacy-trust-footer"><span>Trust &amp; Author</span></a>
+    <!-- Scrollable Navigation Wrap with Prev / Next Arrows -->
+    <div class="aclx-switcher-nav-controls">
+      <button type="button" class="aclx-switcher-arrow left" id="aclx-scroll-left" aria-label="Scroll Table of Contents left" title="Scroll left">‹</button>
+
+      <div class="aclx-switcher-tabs" id="aclx-switcher-tabs" role="tablist" aria-label="Homepage sections">
+        <a class="aclx-switch-tab" href="#page-contents"><span>Contents</span></a>
+        <a class="aclx-switch-tab" href="#calculator-finder"><span>Tool Finder</span></a>
+        <a class="aclx-switch-tab" href="#calculation-audit"><span>Audit &amp; Math</span></a>
+        <a class="aclx-switch-tab" href="#life-milestones"><span>Milestones</span></a>
+        <a class="aclx-switch-tab" href="#clinical-engine"><span>Clinical (Y;M;D)</span></a>
+        <a class="aclx-switch-tab" href="#prematurity-module"><span>Corrected Age</span></a>
+        <a class="aclx-switch-tab" href="#pet-epigenetic"><span>Pet Age</span></a>
+        <a class="aclx-switch-tab" href="#guides-directory"><span>Guides</span></a>
+        <a class="aclx-switch-tab" href="#knowledge-base"><span>Knowledge Hub</span></a>
+        <a class="aclx-switch-tab" href="#formula-guide"><span>Formulas</span></a>
+        <a class="aclx-switch-tab" href="#privacy-trust-footer"><span>Trust &amp; Author</span></a>
+      </div>
+
+      <button type="button" class="aclx-switcher-arrow right" id="aclx-scroll-right" aria-label="Scroll Table of Contents right" title="Scroll right">›</button>
     </div>
 
     <a class="aclx-switcher-cta-btn" href="#calculator" title="Return to calculator">
@@ -1713,7 +1783,7 @@
     });
   });
 
-  // Active section scroll-spy for switcher tabs
+  // Active section scroll-spy for switcher tabs & auto-center in scrollbar
   if ('IntersectionObserver' in window) {
     var sectionObserver = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
@@ -1724,17 +1794,77 @@
             if (href === '#' + id) {
               t.classList.add('is-active');
               t.setAttribute('aria-selected', 'true');
+              if (t.scrollIntoView) {
+                t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+              }
             } else {
               t.classList.remove('is-active');
               t.setAttribute('aria-selected', 'false');
             }
           });
+          if (typeof updateSwitcherArrows === 'function') {
+            setTimeout(updateSwitcherArrows, 300);
+          }
         }
       });
     }, { rootMargin: '-20% 0px -60% 0px' });
 
     document.querySelectorAll('section[id]').forEach(function(s) {
       sectionObserver.observe(s);
+    });
+  }
+
+  // Table of Contents Sticky Switcher Scroll Controls
+  var tabsScrollEl = document.getElementById('aclx-switcher-tabs');
+  var btnScrollLeft = document.getElementById('aclx-scroll-left');
+  var btnScrollRight = document.getElementById('aclx-scroll-right');
+
+  function updateSwitcherArrows() {
+    if (!tabsScrollEl || !btnScrollLeft || !btnScrollRight) return;
+    var sl = tabsScrollEl.scrollLeft;
+    var maxScroll = tabsScrollEl.scrollWidth - tabsScrollEl.clientWidth;
+    btnScrollLeft.disabled = sl <= 4;
+    btnScrollRight.disabled = sl >= maxScroll - 4;
+  }
+
+  if (tabsScrollEl) {
+    if (btnScrollLeft && btnScrollRight) {
+      btnScrollLeft.addEventListener('click', function() {
+        tabsScrollEl.scrollBy({ left: -240, behavior: 'smooth' });
+      });
+      btnScrollRight.addEventListener('click', function() {
+        tabsScrollEl.scrollBy({ left: 240, behavior: 'smooth' });
+      });
+      tabsScrollEl.addEventListener('scroll', updateSwitcherArrows, { passive: true });
+      window.addEventListener('resize', updateSwitcherArrows);
+      setTimeout(updateSwitcherArrows, 150);
+    }
+
+    // Horizontal mouse wheel scrolling
+    tabsScrollEl.addEventListener('wheel', function(e) {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+        tabsScrollEl.scrollLeft += e.deltaY;
+        updateSwitcherArrows();
+      }
+    }, { passive: false });
+
+    // Mouse drag-to-scroll support
+    var isDown = false;
+    var dragStartX, dragScrollStart;
+    tabsScrollEl.addEventListener('mousedown', function(e) {
+      isDown = true;
+      dragStartX = e.pageX - tabsScrollEl.offsetLeft;
+      dragScrollStart = tabsScrollEl.scrollLeft;
+    });
+    window.addEventListener('mouseup', function() { isDown = false; });
+    tabsScrollEl.addEventListener('mousemove', function(e) {
+      if (!isDown) return;
+      e.preventDefault();
+      var x = e.pageX - tabsScrollEl.offsetLeft;
+      var walk = (x - dragStartX) * 1.5;
+      tabsScrollEl.scrollLeft = dragScrollStart - walk;
+      updateSwitcherArrows();
     });
   }
 
@@ -1907,13 +2037,10 @@
   }
   .aclx-toc-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
-  @media (max-width: 980px) {
-    .aclx-toc-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     .aclx-toc-grid { grid-template-columns: 1fr; }
   }
   .aclx-toc-card {
