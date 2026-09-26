@@ -196,25 +196,8 @@ function initNavigation(){
 }
 
 function initNavSearch(){
- const navLinks = $('#primary-nav');
- if(!navLinks || $('#navSearchWrap')) return;
- 
- const searchWrap = document.createElement('div');
- searchWrap.className = 'nav-search-wrap';
- searchWrap.id = 'navSearchWrap';
- searchWrap.innerHTML = `
-  <div class="nav-search-box">
-   <svg class="nav-search-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"/></svg>
-   <input type="search" id="navSearchInput" class="nav-search-input" placeholder="Search calculators..." aria-label="Search calculators and guides" autocomplete="off">
-  </div>
-  <div id="navSearchResults" class="nav-search-dropdown" hidden></div>
- `;
- 
- // Append to the right end of the navbar
- navLinks.appendChild(searchWrap);
- 
- const input = $('#navSearchInput');
- const results = $('#navSearchResults');
+ const input = document.getElementById('nav-search-input') || document.getElementById('navSearchInput');
+ const results = document.getElementById('nav-search-dropdown') || document.getElementById('navSearchResults');
  if(!input || !results) return;
  
  let activeIdx = -1;
@@ -230,7 +213,7 @@ function initNavSearch(){
   });
   
   if(matches.length === 0){
-   results.innerHTML = '<div class="nav-search-empty">No calculators found</div>';
+   results.innerHTML = '<div class="nav-search-empty">No results for "' + q.replace(/</g, '&lt;') + '"</div>';
    results.hidden = false;
    return;
   }
@@ -242,14 +225,14 @@ function initNavSearch(){
   if(tools.length > 0){
    html += '<div class="nav-search-group"><div class="nav-search-group-title">Calculators</div>';
    tools.forEach(t=>{
-    html += '<a class="nav-search-item" href="' + t.u + '"><span>' + t.n + '</span><small>Calculator</small></a>';
+    html += '<a class="nav-search-item" href="' + t.u + '"><span>' + t.n.replace(/</g, '&lt;') + '</span><small>Calculator</small></a>';
    });
    html += '</div>';
   }
   if(guides.length > 0){
    html += '<div class="nav-search-group"><div class="nav-search-group-title">Guides</div>';
    guides.forEach(g=>{
-    html += '<a class="nav-search-item" href="' + g.u + '"><span>' + g.n + '</span><small>Guide</small></a>';
+    html += '<a class="nav-search-item" href="' + g.u + '"><span>' + g.n.replace(/</g, '&lt;') + '</span><small>Guide</small></a>';
    });
    html += '</div>';
   }
@@ -263,7 +246,7 @@ function initNavSearch(){
  input.addEventListener('focus', e=>{ if(e.target.value.trim()) renderResults(e.target.value); });
  
  document.addEventListener('click', e=>{
-  if(!e.target.closest('#navSearchWrap')){
+  if(!e.target.closest('.nav-search-wrap')){
    results.hidden = true;
   }
  });
@@ -289,6 +272,7 @@ function initNavSearch(){
    }
   } else if(e.key === 'Escape'){
    results.hidden = true;
+   input.blur();
   }
  });
 }

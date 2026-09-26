@@ -1025,7 +1025,7 @@ a.nav-cta:active{
 }
 
 /* Nav Search Bar */
-.nav-search-wrap{position:relative;flex:none;width:220px;margin-left:4px}
+.nav-search-wrap{position:relative;flex:none;width:clamp(160px, 18vw, 220px);margin-left:4px}
 .nav-search-box{position:relative;display:flex;align-items:center}
 .nav-search-icon{position:absolute;left:11px;width:15px;height:15px;color:var(--muted);pointer-events:none}
 .nav-search-input{
