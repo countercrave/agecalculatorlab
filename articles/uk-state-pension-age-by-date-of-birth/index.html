@@ -69,6 +69,23 @@
   .article-hero h1{font-size:clamp(1.85rem,7.2vw,2.3rem)!important;line-height:1.15!important;hyphens:none!important;word-break:normal!important;overflow-wrap:normal!important}
   .article-body>h2{font-size:clamp(1.6rem,6.5vw,2.1rem)!important;line-height:1.2!important;word-break:normal!important}
 }
+.calc-cta-card{background:linear-gradient(135deg,#075433 0%,#042f2a 100%);color:#fff;border-radius:var(--r-lg);padding:clamp(1.5rem,4vw,2.5rem);margin:var(--s-8) 0;box-shadow:0 12px 30px rgba(4,47,42,0.18)}
+.calc-cta-card h2{color:#fff!important;font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 12px;line-height:1.2}
+.calc-cta-card p{color:#d3e5de!important;font-size:var(--t-base);line-height:1.6;margin:0 0 var(--s-5);max-width:680px}
+.article-body a.calc-cta-btn,
+.calc-cta-card a.calc-cta-btn,
+.calc-cta-btn{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;padding:14px 28px!important;border-radius:var(--r-pill)!important;background:#ff754d!important;color:#ffffff!important;font-weight:700!important;font-size:var(--t-base)!important;line-height:1.2!important;text-decoration:none!important;border:none!important;box-shadow:0 4px 14px rgba(255,117,77,0.35)!important;transition:transform .15s ease,background .2s ease,box-shadow .2s ease!important}
+.article-body a.calc-cta-btn:hover,
+.calc-cta-card a.calc-cta-btn:hover,
+.calc-cta-btn:hover{background:#ff8e6b!important;color:#ffffff!important;text-decoration:none!important;transform:translateY(-2px)!important;box-shadow:0 6px 18px rgba(255,117,77,0.45)!important}
+.article-body a.calc-cta-btn span,
+.calc-cta-card a.calc-cta-btn span,
+.calc-cta-btn span{color:#ffffff!important;text-decoration:none!important}
+.article-body a.calc-cta-btn svg,
+.calc-cta-card a.calc-cta-btn svg,
+.calc-cta-btn svg{width:18px!important;height:18px!important;stroke:#ffffff!important;stroke-width:2.2!important;fill:none!important}
+.calc-cta-note{margin-top:16px!important;font-size:var(--t-sm)!important;color:#9fe7bd!important}
+.calc-cta-note a{color:#fff!important;text-decoration:underline!important}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "UK State Pension Age by Date of Birth: Complete Guide", "description": "Find your UK State Pension age and eligibility date by date of birth. Complete guide covering cohorts born in 1960, 1961, 1970, 1978, transition rules, and timetable updates.", "url": "https://www.agecalculatorlab.com/articles/uk-state-pension-age-by-date-of-birth/", "datePublished": "2026-09-27", "dateModified": "2026-09-27", "image": "https://www.agecalculatorlab.com/assets/thumbnails/articles/uk-state-pension-age-by-date-of-birth.webp", "articleSection": "Finance & Professional", "wordCount": 2350, "author": {"@type": "Person", "name": "Navjeet Kamboj", "url": "https://www.agecalculatorlab.com/author/navjeet-kamboj/"}, "publisher": {"@type": "Organization", "name": "Age Calculator Lab", "url": "https://www.agecalculatorlab.com/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.agecalculatorlab.com/articles/uk-state-pension-age-by-date-of-birth/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.agecalculatorlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.agecalculatorlab.com/articles/"}, {"@type": "ListItem", "position": 3, "name": "UK State Pension Age by Date of Birth: Complete Guide", "item": "https://www.agecalculatorlab.com/articles/uk-state-pension-age-by-date-of-birth/"}]}</script>
@@ -373,6 +390,15 @@
 <li><strong>Assuming reaching State Pension age guarantees the full payment:</strong> Age only confers the right to claim; the actual cash amount is determined by your National Insurance record.</li>
 </ul>
 
+<section class="calc-cta-card" id="calculate-cta">
+<h2>Find Your State Pension Age by Date of Birth</h2>
+<p>Enter your date of birth to see your statutory State Pension age, exact entitlement date, and transitional monthly increments.</p>
+<div>
+<a class="calc-cta-btn" href="../../tools/pensionable-age-calculator/"><span>Calculate My State Pension Age</span><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+</div>
+<p class="calc-cta-note">Want to check milestone dates for a custom pension age? Use our <a href="../../tools/pension-age-date-calculator/">Pension Age Date Calculator</a>.</p>
+</section>
+
 <h2 id="faq">Frequently Asked Questions</h2>
 <div class="faq">
 <details><summary>What is my State Pension age?</summary><p>Your State Pension age depends strictly on your date of birth. Under the current UK legislated timetable, it is 66 for those born between 6 October 1954 and 5 April 1960, phased in monthly increments from 66 to 67 for those born between 6 April 1960 and 5 March 1961, 67 for births between 6 March 1961 and 5 April 1977, and 68 for births from 6 April 1978 onwards.</p></details>
@@ -416,8 +442,11 @@
 </div>
 
 <nav class="article-nav" aria-label="More guides">
-<a href="../../articles/what-is-pensionable-age/">← What Is Pensionable Age? Pensionable Age vs Retirement Age Explained</a>
-<a href="../../articles/when-can-i-get-state-pension/">When Can I Get My State Pension? How to Check Your State Pension Age →</a>
+<a href="../../articles/what-is-pensionable-age/">What Is Pensionable Age? Pensionable Age vs Retirement Age Explained</a>
+<a href="../../articles/when-can-i-get-state-pension/">When Can I Get My State Pension? How to Check Your State Pension Age</a>
+<a href="../../articles/state-pension-age-vs-retirement-age/">State Pension Age vs Retirement Age: What's the Difference? →</a>
+<a href="../../articles/how-is-state-pension-age-calculated/">How Is State Pension Age Calculated? UK Rules Explained →</a>
+<a href="../../articles/can-i-retire-before-state-pension-age/">Can I Retire Before State Pension Age? Early Retirement in the UK Explained →</a>
 </nav>
 
 </article></div>

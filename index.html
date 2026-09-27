@@ -752,6 +752,14 @@
         </div>
 
         <!-- Quick Presets Toolbar -->
+                <!-- Primary Calculation Action Button -->
+        <div class="aclx-calc-action-row" style="margin: 16px 0 14px; display: flex; gap: 12px; align-items: center;">
+          <button type="button" id="aclx-btn-calculate" style="flex: 1; padding: 13px 24px; font-size: 1rem; font-weight: 700; background: #075433; color: #ffffff; border: none; border-radius: 999px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(7,84,51,0.22); transition: background .15s ease, transform .15s ease;">
+            <span>Calculate Age</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+
         <div class="aclx-presets-row" id="aclx-presets-row">
           <button type="button" class="aclx-preset-btn aclx-preset-example" id="aclx-btn-preset-example" style="font-weight:750;background:#dff5ec;color:#042f2a;border-color:#a9ead1">Try an example</button>
           <span class="aclx-presets-label">Presets:</span>
@@ -1936,6 +1944,24 @@
   });
 
   // Try an example action: populates sample and tags state
+    var btnCalculate = document.getElementById('aclx-btn-calculate');
+  if (btnCalculate) {
+    btnCalculate.addEventListener('click', function(e) {
+      if (e) e.preventDefault();
+      calculate();
+      if (!dobInput.value) {
+        errorEl.textContent = 'Please enter your date of birth to calculate.';
+        dobInput.focus();
+      } else {
+        errorEl.textContent = '';
+        var resultWrap = document.getElementById('aclx-result-wrap');
+        if (resultWrap && window.innerWidth < 768) {
+          resultWrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    });
+  }
+
   var btnExample = document.getElementById('aclx-btn-preset-example');
   if (btnExample) {
     btnExample.addEventListener('click', function() {
