@@ -1,5 +1,10 @@
 [
   {
+    "n": "A Date Input Checklist Worth Running Before You Calculate",
+    "u": "/articles/calendar-date-quality-checklist/",
+    "t": "Guide"
+  },
+  {
     "n": "Adding Business Days Without Losing Count",
     "u": "/articles/add-business-days-correctly/",
     "t": "Guide"
@@ -15,18 +20,8 @@
     "t": "Guide"
   },
   {
-    "n": "Calculating Age at Marriage for Records and Genealogy",
-    "u": "/articles/age-at-marriage-records/",
-    "t": "Guide"
-  },
-  {
     "n": "Age Bands and Cutoff Dates: Working Near a Boundary",
     "u": "/articles/age-bands-cutoff-dates/",
-    "t": "Guide"
-  },
-  {
-    "n": "The Age Calculation Errors That Actually Occur in School Evaluations",
-    "u": "/articles/age-calculation-errors-school-evaluations/",
     "t": "Guide"
   },
   {
@@ -35,33 +30,8 @@
     "t": "Guide"
   },
   {
-    "n": "Measuring Age in Quarters: When Three-Month Blocks Beat Years",
-    "u": "/articles/age-in-quarters-guide/",
-    "t": "Guide"
-  },
-  {
     "n": "Age in Weeks, Months and Hours: Picking the Right Unit",
     "u": "/articles/age-in-weeks-months-hours-guide/",
-    "t": "Guide"
-  },
-  {
-    "n": "Calculating Age on an Exam Date",
-    "u": "/articles/age-on-exam-date/",
-    "t": "Guide"
-  },
-  {
-    "n": "Planning Age Across Several Life Milestones at Once",
-    "u": "/articles/age-on-multiple-milestones/",
-    "t": "Guide"
-  },
-  {
-    "n": "Your Billion-Second Birthday",
-    "u": "/articles/billion-seconds-birthday/",
-    "t": "Guide"
-  },
-  {
-    "n": "How a Birthday Countdown Actually Works",
-    "u": "/articles/birthday-countdown-guide/",
     "t": "Guide"
   },
   {
@@ -70,18 +40,8 @@
     "t": "Guide"
   },
   {
-    "n": "Estimating Lifetime Breaths",
-    "u": "/articles/breaths-lived-estimate/",
-    "t": "Guide"
-  },
-  {
     "n": "BRIGANCE Age Calculation: What the Calculator Does and Doesn&#x27;t Do",
     "u": "/articles/brigance-age-calculation-basics/",
-    "t": "Guide"
-  },
-  {
-    "n": "Planning With Business Days: Buffers That Survive December",
-    "u": "/articles/business-days-date-planning/",
     "t": "Guide"
   },
   {
@@ -90,33 +50,38 @@
     "t": "Guide"
   },
   {
-    "n": "How Old Will I Be on a Future Date?",
-    "u": "/articles/calculate-age-on-future-date/",
+    "n": "Calculating a Notice Period End Date",
+    "u": "/articles/notice-period-calculation/",
     "t": "Guide"
   },
   {
-    "n": "Working Out Your Age on a Past Date",
-    "u": "/articles/calculate-age-on-past-date/",
+    "n": "Calculating a Retirement Date From a Target Age",
+    "u": "/articles/retirement-date-target-age/",
     "t": "Guide"
   },
   {
-    "n": "How to Calculate Exact Age in Years, Months and Days",
-    "u": "/articles/calculate-exact-age-years-months-days/",
+    "n": "Calculating Age at Marriage for Records and Genealogy",
+    "u": "/articles/age-at-marriage-records/",
     "t": "Guide"
   },
   {
-    "n": "When a Calculator Is Not the Final Authority",
-    "u": "/articles/calculator-results-official-decisions/",
+    "n": "Calculating Age on an Exam Date",
+    "u": "/articles/age-on-exam-date/",
+    "t": "Guide"
+  },
+  {
+    "n": "Calculating Working Hours Between Two Dates",
+    "u": "/articles/working-hours-between-dates/",
+    "t": "Guide"
+  },
+  {
+    "n": "Calculating Years of Service Accurately",
+    "u": "/articles/years-of-service-calculation/",
     "t": "Guide"
   },
   {
     "n": "Calendar Age vs Decimal Age: Which One Does Your Form Want?",
     "u": "/articles/calendar-age-vs-decimal-age/",
-    "t": "Guide"
-  },
-  {
-    "n": "A Date Input Checklist Worth Running Before You Calculate",
-    "u": "/articles/calendar-date-quality-checklist/",
     "t": "Guide"
   },
   {
@@ -140,13 +105,13 @@
     "t": "Guide"
   },
   {
-    "n": "Chronological Age: What It Measures and What It Doesn&#x27;t",
-    "u": "/articles/chronological-age-explained/",
+    "n": "Chronological Age for Standardised Assessments",
+    "u": "/articles/chronological-age-standardized-assessments/",
     "t": "Guide"
   },
   {
-    "n": "Chronological Age for Standardised Assessments",
-    "u": "/articles/chronological-age-standardized-assessments/",
+    "n": "Chronological Age: What It Measures and What It Doesn&#x27;t",
+    "u": "/articles/chronological-age-explained/",
     "t": "Guide"
   },
   {
@@ -160,18 +125,13 @@
     "t": "Guide"
   },
   {
+    "n": "Corrected Age: A Worked Example, Step by Step",
+    "u": "/articles/prematurity-age-calculation-example/",
+    "t": "Guide"
+  },
+  {
     "n": "Countdown Conventions: What &#x27;Days Until&#x27; Actually Counts",
     "u": "/articles/countdown-conventions/",
-    "t": "Guide"
-  },
-  {
-    "n": "Years, Months and Days Between Two Dates: A Worked Example",
-    "u": "/articles/date-difference-worked-example/",
-    "t": "Guide"
-  },
-  {
-    "n": "Finding the Midpoint Between Two Dates",
-    "u": "/articles/date-midpoint-explained/",
     "t": "Guide"
   },
   {
@@ -195,11 +155,6 @@
     "t": "Guide"
   },
   {
-    "n": "Finding the Date You Reach Driving Age",
-    "u": "/articles/driving-age-eligibility-date/",
-    "t": "Guide"
-  },
-  {
     "n": "East Asian Age Reckoning: Kazoedoshi, Virtual Age and Modern Practice",
     "u": "/articles/east-asian-age-reckoning/",
     "t": "Guide"
@@ -207,6 +162,21 @@
   {
     "n": "Estimating a Tree&#x27;s Age From Its Trunk",
     "u": "/articles/estimate-tree-age/",
+    "t": "Guide"
+  },
+  {
+    "n": "Estimating Age at Graduation",
+    "u": "/articles/graduation-age-calculation/",
+    "t": "Guide"
+  },
+  {
+    "n": "Estimating How Many Heartbeats You Have Lived",
+    "u": "/articles/heartbeats-lived-estimate/",
+    "t": "Guide"
+  },
+  {
+    "n": "Estimating Lifetime Breaths",
+    "u": "/articles/breaths-lived-estimate/",
     "t": "Guide"
   },
   {
@@ -220,6 +190,16 @@
     "t": "Guide"
   },
   {
+    "n": "Finding the Date You Reach Driving Age",
+    "u": "/articles/driving-age-eligibility-date/",
+    "t": "Guide"
+  },
+  {
+    "n": "Finding the Midpoint Between Two Dates",
+    "u": "/articles/date-midpoint-explained/",
+    "t": "Guide"
+  },
+  {
     "n": "Fiscal Quarters Explained: Why Q1 Is Not Always January",
     "u": "/articles/fiscal-quarters-explained/",
     "t": "Guide"
@@ -227,16 +207,6 @@
   {
     "n": "Gestational Age vs Fetal Age: Two Weeks Apart by Definition",
     "u": "/articles/gestational-age-vs-fetal-age/",
-    "t": "Guide"
-  },
-  {
-    "n": "What a Golden Birthday Is, and When Yours Falls",
-    "u": "/articles/golden-birthday-explained/",
-    "t": "Guide"
-  },
-  {
-    "n": "Estimating Age at Graduation",
-    "u": "/articles/graduation-age-calculation/",
     "t": "Guide"
   },
   {
@@ -250,18 +220,38 @@
     "t": "Guide"
   },
   {
-    "n": "Estimating How Many Heartbeats You Have Lived",
-    "u": "/articles/heartbeats-lived-estimate/",
-    "t": "Guide"
-  },
-  {
     "n": "Holiday Countdown Maths: Fixed Dates, Moving Dates and Observed Dates",
     "u": "/articles/holiday-countdown-math/",
     "t": "Guide"
   },
   {
+    "n": "How a Birthday Countdown Actually Works",
+    "u": "/articles/birthday-countdown-guide/",
+    "t": "Guide"
+  },
+  {
+    "n": "How Due Dates Are Calculated — and What They Actually Predict",
+    "u": "/articles/pregnancy-due-date-calculation/",
+    "t": "Guide"
+  },
+  {
     "n": "How Many Days Old Am I?",
     "u": "/articles/how-many-days-old-am-i/",
+    "t": "Guide"
+  },
+  {
+    "n": "How Much of Your Life Have You Spent Asleep?",
+    "u": "/articles/sleep-time-lived-estimate/",
+    "t": "Guide"
+  },
+  {
+    "n": "How Old Will I Be on a Future Date?",
+    "u": "/articles/calculate-age-on-future-date/",
+    "t": "Guide"
+  },
+  {
+    "n": "How to Calculate Exact Age in Years, Months and Days",
+    "u": "/articles/calculate-exact-age-years-months-days/",
     "t": "Guide"
   },
   {
@@ -305,23 +295,23 @@
     "t": "Guide"
   },
   {
+    "n": "Lifetime Screen Time Estimates and Why They Are So Sensitive",
+    "u": "/articles/screen-time-estimates/",
+    "t": "Guide"
+  },
+  {
     "n": "Long Service Milestones: Continuous Service and the Dates That Break It",
     "u": "/articles/long-service-leave-dates/",
     "t": "Guide"
   },
   {
-    "n": "Planning Milestone Birthdays at a Fixed Interval",
-    "u": "/articles/milestone-birthday-intervals/",
+    "n": "Measuring Age in Quarters: When Three-Month Blocks Beat Years",
+    "u": "/articles/age-in-quarters-guide/",
     "t": "Guide"
   },
   {
-    "n": "Planning a Milestone Birthday Date",
-    "u": "/articles/milestone-birthday-planning/",
-    "t": "Guide"
-  },
-  {
-    "n": "Calculating a Notice Period End Date",
-    "u": "/articles/notice-period-calculation/",
+    "n": "Measuring Semester Length in Weeks, Days and Teaching Time",
+    "u": "/articles/semester-length-planning/",
     "t": "Guide"
   },
   {
@@ -330,28 +320,28 @@
     "t": "Guide"
   },
   {
-    "n": "Your Age on Other Planets",
-    "u": "/articles/planetary-age-explained/",
+    "n": "Planning a Milestone Birthday Date",
+    "u": "/articles/milestone-birthday-planning/",
+    "t": "Guide"
+  },
+  {
+    "n": "Planning Age Across Several Life Milestones at Once",
+    "u": "/articles/age-on-multiple-milestones/",
+    "t": "Guide"
+  },
+  {
+    "n": "Planning Milestone Birthdays at a Fixed Interval",
+    "u": "/articles/milestone-birthday-intervals/",
+    "t": "Guide"
+  },
+  {
+    "n": "Planning With Business Days: Buffers That Survive December",
+    "u": "/articles/business-days-date-planning/",
     "t": "Guide"
   },
   {
     "n": "Pregnancy Countdowns: Reading Days Remaining Alongside Gestational Age",
     "u": "/articles/pregnancy-countdown-guide/",
-    "t": "Guide"
-  },
-  {
-    "n": "How Due Dates Are Calculated — and What They Actually Predict",
-    "u": "/articles/pregnancy-due-date-calculation/",
-    "t": "Guide"
-  },
-  {
-    "n": "Corrected Age: A Worked Example, Step by Step",
-    "u": "/articles/prematurity-age-calculation-example/",
-    "t": "Guide"
-  },
-  {
-    "n": "What Actually Happens to the Dates You Type Into a Calculator",
-    "u": "/articles/privacy-browser-calculators/",
     "t": "Guide"
   },
   {
@@ -370,18 +360,8 @@
     "t": "Guide"
   },
   {
-    "n": "Why Every Age You Record Needs Its Date",
-    "u": "/articles/record-reference-date-with-age/",
-    "t": "Guide"
-  },
-  {
     "n": "Recurring Date Schedules: Rules That Survive the Year",
     "u": "/articles/recurring-date-schedules/",
-    "t": "Guide"
-  },
-  {
-    "n": "Calculating a Retirement Date From a Target Age",
-    "u": "/articles/retirement-date-target-age/",
     "t": "Guide"
   },
   {
@@ -390,38 +370,28 @@
     "t": "Guide"
   },
   {
-    "n": "Working Out School Starting Age",
-    "u": "/articles/school-starting-age-guide/",
-    "t": "Guide"
-  },
-  {
-    "n": "Lifetime Screen Time Estimates and Why They Are So Sensitive",
-    "u": "/articles/screen-time-estimates/",
-    "t": "Guide"
-  },
-  {
-    "n": "Measuring Semester Length in Weeks, Days and Teaching Time",
-    "u": "/articles/semester-length-planning/",
-    "t": "Guide"
-  },
-  {
     "n": "Sleep Debt Arithmetic: What the Number Can and Cannot Tell You",
     "u": "/articles/sleep-debt-arithmetic/",
     "t": "Guide"
   },
   {
-    "n": "How Much of Your Life Have You Spent Asleep?",
-    "u": "/articles/sleep-time-lived-estimate/",
-    "t": "Guide"
-  },
-  {
-    "n": "When Will You Be 10,000 Days Old?",
-    "u": "/articles/ten-thousand-days-old/",
-    "t": "Guide"
-  },
-  {
     "n": "Term Date Planning: Building a Repeating Academic Schedule",
     "u": "/articles/term-date-planning/",
+    "t": "Guide"
+  },
+  {
+    "n": "The Age Calculation Errors That Actually Occur in School Evaluations",
+    "u": "/articles/age-calculation-errors-school-evaluations/",
+    "t": "Guide"
+  },
+  {
+    "n": "The Date You Reach Voting Age — and the Deadline That Matters More",
+    "u": "/articles/voting-age-date-guide/",
+    "t": "Guide"
+  },
+  {
+    "n": "The Y;M;D Format for Age Records",
+    "u": "/articles/ymd-semicolon-format-guide/",
     "t": "Guide"
   },
   {
@@ -440,11 +410,6 @@
     "t": "Guide"
   },
   {
-    "n": "The Date You Reach Voting Age — and the Deadline That Matters More",
-    "u": "/articles/voting-age-date-guide/",
-    "t": "Guide"
-  },
-  {
     "n": "Weekday, Day of Year and Week Number: Three Different Labels",
     "u": "/articles/weekday-and-day-of-year/",
     "t": "Guide"
@@ -455,18 +420,53 @@
     "t": "Guide"
   },
   {
+    "n": "Western Zodiac Date Ranges and Why Sources Disagree",
+    "u": "/articles/zodiac-sign-date-ranges/",
+    "t": "Guide"
+  },
+  {
+    "n": "What a Golden Birthday Is, and When Yours Falls",
+    "u": "/articles/golden-birthday-explained/",
+    "t": "Guide"
+  },
+  {
+    "n": "What Actually Happens to the Dates You Type Into a Calculator",
+    "u": "/articles/privacy-browser-calculators/",
+    "t": "Guide"
+  },
+  {
+    "n": "What Is Pensionable Age? Pensionable Age vs Retirement Age Explained",
+    "u": "/articles/what-is-pensionable-age/",
+    "t": "Guide"
+  },
+  {
+    "n": "When a Calculator Is Not the Final Authority",
+    "u": "/articles/calculator-results-official-decisions/",
+    "t": "Guide"
+  },
+  {
     "n": "When Does Corrected Age Stop Being Used?",
     "u": "/articles/when-to-stop-corrected-age/",
     "t": "Guide"
   },
   {
-    "n": "Why Two Age Calculators Give Different Answers",
-    "u": "/articles/why-age-calculators-disagree/",
+    "n": "When Will You Be 10,000 Days Old?",
+    "u": "/articles/ten-thousand-days-old/",
+    "t": "Guide"
+  },
+  {
+    "n": "Why Every Age You Record Needs Its Date",
+    "u": "/articles/record-reference-date-with-age/",
     "t": "Guide"
   },
   {
     "n": "Why Month Length Changes the Answer",
     "u": "/articles/why-month-length-changes-age-results/",
+    "t": "Guide"
+  },
+  {
+    "n": "Why Two Age Calculators Give Different Answers",
+    "u": "/articles/why-age-calculators-disagree/",
     "t": "Guide"
   },
   {
@@ -480,23 +480,28 @@
     "t": "Guide"
   },
   {
-    "n": "Calculating Working Hours Between Two Dates",
-    "u": "/articles/working-hours-between-dates/",
+    "n": "Working Out School Starting Age",
+    "u": "/articles/school-starting-age-guide/",
     "t": "Guide"
   },
   {
-    "n": "Calculating Years of Service Accurately",
-    "u": "/articles/years-of-service-calculation/",
+    "n": "Working Out Your Age on a Past Date",
+    "u": "/articles/calculate-age-on-past-date/",
     "t": "Guide"
   },
   {
-    "n": "The Y;M;D Format for Age Records",
-    "u": "/articles/ymd-semicolon-format-guide/",
+    "n": "Years, Months and Days Between Two Dates: A Worked Example",
+    "u": "/articles/date-difference-worked-example/",
     "t": "Guide"
   },
   {
-    "n": "Western Zodiac Date Ranges and Why Sources Disagree",
-    "u": "/articles/zodiac-sign-date-ranges/",
+    "n": "Your Age on Other Planets",
+    "u": "/articles/planetary-age-explained/",
+    "t": "Guide"
+  },
+  {
+    "n": "Your Billion-Second Birthday",
+    "u": "/articles/billion-seconds-birthday/",
     "t": "Guide"
   },
   {
