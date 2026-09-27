@@ -2,7 +2,7 @@
 
 - How Old Am I?: https://www.agecalculatorlab.com/how-old-am-i/
 
-> 161 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 100 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
+> 162 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 100 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
 
 Written and reviewed by Navjeet Kamboj. Results are informational: clinical, legal, financial, school, employment and benefits decisions are governed by the relevant manual, policy or authority.
 
@@ -208,6 +208,7 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [Anniversary Milestone Calculator](https://www.agecalculatorlab.com/tools/anniversary-milestone-calculator/): The date of a chosen anniversary milestone and the countdown to it.
 
 ## Finance & Professional calculators
+- [Pensionable Age Calculator](https://www.agecalculatorlab.com/tools/pensionable-age-calculator/): Official UK State Pension age and eligibility date by date of birth using the verified statutory timetable.
 - [Retirement Age Calculator](https://www.agecalculatorlab.com/tools/retirement-age-calculator/): A chosen retirement-age milestone date.
 - [RMD Age Calculator](https://www.agecalculatorlab.com/tools/rmd-age-calculator/): A planning date for a user-entered required-distribution age.
 - [Years of Service Calculator](https://www.agecalculatorlab.com/tools/years-of-service-calculator/): Exact employment service duration between two dates.

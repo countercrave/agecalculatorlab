@@ -3,7 +3,7 @@
 Everything you need is in this folder. **Upload the contents of this folder** (not the folder
 itself) to your web root, so that `index.html` sits at the top level of the site.
 
-161 calculators · 100 guides · 290 pages · about 26 MB
+162 calculators · 100 guides · 291 pages · about 26 MB
 
 ## Fix the current 502 before measuring SEO
 
