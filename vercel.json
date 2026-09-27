@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/guides/:slug*",
+      "destination": "/articles/:slug*",
+      "permanent": true
+    },
+    {
       "source": "/ssc-cgl-age-calculator",
       "destination": "/tools/ssc-cgl-age-calculator/",
       "permanent": true

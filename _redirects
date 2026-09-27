@@ -5,3 +5,5 @@
 /corrected-age-calculator/  /tools/corrected-age-calculator/  301
 /privacy-policy/  /privacy/  301
 /terms-of-use/  /terms/  301
+/guides/:slug  /articles/:slug/  301
+/guides/:slug/  /articles/:slug/  301
