@@ -110,6 +110,11 @@
     "t": "Calculator"
   },
   {
+    "n": "Age Grading Calculator",
+    "u": "/tools/age-grading-calculator/",
+    "t": "Calculator"
+  },
+  {
     "n": "Age in Days Calculator",
     "u": "/tools/age-in-days-calculator/",
     "t": "Calculator"
@@ -118,6 +123,11 @@
     "n": "Age in Hours Calculator",
     "u": "/tools/age-in-hours-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Age in Korean: How to Say Your Age & Ask \"How Old Are You?\"",
+    "u": "/articles/age-in-korean/",
+    "t": "Guide"
   },
   {
     "n": "Age in Minutes Calculator",
@@ -350,6 +360,11 @@
     "t": "Guide"
   },
   {
+    "n": "Can You Retire at 60 in the UK? Pension & Early Retirement Guide",
+    "u": "/articles/can-you-retire-at-60-uk/",
+    "t": "Guide"
+  },
+  {
     "n": "Career Length Calculator",
     "u": "/tools/career-length-calculator/",
     "t": "Calculator"
@@ -505,6 +520,11 @@
     "t": "Calculator"
   },
   {
+    "n": "Did Korea Change Its Age System? Understanding the 2023 Korean Age Change",
+    "u": "/articles/korean-age-system-change/",
+    "t": "Guide"
+  },
+  {
     "n": "Documenting an Age Calculation So It Can Be Rebuilt",
     "u": "/articles/document-age-calculations/",
     "t": "Guide"
@@ -528,6 +548,11 @@
     "n": "Driving Age Date Calculator",
     "u": "/tools/driving-age-date-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Early Retirement Age in the UK: What Age Can You Retire?",
+    "u": "/articles/early-retirement-age-uk/",
+    "t": "Guide"
   },
   {
     "n": "Early Retirement Date Calculator",
@@ -705,6 +730,11 @@
     "t": "Guide"
   },
   {
+    "n": "How Many Days Have I Worked? Calculate Total Days of Service",
+    "u": "/articles/how-many-days-have-i-worked/",
+    "t": "Guide"
+  },
+  {
     "n": "How Many Days Old Am I?",
     "u": "/articles/how-many-days-old-am-i/",
     "t": "Guide"
@@ -718,6 +748,11 @@
     "n": "How Old Am I",
     "u": "/how-old-am-i/",
     "t": "Calculator"
+  },
+  {
+    "n": "How Old Am I in Korean Age? Calculate Your Korean Age",
+    "u": "/articles/how-old-am-i-in-korean-age/",
+    "t": "Guide"
   },
   {
     "n": "How Old Was I Calculator",
@@ -735,8 +770,28 @@
     "t": "Guide"
   },
   {
+    "n": "How to Calculate Employee Tenure From a Start Date",
+    "u": "/articles/how-to-calculate-employee-tenure/",
+    "t": "Guide"
+  },
+  {
     "n": "How to Calculate Exact Age in Years, Months and Days",
     "u": "/articles/calculate-exact-age-years-months-days/",
+    "t": "Guide"
+  },
+  {
+    "n": "How to Calculate Korean Age: Formula, Examples & Calculator",
+    "u": "/articles/how-to-calculate-korean-age/",
+    "t": "Guide"
+  },
+  {
+    "n": "How to Calculate Years of Service: Years, Months & Days",
+    "u": "/articles/how-to-calculate-years-of-service/",
+    "t": "Guide"
+  },
+  {
+    "n": "How to Calculate Your Work Anniversary: Date, Next Anniversary & Countdown",
+    "u": "/articles/how-to-calculate-work-anniversary/",
     "t": "Guide"
   },
   {
@@ -792,6 +847,11 @@
   {
     "n": "Korean Age Explained: Why Two Numbers Can Both Be Right",
     "u": "/articles/korean-age-explained/",
+    "t": "Guide"
+  },
+  {
+    "n": "Korean Age vs International Age: What's the Difference?",
+    "u": "/articles/korean-age-vs-international-age/",
     "t": "Guide"
   },
   {
@@ -1085,6 +1145,36 @@
     "t": "Calculator"
   },
   {
+    "n": "SSC CGL Age Calculator",
+    "u": "/tools/ssc-cgl-age-calculator/",
+    "t": "Calculator"
+  },
+  {
+    "n": "SSC CGL Age Limit 2026: Post-Wise Age Limit, DOB & Age Relaxation",
+    "u": "/articles/ssc-cgl-age-limit/",
+    "t": "Guide"
+  },
+  {
+    "n": "SSC CGL Age Relaxation 2026: OBC, SC, ST, PwBD & Ex-Servicemen",
+    "u": "/articles/ssc-cgl-age-relaxation/",
+    "t": "Guide"
+  },
+  {
+    "n": "SSC CGL DOB Eligibility 2026: Check Your Eligible Date of Birth",
+    "u": "/articles/ssc-cgl-dob-eligibility/",
+    "t": "Guide"
+  },
+  {
+    "n": "SSC CGL Eligibility Criteria 2026: Age, Qualification, Nationality & More",
+    "u": "/articles/ssc-cgl-eligibility-criteria/",
+    "t": "Guide"
+  },
+  {
+    "n": "SSC CGL Post-Wise Age Limit 2026: Age Limit for Every Post",
+    "u": "/articles/ssc-cgl-post-wise-age-limit/",
+    "t": "Guide"
+  },
+  {
     "n": "State Pension Age vs Retirement Age: What's the Difference?",
     "u": "/articles/state-pension-age-vs-retirement-age/",
     "t": "Guide"
@@ -1230,8 +1320,18 @@
     "t": "Guide"
   },
   {
+    "n": "What Is Age Grading in Running? Complete Guide to Age Grade",
+    "u": "/articles/what-is-age-grading-in-running/",
+    "t": "Guide"
+  },
+  {
     "n": "What Is Pensionable Age? Pensionable Age vs Retirement Age Explained",
     "u": "/articles/what-is-pensionable-age/",
+    "t": "Guide"
+  },
+  {
+    "n": "What Is Years of Service? Meaning, Tenure & Length of Employment",
+    "u": "/articles/what-is-years-of-service/",
     "t": "Guide"
   },
   {
@@ -1325,6 +1425,11 @@
     "t": "Calculator"
   },
   {
+    "n": "Years of Service vs Years of Experience: What's the Difference?",
+    "u": "/articles/years-of-service-vs-years-of-experience/",
+    "t": "Guide"
+  },
+  {
     "n": "Years, Months and Days Between Two Dates: A Worked Example",
     "u": "/articles/date-difference-worked-example/",
     "t": "Guide"
@@ -1343,25 +1448,5 @@
     "n": "Zodiac Sign Calculator",
     "u": "/tools/zodiac-sign-calculator/",
     "t": "Calculator"
-  },
-  {
-    "n": "Early Retirement Age in the UK: What Age Can You Retire?",
-    "u": "/articles/early-retirement-age-uk/",
-    "t": "Guide"
-  },
-  {
-    "n": "Can You Retire at 60 in the UK? Pension & Early Retirement Guide",
-    "u": "/articles/can-you-retire-at-60-uk/",
-    "t": "Guide"
-  },
-  {
-    "n": "Age Grading Calculator",
-    "u": "/tools/age-grading-calculator/",
-    "t": "Calculator"
-  },
-  {
-    "n": "What Is Age Grading in Running? Complete Guide to Age Grade",
-    "u": "/articles/what-is-age-grading-in-running/",
-    "t": "Guide"
   }
 ]

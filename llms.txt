@@ -2,11 +2,27 @@
 
 - How Old Am I?: https://www.agecalculatorlab.com/how-old-am-i/
 
-> 162 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 100 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
+> 164 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 125 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
 
 Written and reviewed by Navjeet Kamboj. Results are informational: clinical, legal, financial, school, employment and benefits decisions are governed by the relevant manual, policy or authority.
 
 ## Guides
+- [Age in Korean: How to Say Your Age & Ask "How Old Are You?"](https://www.agecalculatorlab.com/articles/age-in-korean/): Learn how to say age in Korean, ask "How old are you?", use 살 and 나이, and give your age naturally with common Korean phrases and examples.
+- [Did Korea Change Its Age System? Understanding the 2023 Korean Age Change](https://www.agecalculatorlab.com/articles/korean-age-system-change/): Did Korea get rid of Korean age? Learn what changed on June 28, 2023, how South Korea standardized full-age counting, and where separate age rules remain.
+- [How Old Am I in Korean Age? Calculate Your Korean Age](https://www.agecalculatorlab.com/articles/how-old-am-i-in-korean-age/): Wondering how old you are in Korean age? Enter your birth date to compare your traditional Korean age with your international age and see the difference.
+- [How to Calculate Korean Age: Formula, Examples & Calculator](https://www.agecalculatorlab.com/articles/how-to-calculate-korean-age/): Step-by-step arithmetic guide to traditional Korean age: Current Year − Birth Year + 1. Includes birthday comparisons and worked examples.
+- [Korean Age vs International Age: What's the Difference?](https://www.agecalculatorlab.com/articles/korean-age-vs-international-age/): Learn why Korean age can be 1 or 2 years higher than international and American age, with birthday comparisons and timelines.
+- [SSC CGL Age Limit 2026: Post-Wise Age Limit, DOB & Age Relaxation](https://www.agecalculatorlab.com/articles/ssc-cgl-age-limit/): Comprehensive guide to SSC CGL 2026 age limits. Explore post-wise age bands (18–27, 20–30, 18–30, 18–32), the 1 August 2026 crucial date, category relaxations & eligible DOB ranges.
+- [SSC CGL Post-Wise Age Limit 2026: Age Limit for Every Post](https://www.agecalculatorlab.com/articles/ssc-cgl-post-wise-age-limit/): Check official SSC CGL post-wise age limits for 2026 across all ministries and departments. Searchable table for 18–27, 20–30, 18–30, and 18–32 posts.
+- [SSC CGL DOB Eligibility 2026: Check Your Eligible Date of Birth](https://www.agecalculatorlab.com/articles/ssc-cgl-dob-eligibility/): Check SSC CGL DOB eligibility for 2026. Learn the age-reckoning date, post-wise DOB ranges, cutoff rules, age relaxation and how to verify your eligibility.
+- [SSC CGL Age Relaxation 2026: OBC, SC, ST, PwBD & Ex-Servicemen](https://www.agecalculatorlab.com/articles/ssc-cgl-age-relaxation/): Check SSC CGL age relaxation 2026 for OBC, SC, ST, PwBD, ex-servicemen and eligible government employees, with rules, deduction formulas and examples.
+- [SSC CGL Eligibility Criteria 2026: Age, Qualification, Nationality & More](https://www.agecalculatorlab.com/articles/ssc-cgl-eligibility-criteria/): Complete guide to SSC CGL eligibility criteria 2026. Check age limits, educational qualifications, final-year student rules, nationality, and required documents.
+- [What Is Years of Service? Meaning, Tenure & Length of Employment](https://www.agecalculatorlab.com/articles/what-is-years-of-service/): What does years of service mean? Understand employee tenure, length of employment, calendar duration vs qualifying service, work anniversaries, and milestones.
+- [How to Calculate Years of Service: Years, Months & Days](https://www.agecalculatorlab.com/articles/how-to-calculate-years-of-service/): Learn how to calculate years of service accurately in years, months, and days. Complete methodology, worked example, leap-year handling, and qualifying service rules.
+- [Years of Service vs Years of Experience: What's the Difference?](https://www.agecalculatorlab.com/articles/years-of-service-vs-years-of-experience/): Understand the key difference between years of service and years of experience. Learn why single-employer tenure differs from total career experience, how overlapping jobs work, and how to calculate both.
+- [How Many Days Have I Worked? Calculate Total Days of Service](https://www.agecalculatorlab.com/articles/how-many-days-have-i-worked/): Calculate exactly how many days you have worked. Learn the +1 inclusive counting rule, business weekdays vs calendar days, leap year February 29 effects, and HR service auditing.
+- [How to Calculate Employee Tenure From a Start Date](https://www.agecalculatorlab.com/articles/how-to-calculate-employee-tenure/): Learn how to calculate employee tenure from a hire or start date. Step-by-step calendar calculation, current vs former employees, breaks, and worked examples.
+- [How to Calculate Your Work Anniversary: Date, Next Anniversary & Countdown](https://www.agecalculatorlab.com/articles/how-to-calculate-work-anniversary/): Learn how to calculate your work anniversary date, find your next upcoming anniversary, count down remaining days, and track major career milestones accurately.
 - [How to Calculate Exact Age in Years, Months and Days](https://www.agecalculatorlab.com/articles/calculate-exact-age-years-months-days/): Exact age is a calendar interval built from three separate counts, which is why dividing days by 365 never reproduces it.
 - [Chronological Age: What It Measures and What It Doesn't](https://www.agecalculatorlab.com/articles/chronological-age-explained/): Chronological age is elapsed calendar time between two dates — objective, reproducible, and different from every other kind of age.
 - [Calendar Age vs Decimal Age: Which One Does Your Form Want?](https://www.agecalculatorlab.com/articles/calendar-age-vs-decimal-age/): Calendar age preserves years, months and days; decimal age expresses the same span as a fraction of an average year.
@@ -198,6 +214,7 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [Quarter Birthday Calculator](https://www.agecalculatorlab.com/tools/quarter-birthday-calculator/): The three-month quarter birthday date measured from a birth date.
 
 ## Professional & Education calculators
+- [SSC CGL Age Calculator](https://www.agecalculatorlab.com/tools/ssc-cgl-age-calculator/): Check your exact SSC CGL 2026 age eligibility as of 1 August 2026. Enter DOB, select post & category to verify 18–27, 20–30, 18–30, 18–32 age bands, relaxations & DOB ranges.
 - [Age at Event Calculator](https://www.agecalculatorlab.com/tools/age-at-event-calculator/): Age on an event date such as graduation employment or another milestone.
 - [School Starting Age Calculator](https://www.agecalculatorlab.com/tools/school-starting-age-calculator/): Age on a chosen school-entry date compared with a custom minimum age.
 - [Kindergarten Eligibility Calculator](https://www.agecalculatorlab.com/tools/kindergarten-eligibility-calculator/): Age on a selected kindergarten cutoff date under a user-entered rule.
@@ -264,6 +281,7 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [Lunar Birthday Calculator](https://www.agecalculatorlab.com/tools/lunar-birthday-calculator/): The approximate moon phase on a birth date and its position in the lunar cycle.
 
 ## Date Lab calculators
+- [1000 Days Ago Calculator](https://www.agecalculatorlab.com/tools/1000-days-ago-calculator/): Calculate the exact calendar date and weekday that occurred 1,000 days ago from today or any chosen reference date.
 - [Days Between Dates Calculator](https://www.agecalculatorlab.com/tools/days-between-dates-calculator/): Elapsed calendar days between two dates.
 - [Date Difference Calculator](https://www.agecalculatorlab.com/tools/date-difference-calculator/): Calendar difference in years months days and total days.
 - [Time Between Dates Calculator](https://www.agecalculatorlab.com/tools/time-between-dates/): Calendar duration between two selected dates.

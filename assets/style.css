@@ -257,12 +257,12 @@ a.nav-cta:active{
 .nav-chevron{font-size:.85rem;color:var(--muted);transition:transform .2s ease}
 .nav-dropdown[open] .nav-chevron{transform:rotate(180deg)}
 .nav-mega{
-  position:absolute;z-index:90;top:100%;left:50%;margin-top:6px;
+  position:absolute;z-index:90;top:100%;left:0;margin-top:6px;
   width:min(860px,calc(100vw - 40px));padding:var(--s-6);
   border:1px solid var(--line);border-radius:var(--r-lg);
   background:var(--panel);box-shadow:var(--sh-3);
   opacity:0;visibility:hidden;pointer-events:none;
-  transform:translate(-50%,6px);
+  transform:translateY(6px);
   transition:opacity .18s ease,transform .2s ease,visibility .18s;
 }
 .nav-mega::before{
@@ -270,7 +270,12 @@ a.nav-cta:active{
 }
 .nav-dropdown-guides .nav-mega{width:min(720px,calc(100vw - 40px))}
 .nav-dropdown[open]>.nav-mega,.nav-dropdown:hover>.nav-mega,.nav-dropdown:focus-within>.nav-mega{
-  opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);
+  opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);
+}
+@media (max-width:1140px) and (min-width:941px){
+  .nav-mega{width:min(620px,calc(100vw - 220px));padding:var(--s-4)}
+  .nav-dropdown-guides .nav-mega{width:min(540px,calc(100vw - 320px))}
+  .nav-category-grid{grid-template-columns:repeat(2,1fr);gap:4px 8px}
 }
 .nav-mega-head{display:flex;align-items:end;justify-content:space-between;gap:var(--s-6);padding:0 2px var(--s-4);border-bottom:1px solid var(--line)}
 .nav-mega-head>div{display:flex;flex-direction:column}
