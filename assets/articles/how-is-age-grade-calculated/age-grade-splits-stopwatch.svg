@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" style="background:#F7FAF8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="stopwatchShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#042F2A" flood-opacity="0.1" />
+    </filter>
+    <linearGradient id="stopwatchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075433" />
+      <stop offset="100%" stop-color="#042F2A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Grid -->
+  <g opacity="0.3">
+    <line x1="40" y1="50" x2="760" y2="50" stroke="#D3E5DE" stroke-dasharray="4 4" />
+    <line x1="40" y1="450" x2="760" y2="450" stroke="#D3E5DE" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Left: Digital Stopwatch Card -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="310" height="380" rx="20" fill="url(#stopwatchGrad)" filter="url(#stopwatchShadow)" />
+    
+    <!-- Stopwatch Crown & Button -->
+    <rect x="135" y="-14" width="40" height="16" rx="4" fill="#9FE7BD" />
+    <circle cx="255" cy="18" r="10" fill="#FF754D" />
+
+    <!-- Dial Frame -->
+    <circle cx="155" cy="190" r="130" fill="#031F1C" stroke="#0E4835" stroke-width="4" />
+    <circle cx="155" cy="190" r="115" fill="#042F2A" stroke="#9FE7BD" stroke-width="1.5" stroke-dasharray="2 6" />
+
+    <text x="155" y="115" font-size="11" font-weight="700" fill="#9FE7BD" letter-spacing="1.5" text-anchor="middle">CHIP FINISH TIME</text>
+    <text x="155" y="185" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="-1" text-anchor="middle">24:30.0</text>
+    <text x="155" y="215" font-size="13" font-weight="600" fill="#D3E5DE" text-anchor="middle">5,000m (5K Road)</text>
+
+    <!-- Splits Box -->
+    <rect x="35" y="245" width="240" height="70" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" />
+    <text x="50" y="272" font-size="11.5" font-weight="600" fill="#9FE7BD">RAW CLOCK PERSPECTIVE</text>
+    <text x="50" y="295" font-size="13" font-weight="700" fill="#FFFFFF">1,470 total seconds elapsed</text>
+  </g>
+
+  <!-- Right: The Two Diverging Interpretations -->
+  <g transform="translate(410, 60)">
+    <text x="0" y="25" font-size="12" font-weight="700" fill="#075433" letter-spacing="1">DEMOGRAPHIC CONTRAST</text>
+    <text x="0" y="52" font-size="22" font-weight="800" fill="#042F2A">Same Clock Time, Different Merit</text>
+
+    <!-- Case 1: Young Male -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="330" height="110" rx="12" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1.5" filter="url(#stopwatchShadow)" />
+      <rect x="0" y="0" width="6" height="110" rx="3" fill="#6C8279" />
+      <text x="20" y="28" font-size="13" font-weight="700" fill="#042F2A">Runner A: Male, Age 22</text>
+      <text x="20" y="48" font-size="12" fill="#6C8279">Open senior peak aerobic window</text>
+      <line x1="20" y1="60" x2="310" y2="60" stroke="#F0F4F2" />
+      <text x="20" y="85" font-size="26" font-weight="900" fill="#4A635A">53.1%</text>
+      <rect x="180" y="68" width="125" height="26" rx="6" fill="#F4F8F6" />
+      <text x="242" y="85" font-size="11" font-weight="700" fill="#4A635A" text-anchor="middle">Recreational Standard</text>
+    </g>
+
+    <!-- Case 2: Masters Female -->
+    <g transform="translate(0, 215)">
+      <rect x="0" y="0" width="330" height="110" rx="12" fill="#FFFFFF" stroke="#9FE7BD" stroke-width="2" filter="url(#stopwatchShadow)" />
+      <rect x="0" y="0" width="6" height="110" rx="3" fill="#075433" />
+      <text x="20" y="28" font-size="13" font-weight="700" fill="#075433">Runner B: Female, Age 62</text>
+      <text x="20" y="48" font-size="12" fill="#075433">Adjusted for biological age curves</text>
+      <line x1="20" y1="60" x2="310" y2="60" stroke="#EBF5F0" />
+      <text x="20" y="85" font-size="26" font-weight="900" fill="#075433">76.2%</text>
+      <rect x="180" y="68" width="125" height="26" rx="6" fill="#FF754D" />
+      <text x="242" y="85" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Regional Class Elite</text>
+    </g>
+  </g>
+</svg>

@@ -25,3 +25,15 @@ Whenever generating images, SVGs, infographics, diagrams, or editing UI layout c
 
 ## 4. Preserve Calculator-First Identity
 - Deep green palette (`#075433`, `#042F2A`), coral accents (`#FF754D`, `#FF9A77`), serif display typography (*Fraunces*), and clean sans-serif body (*Inter*).
+
+## 5. Site-Wide Number Reconciliation & Evergreen Footers (Mandatory)
+1. **Never Hardcode Numbers in Footers:**
+   - In `<footer class="footer">` or `.footer-brand-panel`, never hardcode counts of tools or guides (e.g. "164 focused calculators and 126 practical guides...").
+   - Always use the clean, evergreen bio:
+     `<p>Practical, verified calculators and guides for age, dates, milestones and planning. No registration required.</p>`
+   - In the footer guides column, always use:
+     `<a class="footer-guides-all" href="../../articles/">Browse all guides →</a>` (without hardcoded numbers).
+2. **Strict Site-Wide Data Reconciliation:**
+   - Whenever any new calculator or article is published:
+     - Audit and synchronize `search-index.json`, `assets/search-index.json`, `assets/app.js` (`SITE_SEARCH_INDEX`), `llms.txt`, and `sitemap.xml`.
+     - Update category hub counts and the main directory headers/eyebrows where live counts are intentionally displayed.

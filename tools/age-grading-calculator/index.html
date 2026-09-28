@@ -10,22 +10,30 @@
 </script>
 <meta name="google-site-verification" content="Y5be21WsrJ2pH_gQfwHr57ucbKKUDO1wtzNvumLDzh0"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Age Grading Calculator – Calculate Your Running Age Grade</title><meta property="og:url" content="https://www.agecalculatorlab.com/tools/age-grading-calculator/"><link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
-<link rel="apple-touch-icon" href="../../apple-touch-icon.png"><link rel="manifest" href="../../site.webmanifest"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#075433"><link rel="canonical" href="https://www.agecalculatorlab.com/tools/age-grading-calculator/"><meta name="description" content="Use our age grading calculator to calculate your running age grade by age, distance, sex and race time. Compare your performance using age-based standards."><meta property="og:type" content="website"><meta property="og:title" content="Age Grading Calculator – Calculate Your Running Age Grade"><meta property="og:image" content="https://www.agecalculatorlab.com/assets/thumbnails/tools/age-grading-calculator.webp"><meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap"><link rel="stylesheet" href="../../assets/style.css?v=20260824e"><style>
-:root{--run-navy:#0b233a;--run-green:#12784a;--run-blue:#0284c7;--run-blue-soft:#e0f2fe;--run-coral:#ff754d}
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png"><link rel="manifest" href="../../site.webmanifest"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#075433"><link rel="canonical" href="https://www.agecalculatorlab.com/tools/age-grading-calculator/"><meta name="description" content="Calculate your running age grade percentage by age, distance, sex and race time using official 2025 WMA standards. Compare performances across age groups and distances."><meta property="og:type" content="website"><meta property="og:title" content="Age Grading Calculator – Calculate Your Running Age Grade"><meta property="og:image" content="https://www.agecalculatorlab.com/assets/thumbnails/tools/age-grading-calculator.webp"><meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap"><link rel="stylesheet" href="../../assets/style.css?v=20260824e"><style>
+:root{--run-navy:#0b233a;--run-green:#075433;--run-green-dark:#042f2a;--run-blue:#0284c7;--run-blue-soft:#e0f2fe;--run-coral:#ff754d;--run-mint:#9fe7bd}
 
-/* Layout tightening & whitespace control */
-.tool-hero{padding:28px 0 18px!important}
-.calc-shell{padding:16px 0 28px!important}
-.section{padding:28px 0!important}
-.visual-section{padding:24px 0!important}
-.visual-heading{margin-bottom:16px!important}
-.hero h1{margin-bottom:10px!important;font-size:clamp(1.9rem,3vw,2.5rem)!important}
-.hero .lead{margin-bottom:14px!important;font-size:15px!important;line-height:1.6!important}
-.jumpbar{margin-bottom:16px!important;padding:8px 0!important}
+/* Controlled Section Spacing & Background Alternation */
+.section-flow{padding:56px 0}
+.section-flow-tight{padding:42px 0}
+.bg-white{background:#ffffff}
+.bg-tint-soft{background:#f8fcfa;border-top:1px solid #e5efea;border-bottom:1px solid #e5efea}
+.bg-tint-alt{background:#f4f8f6;border-top:1px solid #e0ebe5;border-bottom:1px solid #e0ebe5}
 
-/* Handwritten Coaching Sticky Notes */
-.coach-note{background:#fffdf0;border:1px solid #fef08a;border-left:6px solid #eab308;border-radius:12px;padding:15px 18px;margin:16px 0;box-shadow:0 4px 14px rgba(234,179,8,0.08);position:relative;transition:transform .2s ease,box-shadow .2s ease}
-.coach-note:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(234,179,8,0.12)}
+/* Controlled Content Widths */
+.editorial-prose{max-width:740px;margin-left:auto;margin-right:auto}
+.editorial-lead{font-size:16.5px;line-height:1.7;color:var(--ink-2);margin-bottom:18px}
+.editorial-p{font-size:15px;line-height:1.75;color:var(--ink);margin-bottom:16px}
+
+/* Enhanced 2-Column Hero */
+.tool-hero-grid{display:grid;grid-template-columns:1.15fr 0.95fr;gap:40px;align-items:center;padding:36px 0 28px}
+@media(max-width:920px){.tool-hero-grid{grid-template-columns:1fr;gap:28px}}
+.hero h1{font-size:clamp(2.1rem,3.4vw,2.85rem)!important;line-height:1.18!important;margin:8px 0 12px!important;color:var(--run-navy)}
+.tool-featured-media{margin:0;border-radius:18px;overflow:hidden;box-shadow:0 12px 32px rgba(4,47,42,0.12);border:1px solid #d3e5de}
+.tool-featured-media img{display:block;width:100%;height:auto;transform:scale(1.02);transition:transform .3s ease}
+
+/* Coach Sticky Note */
+.coach-note{background:#fffdf0;border:1px solid #fef08a;border-left:6px solid #eab308;border-radius:12px;padding:15px 18px;margin:18px 0;box-shadow:0 4px 14px rgba(234,179,8,0.08);position:relative}
 .coach-note .note-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .coach-note .note-pin{font-size:16px}
 .coach-note .note-tag{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:#042f2a;color:#9fe7bd;padding:2px 8px;border-radius:4px}
@@ -37,27 +45,19 @@
 .coach-note-blue{background:#f0f9ff;border-color:#bae6fd;border-left-color:#0284c7;box-shadow:0 4px 14px rgba(2,132,199,0.08)}
 .coach-note-blue .note-tag{background:#0369a1;color:#fff}
 
-/* Quick Presets Strip */
-.preset-bar{background:#f0fdf4;border:1px dashed #86efac;border-radius:12px;padding:12px 14px;margin-bottom:18px;display:flex;align-items:center;flex-wrap:wrap;gap:8px}
-.preset-title{font-size:12px;font-weight:700;color:#166534;text-transform:uppercase;letter-spacing:.04em;margin-right:4px}
-.preset-chip{background:#ffffff;border:1px solid #bbf7d0;color:#042f2a;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s ease;box-shadow:0 1px 3px rgba(0,0,0,0.04);font-family:inherit}
+/* Calculator Centerpiece */
+.calc-shell{padding:32px 0 44px!important}
+.calc-header-badge{display:inline-block;padding:4px 12px;background:#ebf5f0;color:#075433;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:20px;margin-bottom:8px}
+.preset-bar{background:#ffffff;border:1px solid #cce5d8;border-radius:12px;padding:12px 16px;margin-bottom:20px;display:flex;align-items:center;flex-wrap:wrap;gap:8px;box-shadow:0 2px 8px rgba(7,84,51,0.04)}
+.preset-title{font-size:12px;font-weight:700;color:#075433;text-transform:uppercase;letter-spacing:.04em;margin-right:4px}
+.preset-chip{background:#f8fcfa;border:1px solid #bbf7d0;color:#042f2a;padding:6px 13px;border-radius:20px;font-size:12px;font-weight:650;cursor:pointer;transition:all .15s ease;font-family:inherit}
 .preset-chip:hover{background:#075433;color:#ffffff;border-color:#075433;transform:translateY(-1px)}
 
-/* Score Gauge in Output */
-.score-gauge-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;margin:12px 0 16px}
-.score-gauge-bar{position:relative;height:10px;background:linear-gradient(to right,#f87171 0%,#fbbf24 60%,#34d399 75%,#60a5fa 90%,#a78bfa 100%);border-radius:5px;margin:10px 0 6px}
-.gauge-marker{position:absolute;top:-5px;width:10px;height:20px;background:#042f2a;border:2px solid #ffffff;border-radius:4px;transform:translateX(-50%);transition:left .4s cubic-bezier(0.34,1.56,0.64,1);box-shadow:0 2px 6px rgba(0,0,0,0.3)}
-.gauge-scale{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);font-weight:600;line-height:1.2}
-
-/* Athletic Pipeline Flow Diagram */
-.pipeline-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
-@media(max-width:768px){.pipeline-flow{grid-template-columns:1fr}}
-.pipeline-step{background:#ffffff;border:1px solid var(--line);border-top:4px solid #12784a;border-radius:10px;padding:14px 16px;box-shadow:var(--sh-1)}
-.pipeline-step.highlight{border-top-color:#ff754d;background:#fffaf8}
-.pipeline-num{display:inline-block;font-size:11px;font-weight:800;background:#042f2a;color:#9fe7bd;padding:2px 7px;border-radius:4px;margin-bottom:6px}
-.pipeline-step.highlight .pipeline-num{background:#ff754d;color:#fff}
-.pipeline-step strong{display:block;font-size:14px;color:var(--ink);margin-bottom:4px}
-.pipeline-step small{display:block;font-size:12px;color:var(--ink-2);line-height:1.4}
+/* Output & Spectrum Gauge */
+.score-gauge-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 16px;margin:14px 0 18px}
+.score-gauge-bar{position:relative;height:12px;background:linear-gradient(to right,#f87171 0%,#fbbf24 60%,#34d399 75%,#60a5fa 90%,#a78bfa 100%);border-radius:6px;margin:10px 0 6px}
+.gauge-marker{position:absolute;top:-5px;width:12px;height:22px;background:#042f2a;border:2px solid #ffffff;border-radius:4px;transform:translateX(-50%);transition:left .4s cubic-bezier(0.34,1.56,0.64,1);box-shadow:0 2px 6px rgba(0,0,0,0.3)}
+.gauge-scale{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);font-weight:650;line-height:1.2}
 
 .perf-badge{display:inline-block;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:700;margin-top:10px;letter-spacing:.02em}
 .level-record{background:#fef08a;color:#854d0e;border:1px solid #fde047}
@@ -71,56 +71,115 @@
 .time-input-wrap{position:relative}
 .time-input-wrap small{display:block;font-size:11px;color:var(--muted);margin-top:4px;text-align:center}
 
-.bands-table-wrap{overflow-x:auto;margin:20px 0}
-.bands-table{width:100%;border-collapse:collapse;background:var(--panel);border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-1);font-size:14px}
-.bands-table th,.bands-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line)}
-.bands-table th{background:#042f2a;color:#ffffff;font-weight:700;letter-spacing:.03em;text-transform:uppercase;font-size:12.5px}
-.bands-table tr:last-child td{border-bottom:none}
-.bands-table tr:hover td{background:rgba(7,84,51,0.03)}
-.bands-table td:first-child{font-weight:700;color:var(--ink)}
+/* Visual Calculation Journey Bar (Under Calculator) */
+.journey-strip{background:#ffffff;border:1px solid #d3e5de;border-radius:16px;padding:24px 28px;margin-top:28px;box-shadow:0 6px 20px rgba(4,47,42,0.06)}
+.journey-strip-title{font-size:12px;font-weight:800;color:#075433;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;text-align:center}
+.journey-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;align-items:center}
+@media(max-width:840px){.journey-steps{grid-template-columns:1fr;gap:10px}}
+.journey-step-item{background:#f8fcfa;border:1px solid #e5efea;border-radius:12px;padding:12px 14px;text-align:center;position:relative}
+.journey-step-num{font-size:10px;font-weight:800;color:#075433;letter-spacing:.05em}
+.journey-step-name{font-size:13px;font-weight:700;color:#042f2a;margin:2px 0 1px}
+.journey-step-desc{font-size:11px;color:#4a635a}
 
-.formula-card{background:#fdfcf9;border:1px solid #e2ded5;border-radius:14px;padding:22px;margin:20px 0;box-shadow:var(--sh-1)}
-.formula-display{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;background:#042f2a;color:#fff;border-radius:10px;padding:16px 20px;margin:16px 0;font-family:monospace;font-size:15.5px}
-.formula-pill{background:rgba(255,255,255,0.1);border:1px solid rgba(159,231,189,0.3);padding:5px 12px;border-radius:6px;color:#9fe7bd}
-.formula-op{color:#ff754d;font-weight:800;font-size:17px}
+/* 4 Simple Steps Grid with Personality */
+.steps-persona-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:28px 0 0}
+@media(max-width:860px){.steps-persona-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps-persona-grid{grid-template-columns:1fr}}
+.step-persona-card{background:#ffffff;border:1px solid #d3e5de;border-top:4px solid #075433;border-radius:14px;padding:20px;box-shadow:0 4px 14px rgba(4,47,42,0.04);display:flex;flex-direction:column}
+.step-persona-icon{font-size:26px;margin-bottom:10px}
+.step-persona-num{display:inline-block;font-size:11px;font-weight:800;background:#ebf5f0;color:#075433;padding:2px 8px;border-radius:6px;margin-bottom:8px;align-self:flex-start}
+.step-persona-card h3{margin:0 0 6px;font-size:16px;color:#042f2a}
+.step-persona-card p{margin:0;font-size:13px;color:#4a635a;line-height:1.55}
 
-.dist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin:20px 0}
-.dist-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--sh-1);display:flex;flex-direction:column;justify-content:space-between}
-.dist-card strong{font-size:14.5px;color:var(--ink);display:block;margin-bottom:3px}
-.dist-card span{font-size:12px;color:var(--ink-2);line-height:1.4}
-.dist-card small{display:block;font-size:11px;color:var(--brand);font-weight:600;margin-top:6px}
+/* Percentage Visual Ladder */
+.ladder-spectrum{display:flex;flex-direction:column;gap:10px;margin:24px 0}
+.ladder-rung{display:grid;grid-template-columns:90px 140px 1fr;align-items:center;gap:16px;background:#ffffff;border:1px solid #e5efea;border-radius:10px;padding:12px 18px;box-shadow:0 2px 6px rgba(0,0,0,0.02)}
+@media(max-width:640px){.ladder-rung{grid-template-columns:75px 1fr;gap:10px}}
+.ladder-pct{font-size:18px;font-weight:800;color:#042f2a}
+.ladder-tier{font-size:12.5px;font-weight:700}
+.ladder-desc{font-size:13px;color:#4a635a;line-height:1.45}
 
-.audience-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:20px 0}
-.audience-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:var(--sh-1)}
-.audience-card h3{margin:0 0 6px;font-size:15.5px;color:#042f2a}
-.audience-card p{margin:0;font-size:13px;color:var(--ink-2);line-height:1.55}
+/* Split Visual Layout (Stopwatch Comparison) */
+.split-visual-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:36px;align-items:center;margin:28px 0}
+@media(max-width:840px){.split-visual-grid{grid-template-columns:1fr;gap:24px}}
 
-.worked-example-box{background:#f8fcfa;border-left:4px solid #12784a;border-radius:0 14px 14px 0;padding:20px 24px;margin:20px 0;box-shadow:var(--sh-1)}
-.worked-example-box h3{margin-top:0;color:#042f2a;font-size:16.5px}
-.worked-example-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
-@media(max-width:640px){.worked-example-grid{grid-template-columns:1fr}}
-.example-stat{background:#fff;border:1px solid #d3e5de;border-radius:10px;padding:10px 14px}
-.example-stat small{display:block;font-size:11.5px;color:var(--muted);margin-bottom:2px}
-.example-stat strong{font-size:14.5px;color:var(--ink)}
+/* Distance Cards with Visual Badges */
+.dist-persona-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:24px 0}
+@media(max-width:840px){.dist-persona-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.dist-persona-grid{grid-template-columns:1fr}}
+.dist-persona-card{background:#ffffff;border:1px solid #d3e5de;border-radius:14px;padding:18px;box-shadow:0 4px 12px rgba(0,0,0,0.03);display:flex;flex-direction:column;justify-content:space-between}
+.dist-persona-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.dist-icon{font-size:24px}
+.dist-name{font-size:16px;font-weight:700;color:#042f2a}
+.dist-persona-card p{margin:0 0 10px;font-size:12.5px;color:#4a635a;line-height:1.5}
+.dist-tag{align-self:flex-start;font-size:11px;font-weight:700;background:#ebf5f0;color:#075433;padding:3px 8px;border-radius:6px}
 
-.limitations-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
-@media(max-width:768px){.limitations-list{grid-template-columns:1fr}}
-.limit-card{background:#fffaf8;border:1px solid #fed7aa;border-radius:12px;padding:14px 18px}
-.limit-card h4{margin:0 0 4px;color:#c2410c;font-size:14px;display:flex;align-items:center;gap:6px}
-.limit-card p{margin:0;font-size:12.5px;color:var(--ink-2);line-height:1.5}
-</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Age Grading Calculator", "url": "https://www.agecalculatorlab.com/tools/age-grading-calculator/", "applicationCategory": "HealthApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Calculate your running age grade percentage by age, distance, sex, and race time using official 2025 WMA and USATF road-running standards."}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is an age grading calculator?", "acceptedAnswer": {"@type": "Answer", "text": "An age grading calculator is an athletic performance tool that adjusts a runner's race time based on their age and sex. By comparing actual race times against statistical age-standard times established by World Masters Athletics (WMA) and USATF, the calculator produces an age-grade percentage score that enables fair comparisons across different generations and genders."}}, {"@type": "Question", "name": "What is an age grade in running?", "acceptedAnswer": {"@type": "Answer", "text": "An age grade is a percentage score that reflects your race finish time relative to the world-standard time for someone of your exact age and sex over the same distance. A score of 100% represents world-record level, 90%+ is world class, 80%+ is national class, 70%+ is regional class, and 60%+ indicates a competitive club runner."}}, {"@type": "Question", "name": "How is age grade calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Under the official WMA/USATF methodology, age grade percentage is calculated as: Age Grade % = [Open Standard Time / (Your Actual Time × Age Factor)] × 100. Equivalently, it equals: (Age-Graded Reference Standard Time / Your Actual Time) × 100."}}, {"@type": "Question", "name": "What does a 70% age grade mean?", "acceptedAnswer": {"@type": "Answer", "text": "A 70% age grade represents a Regional Class performance according to widely recognized athletic standards. It indicates that you are running at approximately 70% of the theoretical world-standard pace for your age and sex, placing you well above average among competitive club and recreational runners."}}, {"@type": "Question", "name": "What is a good age grade?", "acceptedAnswer": {"@type": "Answer", "text": "A score between 60% and 69% is considered a solid local club performance. Scores between 70% and 79% represent regional competitive standards, 80% to 89% represent national-caliber racing, and 90%+ represents world-class performance. Most first-time or casual recreational runners achieve between 45% and 58%."}}, {"@type": "Question", "name": "Does age grading work for 5K races?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. 5K (5,000m road) is one of the most widely analyzed distances in the WMA tables and is the benchmark distance used by global running events such as Parkrun. The WMA tables contain dedicated single-age standards for ages 5 through 99."}}, {"@type": "Question", "name": "Does age grading work for marathons?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The 2025 WMA and USATF road-running standards include full single-year age factors for the full marathon (42.195 km). It allows masters marathoners to evaluate their performance against open world standards and masters age records."}}, {"@type": "Question", "name": "Is age grading the same as pace?", "acceptedAnswer": {"@type": "Answer", "text": "No. Pace measures raw speed per unit distance (e.g. minutes per kilometer or minutes per mile) without considering who is running. Age grade is an age-and-sex-adjusted percentage that contextualizes that pace against biological benchmarks for your demographic."}}, {"@type": "Question", "name": "Is age grading useful for masters runners?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Age grading is the premier tool for masters runners (typically defined as runners aged 35 or 40 and older). As biological aging gradually reduces maximum aerobic capacity (VO2 max) and muscle elasticity, age grading allows runners to track personal progress, evaluate consistency, and compete fairly with younger athletes."}}, {"@type": "Question", "name": "Can men and women have different age grades for the same race time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Because men and women have distinct biological and physiological benchmarks and separate world records across all distances, the WMA standards maintain independent reference times and age factors for males and females."}}, {"@type": "Question", "name": "Why can age grade results vary between calculators?", "acceptedAnswer": {"@type": "Answer", "text": "Variations occur because different calculators use different editions of the standards (e.g. WAVA 1994, WMA 2006, WMA 2015, WMA 2020, or 2025 USATF/WMA tables). When world records improve or masters performance curves are recalibrated by statisticians, standards update. Age Calculator Lab uses the latest verified 2025 USATF/WMA Road Age-Grade Tables."}}, {"@type": "Question", "name": "Is an age grade a measure of fitness or medical health?", "acceptedAnswer": {"@type": "Answer", "text": "No. Age grading is purely a statistical sports-performance metric comparing race finish times. It does not measure clinical cardiovascular health, metabolic fitness, or body composition, and should not be used as a medical diagnosis."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.agecalculatorlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Categories", "item": "https://www.agecalculatorlab.com/categories/"}, {"@type": "ListItem", "position": 3, "name": "Biological & Health", "item": "https://www.agecalculatorlab.com/categories/biological-health/"}, {"@type": "ListItem", "position": 4, "name": "Age Grading Calculator", "item": "https://www.agecalculatorlab.com/tools/age-grading-calculator/"}]}</script><meta property="og:description" content="Use our age grading calculator to calculate your running age grade by age, distance, sex and race time. Compare your performance using age-based standards."><meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/thumbnails/tools/age-grading-calculator.webp"></head><body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="container nav"><a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto"></a><button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button><nav class="nav-links" id="primary-nav" aria-label="Primary navigation"><details class="nav-dropdown nav-dropdown-categories"><summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega"><div class="nav-mega-head"><div><small>163 focused tools</small><strong>Main calculator categories</strong></div><a href="../../categories/">View category directory →</a></div><div class="nav-category-grid"><a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a><a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a><a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>9 tools</small></a><a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a><a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a><a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>15 tools</small></a><a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>14 tools</small></a><a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a><a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a><a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>12 tools</small></a><a href="../../categories/date-lab/"><span>Date Lab</span><small>34 tools</small></a></div><div class="nav-quick-row"><span>Popular</span><a href="../../">Age Calculator</a><a href="../../tools/date-difference-calculator/">Date Difference</a><a href="../../tools/corrected-age-calculator/">Corrected Age</a><a href="../../tools/countdown-to-date-calculator/">Countdown</a></div></div></details><details class="nav-dropdown nav-dropdown-guides"><summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-guides"><div class="nav-mega-head"><div><small>108 practical guides</small><strong>Learn the method</strong></div><a href="../../articles/">Browse all 108 guides →</a></div><div class="nav-guide-grid"><a href="../../articles/what-is-pensionable-age/"><small>Finance &amp; Professional</small><span>What Is Pensionable Age? Pensionable Age vs Retirement Age Explained</span></a><a href="../../articles/uk-state-pension-age-by-date-of-birth/"><small>Finance &amp; Professional</small><span>UK State Pension Age by Date of Birth: Complete Guide</span></a><a href="../../articles/when-can-i-get-state-pension/"><small>Finance &amp; Professional</small><span>When Can I Get My State Pension? How to Check Your State Pension Age</span></a><a href="../../articles/state-pension-age-vs-retirement-age/"><small>Finance &amp; Professional</small><span>State Pension Age vs Retirement Age: What's the Difference?</span></a><a href="../../articles/how-is-state-pension-age-calculated/"><small>Finance &amp; Professional</small><span>How Is State Pension Age Calculated? UK Rules Explained</span></a><a href="../../articles/can-i-retire-before-state-pension-age/"><small>Finance &amp; Professional</small><span>Can I Retire Before State Pension Age? Early Retirement in the UK Explained</span></a></div></div></details><a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><div class="nav-search-wrap" id="nav-search-wrap"><div class="nav-search-box"><svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg><input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autoComplete="off"></div><div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div></div><a class="nav-cta" href="../../#calculator">Calculate age</a></nav></div></header><main id="main-content">
-<section class="hero tool-hero"><div class="container tool-hero-grid"><div class="tool-hero-copy"><div class="breadcrumbs"><a href="../../">Home</a> / <a href="../../categories/biological-health/">Biological &amp; Health</a> / Age Grading Calculator</div><span class="eyebrow">Biological &amp; Health · Running Performance Tool</span><h1>Age Grading Calculator</h1><p class="lead">Calculate your running age grade percentage by age, distance, sex, and race time using official World Masters Athletics (WMA) and USATF road-running standards. Compare performances across age groups and distances with verified statistical precision.</p><div class="trust-row"><span class="trust-pill">✓ 2025 WMA / USATF Standards</span><span class="trust-pill">✓ Client-Side Privacy</span><span class="trust-pill">✓ 10 Verified Road Distances</span><span class="trust-pill">✓ Copy &amp; Print</span></div>
+/* Large Editorial Section (Who It's For) */
+.editorial-audience-panel{background:#ffffff;border:1px solid #d3e5de;border-radius:16px;padding:32px;box-shadow:0 8px 24px rgba(4,47,42,0.04);margin:24px 0}
+.editorial-audience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:20px}
+@media(max-width:680px){.editorial-audience-grid{grid-template-columns:1fr}}
+.audience-item{display:flex;gap:14px}
+.audience-item-icon{font-size:24px;flex-shrink:0}
+.audience-item-body h4{margin:0 0 4px;font-size:16px;color:#042f2a}
+.audience-item-body p{margin:0;font-size:13.5px;color:#4a635a;line-height:1.55}
+
+/* Limitations Highlight Statement */
+.limit-hero-statement{background:#fffaf8;border:1px solid #fed7aa;border-left:6px solid #f97316;border-radius:14px;padding:20px 24px;margin-bottom:24px}
+.limit-hero-statement h3{margin:0 0 6px;color:#9a3412;font-size:18px}
+.limit-hero-statement p{margin:0;font-size:14.5px;color:#431407;line-height:1.6}
+
+/* 2-Column FAQ Layout */
+.faq-two-col{display:grid;grid-template-columns:0.8fr 1.2fr;gap:40px;align-items:start}
+@media(max-width:820px){.faq-two-col{grid-template-columns:1fr;gap:24px}}
+.faq-left h2{font-size:28px;color:var(--run-navy);margin:0 0 12px}
+.faq-left p{font-size:14.5px;color:#4a635a;line-height:1.6;margin-bottom:20px}
+.faq-accordions{display:flex;flex-direction:column;gap:10px}
+.faq-box{border:1px solid #d3e5de;border-radius:12px;background:#ffffff;overflow:hidden}
+.faq-box summary{padding:14px 18px;font-weight:650;font-size:14.5px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;background:#f8fcfa}
+.faq-box summary::-webkit-details-marker{display:none}
+.faq-box summary::after{content:'+';font-size:18px;font-weight:700;color:#075433}
+.faq-box[open] summary::after{content:'–'}
+.faq-box-content{padding:14px 18px;font-size:13.5px;line-height:1.65;color:#1e293b}
+
+/* Research & Methodology Panel */
+.method-research-card{background:#ffffff;border:1px solid #d3e5de;border-radius:16px;padding:28px 32px;box-shadow:0 6px 20px rgba(4,47,42,0.04);margin:24px 0}
+.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:20px 0}
+@media(max-width:768px){.method-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.method-grid{grid-template-columns:1fr}}
+.method-box{background:#f8fcfa;border:1px solid #e5efea;border-radius:10px;padding:14px}
+.method-box small{display:block;font-size:11px;font-weight:700;color:#075433;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.method-box strong{font-size:14px;color:#042f2a}
+
+/* Key Takeaway Callout */
+.takeaway-banner{background:#ebf5f0;border-left:5px solid #075433;border-radius:0 12px 12px 0;padding:16px 22px;margin:24px 0}
+.takeaway-banner strong{display:block;color:#075433;font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.takeaway-banner p{margin:0;font-size:14.5px;color:#042f2a;line-height:1.6}
+
+/* Pullquote Break */
+.editorial-quote{border-top:2px solid #d3e5de;border-bottom:2px solid #d3e5de;padding:22px 0;margin:32px 0;text-align:center}
+.editorial-quote blockquote{margin:0;font-family:'Fraunces',serif;font-size:22px;line-height:1.45;color:#042f2a;font-style:italic}
+
+/* Sticky Action Button */
+.sticky-calc-btn{position:fixed;bottom:20px;right:20px;z-index:99;display:none;align-items:center;gap:8px;background:#075433;color:#ffffff!important;font-weight:700;font-size:13.5px;padding:11px 20px;border-radius:30px;box-shadow:0 6px 20px rgba(7,84,51,0.35);text-decoration:none;transition:all .2s ease}
+.sticky-calc-btn:hover{background:#042f2a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(4,47,42,0.45);text-decoration:none}
+@media(max-width:768px){.sticky-calc-btn{display:flex}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Age Grading Calculator", "url": "https://www.agecalculatorlab.com/tools/age-grading-calculator/", "applicationCategory": "HealthApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Calculate your running age grade percentage by age, distance, sex, and race time using official 2025 WMA and USATF road-running standards."}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is an age grading calculator?", "acceptedAnswer": {"@type": "Answer", "text": "An age grading calculator is an athletic performance tool that adjusts a runner's race time based on their age and sex. By comparing actual race times against statistical age-standard times established by World Masters Athletics (WMA) and USATF, the calculator produces an age-grade percentage score that enables fair comparisons across different generations and genders."}}, {"@type": "Question", "name": "What is an age grade in running?", "acceptedAnswer": {"@type": "Answer", "text": "An age grade is a percentage score that reflects your race finish time relative to the world-standard time for someone of your exact age and sex over the same distance. A score of 100% represents world-record level, 90%+ is world class, 80%+ is national class, 70%+ is regional class, and 60%+ indicates a competitive club runner."}}, {"@type": "Question", "name": "How is age grade calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Under the official WMA/USATF methodology, age grade percentage is calculated as: Age Grade % = [Open Standard Time / (Your Actual Time × Age Factor)] × 100. Equivalently, it equals: (Age-Graded Reference Standard Time / Your Actual Time) × 100."}}, {"@type": "Question", "name": "What does a 70% age grade mean?", "acceptedAnswer": {"@type": "Answer", "text": "A 70% age grade represents a Regional Class performance according to widely recognized athletic standards. It indicates that you are running at approximately 70% of the theoretical world-standard pace for your age and sex, placing you well above average among competitive club and recreational runners."}}, {"@type": "Question", "name": "What is a good age grade?", "acceptedAnswer": {"@type": "Answer", "text": "A score between 60% and 69% is considered a solid local club performance. Scores between 70% and 79% represent regional competitive standards, 80% to 89% represent national-caliber racing, and 90%+ represents world-class performance. Most first-time or casual recreational runners achieve between 45% and 58%."}}, {"@type": "Question", "name": "Does age grading work for 5K races?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. 5K (5,000m road) is one of the most widely analyzed distances in the WMA tables and is the benchmark distance used by global running events such as Parkrun. The WMA tables contain dedicated single-age standards for ages 5 through 99."}}, {"@type": "Question", "name": "Does age grading work for marathons?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The 2025 WMA and USATF road-running standards include full single-year age factors for the full marathon (42.195 km). It allows masters marathoners to evaluate their performance against open world standards and masters age records."}}, {"@type": "Question", "name": "Is age grading the same as pace?", "acceptedAnswer": {"@type": "Answer", "text": "No. Pace measures raw speed per unit distance (e.g. minutes per kilometer or minutes per mile) without considering who is running. Age grade is an age-and-sex-adjusted percentage that contextualizes that pace against biological benchmarks for your demographic."}}, {"@type": "Question", "name": "Is age grading useful for masters runners?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Age grading is the premier tool for masters runners (typically defined as runners aged 35 or 40 and older). As biological aging gradually reduces maximum aerobic capacity (VO2 max) and muscle elasticity, age grading allows runners to track personal progress, evaluate consistency, and compete fairly with younger athletes."}}, {"@type": "Question", "name": "Can men and women have different age grades for the same race time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Because men and women have distinct biological and physiological benchmarks and separate world records across all distances, the WMA standards maintain independent reference times and age factors for males and females."}}, {"@type": "Question", "name": "Why can age grade results vary between calculators?", "acceptedAnswer": {"@type": "Answer", "text": "Variations occur because different calculators use different editions of the standards (e.g. WAVA 1994, WMA 2006, WMA 2015, WMA 2020, or 2025 USATF/WMA tables). When world records improve or masters performance curves are recalibrated by statisticians, standards update. Age Calculator Lab uses the latest verified 2025 USATF/WMA Road Age-Grade Tables."}}, {"@type": "Question", "name": "Is an age grade a measure of fitness or medical health?", "acceptedAnswer": {"@type": "Answer", "text": "No. Age grading is purely a statistical sports-performance metric comparing race finish times. It does not measure clinical cardiovascular health, metabolic fitness, or body composition, and should not be used as a medical diagnosis."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.agecalculatorlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Categories", "item": "https://www.agecalculatorlab.com/categories/"}, {"@type": "ListItem", "position": 3, "name": "Biological & Health", "item": "https://www.agecalculatorlab.com/categories/biological-health/"}, {"@type": "ListItem", "position": 4, "name": "Age Grading Calculator", "item": "https://www.agecalculatorlab.com/tools/age-grading-calculator/"}]}</script><meta property="og:description" content="Calculate your running age grade percentage by age, distance, sex and race time using official 2025 WMA standards. Compare performances across age groups and distances."><meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/thumbnails/tools/age-grading-calculator.webp"></head><body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="container nav"><a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto"></a><button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button><nav class="nav-links" id="primary-nav" aria-label="Primary navigation"><details class="nav-dropdown nav-dropdown-categories"><summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega"><div class="nav-mega-head"><div><small>164 focused tools</small><strong>Main calculator categories</strong></div><a href="../../categories/">View category directory →</a></div><div class="nav-category-grid"><a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a><a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a><a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>9 tools</small></a><a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a><a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a><a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>16 tools</small></a><a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>15 tools</small></a><a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a><a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a><a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a><a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a></div><div class="nav-quick-row"><span>Popular</span><a href="../../">Age Calculator</a><a href="../../tools/date-difference-calculator/">Date Difference</a><a href="../../tools/corrected-age-calculator/">Corrected Age</a><a href="../../tools/countdown-to-date-calculator/">Countdown</a></div></div></details><details class="nav-dropdown nav-dropdown-guides"><summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-guides"><div class="nav-mega-head"><div><small>126 practical guides</small><strong>Learn the method</strong></div><a href="../../articles/">Browse all guides →</a></div><div class="nav-guide-grid"><a href="../../articles/what-is-age-grading-in-running/"><small>Biological &amp; Health</small><span>What Is Age Grading in Running? Complete Guide to Age Grade</span></a><a href="../../articles/how-is-age-grade-calculated/"><small>Biological &amp; Health</small><span>How Is Age Grade Calculated? Formula, Examples &amp; Guide</span></a><a href="../../articles/can-you-retire-at-60-uk/"><small>Finance &amp; Professional</small><span>Can You Retire at 60 in the UK? Pension &amp; Early Retirement Guide</span></a><a href="../../articles/early-retirement-age-uk/"><small>Finance &amp; Professional</small><span>Early Retirement Age in the UK: What Age Can You Retire?</span></a><a href="../../articles/can-i-retire-before-state-pension-age/"><small>Finance &amp; Professional</small><span>Can I Retire Before State Pension Age? Early Retirement in the UK</span></a><a href="../../articles/how-is-state-pension-age-calculated/"><small>Finance &amp; Professional</small><span>How Is State Pension Age Calculated? UK Rules Explained</span></a></div></div></details><a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><div class="nav-search-wrap" id="nav-search-wrap"><div class="nav-search-box"><svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg><input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autoComplete="off"></div><div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div></div><a class="nav-cta" href="../../#calculator">Calculate age</a></nav></div></header><main id="main-content">
+
+<!-- SECTION 1: HERO (WHITE BACKGROUND, 2-COLUMN BALANCED) -->
+<section class="hero tool-hero bg-white"><div class="container tool-hero-grid"><div class="tool-hero-copy"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Home</a> / <a href="../../categories/biological-health/">Biological &amp; Health</a> / Age Grading Calculator</nav><span class="eyebrow">Biological &amp; Health · Running Performance Tool</span><h1>Age Grading Calculator</h1><p class="lead">Calculate your running age grade percentage by age, distance, sex, and race time using official World Masters Athletics (WMA) and USATF road-running standards. Compare performances across age groups and distances with verified statistical precision.</p>
+<div class="trust-row"><span class="trust-pill">✓ 2025 WMA / USATF Road Standards</span><span class="trust-pill">✓ Client-Side Privacy</span><span class="trust-pill">✓ 10 Verified Road Distances</span></div>
 <div class="coach-note"><div class="note-head"><span class="note-pin">📌</span><span class="note-tag">Coach’s Clipboard Note</span></div><p class="note-quote">“Age grading levels the running field! A 65% in a marathon at age 52 means you're beating typical biological slowdown. Don't compare raw clock times with your 20s!”</p></div>
-<div class="meta-row"><span>Updated: September 2026</span><span>Category: Biological &amp; Health</span><span>Methodology: 2025 WMA / USATF</span></div><div class="author-mini"><img loading="lazy" decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj"><div><span>Written and maintained by</span><strong><a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></strong><small>Age Calculator Lab author &amp; editor</small></div></div></div><figure class="tool-featured-media"><img fetchpriority="high" decoding="async" src="../../assets/thumbnails/tools/age-grading-calculator.webp" alt="Age Grading Calculator running sports science illustration" width="1200" height="675"><figcaption>Age Grading Calculator · WMA &amp; USATF 2025 Standards</figcaption></figure></div></section>
+<div class="meta-row"><span>Updated: September 2026</span><span>·</span><span>Category: Biological &amp; Health</span><span>·</span><span>Methodology: 2025 WMA / USATF</span></div><div class="author-mini"><img loading="lazy" decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj"><div><span>Written and maintained by</span><strong><a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></strong><small>Age Calculator Lab author &amp; editor</small></div></div></div><figure class="tool-featured-media"><img fetchpriority="high" decoding="async" src="../../assets/thumbnails/tools/age-grading-calculator.webp" alt="Age Grading Calculator running sports science illustration" width="1200" height="675"><figcaption>Age Grading Calculator · WMA &amp; USATF 2025 Standards</figcaption></figure></div></section>
 
-<div class="jumpbar"><div class="container"><a href="#calculator">Calculator</a><a href="#how-to-use">How to use</a><a href="#what-it-means">What it means</a><a href="#method">Method &amp; Formula</a><a href="#bands">Performance bands</a><a href="#compare">Age grade vs race time</a><a href="#terminology">Age grade vs grading</a><a href="#masters">Masters runners</a><a href="#distances">Event distances</a><a href="#example">Worked example</a><a href="#audience">Who can use</a><a href="#limitations">Limitations</a><a href="#faq">FAQ</a><a href="#sources">Sources</a></div></div>
+<div class="jumpbar"><div class="container"><a href="#calculator">Calculator</a><a href="#journey">Journey</a><a href="#how-to-use">How to use</a><a href="#how-it-works">How it works</a><a href="#what-it-means">What it means</a><a href="#compare">Age grade vs race time</a><a href="#masters">Masters runners</a><a href="#distances">Event distances</a><a href="#worked-example">Worked example</a><a href="#audience">Who it's for</a><a href="#limitations">Limitations</a><a href="#faq">FAQ</a><a href="#sources">Sources</a></div></div>
 
-<section class="calc-shell" id="calculator"><div class="container"><div class="calc-card"><div class="calc-inputs"><div class="calc-label">Performance engine</div><h2>Calculate Your Age Grade</h2>
+<!-- SECTION 2: CALCULATOR CENTERPIECE (SOFT TINTED BACKGROUND) -->
+<section class="calc-shell bg-tint-alt" id="calculator"><div class="container"><div class="calc-card"><div class="calc-inputs"><span class="calc-header-badge">RUNNING PERFORMANCE TOOL</span><h2>Calculate Your Age Grade</h2><p style="font-size:14px;color:#4a635a;margin:0 0 16px;">Enter your race details to benchmark your performance against official world standards.</p>
 <div class="preset-bar">
   <span class="preset-title">⚡ Quick Scenarios:</span>
   <button type="button" class="preset-chip" onclick="applyPreset(45,'M','5k',0,24,30)">🏃 M45 · 5K Parkrun (24:30)</button>
-  <button type="button" class="preset-chip" onclick="applyPreset(52,'F','10k',0,48,15)">⚡ F52 · 10K Masters (48:15)</button>
-  <button type="button" class="preset-chip" onclick="applyPreset(40,'M','hm',1,35,0)">🏅 M40 · Half Marathon (1:35:00)</button>
+  <button type="button" class="preset-chip" onclick="applyPreset(50,'F','5k',0,25,0)">⚡ F50 · 5K Worked (25:00)</button>
+  <button type="button" class="preset-chip" onclick="applyPreset(52,'F','10k',0,48,15)">🏅 F52 · 10K Masters (48:15)</button>
   <button type="button" class="preset-chip" onclick="applyPreset(50,'M','42k',3,25,0)">🏆 M50 · Marathon (3:25:00)</button>
 </div>
 <form id="calcForm"><div class="field-grid">
@@ -152,160 +211,378 @@
     <span>100%<br>Record</span>
   </div>
 </div>
-<div class="result-grid" id="resultMetrics"><div class="metric"><strong>Ready</strong><span>Enter age, distance and race time</span></div></div><div class="actions" style="margin-top:16px"><button class="btn btn-secondary" type="button" id="copyBtn">Copy result</button><button class="btn btn-secondary" type="button" id="shareBtn">Share link</button><button class="btn btn-secondary" type="button" id="printBtn">Print</button></div><p class="privacy-note" id="resultHint">Review your inputs and select Calculate Age Grade.</p></div></div></div></section>
+<div class="result-grid" id="resultMetrics"><div class="metric"><strong>Ready</strong><span>Enter age, distance and race time</span></div></div><div class="actions" style="margin-top:16px"><button class="btn btn-secondary" type="button" id="copyBtn">Copy result</button><button class="btn btn-secondary" type="button" id="shareBtn">Share link</button><button class="btn btn-secondary" type="button" id="printBtn">Print</button></div><p class="privacy-note" id="resultHint">Review your inputs and select Calculate Age Grade.</p></div></div>
 
-<section class="visual-section how-section" id="how-to-use"><div class="container"><div class="visual-heading"><span class="kicker">How it works</span><h2>Calculate your age grade in four simple steps</h2><p>The calculation runs instantly in your browser, comparing your chip or gun time against verified world standards.</p></div><div class="process-grid"><div class="process-step"><span>1</span><h3>Runner's age</h3><p>Enter your exact age on race day (between 5 and 99). Masters age grading evaluates your performance at that specific year of age.</p></div><div class="process-step"><span>2</span><h3>Sex &amp; distance</h3><p>Select your category and event distance. Standards differ between males and females and across race distances.</p></div><div class="process-step"><span>3</span><h3>Enter race time</h3><p>Input your official finish time in hours, minutes, and seconds. For races under an hour, leave hours as 0.</p></div><div class="process-step"><span>4</span><h3>Review &amp; compare</h3><p>Read your age-grade percentage, performance band, reference standard time, and pace metrics.</p></div></div></div></section>
+<!-- VISUAL CALCULATION JOURNEY (Directly below calculator) -->
+<div class="journey-strip" id="journey">
+  <div class="journey-strip-title">THE 5-STEP CALCULATION JOURNEY</div>
+  <div class="journey-steps">
+    <div class="journey-step-item">
+      <div class="journey-step-num">01</div>
+      <div class="journey-step-name">Runner's Age</div>
+      <div class="journey-step-desc">Single-year baseline</div>
+    </div>
+    <div class="journey-step-item">
+      <div class="journey-step-num">02</div>
+      <div class="journey-step-name">Race Distance</div>
+      <div class="journey-step-desc">Certified course event</div>
+    </div>
+    <div class="journey-step-item">
+      <div class="journey-step-num">03</div>
+      <div class="journey-step-name">Finishing Time</div>
+      <div class="journey-step-desc">Recorded chip duration</div>
+    </div>
+    <div class="journey-step-item">
+      <div class="journey-step-num">04</div>
+      <div class="journey-step-name">WMA Reference</div>
+      <div class="journey-step-desc">Age factor lookup</div>
+    </div>
+    <div class="journey-step-item" style="border-color:#075433;background:#ebf5f0">
+      <div class="journey-step-num" style="color:#075433">05</div>
+      <div class="journey-step-name" style="color:#075433">Age Grade %</div>
+      <div class="journey-step-desc">Universal score</div>
+    </div>
+  </div>
+</div>
 
-<section class="visual-section feature-section" id="what-it-means"><div class="container"><div class="visual-heading"><span class="kicker">Understanding your score</span><h2>What Does Your Age Grade Mean?</h2><p>Age grade is a performance comparison percentage based on the selected age-grading standard.</p></div>
-<p style="font-size:15px;line-height:1.7;color:var(--ink-2)">Raw race finish times tell only half the story. A 24:30 5K run by a 22-year-old represents a completely different athletic achievement than a 24:30 5K run by a 68-year-old. Because human aerobic capacity, muscle fiber density, and maximum heart rate naturally decline with advancing age, age grading establishes an <strong>age-adjusted benchmark</strong>.</p>
-<p style="font-size:15px;line-height:1.7;color:var(--ink-2)">Rather than claiming <em>"you are XX% as fast as an Olympian,"</em> the age grade percentage simply expresses your time as a mathematical ratio against the theoretical maximum performance recorded for someone of your exact age and sex. A score of 70% means your speed was 70% of the world standard speed established for your age cohort.</p>
 </div></section>
 
-<section class="section soft" id="method"><div class="container visual-split"><div><span class="kicker">Formula &amp; Mathematics</span><h2>How Is Age Grade Calculated?</h2><p>Under the official World Masters Athletics (WMA) and USATF Masters Long Distance Running (MLDR) methodology compiled by Alan Jones and Tom Bernhard, the age grade percentage is calculated deterministically:</p>
-<div class="pipeline-flow">
-  <div class="pipeline-step"><span class="pipeline-num">Step 1</span><strong>Demographics</strong><small>Age, biological sex &amp; race distance</small></div>
-  <div class="pipeline-step"><span class="pipeline-num">Step 2</span><strong>WMA Factors</strong><small>Lookup 2025 Open Std &amp; Age Factor</small></div>
-  <div class="pipeline-step"><span class="pipeline-num">Step 3</span><strong>Target Standard</strong><small>Open Standard ÷ Age Factor</small></div>
-  <div class="pipeline-step highlight"><span class="pipeline-num">Step 4</span><strong>Age Grade %</strong><small>(Target Std ÷ Finish Time) × 100</small></div>
+<!-- SECTION 3: 4 SIMPLE STEPS WITH DISTINCT PERSONALITY (WHITE BACKGROUND) -->
+<section class="section-flow bg-white" id="how-to-use"><div class="container"><div class="visual-heading centered"><span class="kicker">How it works</span><h2>Calculate Your Age Grade in Four Simple Steps</h2><p>The calculation runs instantly in your browser, comparing your chip or gun time against verified world standards.</p></div>
+<div class="steps-persona-grid">
+  <div class="step-persona-card">
+    <div class="step-persona-icon">📅</div>
+    <span class="step-persona-num">STEP 01</span>
+    <h3>Enter Runner's Age</h3>
+    <p>Provide your exact age on race day. The system applies single-year precision factors from ages 5 to 99.</p>
+  </div>
+  <div class="step-persona-card" style="border-top-color:#0284c7;">
+    <div class="step-persona-icon">🏃</div>
+    <span class="step-persona-num" style="color:#0284c7;background:#e0f2fe;">STEP 02</span>
+    <h3>Choose Your Event</h3>
+    <p>Select your certified road distance: 5K, 10K, Half Marathon, Marathon, or classic imperial distances.</p>
+  </div>
+  <div class="step-persona-card" style="border-top-color:#ff754d;">
+    <div class="step-persona-icon">⏱️</div>
+    <span class="step-persona-num" style="color:#c2410c;background:#fff8f5;">STEP 03</span>
+    <h3>Enter Chip Time</h3>
+    <p>Input your official hours, minutes, and seconds. The engine converts duration into exact decimal seconds.</p>
+  </div>
+  <div class="step-persona-card" style="border-top-color:#042f2a;">
+    <div class="step-persona-icon">📊</div>
+    <span class="step-persona-num" style="color:#042f2a;background:#e5efea;">STEP 04</span>
+    <h3>Get Your Score</h3>
+    <p>Receive your age-grade percentage, performance classification tier, and equivalent open-senior finish time.</p>
+  </div>
 </div>
-<div class="formula-card"><div class="formula-display"><span class="formula-pill">Open Standard Time</span><span class="formula-op">÷</span><span class="formula-pill">Actual Time × Age Factor</span><span class="formula-op">×</span><span class="formula-pill">100</span><span class="formula-op">=</span><span class="formula-pill" style="background:#ff754d;color:#fff">Age Grade %</span></div>
-<p style="margin:10px 0 0;font-size:13px;color:var(--ink-2);line-height:1.5">Where <strong>Open Standard Time</strong> is the world-record baseline for that event, <strong>Actual Time</strong> is your finish time in seconds, and <strong>Age Factor</strong> is the statistical demographic coefficient ($\le 1.0$) for your age and sex.</p>
-</div>
-<p style="font-size:14px;color:var(--ink-2)">Equivalently, the <strong>Age-Graded Reference Standard Time</strong> equals $\frac{\text{Open Standard}}{\text{Age Factor}}$. The formula can therefore be stated as:</p>
-<div style="background:#fff;border:1px solid #d3e5de;border-radius:10px;padding:12px 16px;font-family:monospace;font-size:14px;color:#042f2a;margin-bottom:14px">Age Grade % = (Age-Graded Reference Standard Time ÷ Your Actual Time) × 100</div>
-<div class="method-formula"><small>Reference standard</small><strong>2025 USATF MLDR / WMA Road Tables</strong><small>Verification status</small><strong>Deterministic · Verified Sept 2026</strong></div></div><div class="facts-grid"><article><strong>Single-year factors</strong><span>Evaluates exact integer ages from 5 to 99 rather than broad 5-year age groups.</span></article><article><strong>Event-specific curves</strong><span>Every distance has independent physiological fatigue curves and world records.</span></article><article><strong>Zero estimation</strong><span>Values are calculated directly from compiled WMA standards, never guessed.</span></article><article><strong>No server tracking</strong><span>Your age, gender, and finish times never leave your browser memory.</span></article></div></div></section>
+</div></section>
 
-<section class="section" id="bands"><div class="container"><div class="visual-heading"><span class="kicker">Evaluation Standards</span><h2>What Is a Good Age Grade Percentage?</h2><p>While running organizations and clubs establish their own award criteria, the international masters athletics community commonly categorizes age grades into five recognized performance tiers:</p></div>
-<div class="bands-table-wrap"><table class="bands-table"><thead><tr><th>Age Grade Range</th><th>Performance Level</th><th>Competitive Context</th><th>Who Achieves It</th></tr></thead><tbody>
-<tr><td><strong>100.0%+</strong></td><td><span class="perf-badge level-record">World Record Level</span></td><td>Equal to or faster than the theoretical world standard for that age.</td><td>Masters world record holders and elite Olympians.</td></tr>
-<tr><td><strong>90.0% – 99.9%</strong></td><td><span class="perf-badge level-world">World Class</span></td><td>Capable of contending for medals at World Masters Athletics championships.</td><td>Top national masters athletes and international competitors.</td></tr>
-<tr><td><strong>80.0% – 89.9%</strong></td><td><span class="perf-badge level-national">National Class</span></td><td>High competitive standard capable of placing at national championships.</td><td>Elite club runners and seasoned age-group podium contenders.</td></tr>
-<tr><td><strong>70.0% – 79.9%</strong></td><td><span class="perf-badge level-regional">Regional Class</span></td><td>Strong competitive performance within county or regional road races.</td><td>Dedicated club athletes with consistent structured training.</td></tr>
-<tr><td><strong>60.0% – 69.9%</strong></td><td><span class="perf-badge level-club">Local / Club Class</span></td><td>Above-average club runner, frequently placing in top third of local races.</td><td>Regular runners with established weekly mileage bases.</td></tr>
-<tr><td><strong>Below 60.0%</strong></td><td><span class="perf-badge level-recreational">Recreational</span></td><td>Typical participation performance for fitness, lifestyle, and charity runners.</td><td>Recreational runners, beginners, and social Parkrun participants.</td></tr>
+<!-- SECTION 4: HOW AGE GRADE WORKS & VISUAL A (SOFT TINTED BACKGROUND) -->
+<section class="section-flow bg-tint-soft" id="how-it-works"><div class="container"><div class="visual-heading centered"><span class="kicker">Sports Science Methodology</span><h2>How Age Grade Is Calculated</h2><p>The mathematical principles and demographic datasets that power age-graded scoring.</p></div>
+<div class="editorial-prose">
+  <p class="editorial-lead">Age grading eliminates biological unfairness by comparing an athlete's race duration against the statistical theoretical world record for someone of their exact age and sex over the same distance.</p>
+  <p class="editorial-p">Under the official World Masters Athletics (WMA) and USATF Masters Long Distance Running methodology, the calculation evaluates the ratio between the age-adjusted benchmark time and the athlete's actual finish time.</p>
+</div>
+
+<!-- HANDWRITTEN CALCULATION VISUAL A -->
+<figure class="tool-featured-media" style="margin:28px auto;max-width:960px;">
+  <img src="../../assets/articles/how-is-age-grade-calculated/age-grade-calculation-flow.svg" alt="How age grade is calculated data flow diagram" width="1200" height="675" loading="lazy" decoding="async">
+  <figcaption style="padding:10px 16px;background:#f8fcfa;font-size:12.5px;color:#4a635a;border-top:1px solid #d3e5de;"><strong>Visual A: The Age-Grade Calculation Pipeline.</strong> Athlete Demographics ➔ WMA Standards ➔ Benchmark Conversion ➔ Age Grade %.</figcaption>
+</figure>
+
+<div class="editorial-prose">
+  <div class="takeaway-banner">
+    <strong>Key Takeaway</strong>
+    <p>Age grading doesn't change your stopwatch time. It provides a standardized biological lens to compare performances across generations, sexes, and race distances.</p>
+  </div>
+  <p class="editorial-p">For a complete step-by-step arithmetic guide, worked case studies, and formula derivations, read our in-depth companion article: <a href="../../articles/how-is-age-grade-calculated/" style="color:#075433;font-weight:700;">How Is Age Grade Calculated? Formula, Examples &amp; Guide →</a>.</p>
+</div>
+</div></section>
+
+<!-- SECTION 5: WHAT DOES YOUR AGE GRADE MEAN & PERCENTAGE SPECTRUM (WHITE BACKGROUND) -->
+<section class="section-flow bg-white" id="what-it-means"><div class="container"><div class="visual-heading centered"><span class="kicker">Evaluation Standards</span><h2>What Does Your Age Grade Mean?</h2><p>How international athletics governing bodies interpret and categorize age-grade percentages.</p></div>
+
+<div class="editorial-prose">
+  <p class="editorial-lead">Rather than claiming <em>"you are XX% as fast as an Olympian,"</em> an age grade percentage expresses your finish time as a mathematical ratio against the theoretical world standard for your demographic cohort.</p>
+</div>
+
+<!-- PERCENTAGE LADDER -->
+<div class="ladder-spectrum" style="max-width:880px;margin:24px auto;">
+  <div class="ladder-rung" style="border-left:5px solid #854d0e;background:#fffdf0;">
+    <div class="ladder-pct" style="color:#854d0e;">100%+</div>
+    <div class="ladder-tier"><span class="perf-badge level-record">World Record</span></div>
+    <div class="ladder-desc">Equal to or faster than the theoretical world standard for that age cohort.</div>
+  </div>
+  <div class="ladder-rung" style="border-left:5px solid #1e40af;background:#f0f9ff;">
+    <div class="ladder-pct" style="color:#1e40af;">90.0% – 99.9%</div>
+    <div class="ladder-tier"><span class="perf-badge level-world">World Class</span></div>
+    <div class="ladder-desc">Capable of contending for medals at World Masters Athletics international championships.</div>
+  </div>
+  <div class="ladder-rung" style="border-left:5px solid #166534;background:#f0fdf4;">
+    <div class="ladder-pct" style="color:#166534;">80.0% – 89.9%</div>
+    <div class="ladder-tier"><span class="perf-badge level-national">National Class</span></div>
+    <div class="ladder-desc">High domestic standard capable of placing at national championships and major city races.</div>
+  </div>
+  <div class="ladder-rung" style="border-left:5px solid #0369a1;background:#f8fafc;">
+    <div class="ladder-pct" style="color:#0369a1;">70.0% – 79.9%</div>
+    <div class="ladder-tier"><span class="perf-badge level-regional">Regional Class</span></div>
+    <div class="ladder-desc">Strong competitive performance within county or regional amateur road races.</div>
+  </div>
+  <div class="ladder-rung" style="border-left:5px solid #374151;">
+    <div class="ladder-pct" style="color:#374151;">60.0% – 69.9%</div>
+    <div class="ladder-tier"><span class="perf-badge level-club">Local / Club Class</span></div>
+    <div class="ladder-desc">Above-average club runner, frequently placing in the top third of local road races.</div>
+  </div>
+  <div class="ladder-rung" style="border-left:5px solid #991b1b;background:#fef2f2;">
+    <div class="ladder-pct" style="color:#991b1b;">Under 60.0%</div>
+    <div class="ladder-tier"><span class="perf-badge level-recreational">Recreational</span></div>
+    <div class="ladder-desc">Typical participation performance for lifestyle, fitness, and community Parkrun runners.</div>
+  </div>
+</div>
+
+<div class="coach-note coach-note-mint" style="max-width:880px;margin:20px auto;"><div class="note-head"><span class="note-pin">💡</span><span class="note-tag">Perspective Check</span></div><p class="note-quote">“Don't be discouraged by a 52% or 58%! Over 60% of weekend race participants sit in the recreational 45%–58% bracket. Reaching 60%+ means you are already in the top third of regular local club runners!”</p></div>
+
+</div></section>
+
+<!-- SECTION 6: AGE GRADE VS RACE TIME (SPLIT LAYOUT, SOFT TINT BACKGROUND) -->
+<section class="section-flow bg-tint-alt" id="compare"><div class="container"><div class="visual-heading centered"><span class="kicker">Core Comparison</span><h2>Age Grade vs Race Time</h2><p>Understanding what each metric measures helps runners set realistic goals across seasons and years.</p></div>
+
+<div class="split-visual-grid">
+  <div>
+    <figure class="tool-featured-media">
+      <img src="../../assets/articles/how-is-age-grade-calculated/age-grade-splits-stopwatch.svg" alt="Stopwatch finish time vs age grade comparison illustration" width="800" height="500" loading="lazy" decoding="async">
+      <figcaption style="padding:10px 14px;background:#ffffff;font-size:12px;color:#4a635a;border-top:1px solid #d3e5de;"><strong>Figure: The Stopwatch Illusion.</strong> Identical 24:30 clock times reflect radically different biological achievements across age categories.</figcaption>
+    </figure>
+  </div>
+  <div>
+    <h3 style="font-size:22px;color:var(--run-navy);margin:0 0 12px;">Clock Time Tells Duration. Age Grade Tells Effort.</h3>
+    <p class="editorial-p">In open competition, the stopwatch is completely indifferent to the athlete's age. A 22-year-old running 24:30 and a 62-year-old grandmother running 24:30 receive identical gun times. However, in terms of physiological capacity and aerobic reserve, the 62-year-old produced an elite Regional Class run (76.2%), while the 22-year-old ran a recreational fitness pace (53.1%).</p>
+    <p class="editorial-p">Age grading provides the missing biological context so runners can measure true athletic merit without being discouraged by inevitable chronological slowdown.</p>
+  </div>
+</div>
+
+<!-- Comparison Table -->
+<div class="bands-table-wrap" style="max-width:960px;margin:24px auto;"><table class="bands-table"><thead><tr><th>Metric</th><th>What It Measures</th><th>Strengths</th><th>Key Limitation</th></tr></thead><tbody>
+<tr><td><strong>Race Time</strong></td><td>Clock duration from start to finish line.</td><td>Simple, objective, determines race placement on the day.</td><td>Disadvantages older and female runners in open fields.</td></tr>
+<tr><td><strong>Pace (min/km or min/mi)</strong></td><td>Average rate of speed sustained over distance.</td><td>Crucial for tactical race execution and split pacing.</td><td>Does not account for terrain, biological age, or fatigue curves.</td></tr>
+<tr><td><strong>Age Grade (%)</strong></td><td>Performance ratio relative to an age-adjusted world standard.</td><td>Enables fair comparison between runners of all ages, sexes, and distances.</td><td>Depends on the statistical accuracy of underlying reference tables.</td></tr>
+<tr><td><strong>Equivalent Open Time</strong></td><td>Theoretical time if run by an open-class athlete in their prime.</td><td>Shows what a masters time equates to in an open-division field.</td><td>Abstract modeling metric rather than a physical recorded time.</td></tr>
 </tbody></table></div>
-<div class="coach-note coach-note-mint"><div class="note-head"><span class="note-pin">💡</span><span class="note-tag">Perspective Check</span></div><p class="note-quote">“Don't be discouraged by a 52% or 58%! Over 60% of weekend race participants sit in the recreational 45%–58% bracket. Reaching 60%+ means you are already in the top third of regular local club runners!”</p></div>
-<p style="font-size:12.5px;color:var(--muted);margin-top:6px"><em>Performance bands are descriptive guidelines adopted from WMA/USATF coaching conventions; they are not official accreditations or medical evaluations.</em></p>
+
 </div></section>
 
-<section class="section soft" id="compare"><div class="container"><div class="visual-heading centered"><span class="kicker">Core Comparison</span><h2>Age Grade vs Race Time</h2><p>Understanding what each metric measures helps runners set realistic goals across seasons and years.</p></div>
-<div class="bands-table-wrap"><table class="bands-table"><thead><tr><th>Metric</th><th>What It Measures</th><th>Strengths</th><th>Key Limitation</th></tr></thead><tbody>
-<tr><td><strong>Race Time</strong></td><td>Clock duration from start to finish line.</td><td>Simple, objective, directly comparable on identical courses on the same day.</td><td>Ignores biological aging; disadvantages older runners and female runners in open fields.</td></tr>
-<tr><td><strong>Pace (min/km or min/mi)</strong></td><td>Average rate of travel per unit distance.</td><td>Helpful for in-race pacing strategies and split monitoring.</td><td>Does not account for terrain difficulty, age, or physiological degradation.</td></tr>
-<tr><td><strong>Age Grade (%)</strong></td><td>Performance ratio relative to an age-and-sex-adjusted world standard.</td><td>Enables fair comparison between runners of different ages, sexes, and race distances.</td><td>Depends on the statistical accuracy and version of the underlying reference tables.</td></tr>
-<tr><td><strong>Age-Graded Time</strong></td><td>Theoretical equivalent time if run by an open-class athlete in their prime.</td><td>Shows what a masters time would equate to in an open-division field.</td><td>Abstract theoretical concept rather than a real recorded clock time.</td></tr>
-</tbody></table></div>
+<!-- SECTION 7: MASTERS RUNNERS & WMA PERFORMANCE CURVES (WHITE BACKGROUND) -->
+<section class="section-flow bg-white" id="masters"><div class="container"><div class="visual-heading centered"><span class="kicker">Athletic Longevity</span><h2>Age Grading for Masters Runners</h2><p>Why age grading is the premier performance metric for runners aged 35, 40, 50, 60, and beyond.</p></div>
+
+<div class="editorial-prose">
+  <p class="editorial-lead">Starting in a runner's 30s, maximum oxygen uptake ($\text{VO}_2\text{ max}$) declines by approximately 0.5% to 1.0% per year. Connective tissues lose elasticity, and maximum heart rate drops. Despite disciplined training, a 55-year-old simply cannot produce the raw clock times they clocked at age 25.</p>
+</div>
+
+<figure class="tool-featured-media" style="margin:28px auto;max-width:960px;">
+  <img src="../../assets/articles/how-is-age-grade-calculated/age-grade-reference-standards.svg" alt="WMA physiological decline curve and reference standards" width="1200" height="675" loading="lazy" decoding="async">
+  <figcaption style="padding:10px 16px;background:#f8fcfa;font-size:12.5px;color:#4a635a;border-top:1px solid #d3e5de;"><strong>WMA Physiological Deceleration Curves.</strong> How age factor coefficients model masters athletic decline across single-year intervals.</figcaption>
+</figure>
+
+<div class="editorial-prose">
+  <div class="coach-note coach-note-coral"><div class="note-head"><span class="note-pin">⚡</span><span class="note-tag">Biological Longevity Rule</span></div><p class="note-quote">“Many runners find that while their marathon times slow from 3:15 to 3:35 between age 30 and age 55, their age grade actually increases from 64% to 73%, proving their conditioning is outperforming standard biological decay curves!”</p></div>
+</div>
+
 </div></section>
 
-<section class="section" id="terminology"><div class="container visual-split"><div><span class="kicker">Terminology Clarification</span><h2>Age Grade vs Age Grading: What's the Difference?</h2><p>In athletics and running literature, you will frequently see both terms used interchangeably. However, they represent two parts of the same framework:</p>
-<ul style="font-size:14.5px;line-height:1.7;color:var(--ink-2);margin:14px 0">
-<li><strong>Age Grading:</strong> Refers to the statistical <em>methodology and process</em>—the mathematical system of compiling world records, calculating age factors, and scaling times.</li>
-<li><strong>Age Grade:</strong> Refers to the specific <em>output percentage or score</em> achieved by an individual in a given race (e.g. <em>"My age grade was 72.4%"</em>).</li>
-</ul>
-<p style="font-size:13.5px;color:var(--ink-2)">Whether you search for an <em>Age Grade Calculator</em> or an <em>Age Grading Calculator</em>, you are looking for the same computational engine. This unified tool combines the methodology and the result in one transparent interface.</p>
-</div><div class="audience-grid" style="align-content:center"><article class="audience-card" style="border-top:4px solid #12784a"><small style="font-weight:700;color:var(--brand);text-transform:uppercase;font-size:11px">Process</small><h3 style="margin:4px 0 8px">Age Grading</h3><p>The statistical tables, mathematical curves, and institutional factors published by World Masters Athletics and USATF.</p></article><article class="audience-card" style="border-top:4px solid #0284c7"><small style="font-weight:700;color:var(--run-blue);text-transform:uppercase;font-size:11px">Result</small><h3 style="margin:4px 0 8px">Age Grade (%)</h3><p>The personal performance score (e.g., 68.5%) calculated for your specific race distance, time, age, and sex.</p></article></div></div></section>
+<!-- SECTION 8: SUPPORTED EVENT DISTANCES (SOFT TINTED BACKGROUND) -->
+<section class="section-flow bg-tint-soft" id="distances"><div class="container"><div class="visual-heading centered"><span class="kicker">Supported Events</span><h2>Age Grading for Different Race Distances</h2><p>Why age-grading standards are strictly event-specific and cannot be applied with a single universal ratio.</p></div>
 
-<section class="section soft" id="masters"><div class="container"><div class="visual-heading"><span class="kicker">Athletic Longevity</span><h2>Age Grading for Masters Runners</h2><p>Why age grading is the definitive metric for runners aged 35, 40, 50, 60, and beyond.</p></div>
-<p style="font-size:14.5px;line-height:1.7;color:var(--ink-2)">Human physiology inevitably changes over time. Starting in a runner's late 20s or early 30s, maximum oxygen uptake ($\text{VO}_2\text{ max}$) declines by approximately 0.5% to 1.0% per year. Connective tissues lose elasticity, maximum heart rate drops, and natural muscle fiber composition shifts. Despite dedicated training, a 55-year-old simply cannot produce the raw clock times they ran at age 24.</p>
-<div class="coach-note coach-note-coral"><div class="note-head"><span class="note-pin">⚡</span><span class="note-tag">Biological Longevity Rule</span></div><p class="note-quote">“VO₂ max drops ~0.8% yearly after age 30. Age grading normalizes that natural decay curve so a 58-year-old runner can beat a 25-year-old on purely relative athletic performance!”</p></div>
-<p style="font-size:14.5px;line-height:1.7;color:var(--ink-2)">Age grading eliminates this frustration. By providing an objective age-scaled curve, masters runners can measure whether their physical conditioning is outperforming standard biological decay curves. Many runners find that while their marathon times slow from 3:10 to 3:30 between age 30 and age 55, their <strong>age grade actually increases from 65% to 75%</strong>, demonstrating superior relative fitness.</p>
-<div class="audience-grid">
-<div class="audience-card"><h3>Runner A: Younger Athlete</h3><p>Age: 25 | Sex: Male | 5K Time: 19:30<br><strong>Age Grade: 65.73%</strong> (Local Club Level)<br>Faster raw clock time, but lower relative age-adjusted performance.</p></div>
-<div class="audience-card"><h3>Runner B: Masters Athlete</h3><p>Age: 58 | Sex: Male | 5K Time: 21:15<br><strong>Age Grade: 73.85%</strong> (Regional Class)<br>Slower raw clock time, but significantly higher athletic achievement relative to age.</p></div>
+<div class="dist-persona-grid">
+  <div class="dist-persona-card">
+    <div class="dist-persona-head"><span class="dist-icon">🏃</span><span class="dist-name">5K Road</span></div>
+    <p>The international benchmark distance. Ideal for Parkrun and local club series.</p>
+    <span class="dist-tag">5,000m Road</span>
+  </div>
+  <div class="dist-persona-card">
+    <div class="dist-persona-head"><span class="dist-icon">⚡</span><span class="dist-name">10K Road</span></div>
+    <p>The quintessential test of sustained lactate threshold and pacing discipline.</p>
+    <span class="dist-tag">10,000m Road</span>
+  </div>
+  <div class="dist-persona-card">
+    <div class="dist-persona-head"><span class="dist-icon">🏅</span><span class="dist-name">Half Marathon</span></div>
+    <p>Long-distance endurance requiring glycogen management and aerobic efficiency.</p>
+    <span class="dist-tag">21.0975 km</span>
+  </div>
+  <div class="dist-persona-card">
+    <div class="dist-persona-head"><span class="dist-icon">🏆</span><span class="dist-name">Marathon</span></div>
+    <p>The premier endurance test where masters runners frequently excel against open fields.</p>
+    <span class="dist-tag">42.195 km</span>
+  </div>
+</div>
+
+<p style="text-align:center;font-size:13.5px;color:#4a635a;margin-top:14px;">Also supports 1 Mile Road, 5 Miles, 8K, 10 Miles, 15K, and 50K Ultramarathon based on certified 2025 WMA tables.</p>
+</div></section>
+
+<!-- SECTION 9: REAL RUNNER'S WORKED CALCULATION WORKSHEET (WHITE BACKGROUND) -->
+<section class="section-flow bg-white" id="worked-example"><div class="container"><div class="visual-heading centered"><span class="kicker">Verified Calculation</span><h2>Real Runner's Worked Calculation</h2><p>See exactly how our calculation engine applies the official 2025 WMA dataset to evaluate a real road performance.</p></div>
+
+<!-- HANDWRITTEN CALCULATION VISUAL B -->
+<figure class="tool-featured-media" style="margin:28px auto;max-width:960px;">
+  <img src="../../assets/articles/how-is-age-grade-calculated/age-grade-handwritten-notes.svg" alt="Sports scientist handwritten calculation worksheet for female age 50 5K runner" width="1200" height="675" loading="lazy" decoding="async">
+  <figcaption style="padding:10px 16px;background:#f8fcfa;font-size:12.5px;color:#4a635a;border-top:1px solid #d3e5de;"><strong>Visual B: Official Analyst Worksheet &amp; Arithmetic Breakdown.</strong> Worked calculation of an F50 runner clocking 25:00.0 (1,500s) on a 5K course yielding a verified 64.75% score.</figcaption>
+</figure>
+
+<div class="editorial-prose">
+  <div class="takeaway-banner">
+    <strong>Open-Senior Equivalence</strong>
+    <p>This 50-year-old female runner's 25:00 5K is mathematically equivalent to an open-division 25-year-old running an elite club-standard <strong>21:47</strong>!</p>
+  </div>
 </div>
 </div></section>
 
-<section class="section" id="distances"><div class="container"><div class="visual-heading"><span class="kicker">Supported Events</span><h2>Age Grading for Different Race Distances</h2><p>Why age-grading standards are strictly event-specific and cannot be applied with a single universal ratio.</p></div>
-<p style="font-size:14.5px;line-height:1.7;color:var(--ink-2)">Aerobic endurance and anaerobic sprint capacity decay at differing rates across a lifespan. Older runners typically maintain aerobic endurance efficiency longer than explosive fast-twitch muscular power. Consequently, World Masters Athletics develops independent age curves and open-record baselines for each certified distance:</p>
-<div class="dist-grid">
-<div class="dist-card"><strong>5K (5,000m)</strong><span>The international benchmark road distance. Used widely in Parkrun and local club series.</span><small>WMA 2025 Road Standard</small></div>
-<div class="dist-card"><strong>10K (10,000m)</strong><span>The quintessential test of sustained lactate threshold and pacing discipline.</span><small>WMA 2025 Road Standard</small></div>
-<div class="dist-card"><strong>Half Marathon (21.1 km)</strong><span>Long-distance endurance event requiring glycogen management and aerobic efficiency.</span><small>WMA 2025 Road Standard</small></div>
-<div class="dist-card"><strong>Marathon (42.2 km)</strong><span>The premier endurance test where masters runners frequently excel against open fields.</span><small>WMA 2025 Road Standard</small></div>
-<div class="dist-card"><strong>1 Mile Road</strong><span>High-intensity aerobic power test measuring maximum speed endurance.</span><small>WMA 2025 Road Standard</small></div>
-<div class="dist-card"><strong>5 Miles &amp; 8K</strong><span>Classic traditional road racing distances across the UK and North America.</span><small>WMA 2025 Road Standard</small></div>
-<div class="dist-card"><strong>10 Miles &amp; 15K</strong><span>Bridge distances between 10K and Half Marathon popular in autumn race calendars.</span><small>WMA 2025 Road Standard</small></div>
-<div class="dist-card"><strong>50K Ultramarathon</strong><span>Ultra-distance road standard testing muscular fatigue resistance and nutrition pacing.</span><small>WMA 2025 Road Standard</small></div>
+<!-- SECTION 10: WHO CAN USE IT (LARGE EDITORIAL SECTION, SOFT TINT BACKGROUND) -->
+<section class="section-flow bg-tint-alt" id="audience"><div class="container"><div class="visual-heading centered"><span class="kicker">Audience Ecosystem</span><h2>Who Can Use an Age Grading Calculator?</h2><p>Age grading serves diverse roles across the competitive and recreational athletics community.</p></div>
+
+<div class="editorial-audience-panel" style="max-width:960px;margin:24px auto;">
+  <div class="editorial-audience-grid">
+    <div class="audience-item">
+      <span class="audience-item-icon">🏅</span>
+      <div class="audience-item-body">
+        <h4>Masters &amp; Veteran Runners</h4>
+        <p>Track personal fitness year-over-year without frustration from natural chronological decline.</p>
+      </div>
+    </div>
+    <div class="audience-item">
+      <span class="audience-item-icon">🌳</span>
+      <div class="audience-item-body">
+        <h4>Parkrun &amp; 5K Community Runners</h4>
+        <p>Contextualize Saturday morning 5K times against objective benchmarks rather than raw open results.</p>
+      </div>
+    </div>
+    <div class="audience-item">
+      <span class="audience-item-icon">👥</span>
+      <div class="audience-item-body">
+        <h4>Running Clubs &amp; Leagues</h4>
+        <p>Award annual club championships and handicap trophies fairly across mixed-gender and multi-age rosters.</p>
+      </div>
+    </div>
+    <div class="audience-item">
+      <span class="audience-item-icon">⏱️</span>
+      <div class="audience-item-body">
+        <h4>Athletic Coaches &amp; Trainers</h4>
+        <p>Identify athlete strengths and training opportunities across 5K, 10K, and Half Marathon trials.</p>
+      </div>
+    </div>
+  </div>
 </div>
 </div></section>
 
-<section class="section soft" id="example"><div class="container"><div class="visual-heading"><span class="kicker">Worked Example</span><h2>Verified Age Grading Example Calculation</h2><p>See exactly how our calculation engine applies the official 2025 WMA dataset to evaluate a real road performance.</p></div>
-<div class="worked-example-box">
-<h3>Runner Scenario: Male, Age 50 running a 10K in 42:00</h3>
-<p style="margin-bottom:12px;font-size:14px;color:var(--ink-2)">Let's calculate the age grade for a 50-year-old male completing a certified 10K road race in exactly 42 minutes (2,520 seconds):</p>
-<div class="worked-example-grid">
-<div class="example-stat"><small>Event &amp; Distance</small><strong>10K Road (10,000 meters)</strong></div>
-<div class="example-stat"><small>Runner Demographic</small><strong>Male, Age 50</strong></div>
-<div class="example-stat"><small>Open World Standard (Men)</small><strong>26:24 (1,584 seconds)</strong></div>
-<div class="example-stat"><small>2025 WMA Age Factor (M50)</small><strong>0.8886</strong></div>
-<div class="example-stat"><small>Age-Graded Reference Standard</small><strong>29:43 (1,782.6 seconds)</strong></div>
-<div class="example-stat"><small>Runner Finish Time</small><strong>42:00 (2,520 seconds)</strong></div>
-<div class="example-stat" style="grid-column:1/-1;background:#042f2a;color:#fff"><small style="color:#9fe7bd">Resulting Age Grade Calculation</small><strong style="font-size:17px;color:#fff">Age Grade = (1,584 ÷ [2,520 × 0.8886]) × 100 = 70.74% (Regional Class)</strong></div>
-</div>
-</div>
-</div></section>
+<!-- SECTION 11: LIMITATIONS (WHITE BACKGROUND) -->
+<section class="section-flow bg-white" id="limitations"><div class="container"><div class="visual-heading centered"><span class="kicker">Important Disclaimers</span><h2>Limitations of Age Grading</h2><p>While age grading is an invaluable sports-science tool, it has distinct boundaries that runners should understand.</p></div>
 
-<section class="section" id="audience"><div class="container"><div class="visual-heading"><span class="kicker">Who It's For</span><h2>Who Can Use an Age Grading Calculator?</h2><p>Age grading serves diverse roles across the athletic ecosystem.</p></div>
-<div class="audience-grid">
-<div class="audience-card"><h3>Masters Runners</h3><p>Compare personal progress year-over-year without discouragement from inevitable chronological slowdown.</p></div>
-<div class="audience-card"><h3>Recreational Runners</h3><p>Contextualize weekend 5K Parkrun or 10K times against objective statistical benchmarks rather than raw open results.</p></div>
-<div class="audience-card"><h3>Race Participants</h3><p>Evaluate personal performances across varied race distances to see whether you excel at 5K or Marathon.</p></div>
-<div class="audience-card"><h3>Running Clubs</h3><p>Award annual club championships and handicap trophies fairly across mixed-gender and multi-generational rosters.</p></div>
-<div class="audience-card"><h3>Athletic Coaches</h3><p>Identify training strengths and weaknesses by comparing athlete age grades across 5K, 10K, and Half Marathon tests.</p></div>
+<div class="editorial-prose">
+  <div class="limit-hero-statement">
+    <h3>Weather, Course Elevation &amp; Terrain Matter</h3>
+    <p>WMA standards assume a certified, flat, sea-level asphalt course in cool conditions. If you raced in 28°C summer heat, high humidity, heavy head-winds, or over a hilly trail, your true physiological effort is easily 3% to 6% higher than your raw score indicates!</p>
+  </div>
+</div>
+
+<div class="limitations-list" style="max-width:880px;margin:24px auto;">
+  <div class="limit-card"><h4>✕ Elevation &amp; Course Terrain</h4><p>Hilly courses yield slower times and lower percentages, reflecting hill difficulty rather than runner fitness.</p></div>
+  <div class="limit-card"><h4>✕ Weather &amp; Temperature Extremes</h4><p>Extreme heat, humidity, or head-winds significantly impede times without algorithmic adjustments.</p></div>
+  <div class="limit-card"><h4>✕ Not a Clinical Health Metric</h4><p>An age grade measures race finish speed, not blood pressure, cardiovascular health, or general longevity.</p></div>
+  <div class="limit-card"><h4>✕ Table Version Differences</h4><p>Calculators using older 2015 or 2020 tables will show minor differences compared to 2025 WMA standards.</p></div>
 </div>
 </div></section>
 
-<section class="section soft" id="limitations"><div class="container"><div class="visual-heading"><span class="kicker">Important Disclaimers</span><h2>Limitations of Age Grading</h2><p>While age grading is an invaluable sports-science tool, it has distinct boundaries that runners should understand.</p></div>
-<div class="coach-note coach-note-blue"><div class="note-head"><span class="note-pin">📝</span><span class="note-tag">Course &amp; Weather Notice</span></div><p class="note-quote">“WMA standard baselines assume a flat, paved asphalt road in cool conditions. If you raced in 28°C heat, heavy winds, or over steep trails, your true physiological fitness is easily 3%–6% higher than your raw score indicates!”</p></div>
-<div class="limitations-list">
-<div class="limit-card"><h4>✕ Elevation &amp; Course Terrain</h4><p>WMA standards assume a flat, paved, sea-level road course. A hilly trail race will yield a lower percentage that reflects terrain difficulty rather than runner fitness.</p></div>
-<div class="limit-card"><h4>✕ Weather &amp; Temperature Extremes</h4><p>High heat, humidity, head-winds, or freezing rain significantly impede race times. Age grading tables do not apply weather adjustments.</p></div>
-<div class="limit-card"><h4>✕ Not a Clinical Medical Assessment</h4><p>An age grade reflects clock performance in a race, not cardiovascular health, blood pressure, or general biological vitality.</p></div>
-<div class="limit-card"><h4>✕ Table Version Differences</h4><p>Different timing systems may use 2015, 2020, or 2025 tables. Small percentage variations between calculators reflect different dataset revisions.</p></div>
-<div class="limit-card"><h4>✕ Statistical Outliers at Extreme Ages</h4><p>For youth runners under 10 or masters runners over 85, sample sizes of elite performances are smaller, making curves subject to wider variation.</p></div>
-<div class="limit-card"><h4>✕ Not an Official Championship Ranking</h4><p>Age grading provides comparison scores; official championship placings are determined by physical finishing order according to race rules.</p></div>
+<!-- SECTION 12: RELATED CALCULATORS (SOFT TINTED BACKGROUND) -->
+<section class="section-flow bg-tint-soft" id="related-calcs"><div class="container"><div class="visual-heading centered"><span class="kicker">Explore More</span><h2>Related Calculators &amp; Guides</h2><p>Explore complementary biological, date, and milestone tools across Age Calculator Lab.</p></div>
+<div class="dist-persona-grid" style="max-width:960px;margin:24px auto;">
+  <a class="dist-persona-card" href="../../" style="text-decoration:none;">
+    <div class="dist-persona-head"><span class="dist-icon">🎂</span><span class="dist-name">Age Calculator</span></div>
+    <p>Calculate your exact chronological age in years, months, and days from birth date.</p>
+    <span class="dist-tag">Calculate age →</span>
+  </a>
+  <a class="dist-persona-card" href="../chronological-age-calculator/" style="text-decoration:none;">
+    <div class="dist-persona-head"><span class="dist-icon">📅</span><span class="dist-name">Chronological Age</span></div>
+    <p>Verify exact calendar age intervals down to midnights crossed.</p>
+    <span class="dist-tag">Check calendar →</span>
+  </a>
+  <a class="dist-persona-card" href="../age-difference-calculator/" style="text-decoration:none;">
+    <div class="dist-persona-head"><span class="dist-icon">👥</span><span class="dist-name">Age Difference</span></div>
+    <p>Compare the precise age difference between two people or birth dates.</p>
+    <span class="dist-tag">Compare dates →</span>
+  </a>
+  <a class="dist-persona-card" href="../../articles/what-is-age-grading-in-running/" style="text-decoration:none;">
+    <div class="dist-persona-head"><span class="dist-icon">📖</span><span class="dist-name">Age Grading Guide</span></div>
+    <p>Complete sports-science guide to age-grading standards, percentages, and WMA rules.</p>
+    <span class="dist-tag">Read guide →</span>
+  </a>
 </div>
 </div></section>
 
-<section class="section" id="related-calcs"><div class="container paired-section"><div class="sticky-cell"><div class="kicker">Explore more</div><h2>Related calculators</h2><p>Explore complementary age, date, and milestone tools across Age Calculator Lab.</p></div><div class="content-cell"><div class="related-grid">
-<a class="related-card" href="../../"><small>Universal Chronology</small><h3>Age Calculator</h3><p>Calculate your exact chronological age in years, months, and days.</p></a>
-<a class="related-card" href="../age-difference-calculator/"><small>Universal Chronology</small><h3>Age Difference Calculator</h3><p>Compare the precise age difference between two people.</p></a>
-<a class="related-card" href="../age-on-date-calculator/"><small>Universal Chronology</small><h3>Age on Date Calculator</h3><p>Calculate your exact age on any past or future calendar date.</p></a>
-<a class="related-card" href="../age-in-days-calculator/"><small>Universal Chronology</small><h3>Age in Days Calculator</h3><p>Convert your chronological lifespan into total elapsed days.</p></a>
-<a class="related-card" href="../chronological-age-calculator/"><small>Universal Chronology</small><h3>Chronological Age Calculator</h3><p>Verify exact calendar age intervals down to the day.</p></a>
-<a class="related-card" href="../pensionable-age-calculator/"><small>Finance &amp; Professional</small><h3>Pensionable Age Calculator</h3><p>Calculate your UK State Pension age and date by birth date.</p></a>
-</div></div></div></section>
-
-<section class="section soft" id="faq"><div class="container paired-section"><div class="sticky-cell"><div class="kicker">Common questions</div><h2>Frequently Asked Questions</h2><p>Answers about age grading methodology, WMA tables, performance bands, and interpretation.</p></div><div class="content-cell faq">
-<details><summary>What is an age grading calculator?</summary><p>An age grading calculator is an athletic performance tool that adjusts a runner's race time based on their age and sex. By comparing actual race times against statistical age-standard times established by World Masters Athletics (WMA) and USATF, the calculator produces an age-grade percentage score that enables fair comparisons across different generations and genders.</p></details>
-<details><summary>What is an age grade in running?</summary><p>An age grade is a percentage score that reflects your race finish time relative to the world-standard time for someone of your exact age and sex over the same distance. A score of 100% represents world-record level, 90%+ is world class, 80%+ is national class, 70%+ is regional class, and 60%+ indicates a competitive club runner.</p></details>
-<details><summary>How is age grade calculated?</summary><p>Under the official WMA/USATF methodology, age grade percentage is calculated as: Age Grade % = [Open Standard Time / (Your Actual Time × Age Factor)] × 100. Equivalently, it equals: (Age-Graded Reference Standard Time / Your Actual Time) × 100.</p></details>
-<details><summary>What does a 70% age grade mean?</summary><p>A 70% age grade represents a Regional Class performance according to widely recognized athletic standards. It indicates that you are running at approximately 70% of the theoretical world-standard pace for your age and sex, placing you well above average among competitive club and recreational runners.</p></details>
-<details><summary>What is a good age grade?</summary><p>A score between 60% and 69% is considered a solid local club performance. Scores between 70% and 79% represent regional competitive standards, 80% to 89% represent national-caliber racing, and 90%+ represents world-class performance. Most first-time or casual recreational runners achieve between 45% and 58%.</p></details>
-<details><summary>Does age grading work for 5K races?</summary><p>Yes. 5K (5,000m road) is one of the most widely analyzed distances in the WMA tables and is the benchmark distance used by global running events such as Parkrun. The WMA tables contain dedicated single-age standards for ages 5 through 99.</p></details>
-<details><summary>Does age grading work for marathons?</summary><p>Yes. The 2025 WMA and USATF road-running standards include full single-year age factors for the full marathon (42.195 km). It allows masters marathoners to evaluate their performance against open world standards and masters age records.</p></details>
-<details><summary>Is age grading the same as pace?</summary><p>No. Pace measures raw speed per unit distance (e.g. minutes per kilometer or minutes per mile) without considering who is running. Age grade is an age-and-sex-adjusted percentage that contextualizes that pace against biological benchmarks for your demographic.</p></details>
-<details><summary>Is age grading useful for masters runners?</summary><p>Yes. Age grading is the premier tool for masters runners (typically defined as runners aged 35 or 40 and older). As biological aging gradually reduces maximum aerobic capacity (VO2 max) and muscle elasticity, age grading allows runners to track personal progress, evaluate consistency, and compete fairly with younger athletes.</p></details>
-<details><summary>Can men and women have different age grades for the same race time?</summary><p>Yes. Because men and women have distinct biological and physiological benchmarks and separate world records across all distances, the WMA standards maintain independent reference times and age factors for males and females.</p></details>
-<details><summary>Why can age grade results vary between calculators?</summary><p>Variations occur because different calculators use different editions of the standards (e.g. WAVA 1994, WMA 2006, WMA 2015, WMA 2020, or 2025 USATF/WMA tables). When world records improve or masters performance curves are recalibrated by statisticians, standards update. Age Calculator Lab uses the latest verified 2025 USATF/WMA Road Age-Grade Tables.</p></details>
-<details><summary>Is an age grade a measure of fitness or medical health?</summary><p>No. Age grading is purely a statistical sports-performance metric comparing race finish times. It does not measure clinical cardiovascular health, metabolic fitness, or body composition, and should not be used as a medical diagnosis.</p></details>
+<!-- SECTION 13: 2-COLUMN DESKTOP FAQ (WHITE BACKGROUND, ZERO WASTED SPACE) -->
+<section class="section-flow bg-white" id="faq"><div class="container"><div class="faq-two-col">
+  <div class="faq-left">
+    <span class="kicker">Common questions</span>
+    <h2>Frequently Asked Questions</h2>
+    <p>Clear, direct answers about running age grade calculation, 2025 WMA factor tables, performance bands, and race pacing.</p>
+    <div style="background:#f8fcfa;border:1px solid #d3e5de;border-radius:12px;padding:16px 20px;">
+      <h4 style="margin:0 0 6px;font-size:14px;color:#075433;">Need a deeper breakdown?</h4>
+      <p style="margin:0;font-size:13px;color:#4a635a;">Explore our full editorial analysis: <a href="../../articles/how-is-age-grade-calculated/" style="color:#075433;font-weight:700;">How Is Age Grade Calculated? →</a></p>
+    </div>
+  </div>
+  <div class="faq-accordions">
+    <details class="faq-box" open><summary>What is an age grading calculator?</summary><div class="faq-box-content"><p>An age grading calculator is an athletic performance tool that adjusts a runner's race time based on their age and sex. By comparing actual race times against statistical age-standard times established by World Masters Athletics (WMA) and USATF, the calculator produces an age-grade percentage score that enables fair comparisons across different generations and genders.</p></div></details>
+    <details class="faq-box"><summary>What is an age grade in running?</summary><div class="faq-box-content"><p>An age grade is a percentage score that reflects your race finish time relative to the world-standard time for someone of your exact age and sex over the same distance. A score of 100% represents world-record level, 90%+ is world class, 80%+ is national class, 70%+ is regional class, and 60%+ indicates a competitive club runner.</p></div></details>
+    <details class="faq-box"><summary>How is age grade calculated?</summary><div class="faq-box-content"><p>Under the official WMA/USATF methodology, age grade percentage is calculated as: <code>Age Grade % = [Open Standard Time / (Your Actual Time × Age Factor)] × 100</code>. Equivalently, it equals: <code>(Age-Graded Reference Standard Time / Your Actual Time) × 100</code>.</p></div></details>
+    <details class="faq-box"><summary>What does a 70% age grade mean?</summary><div class="faq-box-content"><p>A 70% age grade represents a Regional Class performance according to widely recognized athletic standards. It indicates that you are running at approximately 70% of the theoretical world-standard pace for your age and sex, placing you well above average among competitive club and recreational runners.</p></div></details>
+    <details class="faq-box"><summary>What is a good age grade?</summary><div class="faq-box-content"><p>A score between 60% and 69% is considered a solid local club performance. Scores between 70% and 79% represent regional competitive standards, 80% to 89% represent national-caliber racing, and 90%+ represents world-class performance. Most first-time or casual recreational runners achieve between 45% and 58%.</p></div></details>
+    <details class="faq-box"><summary>Does age grading work for 5K and Marathons?</summary><div class="faq-box-content"><p>Yes. The 2025 WMA standards include full single-year age factors for certified 5K road races, 10K races, Half Marathons (21.1 km), and full Marathons (42.195 km) for ages 5 through 99.</p></div></details>
+    <details class="faq-box"><summary>Why can age grade results vary between calculators?</summary><div class="faq-box-content"><p>Variations occur because different calculators use different editions of the standards (e.g. WAVA 1994, WMA 2006, WMA 2015, WMA 2020, or 2025 USATF/WMA tables). When world records improve or masters performance curves are recalibrated by statisticians, standards update. Age Calculator Lab uses the latest verified 2025 USATF/WMA Road Age-Grade Tables.</p></div></details>
+    <details class="faq-box"><summary>Is an age grade a measure of fitness or medical health?</summary><div class="faq-box-content"><p>No. Age grading is purely a statistical sports-performance metric comparing race finish times. It does not measure clinical cardiovascular health, metabolic fitness, or body composition, and should not be used as a medical diagnosis.</p></div></details>
+  </div>
 </div></div></section>
 
-<section class="section" id="sources"><div class="container"><div class="visual-heading"><span class="kicker">Authoritative Reference</span><h2>Methodology &amp; Official Sources</h2><p>Transparency and mathematical verification are central to Age Calculator Lab.</p></div>
-<p style="font-size:14.5px;color:var(--ink-2);line-height:1.65">The calculation engine for this tool is derived strictly from the official <strong>2025 USATF Masters Long Distance Running (MLDR) / World Masters Athletics (WMA) Road Age-Grade Tables</strong>, compiled by Alan Lytton Jones and Tom Bernhard (approved January 2025). The underlying dataset is published under the Creative Commons CC0 1.0 Universal Public Domain Dedication.</p>
-<ul style="font-size:14px;color:var(--ink-2);line-height:1.65;margin:14px 0">
-<li><a href="https://github.com/AlanLyttonJones/Age-Grade-Tables" target="_blank" rel="noopener noreferrer">Alan Lytton Jones Age-Grade Tables Repository</a> — Official archival source for road-running age-grade standards and RunScore distribution files.</li>
-<li><a href="http://www.howardgrubb.co.uk/athletics/" target="_blank" rel="noopener noreferrer">Howard Grubb Athletics Performance Archives</a> — Co-creator and archivist for World Masters Athletics age-grading methodologies.</li>
-<li><a href="https://world-masters-athletics.org/" target="_blank" rel="noopener noreferrer">World Masters Athletics (WMA)</a> — The international governing body for masters track and field and road-running competition.</li>
-<li><a href="https://www.usatf.org/" target="_blank" rel="noopener noreferrer">USA Track &amp; Field (USATF) Masters LDR Committee</a> — Co-sanctioning body for road-running age-grading tables.</li>
-</ul>
-<div style="background:#f4f8f6;border:1px solid #c3e0ce;border-radius:10px;padding:12px 16px;font-size:13px;color:#075433"><strong>Data verification record:</strong> Version 2025.1. Verified September 2026. Data tables are maintained in client-side static JSON assets and audited for mathematical accuracy.</div>
-</div></section>
+<!-- SECTION 14: RESEARCH & METHODOLOGY PANEL (SOFT TINTED BACKGROUND) -->
+<section class="section-flow bg-tint-soft" id="sources"><div class="container"><div class="method-research-card">
+  <span class="kicker" style="color:#075433;">Authoritative Reference</span>
+  <h2 style="font-size:24px;color:#042f2a;margin:4px 0 10px;">Research &amp; Calculation Methodology</h2>
+  <p style="font-size:14px;color:#4a635a;line-height:1.6;margin:0;">The calculation engine for this tool is derived strictly from the official <strong>2025 USATF Masters Long Distance Running (MLDR) / World Masters Athletics (WMA) Road Age-Grade Tables</strong>, compiled by Alan Lytton Jones and Tom Bernhard (approved January 2025).</p>
+  
+  <div class="method-grid">
+    <div class="method-box">
+      <small>Reference Standard</small>
+      <strong>WMA / USATF Road</strong>
+    </div>
+    <div class="method-box">
+      <small>Dataset Edition</small>
+      <strong>2025.1 MLDR Tables</strong>
+    </div>
+    <div class="method-box">
+      <small>Calculation Method</small>
+      <strong>Single-Year Exact Factor</strong>
+    </div>
+    <div class="method-box">
+      <small>Verification Status</small>
+      <strong>Audited September 2026</strong>
+    </div>
+  </div>
 
-<section class="author-section" data-author-bio><div class="container"><div class="author-profile"><img loading="lazy" decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj, author at Age Calculator Lab"><div><span class="kicker">About the author</span><h2>Navjeet Kamboj</h2><p>Navjeet Kamboj is the author and editor of Age Calculator Lab. He specializes in chronological calculation engines, demographic date mathematics, and verified performance-grading algorithms. He builds client-side computational tools to deliver transparent, mathematically sound answers without advertising trackers or data harvesting.</p><div class="author-links"><a href="../../author/navjeet-kamboj/">Full author profile</a><a href="https://in.linkedin.com/in/navjeet-kamboj" rel="me noopener" target="_blank">LinkedIn ↗</a><a href="https://www.instagram.com/jeet_7.7/" rel="me noopener" target="_blank">Instagram ↗</a><a href="../../methodology/">Editorial methodology</a></div></div></div></div></section>
+  <div style="font-size:13px;color:#4a635a;line-height:1.6;border-top:1px solid #e5efea;padding-top:14px;margin-top:14px;">
+    <strong>Primary Archival Sources:</strong>
+    <a href="https://github.com/AlanLyttonJones/Age-Grade-Tables" target="_blank" rel="noopener noreferrer" style="color:#075433;margin-left:8px;">Alan Lytton Jones Repository ↗</a> · 
+    <a href="https://world-masters-athletics.org/" target="_blank" rel="noopener noreferrer" style="color:#075433;margin-left:8px;">World Masters Athletics (WMA) ↗</a> · 
+    <a href="https://www.usatf.org/" target="_blank" rel="noopener noreferrer" style="color:#075433;margin-left:8px;">USA Track &amp; Field (USATF) ↗</a>
+  </div>
+</div></div></section>
+
+<!-- SECTION 15: REVIEWED & METHODOLOGY / AUTHOR PANEL (WHITE BACKGROUND) -->
+<section class="section-flow bg-white" data-author-bio><div class="container"><div class="author-card" id="author"><img decoding="async" class="author-img" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="90" height="90" loading="lazy"><div class="author-body"><div class="author-name"><a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></div><div class="author-meta">Researcher &amp; Software Developer · Age Calculator Lab</div><div class="author-bio">Navjeet Kamboj specializes in calendar algorithms, athletic performance modeling, and demographic calculation standards. He develops and audits the verified scoring tools and technical methodologies published across Age Calculator Lab.</div><div class="author-links" style="margin-top:8px;font-size:12.5px;"><a href="../../author/navjeet-kamboj/">Full Profile</a> · <a href="https://in.linkedin.com/in/navjeet-kamboj" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="../../methodology/">Editorial Standards</a></div></div></div></div></section>
+
 </main>
 
-<footer class="footer"><div class="container"><div class="footer-grid footer-grid-rich"><div class="footer-brand-panel"><a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a><p>163 focused calculators and 108 practical guides for age, dates, milestones and planning. No registration required.</p><a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a></div><div><h3>Calculators</h3><a href="../../">Exact Age</a><a href="../../tools/chronological-age-calculator/">Chronological Age</a><a href="../../tools/age-grading-calculator/">Age Grading Calculator</a><a href="../../tools/pensionable-age-calculator/">Pensionable Age</a><a href="../../categories/">All categories</a></div><div class="footer-guides"><h3>Articles &amp; Guides</h3><a href="../../articles/what-is-pensionable-age/">What is pensionable age?</a><a href="../../articles/uk-state-pension-age-by-date-of-birth/">State pension age by DOB</a><a href="../../articles/when-can-i-get-state-pension/">When can I get State Pension?</a><a href="../../articles/can-i-retire-before-state-pension-age/">Can I retire early?</a><a href="../../articles/can-you-retire-at-60-uk/">Can you retire at 60?</a><a class="footer-guides-all" href="../../articles/">Browse all 108 guides →</a></div><div><h3>Explore</h3><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><a href="../../about/">About</a><a href="../../disclaimer/">Disclaimer</a></div><div><h3>Important</h3><a href="../../privacy/">Privacy</a><a href="../../terms/">Terms</a><a href="../../contact/">Contact</a><a href="../../sitemap.xml">Sitemap</a></div></div><div class="copyright"><span>© 2026 Age Calculator Lab.</span><span>Results are informational; verify athletic, medical, legal, and financial decisions with the responsible professional or authority.</span></div></div></footer>
+<!-- FLOATING STICKY CTA -->
+<a href="#calculator" class="sticky-calc-btn" id="stickyCalcBtn" aria-label="Jump to calculator">
+  <span>⚡ Calculate Age Grade</span>
+</a>
+
+<footer class="footer"><div class="container"><div class="footer-grid footer-grid-rich"><div class="footer-brand-panel"><a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a><p>Practical, verified calculators and guides for age, dates, milestones and planning. No registration required.</p><a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a></div><div><h3>Calculators</h3><a href="../../">Exact Age</a><a href="../../tools/chronological-age-calculator/">Chronological Age</a><a href="../../tools/age-grading-calculator/">Age Grading Calculator</a><a href="../../tools/pensionable-age-calculator/">Pensionable Age</a><a href="../../categories/">All categories</a></div><div class="footer-guides"><h3>Articles &amp; Guides</h3><a href="../../articles/what-is-age-grading-in-running/">What is age grading?</a><a href="../../articles/how-is-age-grade-calculated/">How age grade is calculated</a><a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a><a class="footer-guides-all" href="../../articles/">Browse all guides →</a></div><div><h3>Explore</h3><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><a href="../../about/">About</a><a href="../../disclaimer/">Disclaimer</a></div><div><h3>Important</h3><a href="../../privacy/">Privacy</a><a href="../../terms/">Terms</a><a href="../../contact/">Contact</a><a href="../../sitemap.xml">Sitemap</a></div></div><div class="copyright"><span>© 2026 Age Calculator Lab.</span><span>Results are informational; verify athletic, medical, legal, and financial decisions with the responsible professional or authority.</span></div></div></footer>
 <script>
 function applyPreset(age,sex,dist,h,m,s){
   var ageEl=document.getElementById('runnerAge');
@@ -323,6 +600,19 @@ function applyPreset(age,sex,dist,h,m,s){
   var form=document.getElementById('calcForm');
   if(form)form.dispatchEvent(new Event('submit',{cancelable:true,bubbles:true}));
 }
+
+// Sticky CTA trigger
+window.addEventListener('scroll', function(){
+  var calc = document.getElementById('calculator');
+  var btn = document.getElementById('stickyCalcBtn');
+  if(!calc || !btn) return;
+  var rect = calc.getBoundingClientRect();
+  if(rect.bottom < 0 || rect.top > window.innerHeight){
+    btn.style.display = 'flex';
+  } else {
+    btn.style.display = 'none';
+  }
+});
 </script>
 <script src="../../assets/data/wma-2025.js"></script>
 <script>window.CALC_CONFIG={"name":"Age Grading Calculator","slug":"age-grading-calculator","mode":"ageGrading","extra":{}};</script>
