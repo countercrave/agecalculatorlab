@@ -1167,3 +1167,173 @@ a.calc-cta-btn svg {
 .site-footer .footer-bottom{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:12px;color:rgba(211,229,222,.75);text-align:center}
 @media (max-width:820px){.site-footer .footer-grid{grid-template-columns:1fr 1fr;gap:24px}}
 @media (max-width:520px){.site-footer .footer-grid{grid-template-columns:1fr}}
+
+/* Category Filter Navigation & Pagination (Articles Directory) */
+.category-filter-nav {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.category-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--r-pill, 9999px);
+  border: 1px solid #D3E5DE;
+  background: var(--panel, #FFFFFF);
+  color: var(--ink, #042F2A);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 550;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+}
+.category-pill:hover {
+  background: #EBF5F0;
+  border-color: #075433;
+  color: #075433;
+}
+.category-pill.active {
+  background: #075433;
+  border-color: #075433;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(7, 84, 51, 0.22);
+}
+.category-pill .pill-count {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--r-pill, 9999px);
+  background: #EBF5F0;
+  color: #075433;
+  transition: all 0.18s ease;
+}
+.category-pill.active .pill-count {
+  background: rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+}
+
+/* Pagination */
+.pagination-wrap {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line, #E5EFEA);
+  width: 100%;
+}
+.pagination-info {
+  font-size: 0.9rem;
+  color: var(--muted, #4A635A);
+  font-weight: 550;
+}
+.pagination-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pagination-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  padding: 0 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #D3E5DE;
+  background: var(--panel, #FFFFFF);
+  color: var(--ink, #042F2A);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.pagination-btn:hover:not(:disabled) {
+  border-color: #075433;
+  background: #EBF5F0;
+  color: #075433;
+}
+.pagination-btn:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+  border-color: #E5EFEA;
+  background: var(--soft, #F8FCFA);
+}
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.pagination-page-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #D3E5DE;
+  background: var(--panel, #FFFFFF);
+  color: var(--ink, #042F2A);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.pagination-page-btn:hover:not(.active) {
+  background: #EBF5F0;
+  border-color: #075433;
+  color: #075433;
+}
+.pagination-page-btn.active {
+  background: #075433;
+  border-color: #075433;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(7, 84, 51, 0.25);
+}
+.pagination-ellipsis {
+  padding: 0 0.35rem;
+  color: var(--muted, #6C8279);
+  font-weight: 700;
+  user-select: none;
+}
+
+@media (max-width: 640px) {
+  .category-filter-pills {
+    gap: 0.375rem;
+  }
+  .category-pill {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+  .pagination-btn {
+    padding: 0 0.65rem;
+    font-size: 0.8125rem;
+    min-width: 2.25rem;
+    height: 2.25rem;
+  }
+  .pagination-page-btn {
+    min-width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.8125rem;
+  }
+}

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#F7FAF8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#042F2A" flood-opacity="0.08" />
+    </filter>
+    <linearGradient id="curveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#075433" />
+      <stop offset="60%" stop-color="#FF754D" />
+      <stop offset="100%" stop-color="#9FE7BD" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075433" />
+      <stop offset="100%" stop-color="#042F2A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Lines -->
+  <g opacity="0.3">
+    <line x1="80" y1="120" x2="1120" y2="120" stroke="#D3E5DE" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="80" y1="240" x2="1120" y2="240" stroke="#D3E5DE" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="80" y1="360" x2="1120" y2="360" stroke="#D3E5DE" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="80" y1="480" x2="1120" y2="480" stroke="#D3E5DE" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Title Badge & Header -->
+  <g transform="translate(80, 50)">
+    <rect x="0" y="0" width="220" height="30" rx="15" fill="#EBF5F0" />
+    <text x="110" y="20" font-size="12" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">EMPIRICAL BENCHMARKS</text>
+    <text x="0" y="72" font-size="28" font-weight="800" fill="#042F2A" letter-spacing="-0.5">WMA Physiological Decline Curve vs Race Standards</text>
+    <text x="0" y="98" font-size="15" fill="#4A635A">How mathematical factor tables model age-related deceleration across masters running cohorts</text>
+  </g>
+
+  <!-- Main Chart Canvas -->
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="720" height="420" rx="16" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5" filter="url(#boxShadow)" />
+
+    <!-- Chart Grid Lines -->
+    <g stroke="#E5EFEA" stroke-width="1">
+      <line x1="80" y1="60" x2="680" y2="60" />
+      <line x1="80" y1="130" x2="680" y2="130" />
+      <line x1="80" y1="200" x2="680" y2="200" />
+      <line x1="80" y1="270" x2="680" y2="270" />
+      <line x1="80" y1="340" x2="680" y2="340" />
+    </g>
+
+    <!-- Y-Axis Labels (Factor Coefficient) -->
+    <text x="65" y="65" font-size="12" font-weight="700" fill="#6C8279" text-anchor="end">1.0000</text>
+    <text x="65" y="135" font-size="12" font-weight="700" fill="#6C8279" text-anchor="end">0.9000</text>
+    <text x="65" y="205" font-size="12" font-weight="700" fill="#6C8279" text-anchor="end">0.8000</text>
+    <text x="65" y="275" font-size="12" font-weight="700" fill="#6C8279" text-anchor="end">0.7000</text>
+    <text x="65" y="345" font-size="12" font-weight="700" fill="#6C8279" text-anchor="end">0.6000</text>
+
+    <!-- X-Axis Labels (Runner Age) -->
+    <text x="110" y="375" font-size="13" font-weight="700" fill="#4A635A" text-anchor="middle">Age 25</text>
+    <text x="220" y="375" font-size="13" font-weight="700" fill="#4A635A" text-anchor="middle">Age 40</text>
+    <text x="330" y="375" font-size="13" font-weight="700" fill="#075433" text-anchor="middle">Age 50</text>
+    <text x="440" y="375" font-size="13" font-weight="700" fill="#4A635A" text-anchor="middle">Age 60</text>
+    <text x="550" y="375" font-size="13" font-weight="700" fill="#4A635A" text-anchor="middle">Age 70</text>
+    <text x="650" y="375" font-size="13" font-weight="700" fill="#4A635A" text-anchor="middle">Age 80</text>
+
+    <!-- The Curve Path -->
+    <path d="M 110,60 C 180,62 250,85 330,150 C 410,210 500,280 650,345" fill="none" stroke="url(#curveGradient)" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Age 50 Highlight Dot and Callout -->
+    <circle cx="330" cy="150" r="7" fill="#075433" stroke="#FFFFFF" stroke-width="3" />
+    <g transform="translate(345, 125)">
+      <rect x="0" y="0" width="150" height="38" rx="8" fill="#042F2A" />
+      <text x="12" y="24" font-size="12" font-weight="700" fill="#9FE7BD">F50 Factor: 0.8711</text>
+    </g>
+
+    <!-- Open Peak Highlight -->
+    <circle cx="110" cy="60" r="6" fill="#FF754D" stroke="#FFFFFF" stroke-width="2.5" />
+    <g transform="translate(125, 45)">
+      <rect x="0" y="0" width="135" height="32" rx="6" fill="#F4F8F6" stroke="#D3E5DE" />
+      <text x="10" y="21" font-size="11.5" font-weight="700" fill="#042F2A">Open Peak: 1.0000</text>
+    </g>
+
+    <!-- Legend at bottom inside chart -->
+    <g transform="translate(80, 395)">
+      <circle cx="10" cy="6" r="4" fill="#075433" />
+      <text x="24" y="10" font-size="12" font-weight="600" fill="#4A635A">WMA 2020 Standardized Physiological Deceleration Trajectory</text>
+    </g>
+  </g>
+
+  <!-- Right Side Column: Standard Classification Bands -->
+  <g transform="translate(830, 180)">
+    <rect x="0" y="0" width="290" height="420" rx="16" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5" filter="url(#boxShadow)" />
+    
+    <text x="24" y="38" font-size="13" font-weight="700" fill="#075433" letter-spacing="1">REFERENCE TIERS</text>
+    <text x="24" y="65" font-size="18" font-weight="800" fill="#042F2A">Performance Bands</text>
+    
+    <!-- Tier 1 -->
+    <g transform="translate(20, 85)">
+      <rect x="0" y="0" width="250" height="65" rx="8" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+      <text x="14" y="24" font-size="11" font-weight="800" fill="#075433">90% – 100%</text>
+      <text x="14" y="44" font-size="14" font-weight="800" fill="#042F2A">World Class</text>
+      <text x="14" y="58" font-size="11" fill="#4A635A">International championship level</text>
+    </g>
+
+    <!-- Tier 2 -->
+    <g transform="translate(20, 160)">
+      <rect x="0" y="0" width="250" height="65" rx="8" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+      <text x="14" y="24" font-size="11" font-weight="800" fill="#FF754D">80% – 89.9%</text>
+      <text x="14" y="44" font-size="14" font-weight="800" fill="#042F2A">National Class</text>
+      <text x="14" y="58" font-size="11" fill="#4A635A">Elite domestic / state standard</text>
+    </g>
+
+    <!-- Tier 3 -->
+    <g transform="translate(20, 235)">
+      <rect x="0" y="0" width="250" height="65" rx="8" fill="#EBF5F0" stroke="#9FE7BD" stroke-width="1.5" />
+      <text x="14" y="24" font-size="11" font-weight="800" fill="#075433">70% – 79.9%</text>
+      <text x="14" y="44" font-size="14" font-weight="800" fill="#075433">Regional / Club Standard</text>
+      <text x="14" y="58" font-size="11" fill="#4A635A">Competitive amateur club leader</text>
+    </g>
+
+    <!-- Tier 4 -->
+    <g transform="translate(20, 310)">
+      <rect x="0" y="0" width="250" height="65" rx="8" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+      <text x="14" y="24" font-size="11" font-weight="800" fill="#6C8279">60% – 69.9%</text>
+      <text x="14" y="44" font-size="14" font-weight="800" fill="#042F2A">Local Competitive</text>
+      <text x="14" y="58" font-size="11" fill="#4A635A">Above median field runner</text>
+    </g>
+
+    <text x="24" y="400" font-size="11.5" font-weight="600" fill="#6C8279">Based on WMA &amp; USATF Masters standards</text>
+  </g>
+</svg>
