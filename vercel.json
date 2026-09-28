@@ -50,7 +50,6 @@
       "destination": "/articles/ssc-cgl-dob-eligibility/",
       "permanent": true
     },
-
     {
       "source": "/tools/age-calculator/",
       "destination": "/",
@@ -161,7 +160,6 @@
       "destination": "/articles/age-in-korean/",
       "permanent": true
     },
-
     {
       "source": "/how-old-am-i-in-korean-age/",
       "destination": "/articles/how-old-am-i-in-korean-age/",
@@ -197,7 +195,6 @@
       "destination": "/articles/korean-age-system-change/",
       "permanent": true
     },
-
     {
       "source": "/korean-age/",
       "destination": "/articles/korean-age-explained/",
@@ -341,6 +338,11 @@
     {
       "source": "/how-many-days-have-i-worked/",
       "destination": "/articles/how-many-days-have-i-worked/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/can-you-retire-at-60-uk/",
+      "destination": "/articles/can-you-retire-at-60-uk/",
       "permanent": true
     }
   ],
