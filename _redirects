@@ -8,3 +8,6 @@
 /guides/:slug  /articles/:slug/  301
 /guides/:slug/  /articles/:slug/  301
 /guides/can-you-retire-at-60-uk/ /articles/can-you-retire-at-60-uk/ 301!
+/blog/:slug  /articles/:slug/  301
+/blog/:slug/  /articles/:slug/  301
+/blog/what-is-age-grading-in-running/ /articles/what-is-age-grading-in-running/ 301!

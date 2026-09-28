@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/blog/:slug*",
+      "destination": "/articles/:slug*",
+      "permanent": true
+    },
+    {
       "source": "/guides/:slug*",
       "destination": "/articles/:slug*",
       "permanent": true
