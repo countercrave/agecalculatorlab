@@ -133,6 +133,53 @@ function calc(){const c=window.CALC_CONFIG,v=vals(); try{
   }
   return;
  }
+ else if(c.mode==='ageGrading'){
+  const age=parseInt(v.runnerAge,10),sex=v.runnerSex,dist=v.raceDistance;
+  const h=parseInt(v.timeHours||0,10),m=parseInt(v.timeMinutes||0,10),s=parseFloat(v.timeSeconds||0);
+  if(isNaN(age)||age<5||age>99)throw Error('Please enter a runner age between 5 and 99.');
+  if(!sex||(sex!=='M'&&sex!=='F'))throw Error('Please select runner sex (Male or Female).');
+  const runnerSec=(h*3600)+(m*60)+s;
+  if(isNaN(runnerSec)||runnerSec<=0)throw Error('Please enter a valid race finish time greater than zero.');
+  const data=window.WMA_2025_DATA;
+  if(!data||!data.distances||!data.distances[dist])throw Error('Age grading data not available for the selected distance.');
+  const dInfo=data.distances[dist];
+  const openSec=dInfo.openStandard[sex];
+  const factor=dInfo.factors[sex][age];
+  if(!openSec||!factor)throw Error('Reference standard not available for age '+age+'.');
+  const ageStdSec=openSec/factor;
+  const ageGradePct=(openSec/(runnerSec*factor))*100;
+  let level='',badgeClass='recreational';
+  if(ageGradePct>=100){level='World Record Level (100%+)';badgeClass='record';}
+  else if(ageGradePct>=90){level='World Class (90.0%–99.9%)';badgeClass='world';}
+  else if(ageGradePct>=80){level='National Class (80.0%–89.9%)';badgeClass='national';}
+  else if(ageGradePct>=70){level='Regional Class (70.0%–79.9%)';badgeClass='regional';}
+  else if(ageGradePct>=60){level='Local Class / Club (60.0%–69.9%)';badgeClass='club';}
+  else {level='Recreational / Participant (<60.0%)';badgeClass='recreational';}
+  function fmtTime(sec){
+   const hrs=Math.floor(sec/3600),mins=Math.floor((sec%3600)/60),secs=Math.round(sec%60);
+   if(hrs>0)return hrs+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');
+   return mins+':'+String(secs).padStart(2,'0');
+  }
+  const paceKm=fmtTime(runnerSec/dInfo.distanceKm)+' /km';
+  const paceMi=fmtTime(runnerSec/(dInfo.distanceKm*0.621371))+' /mi';
+  const primaryTitle=`${ageGradePct.toFixed(2)}% · ${level.split(' ')[0]}`;
+  const metrics=[
+   ['Age grade score',`${ageGradePct.toFixed(2)}%`],
+   ['Performance level',level],
+   ['Your race time',fmtTime(runnerSec)],
+   ['Age-graded standard',fmtTime(ageStdSec)],
+   ['Open world standard',fmtTime(openSec)],
+   ['Age factor',factor.toFixed(4)],
+   ['Event distance',dInfo.label],
+   ['Average pace',`${paceKm} · ${paceMi}`],
+   ['Runner category',`${sex==='M'?'Male':'Female'}, age ${age}`],
+   ['Methodology',data.standardName]
+  ];
+  setResult(primaryTitle,metrics);
+  const badge=$('#perfBadge');
+  if(badge){badge.textContent=level;badge.className='perf-badge level-'+badgeClass;}
+  return;
+ }
  else if(c.mode==='age'||c.mode==='ageUnit'||c.mode==='ageUnits'){const a=parseDate(v.dob),b=parseDate(v.ref); if(!a||!b||b<a)throw Error('Please enter valid dates with the reference date on or after the birth date.'); const x=calendarDiff(a,b),td=daysBetween(a,b); if(c.mode==='age'){const bd=nextBirthday(a,b),toBirthday=daysBetween(b,bd);setResult(`${x.years} years, ${x.months} months, ${x.days} days`,[['Total days',td.toLocaleString()],['Whole weeks',Math.floor(td/7).toLocaleString()],['Next birthday',fmt(bd)],['Days until birthday',toBirthday.toLocaleString()],['Born on',a.toLocaleDateString(undefined,{weekday:'long',timeZone:'UTC'})]]);} else {let unit=c.extra.unit||'days',value;if(unit==='days')value=td; else if(unit==='weeks')value=(td/7).toFixed(2); else if(unit==='months')value=(x.years*12+x.months+(x.days/30.436875)).toFixed(2); else if(unit==='hours')value=td*24; else if(unit==='minutes')value=td*1440; else if(unit==='seconds')value=td*86400; else if(unit==='quarters')value=Math.floor((x.years*12+x.months)/3); else value=(td/365.2425).toFixed(4); setResult(`${Number(value).toLocaleString()} ${unit==='decimalYears'?'years':unit}`,[['Calendar age',`${x.years}y ${x.months}m ${x.days}d`],['Total days',td.toLocaleString()],['Whole weeks',Math.floor(td/7).toLocaleString()]]);}}
  else if(c.mode==='dateDiff'||c.mode==='service'){const a=parseDate(v.start),b=parseDate(v.end);if(!a||!b)throw Error('Enter both dates.');const x=calendarDiff(a,b),td=Math.abs(daysBetween(a,b));if(c.extra&&c.extra.emphasis==='weeks'){setResult(`${Math.floor(td/7).toLocaleString()} weeks, ${td%7} days`,[['Total days',td.toLocaleString()],['Calendar duration',`${Math.abs(x.years)}y ${Math.abs(x.months)}m ${Math.abs(x.days)}d`],['Approx. months',(td/30.436875).toFixed(2)],['Weekdays',countWeekdays(a,b,[0,6]).toLocaleString()]]);return}
  setResult(`${Math.abs(x.years)} years, ${Math.abs(x.months)} months, ${Math.abs(x.days)} days`,[['Total days',td.toLocaleString()],['Whole weeks',Math.floor(td/7).toLocaleString()],['Approx. months',(td/30.436875).toFixed(2)],['Approx. years',(td/365.2425).toFixed(3)]]);}
