@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#FDFCF9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B233A" flood-opacity="0.07" />
+    </filter>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B233A" />
+      <stop offset="100%" stop-color="#042F2A" />
+    </linearGradient>
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF754D" />
+      <stop offset="100%" stop-color="#E05730" />
+    </linearGradient>
+    <linearGradient id="mintBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF5F0" />
+      <stop offset="100%" stop-color="#D3E5DE" />
+    </linearGradient>
+    <linearGradient id="blueBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="100%" stop-color="#BAE6FD" />
+    </linearGradient>
+  </defs>
+
+  <!-- Editorial Background Blueprint Grid -->
+  <g opacity="0.35">
+    <line x1="60" y1="0" x2="60" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="1140" y1="0" x2="1140" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Header Category & Title -->
+  <rect x="80" y="52" width="230" height="30" rx="15" fill="url(#mintBadge)" />
+  <text x="195" y="72" font-size="11.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">SPORTS SCIENCE AUDIT</text>
+  <text x="80" y="118" font-size="27" font-weight="800" fill="#0B233A" letter-spacing="-0.5">Analyst Field Notes: Interpreting Age Grade %</text>
+  <text x="80" y="146" font-size="14.5" fill="#52796F">Practical case worksheet: Male • Age 55 • 10K Road Race (44:30 finish)</text>
+
+  <!-- Main Left Card: Official Race Audit Sheet -->
+  <g transform="translate(80, 172)">
+    <rect x="0" y="0" width="560" height="440" rx="16" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5" filter="url(#cardShadow)" />
+    
+    <!-- Top Clip Indicator -->
+    <rect x="210" y="-12" width="140" height="24" rx="6" fill="#0B233A" />
+    <circle cx="280" cy="0" r="4" fill="#9FE7BD" />
+
+    <!-- Sheet Header -->
+    <rect x="25" y="26" width="510" height="48" rx="8" fill="#F4F8F6" />
+    <text x="45" y="55" font-size="13.5" font-weight="700" fill="#075433">RACE TIME &amp; METRIC BREAKDOWN</text>
+    <text x="515" y="55" font-size="12.5" font-weight="600" fill="#52796F" text-anchor="end">BIB #5510 • WMA STANDARDS</text>
+
+    <!-- Row 1: Demographics -->
+    <g transform="translate(25, 90)">
+      <rect x="0" y="0" width="510" height="40" rx="6" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1" />
+      <text x="18" y="25" font-size="13" font-weight="600" fill="#52796F">Athlete Category</text>
+      <text x="492" y="25" font-size="13.5" font-weight="700" fill="#0B233A" text-anchor="end">Male • Age 55 (M55 Division)</text>
+    </g>
+
+    <!-- Row 2: Event -->
+    <g transform="translate(25, 138)">
+      <rect x="0" y="0" width="510" height="40" rx="6" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1" />
+      <text x="18" y="25" font-size="13" font-weight="600" fill="#52796F">Certified Event</text>
+      <text x="492" y="25" font-size="13.5" font-weight="700" fill="#0B233A" text-anchor="end">10 Kilometres (10,000m Road)</text>
+    </g>
+
+    <!-- Row 3: Recorded Time -->
+    <g transform="translate(25, 186)">
+      <rect x="0" y="0" width="510" height="40" rx="6" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1" />
+      <text x="18" y="25" font-size="13" font-weight="600" fill="#52796F">Official Finish Time</text>
+      <text x="492" y="25" font-size="14" font-weight="800" fill="#075433" text-anchor="end">44:30.0 (2,670.0 sec)</text>
+    </g>
+
+    <!-- Row 4: Open World Standard -->
+    <g transform="translate(25, 234)">
+      <rect x="0" y="0" width="510" height="40" rx="6" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1" />
+      <text x="18" y="25" font-size="13" font-weight="600" fill="#52796F">Open World Standard (10K)</text>
+      <text x="492" y="25" font-size="13.5" font-weight="700" fill="#0B233A" text-anchor="end">26:24.0 (1,584.0 sec)</text>
+    </g>
+
+    <!-- Row 5: WMA Factor & Age Standard -->
+    <g transform="translate(25, 282)">
+      <rect x="0" y="0" width="510" height="40" rx="6" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1" />
+      <text x="18" y="25" font-size="13" font-weight="600" fill="#52796F">WMA Factor → Age Standard</text>
+      <text x="492" y="25" font-size="13.5" font-weight="700" fill="#FF754D" text-anchor="end">0.8576 → 30:47.01 (1,847 sec)</text>
+    </g>
+
+    <!-- Result Banner Inside Card -->
+    <g transform="translate(25, 334)">
+      <rect x="0" y="0" width="510" height="52" rx="8" fill="#042F2A" />
+      <text x="20" y="32" font-size="13" font-weight="700" fill="#9FE7BD">CALCULATED AGE GRADE</text>
+      <text x="490" y="33" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="end">69.18% <tspan font-size="13" font-weight="600" fill="#9FE7BD">(Club Class)</tspan></text>
+    </g>
+
+    <!-- Verification Tagline -->
+    <g transform="translate(25, 404)">
+      <text x="5" y="14" font-size="12" font-weight="600" fill="#075433">✓ Open Senior Equivalent: 38:09.8 (2,289.8 seconds)</text>
+    </g>
+  </g>
+
+  <!-- Right Side Column: Interpretation & Handwritten Coaching Callouts -->
+  <g transform="translate(680, 172)">
+    <!-- Interpretation Spectrum Card -->
+    <rect x="0" y="0" width="440" height="210" rx="16" fill="url(#navyGrad)" filter="url(#cardShadow)" />
+    
+    <text x="28" y="34" font-size="12" font-weight="700" fill="#9FE7BD" letter-spacing="1">INTERPRETATION BENCHMARK</text>
+    <text x="28" y="60" font-size="17" font-weight="800" fill="#FFFFFF">Where Does 69.18% Sit?</text>
+    
+    <!-- Mini Tier List inside Card -->
+    <g transform="translate(28, 80)">
+      <!-- Tier 1 -->
+      <text x="0" y="16" font-size="12.5" font-weight="600" fill="#D3E5DE">50%–59%</text>
+      <text x="80" y="16" font-size="12.5" fill="#A3C2B6">Recreational / Amateur Pace</text>
+
+      <!-- Tier 2 Highlighted -->
+      <rect x="-8" y="28" width="395" height="30" rx="6" fill="rgba(159,231,189,0.15)" stroke="#9FE7BD" stroke-width="1.2" />
+      <text x="0" y="48" font-size="13" font-weight="800" fill="#9FE7BD">60%–69%</text>
+      <text x="80" y="48" font-size="13" font-weight="700" fill="#FFFFFF">Local Club / Solid Competitor ← [69.18%]</text>
+
+      <!-- Tier 3 -->
+      <text x="0" y="80" font-size="12.5" font-weight="600" fill="#D3E5DE">70%–79%</text>
+      <text x="80" y="80" font-size="12.5" fill="#A3C2B6">Regional Class / Podium Contender</text>
+
+      <!-- Tier 4 -->
+      <text x="0" y="104" font-size="12.5" font-weight="600" fill="#D3E5DE">80%–89%</text>
+      <text x="80" y="104" font-size="12.5" fill="#A3C2B6">National Class / Elite Masters</text>
+    </g>
+
+    <!-- Handwritten Analyst Sticky Note (Lower Right) -->
+    <g transform="translate(0, 230)">
+      <rect x="0" y="0" width="440" height="210" rx="14" fill="#FFFEF2" stroke="#FDE68A" stroke-width="1.5" filter="url(#cardShadow)" />
+      <!-- Left decorative border -->
+      <rect x="0" y="0" width="8" height="210" rx="4" fill="#F59E0B" />
+      
+      <g transform="translate(24, 22)">
+        <rect x="0" y="0" width="95" height="22" rx="4" fill="#0B233A" />
+        <text x="47" y="15" font-size="10.5" font-weight="700" fill="#9FE7BD" text-anchor="middle">FIELD INSIGHT</text>
+        <circle cx="112" cy="11" r="5" fill="#EF4444" />
+
+        <!-- Handwritten cursive text simulation -->
+        <text x="0" y="55" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#1E293B">“Don’t let clock times deceive you.</text>
+        <text x="0" y="82" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#1E293B">At 55, running 44:30 in the 10K yields an age grade of</text>
+        <text x="0" y="109" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#075433">69.18% — knocking right on the 70% Regional door.</text>
+        <text x="0" y="136" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#1E293B">To match that ratio, a 25-year-old would need to run 38:09!”</text>
+
+        <!-- Decorative underline arrow -->
+        <path d="M 0 152 Q 180 158 380 150" stroke="#FF754D" stroke-width="2.5" fill="none" stroke-linecap="round" />
+        <polygon points="380,147 388,150 380,154" fill="#FF754D" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#FDFCF9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="cardShadow3" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#0B233A" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#075433" />
+    </linearGradient>
+    <linearGradient id="mintBadge3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF5F0" />
+      <stop offset="100%" stop-color="#D3E5DE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Editorial Background Blueprint Grid -->
+  <g opacity="0.3">
+    <line x1="60" y1="0" x2="60" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="1140" y1="0" x2="1140" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Header Category & Title -->
+  <rect x="80" y="52" width="250" height="30" rx="15" fill="url(#mintBadge3)" />
+  <text x="205" y="72" font-size="11.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">MULTI-YEAR TRACKING</text>
+  <text x="80" y="118" font-size="28" font-weight="800" fill="#0B233A" letter-spacing="-0.5">Tracking Age Grade Over Time</text>
+  <text x="80" y="146" font-size="15" fill="#52796F">Case study: Why age grade is the superior longitudinal metric for aging runners</text>
+
+  <!-- Main Container -->
+  <g transform="translate(80, 172)">
+    <rect x="0" y="0" width="1040" height="440" rx="18" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5" filter="url(#cardShadow3)" />
+
+    <!-- Connecting Timeline Track Line Behind Cards -->
+    <path d="M 180 140 L 520 140 L 860 140" stroke="url(#timelineGrad)" stroke-width="6" stroke-linecap="round" stroke-dasharray="8 8" />
+
+    <!-- 3 Year Progression Cards -->
+    <!-- Card 1: 2024 (Age 52) -->
+    <g transform="translate(45, 40)">
+      <rect x="0" y="0" width="290" height="255" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" />
+      
+      <!-- Year Badge -->
+      <rect x="20" y="18" width="90" height="26" rx="6" fill="#0B233A" />
+      <text x="65" y="36" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">YEAR 2024</text>
+      <text x="270" y="36" font-size="13" font-weight="700" fill="#64748B" text-anchor="end">Age 52 • 10K</text>
+
+      <!-- Clock Time Display -->
+      <g transform="translate(20, 60)">
+        <text x="0" y="18" font-size="12" font-weight="600" fill="#64748B">Raw Stopwatch Time</text>
+        <text x="0" y="44" font-size="24" font-weight="800" fill="#0B233A">46:30 <tspan font-size="13" font-weight="500" fill="#64748B">(2,790s)</tspan></text>
+      </g>
+
+      <!-- Factor & Standard -->
+      <g transform="translate(20, 125)">
+        <text x="0" y="14" font-size="12" fill="#64748B">WMA Factor: <tspan font-weight="700" fill="#0B233A">0.8804</tspan></text>
+        <text x="0" y="32" font-size="12" fill="#64748B">Age Standard: <tspan font-weight="700" fill="#0B233A">29:59.2</tspan></text>
+      </g>
+
+      <!-- Result Score Banner -->
+      <g transform="translate(20, 180)">
+        <rect x="0" y="0" width="250" height="52" rx="8" fill="#E2E8F0" />
+        <text x="16" y="24" font-size="11" font-weight="700" fill="#475569">AGE GRADE RESULT</text>
+        <text x="16" y="44" font-size="18" font-weight="900" fill="#1E293B">64.49%</text>
+        <rect x="155" y="13" width="82" height="26" rx="13" fill="#FFFFFF" />
+        <text x="196" y="30" font-size="11" font-weight="700" fill="#3B82F6" text-anchor="middle">Club Level</text>
+      </g>
+    </g>
+
+    <!-- Card 2: 2025 (Age 53) -->
+    <g transform="translate(375, 40)">
+      <rect x="0" y="0" width="290" height="255" rx="14" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5" />
+      
+      <!-- Year Badge -->
+      <rect x="20" y="18" width="90" height="26" rx="6" fill="#075433" />
+      <text x="65" y="36" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">YEAR 2025</text>
+      <text x="270" y="36" font-size="13" font-weight="700" fill="#15803D" text-anchor="end">Age 53 • 10K</text>
+
+      <!-- Clock Time Display -->
+      <g transform="translate(20, 60)">
+        <text x="0" y="18" font-size="12" font-weight="600" fill="#52796F">Raw Stopwatch Time</text>
+        <text x="0" y="44" font-size="24" font-weight="800" fill="#075433">46:15 <tspan font-size="13" font-weight="500" fill="#52796F">(2,775s)</tspan></text>
+      </g>
+
+      <!-- Factor & Standard -->
+      <g transform="translate(20, 125)">
+        <text x="0" y="14" font-size="12" fill="#52796F">WMA Factor: <tspan font-weight="700" fill="#075433">0.8728</tspan></text>
+        <text x="0" y="32" font-size="12" fill="#52796F">Age Standard: <tspan font-weight="700" fill="#075433">30:14.9</tspan></text>
+      </g>
+
+      <!-- Result Score Banner -->
+      <g transform="translate(20, 180)">
+        <rect x="0" y="0" width="250" height="52" rx="8" fill="#DCFCE7" />
+        <text x="16" y="24" font-size="11" font-weight="700" fill="#166534">AGE GRADE RESULT</text>
+        <text x="16" y="44" font-size="18" font-weight="900" fill="#14532D">65.40% <tspan font-size="12" font-weight="700" fill="#16A34A">(+0.91%)</tspan></text>
+        <rect x="155" y="13" width="82" height="26" rx="13" fill="#FFFFFF" />
+        <text x="196" y="30" font-size="11" font-weight="700" fill="#16A34A" text-anchor="middle">Improving ↑</text>
+      </g>
+    </g>
+
+    <!-- Card 3: 2026 (Age 54) - The Crucial Paradox -->
+    <g transform="translate(705, 40)">
+      <rect x="0" y="0" width="290" height="255" rx="14" fill="#F4F9F6" stroke="#075433" stroke-width="2" />
+      
+      <!-- Year Badge -->
+      <rect x="20" y="18" width="90" height="26" rx="6" fill="#042F2A" />
+      <text x="65" y="36" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">YEAR 2026</text>
+      <text x="270" y="36" font-size="13" font-weight="700" fill="#075433" text-anchor="end">Age 54 • 10K</text>
+
+      <!-- Clock Time Display (Slower!) -->
+      <g transform="translate(20, 60)">
+        <text x="0" y="18" font-size="12" font-weight="600" fill="#52796F">Raw Stopwatch Time <tspan fill="#DC2626">(Slower)</tspan></text>
+        <text x="0" y="44" font-size="24" font-weight="800" fill="#042F2A">46:40 <tspan font-size="13" font-weight="500" fill="#52796F">(2,800s)</tspan></text>
+      </g>
+
+      <!-- Factor & Standard -->
+      <g transform="translate(20, 125)">
+        <text x="0" y="14" font-size="12" fill="#52796F">WMA Factor: <tspan font-weight="700" fill="#042F2A">0.8652</tspan></text>
+        <text x="0" y="32" font-size="12" fill="#52796F">Age Standard: <tspan font-weight="700" fill="#042F2A">30:30.8</tspan></text>
+      </g>
+
+      <!-- Result Score Banner (Higher Age Grade!) -->
+      <g transform="translate(20, 180)">
+        <rect x="0" y="0" width="250" height="52" rx="8" fill="#042F2A" />
+        <text x="16" y="24" font-size="11" font-weight="700" fill="#9FE7BD">AGE GRADE RESULT</text>
+        <text x="16" y="44" font-size="18" font-weight="900" fill="#9FE7BD">66.10% <tspan font-size="12" font-weight="700" fill="#34D399">(+0.70%)</tspan></text>
+        <rect x="155" y="13" width="82" height="26" rx="13" fill="#075433" />
+        <text x="196" y="30" font-size="11" font-weight="700" fill="#9FE7BD" text-anchor="middle">Highest %</text>
+      </g>
+    </g>
+
+    <!-- Bottom Takeaway Callout Box -->
+    <g transform="translate(45, 315)">
+      <rect x="0" y="0" width="950" height="98" rx="12" fill="#FFFEF2" stroke="#FDE68A" stroke-width="1.5" />
+      <rect x="0" y="0" width="8" height="98" rx="4" fill="#F59E0B" />
+      
+      <g transform="translate(26, 20)">
+        <text x="0" y="18" font-size="14" font-weight="800" fill="#92400E">THE AGE-GRADING PARADOX EXPLAINED:</text>
+        <text x="0" y="42" font-size="13" fill="#1E293B">In 2026, the runner ran <tspan font-weight="700" fill="#DC2626">25 seconds slower</tspan> than in 2025 (46:40 vs 46:15), yet their age grade <tspan font-weight="700" fill="#075433">increased from 65.40% to 66.10%</tspan>.</text>
+        <text x="0" y="64" font-size="13" fill="#1E293B">Why? The biological aging factor (decay curve) adjusted more than their clock slowdown, proving superior physiological maintenance.</text>
+      </g>
+    </g>
+  </g>
+</svg>

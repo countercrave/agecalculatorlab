@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#FDFCF9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="cardShadow2" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#0B233A" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="spectrumTrack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="25%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#075433" />
+      <stop offset="75%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FF754D" />
+    </linearGradient>
+    <linearGradient id="mintBadge2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF5F0" />
+      <stop offset="100%" stop-color="#D3E5DE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Editorial Background Blueprint Grid -->
+  <g opacity="0.3">
+    <line x1="60" y1="0" x2="60" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="1140" y1="0" x2="1140" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Header Category & Title -->
+  <rect x="80" y="52" width="240" height="30" rx="15" fill="url(#mintBadge2)" />
+  <text x="200" y="72" font-size="11.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">PERFORMANCE SPECTRUM</text>
+  <text x="80" y="118" font-size="28" font-weight="800" fill="#0B233A" letter-spacing="-0.5">The Running Age Grade Spectrum</text>
+  <text x="80" y="146" font-size="15" fill="#52796F">Standardized relative performance brackets across all certified racing distances</text>
+
+  <!-- Main Spectrum Visualization Container -->
+  <g transform="translate(80, 175)">
+    <!-- Container Card -->
+    <rect x="0" y="0" width="1040" height="435" rx="18" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5" filter="url(#cardShadow2)" />
+
+    <!-- Top Track Lane Curves (Decorative Background) -->
+    <g opacity="0.15">
+      <path d="M 50 180 C 300 120, 700 120, 990 180" stroke="#0B233A" stroke-width="16" fill="none" />
+      <path d="M 50 205 C 300 145, 700 145, 990 205" stroke="#0B233A" stroke-width="16" fill="none" />
+      <path d="M 50 230 C 300 170, 700 170, 990 230" stroke="#0B233A" stroke-width="16" fill="none" />
+    </g>
+
+    <!-- Spectrum Progression Bar -->
+    <g transform="translate(50, 45)">
+      <!-- Base Bar -->
+      <rect x="0" y="24" width="940" height="18" rx="9" fill="url(#spectrumTrack)" />
+      
+      <!-- Axis Tick Marks & Key Numbers -->
+      <!-- 50% Marker -->
+      <g transform="translate(50, 0)">
+        <line x1="0" y1="20" x2="0" y2="46" stroke="#FFFFFF" stroke-width="3" />
+        <circle cx="0" cy="33" r="10" fill="#3B82F6" stroke="#FFFFFF" stroke-width="3" />
+        <text x="0" y="10" font-size="14" font-weight="800" fill="#1D4ED8" text-anchor="middle">50%</text>
+        <text x="0" y="65" font-size="11.5" font-weight="700" fill="#52796F" text-anchor="middle">Recreational</text>
+      </g>
+
+      <!-- 60% Marker -->
+      <g transform="translate(260, 0)">
+        <line x1="0" y1="20" x2="0" y2="46" stroke="#FFFFFF" stroke-width="3" />
+        <circle cx="0" cy="33" r="10" fill="#10B981" stroke="#FFFFFF" stroke-width="3" />
+        <text x="0" y="10" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">60%</text>
+        <text x="0" y="65" font-size="11.5" font-weight="700" fill="#52796F" text-anchor="middle">Local / Club</text>
+      </g>
+
+      <!-- 70% Marker -->
+      <g transform="translate(480, 0)">
+        <line x1="0" y1="20" x2="0" y2="46" stroke="#FFFFFF" stroke-width="3" />
+        <circle cx="0" cy="33" r="10" fill="#075433" stroke="#FFFFFF" stroke-width="3" />
+        <text x="0" y="10" font-size="14" font-weight="800" fill="#075433" text-anchor="middle">70%</text>
+        <text x="0" y="65" font-size="11.5" font-weight="700" fill="#52796F" text-anchor="middle">Regional</text>
+      </g>
+
+      <!-- 80% Marker -->
+      <g transform="translate(700, 0)">
+        <line x1="0" y1="20" x2="0" y2="46" stroke="#FFFFFF" stroke-width="3" />
+        <circle cx="0" cy="33" r="10" fill="#F59E0B" stroke="#FFFFFF" stroke-width="3" />
+        <text x="0" y="10" font-size="14" font-weight="800" fill="#B45309" text-anchor="middle">80%</text>
+        <text x="0" y="65" font-size="11.5" font-weight="700" fill="#52796F" text-anchor="middle">National</text>
+      </g>
+
+      <!-- 90%+ Marker -->
+      <g transform="translate(890, 0)">
+        <line x1="0" y1="20" x2="0" y2="46" stroke="#FFFFFF" stroke-width="3" />
+        <circle cx="0" cy="33" r="10" fill="#FF754D" stroke="#FFFFFF" stroke-width="3" />
+        <text x="0" y="10" font-size="14" font-weight="800" fill="#E05730" text-anchor="middle">90%+</text>
+        <text x="0" y="65" font-size="11.5" font-weight="700" fill="#52796F" text-anchor="middle">World Class</text>
+      </g>
+    </g>
+
+    <!-- 5 Tier Interpretation Cards in a Row -->
+    <g transform="translate(30, 140)">
+      <!-- Tier 1: 50% -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="180" height="200" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
+        <rect x="14" y="14" width="70" height="24" rx="12" fill="#E0F2FE" />
+        <text x="49" y="30" font-size="11.5" font-weight="800" fill="#0369A1" text-anchor="middle">50%–59%</text>
+        <text x="14" y="62" font-size="14" font-weight="800" fill="#0B233A">Recreational</text>
+        <text x="14" y="86" font-size="12" fill="#475569" line-height="1.4">
+          <tspan x="14" dy="0">Solid amateur finish.</tspan>
+          <tspan x="14" dy="16">Demonstrates good</tspan>
+          <tspan x="14" dy="16">aerobic base &amp; race</tspan>
+          <tspan x="14" dy="16">completion fitness.</tspan>
+        </text>
+        <rect x="14" y="160" width="152" height="26" rx="6" fill="#FFFFFF" stroke="#CBD5E1" />
+        <text x="90" y="177" font-size="11" font-weight="600" fill="#64748B" text-anchor="middle">Middle of Pack</text>
+      </g>
+
+      <!-- Tier 2: 60% -->
+      <g transform="translate(198, 0)">
+        <rect x="0" y="0" width="180" height="200" rx="12" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1.5" />
+        <rect x="14" y="14" width="70" height="24" rx="12" fill="#DCFCE7" />
+        <text x="49" y="30" font-size="11.5" font-weight="800" fill="#15803D" text-anchor="middle">60%–69%</text>
+        <text x="14" y="62" font-size="14" font-weight="800" fill="#0B233A">Club Runner</text>
+        <text x="14" y="86" font-size="12" fill="#475569">
+          <tspan x="14" dy="0">Trained local runner.</tspan>
+          <tspan x="14" dy="16">Regular weekly mileage,</tspan>
+          <tspan x="14" dy="16">structured workouts &amp;</tspan>
+          <tspan x="14" dy="16">solid race pacing.</tspan>
+        </text>
+        <rect x="14" y="160" width="152" height="26" rx="6" fill="#FFFFFF" stroke="#BBF7D0" />
+        <text x="90" y="177" font-size="11" font-weight="700" fill="#166534" text-anchor="middle">Upper Half Finish</text>
+      </g>
+
+      <!-- Tier 3: 70% -->
+      <g transform="translate(396, 0)">
+        <rect x="0" y="0" width="180" height="200" rx="12" fill="#F4F9F6" stroke="#B7E3CA" stroke-width="1.5" />
+        <rect x="14" y="14" width="70" height="24" rx="12" fill="#EBF5F0" />
+        <text x="49" y="30" font-size="11.5" font-weight="800" fill="#075433" text-anchor="middle">70%–79%</text>
+        <text x="14" y="62" font-size="14" font-weight="800" fill="#075433">Regional Class</text>
+        <text x="14" y="86" font-size="12" fill="#475569">
+          <tspan x="14" dy="0">High competitive tier.</tspan>
+          <tspan x="14" dy="16">Frequent age-group</tspan>
+          <tspan x="14" dy="16">podium finisher in</tspan>
+          <tspan x="14" dy="16">local/regional races.</tspan>
+        </text>
+        <rect x="14" y="160" width="152" height="26" rx="6" fill="#075433" />
+        <text x="90" y="177" font-size="11" font-weight="700" fill="#9FE7BD" text-anchor="middle">Age-Group Podium</text>
+      </g>
+
+      <!-- Tier 4: 80% -->
+      <g transform="translate(594, 0)">
+        <rect x="0" y="0" width="180" height="200" rx="12" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1.5" />
+        <rect x="14" y="14" width="70" height="24" rx="12" fill="#FEF3C7" />
+        <text x="49" y="30" font-size="11.5" font-weight="800" fill="#B45309" text-anchor="middle">80%–89%</text>
+        <text x="14" y="62" font-size="14" font-weight="800" fill="#0B233A">National Class</text>
+        <text x="14" y="86" font-size="12" fill="#475569">
+          <tspan x="14" dy="0">Elite master standard.</tspan>
+          <tspan x="14" dy="16">Qualifies for major</tspan>
+          <tspan x="14" dy="16">championships; top</tspan>
+          <tspan x="14" dy="16">age-category rank.</tspan>
+        </text>
+        <rect x="14" y="160" width="152" height="26" rx="6" fill="#F59E0B" />
+        <text x="90" y="177" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Championship Level</text>
+      </g>
+
+      <!-- Tier 5: 90%+ -->
+      <g transform="translate(792, 0)">
+        <rect x="0" y="0" width="180" height="200" rx="12" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.5" />
+        <rect x="14" y="14" width="70" height="24" rx="12" fill="#FFEDD5" />
+        <text x="49" y="30" font-size="11.5" font-weight="800" fill="#C2410C" text-anchor="middle">90%–100%</text>
+        <text x="14" y="62" font-size="14" font-weight="800" fill="#0B233A">World Class</text>
+        <text x="14" y="86" font-size="12" fill="#475569">
+          <tspan x="14" dy="0">Demographic record</tspan>
+          <tspan x="14" dy="16">contender. Approaching</tspan>
+          <tspan x="14" dy="16">or matching all-time</tspan>
+          <tspan x="14" dy="16">world master marks.</tspan>
+        </text>
+        <rect x="14" y="160" width="152" height="26" rx="6" fill="#FF754D" />
+        <text x="90" y="177" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Demographic Elite</text>
+      </g>
+    </g>
+
+    <!-- Bottom Methodology Disclaimer Bar -->
+    <g transform="translate(30, 360)">
+      <rect x="0" y="0" width="980" height="50" rx="10" fill="#F8FCFA" stroke="#D3E5DE" />
+      <text x="24" y="30" font-size="12.5" font-weight="600" fill="#075433">💡 Note:</text>
+      <text x="75" y="30" font-size="12.5" fill="#4A635A">These percentage brackets are widely adopted interpretation guidelines across athletic bodies, not rigid medical cutoffs. Calculations reference WMA road standards.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#FDFCF9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="cardShadow4" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#0B233A" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="pbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="agGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075433" />
+      <stop offset="100%" stop-color="#042F2A" />
+    </linearGradient>
+    <linearGradient id="mintBadge4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF5F0" />
+      <stop offset="100%" stop-color="#D3E5DE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Editorial Background Blueprint Grid -->
+  <g opacity="0.3">
+    <line x1="60" y1="0" x2="60" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="1140" y1="0" x2="1140" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Header Category & Title -->
+  <rect x="80" y="52" width="260" height="30" rx="15" fill="url(#mintBadge4)" />
+  <text x="210" y="72" font-size="11.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">METRIC COMPARISON</text>
+  <text x="80" y="118" font-size="28" font-weight="800" fill="#0B233A" letter-spacing="-0.5">Personal Best (PB) vs. Age Grade</text>
+  <text x="80" y="146" font-size="15" fill="#52796F">Two distinct dimensions for measuring running progress across an athletic career</text>
+
+  <!-- Comparison Container -->
+  <g transform="translate(80, 175)">
+    <!-- Column A: Personal Best Card (Left) -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="500" height="340" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" filter="url(#cardShadow4)" />
+      
+      <!-- Card Header -->
+      <rect x="25" y="25" width="450" height="60" rx="10" fill="url(#pbGrad)" />
+      <circle cx="55" cy="55" r="16" fill="#334155" />
+      <text x="55" y="60" font-size="15" font-weight="800" fill="#F8FAFC" text-anchor="middle">⏱</text>
+      <text x="85" y="48" font-size="16" font-weight="800" fill="#FFFFFF">Personal Best (PB / PR)</text>
+      <text x="85" y="68" font-size="12" fill="#94A3B8">Raw Stopwatch Elapsed Time</text>
+
+      <!-- Key Characteristics -->
+      <g transform="translate(25, 105)">
+        <!-- Row 1 -->
+        <g transform="translate(0, 0)">
+          <text x="0" y="16" font-size="12.5" font-weight="700" fill="#64748B">CORE QUESTION</text>
+          <text x="0" y="34" font-size="14" font-weight="700" fill="#0F172A">“What is the fastest clock time I ever ran?”</text>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(0, 52)">
+          <text x="0" y="16" font-size="12.5" font-weight="700" fill="#64748B">MEASUREMENT TYPE</text>
+          <text x="0" y="34" font-size="13.5" fill="#334155">Absolute elapsed hours, minutes and seconds.</text>
+        </g>
+
+        <!-- Row 3 -->
+        <g transform="translate(0, 104)">
+          <text x="0" y="16" font-size="12.5" font-weight="700" fill="#64748B">LONGITUDINAL TRAJECTORY</text>
+          <text x="0" y="34" font-size="13.5" fill="#334155">Ceilings in early 30s; difficult to beat after 45+.</text>
+        </g>
+
+        <!-- Row 4 -->
+        <g transform="translate(0, 156)">
+          <text x="0" y="16" font-size="12.5" font-weight="700" fill="#64748B">PRIMARY MOTIVATION</text>
+          <text x="0" y="34" font-size="13.5" fill="#334155">All-time lifetime milestone and historical benchmark.</text>
+        </g>
+      </g>
+
+      <!-- Bottom Badge -->
+      <rect x="25" y="295" width="450" height="28" rx="6" fill="#F1F5F9" />
+      <text x="250" y="313" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Fixed in Past History • Age-Independent</text>
+    </g>
+
+    <!-- Column B: Age Grade Card (Right) -->
+    <g transform="translate(540, 0)">
+      <rect x="0" y="0" width="500" height="340" rx="16" fill="#FFFFFF" stroke="#075433" stroke-width="1.8" filter="url(#cardShadow4)" />
+      
+      <!-- Card Header -->
+      <rect x="25" y="25" width="450" height="60" rx="10" fill="url(#agGrad)" />
+      <circle cx="55" cy="55" r="16" fill="#042F2A" />
+      <text x="55" y="60" font-size="15" font-weight="800" fill="#9FE7BD" text-anchor="middle">%</text>
+      <text x="85" y="48" font-size="16" font-weight="800" fill="#FFFFFF">Age Grade Percentage</text>
+      <text x="85" y="68" font-size="12" fill="#9FE7BD">Relative Biological Efficiency Ratio</text>
+
+      <!-- Key Characteristics -->
+      <g transform="translate(25, 105)">
+        <!-- Row 1 -->
+        <g transform="translate(0, 0)">
+          <text x="0" y="16" font-size="12.5" font-weight="700" fill="#075433">CORE QUESTION</text>
+          <text x="0" y="34" font-size="14" font-weight="700" fill="#042F2A">“How strong was my run relative to my demographic?”</text>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(0, 52)">
+          <text x="0" y="16" font-size="12.5" font-weight="700" fill="#075433">MEASUREMENT TYPE</text>
+          <text x="0" y="34" font-size="13.5" fill="#334155">Standardized percentage (0% to 100%+) vs WMA.</text>
+        </g>
+
+        <!-- Row 3 -->
+        <g transform="translate(0, 104)">
+          <text x="0" y="16" font-size="12.5" font-weight="700" fill="#075433">LONGITUDINAL TRAJECTORY</text>
+          <text x="0" y="34" font-size="13.5" fill="#334155">Can continue to set new "Age-Graded PRs" at 50, 60, 70+.</text>
+        </g>
+
+        <!-- Row 4 -->
+        <g transform="translate(0, 156)">
+          <text x="0" y="16" font-size="12.5" font-weight="700" fill="#075433">PRIMARY MOTIVATION</text>
+          <text x="0" y="34" font-size="13.5" fill="#334155">Fair cross-generational comparison and lifelong progress.</text>
+        </g>
+      </g>
+
+      <!-- Bottom Badge -->
+      <rect x="25" y="295" width="450" height="28" rx="6" fill="#EBF5F0" />
+      <text x="250" y="313" font-size="12" font-weight="700" fill="#075433" text-anchor="middle">Dynamic Annual Baseline • Age-Calibrated</text>
+    </g>
+
+    <!-- Bottom Bridge Takeaway Callout -->
+    <g transform="translate(0, 360)">
+      <rect x="0" y="0" width="1040" height="75" rx="12" fill="#042F2A" />
+      <g transform="translate(30, 22)">
+        <circle cx="16" cy="16" r="14" fill="#075433" />
+        <text x="16" y="21" font-size="12" font-weight="800" fill="#9FE7BD" text-anchor="middle">★</text>
+        <text x="44" y="16" font-size="13.5" font-weight="800" fill="#9FE7BD">THE SYNTHESIS:</text>
+        <text x="175" y="16" font-size="13" fill="#FFFFFF">You might never beat your 25-year-old 5K personal best (18:30 = 70.1%).</text>
+        <text x="44" y="38" font-size="13" fill="#D3E5DE">But running a <tspan font-weight="700" fill="#9FE7BD">21:45 at age 58</tspan> achieves an age grade of <tspan font-weight="700" fill="#FF754D">73.6%</tspan> — a mathematically superior athletic achievement!</text>
+      </g>
+    </g>
+  </g>
+</svg>
