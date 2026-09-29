@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="100%" stop-color="#084E34"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#073B32"/>
+      <stop offset="100%" stop-color="#052822"/>
+    </linearGradient>
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF754D"/>
+      <stop offset="100%" stop-color="#FF9A77"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="680" rx="16" fill="url(#bgGrad)"/>
+  <rect x="12" y="12" width="576" height="656" rx="12" fill="none" stroke="#165B43" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Header Badge -->
+  <rect x="36" y="32" width="220" height="28" rx="14" fill="#0D4434" stroke="#9FE7BD" stroke-width="1"/>
+  <text x="146" y="50" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#9FE7BD" text-anchor="middle" letter-spacing="1">FACIAL METRIC ANATOMY</text>
+
+  <text x="36" y="94" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#FFFFFF">Where Algorithms Look</text>
+  <text x="36" y="118" font-family="'Inter', sans-serif" font-size="13" font-weight="400" fill="#D3E5DE">Primary optical zones evaluated during computer-vision age estimation</text>
+
+  <!-- Central Stylized Face Silhouette with Landmark Callouts -->
+  <g transform="translate(150, 150)">
+    <!-- Face Outline -->
+    <path d="M150,20 C80,20 45,70 45,160 C45,240 85,320 150,350 C215,320 255,240 255,160 C255,70 220,20 150,20 Z" fill="url(#cardGrad)" stroke="#387762" stroke-width="2.5"/>
+
+    <!-- Forehead Transverse Grid (Factor 1) -->
+    <path d="M90,75 Q150,65 210,75" stroke="#9FE7BD" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+    <path d="M85,95 Q150,85 215,95" stroke="#9FE7BD" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+
+    <!-- Eyebrows & Eyes (Factor 2 & 3) -->
+    <path d="M80,125 Q110,115 130,125" stroke="#D3E5DE" stroke-width="3" fill="none"/>
+    <path d="M170,125 Q190,115 220,125" stroke="#D3E5DE" stroke-width="3" fill="none"/>
+
+    <!-- Eyes with Periorbital Radii -->
+    <ellipse cx="105" cy="140" rx="18" ry="10" fill="#04231E" stroke="#9FE7BD" stroke-width="1.5"/>
+    <circle cx="105" cy="140" r="5" fill="#9FE7BD"/>
+    <!-- Crow's feet indicator -->
+    <path d="M78,138 L68,132" stroke="#FF754D" stroke-width="2"/>
+    <path d="M75,142 L64,142" stroke="#FF754D" stroke-width="2"/>
+    <path d="M78,146 L68,152" stroke="#FF754D" stroke-width="2"/>
+
+    <ellipse cx="195" cy="140" rx="18" ry="10" fill="#04231E" stroke="#9FE7BD" stroke-width="1.5"/>
+    <circle cx="195" cy="140" r="5" fill="#9FE7BD"/>
+    <!-- Crow's feet indicator right -->
+    <path d="M222,138 L232,132" stroke="#FF754D" stroke-width="2"/>
+    <path d="M225,142 L236,142" stroke="#FF754D" stroke-width="2"/>
+    <path d="M222,146 L232,152" stroke="#FF754D" stroke-width="2"/>
+
+    <!-- Nose Bridge & Tip -->
+    <path d="M150,128 L145,195 Q150,202 155,195 Z" fill="#0D4434" stroke="#9FE7BD" stroke-width="1.5"/>
+
+    <!-- Nasolabial Folds (Factor 1 & 2) -->
+    <path d="M135,198 Q120,230 115,255" stroke="#FF754D" stroke-width="2.5" fill="none"/>
+    <path d="M165,198 Q180,230 185,255" stroke="#FF754D" stroke-width="2.5" fill="none"/>
+
+    <!-- Mouth -->
+    <path d="M120,250 Q150,265 180,250" stroke="#D3E5DE" stroke-width="2.5" fill="none"/>
+    <path d="M125,252 Q150,270 175,252" stroke="#387762" stroke-width="1.5" fill="none"/>
+
+    <!-- Jawline & Submental Plane (Factor 5) -->
+    <path d="M70,230 Q110,310 150,345 Q190,310 230,230" stroke="#9FE7BD" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
+
+    <!-- Lighting Direction Arrow Overlay -->
+    <g transform="translate(10, 0)">
+      <circle cx="30" cy="30" r="14" fill="#FF754D"/>
+      <path d="M24,30 L36,30 M30,24 L36,30 L30,36" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="52" y="34" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FF9A77">LIGHT ANGLE</text>
+    </g>
+  </g>
+
+  <!-- Annotated Legend Cards (Bottom) -->
+  <g transform="translate(36, 530)">
+    <rect width="254" height="60" rx="8" fill="#073B32" stroke="#165B43" stroke-width="1"/>
+    <circle cx="22" cy="30" r="7" fill="#FF754D"/>
+    <text x="38" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">High-Contrast Creases</text>
+    <text x="38" y="44" font-family="'Inter', sans-serif" font-size="11" fill="#D3E5DE">Periorbital &amp; smile folds</text>
+  </g>
+
+  <g transform="translate(310, 530)">
+    <rect width="254" height="60" rx="8" fill="#073B32" stroke="#165B43" stroke-width="1"/>
+    <circle cx="22" cy="30" r="7" fill="#9FE7BD"/>
+    <text x="38" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Structural Landmarks</text>
+    <text x="38" y="44" font-family="'Inter', sans-serif" font-size="11" fill="#D3E5DE">68-point anthropometric grid</text>
+  </g>
+
+  <!-- Footer Insight Pill -->
+  <rect x="36" y="608" width="528" height="42" rx="8" fill="#04231E" stroke="#1C5E47" stroke-width="1"/>
+  <text x="300" y="634" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#D3E5DE" text-anchor="middle">
+    💡 <tspan fill="#FFFFFF" font-weight="700">Crucial Insight:</tspan> Lighting shadows create deep micro-creases that shift age by 3–6 years.
+  </text>
+</svg>
