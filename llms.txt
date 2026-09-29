@@ -331,5 +331,4 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [Age Grading for Masters Runners: How It Works & Benefits](https://www.agecalculatorlab.com/articles/age-grading-for-masters-runners/): Comprehensive guide for masters runners on age-graded performance tracking, physiological decay curves, personal record (PR) benchmarks across decades, and race day evaluation.
 - [Age-Graded Results vs Age-Group Results: What's the Difference?](https://www.agecalculatorlab.com/articles/age-graded-results-vs-age-group-results/): Sports-science guide comparing age-group race field placements with age-grade percentages, multi-year tracking, race distance differences, and performance interpretation.
 - [5K Age Grading Explained: How to Calculate Your Age Grade](https://www.agecalculatorlab.com/articles/5k-age-grading/): Complete guide to 5K road and Parkrun age grading, WMA calculation formulas, worked examples, the 25:00 benchmark across decades, and course terrain factors.
-
-
+- [10K Age Grading Explained: How Age Grade Works](https://www.agecalculatorlab.com/articles/10k-age-grading/): Sports-science guide to 10K road age grading, 2025 WMA standard times, worked calculation formulas, cross-generational 45:00 comparisons, multi-year progress tracking, and race condition factors.

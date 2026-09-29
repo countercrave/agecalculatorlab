@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="10K Age Grading Calculation and Performance Standards">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="60%" stop-color="#F4F8F5"/>
+      <stop offset="100%" stop-color="#EAF2ED"/>
+    </linearGradient>
+    <linearGradient id="panelGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="100%" stop-color="#075433"/>
+    </linearGradient>
+    <linearGradient id="panelGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B233A"/>
+      <stop offset="100%" stop-color="#183C60"/>
+    </linearGradient>
+    <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B233A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#heroBg)"/>
+
+  <!-- Stylized Road Waves -->
+  <g opacity="0.35" stroke="#52796F" stroke-width="2" fill="none">
+    <path d="M-50,560 C300,560 500,450 800,470 C1050,490 1150,410 1250,410"/>
+    <path d="M-50,590 C300,590 500,480 800,500 C1050,520 1150,440 1250,440"/>
+    <path d="M-50,620 C300,620 500,510 800,530 C1050,550 1150,470 1250,470"/>
+  </g>
+
+  <!-- Distance Indicator Badge -->
+  <g transform="translate(80, 50)">
+    <rect width="340" height="38" rx="19" fill="#042F2A"/>
+    <circle cx="22" cy="19" r="6" fill="#9FE7BD"/>
+    <text x="40" y="24" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="1.2">10,000 METERS · 6.214 MILES ROAD</text>
+  </g>
+
+  <!-- Hero Header Typography -->
+  <text x="80" y="145" font-family="'Fraunces', Georgia, serif" font-size="44" font-weight="700" fill="#0B233A" letter-spacing="-0.5">10K Age Grading &amp; Performance Standards</text>
+  <text x="80" y="185" font-family="'Inter', sans-serif" font-size="18" fill="#52796F">Comparing 10K road chip times against demographic world record baselines</text>
+
+  <!-- Left Main Card: Core 10K Formula -->
+  <g transform="translate(80, 230)" filter="url(#heroShadow)">
+    <rect width="510" height="380" rx="18" fill="url(#panelGrad1)"/>
+    <g transform="translate(36, 36)">
+      <rect width="190" height="26" rx="6" fill="rgba(159, 231, 189, 0.2)"/>
+      <text x="95" y="17" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#9FE7BD" text-anchor="middle" letter-spacing="1">MATHEMATICAL MODEL</text>
+
+      <text x="0" y="65" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#FFFFFF">How 10K Age Grade Is Derived</text>
+      
+      <!-- Formula Display -->
+      <g transform="translate(0, 95)">
+        <rect width="438" height="95" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.15)"/>
+        <text x="219" y="38" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#9FE7BD" text-anchor="middle">Age Grade (%) = (Demographic Standard / Net Time) × 100</text>
+        <text x="219" y="70" font-family="'Inter', monospace" font-size="13.5" font-weight="500" fill="#D3E5DE" text-anchor="middle">Or: (Open World Record / Age-Adjusted Time) × 100</text>
+      </g>
+
+      <!-- Worked Example Mini-box -->
+      <g transform="translate(0, 215)">
+        <rect width="438" height="90" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)"/>
+        <text x="20" y="32" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Example: Male Runner, Age 45, 10K in 45:00</text>
+        <text x="20" y="56" font-family="'Inter', sans-serif" font-size="12.5" fill="#D3E5DE">Age standard = 1,699.4s (28:19.4) · Net time = 2,700s</text>
+        <text x="20" y="76" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#9FE7BD">Age Grade = (1,699.4 ÷ 2,700) × 100 = 62.94% (Local Competitive)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Four Component Cards -->
+  <g transform="translate(620, 230)" filter="url(#heroShadow)">
+    <rect width="500" height="380" rx="18" fill="#FFFFFF" stroke="#E2DDD0" stroke-width="1.5"/>
+    <g transform="translate(32, 32)">
+      <text x="0" y="20" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#52796F" letter-spacing="1.2">THE 4 CORE INPUTS</text>
+      <text x="0" y="52" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#0B233A">Four Factors Governing Every Result</text>
+
+      <!-- Input 1: Age on Race Day -->
+      <g transform="translate(0, 75)">
+        <rect width="436" height="52" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
+        <circle cx="26" cy="26" r="12" fill="#075433"/>
+        <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+        <text x="48" y="24" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">Age on Race Day</text>
+        <text x="48" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#52796F">Exact integer age accounts for natural VO2 max &amp; muscle decline</text>
+      </g>
+
+      <!-- Input 2: Biological Sex -->
+      <g transform="translate(0, 137)">
+        <rect width="436" height="52" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
+        <circle cx="26" cy="26" r="12" fill="#075433"/>
+        <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+        <text x="48" y="24" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">Biological Sex</text>
+        <text x="48" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#52796F">Separate WMA tables for men and women calibrate physiological differences</text>
+      </g>
+
+      <!-- Input 3: Event Distance (10K Road) -->
+      <g transform="translate(0, 199)">
+        <rect width="436" height="52" rx="8" fill="#FFFDFB" stroke="#FF754D" stroke-width="1.5"/>
+        <circle cx="26" cy="26" r="12" fill="#FF754D"/>
+        <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+        <text x="48" y="24" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">10,000m Road Event Standard</text>
+        <text x="48" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#FF754D">Must use 10K road factor table, never track 10,000m or 5K/half marathon</text>
+      </g>
+
+      <!-- Input 4: Chip Finish Time -->
+      <g transform="translate(0, 261)">
+        <rect width="436" height="52" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
+        <circle cx="26" cy="26" r="12" fill="#075433"/>
+        <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+        <text x="48" y="24" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">Net Chip Finish Time</text>
+        <text x="48" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#52796F">Official net time in hours:minutes:seconds converted to total seconds</text>
+      </g>
+    </g>
+  </g>
+</svg>

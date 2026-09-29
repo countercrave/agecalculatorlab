@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Handwritten Calculation Worksheet for 10K Age Grading">
+  <defs>
+    <linearGradient id="deskBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFECE6"/>
+      <stop offset="100%" stop-color="#DFD9CE"/>
+    </linearGradient>
+    <filter id="softSh" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="2" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Desk Surface -->
+  <rect width="1200" height="675" fill="url(#deskBg)"/>
+
+  <!-- Race Bib (Rotated slightly on left desk) -->
+  <g transform="translate(80, 80) rotate(-3)" filter="url(#softSh)">
+    <rect width="320" height="220" rx="8" fill="#FFFFFF" stroke="#D3CABE" stroke-width="1.5"/>
+    <circle cx="25" cy="25" r="5" fill="#B0A89C"/>
+    <circle cx="295" cy="25" r="5" fill="#B0A89C"/>
+    <rect x="0" y="0" width="320" height="44" fill="#042F2A" rx="6"/>
+    <text x="160" y="28" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">AUTUMN ROAD 10K</text>
+    <text x="160" y="135" font-family="'Fraunces', Georgia, serif" font-size="72" font-weight="800" fill="#0B233A" text-anchor="middle">1042</text>
+    <rect x="30" y="160" width="260" height="36" rx="6" fill="#F4F8F5" stroke="#D3E5DE"/>
+    <text x="45" y="183" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">DIV: M 45–49</text>
+    <text x="275" y="183" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#0B233A" text-anchor="end">CHIP: 45:00.00</text>
+  </g>
+
+  <!-- Digital Stopwatch -->
+  <g transform="translate(110, 360)" filter="url(#softSh)">
+    <rect width="260" height="240" rx="60" fill="#1E293B" stroke="#0F172A" stroke-width="4"/>
+    <rect x="110" y="-18" width="40" height="20" rx="4" fill="#64748B"/>
+    <circle cx="130" cy="120" r="85" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+    <rect x="65" y="92" width="130" height="56" rx="8" fill="#9FE7BD"/>
+    <text x="130" y="132" font-family="'Courier New', monospace" font-size="28" font-weight="900" fill="#042F2A" text-anchor="middle">45:00.0</text>
+    <text x="130" y="165" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#94A3B8" text-anchor="middle">10,000M CHIP</text>
+  </g>
+
+  <!-- Open Field Journal Notebook (Center-Right) -->
+  <g transform="translate(440, 50)" filter="url(#softSh)">
+    <!-- Notebook Paper -->
+    <rect width="700" height="575" rx="16" fill="#FDFCF7" stroke="#D8D2C4" stroke-width="2"/>
+    
+    <!-- Margin Line -->
+    <line x1="80" y1="30" x2="80" y2="545" stroke="#F87171" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Ruled lines -->
+    <g stroke="#E2DDD0" stroke-width="1">
+      <line x1="80" y1="90" x2="660" y2="90"/>
+      <line x1="80" y1="145" x2="660" y2="145"/>
+      <line x1="80" y1="200" x2="660" y2="200"/>
+      <line x1="80" y1="255" x2="660" y2="255"/>
+      <line x1="80" y1="310" x2="660" y2="310"/>
+      <line x1="80" y1="365" x2="660" y2="365"/>
+      <line x1="80" y1="420" x2="660" y2="420"/>
+      <line x1="80" y1="475" x2="660" y2="475"/>
+      <line x1="80" y1="530" x2="660" y2="530"/>
+    </g>
+
+    <!-- Journal Header -->
+    <text x="105" y="72" font-family="'Caveat', cursive, sans-serif" font-size="28" font-weight="700" fill="#0B233A">10K Race Calculation Audit — Age Calculator Lab</text>
+    
+    <!-- Step 1 -->
+    <text x="105" y="128" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">1. Actual Race Time:</text>
+    <text x="320" y="128" font-family="'Inter', monospace" font-size="16" font-weight="600" fill="#0B233A">45:00 = 2,700 seconds (Official chip time)</text>
+
+    <!-- Step 2 -->
+    <text x="105" y="183" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">2. Demographic Profile:</text>
+    <text x="320" y="183" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#0B233A">Male, Age 45 on race morning (2025 WMA Table)</text>
+
+    <!-- Step 3 -->
+    <text x="105" y="238" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">3. Demographic Standard:</text>
+    <text x="320" y="238" font-family="'Inter', monospace" font-size="16" font-weight="600" fill="#0B233A">28:19.4 = 1,699.4 seconds (Standard for M45)</text>
+
+    <!-- Step 4 -->
+    <text x="105" y="293" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#FF754D">4. Age Grade % Formula:</text>
+    <text x="320" y="293" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#042F2A">(1,699.4 ÷ 2,700) × 100 = </text>
+    <rect x="545" y="270" width="95" height="32" rx="6" fill="#075433"/>
+    <text x="592" y="292" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#9FE7BD" text-anchor="middle">62.94%</text>
+
+    <!-- Step 5 -->
+    <text x="105" y="348" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">5. Age Factor Method:</text>
+    <text x="320" y="348" font-family="'Inter', monospace" font-size="16" font-weight="600" fill="#0B233A">Factor = 0.9320 (Open standard / Age standard)</text>
+
+    <!-- Step 6 -->
+    <text x="105" y="403" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">6. Age-Graded Time:</text>
+    <text x="320" y="403" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#075433">2,700s × 0.9320 = 2,516.4s (41:56.4)</text>
+
+    <!-- Step 7 -->
+    <text x="105" y="458" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#0B233A">7. Performance Tier:</text>
+    <text x="320" y="458" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#0B233A">Competitive Local Club Tier (60.0% – 69.9%)</text>
+
+    <!-- Verified Stamp in Notebook -->
+    <g transform="translate(480, 480) rotate(-6)">
+      <rect width="170" height="44" rx="6" fill="none" stroke="#075433" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <text x="85" y="27" font-family="'Inter', sans-serif" font-size="13" font-weight="900" fill="#075433" text-anchor="middle" letter-spacing="1.5">VERIFIED WMA 2025</text>
+    </g>
+  </g>
+</svg>

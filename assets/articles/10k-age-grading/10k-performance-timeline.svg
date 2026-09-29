@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Multi-Year 10K Performance Timeline Tracking">
+  <defs>
+    <linearGradient id="timeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="100%" stop-color="#F4F8F5"/>
+    </linearGradient>
+    <filter id="timeSh" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0B233A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#timeBg)"/>
+
+  <!-- Header -->
+  <g transform="translate(80, 50)">
+    <text x="0" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#52796F" letter-spacing="1.2">LONGITUDINAL PERFORMANCE TRACKING</text>
+    <text x="0" y="68" font-family="'Fraunces', Georgia, serif" font-size="36" font-weight="700" fill="#0B233A">Tracking 10K Progress Over 25 Years (Ages 35 to 60)</text>
+    <text x="0" y="98" font-family="'Inter', sans-serif" font-size="16" fill="#4A635A">Why raw 10K finish times slow down while age-adjusted fitness percentage improves</text>
+  </g>
+
+  <!-- Main Chart Canvas -->
+  <g transform="translate(80, 160)" filter="url(#timeSh)">
+    <rect width="1040" height="450" rx="16" fill="#FFFFFF" stroke="#E2DDD0" stroke-width="1.5"/>
+
+    <!-- Legend -->
+    <g transform="translate(40, 35)">
+      <!-- Raw Time Legend -->
+      <circle cx="12" cy="12" r="6" fill="#FF754D"/>
+      <line x1="22" y1="12" x2="50" y2="12" stroke="#FF754D" stroke-width="3"/>
+      <text x="60" y="16" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">Raw 10K Finish Time (Gradually Slower)</text>
+
+      <!-- Age Grade % Legend -->
+      <circle cx="420" cy="12" r="6" fill="#075433"/>
+      <line x1="430" y1="12" x2="458" y2="12" stroke="#075433" stroke-width="3" stroke-dasharray="6 4"/>
+      <text x="468" y="16" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#075433">Age Grade % (Steadily Climbing)</text>
+    </g>
+
+    <!-- Grid Lines & X-Axis Columns -->
+    <g stroke="#F1F5F9" stroke-width="1.5">
+      <line x1="120" y1="80" x2="120" y2="380"/>
+      <line x1="280" y1="80" x2="280" y2="380"/>
+      <line x1="440" y1="80" x2="440" y2="380"/>
+      <line x1="600" y1="80" x2="600" y2="380"/>
+      <line x1="760" y1="80" x2="760" y2="380"/>
+      <line x1="920" y1="80" x2="920" y2="380"/>
+    </g>
+
+    <!-- X-Axis Labels -->
+    <g transform="translate(0, 410)">
+      <text x="120" y="0" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A" text-anchor="middle">Age 35</text>
+      <text x="280" y="0" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A" text-anchor="middle">Age 40</text>
+      <text x="440" y="0" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A" text-anchor="middle">Age 45</text>
+      <text x="600" y="0" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A" text-anchor="middle">Age 50</text>
+      <text x="760" y="0" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A" text-anchor="middle">Age 55</text>
+      <text x="920" y="0" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A" text-anchor="middle">Age 60</text>
+    </g>
+
+    <!-- Curve 1: Raw Finish Time Path (Rising line from 41:30 to 50:40) -->
+    <path d="M120,320 L280,290 L440,255 L600,220 L760,180 L920,135" fill="none" stroke="#FF754D" stroke-width="4"/>
+    
+    <!-- Curve 1 Nodes & Badges -->
+    <g>
+      <!-- Age 35: 41:30 -->
+      <circle cx="120" cy="320" r="7" fill="#FF754D" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="75" y="335" width="90" height="28" rx="6" fill="#FFF1ED"/>
+      <text x="120" y="354" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF754D" text-anchor="middle">41:30</text>
+
+      <!-- Age 40: 42:45 -->
+      <circle cx="280" cy="290" r="7" fill="#FF754D" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="235" y="305" width="90" height="28" rx="6" fill="#FFF1ED"/>
+      <text x="280" y="324" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF754D" text-anchor="middle">42:45</text>
+
+      <!-- Age 45: 44:15 -->
+      <circle cx="440" cy="255" r="7" fill="#FF754D" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="395" y="270" width="90" height="28" rx="6" fill="#FFF1ED"/>
+      <text x="440" y="289" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF754D" text-anchor="middle">44:15</text>
+
+      <!-- Age 50: 46:00 -->
+      <circle cx="600" cy="220" r="7" fill="#FF754D" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="555" y="235" width="90" height="28" rx="6" fill="#FFF1ED"/>
+      <text x="600" y="254" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF754D" text-anchor="middle">46:00</text>
+
+      <!-- Age 55: 48:10 -->
+      <circle cx="760" cy="180" r="7" fill="#FF754D" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="715" y="195" width="90" height="28" rx="6" fill="#FFF1ED"/>
+      <text x="760" y="214" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF754D" text-anchor="middle">48:10</text>
+
+      <!-- Age 60: 50:40 -->
+      <circle cx="920" cy="135" r="7" fill="#FF754D" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="875" y="150" width="90" height="28" rx="6" fill="#FFF1ED"/>
+      <text x="920" y="169" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF754D" text-anchor="middle">50:40</text>
+    </g>
+
+    <!-- Curve 2: Age Grade % Path (Rising from 64.2% to 67.2%) -->
+    <path d="M120,240 L280,225 L440,205 L600,180 L760,150 L920,110" fill="none" stroke="#075433" stroke-width="4" stroke-dasharray="8 6"/>
+
+    <!-- Curve 2 Nodes & Badges -->
+    <g>
+      <!-- Age 35: 64.2% -->
+      <circle cx="120" cy="240" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="75" y="195" width="90" height="28" rx="6" fill="#075433"/>
+      <text x="120" y="214" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.20%</text>
+
+      <!-- Age 40: 64.5% -->
+      <circle cx="280" cy="225" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="235" y="180" width="90" height="28" rx="6" fill="#075433"/>
+      <text x="280" y="199" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.52%</text>
+
+      <!-- Age 45: 64.8% -->
+      <circle cx="440" cy="205" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="395" y="160" width="90" height="28" rx="6" fill="#075433"/>
+      <text x="440" y="179" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.85%</text>
+
+      <!-- Age 50: 65.4% -->
+      <circle cx="600" cy="180" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="555" y="135" width="90" height="28" rx="6" fill="#075433"/>
+      <text x="600" y="154" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">65.40%</text>
+
+      <!-- Age 55: 66.1% -->
+      <circle cx="760" cy="150" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="715" y="105" width="90" height="28" rx="6" fill="#075433"/>
+      <text x="760" y="124" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">66.12%</text>
+
+      <!-- Age 60: 67.2% -->
+      <circle cx="920" cy="110" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="875" y="65" width="90" height="28" rx="6" fill="#075433"/>
+      <text x="920" y="84" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">67.20%</text>
+    </g>
+  </g>
+</svg>

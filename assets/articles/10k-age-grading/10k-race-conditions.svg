@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Environmental and Course Difficulty Impacts on 10K Age Grading">
+  <defs>
+    <linearGradient id="condBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="100%" stop-color="#F4F8F5"/>
+    </linearGradient>
+    <filter id="condSh" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0B233A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#condBg)"/>
+
+  <!-- Header -->
+  <g transform="translate(80, 50)">
+    <text x="0" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#52796F" letter-spacing="1.2">COURSE &amp; CLIMATE CONTEXT</text>
+    <text x="0" y="68" font-family="'Fraunces', Georgia, serif" font-size="36" font-weight="700" fill="#0B233A">Does Course Difficulty Affect 10K Age Grading?</text>
+    <text x="0" y="98" font-family="'Inter', sans-serif" font-size="16" fill="#4A635A">Why external conditions distort nominal age grades and how to account for environmental drag</text>
+  </g>
+
+  <!-- 4 Scenario Cards Grid -->
+  <g transform="translate(80, 155)" filter="url(#condSh)">
+    <!-- Card 1: Flat & Cool Baseline -->
+    <g transform="translate(0, 0)">
+      <rect width="500" height="210" rx="14" fill="#FFFFFF" stroke="#075433" stroke-width="2"/>
+      <rect x="0" y="0" width="8" height="210" rx="4" fill="#075433"/>
+      <g transform="translate(28, 26)">
+        <rect width="150" height="24" rx="12" fill="#E8F5EE"/>
+        <text x="75" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#075433" text-anchor="middle">OPTIMAL BASELINE</text>
+        <text x="0" y="56" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#0B233A">Flat Asphalt &amp; Cool Weather</text>
+        <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13.5" fill="#4A635A">50°F (10°C), low humidity, sea level, certified loop</text>
+
+        <g transform="translate(0, 105)">
+          <rect width="444" height="44" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
+          <text x="16" y="27" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#075433">Impact on Clock:</text>
+          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="12.5" fill="#0B233A">0s penalty (100% of physiological capacity)</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 2: Hilly Course -->
+    <g transform="translate(540, 0)">
+      <rect width="500" height="210" rx="14" fill="#FFFFFF" stroke="#E2DDD0" stroke-width="1.5"/>
+      <rect x="0" y="0" width="8" height="210" rx="4" fill="#FF754D"/>
+      <g transform="translate(28, 26)">
+        <rect width="140" height="24" rx="12" fill="#FFF1ED"/>
+        <text x="70" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#FF754D" text-anchor="middle">ELEVATION DRAG</text>
+        <text x="0" y="56" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#0B233A">Rolling Hills / Elevation Gain</text>
+        <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13.5" fill="#4A635A">+100m to +150m vertical ascent over 10 kilometers</text>
+
+        <g transform="translate(0, 105)">
+          <rect width="444" height="44" rx="8" fill="#FFFDFB" stroke="#FF754D" stroke-width="1"/>
+          <text x="16" y="27" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#FF754D">Impact on Clock:</text>
+          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="12.5" fill="#0B233A">+60s to +90s delay (~1.5% to 2.2% lower age grade)</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 3: Heat & Humidity -->
+    <g transform="translate(0, 235)">
+      <rect width="500" height="210" rx="14" fill="#FFFFFF" stroke="#E2DDD0" stroke-width="1.5"/>
+      <rect x="0" y="0" width="8" height="210" rx="4" fill="#FF754D"/>
+      <g transform="translate(28, 26)">
+        <rect width="160" height="24" rx="12" fill="#FFF1ED"/>
+        <text x="80" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#FF754D" text-anchor="middle">THERMAL STRESS</text>
+        <text x="0" y="56" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#0B233A">High Summer Heat &amp; Humidity</text>
+        <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13.5" fill="#4A635A">80°F+ (27°C+) with dew point above 65°F (18°C)</text>
+
+        <g transform="translate(0, 105)">
+          <rect width="444" height="44" rx="8" fill="#FFFDFB" stroke="#FF754D" stroke-width="1"/>
+          <text x="16" y="27" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#FF754D">Impact on Clock:</text>
+          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="12.5" fill="#0B233A">+120s to +180s delay (~3.0% to 4.5% lower age grade)</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 4: Uncertified / GPS Drift -->
+    <g transform="translate(540, 235)">
+      <rect width="500" height="210" rx="14" fill="#FFFFFF" stroke="#E2DDD0" stroke-width="1.5"/>
+      <rect x="0" y="0" width="8" height="210" rx="4" fill="#0B233A"/>
+      <g transform="translate(28, 26)">
+        <rect width="160" height="24" rx="12" fill="#F1F5F9"/>
+        <text x="80" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">COURSE ACCURACY</text>
+        <text x="0" y="56" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#0B233A">Uncertified Route &amp; GPS Error</text>
+        <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13.5" fill="#4A635A">Tall buildings, sharp switchbacks, or short course</text>
+
+        <g transform="translate(0, 105)">
+          <rect width="444" height="44" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+          <text x="16" y="27" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#0B233A">Impact on Clock:</text>
+          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="12.5" fill="#0B233A">±30s to ±60s variance (distorts calculated percentage)</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Core Principle Banner -->
+  <g transform="translate(80, 610)">
+    <text x="520" y="15" font-family="'Inter', sans-serif" font-size="12.5" font-weight="600" fill="#52796F" text-anchor="middle">*Key Principle: Age grading measures certified distance and net chip time; it does not calibrate environmental drag or elevation profile.</text>
+  </g>
+</svg>

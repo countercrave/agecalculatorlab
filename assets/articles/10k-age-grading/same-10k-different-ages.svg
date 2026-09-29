@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Same 10K Time Across Three Different Ages">
+  <defs>
+    <linearGradient id="diffBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="100%" stop-color="#F4F8F5"/>
+    </linearGradient>
+    <filter id="diffSh" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0B233A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#diffBg)"/>
+
+  <!-- Header -->
+  <g transform="translate(80, 50)">
+    <text x="0" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#52796F" letter-spacing="1.2">CROSS-GENERATIONAL BENCHMARK</text>
+    <text x="0" y="68" font-family="'Fraunces', Georgia, serif" font-size="36" font-weight="700" fill="#0B233A">Does an Identical 45:00 10K Mean the Same Thing?</text>
+    <text x="0" y="98" font-family="'Inter', sans-serif" font-size="16" fill="#4A635A">Three male runners with the exact same 45:00 finish time evaluated against 2025 WMA standards</text>
+  </g>
+
+  <!-- Central Shared Stopwatch -->
+  <g transform="translate(460, 160)">
+    <rect width="280" height="65" rx="32.5" fill="#042F2A" stroke="#9FE7BD" stroke-width="2"/>
+    <circle cx="35" cy="32.5" r="8" fill="#FF754D"/>
+    <text x="145" y="41" font-family="'Inter', monospace" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">45:00 FINISH TIME</text>
+  </g>
+
+  <!-- 3 Runner Columns -->
+  <!-- Column 1: Age 25 -->
+  <g transform="translate(80, 255)" filter="url(#diffSh)">
+    <rect width="320" height="360" rx="16" fill="#FFFFFF" stroke="#E2DDD0" stroke-width="1.5"/>
+    <rect x="0" y="0" width="320" height="8" rx="4" fill="#64748B"/>
+    <g transform="translate(26, 32)">
+      <rect width="80" height="24" rx="12" fill="#F1F5F9"/>
+      <text x="40" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">OPEN BASE</text>
+      <text x="0" y="60" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#0B233A">Runner A · Age 25</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">Peak biological window</text>
+
+      <g transform="translate(0, 105)">
+        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#64748B">WMA AGE STANDARD</text>
+        <text x="0" y="38" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#0B233A">26:24.0 (1,584s)</text>
+      </g>
+      
+      <g transform="translate(0, 160)">
+        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#64748B">AGE FACTOR</text>
+        <text x="0" y="38" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#0B233A">1.0000 (Open)</text>
+      </g>
+
+      <g transform="translate(0, 215)">
+        <rect width="268" height="65" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+        <text x="16" y="26" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#64748B">AGE GRADE %</text>
+        <text x="16" y="51" font-family="'Inter', sans-serif" font-size="24" font-weight="900" fill="#475569">58.67%</text>
+        <text x="252" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#64748B" text-anchor="end">Recreational Tier</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Column 2: Age 45 -->
+  <g transform="translate(440, 255)" filter="url(#diffSh)">
+    <rect width="320" height="360" rx="16" fill="#FFFDFB" stroke="#FF754D" stroke-width="2"/>
+    <rect x="0" y="0" width="320" height="8" rx="4" fill="#FF754D"/>
+    <g transform="translate(26, 32)">
+      <rect width="90" height="24" rx="12" fill="#FFF1ED"/>
+      <text x="45" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#FF754D" text-anchor="middle">MID MASTERS</text>
+      <text x="0" y="60" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#0B233A">Runner B · Age 45</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">Age-related VO2 transition</text>
+
+      <g transform="translate(0, 105)">
+        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#64748B">WMA AGE STANDARD</text>
+        <text x="0" y="38" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#0B233A">28:19.4 (1,699.4s)</text>
+      </g>
+      
+      <g transform="translate(0, 160)">
+        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#64748B">AGE FACTOR</text>
+        <text x="0" y="38" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#FF754D">0.9320 (Eq: 41:56)</text>
+      </g>
+
+      <g transform="translate(0, 215)">
+        <rect width="268" height="65" rx="10" fill="#FFF7F4" stroke="#FF754D"/>
+        <text x="16" y="26" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#FF754D">AGE GRADE %</text>
+        <text x="16" y="51" font-family="'Inter', sans-serif" font-size="24" font-weight="900" fill="#FF754D">62.94%</text>
+        <text x="252" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF754D" text-anchor="end">Local Competitive</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Column 3: Age 65 -->
+  <g transform="translate(800, 255)" filter="url(#diffSh)">
+    <rect width="320" height="360" rx="16" fill="#FFFFFF" stroke="#075433" stroke-width="2"/>
+    <rect x="0" y="0" width="320" height="8" rx="4" fill="#075433"/>
+    <g transform="translate(26, 32)">
+      <rect width="110" height="24" rx="12" fill="#E8F5EE"/>
+      <text x="55" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#075433" text-anchor="middle">SENIOR MASTER</text>
+      <text x="0" y="60" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#0B233A">Runner C · Age 65</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">High cardiovascular preservation</text>
+
+      <g transform="translate(0, 105)">
+        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#64748B">WMA AGE STANDARD</text>
+        <text x="0" y="38" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#0B233A">34:22.1 (2,062.1s)</text>
+      </g>
+      
+      <g transform="translate(0, 160)">
+        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#64748B">AGE FACTOR</text>
+        <text x="0" y="38" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#075433">0.7680 (Eq: 34:34)</text>
+      </g>
+
+      <g transform="translate(0, 215)">
+        <rect width="268" height="65" rx="10" fill="#F4F8F5" stroke="#075433"/>
+        <text x="16" y="26" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#075433">AGE GRADE %</text>
+        <text x="16" y="51" font-family="'Inter', sans-serif" font-size="24" font-weight="900" fill="#075433">76.37%</text>
+        <text x="252" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" text-anchor="end">Regional Class</text>
+      </g>
+    </g>
+  </g>
+</svg>
