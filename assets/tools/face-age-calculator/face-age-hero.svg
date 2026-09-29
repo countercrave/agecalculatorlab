@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Face Age Calculator: Computer Vision Landmark Analysis">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="60%" stop-color="#F4F8F5"/>
+      <stop offset="100%" stop-color="#EAF2ED"/>
+    </linearGradient>
+    <linearGradient id="panelDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="100%" stop-color="#075433"/>
+    </linearGradient>
+    <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B233A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#heroBg)"/>
+
+  <!-- Subtle Editorial Wave Accent -->
+  <g opacity="0.3" stroke="#52796F" stroke-width="2" fill="none">
+    <path d="M-50,560 C300,560 500,450 800,470 C1050,490 1150,410 1250,410"/>
+    <path d="M-50,600 C300,600 500,490 800,510 C1050,530 1150,450 1250,450"/>
+  </g>
+
+  <!-- Category Badge -->
+  <g transform="translate(80, 50)">
+    <rect width="360" height="38" rx="19" fill="#042F2A"/>
+    <circle cx="22" cy="19" r="6" fill="#9FE7BD"/>
+    <text x="40" y="24" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="1.2">BIOLOGICAL &amp; HEALTH · APPARENT AGE</text>
+  </g>
+
+  <!-- Typography -->
+  <text x="80" y="145" font-family="'Fraunces', Georgia, serif" font-size="44" font-weight="700" fill="#0B233A" letter-spacing="-0.5">Face Age Calculator &amp; Analysis</text>
+  <text x="80" y="185" font-family="'Inter', sans-serif" font-size="18" fill="#52796F">Estimating apparent facial age through client-side computer vision heuristics</text>
+
+  <!-- Left Card: The Process Pipeline -->
+  <g transform="translate(80, 230)" filter="url(#heroShadow)">
+    <rect width="520" height="380" rx="18" fill="url(#panelDark)"/>
+    <g transform="translate(36, 34)">
+      <rect width="180" height="26" rx="6" fill="rgba(159, 231, 189, 0.2)"/>
+      <text x="90" y="17" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#9FE7BD" text-anchor="middle" letter-spacing="1">CLIENT-SIDE PIPELINE</text>
+
+      <text x="0" y="65" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#FFFFFF">How Apparent Age Is Estimated</text>
+
+      <!-- 4 Horizontal Pipeline Stages -->
+      <g transform="translate(0, 95)">
+        <rect width="448" height="52" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+        <circle cx="26" cy="26" r="12" fill="#9FE7BD"/>
+        <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#042F2A" text-anchor="middle">1</text>
+        <text x="50" y="24" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Local Canvas Ingestion</text>
+        <text x="50" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#D3E5DE">Photo rendered off-screen; never transmitted to servers</text>
+      </g>
+
+      <g transform="translate(0, 157)">
+        <rect width="448" height="52" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+        <circle cx="26" cy="26" r="12" fill="#9FE7BD"/>
+        <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#042F2A" text-anchor="middle">2</text>
+        <text x="50" y="24" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Facial Geometry &amp; Proportions</text>
+        <text x="50" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#D3E5DE">Aspect ratio, eye spacing, and jawline contour analysis</text>
+      </g>
+
+      <g transform="translate(0, 219)">
+        <rect width="448" height="52" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+        <circle cx="26" cy="26" r="12" fill="#9FE7BD"/>
+        <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#042F2A" text-anchor="middle">3</text>
+        <text x="50" y="24" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Skin Texture &amp; Contrast Audit</text>
+        <text x="50" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#D3E5DE">High-frequency gradient and luminance distribution</text>
+      </g>
+
+      <g transform="translate(0, 281)">
+        <rect width="448" height="52" rx="8" fill="rgba(159, 231, 189, 0.2)" stroke="#9FE7BD"/>
+        <circle cx="26" cy="26" r="12" fill="#FF754D"/>
+        <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+        <text x="50" y="24" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD">Apparent Age Estimate + Range</text>
+        <text x="50" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#FFFFFF">Normalized output: 34 yrs (Range 31–37)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Visual Face Silhouette with Landmarks -->
+  <g transform="translate(630, 230)" filter="url(#heroShadow)">
+    <rect width="490" height="380" rx="18" fill="#FFFFFF" stroke="#E2DDD0" stroke-width="1.5"/>
+    
+    <!-- Stylized Face Outline -->
+    <g transform="translate(245, 180)">
+      <!-- Oval Head Silhouette -->
+      <ellipse cx="0" cy="0" rx="90" ry="120" fill="#F4F8F5" stroke="#075433" stroke-width="2" stroke-dasharray="4 4"/>
+      
+      <!-- Eyebrow & Eyes Landmarks -->
+      <path d="M-55,-35 Q-35,-45 -15,-35" stroke="#0B233A" stroke-width="2.5" fill="none"/>
+      <path d="M15,-35 Q35,-45 55,-35" stroke="#0B233A" stroke-width="2.5" fill="none"/>
+      
+      <circle cx="-35" cy="-20" r="10" fill="#FFFFFF" stroke="#075433" stroke-width="2"/>
+      <circle cx="-35" cy="-20" r="4" fill="#0B233A"/>
+      <circle cx="35" cy="-20" r="10" fill="#FFFFFF" stroke="#075433" stroke-width="2"/>
+      <circle cx="35" cy="-20" r="4" fill="#0B233A"/>
+      
+      <!-- Nose Bridge & Tip -->
+      <path d="M0,-25 L0,20 L12,20" stroke="#075433" stroke-width="2" fill="none"/>
+      
+      <!-- Mouth Contour -->
+      <path d="M-30,55 Q0,75 30,55" stroke="#FF754D" stroke-width="2.5" fill="none"/>
+      
+      <!-- Landmark Measurement Crosshairs -->
+      <line x1="-80" y1="-20" x2="80" y2="-20" stroke="#9FE7BD" stroke-width="1.5" stroke-dasharray="2 3"/>
+      <line x1="0" y1="-80" x2="0" y2="80" stroke="#9FE7BD" stroke-width="1.5" stroke-dasharray="2 3"/>
+
+      <!-- Tracking Dots -->
+      <circle cx="-55" cy="-35" r="3" fill="#FF754D"/>
+      <circle cx="-15" cy="-35" r="3" fill="#FF754D"/>
+      <circle cx="15" cy="-35" r="3" fill="#FF754D"/>
+      <circle cx="55" cy="-35" r="3" fill="#FF754D"/>
+      <circle cx="-65" cy="0" r="3" fill="#075433"/>
+      <circle cx="65" cy="0" r="3" fill="#075433"/>
+      <circle cx="-30" cy="55" r="3" fill="#FF754D"/>
+      <circle cx="30" cy="55" r="3" fill="#FF754D"/>
+      <circle cx="0" cy="95" r="3" fill="#075433"/>
+    </g>
+
+    <!-- Top Badge in Right Card -->
+    <g transform="translate(30, 25)">
+      <text x="0" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#52796F" letter-spacing="1">FACIAL TOPOLOGY METRICS</text>
+    </g>
+
+    <!-- Bottom Metric Tags -->
+    <g transform="translate(24, 320)">
+      <rect width="136" height="36" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
+      <text x="68" y="22" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#075433" text-anchor="middle">Symmetry: 96%</text>
+
+      <rect x="150" width="136" height="36" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
+      <text x="218" y="22" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#075433" text-anchor="middle">Texture: Smooth</text>
+
+      <rect x="300" width="136" height="36" rx="8" fill="#FFFDFB" stroke="#FF754D"/>
+      <text x="368" y="22" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#FF754D" text-anchor="middle">Apparent: 34y</text>
+    </g>
+  </g>
+</svg>

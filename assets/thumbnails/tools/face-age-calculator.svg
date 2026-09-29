@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Face Age Calculator: How Old Do You Look?">
+  <defs>
+    <linearGradient id="thumbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="50%" stop-color="#075433"/>
+      <stop offset="100%" stop-color="#0B233A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F8F5"/>
+    </linearGradient>
+    <filter id="thumbShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#thumbBg)"/>
+
+  <!-- Subtle Geometric Face Contour Grid -->
+  <g opacity="0.18" stroke="#9FE7BD" stroke-width="1.5" fill="none">
+    <ellipse cx="1060" cy="360" rx="150" ry="200"/>
+    <ellipse cx="1060" cy="360" rx="110" ry="150"/>
+    <line x1="910" y1="360" x2="1210" y2="360"/>
+    <line x1="1060" y1="160" x2="1060" y2="560"/>
+    <circle cx="1010" cy="320" r="18"/>
+    <circle cx="1110" cy="320" r="18"/>
+    <path d="M1010,430 Q1060,470 1110,430"/>
+    <circle cx="1010" cy="320" r="4" fill="#9FE7BD"/>
+    <circle cx="1110" cy="320" r="4" fill="#9FE7BD"/>
+    <circle cx="1060" cy="380" r="4" fill="#FF754D"/>
+  </g>
+
+  <!-- Pill Badge -->
+  <g transform="translate(80, 70)">
+    <rect width="360" height="42" rx="21" fill="rgba(255,255,255,0.12)" stroke="#9FE7BD" stroke-width="1.5"/>
+    <circle cx="24" cy="21" r="6" fill="#9FE7BD"/>
+    <text x="44" y="26" font-family="'Inter', sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF" letter-spacing="1.2">BIOLOGICAL &amp; HEALTH · COMPUTER VISION</text>
+  </g>
+
+  <!-- Headline Typography -->
+  <text x="80" y="185" font-family="'Fraunces', Georgia, serif" font-size="56" font-weight="700" fill="#FFFFFF" letter-spacing="-1">Face Age Calculator</text>
+  <text x="80" y="235" font-family="'Inter', sans-serif" font-size="24" font-weight="500" fill="#D3E5DE">Estimate apparent facial age from a clear photograph</text>
+
+  <!-- 3 Interactive Cards -->
+  <g transform="translate(80, 290)" filter="url(#thumbShadow)">
+    <!-- Card 1: Client-Side Processing -->
+    <g transform="translate(0, 0)">
+      <rect width="350" height="350" rx="16" fill="url(#cardGrad)"/>
+      <rect x="0" y="0" width="350" height="8" rx="4" fill="#075433"/>
+      <text x="28" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#52796F" letter-spacing="1.2">BROWSER PROCESSING</text>
+      <text x="28" y="88" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#0B233A">Private by Design</text>
+      <g transform="translate(28, 120)">
+        <rect width="294" height="80" rx="10" fill="#F4F8F5" stroke="#D3E5DE"/>
+        <text x="20" y="34" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433">100% In-Browser Analysis</text>
+        <text x="20" y="60" font-family="'Inter', sans-serif" font-size="12" fill="#4A635A">No images uploaded or stored on servers</text>
+      </g>
+      <g transform="translate(28, 215)">
+        <rect width="294" height="80" rx="10" fill="#F4F8F5" stroke="#D3E5DE"/>
+        <text x="20" y="34" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433">Instant Face Detection</text>
+        <text x="20" y="60" font-family="'Inter', sans-serif" font-size="12" fill="#4A635A">Real-time landmark and texture audit</text>
+      </g>
+    </g>
+
+    <!-- Card 2: Apparent Age Result Display -->
+    <g transform="translate(380, 0)">
+      <rect width="350" height="350" rx="16" fill="url(#cardGrad)"/>
+      <rect x="0" y="0" width="350" height="8" rx="4" fill="#FF754D"/>
+      <text x="28" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#FF754D" letter-spacing="1.2">APPARENT AGE OUTPUT</text>
+      <text x="28" y="88" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#0B233A">Estimated Face Age</text>
+      <g transform="translate(28, 115)">
+        <rect width="294" height="110" rx="12" fill="#FFFDFB" stroke="#FF754D" stroke-width="1.5"/>
+        <text x="147" y="55" font-family="'Fraunces', Georgia, serif" font-size="52" font-weight="800" fill="#0B233A" text-anchor="middle">34</text>
+        <text x="147" y="85" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FF754D" text-anchor="middle">YEARS APPROX (RANGE 31–37)</text>
+      </g>
+      <g transform="translate(28, 245)">
+        <rect width="294" height="65" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="20" y="28" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0B233A">Actual Age Comparison</text>
+        <text x="20" y="48" font-family="'Inter', sans-serif" font-size="11.5" fill="#64748B">Actual: 38 · Difference: −4 yrs younger</text>
+      </g>
+    </g>
+
+    <!-- Card 3: Scientific Qualification -->
+    <g transform="translate(760, 0)">
+      <rect width="360" height="350" rx="16" fill="url(#cardGrad)"/>
+      <rect x="0" y="0" width="360" height="8" rx="4" fill="#0B233A"/>
+      <text x="28" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#0B233A" letter-spacing="1.2">METHODOLOGY</text>
+      <text x="28" y="88" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#0B233A">Visible Features</text>
+      <g transform="translate(28, 120)">
+        <rect width="304" height="105" rx="10" fill="#042F2A"/>
+        <text x="152" y="36" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#9FE7BD" text-anchor="middle">Appearance-Based Model</text>
+        <text x="152" y="64" font-family="'Inter', sans-serif" font-size="12.5" fill="#FFFFFF" text-anchor="middle">Evaluates skin texture, lighting,</text>
+        <text x="152" y="88" font-family="'Inter', sans-serif" font-size="12.5" fill="#D3E5DE" text-anchor="middle">expression, and facial symmetry</text>
+      </g>
+      <g transform="translate(28, 245)">
+        <rect width="304" height="60" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
+        <text x="16" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">Non-Diagnostic Estimate</text>
+        <text x="16" y="46" font-family="'Inter', sans-serif" font-size="11.5" fill="#4A635A">Educational &amp; entertainment tool</text>
+      </g>
+    </g>
+  </g>
+</svg>

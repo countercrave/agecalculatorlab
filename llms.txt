@@ -324,6 +324,7 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [Author](https://www.agecalculatorlab.com/author/navjeet-kamboj/)
 - [Disclaimer](https://www.agecalculatorlab.com/disclaimer/)
 - [Can You Retire at 60 in the UK? Pension & Early Retirement Guide](https://www.agecalculatorlab.com/articles/can-you-retire-at-60-uk/): Comprehensive UK guide distinguishing stopping work at 60, accessing private/workplace pensions, and waiting for State Pension age.
+- [Face Age Calculator](https://www.agecalculatorlab.com/tools/face-age-calculator/): Private-by-design computer vision tool estimating apparent facial age from a clear photo, analyzing skin texture gradients, facial symmetry, and lighting quality.
 - [Age Grading Calculator](https://www.agecalculatorlab.com/tools/age-grading-calculator/): Calculate running age grade percentages by age, distance, sex, and finish time using verified 2025 WMA and USATF standards.
 - [What Is Age Grading in Running? Complete Guide to Age Grade](https://www.agecalculatorlab.com/articles/what-is-age-grading-in-running/): Complete sports-science guide to running age grade percentages, 2025 WMA standards, performance bands, and masters running evaluation.
 - [How Is Age Grade Calculated? Formula, Examples & Guide](https://www.agecalculatorlab.com/articles/how-is-age-grade-calculated/): Detailed breakdown of running age grade formula, WMA 2020 factor tables, worked calculation examples, and performance standards.

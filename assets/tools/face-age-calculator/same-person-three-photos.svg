@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Why Apparent Age Varies Across Photo Conditions">
+  <defs>
+    <linearGradient id="photoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="100%" stop-color="#F4F8F5"/>
+    </linearGradient>
+    <filter id="cardSh" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0B233A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#photoBg)"/>
+
+  <!-- Header -->
+  <g transform="translate(80, 50)">
+    <text x="0" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#52796F" letter-spacing="1.2">EXPERIMENTAL COMPARISON</text>
+    <text x="0" y="68" font-family="'Fraunces', Georgia, serif" font-size="36" font-weight="700" fill="#0B233A">Why Can Two Photos of the Same Person Differ?</text>
+    <text x="0" y="98" font-family="'Inter', sans-serif" font-size="16" fill="#4A635A">Same 38-year-old individual photographed under three distinct photographic conditions</text>
+  </g>
+
+  <!-- 3 Condition Cards -->
+  <!-- Photo A: Studio Diffuse -->
+  <g transform="translate(80, 160)" filter="url(#cardSh)">
+    <rect width="320" height="440" rx="16" fill="#FFFFFF" stroke="#075433" stroke-width="2"/>
+    <rect x="0" y="0" width="320" height="8" rx="4" fill="#075433"/>
+    <g transform="translate(26, 30)">
+      <rect width="90" height="24" rx="12" fill="#E8F5EE"/>
+      <text x="45" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#075433" text-anchor="middle">PHOTO A</text>
+      
+      <text x="0" y="60" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#0B233A">Soft Studio Light</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">Diffuse front-facing illumination</text>
+
+      <!-- Mock Portrait Silhouette -->
+      <g transform="translate(134, 150)">
+        <circle cx="0" cy="0" r="45" fill="#F4F8F5" stroke="#CBD5E1"/>
+        <ellipse cx="0" cy="0" rx="25" ry="32" fill="#CBD5E1"/>
+        <circle cx="-10" cy="-6" r="3" fill="#64748B"/>
+        <circle cx="10" cy="-6" r="3" fill="#64748B"/>
+        <path d="M-8,14 Q0,20 8,14" stroke="#64748B" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <g transform="translate(0, 220)">
+        <rect width="268" height="75" rx="10" fill="#F4F8F5" stroke="#075433"/>
+        <text x="16" y="28" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#075433">ESTIMATED FACE AGE</text>
+        <text x="16" y="58" font-family="'Inter', sans-serif" font-size="28" font-weight="900" fill="#075433">32 years</text>
+        <text x="252" y="54" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#075433" text-anchor="end">Range 30–34</text>
+      </g>
+
+      <text x="0" y="325" font-family="'Inter', sans-serif" font-size="12" fill="#4A635A" line-height="1.5">
+        <tspan x="0" dy="0">• Even light minimizes wrinkle depth</tspan>
+        <tspan x="0" dy="18">• Neutral, relaxed expression</tspan>
+        <tspan x="0" dy="18">• Perceived as 6 yrs younger</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Photo B: Harsh Sunlight -->
+  <g transform="translate(440, 160)" filter="url(#cardSh)">
+    <rect width="320" height="440" rx="16" fill="#FFFDFB" stroke="#FF754D" stroke-width="2"/>
+    <rect x="0" y="0" width="320" height="8" rx="4" fill="#FF754D"/>
+    <g transform="translate(26, 30)">
+      <rect width="90" height="24" rx="12" fill="#FFF1ED"/>
+      <text x="45" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#FF754D" text-anchor="middle">PHOTO B</text>
+      
+      <text x="0" y="60" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#0B233A">Harsh Sunlight</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">Overhead sun + squinting</text>
+
+      <!-- Mock Portrait Silhouette -->
+      <g transform="translate(134, 150)">
+        <circle cx="0" cy="0" r="45" fill="#FFFDFB" stroke="#FED7AA"/>
+        <ellipse cx="0" cy="0" rx="25" ry="32" fill="#E2E8F0"/>
+        <!-- Squint eyes -->
+        <line x1="-14" y1="-6" x2="-6" y2="-6" stroke="#475569" stroke-width="2"/>
+        <line x1="6" y1="-6" x2="14" y2="-6" stroke="#475569" stroke-width="2"/>
+        <path d="M-8,14 Q0,10 8,14" stroke="#475569" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <g transform="translate(0, 220)">
+        <rect width="268" height="75" rx="10" fill="#FFF7F4" stroke="#FF754D"/>
+        <text x="16" y="28" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#FF754D">ESTIMATED FACE AGE</text>
+        <text x="16" y="58" font-family="'Inter', sans-serif" font-size="28" font-weight="900" fill="#FF754D">41 years</text>
+        <text x="252" y="54" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FF754D" text-anchor="end">Range 38–44</text>
+      </g>
+
+      <text x="0" y="325" font-family="'Inter', sans-serif" font-size="12" fill="#4A635A" line-height="1.5">
+        <tspan x="0" dy="0">• Heavy shadows exaggerate nasolabial folds</tspan>
+        <tspan x="0" dy="18">• Squinting adds eye-corner creases</tspan>
+        <tspan x="0" dy="18">• Perceived as 3 yrs older</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Photo C: Dynamic Low Angle -->
+  <g transform="translate(800, 160)" filter="url(#cardSh)">
+    <rect width="320" height="440" rx="16" fill="#FFFFFF" stroke="#64748B" stroke-width="1.5"/>
+    <rect x="0" y="0" width="320" height="8" rx="4" fill="#64748B"/>
+    <g transform="translate(26, 30)">
+      <rect width="90" height="24" rx="12" fill="#F1F5F9"/>
+      <text x="45" y="16" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">PHOTO C</text>
+      
+      <text x="0" y="60" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#0B233A">Low Angle Selfie</text>
+      <text x="0" y="82" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">Angled perspective + compression</text>
+
+      <!-- Mock Portrait Silhouette -->
+      <g transform="translate(134, 150)">
+        <circle cx="0" cy="0" r="45" fill="#F8FAFC" stroke="#CBD5E1"/>
+        <ellipse cx="0" cy="0" rx="28" ry="30" fill="#E2E8F0"/>
+        <circle cx="-10" cy="-4" r="3" fill="#64748B"/>
+        <circle cx="10" cy="-4" r="3" fill="#64748B"/>
+        <path d="M-8,14 Q0,22 8,14" stroke="#64748B" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <g transform="translate(0, 220)">
+        <rect width="268" height="75" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+        <text x="16" y="28" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#64748B">ESTIMATED FACE AGE</text>
+        <text x="16" y="58" font-family="'Inter', sans-serif" font-size="28" font-weight="900" fill="#475569">36 years</text>
+        <text x="252" y="54" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#64748B" text-anchor="end">Range 33–39</text>
+      </g>
+
+      <text x="0" y="325" font-family="'Inter', sans-serif" font-size="12" fill="#4A635A" line-height="1.5">
+        <tspan x="0" dy="0">• Lens distortion alters jawline taper</tspan>
+        <tspan x="0" dy="18">• Mobile sensor noise/smoothing</tspan>
+        <tspan x="0" dy="18">• Moderate confidence variance</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
