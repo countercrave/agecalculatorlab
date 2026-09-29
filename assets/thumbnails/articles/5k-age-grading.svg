@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="5K Age Grading Explained: Calculate Your Age Grade">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="45%" stop-color="#075433"/>
+      <stop offset="100%" stop-color="#0B233A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D3B35"/>
+      <stop offset="100%" stop-color="#072B26"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#103657"/>
+      <stop offset="100%" stop-color="#0B233A"/>
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF754D"/>
+      <stop offset="100%" stop-color="#FFA07A"/>
+    </linearGradient>
+    <linearGradient id="accentMint" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9FE7BD"/>
+      <stop offset="100%" stop-color="#5EEAD4"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Running Track & Distance Grid Lines -->
+  <g opacity="0.10" stroke="#FFFFFF" stroke-width="2.5" fill="none">
+    <ellipse cx="640" cy="860" rx="900" ry="440"/>
+    <ellipse cx="640" cy="880" rx="980" ry="480"/>
+    <ellipse cx="640" cy="900" rx="1060" ry="520"/>
+    <ellipse cx="640" cy="920" rx="1140" ry="560"/>
+    <line x1="300" y1="0" x2="300" y2="720" stroke-dasharray="8 8"/>
+    <line x1="980" y1="0" x2="980" y2="720" stroke-dasharray="8 8"/>
+  </g>
+
+  <!-- Brand Eyebrow -->
+  <g transform="translate(100, 75)">
+    <rect x="0" y="0" width="295" height="34" rx="17" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
+    <circle cx="16" cy="17" r="5" fill="#9FE7BD"/>
+    <text x="32" y="22" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#D3E5DE" letter-spacing="1.5">5K ROAD &amp; PARKRUN GUIDE</text>
+  </g>
+
+  <!-- Main Title & Subtitle -->
+  <text x="100" y="165" font-family="'Fraunces', Georgia, serif" font-size="52" font-weight="700" fill="#FFFFFF" letter-spacing="-1">5K Age Grading Explained</text>
+  <text x="100" y="215" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="400" fill="#D3E5DE">How to calculate your 5,000m demographic percentage and true aerobic speed</text>
+
+  <!-- Left Card: Worked Example Age 50 Male -->
+  <g transform="translate(100, 270)" filter="url(#cardShadow)">
+    <rect width="490" height="340" rx="20" fill="url(#cardGrad1)" stroke="rgba(159, 231, 189, 0.35)" stroke-width="1.5"/>
+    
+    <rect x="32" y="32" width="130" height="28" rx="14" fill="rgba(255, 117, 77, 0.2)" stroke="#FF754D" stroke-width="1.2"/>
+    <text x="97" y="51" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#FF9A77" text-anchor="middle" letter-spacing="1">EXAMPLE 1 · M50</text>
+    
+    <text x="32" y="105" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="700" fill="#FFFFFF">25:00 5K Finish Time</text>
+    
+    <g transform="translate(32, 135)">
+      <rect width="426" height="64" rx="10" fill="rgba(0,0,0,0.25)"/>
+      <text x="20" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#9FE7BD">WMA 2025 AGE-50 STANDARD</text>
+      <text x="20" y="50" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">14:19 <tspan font-size="13" font-weight="400" fill="#D3E5DE">(859s vs 1,500s net time)</tspan></text>
+    </g>
+
+    <g transform="translate(32, 220)">
+      <text x="0" y="22" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#D3E5DE">Official 5K Age Grade:</text>
+      <text x="0" y="70" font-family="'Fraunces', Georgia, serif" font-size="48" font-weight="800" fill="url(#accentMint)">57.26%</text>
+      <rect x="210" y="38" width="130" height="26" rx="6" fill="rgba(159, 231, 189, 0.15)"/>
+      <text x="275" y="55" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#9FE7BD" text-anchor="middle">SOLID LOCAL</text>
+    </g>
+  </g>
+
+  <!-- Right Card: Worked Example Age 60 Female -->
+  <g transform="translate(690, 270)" filter="url(#cardShadow)">
+    <rect width="490" height="340" rx="20" fill="url(#cardGrad2)" stroke="rgba(255, 117, 77, 0.35)" stroke-width="1.5"/>
+    
+    <rect x="32" y="32" width="130" height="28" rx="14" fill="rgba(159, 231, 189, 0.2)" stroke="#9FE7BD" stroke-width="1.2"/>
+    <text x="97" y="51" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#9FE7BD" text-anchor="middle" letter-spacing="1">EXAMPLE 2 · W60</text>
+    
+    <text x="32" y="105" font-family="'Fraunces', Georgia, serif" font-size="28" font-weight="700" fill="#FFFFFF">25:00 5K Finish Time</text>
+
+    <g transform="translate(32, 135)">
+      <rect width="426" height="64" rx="10" fill="rgba(0,0,0,0.25)"/>
+      <text x="20" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FFA07A">WMA 2025 AGE-60 STANDARD</text>
+      <text x="20" y="50" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">17:44 <tspan font-size="13" font-weight="400" fill="#D3E5DE">(1,064s vs 1,500s net time)</tspan></text>
+    </g>
+
+    <g transform="translate(32, 220)">
+      <text x="0" y="22" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#D3E5DE">Official 5K Age Grade:</text>
+      <text x="0" y="70" font-family="'Fraunces', Georgia, serif" font-size="48" font-weight="800" fill="url(#accentOrange)">70.93%</text>
+      <rect x="210" y="38" width="130" height="26" rx="6" fill="rgba(255, 117, 77, 0.15)"/>
+      <text x="275" y="55" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF9A77" text-anchor="middle">REGIONAL CLASS</text>
+    </g>
+  </g>
+
+  <!-- Footer Tagline -->
+  <g transform="translate(100, 665)">
+    <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="500" fill="rgba(255,255,255,0.6)">Age Calculator Lab · Practical, verified sports science and demographic performance guides</text>
+  </g>
+</svg>

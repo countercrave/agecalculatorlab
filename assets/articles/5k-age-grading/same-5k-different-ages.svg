@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Same 5K Time Across Different Ages Comparison">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="100%" stop-color="#F3F8F5"/>
+    </linearGradient>
+    <filter id="barShadow" x="-5%" y="-10%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#042F2A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGrad2)"/>
+
+  <!-- Header -->
+  <g transform="translate(80, 50)">
+    <rect width="260" height="30" rx="15" fill="#E8F5EE" stroke="#A7F3D0" stroke-width="1"/>
+    <text x="130" y="20" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" text-anchor="middle" letter-spacing="1">DEMOGRAPHIC SCALING</text>
+    
+    <text x="0" y="70" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#0B233A">The 25:00 5K Across Five Decades</text>
+    <text x="0" y="100" font-family="'Inter', sans-serif" font-size="16" fill="#52796F">Identical 5K clock time produces radically different athletic grades as age progresses</text>
+  </g>
+
+  <!-- Horizontal Comparison Bars Grid -->
+  <g transform="translate(80, 180)">
+    <!-- Age 30 Male -->
+    <g transform="translate(0, 0)">
+      <rect width="1040" height="72" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#barShadow)"/>
+      <circle cx="40" cy="36" r="20" fill="#F1F5F9"/>
+      <text x="40" y="42" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#475569" text-anchor="middle">30</text>
+      
+      <text x="75" y="32" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#0B233A">Male Age 30 · Clock Time: 25:00</text>
+      <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#64748B">WMA Factor: 0.9990 · Theoretical Open Time: 24:58</text>
+
+      <!-- Bar Graphic -->
+      <rect x="520" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
+      <rect x="520" y="24" width="161" height="24" rx="6" fill="#94A3B8"/>
+      
+      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#475569">50.36%</text>
+      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#64748B">Recreational</text>
+    </g>
+
+    <!-- Age 40 Male -->
+    <g transform="translate(0, 88)">
+      <rect width="1040" height="72" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#barShadow)"/>
+      <circle cx="40" cy="36" r="20" fill="#F1F5F9"/>
+      <text x="40" y="42" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#475569" text-anchor="middle">40</text>
+      
+      <text x="75" y="32" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#0B233A">Male Age 40 · Clock Time: 25:00</text>
+      <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#64748B">WMA Factor: 0.9485 · Theoretical Open Time: 23:42</text>
+
+      <!-- Bar Graphic -->
+      <rect x="520" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
+      <rect x="520" y="24" width="170" height="24" rx="6" fill="#52796F"/>
+      
+      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#52796F">53.07%</text>
+      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#52796F">Local Runner</text>
+    </g>
+
+    <!-- Age 50 Male -->
+    <g transform="translate(0, 176)">
+      <rect width="1040" height="72" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" filter="url(#barShadow)"/>
+      <circle cx="40" cy="36" r="20" fill="#E8F5EE"/>
+      <text x="40" y="42" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#075433" text-anchor="middle">50</text>
+      
+      <text x="75" y="32" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#0B233A">Male Age 50 · Clock Time: 25:00</text>
+      <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#64748B">WMA Factor: 0.8790 · Theoretical Open Time: 21:58</text>
+
+      <!-- Bar Graphic -->
+      <rect x="520" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
+      <rect x="520" y="24" width="183" height="24" rx="6" fill="#075433"/>
+      
+      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#075433">57.26%</text>
+      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">Solid Local</text>
+    </g>
+
+    <!-- Age 60 Male -->
+    <g transform="translate(0, 264)">
+      <rect width="1040" height="72" rx="12" fill="#F4F9F6" stroke="#9FE7BD" stroke-width="1.5" filter="url(#barShadow)"/>
+      <circle cx="40" cy="36" r="20" fill="#D1FAE5"/>
+      <text x="40" y="42" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#065F46" text-anchor="middle">60</text>
+      
+      <text x="75" y="32" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">Male Age 60 · Clock Time: 25:00</text>
+      <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#065F46">WMA Factor: 0.8030 · Theoretical Open Time: 20:04</text>
+
+      <!-- Bar Graphic -->
+      <rect x="520" y="24" width="320" height="24" rx="6" fill="#E2E8F0"/>
+      <rect x="520" y="24" width="200" height="24" rx="6" fill="#059669"/>
+      
+      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#059669">62.67%</text>
+      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#059669">Local Competitive</text>
+    </g>
+
+    <!-- Age 70 Male -->
+    <g transform="translate(0, 352)">
+      <rect width="1040" height="72" rx="12" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1.5" filter="url(#barShadow)"/>
+      <circle cx="40" cy="36" r="20" fill="#FFEDD5"/>
+      <text x="40" y="42" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#C2410C" text-anchor="middle">70</text>
+      
+      <text x="75" y="32" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#7C2D12">Male Age 70 · Clock Time: 25:00</text>
+      <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#9A3412">WMA Factor: 0.7180 · Theoretical Open Time: 17:57</text>
+
+      <!-- Bar Graphic -->
+      <rect x="520" y="24" width="320" height="24" rx="6" fill="#FED7AA"/>
+      <rect x="520" y="24" width="224" height="24" rx="6" fill="#EA580C"/>
+      
+      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#EA580C">70.07%</text>
+      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#EA580C">Regional Class</text>
+    </g>
+  </g>
+
+  <!-- Bottom Legend / Note -->
+  <g transform="translate(80, 625)">
+    <text x="0" y="0" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#64748B">Data source: 2025 World Masters Athletics (WMA) road racing standards for certified 5,000-meter road competition.</text>
+  </g>
+</svg>

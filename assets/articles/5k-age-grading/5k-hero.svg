@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="5K Age Grading Calculation and Benchmark Overview">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="60%" stop-color="#F4F8F5"/>
+      <stop offset="100%" stop-color="#EAF2ED"/>
+    </linearGradient>
+    <linearGradient id="panelGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="100%" stop-color="#075433"/>
+    </linearGradient>
+    <linearGradient id="panelGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B233A"/>
+      <stop offset="100%" stop-color="#143A5E"/>
+    </linearGradient>
+    <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B233A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="675" fill="url(#heroBg)"/>
+
+  <!-- Stylized Track & Distance Ribbons -->
+  <g opacity="0.35" stroke="#52796F" stroke-width="2" fill="none">
+    <path d="M-50,560 C300,560 500,450 800,470 C1050,490 1150,410 1250,410"/>
+    <path d="M-50,590 C300,590 500,480 800,500 C1050,520 1150,440 1250,440"/>
+    <path d="M-50,620 C300,620 500,510 800,530 C1050,550 1150,470 1250,470"/>
+    <path d="M-50,650 C300,650 500,540 800,560 C1050,580 1150,500 1250,500"/>
+  </g>
+
+  <!-- Distance Indicator Badge -->
+  <g transform="translate(80, 50)">
+    <rect width="320" height="38" rx="19" fill="#042F2A"/>
+    <circle cx="22" cy="19" r="6" fill="#9FE7BD"/>
+    <text x="40" y="24" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="1.2">5,000 METERS · 3.107 MILES</text>
+  </g>
+
+  <!-- Hero Header Typography -->
+  <text x="80" y="145" font-family="'Fraunces', Georgia, serif" font-size="44" font-weight="700" fill="#0B233A" letter-spacing="-0.5">5K Age Grading &amp; Performance Standards</text>
+  <text x="80" y="185" font-family="'Inter', sans-serif" font-size="18" fill="#52796F">Comparing chip times against demographic world record standards across every age</text>
+
+  <!-- Left Main Card: The Core 5K Formula -->
+  <g transform="translate(80, 230)" filter="url(#heroShadow)">
+    <rect width="500" height="380" rx="18" fill="url(#panelGrad1)"/>
+    
+    <g transform="translate(36, 36)">
+      <rect width="180" height="26" rx="6" fill="rgba(159, 231, 189, 0.2)"/>
+      <text x="90" y="17" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#9FE7BD" text-anchor="middle" letter-spacing="1">MATHEMATICAL MODEL</text>
+
+      <text x="0" y="65" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#FFFFFF">How 5K Age Grade Is Derived</text>
+      
+      <!-- Formula Display -->
+      <g transform="translate(0, 95)">
+        <rect width="428" height="90" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.15)"/>
+        <text x="214" y="36" font-family="'Inter', monospace" font-size="17" font-weight="700" fill="#9FE7BD" text-anchor="middle">Age Grade (%) = (WMA Standard / Net Time) × 100</text>
+        <text x="214" y="68" font-family="'Inter', monospace" font-size="14" font-weight="500" fill="#D3E5DE" text-anchor="middle">Or: (Open World Record / Age-Adjusted Time) × 100</text>
+      </g>
+
+      <!-- Key Factor Callouts -->
+      <g transform="translate(0, 215)">
+        <g transform="translate(0, 0)">
+          <rect width="204" height="74" rx="10" fill="rgba(255,255,255,0.08)"/>
+          <text x="16" y="26" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#9FE7BD">OPEN MEN 5K STANDARD</text>
+          <text x="16" y="52" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">12:35.00 <tspan font-size="12" font-weight="500" fill="#D3E5DE">(755s)</tspan></text>
+        </g>
+        <g transform="translate(224, 0)">
+          <rect width="204" height="74" rx="10" fill="rgba(255,255,255,0.08)"/>
+          <text x="16" y="26" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFA07A">OPEN WOMEN 5K STANDARD</text>
+          <text x="16" y="52" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">14:00.00 <tspan font-size="12" font-weight="500" fill="#D3E5DE">(840s)</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Card: The 25:00 5K Paradigm Across 5 Decades -->
+  <g transform="translate(620, 230)" filter="url(#heroShadow)">
+    <rect width="500" height="380" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <g transform="translate(36, 36)">
+      <rect width="200" height="26" rx="6" fill="#F0FDF4"/>
+      <text x="100" y="17" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#075433" text-anchor="middle" letter-spacing="1">THE 25:00 5K BENCHMARK</text>
+
+      <text x="0" y="65" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#0B233A">Same Time, Escalating Grade</text>
+
+      <!-- Row items showing progression of 25:00 5K -->
+      <g transform="translate(0, 90)">
+        <!-- Row 1: Age 30 -->
+        <g transform="translate(0, 0)">
+          <rect width="428" height="42" rx="8" fill="#F8FAFC"/>
+          <text x="18" y="26" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">Male Age 30 (25:00)</text>
+          <text x="410" y="26" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#64748B" text-anchor="end">50.36% · Recreational</text>
+        </g>
+
+        <!-- Row 2: Age 45 -->
+        <g transform="translate(0, 50)">
+          <rect width="428" height="42" rx="8" fill="#F8FAFC"/>
+          <text x="18" y="26" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">Male Age 45 (25:00)</text>
+          <text x="410" y="26" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#075433" text-anchor="end">54.68% · Solid Local</text>
+        </g>
+
+        <!-- Row 3: Age 55 -->
+        <g transform="translate(0, 100)">
+          <rect width="428" height="42" rx="8" fill="#F1F5F9"/>
+          <text x="18" y="26" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">Male Age 55 (25:00)</text>
+          <text x="410" y="26" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#075433" text-anchor="end">59.81% · Strong Local</text>
+        </g>
+
+        <!-- Row 4: Age 65 -->
+        <g transform="translate(0, 150)">
+          <rect width="428" height="42" rx="8" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+          <text x="18" y="26" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#065F46">Male Age 65 (25:00)</text>
+          <text x="410" y="26" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#059669" text-anchor="end">66.25% · Regional Class</text>
+        </g>
+
+        <!-- Row 5: Age 75 -->
+        <g transform="translate(0, 200)">
+          <rect width="428" height="42" rx="8" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1"/>
+          <text x="18" y="26" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#9A3412">Male Age 75 (25:00)</text>
+          <text x="410" y="26" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#EA580C" text-anchor="end">75.12% · Competitive Regional</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="5K Race Conditions and Environmental Factors Impact on Age Grading">
+  <defs>
+    <linearGradient id="condBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFCF9"/>
+      <stop offset="60%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <filter id="condCardShadow" x="-5%" y="-10%" width="110%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0B233A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#condBg)"/>
+
+  <!-- Header -->
+  <g transform="translate(80, 50)">
+    <rect width="280" height="30" rx="15" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1"/>
+    <text x="140" y="20" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0369A1" text-anchor="middle" letter-spacing="1">ENVIRONMENTAL MODIFIERS</text>
+    
+    <text x="0" y="70" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#0B233A">Race Conditions vs Standardized 5K Age Grade</text>
+    <text x="0" y="98" font-family="'Inter', sans-serif" font-size="16" fill="#52796F">WMA standards assume flat, certified road surfaces. Real-world conditions shift actual effort.</text>
+  </g>
+
+  <!-- 4 Environmental Condition Cards -->
+  <g transform="translate(80, 150)">
+    <!-- Card 1: Course Profile & Elevation -->
+    <g transform="translate(0, 0)" filter="url(#condCardShadow)">
+      <rect width="505" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect x="24" y="24" width="44" height="44" rx="10" fill="#ECFDF5"/>
+      <text x="46" y="52" font-family="'Inter', sans-serif" font-size="22" text-anchor="middle">⛰️</text>
+
+      <text x="82" y="42" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#042F2A">Course Elevation &amp; Hills</text>
+      <text x="82" y="62" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#059669">Impact: -15s to -60s on 5K finish time</text>
+
+      <text x="24" y="105" font-family="'Inter', sans-serif" font-size="13" fill="#475569" width="455">
+        <tspan x="24" dy="0">A 5K with rolling hills or steep ascents dramatically slows net clock</tspan>
+        <tspan x="24" dy="20">times. A 24:30 on a hilly course often represents an aerobic effort</tspan>
+        <tspan x="24" dy="20">superior to a 23:45 recorded on a flat coastal track.</tspan>
+      </text>
+
+      <rect x="24" y="155" width="457" height="30" rx="6" fill="#F1F5F9"/>
+      <text x="36" y="175" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#334155">Grade Impact: Understates true fitness on hilly layouts</text>
+    </g>
+
+    <!-- Card 2: Surface Type (Road vs Trail vs Grass) -->
+    <g transform="translate(535, 0)" filter="url(#condCardShadow)">
+      <rect width="505" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect x="24" y="24" width="44" height="44" rx="10" fill="#FFF7ED"/>
+      <text x="46" y="52" font-family="'Inter', sans-serif" font-size="22" text-anchor="middle">🌲</text>
+
+      <text x="82" y="42" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#9A3412">Running Surface (Road vs Trail / Grass)</text>
+      <text x="82" y="62" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#EA580C">Impact: -30s to -90s on unpaved surfaces</text>
+
+      <text x="24" y="105" font-family="'Inter', sans-serif" font-size="13" fill="#475569">
+        <tspan x="24" dy="0">Many 5K parkruns use woodland gravel, dirt trails, or wet grass.</tspan>
+        <tspan x="24" dy="20">Energy loss from soft ground and sharp turns reduces stride efficiency,</tspan>
+        <tspan x="24" dy="20">yielding lower official age grades than asphalt road races.</tspan>
+      </text>
+
+      <rect x="24" y="155" width="457" height="30" rx="6" fill="#FFF7ED"/>
+      <text x="36" y="175" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#C2410C">Parkrun Note: Cross-country 5Ks yield lower nominal grades</text>
+    </g>
+
+    <!-- Card 3: Weather (Heat, Humidity & Sun) -->
+    <g transform="translate(0, 230)" filter="url(#condCardShadow)">
+      <rect width="505" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect x="24" y="24" width="44" height="44" rx="10" fill="#FEF2F2"/>
+      <text x="46" y="52" font-family="'Inter', sans-serif" font-size="22" text-anchor="middle">☀️</text>
+
+      <text x="82" y="42" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#991B1B">Temperature &amp; Dew Point</text>
+      <text x="82" y="62" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#DC2626">Impact: -2% to -6% aerobic speed at &gt;75°F (24°C)</text>
+
+      <text x="24" y="105" font-family="'Inter', sans-serif" font-size="13" fill="#475569">
+        <tspan x="24" dy="0">Optimal endurance running temperature is 45°F–55°F (7°C–13°C).</tspan>
+        <tspan x="24" dy="20">High summer dew points elevate cardiac drift and limit blood flow</tspan>
+        <tspan x="24" dy="20">to working muscles, depressing 5K finish times.</tspan>
+      </text>
+
+      <rect x="24" y="155" width="457" height="30" rx="6" fill="#FEF2F2"/>
+      <text x="36" y="175" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#B91C1C">Adjustment: Compare summer 5Ks with seasonal context</text>
+    </g>
+
+    <!-- Card 4: Wind & Aerodynamic Drag -->
+    <g transform="translate(535, 230)" filter="url(#condCardShadow)">
+      <rect width="505" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect x="24" y="24" width="44" height="44" rx="10" fill="#F0FDF4"/>
+      <text x="46" y="52" font-family="'Inter', sans-serif" font-size="22" text-anchor="middle">💨</text>
+
+      <text x="82" y="42" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#065F46">Wind Resistance &amp; Open Courses</text>
+      <text x="82" y="62" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#059669">Impact: Headwinds penalize more than tailwinds assist</text>
+
+      <text x="24" y="105" font-family="'Inter', sans-serif" font-size="13" fill="#475569">
+        <tspan x="24" dy="0">Aerodynamic research shows a 15 mph headwind slows runners by</tspan>
+        <tspan x="24" dy="20">approximately 12 seconds per mile, whereas an equal tailwind only</tspan>
+        <tspan x="24" dy="20">assists by roughly 6 seconds per mile on out-and-back courses.</tspan>
+      </text>
+
+      <rect x="24" y="155" width="457" height="30" rx="6" fill="#F0FDF4"/>
+      <text x="36" y="175" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#065F46">Coastal/Out-and-Back: Net time penalty in gusty weather</text>
+    </g>
+  </g>
+
+  <!-- Bottom Advisory Banner -->
+  <g transform="translate(80, 615)">
+    <text x="0" y="0" font-family="'Inter', sans-serif" font-size="13.5" font-weight="600" fill="#042F2A">Pro-Tip for Runners: <tspan font-weight="400" fill="#475569">Use age grade to evaluate multi-season progress across standardized road courses, and make mental allowances for extreme weather or rugged surfaces.</tspan></text>
+  </g>
+</svg>
