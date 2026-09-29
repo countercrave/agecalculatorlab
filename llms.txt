@@ -328,3 +328,7 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [What Is Age Grading in Running? Complete Guide to Age Grade](https://www.agecalculatorlab.com/articles/what-is-age-grading-in-running/): Complete sports-science guide to running age grade percentages, 2025 WMA standards, performance bands, and masters running evaluation.
 - [How Is Age Grade Calculated? Formula, Examples & Guide](https://www.agecalculatorlab.com/articles/how-is-age-grade-calculated/): Detailed breakdown of running age grade formula, WMA 2020 factor tables, worked calculation examples, and performance standards.
 - [What Is a Good Age Grade in Running? Percentage Guide](https://www.agecalculatorlab.com/articles/what-is-a-good-age-grade-in-running/): Guide to interpreting 50%, 60%, 70%, 80%, and 90% running age grades, performance tiers, multi-year tracking, and demographic standards.
+- [Age Grading for Masters Runners: How It Works & Benefits](https://www.agecalculatorlab.com/articles/age-grading-for-masters-runners/): Comprehensive guide for masters runners on age-graded performance tracking, physiological decay curves, personal record (PR) benchmarks across decades, and race day evaluation.
+- [Age-Graded Results vs Age-Group Results: What's the Difference?](https://www.agecalculatorlab.com/articles/age-graded-results-vs-age-group-results/): Sports-science guide comparing age-group race field placements with age-grade percentages, multi-year tracking, race distance differences, and performance interpretation.
+
+

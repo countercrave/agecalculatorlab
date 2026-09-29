@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#FDFCF9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="trackShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B233A" flood-opacity="0.08" />
+    </filter>
+    <linearGradient id="navyTrackCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B233A" />
+      <stop offset="100%" stop-color="#042F2A" />
+    </linearGradient>
+    <linearGradient id="mintBadgeTrack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF5F0" />
+      <stop offset="100%" stop-color="#D3E5DE" />
+    </linearGradient>
+    <linearGradient id="stepperGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="35%" stop-color="#10B981" />
+      <stop offset="70%" stop-color="#075433" />
+      <stop offset="100%" stop-color="#FF754D" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;display=swap');
+      .handwritten { font-family: 'Caveat', cursive, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Editorial Architectural Blueprint Grid -->
+  <g opacity="0.32">
+    <line x1="60" y1="0" x2="60" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="1140" y1="0" x2="1140" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Header Category & Title -->
+  <rect x="80" y="50" width="290" height="30" rx="15" fill="url(#mintBadgeTrack)" />
+  <text x="225" y="70" font-size="11.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">LONGITUDINAL PERFORMANCE</text>
+  <text x="80" y="116" font-size="27" font-weight="800" fill="#0B233A" letter-spacing="-0.5">Tracking Running Performance Over Several Years</text>
+  <text x="80" y="144" font-size="14.5" fill="#52796F">How a runner's age grade can steadily ascend across decades despite gradual raw pace decline</text>
+
+  <!-- Main Visual Card -->
+  <g transform="translate(80, 170)">
+    <rect x="0" y="0" width="1040" height="444" rx="16" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5" filter="url(#trackShadow)" />
+
+    <!-- 4 Milestones Progression Flow across 15 years -->
+    <g transform="translate(40, 36)">
+      <!-- Connecting Line -->
+      <path d="M 120 70 L 840 70" stroke="#E5EFEA" stroke-width="6" stroke-linecap="round" />
+      <path d="M 120 70 L 840 70" stroke="url(#stepperGrad)" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 6" opacity="0.8" />
+
+      <!-- Step 1: Age 45 (2018) -->
+      <g transform="translate(10, 0)">
+        <rect x="0" y="0" width="220" height="175" rx="12" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+        <circle cx="110" cy="70" r="18" fill="#3B82F6" stroke="#FFFFFF" stroke-width="3" />
+        <text x="110" y="75" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+        
+        <text x="110" y="32" font-size="14" font-weight="800" fill="#0B233A" text-anchor="middle">Age 45 (Year 1)</text>
+        <text x="110" y="112" font-size="18" font-weight="800" fill="#0B233A" text-anchor="middle">22:30</text>
+        <text x="110" y="130" font-size="11.5" font-weight="600" fill="#52796F" text-anchor="middle">5K Road Race</text>
+        
+        <rect x="55" y="140" width="110" height="24" rx="4" fill="#EBF5F0" />
+        <text x="110" y="156" font-size="13" font-weight="800" fill="#075433" text-anchor="middle">64.2% Grade</text>
+      </g>
+
+      <!-- Step 2: Age 50 (2023) -->
+      <g transform="translate(255, 0)">
+        <rect x="0" y="0" width="220" height="175" rx="12" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+        <circle cx="110" cy="70" r="18" fill="#10B981" stroke="#FFFFFF" stroke-width="3" />
+        <text x="110" y="75" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+        
+        <text x="110" y="32" font-size="14" font-weight="800" fill="#0B233A" text-anchor="middle">Age 50 (Year 6)</text>
+        <text x="110" y="112" font-size="18" font-weight="800" fill="#0B233A" text-anchor="middle">23:15</text>
+        <text x="110" y="130" font-size="11.5" font-weight="600" fill="#52796F" text-anchor="middle">Clock: +45s slower</text>
+        
+        <rect x="55" y="140" width="110" height="24" rx="4" fill="#EBF5F0" />
+        <text x="110" y="156" font-size="13" font-weight="800" fill="#075433" text-anchor="middle">66.1% Grade</text>
+      </g>
+
+      <!-- Step 3: Age 55 (2028) -->
+      <g transform="translate(500, 0)">
+        <rect x="0" y="0" width="220" height="175" rx="12" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+        <circle cx="110" cy="70" r="18" fill="#075433" stroke="#FFFFFF" stroke-width="3" />
+        <text x="110" y="75" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+        
+        <text x="110" y="32" font-size="14" font-weight="800" fill="#0B233A" text-anchor="middle">Age 55 (Year 11)</text>
+        <text x="110" y="112" font-size="18" font-weight="800" fill="#0B233A" text-anchor="middle">24:20</text>
+        <text x="110" y="130" font-size="11.5" font-weight="600" fill="#52796F" text-anchor="middle">Clock: +1:50 slower</text>
+        
+        <rect x="55" y="140" width="110" height="24" rx="4" fill="#EBF5F0" />
+        <text x="110" y="156" font-size="13" font-weight="800" fill="#075433" text-anchor="middle">68.3% Grade</text>
+      </g>
+
+      <!-- Step 4: Age 60 (2033) -->
+      <g transform="translate(745, 0)">
+        <rect x="0" y="0" width="215" height="175" rx="12" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5" />
+        <circle cx="107" cy="70" r="18" fill="#2563EB" stroke="#FFFFFF" stroke-width="3" />
+        <text x="107" y="75" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">★</text>
+        
+        <text x="107" y="32" font-size="14" font-weight="800" fill="#1E40AF" text-anchor="middle">Age 60 (Year 16)</text>
+        <text x="107" y="112" font-size="18" font-weight="800" fill="#1E40AF" text-anchor="middle">25:35</text>
+        <text x="107" y="130" font-size="11.5" font-weight="600" fill="#2563EB" text-anchor="middle">Clock: +3:05 slower</text>
+        
+        <rect x="52" y="140" width="110" height="24" rx="4" fill="#2563EB" />
+        <text x="107" y="156" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">70.4% Grade</text>
+      </g>
+    </g>
+
+    <!-- Bottom Takeaway Summary Card -->
+    <g transform="translate(40, 236)">
+      <rect x="0" y="0" width="960" height="172" rx="12" fill="url(#navyTrackCard)" />
+
+      <g transform="translate(32, 24)">
+        <rect x="0" y="0" width="140" height="24" rx="12" fill="rgba(159,231,189,0.18)" stroke="#9FE7BD" stroke-width="1" />
+        <text x="70" y="16" font-size="11" font-weight="700" fill="#9FE7BD" text-anchor="middle">LONG-TERM FINDING</text>
+        
+        <text x="0" y="56" font-size="20" font-weight="800" fill="#FFFFFF">15-Year Performance Analysis: Clock PR vs Age-Graded PR</text>
+        <text x="0" y="82" font-size="13.5" fill="#D3E5DE" line-height="1.5">
+          Between age 45 and 60, raw race pace dropped by 3 minutes and 5 seconds due to normal aging physiology.
+        </text>
+        <text x="0" y="104" font-size="13.5" fill="#D3E5DE" line-height="1.5">
+          However, by maintaining dedicated training, the athlete crossed from local recreational (64.2%) into regional competitive status (70.4%).
+        </text>
+
+        <text x="0" y="134" font-size="18" font-weight="700" fill="#9FE7BD" class="handwritten">
+          Methodology Rule: Always use the exact same WMA factor edition when analyzing multi-year historical logs!
+        </text>
+      </g>
+    </g>
+
+  </g>
+</svg>

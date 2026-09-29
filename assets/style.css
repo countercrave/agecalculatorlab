@@ -182,7 +182,7 @@ main{scroll-margin-top:calc(var(--header-h) + 20px)}
 
 /* --- Header + navigation ------------------------------------ */
 .site-header{
-  position:sticky;top:0;z-index:60;
+  position:sticky;top:0;z-index:1000;
   background:color-mix(in srgb,var(--page) 88%,transparent);
   backdrop-filter:blur(16px);
   border-bottom:1px solid var(--line);
@@ -257,7 +257,7 @@ a.nav-cta:active{
 .nav-chevron{font-size:.85rem;color:var(--muted);transition:transform .2s ease}
 .nav-dropdown[open] .nav-chevron{transform:rotate(180deg)}
 .nav-mega{
-  position:absolute;z-index:90;top:100%;left:0;margin-top:6px;
+  position:absolute;z-index:1010;top:100%;left:0;margin-top:6px;
   width:min(860px,calc(100vw - 40px));padding:var(--s-6);
   border:1px solid var(--line);border-radius:var(--r-lg);
   background:var(--panel);box-shadow:var(--sh-3);

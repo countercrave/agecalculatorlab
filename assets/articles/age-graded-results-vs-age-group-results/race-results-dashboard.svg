@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Modern Race Results Dashboard Visualizer">
+  <defs>
+    <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#F3EFE6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="timePill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B233A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <filter id="tileShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0B233A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Surface -->
+  <rect width="1200" height="675" fill="url(#dashBg)"/>
+
+  <!-- Top Dashboard Bar -->
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="85" rx="14" fill="#0B233A" filter="url(#tileShadow)"/>
+    <circle cx="45" cy="42" r="18" fill="#075433"/>
+    <text x="45" y="47" font-family="'Inter', sans-serif" font-size="16" font-weight="900" fill="#9FE7BD" text-anchor="middle">10K</text>
+    <text x="80" y="38" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#FFFFFF">Runner Race Result Dashboard</text>
+    <text x="80" y="58" font-family="'Inter', sans-serif" font-size="13" fill="#94A3B8">Athlete: Male, Age 55 · Certified Course · WMA 2025 Standards Applied</text>
+    <rect x="910" y="26" width="138" height="34" rx="17" fill="rgba(255,255,255,0.12)"/>
+    <text x="979" y="48" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#9FE7BD" text-anchor="middle">OFFICIAL AUDIT</text>
+  </g>
+
+  <!-- 4 Core Metric Bento Tiles -->
+  <g transform="translate(60, 165)">
+    
+    <!-- Tile 1: Finishing Time -->
+    <g transform="translate(0, 0)" filter="url(#tileShadow)">
+      <rect width="255" height="340" rx="16" fill="url(#cardGrad)" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect x="24" y="24" width="85" height="24" rx="12" fill="#F1F5F9"/>
+      <text x="66" y="40" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">CLOCK</text>
+      
+      <text x="24" y="85" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#64748B">FINISH TIME</text>
+      <text x="24" y="135" font-family="'Fraunces', serif" font-size="38" font-weight="700" fill="#0B233A">48:00</text>
+      <text x="24" y="162" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">Net chip time (4:48/km)</text>
+
+      <line x1="24" y1="185" x2="231" y2="185" stroke="#E2E8F0" stroke-width="1"/>
+
+      <text x="24" y="220" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0B233A">What It Means:</text>
+      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#475569" width="200">The absolute elapsed physical time from start line to finish mat.</text>
+      <text x="24" y="305" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#94A3B8">Ignores age &amp; gender</text>
+    </g>
+
+    <!-- Tile 2: Overall Position -->
+    <g transform="translate(275, 0)" filter="url(#tileShadow)">
+      <rect width="255" height="340" rx="16" fill="url(#cardGrad)" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect x="24" y="24" width="85" height="24" rx="12" fill="#F1F5F9"/>
+      <text x="66" y="40" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">TOTAL</text>
+      
+      <text x="24" y="85" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#64748B">OVERALL PLACE</text>
+      <text x="24" y="135" font-family="'Fraunces', serif" font-size="38" font-weight="700" fill="#0B233A">142<tspan font-size="20" font-weight="500" fill="#64748B">/850</tspan></text>
+      <text x="24" y="162" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">Top 16.7% of all runners</text>
+
+      <line x1="24" y1="185" x2="231" y2="185" stroke="#E2E8F0" stroke-width="1"/>
+
+      <text x="24" y="220" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0B233A">What It Means:</text>
+      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#475569">Placement across every competitor of all ages and sexes combined.</text>
+      <text x="24" y="305" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#94A3B8">Heavily favors younger runners</text>
+    </g>
+
+    <!-- Tile 3: Age-Group Position (Coral Highlight) -->
+    <g transform="translate(550, 0)" filter="url(#tileShadow)">
+      <rect width="255" height="340" rx="16" fill="#FFFDFB" stroke="#FDBA74" stroke-width="1.5"/>
+      <rect x="24" y="24" width="105" height="24" rx="12" fill="#FFEDD5"/>
+      <text x="76" y="40" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#C2410C" text-anchor="middle">CATEGORY</text>
+      
+      <text x="24" y="85" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#C2410C">AGE-GROUP RANK</text>
+      <text x="24" y="135" font-family="'Fraunces', serif" font-size="38" font-weight="700" fill="#C2410C">4<tspan font-size="20" font-weight="500" fill="#EA580C">/28</tspan></text>
+      <text x="24" y="162" font-family="'Inter', sans-serif" font-size="13" fill="#C2410C">Division: Men 55–59</text>
+
+      <line x1="24" y1="185" x2="231" y2="185" stroke="#FED7AA" stroke-width="1"/>
+
+      <text x="24" y="220" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#C2410C">What It Means:</text>
+      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#7C2D12">Head-to-head placing against other M55 peers in this specific race.</text>
+      <text x="24" y="305" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#C2410C">● Highly variable by race turnout</text>
+    </g>
+
+    <!-- Tile 4: Age Grade (Emerald Highlight) -->
+    <g transform="translate(825, 0)" filter="url(#tileShadow)">
+      <rect width="255" height="340" rx="16" fill="#F7FCF9" stroke="#86EFAC" stroke-width="1.5"/>
+      <rect x="24" y="24" width="115" height="24" rx="12" fill="#DCFCE7"/>
+      <text x="81" y="40" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#15803D" text-anchor="middle">WORLD METRIC</text>
+      
+      <text x="24" y="85" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">AGE GRADE SCORE</text>
+      <text x="24" y="135" font-family="'Fraunces', serif" font-size="38" font-weight="700" fill="#075433">72.45%</text>
+      <text x="24" y="162" font-family="'Inter', sans-serif" font-size="13" fill="#075433">Regional Class Level</text>
+
+      <line x1="24" y1="185" x2="231" y2="185" stroke="#BBF7D0" stroke-width="1"/>
+
+      <text x="24" y="220" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">What It Means:</text>
+      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#14532D">Your speed relative to the theoretical demographic world record.</text>
+      <text x="24" y="305" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">● Repeatable across any race</text>
+    </g>
+  </g>
+
+  <!-- Bottom Explanatory Banner -->
+  <g transform="translate(60, 535)">
+    <rect width="1080" height="85" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#tileShadow)"/>
+    <g transform="translate(28, 46)">
+      <circle cx="12" cy="0" r="10" fill="#2563EB"/>
+      <text x="12" y="4" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">i</text>
+      <text x="36" y="-5" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A">Why You Need Both Numbers:</text>
+      <text x="36" y="15" font-family="'Inter', sans-serif" font-size="13" fill="#64748B">Age-group placement awards local podiums; age grade monitors your cardiovascular fitness across years and across different cities.</text>
+    </g>
+  </g>
+</svg>

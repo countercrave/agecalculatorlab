@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#FDFCF9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#0B233A" flood-opacity="0.08" />
+    </filter>
+    <linearGradient id="heroNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B233A" />
+      <stop offset="100%" stop-color="#042F2A" />
+    </linearGradient>
+    <linearGradient id="heroTrackGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#075433" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="coralAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF754D" />
+      <stop offset="100%" stop-color="#E05730" />
+    </linearGradient>
+    <linearGradient id="mintBadgeHero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF5F0" />
+      <stop offset="100%" stop-color="#D3E5DE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Editorial Architectural Grid -->
+  <g opacity="0.35">
+    <line x1="60" y1="0" x2="60" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="1140" y1="0" x2="1140" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Top Category Kicker & Title -->
+  <rect x="80" y="52" width="280" height="32" rx="16" fill="url(#mintBadgeHero)" />
+  <text x="220" y="73" font-size="12" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">MASTERS RUNNING &amp; LONGEVITY</text>
+  <text x="80" y="122" font-size="30" font-weight="800" fill="#0B233A" letter-spacing="-0.5">Age Grading for Masters Runners</text>
+  <text x="80" y="152" font-size="15.5" fill="#52796F">Evaluating aerobic achievement, aging curves, and lifelong athletic progression</text>
+
+  <!-- Main Visual Container -->
+  <g transform="translate(80, 180)">
+    <!-- Main Center Panel -->
+    <rect x="0" y="0" width="1040" height="430" rx="20" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5" filter="url(#heroShadow)" />
+
+    <!-- Curved Running Track Vector Background -->
+    <g opacity="0.12">
+      <path d="M 0 350 C 350 200, 750 200, 1040 350" stroke="#0B233A" stroke-width="24" fill="none" />
+      <path d="M 0 380 C 350 230, 750 230, 1040 380" stroke="#0B233A" stroke-width="24" fill="none" />
+      <path d="M 0 410 C 350 260, 750 260, 1040 410" stroke="#0B233A" stroke-width="24" fill="none" />
+    </g>
+
+    <!-- Left Sub-Card: The Master Runner Reality (Clock vs Relative) -->
+    <g transform="translate(40, 40)">
+      <rect x="0" y="0" width="460" height="350" rx="16" fill="url(#heroNavy)" />
+      
+      <!-- Top Pill -->
+      <rect x="25" y="24" width="150" height="26" rx="13" fill="rgba(159,231,189,0.18)" stroke="#9FE7BD" stroke-width="1" />
+      <text x="100" y="41" font-size="11.5" font-weight="700" fill="#9FE7BD" text-anchor="middle">PHYSIOLOGICAL PERSPECTIVE</text>
+
+      <text x="25" y="86" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">The Stopwatch Paradox</text>
+      <text x="25" y="112" font-size="13" fill="#D3E5DE" line-height="1.5">
+        <tspan x="25" dy="0">Raw race times naturally slow with age,</tspan>
+        <tspan x="25" dy="18">yet physiological efficiency can still climb.</tspan>
+      </text>
+
+      <!-- Comparison Metrics Grid inside Card -->
+      <g transform="translate(25, 155)">
+        <!-- Row 1: Raw Clock -->
+        <rect x="0" y="0" width="410" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" />
+        <circle cx="30" cy="32" r="14" fill="#334155" />
+        <text x="30" y="37" font-size="13" fill="#FFFFFF" text-anchor="middle">⏱</text>
+        <text x="56" y="26" font-size="11" font-weight="700" fill="#94A3B8">RAW FINISH TIME</text>
+        <text x="56" y="48" font-size="17" font-weight="800" fill="#FFFFFF">Slowing on Clock <tspan font-size="12" font-weight="500" fill="#EF4444">(Natural Aging)</tspan></text>
+        <rect x="305" y="18" width="90" height="28" rx="6" fill="rgba(239,68,68,0.2)" />
+        <text x="350" y="36" font-size="12" font-weight="700" fill="#FCA5A5" text-anchor="middle">5K: 23:45</text>
+
+        <!-- Row 2: Age Grade -->
+        <g transform="translate(0, 80)">
+          <rect x="0" y="0" width="410" height="65" rx="10" fill="rgba(159,231,189,0.1)" stroke="#9FE7BD" stroke-width="1.2" />
+          <circle cx="30" cy="32" r="14" fill="#075433" />
+          <text x="30" y="37" font-size="13" fill="#9FE7BD" text-anchor="middle">%</text>
+          <text x="56" y="26" font-size="11" font-weight="700" fill="#9FE7BD">AGE-GRADED SCORE</text>
+          <text x="56" y="48" font-size="17" font-weight="800" fill="#FFFFFF">Rising Achievement <tspan font-size="12" font-weight="700" fill="#34D399">(+2.4%)</tspan></text>
+          <rect x="305" y="18" width="90" height="28" rx="6" fill="#075433" />
+          <text x="350" y="36" font-size="12.5" font-weight="800" fill="#9FE7BD" text-anchor="middle">Score: 68.2%</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Sub-Card: The 3 Core Pillars of Masters Age Grading -->
+    <g transform="translate(540, 40)">
+      <text x="0" y="24" font-size="12" font-weight="800" fill="#075433" letter-spacing="1">LONGITUDINAL MASTERS FRAMEWORK</text>
+      <text x="0" y="52" font-size="20" font-weight="800" fill="#0B233A">Three Dimensions of Masters Racing</text>
+
+      <!-- Pillar 1: Multi-Year Progress -->
+      <g transform="translate(0, 75)">
+        <rect x="0" y="0" width="460" height="74" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
+        <rect x="16" y="16" width="42" height="42" rx="8" fill="#E0F2FE" />
+        <text x="37" y="42" font-size="18" text-anchor="middle">📈</text>
+        <text x="70" y="32" font-size="14.5" font-weight="750" fill="#0B233A">Longitudinal Progress Over Decades</text>
+        <text x="70" y="52" font-size="12.5" fill="#475569">Track aerobic maintenance independent of natural chronological slowdown.</text>
+      </g>
+
+      <!-- Pillar 2: Cross-Generational Equity -->
+      <g transform="translate(0, 162)">
+        <rect x="0" y="0" width="460" height="74" rx="12" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1.5" />
+        <rect x="16" y="16" width="42" height="42" rx="8" fill="#DCFCE7" />
+        <text x="37" y="42" font-size="18" text-anchor="middle">⚖️</text>
+        <text x="70" y="32" font-size="14.5" font-weight="750" fill="#075433">Fair Cross-Generational Equity</text>
+        <text x="70" y="52" font-size="12.5" fill="#475569">Compete fairly against runners 20 or 30 years younger on a unified scale.</text>
+      </g>
+
+      <!-- Pillar 3: Lifelong Motivation -->
+      <g transform="translate(0, 249)">
+        <rect x="0" y="0" width="460" height="74" rx="12" fill="#FFF7ED" stroke="#FFEDD5" stroke-width="1.5" />
+        <rect x="16" y="16" width="42" height="42" rx="8" fill="#FFEDD5" />
+        <text x="37" y="42" font-size="18" text-anchor="middle">🎯</text>
+        <text x="70" y="32" font-size="14.5" font-weight="750" fill="#C2410C">Inspiring New Personal Records</text>
+        <text x="70" y="52" font-size="12.5" fill="#475569">Set new “Age-Graded Personal Bests” at age 50, 60, 70, and beyond.</text>
+      </g>
+
+      <!-- Bottom Verified Badge -->
+      <g transform="translate(0, 336)">
+        <text x="0" y="14" font-size="12" font-weight="600" fill="#52796F">✓ Verified across official World Masters Athletics (WMA) road racing tables.</text>
+      </g>
+    </g>
+  </g>
+</svg>

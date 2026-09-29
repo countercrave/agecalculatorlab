@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#FDFCF9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="perfShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B233A" flood-opacity="0.08" />
+    </filter>
+    <linearGradient id="navyPerf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B233A" />
+      <stop offset="100%" stop-color="#042F2A" />
+    </linearGradient>
+    <linearGradient id="mintBadgePerf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF5F0" />
+      <stop offset="100%" stop-color="#D3E5DE" />
+    </linearGradient>
+    <linearGradient id="curveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#075433" />
+      <stop offset="100%" stop-color="#FF754D" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;display=swap');
+      .handwritten { font-family: 'Caveat', cursive, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Editorial Architectural Blueprint Grid -->
+  <g opacity="0.32">
+    <line x1="60" y1="0" x2="60" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="1140" y1="0" x2="1140" y2="675" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Header Category & Title -->
+  <rect x="80" y="50" width="280" height="30" rx="15" fill="url(#mintBadgePerf)" />
+  <text x="220" y="70" font-size="11.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">BIOLOGICAL AGING STANDARDS</text>
+  <text x="80" y="116" font-size="27" font-weight="800" fill="#0B233A" letter-spacing="-0.5">How Age Grading Adjusts as You Grow Older</text>
+  <text x="80" y="144" font-size="14.5" fill="#52796F">The non-linear aging curve: why reference standards evolve across each decade of running</text>
+
+  <!-- Main Visual Card -->
+  <g transform="translate(80, 170)">
+    <rect x="0" y="0" width="1040" height="444" rx="16" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5" filter="url(#perfShadow)" />
+
+    <!-- Top Flow Pipeline -->
+    <g transform="translate(40, 28)">
+      <rect x="0" y="0" width="960" height="82" rx="12" fill="#F4F8F6" stroke="#E5EFEA" stroke-width="1" />
+      
+      <!-- Stage 1 -->
+      <g transform="translate(30, 16)">
+        <rect x="0" y="0" width="180" height="50" rx="8" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1" />
+        <text x="20" y="24" font-size="11" font-weight="700" fill="#52796F" text-transform="uppercase">Step 1: Input</text>
+        <text x="20" y="42" font-size="14" font-weight="800" fill="#0B233A">Exact Runner Age</text>
+      </g>
+      <path d="M 225 41 L 245 41" stroke="#075433" stroke-width="2.5" stroke-linecap="round" />
+      <polygon points="243,37 251,41 243,45" fill="#075433" />
+
+      <!-- Stage 2 -->
+      <g transform="translate(265, 16)">
+        <rect x="0" y="0" width="200" height="50" rx="8" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1" />
+        <text x="20" y="24" font-size="11" font-weight="700" fill="#52796F" text-transform="uppercase">Step 2: Table Lookup</text>
+        <text x="20" y="42" font-size="14" font-weight="800" fill="#075433">WMA Standard Standard</text>
+      </g>
+      <path d="M 480 41 L 500 41" stroke="#075433" stroke-width="2.5" stroke-linecap="round" />
+      <polygon points="498,37 506,41 498,45" fill="#075433" />
+
+      <!-- Stage 3 -->
+      <g transform="translate(520, 16)">
+        <rect x="0" y="0" width="190" height="50" rx="8" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1" />
+        <text x="20" y="24" font-size="11" font-weight="700" fill="#52796F" text-transform="uppercase">Step 3: Event Data</text>
+        <text x="20" y="42" font-size="14" font-weight="800" fill="#0B233A">Actual Clock Time</text>
+      </g>
+      <path d="M 725 41 L 745 41" stroke="#075433" stroke-width="2.5" stroke-linecap="round" />
+      <polygon points="743,37 751,41 743,45" fill="#075433" />
+
+      <!-- Stage 4 -->
+      <g transform="translate(765, 16)">
+        <rect x="0" y="0" width="165" height="50" rx="8" fill="#0B233A" />
+        <text x="20" y="24" font-size="11" font-weight="700" fill="#9FE7BD" text-transform="uppercase">Step 4: Output</text>
+        <text x="20" y="42" font-size="14" font-weight="800" fill="#FFFFFF">Age Grade % Score</text>
+      </g>
+    </g>
+
+    <!-- Biological Decay Graph and 4 Stage Cards -->
+    <g transform="translate(40, 134)">
+      
+      <!-- Graph Canvas -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="560" height="280" rx="12" fill="#0B233A" />
+        
+        <text x="24" y="32" font-size="14" font-weight="800" fill="#FFFFFF">Non-Linear Physiological Decay Model</text>
+        <text x="24" y="52" font-size="12" fill="#D3E5DE">Aerobic decline accelerates gradually after age 40, requiring curved adjustment</text>
+
+        <!-- Grid Lines -->
+        <g opacity="0.18">
+          <line x1="40" y1="80" x2="520" y2="80" stroke="#FFFFFF" stroke-dasharray="2 2" />
+          <line x1="40" y1="130" x2="520" y2="130" stroke="#FFFFFF" stroke-dasharray="2 2" />
+          <line x1="40" y1="180" x2="520" y2="180" stroke="#FFFFFF" stroke-dasharray="2 2" />
+          <line x1="40" y1="230" x2="520" y2="230" stroke="#FFFFFF" />
+        </g>
+
+        <!-- Axis Labels -->
+        <text x="35" y="84" font-size="10" font-weight="700" fill="#9FE7BD" text-anchor="end">100%</text>
+        <text x="35" y="134" font-size="10" font-weight="700" fill="#9FE7BD" text-anchor="end">85%</text>
+        <text x="35" y="184" font-size="10" font-weight="700" fill="#9FE7BD" text-anchor="end">70%</text>
+        <text x="35" y="234" font-size="10" font-weight="700" fill="#9FE7BD" text-anchor="end">55%</text>
+
+        <!-- Dynamic Curve -->
+        <!-- Starts flat around age 25-35, gentle slope 35-50, steeper after 60 -->
+        <path d="M 60 85 C 160 88, 260 110, 360 150 C 420 180, 480 220, 510 245" fill="none" stroke="url(#curveGrad)" stroke-width="4" stroke-linecap="round" />
+
+        <!-- Milestone Markers -->
+        <circle cx="60" cy="85" r="5" fill="#2563EB" stroke="#FFFFFF" stroke-width="2" />
+        <text x="60" y="254" font-size="11" font-weight="700" fill="#D3E5DE" text-anchor="middle">Age 30</text>
+
+        <circle cx="210" cy="100" r="5" fill="#10B981" stroke="#FFFFFF" stroke-width="2" />
+        <text x="210" y="254" font-size="11" font-weight="700" fill="#D3E5DE" text-anchor="middle">Age 45</text>
+
+        <circle cx="360" cy="150" r="5" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2" />
+        <text x="360" y="254" font-size="11" font-weight="700" fill="#D3E5DE" text-anchor="middle">Age 60</text>
+
+        <circle cx="480" cy="220" r="5" fill="#FF754D" stroke="#FFFFFF" stroke-width="2" />
+        <text x="480" y="254" font-size="11" font-weight="700" fill="#D3E5DE" text-anchor="middle">Age 75</text>
+
+        <!-- Trend Annotations -->
+        <rect x="230" y="80" width="130" height="24" rx="4" fill="rgba(16,185,129,0.2)" stroke="#10B981" stroke-width="1" />
+        <text x="295" y="96" font-size="11" font-weight="700" fill="#9FE7BD" text-anchor="middle">~0.7% drop / yr</text>
+
+        <rect x="380" y="150" width="130" height="24" rx="4" fill="rgba(255,117,77,0.2)" stroke="#FF754D" stroke-width="1" />
+        <text x="445" y="166" font-size="11" font-weight="700" fill="#FF9A77" text-anchor="middle">~1.4% drop / yr</text>
+      </g>
+
+      <!-- 4 Life Stage Cards on Right -->
+      <g transform="translate(584, 0)">
+        
+        <!-- Stage A: Early Masters (35-49) -->
+        <g>
+          <rect x="0" y="0" width="376" height="60" rx="8" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+          <text x="16" y="25" font-size="13" font-weight="800" fill="#0B233A">Ages 35–49: Sub-Masters &amp; Early Masters</text>
+          <text x="16" y="45" font-size="12" fill="#52796F">Modest factor adjustments. Aerobic base remains near peak.</text>
+        </g>
+
+        <!-- Stage B: Mid Masters (50-64) -->
+        <g transform="translate(0, 72)">
+          <rect x="0" y="0" width="376" height="60" rx="8" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+          <text x="16" y="25" font-size="13" font-weight="800" fill="#075433">Ages 50–64: Veteran Masters</text>
+          <text x="16" y="45" font-size="12" fill="#52796F">Decline in VO2 max and muscle mass accelerates; factors expand.</text>
+        </g>
+
+        <!-- Stage C: Senior Masters (65-74) -->
+        <g transform="translate(0, 144)">
+          <rect x="0" y="0" width="376" height="60" rx="8" fill="#F8FCFA" stroke="#D3E5DE" stroke-width="1" />
+          <text x="16" y="25" font-size="13" font-weight="800" fill="#0B233A">Ages 65–74: Senior Division</text>
+          <text x="16" y="45" font-size="12" fill="#52796F">Consistent training yields massive age-grade score advantages.</text>
+        </g>
+
+        <!-- Stage D: Golden Masters (75+) -->
+        <g transform="translate(0, 216)">
+          <rect x="0" y="0" width="376" height="64" rx="8" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5" />
+          <text x="16" y="25" font-size="13" font-weight="800" fill="#1E40AF">Ages 75+: Grandmasters</text>
+          <text x="16" y="45" font-size="12" fill="#2563EB">High age-grade percentages reward survival of aerobic power.</text>
+        </g>
+
+      </g>
+    </g>
+
+  </g>
+</svg>

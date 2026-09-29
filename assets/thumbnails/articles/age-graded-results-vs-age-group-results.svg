@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Age-Graded Results vs Age-Group Results Comparison">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="45%" stop-color="#075433"/>
+      <stop offset="100%" stop-color="#0B233A"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D3B35"/>
+      <stop offset="100%" stop-color="#072B26"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#103657"/>
+      <stop offset="100%" stop-color="#0B233A"/>
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF754D"/>
+      <stop offset="100%" stop-color="#FFA07A"/>
+    </linearGradient>
+    <linearGradient id="accentMint" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9FE7BD"/>
+      <stop offset="100%" stop-color="#5EEAD4"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Decorative Track Curves -->
+  <g opacity="0.12" stroke="#FFFFFF" stroke-width="2.5" fill="none">
+    <ellipse cx="640" cy="880" rx="900" ry="460"/>
+    <ellipse cx="640" cy="900" rx="980" ry="500"/>
+    <ellipse cx="640" cy="920" rx="1060" ry="540"/>
+    <ellipse cx="640" cy="940" rx="1140" ry="580"/>
+  </g>
+
+  <!-- Brand Eyebrow -->
+  <g transform="translate(100, 75)">
+    <rect x="0" y="0" width="280" height="34" rx="17" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
+    <circle cx="16" cy="17" r="5" fill="#9FE7BD"/>
+    <text x="32" y="22" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#D3E5DE" letter-spacing="1.5">SPORTS SCIENCE · ANALYSIS</text>
+  </g>
+
+  <!-- Main Title & Subtitle -->
+  <text x="100" y="165" font-family="'Fraunces', Georgia, serif" font-size="52" font-weight="700" fill="#FFFFFF" letter-spacing="-1">Age-Graded vs Age-Group Results</text>
+  <text x="100" y="215" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="400" fill="#D3E5DE">Two essential race metrics that answer completely different questions</text>
+
+  <!-- Center VS Divider -->
+  <g transform="translate(640, 440)">
+    <circle cx="0" cy="0" r="32" fill="#042F2A" stroke="#FF754D" stroke-width="3" filter="url(#cardShadow)"/>
+    <text x="0" y="9" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle">VS</text>
+  </g>
+
+  <!-- Left Card: Age-Group Result -->
+  <g transform="translate(100, 270)" filter="url(#cardShadow)">
+    <rect width="490" height="340" rx="20" fill="url(#cardGrad1)" stroke="rgba(159, 231, 189, 0.35)" stroke-width="1.5"/>
+    
+    <!-- Header Pill -->
+    <rect x="32" y="32" width="165" height="28" rx="14" fill="#FF754D"/>
+    <text x="44" y="51" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" letter-spacing="1">AGE-GROUP RESULT</text>
+    
+    <text x="32" y="105" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#FFFFFF">Race Field Position</text>
+    <text x="32" y="138" font-family="'Inter', system-ui, sans-serif" font-size="15" fill="#D3E5DE">Where you placed among competitors</text>
+
+    <!-- Stat Callout Box -->
+    <rect x="32" y="165" width="426" height="88" rx="12" fill="rgba(0,0,0,0.25)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="52" y="202" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#9FE7BD">EXAMPLE PLACEMENT</text>
+    <text x="52" y="235" font-family="'Inter', system-ui, sans-serif" font-size="30" font-weight="800" fill="#FFFFFF">5th of 35 <tspan font-size="15" font-weight="500" fill="#D3E5DE">(M50–54)</tspan></text>
+
+    <!-- Key Trait -->
+    <text x="32" y="285" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#FFA07A">● Depends entirely on who showed up on race day</text>
+    <text x="32" y="308" font-family="'Inter', system-ui, sans-serif" font-size="13.5" fill="#D3E5DE">Relative competition ranking, changes race-to-race</text>
+  </g>
+
+  <!-- Right Card: Age-Graded Result -->
+  <g transform="translate(690, 270)" filter="url(#cardShadow)">
+    <rect width="490" height="340" rx="20" fill="url(#cardGrad2)" stroke="rgba(94, 234, 212, 0.4)" stroke-width="1.5"/>
+    
+    <!-- Header Pill -->
+    <rect x="32" y="32" width="175" height="28" rx="14" fill="#2563EB"/>
+    <text x="44" y="51" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" letter-spacing="1">AGE-GRADED RESULT</text>
+
+    <text x="32" y="105" font-family="'Fraunces', Georgia, serif" font-size="26" font-weight="700" fill="#FFFFFF">Demographic Quality</text>
+    <text x="32" y="138" font-family="'Inter', system-ui, sans-serif" font-size="15" fill="#D3E5DE">Your speed vs age/sex reference standard</text>
+
+    <!-- Stat Callout Box -->
+    <rect x="32" y="165" width="426" height="88" rx="12" fill="rgba(0,0,0,0.25)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="52" y="202" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#93C5FD">STANDARDIZED SCORE</text>
+    <text x="52" y="235" font-family="'Inter', system-ui, sans-serif" font-size="30" font-weight="800" fill="#9FE7BD">74.25% <tspan font-size="15" font-weight="500" fill="#D3E5DE">(Regional Class)</tspan></text>
+
+    <!-- Key Trait -->
+    <text x="32" y="285" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#93C5FD">● Independent of who entered or race field size</text>
+    <text x="32" y="308" font-family="'Inter', system-ui, sans-serif" font-size="13.5" fill="#D3E5DE">Objective benchmark ideal for multi-year tracking</text>
+  </g>
+
+  <!-- Bottom Brand Footer -->
+  <g transform="translate(100, 665)">
+    <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="600" fill="#9FE7BD">AgeCalculatorLab.com</text>
+    <text x="1080" y="0" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="500" fill="#D3E5DE" text-anchor="end">World Masters Athletics (WMA) Standards</text>
+  </g>
+</svg>
