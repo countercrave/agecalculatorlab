@@ -851,7 +851,12 @@ a.calc-cta-btn svg {
 .footer-author-link{color:#9fe7bd!important;font-weight:650;text-decoration:underline}
 .footer-guides,.footer-guides-all{display:flex;flex-direction:column;gap:6px}
 .footer-guides-all{margin-top:var(--s-2)}
-.copyright{margin-top:var(--s-12);padding-top:var(--s-6);border-top:1px solid var(--inv-line);font-size:var(--t-sm);display:flex;flex-wrap:wrap;gap:var(--s-3) var(--s-5);justify-content:space-between}
+.footer ul,.footer-links,.footer-col ul{list-style:none!important;padding:0!important;margin:0!important;display:flex!important;flex-direction:column!important;gap:8px!important}
+.footer ul li,.footer-col ul li{list-style:none!important;margin:0!important;padding:0!important}
+.footer-links a,.footer-col a{color:var(--inv-muted)!important;text-decoration:none!important}
+.footer-links a:hover,.footer-col a:hover{color:#fff!important;text-decoration:underline!important}
+.footer-col p,.footer-col .footer-heading{color:#9fe7bd!important;font-size:var(--t-sm)!important;text-transform:uppercase!important;letter-spacing:.08em!important;font-weight:700!important;margin-bottom:8px!important}
+.footer-tagline{color:var(--inv-muted);font-size:13px;margin-top:8px}
 .brand-logo-footer,.hero-brand-logo,.article-index-logo{display:none!important}
 
 /* --- Section active state (subtle) ---------------------------- */
