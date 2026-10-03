@@ -2,7 +2,7 @@
 
 - How Old Am I?: https://www.agecalculatorlab.com/how-old-am-i/
 
-> 165 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 133 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
+> 165 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 138 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
 
 Written and reviewed by Navjeet Kamboj. Results are informational: clinical, legal, financial, school, employment and benefits decisions are governed by the relevant manual, policy or authority.
 
@@ -335,3 +335,8 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [10K Age Grading Explained: How Age Grade Works](https://www.agecalculatorlab.com/articles/10k-age-grading/): Sports-science guide to 10K road age grading, 2025 WMA standard times, worked calculation formulas, cross-generational 45:00 comparisons, multi-year progress tracking, and race condition factors.
 
 - [How Does Face Age Estimation Work? AI & Facial Age Explained](https://www.agecalculatorlab.com/articles/how-does-face-age-estimation-work/)
+- [How Accurate Are Face Age Calculators? What Affects Results](https://www.agecalculatorlab.com/articles/how-accurate-are-face-age-calculators/): How accurate are face age calculators? Learn what affects photo-based age estimates, why results vary, and how to interpret an AI face-age result responsibly.
+- [Guess My Age by Photo: How Photo-Based Age Estimation Works](https://www.agecalculatorlab.com/articles/guess-my-age-by-photo/): Want to guess your age from a photo? Learn how photo-based age estimators work, what affects results, and how to interpret an estimated face age.
+- [AI Age Guessers Explained: How AI Estimates Your Age From a Face](https://www.agecalculatorlab.com/articles/ai-age-guessers/): How do AI age guessers estimate your age from a photo? Learn how AI face-age estimation works, what affects results, limitations, privacy, and responsible use.
+- [Face Age vs Chronological Age vs Biological Age: What's the Difference?](https://www.agecalculatorlab.com/articles/face-age-vs-chronological-age-vs-biological-age/): Face age, chronological age and biological age describe different things. Learn how they differ, how each is estimated, and why your face age may not match your actual age.
+- [Why Do I Look Older or Younger in Different Photos? 10 Factors](https://www.agecalculatorlab.com/articles/why-do-i-look-older-or-younger-in-different-photos/): Why can the same person look older or younger in different photos? Learn how lighting, camera angle, expression, image quality, makeup and more affect apparent face age.
