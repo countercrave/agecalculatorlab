@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Same Face Different Photo Result handwritten editorial illustration">
+  <defs>
+    <filter id="paper-shadow" x="-5%" y="-5%" width="110%" height="112%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#075433" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="photo-a-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4FAF7"/>
+      <stop offset="100%" stop-color="#E2F1EB"/>
+    </linearGradient>
+    <linearGradient id="photo-b-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A2925"/>
+      <stop offset="100%" stop-color="#E5ECE9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Editorial Warm Paper Background -->
+  <rect width="1200" height="675" fill="#FAFBF9"/>
+  <rect x="25" y="25" width="1150" height="625" rx="14" fill="#FFFFFF" stroke="#E2EBE6" stroke-width="1.5" filter="url(#paper-shadow)"/>
+
+  <!-- Subtle notebook margin line -->
+  <line x1="90" y1="25" x2="90" y2="650" stroke="#F0DDD8" stroke-width="1.5"/>
+
+  <!-- Top Handwritten Editorial Header -->
+  <g transform="translate(130, 60)">
+    <text x="0" y="32" fill="#042F2A" font-family="'Caveat', 'Comic Sans MS', cursive, sans-serif" font-size="38" font-weight="700">Same Face ≠ Same Photo Result</text>
+    <text x="0" y="65" fill="#52796F" font-family="'Inter', sans-serif" font-size="14.5">Editorial Field Note · How capture conditions alter apparent facial age estimates</text>
+  </g>
+
+  <!-- Central Visual Demonstration: Two Portrait Polaroids -->
+  <!-- Polaroid A: Optimal Soft Lighting -->
+  <g transform="translate(150, 160)" filter="url(#paper-shadow)">
+    <!-- Photo Backing -->
+    <rect x="0" y="0" width="300" height="380" rx="10" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5"/>
+    <!-- Photo Inner Area -->
+    <rect x="18" y="18" width="264" height="260" rx="6" fill="url(#photo-a-grad)"/>
+
+    <!-- Soft diffuse sun icon -->
+    <circle cx="45" cy="45" r="14" fill="#9FE7BD" fill-opacity="0.5"/>
+    <text x="70" y="50" fill="#075433" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Soft Frontal Light</text>
+
+    <!-- Silhouette A (Calm, neutral, soft lighting) -->
+    <g transform="translate(62, 55)">
+      <!-- Head -->
+      <path d="M 70,30 C 35,30 20,65 20,115 C 20,165 40,205 70,210 C 100,205 120,165 120,115 C 120,65 105,30 70,30 Z" fill="#2D5A4B"/>
+      <!-- Shoulders -->
+      <path d="M 45,195 C 25,215 5,230 -15,240 L 155,240 C 135,230 115,215 95,195 Z" fill="#204237"/>
+      <!-- Soft smile / relaxed features -->
+      <path d="M 52,105 Q 60,102 68,105" fill="none" stroke="#E2F1EB" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 72,105 Q 80,102 88,105" fill="none" stroke="#E2F1EB" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 60,160 Q 70,166 80,160" fill="none" stroke="#E2F1EB" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Polaroid Caption Label -->
+    <text x="150" y="312" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Photo A: Soft Diffused Daylight</text>
+    <rect x="50" y="330" width="200" height="26" rx="13" fill="#EBF6F0"/>
+    <text x="150" y="347" fill="#075433" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Smooth contours · Balanced tone</text>
+  </g>
+
+  <!-- Polaroid B: Harsh Lighting & Angle -->
+  <g transform="translate(520, 160)" filter="url(#paper-shadow)">
+    <!-- Photo Backing -->
+    <rect x="0" y="0" width="300" height="380" rx="10" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5"/>
+    <!-- Photo Inner Area (Harsh split lighting) -->
+    <rect x="18" y="18" width="264" height="260" rx="6" fill="url(#photo-b-grad)"/>
+
+    <!-- Harsh overhead/side light indicator -->
+    <circle cx="45" cy="45" r="14" fill="#FF754D" fill-opacity="0.3"/>
+    <text x="70" y="50" fill="#042F2A" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Harsh Side Shadows</text>
+
+    <!-- Silhouette B (Same subject, deep shadows, squinting) -->
+    <g transform="translate(62, 55)">
+      <!-- Head with harsh shadow split -->
+      <path d="M 70,30 C 35,30 20,65 20,115 C 20,165 40,205 70,210 C 100,205 120,165 120,115 C 120,65 105,30 70,30 Z" fill="#1C382E"/>
+      <!-- Shadow half -->
+      <path d="M 70,30 C 50,30 35,65 35,115 C 35,165 50,205 70,210 Z" fill="#0D1F1A" fill-opacity="0.75"/>
+      <!-- Shoulders -->
+      <path d="M 45,195 C 25,215 5,230 -15,240 L 155,240 C 135,230 115,215 95,195 Z" fill="#152B23"/>
+      <!-- Squinting lines & shadow emphasis -->
+      <line x1="50" y1="106" x2="66" y2="106" stroke="#9FE7BD" stroke-width="2"/>
+      <line x1="74" y1="106" x2="90" y2="106" stroke="#9FE7BD" stroke-width="2"/>
+      <!-- Furrow lines between brow -->
+      <line x1="68" y1="95" x2="68" y2="102" stroke="#FF754D" stroke-width="1.8"/>
+      <line x1="72" y1="95" x2="72" y2="102" stroke="#FF754D" stroke-width="1.8"/>
+    </g>
+
+    <!-- Polaroid Caption Label -->
+    <text x="150" y="312" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Photo B: Direct Hard Lighting</text>
+    <rect x="50" y="330" width="200" height="26" rx="13" fill="#FDECE7"/>
+    <text x="150" y="347" fill="#C53A1A" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Sharp shadows · Emphasized lines</text>
+  </g>
+
+  <!-- Right Side: Handwritten Notes, Arrows & Callouts -->
+  <g transform="translate(860, 160)">
+    <!-- Main Sticky / Notepad Card -->
+    <rect x="0" y="0" width="280" height="380" rx="12" fill="#F8FCFA" stroke="#9FE7BD" stroke-width="1.5"/>
+
+    <text x="24" y="38" fill="#075433" font-family="'Caveat', cursive, sans-serif" font-size="26" font-weight="700">Audit Notes:</text>
+
+    <!-- Four key factor bullets with hand-drawn checkmarks -->
+    <g transform="translate(24, 60)">
+      <!-- Factor 1: Lighting -->
+      <g transform="translate(0, 0)">
+        <circle cx="8" cy="8" r="4" fill="#FF754D"/>
+        <text x="22" y="12" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">1. Lighting</text>
+        <text x="22" y="30" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="19">Creates false depth &amp; creases</text>
+      </g>
+
+      <!-- Factor 2: Expression -->
+      <g transform="translate(0, 58)">
+        <circle cx="8" cy="8" r="4" fill="#075433"/>
+        <text x="22" y="12" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">2. Expression</text>
+        <text x="22" y="30" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="19">Squinting folds periorbital skin</text>
+      </g>
+
+      <!-- Factor 3: Camera Angle -->
+      <g transform="translate(0, 116)">
+        <circle cx="8" cy="8" r="4" fill="#075433"/>
+        <text x="22" y="12" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">3. Camera Angle</text>
+        <text x="22" y="30" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="19">Distorts lower facial height ratio</text>
+      </g>
+
+      <!-- Factor 4: Image Quality -->
+      <g transform="translate(0, 174)">
+        <circle cx="8" cy="8" r="4" fill="#FF754D"/>
+        <text x="22" y="12" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">4. Image Quality</text>
+        <text x="22" y="30" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="19">Compression blurs subtle skin tone</text>
+      </g>
+    </g>
+
+    <!-- Handwritten Highlight Box -->
+    <rect x="18" y="295" width="244" height="65" rx="8" fill="#FFFDF5" stroke="#E2DDD0" stroke-dasharray="3 3"/>
+    <text x="140" y="322" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Same person →</text>
+    <text x="140" y="344" fill="#075433" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">different apparent age!</text>
+  </g>
+
+  <!-- Bottom Annotation Bar -->
+  <g transform="translate(150, 565)">
+    <!-- Hand-drawn styled connecting curve between Photo A and Photo B -->
+    <path d="M 150,5 Q 330,-15 510,5" fill="none" stroke="#52796F" stroke-width="1.8" stroke-dasharray="4 4"/>
+    <text x="330" y="28" fill="#075433" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Identical chronological age (DOB unchanged)</text>
+  </g>
+</svg>

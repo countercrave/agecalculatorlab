@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Face Age vs Chronological Age vs Biological Age diagram">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="60%" stop-color="#075433"/>
+      <stop offset="100%" stop-color="#021C18"/>
+    </linearGradient>
+    <linearGradient id="card-grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A3E34"/>
+      <stop offset="100%" stop-color="#052822"/>
+    </linearGradient>
+    <filter id="shadow2" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg2)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(60, 50)">
+    <rect x="0" y="0" width="165" height="28" rx="14" fill="#9FE7BD" fill-opacity="0.15" stroke="#9FE7BD" stroke-opacity="0.3"/>
+    <text x="82" y="18" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.5" text-anchor="middle">CONCEPTUAL FRAMEWORK</text>
+    <text x="0" y="70" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="600">The Three Dimensions of Human Aging</text>
+    <text x="0" y="98" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="15">Why apparent face age, birth date, and internal cellular health answer three distinct questions.</text>
+  </g>
+
+  <!-- 3 Comparison Columns / Cards -->
+  <!-- Card 1: Chronological Age -->
+  <g transform="translate(60, 185)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="335" height="430" rx="16" fill="url(#card-grad2)" stroke="#9FE7BD" stroke-opacity="0.2" stroke-width="1.5"/>
+    <!-- Top badge -->
+    <rect x="24" y="24" width="48" height="48" rx="12" fill="#075433" stroke="#9FE7BD" stroke-opacity="0.4"/>
+    <!-- Calendar icon -->
+    <g transform="translate(36, 36)" stroke="#9FE7BD" stroke-width="2" fill="none">
+      <rect x="0" y="3" width="24" height="20" rx="4"/>
+      <line x1="0" y1="9" x2="24" y2="9"/>
+      <line x1="6" y1="0" x2="6" y2="5"/>
+      <line x1="18" y1="0" x2="18" y2="5"/>
+    </g>
+
+    <text x="24" y="105" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">CHRONOLOGY</text>
+    <text x="24" y="136" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="24" font-weight="600">Chronological Age</text>
+
+    <rect x="24" y="152" width="287" height="1" fill="#9FE7BD" fill-opacity="0.15"/>
+
+    <!-- Key Question -->
+    <text x="24" y="180" fill="#A8C7BD" font-family="'Inter', sans-serif" font-size="12" font-weight="600">PRIMARY QUESTION:</text>
+    <text x="24" y="202" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="15" font-weight="500">“How long have you lived?”</text>
+
+    <!-- Source / Mechanism -->
+    <text x="24" y="245" fill="#A8C7BD" font-family="'Inter', sans-serif" font-size="12" font-weight="600">BASED ON:</text>
+    <text x="24" y="267" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="14" line-height="1.5">
+      <tspan x="24" dy="0">Official birth certificate &amp;</tspan>
+      <tspan x="24" dy="22">calendar time elapsed.</tspan>
+    </text>
+
+    <!-- Core Characteristics -->
+    <text x="24" y="330" fill="#A8C7BD" font-family="'Inter', sans-serif" font-size="12" font-weight="600">CORE ATTRIBUTES:</text>
+    <g transform="translate(24, 345)">
+      <circle cx="6" cy="10" r="3" fill="#9FE7BD"/>
+      <text x="18" y="14" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Fixed and mathematically objective</text>
+      <circle cx="6" cy="34" r="3" fill="#9FE7BD"/>
+      <text x="18" y="38" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Advances strictly 1 year per 365 days</text>
+      <circle cx="6" cy="58" r="3" fill="#9FE7BD"/>
+      <text x="18" y="62" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Standard legal &amp; civil identifier</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Face / Apparent Age (Highlighted Central Column) -->
+  <g transform="translate(432, 175)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="336" height="450" rx="16" fill="#042721" stroke="#FF754D" stroke-width="2"/>
+    <!-- Popular / Highlight Ribbon -->
+    <rect x="24" y="-12" width="130" height="24" rx="6" fill="#FF754D"/>
+    <text x="89" y="4" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">PHOTO ESTIMATION</text>
+
+    <!-- Top badge -->
+    <rect x="24" y="30" width="48" height="48" rx="12" fill="#075433" stroke="#FF754D" stroke-opacity="0.6"/>
+    <!-- Camera / Eye icon -->
+    <g transform="translate(36, 42)" stroke="#FF754D" stroke-width="2" fill="none">
+      <path d="M 3,7 L 7,3 L 17,3 L 21,7 L 24,7 L 24,21 L 0,21 L 0,7 Z"/>
+      <circle cx="12" cy="13" r="5"/>
+    </g>
+
+    <text x="24" y="112" fill="#FF754D" font-family="'Inter', sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">APPEARANCE</text>
+    <text x="24" y="144" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="24" font-weight="600">Face (Apparent) Age</text>
+
+    <rect x="24" y="160" width="288" height="1" fill="#FF754D" fill-opacity="0.3"/>
+
+    <!-- Key Question -->
+    <text x="24" y="188" fill="#FF9A77" font-family="'Inter', sans-serif" font-size="12" font-weight="600">PRIMARY QUESTION:</text>
+    <text x="24" y="210" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="15" font-weight="600">“How old do you appear?”</text>
+
+    <!-- Source / Mechanism -->
+    <text x="24" y="253" fill="#FF9A77" font-family="'Inter', sans-serif" font-size="12" font-weight="600">BASED ON:</text>
+    <text x="24" y="275" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="14" line-height="1.5">
+      <tspan x="24" dy="0">Visible facial geometry, skin texture,</tspan>
+      <tspan x="24" dy="22">lighting, shadows, and expressions.</tspan>
+    </text>
+
+    <!-- Core Characteristics -->
+    <text x="24" y="338" fill="#FF9A77" font-family="'Inter', sans-serif" font-size="12" font-weight="600">CORE ATTRIBUTES:</text>
+    <g transform="translate(24, 353)">
+      <circle cx="6" cy="10" r="3" fill="#FF754D"/>
+      <text x="18" y="14" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Dynamic &amp; varies across photos</text>
+      <circle cx="6" cy="34" r="3" fill="#FF754D"/>
+      <text x="18" y="38" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Influenced by lighting &amp; camera</text>
+      <circle cx="6" cy="58" r="3" fill="#FF754D"/>
+      <text x="18" y="62" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Non-medical probabilistic estimate</text>
+    </g>
+  </g>
+
+  <!-- Card 3: Biological Age -->
+  <g transform="translate(805, 185)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="335" height="430" rx="16" fill="url(#card-grad2)" stroke="#9FE7BD" stroke-opacity="0.2" stroke-width="1.5"/>
+    <!-- Top badge -->
+    <rect x="24" y="24" width="48" height="48" rx="12" fill="#075433" stroke="#9FE7BD" stroke-opacity="0.4"/>
+    <!-- DNA / Pulse icon -->
+    <g transform="translate(36, 36)" stroke="#9FE7BD" stroke-width="2" fill="none">
+      <path d="M 2,12 Q 6,2 12,12 T 22,12"/>
+      <circle cx="12" cy="12" r="3" fill="#9FE7BD"/>
+    </g>
+
+    <text x="24" y="105" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">PHYSIOLOGY</text>
+    <text x="24" y="136" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="24" font-weight="600">Biological Age</text>
+
+    <rect x="24" y="152" width="287" height="1" fill="#9FE7BD" fill-opacity="0.15"/>
+
+    <!-- Key Question -->
+    <text x="24" y="180" fill="#A8C7BD" font-family="'Inter', sans-serif" font-size="12" font-weight="600">PRIMARY QUESTION:</text>
+    <text x="24" y="202" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="15" font-weight="500">“How old is your internal body?”</text>
+
+    <!-- Source / Mechanism -->
+    <text x="24" y="245" fill="#A8C7BD" font-family="'Inter', sans-serif" font-size="12" font-weight="600">BASED ON:</text>
+    <text x="24" y="267" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="14" line-height="1.5">
+      <tspan x="24" dy="0">Cellular biomarkers, telomere length,</tspan>
+      <tspan x="24" dy="22">blood panels, and epigenetic clocks.</tspan>
+    </text>
+
+    <!-- Core Characteristics -->
+    <text x="24" y="330" fill="#A8C7BD" font-family="'Inter', sans-serif" font-size="12" font-weight="600">CORE ATTRIBUTES:</text>
+    <g transform="translate(24, 345)">
+      <circle cx="6" cy="10" r="3" fill="#9FE7BD"/>
+      <text x="18" y="14" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Reflects functional physiological wear</text>
+      <circle cx="6" cy="34" r="3" fill="#9FE7BD"/>
+      <text x="18" y="38" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Modifiable through diet &amp; lifestyle</text>
+      <circle cx="6" cy="58" r="3" fill="#9FE7BD"/>
+      <text x="18" y="62" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13">Requires lab tests &amp; biomarkers</text>
+    </g>
+  </g>
+</svg>

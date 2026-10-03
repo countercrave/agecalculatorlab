@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Face age estimation process flow diagram">
+  <defs>
+    <linearGradient id="bg-process" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="50%" stop-color="#075433"/>
+      <stop offset="100%" stop-color="#021C18"/>
+    </linearGradient>
+    <linearGradient id="card-p-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#093B32"/>
+      <stop offset="100%" stop-color="#052822"/>
+    </linearGradient>
+    <filter id="p-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg-process)"/>
+
+  <!-- Header -->
+  <g transform="translate(60, 50)">
+    <rect x="0" y="0" width="160" height="28" rx="14" fill="#9FE7BD" fill-opacity="0.15" stroke="#9FE7BD" stroke-opacity="0.3"/>
+    <text x="80" y="18" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.5" text-anchor="middle">HOW IT WORKS</text>
+    <text x="0" y="70" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="600">The Face-Age Estimation Pipeline</text>
+    <text x="0" y="98" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="15">From raw camera pixels to an estimated apparent-age bracket: five computational stages.</text>
+  </g>
+
+  <!-- 5 Sequential Pipeline Steps -->
+  <!-- Step 1 -->
+  <g transform="translate(60, 185)" filter="url(#p-shadow)">
+    <rect x="0" y="0" width="195" height="340" rx="14" fill="url(#card-p-grad)" stroke="#9FE7BD" stroke-opacity="0.25" stroke-width="1.5"/>
+    <rect x="18" y="20" width="36" height="36" rx="8" fill="#075433" stroke="#9FE7BD" stroke-opacity="0.5"/>
+    <text x="36" y="44" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="16" font-weight="800" text-anchor="middle">1</text>
+    <text x="18" y="85" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1">STAGE 01</text>
+    <text x="18" y="112" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="18" font-weight="600">Photo Ingestion &amp; Quality Check</text>
+    <rect x="18" y="145" width="159" height="1" fill="#9FE7BD" fill-opacity="0.2"/>
+    <text x="18" y="172" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" line-height="1.55">
+      <tspan x="18" dy="0">Evaluates resolution,</tspan>
+      <tspan x="18" dy="20">exposure, lighting balance,</tspan>
+      <tspan x="18" dy="20">and verifies that a clear</tspan>
+      <tspan x="18" dy="20">human face is present.</tspan>
+    </text>
+    <rect x="18" y="280" width="159" height="34" rx="6" fill="#04231E"/>
+    <text x="97" y="302" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Input Validation</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <g transform="translate(262, 345)" stroke="#9FE7BD" stroke-width="2" fill="none">
+    <line x1="0" y1="0" x2="16" y2="0"/>
+    <polyline points="10,-5 16,0 10,5"/>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(285, 185)" filter="url(#p-shadow)">
+    <rect x="0" y="0" width="195" height="340" rx="14" fill="url(#card-p-grad)" stroke="#9FE7BD" stroke-opacity="0.25" stroke-width="1.5"/>
+    <rect x="18" y="20" width="36" height="36" rx="8" fill="#075433" stroke="#9FE7BD" stroke-opacity="0.5"/>
+    <text x="36" y="44" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="16" font-weight="800" text-anchor="middle">2</text>
+    <text x="18" y="85" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1">STAGE 02</text>
+    <text x="18" y="112" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="18" font-weight="600">Landmark &amp; Mesh Alignment</text>
+    <rect x="18" y="145" width="159" height="1" fill="#9FE7BD" fill-opacity="0.2"/>
+    <text x="18" y="172" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" line-height="1.55">
+      <tspan x="18" dy="0">Normalizes tilt &amp; size.</tspan>
+      <tspan x="18" dy="20">Locates key geometric</tspan>
+      <tspan x="18" dy="20">points: eye centers,</tspan>
+      <tspan x="18" dy="20">nose tip, and jawline.</tspan>
+    </text>
+    <rect x="18" y="280" width="159" height="34" rx="6" fill="#04231E"/>
+    <text x="97" y="302" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Geometric Baseline</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <g transform="translate(487, 345)" stroke="#9FE7BD" stroke-width="2" fill="none">
+    <line x1="0" y1="0" x2="16" y2="0"/>
+    <polyline points="10,-5 16,0 10,5"/>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(510, 185)" filter="url(#p-shadow)">
+    <rect x="0" y="0" width="195" height="340" rx="14" fill="url(#card-p-grad)" stroke="#9FE7BD" stroke-opacity="0.25" stroke-width="1.5"/>
+    <rect x="18" y="20" width="36" height="36" rx="8" fill="#075433" stroke="#9FE7BD" stroke-opacity="0.5"/>
+    <text x="36" y="44" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="16" font-weight="800" text-anchor="middle">3</text>
+    <text x="18" y="85" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1">STAGE 03</text>
+    <text x="18" y="112" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="18" font-weight="600">Feature &amp; Texture Extraction</text>
+    <rect x="18" y="145" width="159" height="1" fill="#9FE7BD" fill-opacity="0.2"/>
+    <text x="18" y="172" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" line-height="1.55">
+      <tspan x="18" dy="0">Scans surface gradients,</tspan>
+      <tspan x="18" dy="20">periorbital lines, skin</tspan>
+      <tspan x="18" dy="20">elasticity shadows, and</tspan>
+      <tspan x="18" dy="20">facial third proportions.</tspan>
+    </text>
+    <rect x="18" y="280" width="159" height="34" rx="6" fill="#04231E"/>
+    <text x="97" y="302" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Feature Vectors</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <g transform="translate(712, 345)" stroke="#9FE7BD" stroke-width="2" fill="none">
+    <line x1="0" y1="0" x2="16" y2="0"/>
+    <polyline points="10,-5 16,0 10,5"/>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(735, 185)" filter="url(#p-shadow)">
+    <rect x="0" y="0" width="195" height="340" rx="14" fill="url(#card-p-grad)" stroke="#9FE7BD" stroke-opacity="0.25" stroke-width="1.5"/>
+    <rect x="18" y="20" width="36" height="36" rx="8" fill="#075433" stroke="#9FE7BD" stroke-opacity="0.5"/>
+    <text x="36" y="44" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="16" font-weight="800" text-anchor="middle">4</text>
+    <text x="18" y="85" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1">STAGE 04</text>
+    <text x="18" y="112" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="18" font-weight="600">Model Pattern Matching</text>
+    <rect x="18" y="145" width="159" height="1" fill="#9FE7BD" fill-opacity="0.2"/>
+    <text x="18" y="172" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" line-height="1.55">
+      <tspan x="18" dy="0">Compares extracted</tspan>
+      <tspan x="18" dy="20">vectors against trained</tspan>
+      <tspan x="18" dy="20">demographic appearance</tspan>
+      <tspan x="18" dy="20">distributions.</tspan>
+    </text>
+    <rect x="18" y="280" width="159" height="34" rx="6" fill="#04231E"/>
+    <text x="97" y="302" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Statistical Synthesis</text>
+  </g>
+
+  <!-- Arrow 4 -> 5 -->
+  <g transform="translate(937, 345)" stroke="#FF754D" stroke-width="2" fill="none">
+    <line x1="0" y1="0" x2="16" y2="0"/>
+    <polyline points="10,-5 16,0 10,5"/>
+  </g>
+
+  <!-- Step 5 (Output Highlight) -->
+  <g transform="translate(960, 185)" filter="url(#p-shadow)">
+    <rect x="0" y="0" width="180" height="340" rx="14" fill="#03201B" stroke="#FF754D" stroke-width="2"/>
+    <rect x="18" y="20" width="36" height="36" rx="8" fill="#FF754D"/>
+    <text x="36" y="44" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="16" font-weight="800" text-anchor="middle">5</text>
+    <text x="18" y="85" fill="#FF754D" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1">FINAL RESULT</text>
+    <text x="18" y="112" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="18" font-weight="600">Estimated Apparent Age</text>
+    <rect x="18" y="145" width="144" height="1" fill="#FF754D" fill-opacity="0.3"/>
+    <text x="18" y="172" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" line-height="1.55">
+      <tspan x="18" dy="0">Delivers estimated</tspan>
+      <tspan x="18" dy="20">age bracket.</tspan>
+      <tspan x="18" dy="20">Probabilistic only;</tspan>
+      <tspan x="18" dy="20">not chronological or</tspan>
+      <tspan x="18" dy="20">medical fact.</tspan>
+    </text>
+    <rect x="18" y="280" width="144" height="34" rx="6" fill="#0A3E34" stroke="#FF754D" stroke-opacity="0.4"/>
+    <text x="90" y="302" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">Apparent Window</text>
+  </g>
+
+  <!-- Bottom Clarification Footer -->
+  <g transform="translate(60, 565)">
+    <rect x="0" y="0" width="1080" height="60" rx="10" fill="#021C18" stroke="#9FE7BD" stroke-opacity="0.2"/>
+    <circle cx="30" cy="30" r="10" fill="#FF754D"/>
+    <text x="30" y="34" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle">!</text>
+    <text x="54" y="26" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Important Methodological Distinction</text>
+    <text x="54" y="44" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">Face age estimates represent algorithmic pattern approximation of visible photo features, not verified biological health, cellular senescence, or legal age verification.</text>
+  </g>
+</svg>

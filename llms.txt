@@ -2,7 +2,7 @@
 
 - How Old Am I?: https://www.agecalculatorlab.com/how-old-am-i/
 
-> 165 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 131 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
+> 165 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 132 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
 
 Written and reviewed by Navjeet Kamboj. Results are informational: clinical, legal, financial, school, employment and benefits decisions are governed by the relevant manual, policy or authority.
 

@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="How Old Do I Look face age estimation illustration">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="50%" stop-color="#075433"/>
+      <stop offset="100%" stop-color="#021B18"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9FE7BD" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#9FE7BD" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#9FE7BD" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="coral-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF754D"/>
+      <stop offset="100%" stop-color="#E0532B"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg-grad)"/>
+
+  <!-- Subtle Editorial Grid & Coordinate Lines -->
+  <g stroke="#9FE7BD" stroke-opacity="0.07" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="675"/>
+    <line x1="250" y1="0" x2="250" y2="675"/>
+    <line x1="400" y1="0" x2="400" y2="675"/>
+    <line x1="600" y1="0" x2="600" y2="675" stroke-dasharray="4 6"/>
+    <line x1="800" y1="0" x2="800" y2="675"/>
+    <line x1="950" y1="0" x2="950" y2="675"/>
+    <line x1="1100" y1="0" x2="1100" y2="675"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+
+  <!-- Left Side: Editorial Typography & Context -->
+  <g transform="translate(80, 110)">
+    <rect x="0" y="0" width="170" height="28" rx="14" fill="#9FE7BD" fill-opacity="0.15" stroke="#9FE7BD" stroke-opacity="0.3"/>
+    <text x="85" y="18" fill="#9FE7BD" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">FACIAL BIOMETRICS</text>
+
+    <text x="0" y="80" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="44" font-weight="600" line-height="1.2">
+      <tspan x="0" dy="0">Apparent Age</tspan>
+      <tspan x="0" dy="52">Analysis</tspan>
+    </text>
+
+    <text x="0" y="180" fill="#D3E5DE" font-family="'Inter', system-ui, sans-serif" font-size="16" line-height="1.6">
+      <tspan x="0" dy="0">Algorithmic evaluation of visible facial</tspan>
+      <tspan x="0" dy="26">geometry, micro-textures, and optical</tspan>
+      <tspan x="0" dy="26">contours from portrait photography.</tspan>
+    </text>
+
+    <!-- Key Analysis Metrics Pills -->
+    <g transform="translate(0, 270)">
+      <rect x="0" y="0" width="150" height="42" rx="8" fill="url(#card-grad)" stroke="#9FE7BD" stroke-opacity="0.2"/>
+      <circle cx="20" cy="21" r="5" fill="#9FE7BD"/>
+      <text x="35" y="26" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Facial Ratio</text>
+
+      <rect x="165" y="0" width="165" height="42" rx="8" fill="url(#card-grad)" stroke="#9FE7BD" stroke-opacity="0.2"/>
+      <circle cx="185" cy="21" r="5" fill="#FF754D"/>
+      <text x="200" y="26" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Texture Density</text>
+    </g>
+
+    <g transform="translate(0, 325)">
+      <rect x="0" y="0" width="165" height="42" rx="8" fill="url(#card-grad)" stroke="#9FE7BD" stroke-opacity="0.2"/>
+      <circle cx="20" cy="21" r="5" fill="#9FE7BD"/>
+      <text x="35" y="26" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Periorbital Depth</text>
+
+      <rect x="180" y="0" width="150" height="42" rx="8" fill="url(#card-grad)" stroke="#9FE7BD" stroke-opacity="0.2"/>
+      <circle cx="200" cy="21" r="5" fill="#9FE7BD"/>
+      <text x="215" y="26" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Contour Light</text>
+    </g>
+  </g>
+
+  <!-- Center-Right: Portrait Analysis Subject Box -->
+  <g transform="translate(680, 75)">
+    <!-- Container Card Frame -->
+    <rect x="0" y="0" width="440" height="525" rx="20" fill="#04231F" stroke="#9FE7BD" stroke-opacity="0.25" stroke-width="1.5"/>
+
+    <!-- Subtle Scanline effect -->
+    <rect x="5" y="160" width="430" height="90" fill="url(#scan-grad)"/>
+
+    <!-- Bounding Viewport Markers (Corner brackets) -->
+    <path d="M 35,55 L 35,35 L 55,35" fill="none" stroke="#9FE7BD" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 405,55 L 405,35 L 385,35" fill="none" stroke="#9FE7BD" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 35,470 L 35,490 L 55,490" fill="none" stroke="#9FE7BD" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 405,470 L 405,490 L 385,490" fill="none" stroke="#9FE7BD" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Stylized Portrait Silhouette with Half Natural / Half Analysis Wireframe -->
+    <g transform="translate(110, 80)">
+      <!-- Head / Face Outline -->
+      <path d="M 110,35 C 50,35 25,85 25,160 C 25,235 55,295 110,305 C 165,295 195,235 195,160 C 195,85 170,35 110,35 Z" 
+            fill="#09382B" stroke="#9FE7BD" stroke-width="2" stroke-opacity="0.7"/>
+
+      <!-- Neck & Shoulders -->
+      <path d="M 68,285 C 50,320 15,345 -20,360 L 240,360 C 205,345 170,320 152,285 Z" 
+            fill="#062920" stroke="#9FE7BD" stroke-opacity="0.3" stroke-width="1.5"/>
+
+      <!-- Facial Feature Symmetry Axis -->
+      <line x1="110" y1="40" x2="110" y2="295" stroke="#9FE7BD" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+      <!-- Horizontal Proportion Lines (Trichion, Glabella, Subnasale, Menton) -->
+      <line x1="45" y1="80" x2="175" y2="80" stroke="#9FE7BD" stroke-opacity="0.3" stroke-width="1"/>
+      <line x1="35" y1="135" x2="185" y2="135" stroke="#9FE7BD" stroke-opacity="0.5" stroke-width="1.2"/>
+      <line x1="45" y1="205" x2="175" y2="205" stroke="#9FE7BD" stroke-opacity="0.3" stroke-width="1"/>
+      <line x1="70" y1="250" x2="150" y2="250" stroke="#9FE7BD" stroke-opacity="0.3" stroke-width="1"/>
+
+      <!-- Left Side (Natural Features / Curves) -->
+      <!-- Eyebrow -->
+      <path d="M 55,125 Q 75,118 95,124" fill="none" stroke="#D3E5DE" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Eye -->
+      <ellipse cx="75" cy="140" rx="14" ry="7" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+      <circle cx="75" cy="140" r="4" fill="#9FE7BD"/>
+      <!-- Nose bridge / nostril -->
+      <path d="M 108,135 L 105,195 Q 100,205 92,205" fill="none" stroke="#D3E5DE" stroke-width="1.8"/>
+      <!-- Lips -->
+      <path d="M 85,240 Q 110,234 135,240" fill="none" stroke="#D3E5DE" stroke-width="1.8"/>
+      <path d="M 92,246 Q 110,252 128,246" fill="none" stroke="#D3E5DE" stroke-width="1.5"/>
+
+      <!-- Right Side (Geometric Mesh & Facial Landmarks) -->
+      <!-- Right Eyebrow Landmarks -->
+      <circle cx="125" cy="124" r="3" fill="#9FE7BD"/>
+      <circle cx="145" cy="120" r="3" fill="#9FE7BD"/>
+      <circle cx="165" cy="126" r="3" fill="#9FE7BD"/>
+      <line x1="125" y1="124" x2="145" y2="120" stroke="#9FE7BD" stroke-width="1.2"/>
+      <line x1="145" y1="120" x2="165" y2="126" stroke="#9FE7BD" stroke-width="1.2"/>
+
+      <!-- Right Eye Landmark Triangle -->
+      <polygon points="135,140 148,133 162,140 148,146" fill="#9FE7BD" fill-opacity="0.2" stroke="#9FE7BD" stroke-width="1.2"/>
+      <circle cx="148" cy="140" r="3" fill="#FF754D"/>
+
+      <!-- Cheek & Jaw Landmark Mesh -->
+      <polygon points="110,205 145,195 170,180 155,225" fill="#9FE7BD" fill-opacity="0.08" stroke="#9FE7BD" stroke-width="1" stroke-dasharray="2 2"/>
+      <polygon points="110,240 145,235 155,225 110,205" fill="#9FE7BD" fill-opacity="0.05" stroke="#9FE7BD" stroke-width="1" stroke-dasharray="2 2"/>
+      <polygon points="110,285 140,270 155,225 110,240" fill="#9FE7BD" fill-opacity="0.06" stroke="#9FE7BD" stroke-width="1" stroke-dasharray="2 2"/>
+
+      <!-- Landmark Nodes -->
+      <circle cx="145" cy="195" r="3.5" fill="#9FE7BD"/>
+      <circle cx="170" cy="180" r="3.5" fill="#9FE7BD"/>
+      <circle cx="155" cy="225" r="3.5" fill="#FF754D"/>
+      <circle cx="140" cy="270" r="3.5" fill="#9FE7BD"/>
+    </g>
+
+    <!-- Biometric Floating Status Badges -->
+    <!-- Top Floating Tag -->
+    <g transform="translate(35, 45)">
+      <rect x="0" y="0" width="130" height="28" rx="6" fill="#075433" stroke="#9FE7BD" stroke-opacity="0.4"/>
+      <circle cx="14" cy="14" r="4" fill="#9FE7BD"/>
+      <text x="26" y="18" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11.5" font-weight="600">PHOTO INPUT</text>
+    </g>
+
+    <!-- Bottom Result Card Overlay -->
+    <g transform="translate(30, 420)">
+      <rect x="0" y="0" width="380" height="75" rx="12" fill="#042F2A" stroke="#9FE7BD" stroke-opacity="0.4" stroke-width="1.5"/>
+      <rect x="18" y="18" width="40" height="40" rx="8" fill="url(#coral-grad)"/>
+      <path d="M 32,38 L 38,44 L 48,32" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="70" y="34" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Apparent Age Window</text>
+      <text x="70" y="52" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">Probabilistic Range · Non-Medical Estimate</text>
+    </g>
+  </g>
+</svg>

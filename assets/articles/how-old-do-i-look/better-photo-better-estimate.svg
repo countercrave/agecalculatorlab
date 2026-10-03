@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Better Photo Better Estimate checklist handwritten illustration">
+  <defs>
+    <filter id="card-shadow3" x="-5%" y="-5%" width="110%" height="112%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#042F2A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Editorial Warm Paper Background -->
+  <rect width="1200" height="675" fill="#FAFBF9"/>
+  <rect x="25" y="25" width="1150" height="625" rx="14" fill="#FFFFFF" stroke="#E2EBE6" stroke-width="1.5" filter="url(#card-shadow3)"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(60, 50)">
+    <rect x="0" y="0" width="180" height="26" rx="13" fill="#E8F4EE" stroke="#9FE7BD"/>
+    <text x="90" y="17" fill="#075433" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.2" text-anchor="middle">CAPTURE CHECKLIST</text>
+    <text x="0" y="65" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="40" font-weight="700">Better Photo → Better Estimate</text>
+    <text x="0" y="94" fill="#52796F" font-family="'Inter', sans-serif" font-size="14.5">How input photo quality directly guides algorithmic apparent-age precision</text>
+  </g>
+
+  <!-- Two Main Columns: DO vs AVOID -->
+  <!-- Left Column: DO (Recommended Setup) -->
+  <g transform="translate(60, 165)" filter="url(#card-shadow3)">
+    <rect x="0" y="0" width="515" height="450" rx="16" fill="#F8FCFA" stroke="#9FE7BD" stroke-width="2"/>
+    <!-- Top DO Header Badge -->
+    <rect x="24" y="22" width="120" height="34" rx="8" fill="#075433"/>
+    <text x="84" y="44" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13.5" font-weight="800" letter-spacing="1" text-anchor="middle">✓ DO THIS</text>
+    <text x="160" y="44" fill="#075433" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700">Optimal estimation conditions</text>
+
+    <!-- 5 Checklist Items -->
+    <g transform="translate(24, 75)">
+      <!-- Item 1 -->
+      <g transform="translate(0, 0)">
+        <circle cx="16" cy="18" r="14" fill="#E2F4EB"/>
+        <path d="M 10,18 L 14,22 L 22,14" fill="none" stroke="#075433" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Eye-Level Frontal Orientation</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Face straight toward the camera lens without upward or downward tilt.</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 68)">
+        <circle cx="16" cy="18" r="14" fill="#E2F4EB"/>
+        <path d="M 10,18 L 14,22 L 22,14" fill="none" stroke="#075433" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Soft, Even Ambient Light</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Natural diffused daylight facing you; avoid overhead spotlights.</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 136)">
+        <circle cx="16" cy="18" r="14" fill="#E2F4EB"/>
+        <path d="M 10,18 L 14,22 L 22,14" fill="none" stroke="#075433" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Neutral, Relaxed Expression</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Keep brow unwrinkled and eyes naturally open to maintain geometry.</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(0, 204)">
+        <circle cx="16" cy="18" r="14" fill="#E2F4EB"/>
+        <path d="M 10,18 L 14,22 L 22,14" fill="none" stroke="#075433" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Unobstructed Facial Landmarks</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Hair swept back from eyebrows and forehead; remove heavy frames.</text>
+      </g>
+
+      <!-- Item 5 -->
+      <g transform="translate(0, 272)">
+        <circle cx="16" cy="18" r="14" fill="#E2F4EB"/>
+        <path d="M 10,18 L 14,22 L 22,14" fill="none" stroke="#075433" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">High-Resolution Sensor Capture</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Sharp, uncompressed photo with crisp periorbital and jawline edges.</text>
+      </g>
+    </g>
+
+    <!-- Bottom handwritten endorsement note -->
+    <rect x="24" y="388" width="467" height="42" rx="8" fill="#EAF5EF"/>
+    <text x="257" y="414" fill="#075433" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Produces consistent, reliable apparent-age baseline</text>
+  </g>
+
+  <!-- Right Column: AVOID (Conditions That Skew Estimates) -->
+  <g transform="translate(625, 165)" filter="url(#card-shadow3)">
+    <rect x="0" y="0" width="515" height="450" rx="16" fill="#FFFDFB" stroke="#FF754D" stroke-width="2"/>
+    <!-- Top AVOID Header Badge -->
+    <rect x="24" y="22" width="120" height="34" rx="8" fill="#FF754D"/>
+    <text x="84" y="44" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13.5" font-weight="800" letter-spacing="1" text-anchor="middle">✕ AVOID</text>
+    <text x="160" y="44" fill="#C53A1A" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700">Distorts algorithm accuracy</text>
+
+    <!-- 5 Checklist Items -->
+    <g transform="translate(24, 75)">
+      <!-- Item 1 -->
+      <g transform="translate(0, 0)">
+        <circle cx="16" cy="18" r="14" fill="#FDECE7"/>
+        <path d="M 11,13 L 21,23 M 21,13 L 11,23" fill="none" stroke="#C53A1A" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Beauty &amp; Skin Smoothing Filters</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Synthetic blur wipes out genuine biological texture benchmarks.</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 68)">
+        <circle cx="16" cy="18" r="14" fill="#FDECE7"/>
+        <path d="M 11,13 L 21,23 M 21,13 L 11,23" fill="none" stroke="#C53A1A" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Harsh Direct Shadows or Glare</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Side shadows artificially accentuate skin folds and nasal creases.</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 136)">
+        <circle cx="16" cy="18" r="14" fill="#FDECE7"/>
+        <path d="M 11,13 L 21,23 M 21,13 L 11,23" fill="none" stroke="#C53A1A" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Extreme Tilt or Perspective Angles</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">High selfie angles shorten chin geometry, distorting adult proportions.</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(0, 204)">
+        <circle cx="16" cy="18" r="14" fill="#FDECE7"/>
+        <path d="M 11,13 L 21,23 M 21,13 L 11,23" fill="none" stroke="#C53A1A" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Low-Light Blur &amp; Grain Compression</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Sensor noise produces false texture artifacts misread by models.</text>
+      </g>
+
+      <!-- Item 5 -->
+      <g transform="translate(0, 272)">
+        <circle cx="16" cy="18" r="14" fill="#FDECE7"/>
+        <path d="M 11,13 L 21,23 M 21,13 L 11,23" fill="none" stroke="#C53A1A" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="42" y="16" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Tinted Eyewear, Hats, or Heavy Obscuration</text>
+        <text x="42" y="34" fill="#52796F" font-family="'Inter', sans-serif" font-size="12.5">Sunglasses block key periorbital and eye depth landmarks entirely.</text>
+      </g>
+    </g>
+
+    <!-- Bottom handwritten warning note -->
+    <rect x="24" y="388" width="467" height="42" rx="8" fill="#FDF3F0"/>
+    <text x="257" y="414" fill="#C53A1A" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Can skew apparent age calculation by 5–10+ years!</text>
+  </g>
+</svg>
