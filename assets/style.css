@@ -602,9 +602,19 @@ a.nav-cta:active{
 .content-cell p{color:var(--ink-2)}
 .callout{border-left:3px solid var(--brand);background:var(--brand-soft);padding:var(--s-5) var(--s-6);border-radius:0 var(--r-sm) var(--r-sm) 0;margin:var(--s-6) 0;color:var(--ink-2)}
 .formula{font-family:var(--font-mono);font-size:var(--t-sm);background:var(--inv-bg);color:var(--inv-ink);padding:var(--s-4) var(--s-5);border-radius:var(--r-sm);overflow:auto;margin:var(--s-5) 0}
-.data-table{width:100%;border-collapse:collapse;margin:var(--s-5) 0;font-size:var(--t-base)}
-.data-table th,.data-table td{padding:12px 14px;border:1px solid var(--line);text-align:left}
-.data-table th{background:var(--soft);font-weight:650}
+.data-table-wrap,.bands-table-wrap,.editorial-table-wrap{width:100%;overflow-x:auto;background:#ffffff;border:1px solid var(--line,#d3e5de);border-radius:var(--r-md,12px);box-shadow:0 4px 18px rgba(4,47,42,0.04);margin:var(--s-6,24px) 0;-webkit-overflow-scrolling:touch}
+.data-table,.bands-table,.editorial-table{width:100%;border-collapse:collapse;margin:0;font-size:var(--t-base,14.5px);line-height:1.55;text-align:left;background:#ffffff}
+.data-table thead,.bands-table thead,.editorial-table thead{background:var(--brand-dark,#042f2a);color:#ffffff}
+.data-table th,.bands-table th,.editorial-table th{padding:14px 18px;background:var(--brand-dark,#042f2a);color:#ffffff!important;font-weight:700;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;border-bottom:2px solid var(--brand,#075433);white-space:nowrap;text-align:left}
+.data-table td,.bands-table td,.editorial-table td{padding:14px 18px;border-bottom:1px solid #e5efea;color:var(--ink-2,#243831);vertical-align:top;font-size:14px}
+.data-table tbody tr:nth-child(even),.bands-table tbody tr:nth-child(even),.editorial-table tbody tr:nth-child(even){background:var(--soft,#f8fcfa)}
+.data-table tbody tr:last-child td,.bands-table tbody tr:last-child td,.editorial-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover,.bands-table tbody tr:hover,.editorial-table tbody tr:hover{background:#edf7f2;transition:background .15s ease}
+.data-table td strong,.bands-table td strong,.editorial-table td strong{color:var(--brand-dark,#042f2a);font-weight:700}
+
+@media(min-width:821px){
+  .faq-two-col .faq-left,.content-two-col .content-label{position:-webkit-sticky;position:sticky;top:96px;align-self:start}
+}
 
 .faq details{border-top:1px solid var(--line);padding:var(--s-5) 0}
 .faq details[open] summary{color:var(--brand-dark)}
