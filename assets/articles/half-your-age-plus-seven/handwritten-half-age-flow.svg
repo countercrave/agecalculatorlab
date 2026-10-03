@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto" style="background:#fdfcf9;border-radius:12px;font-family:'Inter',system-ui,-apple-system,sans-serif;">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e8ede9" stroke-width="0.8"/>
+    </pattern>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#042f2a"/>
+      <stop offset="100%" stop-color="#075433"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Notebook Grid Background -->
+  <rect width="800" height="450" fill="#fdfcf9"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  
+  <!-- Outer Border -->
+  <rect x="16" y="16" width="768" height="418" rx="10" fill="none" stroke="#d5e2dc" stroke-width="1.5"/>
+  
+  <!-- Header Bar -->
+  <rect x="36" y="32" width="728" height="48" rx="8" fill="url(#headerGrad)"/>
+  <text x="56" y="62" fill="#ffffff" font-size="16" font-weight="700" letter-spacing="0.5">HALF-YOUR-AGE-PLUS-SEVEN: ARITHMETIC FLOW</text>
+  <text x="744" y="62" text-anchor="end" fill="#9fe7bd" font-size="12" font-weight="600">CALCULATING THE LOWER BOUNDARY</text>
+  
+  <!-- Content Area -->
+  
+  <rect x="60" y="105" width="680" height="275" rx="8" fill="#ffffff" stroke="#cde0d7" stroke-width="1.5"/>
+  
+  <g transform="translate(80, 140)">
+    <!-- Step 1: Input -->
+    <rect x="0" y="0" width="130" height="150" rx="6" fill="#f4f9f6" stroke="#b8d9cc" stroke-width="1"/>
+    <text x="65" y="30" text-anchor="middle" fill="#075433" font-size="12" font-weight="700">YOUR AGE</text>
+    <text x="65" y="80" text-anchor="middle" fill="#042f2a" font-size="34" font-family="'Georgia', serif" font-weight="700">40</text>
+    <text x="65" y="115" text-anchor="middle" fill="#52796f" font-size="11">Initial Input</text>
+    
+    <!-- Arrow 1 -->
+    <text x="155" y="80" fill="#075433" font-size="24" font-weight="700">→</text>
+    
+    <!-- Step 2: Divide by 2 -->
+    <rect x="180" y="0" width="130" height="150" rx="6" fill="#f4f9f6" stroke="#b8d9cc" stroke-width="1"/>
+    <text x="245" y="30" text-anchor="middle" fill="#075433" font-size="12" font-weight="700">DIVIDE BY 2</text>
+    <text x="245" y="80" text-anchor="middle" fill="#042f2a" font-size="34" font-family="'Georgia', serif" font-weight="700">20</text>
+    <text x="245" y="115" text-anchor="middle" fill="#52796f" font-size="11">40 ÷ 2 = 20</text>
+    
+    <!-- Arrow 2 -->
+    <text x="335" y="80" fill="#075433" font-size="24" font-weight="700">→</text>
+    
+    <!-- Step 3: Add 7 -->
+    <rect x="360" y="0" width="130" height="150" rx="6" fill="#f4f9f6" stroke="#b8d9cc" stroke-width="1"/>
+    <text x="425" y="30" text-anchor="middle" fill="#075433" font-size="12" font-weight="700">ADD 7</text>
+    <text x="425" y="80" text-anchor="middle" fill="#ff754d" font-size="34" font-family="'Georgia', serif" font-weight="700">+7</text>
+    <text x="425" y="115" text-anchor="middle" fill="#52796f" font-size="11">20 + 7</text>
+    
+    <!-- Arrow 3 -->
+    <text x="515" y="80" fill="#075433" font-size="24" font-weight="700">→</text>
+    
+    <!-- Step 4: Result -->
+    <rect x="540" y="0" width="140" height="150" rx="6" fill="#042f2a" stroke="#075433" stroke-width="2"/>
+    <text x="610" y="30" text-anchor="middle" fill="#9fe7bd" font-size="12" font-weight="700">MINIMUM AGE</text>
+    <text x="610" y="82" text-anchor="middle" fill="#ffffff" font-size="36" font-family="'Georgia', serif" font-weight="700">27</text>
+    <text x="610" y="118" text-anchor="middle" fill="#9fe7bd" font-size="11">Lower Bound</text>
+  </g>
+  
+  <!-- Bottom Caption -->
+  <text x="400" y="340" text-anchor="middle" fill="#042f2a" font-size="14" font-weight="700">Core Equation: Minimum Dating Age = (Your Age ÷ 2) + 7</text>
+  <text x="400" y="360" text-anchor="middle" fill="#52796f" font-size="12">Applies an arithmetic baseline; always subject to legal adulthood limits (18+).</text>
+  
+  
+  <!-- Footer Note -->
+  <text x="40" y="415" fill="#6a877c" font-size="11">Age Calculator Lab • Verified Mathematical Reference &amp; Chronology Model</text>
+  <text x="760" y="415" text-anchor="end" fill="#6a877c" font-size="11">Social Guideline • Not Legal Counsel</text>
+</svg>

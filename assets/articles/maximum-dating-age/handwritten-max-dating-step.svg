@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto" style="background:#fdfcf9;border-radius:12px;font-family:'Inter',system-ui,-apple-system,sans-serif;">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e8ede9" stroke-width="0.8"/>
+    </pattern>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#042f2a"/>
+      <stop offset="100%" stop-color="#075433"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Notebook Grid Background -->
+  <rect width="800" height="450" fill="#fdfcf9"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  
+  <!-- Outer Border -->
+  <rect x="16" y="16" width="768" height="418" rx="10" fill="none" stroke="#d5e2dc" stroke-width="1.5"/>
+  
+  <!-- Header Bar -->
+  <rect x="36" y="32" width="728" height="48" rx="8" fill="url(#headerGrad)"/>
+  <text x="56" y="62" fill="#ffffff" font-size="16" font-weight="700" letter-spacing="0.5">MAXIMUM DATING AGE: FORMULA DERIVATION & STEPS</text>
+  <text x="744" y="62" text-anchor="end" fill="#9fe7bd" font-size="12" font-weight="600">UPPER BOUND CALCULATION</text>
+  
+  <!-- Content Area -->
+  
+  <rect x="60" y="105" width="680" height="275" rx="8" fill="#ffffff" stroke="#cde0d7" stroke-width="1.5"/>
+  
+  <g transform="translate(85, 130)">
+    <!-- Algebraic derivation header -->
+    <rect x="0" y="0" width="630" height="60" rx="6" fill="#042f2a"/>
+    <text x="315" y="28" text-anchor="middle" fill="#9fe7bd" font-size="13" font-weight="700">ALGEBRAIC INVERSION OF THE MINIMUM RULE</text>
+    <text x="315" y="48" text-anchor="middle" fill="#ffffff" font-size="15" font-family="'Courier New', monospace" font-weight="700">Maximum Dating Age = (Your Age − 7) × 2</text>
+    
+    <!-- 2 Step Cards -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="300" height="130" rx="6" fill="#f4f9f6" stroke="#b8d9cc" stroke-width="1.5"/>
+      <text x="24" y="28" fill="#075433" font-size="13" font-weight="700">STEP 1: SUBTRACT 7</text>
+      <text x="24" y="65" fill="#042f2a" font-size="24" font-family="'Courier New', monospace" font-weight="700">40 − 7 = 33</text>
+      <text x="24" y="95" fill="#52796f" font-size="12">Remove the constant 7 offset</text>
+      <text x="24" y="115" fill="#2d5244" font-size="11">Intermediate value = 33</text>
+      
+      <rect x="330" y="0" width="300" height="130" rx="6" fill="#fcf6f3" stroke="#f2cfc2" stroke-width="1.5"/>
+      <text x="354" y="28" fill="#a83f21" font-size="13" font-weight="700">STEP 2: MULTIPLY BY 2</text>
+      <text x="354" y="65" fill="#a83f21" font-size="24" font-family="'Courier New', monospace" font-weight="700">33 × 2 = 66 Yrs</text>
+      <text x="354" y="95" fill="#66463c" font-size="12">Double the intermediate value</text>
+      <text x="354" y="115" fill="#a83f21" font-size="11" font-weight="700">Result: Maximum age is 66</text>
+    </g>
+  </g>
+  
+  
+  <!-- Footer Note -->
+  <text x="40" y="415" fill="#6a877c" font-size="11">Age Calculator Lab • Verified Mathematical Reference &amp; Chronology Model</text>
+  <text x="760" y="415" text-anchor="end" fill="#6a877c" font-size="11">Social Guideline • Not Legal Counsel</text>
+</svg>

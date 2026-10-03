@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto" style="max-width:100%;background:#fbfbf7;border-radius:12px;border:1px solid #e2ded5;font-family:'Inter', system-ui, -apple-system, sans-serif;">
+  <style>
+    .track-bg { fill: #ffffff; stroke: #cfdbd5; stroke-width: 1.5; rx: 10px; }
+    .bar-highlight { fill: #20a67b; rx: 5px; }
+    .ink-dark { fill: #042f2a; font-weight: 700; }
+    .ink-muted { fill: #526e62; font-size: 13px; }
+    .gap-badge { fill: #e8f5ee; stroke: #075433; stroke-width: 1.5; rx: 6px; }
+  </style>
+
+  <!-- Title -->
+  <text x="50" y="44" font-size="22" class="ink-dark">Same Numerical Gap ≠ Same Life-Stage Context</text>
+  <text x="50" y="70" class="ink-muted">A 7-year age difference carries radically different social, developmental, and biological implications.</text>
+
+  <!-- Track 1: 20 to 27 -->
+  <g transform="translate(50, 95)">
+    <rect width="700" height="90" class="track-bg" />
+    <text x="24" y="32" font-size="15" font-weight="700" fill="#042f2a">Cohort 1: Age 20 to 27</text>
+    <rect x="24" y="46" width="300" height="18" fill="#e2ede7" rx="9" />
+    <rect x="24" y="46" width="180" height="18" fill="#20a67b" rx="9" />
+    <text x="215" y="60" font-size="12" font-weight="700" fill="#042f2a">+7 Years Gap</text>
+    <text x="360" y="45" font-size="13" font-weight="600" fill="#c2593a">High Asymmetry in Milestones</text>
+    <text x="360" y="66" class="ink-muted">College / early independence vs. established career / independent living.</text>
+  </g>
+
+  <!-- Track 2: 40 to 47 -->
+  <g transform="translate(50, 200)">
+    <rect width="700" height="90" class="track-bg" />
+    <text x="24" y="32" font-size="15" font-weight="700" fill="#042f2a">Cohort 2: Age 40 to 47</text>
+    <rect x="24" y="46" width="300" height="18" fill="#e2ede7" rx="9" />
+    <rect x="24" y="46" width="180" fill="#075433" height="18" rx="9" />
+    <text x="215" y="60" font-size="12" font-weight="700" fill="#042f2a">+7 Years Gap</text>
+    <text x="360" y="45" font-size="13" font-weight="600" fill="#075433">High Life-Stage Parity</text>
+    <text x="360" y="66" class="ink-muted">Shared mid-life career stability, parenting milestones, and financial autonomy.</text>
+  </g>
+
+  <!-- Track 3: 60 to 67 -->
+  <g transform="translate(50, 305)">
+    <rect width="700" height="90" class="track-bg" />
+    <text x="24" y="32" font-size="15" font-weight="700" fill="#042f2a">Cohort 3: Age 60 to 67</text>
+    <rect x="24" y="46" width="300" height="18" fill="#e2ede7" rx="9" />
+    <rect x="24" y="46" width="180" fill="#52796f" height="18" rx="9" />
+    <text x="215" y="60" font-size="12" font-weight="700" fill="#042f2a">+7 Years Gap</text>
+    <text x="360" y="45" font-size="13" font-weight="600" fill="#52796f">Retirement Transition Window</text>
+    <text x="360" y="66" class="ink-muted">Pension eligibility timing, healthcare requirements, and leisure planning.</text>
+  </g>
+
+  <!-- Takeaway footer -->
+  <text x="400" y="425" text-anchor="middle" font-size="12.5" font-weight="600" fill="#355648">Demographic Principle: Arithmetic age difference is constant, while developmental context evolves.</text>
+</svg>

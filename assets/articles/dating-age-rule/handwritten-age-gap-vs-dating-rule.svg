@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto" style="max-width:100%;background:#fbfbf7;border-radius:12px;border:1px solid #e2ded5;font-family:'Inter', system-ui, -apple-system, sans-serif;">
+  <style>
+    .card-left { fill: #ffffff; stroke: #3b6d58; stroke-width: 2; rx: 12px; }
+    .card-right { fill: #ffffff; stroke: #c2593a; stroke-width: 2; rx: 12px; }
+    .title-ink { fill: #042f2a; font-weight: 700; }
+    .muted-ink { fill: #526e62; font-size: 13.5px; }
+    .math-bold { font-family: 'Courier New', monospace; font-weight: 700; font-size: 26px; }
+    .not-equal { fill: #c2593a; font-size: 48px; font-weight: 900; }
+  </style>
+
+  <!-- Top Title -->
+  <text x="50" y="46" font-size="22" class="title-ink">Comparative Analysis: Age Gap ≠ Dating Age Rule</text>
+  <text x="50" y="72" class="muted-ink">Two completely distinct mathematical operations answering separate relationship questions.</text>
+
+  <!-- Left Column: Age Difference -->
+  <g transform="translate(50, 105)">
+    <rect width="320" height="240" class="card-left" />
+    <rect width="320" height="42" fill="#eaf3ee" rx="10" />
+    <text x="24" y="27" font-size="14" font-weight="700" fill="#075433" letter-spacing="1">1. AGE DIFFERENCE / GAP</text>
+    
+    <text x="24" y="78" font-size="14" font-weight="600" fill="#2d4a3e">Operation: Direct Subtraction</text>
+    <text x="24" y="118" class="math-bold" fill="#075433">40 − 30 = 10 Years</text>
+    <line x1="24" y1="135" x2="296" y2="135" stroke="#d5e8de" stroke-width="1.5" />
+    
+    <text x="24" y="165" font-size="13" font-weight="600" fill="#042f2a">What It Answers:</text>
+    <text x="24" y="186" class="muted-ink">“How many calendar years separate</text>
+    <text x="24" y="204" class="muted-ink">these two specific individuals?”</text>
+    <text x="24" y="226" font-size="12" font-weight="700" fill="#075433">Objective calendar interval only.</text>
+  </g>
+
+  <!-- Middle ≠ Symbol -->
+  <text x="400" y="240" text-anchor="middle" class="not-equal">≠</text>
+
+  <!-- Right Column: Dating Age Rule -->
+  <g transform="translate(430, 105)">
+    <rect width="320" height="240" class="card-right" />
+    <rect width="320" height="42" fill="#fcf0ec" rx="10" />
+    <text x="24" y="27" font-size="14" font-weight="700" fill="#c2593a" letter-spacing="1">2. DATING AGE RULE</text>
+    
+    <text x="24" y="78" font-size="14" font-weight="600" fill="#80331b">Operation: Halve &amp; Add Seven</text>
+    <text x="24" y="118" class="math-bold" fill="#c2593a">40 ÷ 2 + 7 = 27 Years</text>
+    <line x1="24" y1="135" x2="296" y2="135" stroke="#f2d7ce" stroke-width="1.5" />
+    
+    <text x="24" y="165" font-size="13" font-weight="600" fill="#042f2a">What It Answers:</text>
+    <text x="24" y="186" class="muted-ink">“What lower boundary does the social</text>
+    <text x="24" y="204" class="muted-ink">rule-of-thumb formula produce?”</text>
+    <text x="24" y="226" font-size="12" font-weight="700" fill="#c2593a">Hypothetical range guideline.</text>
+  </g>
+
+  <!-- Bottom Takeaway -->
+  <g transform="translate(50, 365)">
+    <rect width="700" height="55" fill="#f4f7f5" stroke="#d5e3dc" rx="8" />
+    <text x="24" y="32" font-size="13.5" font-weight="600" fill="#042f2a">Key Distinction:</text>
+    <text x="145" y="32" font-size="13" fill="#355648">An age gap measures elapsed difference. A dating-age rule estimates a boundary range. Neither measures relationship suitability.</text>
+  </g>
+</svg>

@@ -2,7 +2,7 @@
 
 - How Old Am I?: https://www.agecalculatorlab.com/how-old-am-i/
 
-> 166 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 138 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
+> 166 free, browser-based calculators for age, dates, birthdays, pregnancy, work milestones and calendar planning, plus 146 guides explaining the methods behind them. No account, no server-side processing of calculator inputs, and every page states its method and limits.
 
 Written and reviewed by Navjeet Kamboj. Results are informational: clinical, legal, financial, school, employment and benefits decisions are governed by the relevant manual, policy or authority.
 
@@ -341,3 +341,11 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [AI Age Guessers Explained: How AI Estimates Your Age From a Face](https://www.agecalculatorlab.com/articles/ai-age-guessers/): How do AI age guessers estimate your age from a photo? Learn how AI face-age estimation works, what affects results, limitations, privacy, and responsible use.
 - [Face Age vs Chronological Age vs Biological Age: What's the Difference?](https://www.agecalculatorlab.com/articles/face-age-vs-chronological-age-vs-biological-age/): Face age, chronological age and biological age describe different things. Learn how they differ, how each is estimated, and why your face age may not match your actual age.
 - [Why Do I Look Older or Younger in Different Photos? 10 Factors](https://www.agecalculatorlab.com/articles/why-do-i-look-older-or-younger-in-different-photos/): Why can the same person look older or younger in different photos? Learn how lighting, camera angle, expression, image quality, makeup and more affect apparent face age.
+- [Dating Age Rule Explained: What Is the Half-Your-Age-Plus-Seven Rule?](https://www.agecalculatorlab.com/articles/dating-age-rule/): Learn how the dating age rule works, including the half-your-age-plus-seven formula, examples, limitations, and how to calculate a dating age range.
+- [What Is a Good Age Gap in a Relationship? A Practical Guide](https://www.agecalculatorlab.com/articles/age-gap-in-relationships/): What is considered a good age gap in a relationship? Explore common age gaps, life stages, social perceptions, and practical considerations for couples.
+- [Age Gap vs Age Difference: What’s the Difference?](https://www.agecalculatorlab.com/articles/age-gap-vs-age-difference/): Age gap vs age difference explained. Learn how each is calculated, whether they mean the same thing, and how to use an age gap or age difference calculator.
+- [How to Calculate an Age Gap: Formula, Examples & Calculator](https://www.agecalculatorlab.com/articles/how-to-calculate-age-gap/): Learn how to calculate an age gap between two people using a simple formula or birth dates. See examples and use an age gap calculator for precise results.
+- [Half Your Age Plus Seven: What Does the Dating Rule Mean?](https://www.agecalculatorlab.com/articles/half-your-age-plus-seven/): Learn what the half-your-age-plus-seven rule means, how to calculate the minimum and maximum dating age, worked examples, and critical limitations.
+- [Dating Age Calculator: How the Formula Works & Examples](https://www.agecalculatorlab.com/articles/dating-age-calculator/): Discover how a dating age calculator works, including the dual-bound formula, worked examples, rounding rules, and how to find your acceptable dating range.
+- [Minimum Dating Age: How to Calculate the Youngest Age Using the Dating Rule](https://www.agecalculatorlab.com/articles/minimum-dating-age/): Learn how to calculate the minimum dating age using the half-your-age-plus-seven formula. Includes charts, worked examples, and statutory adult guardrails.
+- [Maximum Dating Age: How to Calculate the Upper Dating Age](https://www.agecalculatorlab.com/articles/maximum-dating-age/): Learn how to calculate the maximum dating age using the inverse half-your-age-plus-seven formula. Includes charts, algebraic derivation, and worked examples.

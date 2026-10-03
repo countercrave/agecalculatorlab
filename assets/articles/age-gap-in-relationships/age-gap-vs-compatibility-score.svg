@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="auto" style="max-width:100%;background:#fbfbf7;border-radius:12px;border:1px solid #e2ded5;font-family:'Inter', system-ui, -apple-system, sans-serif;">
+  <style>
+    .panel-left { fill: #ffffff; stroke: #3b6d58; stroke-width: 2; rx: 12px; }
+    .panel-right { fill: #ffffff; stroke: #c2593a; stroke-width: 2; rx: 12px; }
+    .heading { fill: #042f2a; font-weight: 700; font-size: 22px; }
+    .subhead { fill: #526e62; font-size: 13.5px; }
+    .giant-neq { fill: #c2593a; font-size: 54px; font-weight: 900; }
+  </style>
+
+  <!-- Title -->
+  <text x="50" y="46" class="heading">Analytical Boundary: Age Gap ≠ Compatibility Score</text>
+  <text x="50" y="72" class="subhead">A calculator provides verifiable chronological arithmetic, not psychometric or marital evaluation.</text>
+
+  <!-- Left: Age Gap Calculation -->
+  <g transform="translate(50, 105)">
+    <rect width="320" height="245" class="panel-left" />
+    <rect width="320" height="44" fill="#eaf3ee" rx="10" />
+    <text x="24" y="28" font-size="14" font-weight="700" fill="#075433" letter-spacing="1">CHRONOLOGICAL MEASURE</text>
+    
+    <text x="24" y="80" font-size="18" font-weight="700" fill="#042f2a">Age Gap (Years Apart)</text>
+    <text x="24" y="118" font-family="'Courier New', monospace" font-size="24" font-weight="700" fill="#075433">38 − 31 = 7 Years</text>
+    
+    <line x1="24" y1="138" x2="296" y2="138" stroke="#d5e8de" stroke-width="1.5" />
+    <text x="24" y="165" font-size="13" font-weight="700" fill="#042f2a">Measurable Properties:</text>
+    <text x="24" y="188" font-size="13" fill="#355648">✓ Calendar elapsed years &amp; days</text>
+    <text x="24" y="208" font-size="13" fill="#355648">✓ Mathematically reproducible</text>
+    <text x="24" y="228" font-size="13" fill="#355648">✓ Objective chronological fact</text>
+  </g>
+
+  <!-- Giant ≠ -->
+  <text x="400" y="245" text-anchor="middle" class="giant-neq">≠</text>
+
+  <!-- Right: Compatibility Score -->
+  <g transform="translate(430, 105)">
+    <rect width="320" height="245" class="panel-right" />
+    <rect width="320" height="44" fill="#fcf0ec" rx="10" />
+    <text x="24" y="28" font-size="14" font-weight="700" fill="#c2593a" letter-spacing="1">RELATIONSHIP VIABILITY</text>
+    
+    <text x="24" y="80" font-size="18" font-weight="700" fill="#80331b">Compatibility &amp; Health</text>
+    <text x="24" y="118" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#c2593a">Non-Mathematical</text>
+    
+    <line x1="24" y1="138" x2="296" y2="138" stroke="#f2d7ce" stroke-width="1.5" />
+    <text x="24" y="165" font-size="13" font-weight="700" fill="#042f2a">Uncalculated Dimensions:</text>
+    <text x="24" y="188" font-size="13" fill="#80331b">✗ Shared values and communication</text>
+    <text x="24" y="208" font-size="13" fill="#80331b">✗ Emotional parity &amp; power balance</text>
+    <text x="24" y="228" font-size="13" fill="#80331b">✗ Mutual commitment &amp; lifestyle</text>
+  </g>
+
+  <!-- Bottom Takeaway -->
+  <g transform="translate(50, 370)">
+    <rect width="700" height="52" fill="#f4f7f5" stroke="#d5e3dc" rx="8" />
+    <text x="24" y="31" font-size="13" font-weight="700" fill="#042f2a">Methodological Rule:</text>
+    <text x="175" y="31" font-size="13" fill="#355648">Never equate a chronological age difference with an evaluation of relationship quality.</text>
+  </g>
+</svg>
