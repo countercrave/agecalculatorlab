@@ -62,8 +62,10 @@
 .visual-heading p{font-size:16px;line-height:1.65;color:var(--ink-2);margin:0}
 
 /* Factors & Anatomy Split */
-.factors-editorial-wrap{display:grid;grid-template-columns:1.05fr 1.25fr;gap:32px;align-items:center}
-@media(max-width:920px){.factors-editorial-wrap{grid-template-columns:1fr}}
+.factors-editorial-wrap{display:grid;grid-template-columns:1.02fr 1.2fr;gap:36px;align-items:start}
+@media(max-width:920px){.factors-editorial-wrap{grid-template-columns:1fr;gap:24px}}
+.factors-diagram-wrap{margin:0;border-radius:16px;overflow:hidden;box-shadow:0 12px 32px rgba(4,47,42,0.12);border:1px solid #165b43;background:#042f2a;position:sticky;top:calc(var(--header-h) + 24px);align-self:start}
+.factors-diagram-wrap img{display:block;width:100%;height:auto;aspect-ratio:auto}
 .factor-editorial-item{background:#ffffff;border:1px solid #e5efea;border-radius:12px;padding:16px 18px;margin-bottom:12px;box-shadow:0 2px 8px rgba(4,47,42,0.03);display:flex;gap:14px;align-items:flex-start}
 .factor-num-pill{width:28px;height:28px;border-radius:50%;background:#e8f5ee;color:#075433;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
 .factor-item-content h4{margin:0 0 4px;font-size:15px;color:var(--face-navy)}
@@ -351,7 +353,7 @@
 <section class="visual-section feature-section" id="factors" style="background:#f8fcfa;border-top:1px solid #e5efea;border-bottom:1px solid #e5efea"><div class="container"><div class="visual-heading centered"><span class="kicker">Appearance Variables</span><h2>What Can Affect Face Age?</h2><p>Six primary visual variables dictate how automated computer-vision heuristics evaluate apparent facial age in a snapshot.</p></div>
 
 <div class="factors-editorial-wrap">
-  <figure class="tool-featured-media" style="border-radius:16px">
+  <figure class="factors-diagram-wrap">
     <img decoding="async" src="../../assets/tools/face-age-calculator/face-factors-diagram.svg" alt="Facial metric anatomy and evaluation zones" width="600" height="680" loading="lazy">
   </figure>
 
