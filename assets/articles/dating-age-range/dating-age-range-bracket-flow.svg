@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="100%" height="auto" style="max-width:900px;font-family:'Inter',system-ui,sans-serif;background:#042f2a;border-radius:12px;border:1px solid #1e684c;box-shadow:0 8px 24px rgba(0,0,0,0.25)">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#042f2a"/>
+      <stop offset="100%" stop-color="#075433"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="380" rx="12" fill="url(#bgGrad)"/>
+  
+  <!-- Title Badge -->
+  <rect x="290" y="24" width="320" height="34" rx="17" fill="#0b3d2b" stroke="#9fe7bd" stroke-width="1.5"/>
+  <text x="450" y="46" fill="#9fe7bd" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">DUAL BOUNDARY RANGE FORMULA</text>
+
+  <!-- Central Anchor: User Age -->
+  <g transform="translate(370, 80)" filter="url(#shadow)">
+    <rect width="160" height="80" rx="10" fill="#08472f" stroke="#ffd180" stroke-width="2"/>
+    <text x="80" y="32" fill="#ffd180" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">YOUR AGE (INPUT)</text>
+    <text x="80" y="62" fill="#ffffff" font-size="28" font-weight="800" text-anchor="middle">Age 30</text>
+  </g>
+
+  <!-- Left Branch Path: Lower Boundary -->
+  <path d="M 370 120 L 220 120 L 220 195" fill="none" stroke="#9fe7bd" stroke-width="2.5" stroke-dasharray="4,4"/>
+  <polygon points="215,195 225,195 220,205" fill="#9fe7bd"/>
+
+  <!-- Right Branch Path: Upper Boundary -->
+  <path d="M 530 120 L 680 120 L 680 195" fill="none" stroke="#ff855f" stroke-width="2.5" stroke-dasharray="4,4"/>
+  <polygon points="675,195 685,195 680,205" fill="#ff855f"/>
+
+  <!-- Left Card: Minimum Dating Age -->
+  <g transform="translate(100, 210)" filter="url(#shadow)">
+    <rect width="240" height="135" rx="10" fill="#063826" stroke="#20a67b" stroke-width="2"/>
+    <rect x="20" y="14" width="100" height="22" rx="4" fill="#0d4f36"/>
+    <text x="70" y="29" fill="#9fe7bd" font-size="10" font-weight="700" text-anchor="middle">LOWER BOUND</text>
+    <text x="20" y="58" fill="#ffffff" font-size="15" font-weight="700">Minimum Age</text>
+    <text x="20" y="80" fill="#d3e5de" font-size="12">Formula: (Age ÷ 2) + 7</text>
+    <text x="20" y="102" fill="#ffd180" font-size="13" font-family="Courier,monospace" font-weight="700">(30 ÷ 2) + 7 = 22</text>
+    <text x="20" y="124" fill="#9fe7bd" font-size="16" font-weight="800">22 Years Old</text>
+  </g>
+
+  <!-- Right Card: Maximum Dating Age -->
+  <g transform="translate(560, 210)" filter="url(#shadow)">
+    <rect width="240" height="135" rx="10" fill="#063826" stroke="#ff754d" stroke-width="2"/>
+    <rect x="20" y="14" width="100" height="22" rx="4" fill="#4d2417"/>
+    <text x="70" y="29" fill="#ff855f" font-size="10" font-weight="700" text-anchor="middle">UPPER BOUND</text>
+    <text x="20" y="58" fill="#ffffff" font-size="15" font-weight="700">Maximum Age</text>
+    <text x="20" y="80" fill="#d3e5de" font-size="12">Formula: (Age − 7) × 2</text>
+    <text x="20" y="102" fill="#ffd180" font-size="13" font-family="Courier,monospace" font-weight="700">(30 − 7) × 2 = 46</text>
+    <text x="20" y="124" fill="#ff855f" font-size="16" font-weight="800">46 Years Old</text>
+  </g>
+
+  <!-- Center Result Callout -->
+  <g transform="translate(360, 235)" filter="url(#shadow)">
+    <rect width="180" height="85" rx="10" fill="#0d4734" stroke="#ffd180" stroke-width="2"/>
+    <text x="90" y="25" fill="#ffd180" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="0.5">ACCEPTABLE DATING RANGE</text>
+    <text x="90" y="55" fill="#ffffff" font-size="20" font-weight="800" text-anchor="middle">22 to 46</text>
+    <text x="90" y="73" fill="#9fe7bd" font-size="11" text-anchor="middle">Total Span: 24 Years</text>
+  </g>
+</svg>
