@@ -41,7 +41,7 @@
     <text x="115" y="21" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" letter-spacing="1.5" text-anchor="middle">PERSONAL AGE PROFILE</text>
   </g>
 
-  <!-- Headline & Subtitle -->
+  <!-- Headline &amp; Subtitle -->
   <text x="80" y="120" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#042F2A" letter-spacing="-0.5">Your Korean Age Profile Dashboard</text>
   <text x="80" y="150" font-family="'Inter', sans-serif" font-size="15" fill="#5D7069">Simulated personal calculation comparing International Legal Age against Traditional Korean Age.</text>
 

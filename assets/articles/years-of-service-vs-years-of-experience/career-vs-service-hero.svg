@@ -44,7 +44,7 @@
     <line x1="1050" y1="0" x2="1050" y2="675" />
   </g>
 
-  <!-- Top Header Badge & Title -->
+  <!-- Top Header Badge &amp; Title -->
   <g transform="translate(60, 48)">
     <rect x="0" y="0" width="280" height="30" rx="15" fill="#FF754D" fill-opacity="0.2" stroke="#FF754D" stroke-width="1.2" />
     <text x="140" y="20" font-size="12" font-weight="700" fill="#FF9A77" text-anchor="middle" letter-spacing="1.5">EMPLOYMENT METRICS COMPARISON</text>

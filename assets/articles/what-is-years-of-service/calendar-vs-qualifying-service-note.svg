@@ -59,7 +59,7 @@
         </g>
       </g>
 
-      <!-- Bottom Hand Annotation & Arrow -->
+      <!-- Bottom Hand Annotation &amp; Arrow -->
       <g transform="translate(10, 310)">
         <path d="M 230,0 C 230,25 240,40 255,50" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" />
         <polygon points="255,50 245,45 250,38" fill="#b45309" />

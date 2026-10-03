@@ -80,7 +80,7 @@
     </g>
   </g>
 
-  <!-- Column 2: Band 2 & 3 (18/20–30 Posts) -->
+  <!-- Column 2: Band 2 &amp; 3 (18/20–30 Posts) -->
   <g transform="translate(445, 175)" filter="url(#shadow)">
     <rect width="310" height="430" rx="14" fill="url(#cardGrad)" stroke="#0E6E5D" stroke-width="1.5"/>
     <rect width="310" height="48" rx="14" fill="#0A5A4D"/>

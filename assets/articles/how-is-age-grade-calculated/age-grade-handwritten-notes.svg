@@ -25,7 +25,7 @@
     <line x1="0" y1="615" x2="1200" y2="615" stroke="#E0EBE5" stroke-width="1" stroke-dasharray="4 4" />
   </g>
 
-  <!-- Title Badge & Section Header -->
+  <!-- Title Badge &amp; Section Header -->
   <rect x="80" y="55" width="220" height="32" rx="16" fill="url(#mintBadge)" />
   <text x="190" y="76" font-size="12" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">PERFORMANCE AUDIT</text>
   <text x="80" y="125" font-size="28" font-weight="800" fill="#042F2A" letter-spacing="-0.5">Analyst Field Notes &amp; Formula Breakdown</text>
@@ -46,7 +46,7 @@
     <text x="530" y="61" font-size="13" font-weight="600" fill="#4A635A" text-anchor="end">BIB #5042 • WMA 2020</text>
 
     <!-- Table Rows -->
-    <!-- Row 1: Age & Category -->
+    <!-- Row 1: Age &amp; Category -->
     <g transform="translate(30, 100)">
       <rect x="0" y="0" width="520" height="42" rx="6" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1" />
       <text x="20" y="26" font-size="13.5" font-weight="600" fill="#4A635A">Athlete Demographics</text>
@@ -74,14 +74,14 @@
       <text x="500" y="26" font-size="14" font-weight="700" fill="#042F2A" text-anchor="end">14:06.0 (846.00 sec)</text>
     </g>
 
-    <!-- Row 5: WMA Factor & Age Standard -->
+    <!-- Row 5: WMA Factor &amp; Age Standard -->
     <g transform="translate(30, 300)">
       <rect x="0" y="0" width="520" height="42" rx="6" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1" />
       <text x="20" y="26" font-size="13.5" font-weight="600" fill="#4A635A">WMA 2020 Age Factor</text>
       <text x="500" y="26" font-size="14" font-weight="700" fill="#FF754D" text-anchor="end">0.8711 → Std: 16:11.18</text>
     </g>
 
-    <!-- Note & Verification Badge -->
+    <!-- Note &amp; Verification Badge -->
     <g transform="translate(30, 360)">
       <circle cx="12" cy="14" r="8" fill="#EBF5F0" />
       <text x="12" y="18" font-size="10" font-weight="800" fill="#075433" text-anchor="middle">✓</text>

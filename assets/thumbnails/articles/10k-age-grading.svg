@@ -82,7 +82,7 @@
       </g>
     </g>
 
-    <!-- Card 3: Formula & Standard -->
+    <!-- Card 3: Formula &amp; Standard -->
     <g transform="translate(760, 0)">
       <rect width="360" height="350" rx="16" fill="url(#cardGrad)"/>
       <rect x="0" y="0" width="360" height="8" rx="4" fill="#0B233A"/>

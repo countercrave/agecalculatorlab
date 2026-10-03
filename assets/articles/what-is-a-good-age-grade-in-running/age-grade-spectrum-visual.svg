@@ -24,7 +24,7 @@
     <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
   </g>
 
-  <!-- Header Category & Title -->
+  <!-- Header Category &amp; Title -->
   <rect x="80" y="52" width="240" height="30" rx="15" fill="url(#mintBadge2)" />
   <text x="200" y="72" font-size="11.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">PERFORMANCE SPECTRUM</text>
   <text x="80" y="118" font-size="28" font-weight="800" fill="#0B233A" letter-spacing="-0.5">The Running Age Grade Spectrum</text>
@@ -47,7 +47,7 @@
       <!-- Base Bar -->
       <rect x="0" y="24" width="940" height="18" rx="9" fill="url(#spectrumTrack)" />
       
-      <!-- Axis Tick Marks & Key Numbers -->
+      <!-- Axis Tick Marks &amp; Key Numbers -->
       <!-- 50% Marker -->
       <g transform="translate(50, 0)">
         <line x1="0" y1="20" x2="0" y2="46" stroke="#FFFFFF" stroke-width="3" />

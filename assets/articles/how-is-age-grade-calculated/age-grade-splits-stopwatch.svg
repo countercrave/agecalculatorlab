@@ -19,7 +19,7 @@
   <g transform="translate(60, 60)">
     <rect x="0" y="0" width="310" height="380" rx="20" fill="url(#stopwatchGrad)" filter="url(#stopwatchShadow)" />
     
-    <!-- Stopwatch Crown & Button -->
+    <!-- Stopwatch Crown &amp; Button -->
     <rect x="135" y="-14" width="40" height="16" rx="4" fill="#9FE7BD" />
     <circle cx="255" cy="18" r="10" fill="#FF754D" />
 

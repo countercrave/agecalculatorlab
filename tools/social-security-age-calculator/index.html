@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YM7P2RQ4Z7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YM7P2RQ4Z7');
+</script>
+<meta name="google-site-verification" content="Y5be21WsrJ2pH_gQfwHr57ucbKKUDO1wtzNvumLDzh0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Social Security Age Calculator: Retirement Age Calculator</title>
+<meta name="description" content="Use our Social Security Age Calculator to find your full retirement age, age 62 and age 70 milestones, and Social Security retirement timing by birth year.">
+<link rel="canonical" href="https://www.agecalculatorlab.com/tools/social-security-age-calculator/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
+<meta property="og:title" content="Social Security Age Calculator: Retirement Age Calculator">
+<meta property="og:description" content="Find your Social Security Full Retirement Age and key claiming-age milestones (62, FRA, 70) based on your birth date. Includes complete SSA schedule.">
+<meta property="og:url" content="https://www.agecalculatorlab.com/tools/social-security-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.agecalculatorlab.com/assets/tools/social-security-age-calculator/social-security-age-calculator.jpg">
+<meta property="og:site_name" content="Age Calculator Lab">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Social Security Age Calculator: Find Your Retirement Age">
+<meta name="twitter:description" content="Calculate your official Social Security full retirement age and milestones for ages 62, FRA, and 70 based on your birth year.">
+<meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/tools/social-security-age-calculator/social-security-age-calculator.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/style.css?v=20260824e">
+<style>
+/* Scoped Calculator & Educational Styling */
+.tool-hero { padding: 40px 0 32px; background: linear-gradient(180deg, #f2f7f4 0%, #ffffff 100%); border-bottom: 1px solid #dce9e2; }
+.tool-hero-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: start; }
+@media(min-width: 992px) { .tool-hero-grid { grid-template-columns: 1fr 1.05fr; } }
+
+.tool-hero-copy .eyebrow { display: inline-block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--editorial-sage, #075433); margin-bottom: 8px; }
+.tool-hero-copy h1 { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2rem, 3.8vw, 2.75rem); line-height: 1.2; color: var(--editorial-navy, #042f2a); margin: 0 0 14px; }
+.tool-hero-copy .lead { font-size: 1.1rem; line-height: 1.6; color: #2e4b3f; margin-bottom: 20px; }
+.trust-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.trust-pill { background: #eaf3ee; color: #075433; font-size: 0.82rem; font-weight: 600; padding: 4px 10px; border-radius: 6px; }
+
+/* Interactive Calculator Card */
+.calculator-card { background: #ffffff; border: 2px solid #075433; border-radius: 14px; padding: 28px; box-shadow: 0 12px 32px rgba(4,47,42,0.08); }
+.calc-header { margin-bottom: 20px; border-bottom: 1px solid #e1ede6; padding-bottom: 12px; }
+.calc-header h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.4rem; color: #042f2a; margin: 0 0 4px; }
+.calc-header p { margin: 0; font-size: 0.88rem; color: #52796f; }
+
+.calc-form-grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin-bottom: 22px; }
+@media(min-width: 540px) { .calc-form-grid { grid-template-columns: 1fr 1fr 1fr; } }
+.calc-field { display: flex; flex-direction: column; gap: 6px; }
+.calc-field label { font-size: 0.88rem; font-weight: 700; color: #042f2a; }
+.calc-field select, .calc-field input { padding: 12px 14px; border: 1.5px solid #c2dbcf; border-radius: 8px; font-size: 1rem; color: #0d2b23; background: #fdfdfd; transition: border-color 0.2s; }
+.calc-field select:focus, .calc-field input:focus { outline: none; border-color: #075433; box-shadow: 0 0 0 3px rgba(7,84,51,0.15); }
+
+.calc-btn-row { display: flex; gap: 12px; margin-bottom: 24px; }
+.btn-calc { flex: 2; background: #075433; color: #ffffff; font-weight: 700; font-size: 1.05rem; padding: 14px 20px; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s, transform 0.15s; }
+.btn-calc:hover { background: #042f2a; transform: translateY(-1px); }
+.btn-reset { flex: 1; background: #f1f5f3; color: #2e4b3f; font-weight: 600; font-size: 0.95rem; padding: 14px 16px; border: 1px solid #dce9e2; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.btn-reset:hover { background: #e5ece8; }
+
+/* Results Panel */
+.results-panel { display: block; animation: fadeIn 0.3s ease-in-out; }
+.result-banner { background: #042f2a; color: #ffffff; border-radius: 10px; padding: 22px; margin-bottom: 20px; text-align: center; }
+.result-banner small { display: block; text-transform: uppercase; letter-spacing: 1px; color: #9fe7bd; font-size: 0.82rem; font-weight: 700; margin-bottom: 6px; }
+.result-banner .fra-highlight { font-family: var(--font-display, 'Fraunces', serif); font-size: 2.2rem; line-height: 1.2; color: #ffd180; margin: 4px 0 8px; }
+.result-banner .fra-date { font-size: 1.15rem; color: #ffffff; font-weight: 600; }
+.result-banner .jan1-note { display: inline-block; background: rgba(255, 117, 77, 0.25); color: #ff9f80; border: 1px solid rgba(255, 117, 77, 0.5); font-size: 0.8rem; padding: 4px 10px; border-radius: 4px; margin-top: 10px; }
+
+/* Interactive Timeline in Card */
+.timeline-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+.timeline-card h3 { font-size: 1rem; color: #042f2a; margin: 0 0 16px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; }
+.timeline-milestones { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media(min-width: 600px) { .timeline-milestones { grid-template-columns: 1fr 1.2fr 1fr; } }
+.milestone-item { background: #ffffff; border: 1px solid #e1ede6; border-radius: 8px; padding: 14px; position: relative; }
+.milestone-item.m-62 { border-top: 4px solid #ff754d; }
+.milestone-item.m-fra { border-top: 4px solid #ffd180; background: #fdfefd; }
+.milestone-item.m-70 { border-top: 4px solid #20a67b; }
+.milestone-item .m-title { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: #52796f; margin-bottom: 4px; }
+.milestone-item .m-age { font-size: 1.25rem; font-weight: 800; color: #042f2a; margin-bottom: 4px; }
+.milestone-item .m-date { font-size: 0.95rem; font-weight: 700; color: #075433; margin-bottom: 6px; }
+.milestone-item .m-desc { font-size: 0.82rem; color: #476a5e; line-height: 1.4; margin: 0; }
+
+.calc-disclaimer { font-size: 0.8rem; line-height: 1.5; color: #628277; background: #f4f8f6; border-radius: 6px; padding: 12px; margin-top: 16px; }
+
+/* Educational Content Section */
+.tool-content-layout { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 280px 1fr; align-items: start; } }
+
+.tool-toc { background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 22px; position: sticky; top: 90px; }
+.tool-toc strong { display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.8px; color: #075433; margin-bottom: 14px; }
+.tool-toc a { display: block; font-size: 0.88rem; color: #2e4b3f; text-decoration: none; padding: 6px 0; border-bottom: 1px solid #f0f5f2; transition: color 0.15s, padding-left 0.15s; }
+.tool-toc a:hover { color: #ff754d; padding-left: 4px; }
+
+.tool-article { max-width: 820px; font-size: 1rem; line-height: 1.7; color: #1c382f; }
+.tool-article h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.85rem; color: #042f2a; margin: 44px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e1ede6; }
+.tool-article h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.35rem; color: #075433; margin: 28px 0 12px; }
+.tool-article p { margin: 0 0 18px; }
+.tool-article ul, .tool-article ol { margin: 0 0 22px; padding-left: 24px; }
+.tool-article li { margin-bottom: 8px; }
+
+/* Reference Tables */
+.table-wrap { overflow-x: auto; margin: 26px 0; border: 1px solid #dce9e2; border-radius: 10px; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+.styled-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; text-align: left; }
+.styled-table th { background: #042f2a; color: #ffffff; padding: 14px 16px; font-weight: 700; letter-spacing: 0.5px; }
+.styled-table td { padding: 12px 16px; border-bottom: 1px solid #eef4f0; color: #1c382f; }
+.styled-table tr:nth-child(even) { background: #fbfdfc; }
+.styled-table tr:hover { background: #f1f7f4; }
+.highlight-cell { font-weight: 700; color: #075433; }
+
+/* Callout Cards & Infographics */
+.callout-box { background: #ffffff; border-left: 4px solid #075433; border-radius: 0 10px 10px 0; padding: 22px; margin: 28px 0; box-shadow: 0 4px 14px rgba(4,47,42,0.05); }
+.callout-box.warning { border-left-color: #ff754d; background: #fffcfb; }
+.callout-box h3 { margin: 0 0 10px; color: #042f2a; font-size: 1.15rem; }
+
+.infographic-figure { margin: 34px 0; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.04); }
+.infographic-figure img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.infographic-figure figcaption { font-size: 0.84rem; color: #52796f; text-align: center; margin-top: 10px; }
+
+/* Author Card */
+.author-card { display: flex; flex-direction: column; gap: 16px; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 24px; margin: 40px 0; }
+@media(min-width: 600px) { .author-card { flex-direction: row; align-items: flex-start; } }
+.author-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #9fe7bd; flex-shrink: 0; }
+.author-info { flex: 1; }
+.author-name { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.25rem; color: #042f2a; margin: 0 0 4px; }
+.author-meta { font-size: 0.84rem; color: #52796f; margin-bottom: 10px; }
+.author-bio { font-size: 0.92rem; line-height: 1.6; color: #2e4b3f; margin: 0; }
+
+/* FAQ Cards */
+.faq-block { margin: 36px 0; }
+.faq-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; }
+.faq-card h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.15rem; color: #042f2a; margin: 0 0 10px; }
+.faq-card p { margin: 0; color: #2e4b3f; font-size: 0.95rem; }
+
+/* Related Grid */
+.related-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 24px 0 40px; }
+@media(min-width: 600px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+.related-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-decoration: none; color: inherit; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+.related-card:hover { transform: translateY(-3px); border-color: #ff754d; }
+.related-card small { color: #52796f; font-size: 0.78rem; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+.related-card h4 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.05rem; color: #042f2a; margin: 0 0 8px; }
+.related-card span { font-size: 0.86rem; color: #ff754d; font-weight: 600; }
+</style>
+
+<!-- JSON-LD Structured Data: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.agecalculatorlab.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Finance & Professional", "item": "https://www.agecalculatorlab.com/categories/finance-professional/" },
+    { "@type": "ListItem", "position": 3, "name": "Social Security Age Calculator", "item": "https://www.agecalculatorlab.com/tools/social-security-age-calculator/" }
+  ]
+}
+</script>
+
+<!-- JSON-LD Structured Data: WebApplication / SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Social Security Age Calculator",
+  "url": "https://www.agecalculatorlab.com/tools/social-security-age-calculator/",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "All",
+  "description": "Calculate your U.S. Social Security Full Retirement Age (FRA) and claiming milestones for age 62, FRA, and age 70 based on your birth date and the official SSA schedule.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Age Calculator Lab",
+    "url": "https://www.agecalculatorlab.com/"
+  }
+}
+</script>
+
+<!-- JSON-LD Structured Data: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Social Security full retirement age?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Full Retirement Age (FRA) is the age used by Social Security for determining eligibility for unreduced retirement benefits under applicable statutory rules. It varies by birth year from age 65 to 67."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is my Social Security retirement age?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your Full Retirement Age depends primarily on your year of birth. If you were born in 1960 or later, your FRA is 67. If born between 1943 and 1954, it is 66. Enter your exact birth date into the calculator above to find your precise milestone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I collect Social Security at 62?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Generally, Social Security retirement benefits can begin as early as age 62, but claiming before Full Retirement Age results in a permanent reduction in your monthly benefit amount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Social Security retirement age 65 or 67?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your birth year. For workers born in 1937 or earlier, FRA was 65. Under the gradual legislative increase passed by Congress, FRA gradually increased to 67 for all workers born in 1960 or later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is full retirement age for someone born in 1960?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For people born in 1960 or later, the current Social Security Full Retirement Age is exactly 67 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is full retirement age for someone born in 1959?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under the official SSA schedule, the Full Retirement Age for someone born in 1959 is 66 years and 10 months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I receive Social Security after age 70?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can claim benefits at or after age 70, but delayed retirement credits stop accumulating once you reach age 70. There is no financial advantage to delaying your claim beyond age 70."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Full Retirement Age mean I have to retire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Full Retirement Age is a Social Security benefit calculation milestone, not a requirement to stop working. You can continue working full-time while receiving unreduced retirement benefits once you reach your FRA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Social Security FRA the same as Medicare age?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Medicare eligibility generally remains at age 65 regardless of birth year, whereas Social Security Full Retirement Age varies from 66 to 67 based on your year of birth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator tell me how much Social Security I will receive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This tool calculates age-based milestones (Age 62, FRA, Age 70). Personalized dollar benefit estimates require your full lifetime earnings record and should be obtained directly from your official my Social Security account."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+<div class="container nav">
+<a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+<img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto">
+</a>
+<button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+<span></span>
+</button>
+<nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+<details class="nav-dropdown nav-dropdown-categories">
+<summary>Calculators <span class="nav-chevron" aria-hidden="true">▾</span></summary>
+<div class="nav-mega">
+<div class="nav-mega-head">
+<div>
+<small>167 focused tools</small>
+<strong>Main calculator categories</strong>
+</div>
+<a href="../../categories/">View category directory →</a>
+</div>
+<div class="nav-category-grid">
+<a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+<a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+<a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>10 tools</small></a>
+<a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+<a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+<a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>16 tools</small></a>
+<a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>15 tools</small></a>
+<a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+<a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+<a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a>
+<a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a>
+</div>
+<div class="nav-quick-row">
+<span>Popular</span>
+<a href="../../">Age Calculator</a>
+<a href="../../tools/date-difference-calculator/">Date Difference</a>
+<a href="../../tools/corrected-age-calculator/">Corrected Age</a>
+<a href="../../tools/countdown-to-date-calculator/">Countdown</a>
+</div>
+</div>
+</details>
+<details class="nav-dropdown nav-dropdown-guides">
+<summary>Guides <span class="nav-chevron" aria-hidden="true">▾</span></summary>
+<div class="nav-mega nav-mega-guides">
+<div class="nav-mega-head">
+<div>
+<small>147 practical guides</small>
+<strong>Learn the method</strong>
+</div>
+<a href="../../articles/">Browse all guides →</a>
+</div>
+<div class="nav-guide-grid">
+<a href="../../articles/10k-age-grading/"><small>Biological &amp; Health</small><span>10K Age Grading Explained: How Age Grade Works</span></a>
+<a href="../../articles/5k-age-grading/"><small>Biological &amp; Health</small><span>5K Age Grading Explained: Calculate Your 5K Age Grade</span></a>
+<a href="../../articles/age-graded-results-vs-age-group-results/"><small>Biological &amp; Health</small><span>Age-Graded Results vs Age-Group Results: Key Differences</span></a>
+<a href="../../articles/age-grading-for-masters-runners/"><small>Biological &amp; Health</small><span>Age Grading for Masters Runners: How It Works &amp; Benefits</span></a>
+<a href="../../articles/what-is-a-good-age-grade-in-running/"><small>Biological &amp; Health</small><span>What Is a Good Age Grade in Running? Percentage Guide</span></a>
+<a href="../../articles/how-is-age-grade-calculated/"><small>Biological &amp; Health</small><span>How Is Age Grade Calculated? Formula, Examples &amp; Guide</span></a>
+</div>
+</div>
+</details>
+<a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
+<a href="../../categories/">Categories</a>
+<a href="../../methodology/">Methodology</a>
+<div class="nav-search-wrap" id="nav-search-wrap">
+<div class="nav-search-box">
+<svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+<circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle>
+<path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+<input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autocomplete="off">
+</div>
+<div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div>
+</div>
+<a class="nav-cta" href="../../#calculator">Calculate age</a>
+</nav>
+</div>
+</header>
+
+<main id="main-content">
+  <!-- Hero Section with Above-the-Fold Calculator -->
+  <section class="tool-hero">
+    <div class="container tool-hero-grid">
+      <!-- Left Copy Column -->
+      <div class="tool-hero-copy">
+        <div class="breadcrumbs">
+          <a href="../../">Home</a> / <a href="../../categories/finance-professional/">Finance &amp; Professional</a> / Social Security Age Calculator
+        </div>
+        <span class="eyebrow">Finance &amp; Professional · Free Planning Tool</span>
+        <h1>Social Security Age Calculator</h1>
+        <p class="lead">Find your official U.S. Social Security Full Retirement Age (FRA) and key claiming-age milestones based on your birth date. Determine when you reach age 62, unreduced FRA, and age 70 using current Social Security Administration rules.</p>
+        
+        <div class="trust-row">
+          <span class="trust-pill">✓ Official SSA FRA Schedule</span>
+          <span class="trust-pill">✓ January 1 Prior-Year Rule</span>
+          <span class="trust-pill">✓ Instant Browser Calculation</span>
+          <span class="trust-pill">✓ No Registration Required</span>
+        </div>
+
+        <figure class="infographic-figure" style="margin:20px 0 0;padding:10px;">
+          <img src="../../assets/tools/social-security-age-calculator/social-security-age-calculator.jpg" alt="Editorial financial planning illustration showing older adult planning retirement timeline" width="1200" height="675">
+          <figcaption>Figure 1: Navigating your Social Security retirement timeline and Full Retirement Age milestones.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Right Interactive Calculator Card -->
+      <div class="calculator-card" id="calculator">
+        <div class="calc-header">
+          <h2>Find Your Retirement Age Milestones</h2>
+          <p>Select your date of birth to calculate your Full Retirement Age and timeline dates.</p>
+        </div>
+
+        <form id="ssaForm" onsubmit="event.preventDefault(); calculateSSA();">
+          <div class="calc-form-grid">
+            <div class="calc-field">
+              <label for="birthMonth">Birth Month</label>
+              <select id="birthMonth" required>
+                <option value="1">January (1)</option>
+                <option value="2">February (2)</option>
+                <option value="3">March (3)</option>
+                <option value="4">April (4)</option>
+                <option value="5">May (5)</option>
+                <option value="6" selected>June (6)</option>
+                <option value="7">July (7)</option>
+                <option value="8">August (8)</option>
+                <option value="9">September (9)</option>
+                <option value="10">October (10)</option>
+                <option value="11">November (11)</option>
+                <option value="12">December (12)</option>
+              </select>
+            </div>
+            <div class="calc-field">
+              <label for="birthDay">Birth Day</label>
+              <input type="number" id="birthDay" min="1" max="31" value="15" required>
+            </div>
+            <div class="calc-field">
+              <label for="birthYear">Birth Year</label>
+              <input type="number" id="birthYear" min="1920" max="2010" value="1960" required>
+            </div>
+          </div>
+
+          <div class="calc-btn-row">
+            <button type="submit" class="btn-calc">Calculate Milestones →</button>
+            <button type="button" class="btn-reset" onclick="resetSSA();">Reset</button>
+          </div>
+        </form>
+
+        <!-- Dynamic Results Panel -->
+        <div id="ssaResults" class="results-panel">
+          <div class="result-banner">
+            <small>Your Social Security Full Retirement Age (FRA)</small>
+            <div class="fra-highlight" id="resFraAge">67 Years</div>
+            <div class="fra-date">You reach Full Retirement Age on: <strong id="resFraDate">June 15, 2027</strong></div>
+            <div id="jan1Alert" class="jan1-note" style="display:none;">
+              ⓘ Born on January 1: Under SSA rules, your FRA is determined using the previous calendar year.
+            </div>
+          </div>
+
+          <!-- Timeline Card -->
+          <div class="timeline-card">
+            <h3>Your Social Security Claiming Milestones</h3>
+            <div class="timeline-milestones">
+              <div class="milestone-item m-62">
+                <div class="m-title">Earliest Claiming</div>
+                <div class="m-age">Age 62</div>
+                <div class="m-date" id="resAge62Date">June 15, 2022</div>
+                <p class="m-desc">Permanent reduction of approx. 25%–30% applies compared to FRA.</p>
+              </div>
+
+              <div class="milestone-item m-fra">
+                <div class="m-title">Full Retirement Age</div>
+                <div class="m-age" id="resFraBadge">Age 67</div>
+                <div class="m-date" id="resFraSubDate">June 15, 2027</div>
+                <p class="m-desc">Eligible for 100% of your primary insurance amount (unreduced).</p>
+              </div>
+
+              <div class="milestone-item m-70">
+                <div class="m-title">Maximum Credits</div>
+                <div class="m-age">Age 70</div>
+                <div class="m-date" id="resAge70Date">June 15, 2030</div>
+                <p class="m-desc">Delayed retirement credits stop. No financial gain to delaying further.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-disclaimer">
+            <strong>Important Educational Note:</strong> This calculator computes age-based retirement milestones based on current SSA statutory schedules. It does not estimate your personalized dollar benefit amount. For an official earnings record and dollar estimate, log into your personal <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener">my Social Security account</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content & Educational Architecture -->
+  <div class="container">
+    <div class="tool-content-layout">
+      <!-- Sticky Table of Contents -->
+      <aside class="tool-toc" aria-label="Table of Contents">
+        <strong>Guide Sections</strong>
+        <a href="#what-is-fra">1. What Is Full Retirement Age?</a>
+        <a href="#fra-schedule-chart">2. Official Birth-Year FRA Table</a>
+        <a href="#calculator-by-age">3. Social Security by Claiming Age</a>
+        <a href="#age-comparison">4. Age 62 vs FRA vs Age 70</a>
+        <a href="#benefits-clarification">5. What This Calculator Does (and Doesn't)</a>
+        <a href="#fra-vs-medicare">6. Social Security vs Medicare Age</a>
+        <a href="#retirement-2026">7. Retirement Age in 2026</a>
+        <a href="#methodology">8. Calculation Method &amp; Jan 1 Rule</a>
+        <a href="#worked-examples">9. Worked Examples</a>
+        <a href="#faqs">10. Frequently Asked Questions</a>
+        <a href="#related-tools">11. Related Calculators</a>
+      </aside>
+
+      <!-- Main Educational Article -->
+      <article class="tool-article">
+        <section id="what-is-fra">
+          <h2>1. What Is Full Retirement Age (FRA)?</h2>
+          <p>Full Retirement Age, universally abbreviated as <strong>FRA</strong> (and historically termed "normal retirement age"), is the specific age established by the Social Security Administration (SSA) at which a worker becomes legally entitled to collect 100% of their calculated retirement benefit, known as the <em>Primary Insurance Amount (PIA)</em>.</p>
+          
+          <p>Under the original 1935 Social Security Act, Full Retirement Age was fixed at age 65 for all workers. However, as American life expectancy increased and demographic pressures grew, Congress enacted the 1983 Social Security Amendments, which introduced a phased, statutory schedule gradually increasing the Full Retirement Age from 65 to 67 based on the worker's year of birth.</p>
+
+          <div class="callout-box">
+            <h3>Full Retirement Age Does NOT Mean Mandatory Retirement</h3>
+            <p>A common misconception is that reaching Full Retirement Age requires you to stop working. In reality, Full Retirement Age is purely a financial milestone for Social Security benefit computation. You can continue working full-time at, before, or well past your FRA without any reduction in benefits once you reach FRA, as the Social Security Retirement Earnings Test ceases to apply entirely once you reach your FRA month.</p>
+          </div>
+        </section>
+
+        <section id="fra-schedule-chart">
+          <h2>2. Official Social Security Retirement Age Chart by Birth Year</h2>
+          <p>The following schedule represents the authoritative Social Security Administration Full Retirement Age timetable as established under federal law:</p>
+
+          <div class="table-wrap">
+            <table class="styled-table">
+              <thead>
+                <tr>
+                  <th>Year of Birth</th>
+                  <th>Full Retirement Age (FRA)</th>
+                  <th>Reduction at Age 62</th>
+                  <th>Delayed Bonus at Age 70</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1937 or earlier</strong></td>
+                  <td class="highlight-cell">65 Years</td>
+                  <td>20.00%</td>
+                  <td>Varies by law</td>
+                </tr>
+                <tr>
+                  <td><strong>1938</strong></td>
+                  <td class="highlight-cell">65 Years + 2 Months</td>
+                  <td>20.83%</td>
+                  <td>+31.00%</td>
+                </tr>
+                <tr>
+                  <td><strong>1939</strong></td>
+                  <td class="highlight-cell">65 Years + 4 Months</td>
+                  <td>21.67%</td>
+                  <td>+29.67%</td>
+                </tr>
+                <tr>
+                  <td><strong>1940</strong></td>
+                  <td class="highlight-cell">65 Years + 6 Months</td>
+                  <td>22.50%</td>
+                  <td>+28.33%</td>
+                </tr>
+                <tr>
+                  <td><strong>1941</strong></td>
+                  <td class="highlight-cell">65 Years + 8 Months</td>
+                  <td>23.33%</td>
+                  <td>+27.00%</td>
+                </tr>
+                <tr>
+                  <td><strong>1942</strong></td>
+                  <td class="highlight-cell">65 Years + 10 Months</td>
+                  <td>24.17%</td>
+                  <td>+25.67%</td>
+                </tr>
+                <tr>
+                  <td><strong>1943–1954</strong></td>
+                  <td class="highlight-cell">66 Years</td>
+                  <td>25.00%</td>
+                  <td>+32.00%</td>
+                </tr>
+                <tr>
+                  <td><strong>1955</strong></td>
+                  <td class="highlight-cell">66 Years + 2 Months</td>
+                  <td>25.83%</td>
+                  <td>+30.67%</td>
+                </tr>
+                <tr>
+                  <td><strong>1956</strong></td>
+                  <td class="highlight-cell">66 Years + 4 Months</td>
+                  <td>26.67%</td>
+                  <td>+29.33%</td>
+                </tr>
+                <tr>
+                  <td><strong>1957</strong></td>
+                  <td class="highlight-cell">66 Years + 6 Months</td>
+                  <td>27.50%</td>
+                  <td>+28.00%</td>
+                </tr>
+                <tr>
+                  <td><strong>1958</strong></td>
+                  <td class="highlight-cell">66 Years + 8 Months</td>
+                  <td>28.33%</td>
+                  <td>+26.67%</td>
+                </tr>
+                <tr>
+                  <td><strong>1959</strong></td>
+                  <td class="highlight-cell">66 Years + 10 Months</td>
+                  <td>29.17%</td>
+                  <td>+25.33%</td>
+                </tr>
+                <tr>
+                  <td><strong>1960 and later</strong></td>
+                  <td class="highlight-cell">67 Years</td>
+                  <td>30.00%</td>
+                  <td>+24.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout-box warning">
+            <h3>Special Legal Rule: The January 1 Birth Date Exception</h3>
+            <p>Under official Social Security Administration rules (POMS GN 00302.010), an individual attains an age on the day <em>prior</em> to their birthday. Therefore, if you were born on <strong>January 1</strong>, Social Security legally treats you as attaining your age on December 31 of the previous year. Consequently, your Full Retirement Age is determined using the <strong>previous birth year</strong>. For example, a person born on January 1, 1960 uses the 1959 schedule (FRA = 66 years, 10 months), rather than the 1960 schedule (67 years).</p>
+          </div>
+        </section>
+
+        <section id="calculator-by-age">
+          <h2>3. Social Security Calculator by Age (Ages 62 through 70)</h2>
+          <p>Workers have substantial flexibility in selecting when to initiate their Social Security retirement benefits across an eight-year claiming window. Below is a breakdown of what each claiming age represents from an administrative and financial perspective:</p>
+
+          <div class="table-wrap">
+            <table class="styled-table">
+              <thead>
+                <tr>
+                  <th>Claiming Age</th>
+                  <th>Administrative Classification</th>
+                  <th>Strategic &amp; Financial Implication</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Age 62</strong></td>
+                  <td>Earliest General Claiming Age</td>
+                  <td>Benefits permanently reduced by 25% to 30% depending on birth year. Earnings test limits apply if continuing to work.</td>
+                </tr>
+                <tr>
+                  <td><strong>Age 63</strong></td>
+                  <td>Early Claiming Corridor</td>
+                  <td>Substantial reduction continues; earnings test applies.</td>
+                </tr>
+                <tr>
+                  <td><strong>Age 64</strong></td>
+                  <td>Early Claiming Corridor</td>
+                  <td>Moderate reduction; earnings test applies.</td>
+                </tr>
+                <tr>
+                  <td><strong>Age 65</strong></td>
+                  <td>Medicare Eligibility Milestone</td>
+                  <td>Historically FRA; now an early claiming year with a partial reduction. Crucially, Medicare enrollment begins here regardless of FRA.</td>
+                </tr>
+                <tr>
+                  <td><strong>Age 66</strong></td>
+                  <td>Full Retirement Age for 1943–1954</td>
+                  <td>Full unreduced benefits for older baby boomers; near-full benefits for later birth cohorts.</td>
+                </tr>
+                <tr>
+                  <td><strong>Age 67</strong></td>
+                  <td>Full Retirement Age for 1960+</td>
+                  <td>100% unreduced Primary Insurance Amount for all workers born 1960 or later. Earnings test completely eliminated.</td>
+                </tr>
+                <tr>
+                  <td><strong>Age 68</strong></td>
+                  <td>Delayed Claiming Phase</td>
+                  <td>Earns 8% per year in Delayed Retirement Credits (DRCs) above unreduced FRA.</td>
+                </tr>
+                <tr>
+                  <td><strong>Age 69</strong></td>
+                  <td>Delayed Claiming Phase</td>
+                  <td>Accumulates an additional 8% annual boost in monthly benefit payout.</td>
+                </tr>
+                <tr>
+                  <td><strong>Age 70</strong></td>
+                  <td>Maximum Benefit Milestone</td>
+                  <td>Delayed Retirement Credits stop accumulating. Benefit payout reaches its maximum possible permanent monthly amount.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="age-comparison">
+          <h2>4. Age 62 vs. Full Retirement Age vs. Age 70</h2>
+          <p>Visualizing the three core pillars of the Social Security retirement corridor clarifies the trade-offs between lifetime duration and monthly payout checks:</p>
+
+          <figure class="infographic-figure">
+            <img src="../../assets/tools/social-security-age-calculator/social-security-timeline-62-fra-70.svg" alt="Visual timeline connecting Age 62, Full Retirement Age, and Age 70 milestones" width="920" height="380" loading="lazy">
+            <figcaption>Figure 2: The standard three-stage Social Security retirement timeline: Early Claiming, FRA, and Maximum Credits.</figcaption>
+          </figure>
+
+          <ul>
+            <li><strong>Claiming at Age 62:</strong> You receive smaller monthly checks over a longer expected period. If you need immediate cash flow, have health concerns, or have stopped working, claiming at 62 provides immediate liquidity, but locks in a permanent 25%–30% discount.</li>
+            <li><strong>Claiming at Full Retirement Age (66–67):</strong> You receive 100% of your earned benefit. You can continue earning any amount of wage income without having any benefits withheld under the retirement earnings test.</li>
+            <li><strong>Claiming at Age 70:</strong> For every year you delay beyond your FRA up until age 70, your monthly benefit permanently increases by <strong>8% per year</strong> (or roughly 0.67% per month). For someone with an FRA of 67, claiming at age 70 results in a check that is <strong>24% higher</strong> every single month for the rest of their life, plus cost-of-living adjustments (COLA).</li>
+          </ul>
+        </section>
+
+        <section id="benefits-clarification">
+          <h2>5. Social Security Benefits by Age: What This Calculator Does (and Does NOT)</h2>
+          <p>Because search queries frequently ask for a "Social Security benefits calculator by age" or an "average Social Security check calculator," it is vital to establish what an age calculator can and cannot do:</p>
+
+          <div class="callout-box">
+            <h3>What This Calculator Accurately Determines:</h3>
+            <ul>
+              <li>Your official Full Retirement Age in whole years and months.</li>
+              <li>The exact calendar date and month when you attain FRA.</li>
+              <li>Your early claiming milestone date (Age 62).</li>
+              <li>Your maximum delayed credit milestone date (Age 70).</li>
+              <li>Application of the legal January 1 birthday adjustment.</li>
+            </ul>
+          </div>
+
+          <div class="callout-box warning">
+            <h3>What This Calculator Does NOT Calculate:</h3>
+            <ul>
+              <li><strong>Personalized Benefit Amounts:</strong> Your actual dollar benefit is determined by your 35 highest-earning years, wage indexing, and inflation adjustments—data that only the SSA maintains.</li>
+              <li><strong>Tax Withholding:</strong> Taxes on Social Security depend on your total combined provisional income.</li>
+              <li><strong>Spousal or Survivor Benefits:</strong> Spousal claiming rules depend on your partner's work record and FRA.</li>
+              <li><strong>Medicare Part B Deductions:</strong> Premiums are deducted directly from your gross check based on income tiers (IRMAA).</li>
+            </ul>
+          </div>
+
+          <p>To obtain your official personalized benefit dollar estimate based on your authentic tax and earnings history, visit <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener">SSA.gov / my Social Security</a>.</p>
+        </section>
+
+        <section id="fra-vs-medicare">
+          <h2>6. Social Security FRA vs. Medicare Eligibility</h2>
+          <p>One of the most frequent retirement planning errors in the United States is confusing Social Security Full Retirement Age with <strong>Medicare eligibility</strong>.</p>
+          
+          <p>Prior to the 1983 Social Security amendments, both Full Retirement Age and Medicare eligibility were aligned at age 65. When Congress raised the Social Security FRA to 67, <strong>they did not change Medicare eligibility</strong>. Medicare eligibility remains fixed at <strong>age 65</strong> for virtually all U.S. citizens and legal permanent residents.</p>
+
+          <p>If you delay claiming Social Security until your FRA at age 66 or 67, you must still actively enroll in Medicare Part A and Part B during your Initial Enrollment Period around your 65th birthday (unless you have qualifying creditable coverage through active current employer group health insurance). Failing to enroll can trigger permanent lifetime late-enrollment penalties.</p>
+        </section>
+
+        <section id="retirement-2026">
+          <h2>7. Social Security Retirement Age in 2026</h2>
+          <p>What is the current operational status of the Social Security retirement age schedule in 2026?</p>
+          <ul>
+            <li><strong>Workers turning 62 in 2026:</strong> Born in 1964. Their Full Retirement Age is <strong>67 years</strong>. Reaching age 62 in 2026 means they can claim an early benefit, but it will be reduced by 30%.</li>
+            <li><strong>Workers reaching FRA in 2026:</strong> Workers born in 1959 reach their FRA (66 years and 10 months) during 2026. Workers born in 1960 reach their FRA (67 years) during 2027.</li>
+            <li><strong>Workers turning 70 in 2026:</strong> Born in 1956. Their delayed retirement credits have fully maximized, and they should initiate their claims without further delay.</li>
+          </ul>
+        </section>
+
+        <section id="methodology">
+          <h2>8. Calculation Methodology &amp; Logic Flow</h2>
+          <p>Our Social Security Age Calculator executes a deterministic client-side calculation using the statutory rules established by Title II of the Social Security Act:</p>
+
+          <figure class="infographic-figure">
+            <img src="../../assets/tools/social-security-age-calculator/birth-year-to-fra-flow.svg" alt="Diagram showing the step by step decision logic for Social Security Full Retirement Age" width="920" height="380" loading="lazy">
+            <figcaption>Figure 3: Algorithmic decision flow for birth year mapping, January 1 adjustments, and milestone calculations.</figcaption>
+          </figure>
+
+          <ol>
+            <li><strong>Date Ingestion:</strong> The user provides their complete date of birth (Month, Day, Year).</li>
+            <li><strong>January 1 Attainment Check:</strong> If the birth date is January 1, the effective birth year is decremented by 1 (<code>Effective Year = Year − 1</code>) per SSA POMS GN 00302.010.</li>
+            <li><strong>Schedule Lookup:</strong> The effective birth year is mapped against the statutory 1937–1960+ schedule to extract FRA in whole years and bonus months.</li>
+            <li><strong>Calendar Arithmetic:</strong> The algorithm projects forward from the birth date by exactly 62 years (Early Claiming), FRA years + months (Unreduced Claiming), and 70 years (Maximum Delayed Credits).</li>
+          </ol>
+        </section>
+
+        <section id="worked-examples">
+          <h2>9. Worked Examples</h2>
+
+          <h3>Example 1: Standard Mid-Year Birth (June 15, 1960)</h3>
+          <ul>
+            <li><strong>Birth Date:</strong> June 15, 1960</li>
+            <li><strong>January 1 Check:</strong> False (Use 1960)</li>
+            <li><strong>Full Retirement Age:</strong> 67 Years, 0 Months</li>
+            <li><strong>Age 62 Milestone:</strong> June 15, 2022 (Earliest claiming; 30% reduction)</li>
+            <li><strong>FRA Milestone:</strong> June 15, 2027 (100% unreduced benefit)</li>
+            <li><strong>Age 70 Milestone:</strong> June 15, 2030 (124% maximum benefit payout)</li>
+          </ul>
+
+          <h3>Example 2: January 1 Boundary Birth (January 1, 1960)</h3>
+          <ul>
+            <li><strong>Birth Date:</strong> January 1, 1960</li>
+            <li><strong>January 1 Check:</strong> True (Attains age Dec 31; effective year = 1959)</li>
+            <li><strong>Full Retirement Age:</strong> 66 Years, 10 Months (1959 statutory rule)</li>
+            <li><strong>Age 62 Milestone:</strong> January 1, 2022</li>
+            <li><strong>FRA Milestone:</strong> November 1, 2026 (Reaches FRA two months earlier than peers born later in 1960!)</li>
+            <li><strong>Age 70 Milestone:</strong> January 1, 2030</li>
+          </ul>
+        </section>
+
+        <!-- Comprehensive FAQs Section -->
+        <section class="faq-block" id="faqs">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-card">
+            <h3>What is the Social Security full retirement age?</h3>
+            <p>Full Retirement Age (FRA) is the age established by federal law at which you are entitled to 100% of your primary insurance amount without any early-claiming reduction. It ranges from age 65 to 67 depending on birth year.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>What is my Social Security retirement age?</h3>
+            <p>Your Full Retirement Age depends primarily on your birth year. For everyone born in 1960 or later, FRA is 67. For those born between 1943 and 1954, FRA is 66. For birth years between 1955 and 1959, FRA increases in two-month increments.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Can I collect Social Security at 62?</h3>
+            <p>Yes. Age 62 is the earliest general age to claim Social Security retirement benefits. However, claiming at 62 permanently reduces your monthly check by 25% to 30% compared to waiting for your Full Retirement Age.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Is Social Security retirement age 65 or 67?</h3>
+            <p>Under current law, Social Security Full Retirement Age is 67 for all workers born in 1960 or later. Age 65 was the FRA for workers born in 1937 or earlier, but today age 65 is primarily the milestone for Medicare enrollment.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>What is full retirement age for someone born in 1960?</h3>
+            <p>For individuals born in 1960 or later, the current Social Security Full Retirement Age is exactly 67 years old.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>What is full retirement age for someone born in 1959?</h3>
+            <p>Under the official statutory schedule, Full Retirement Age for someone born in 1959 is 66 years and 10 months.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Can I receive Social Security after age 70?</h3>
+            <p>You can apply for Social Security after age 70, but Delayed Retirement Credits cease accumulating once you reach age 70. There is no financial benefit to delaying your claim past age 70.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Does Full Retirement Age mean I have to retire?</h3>
+            <p>No. Full Retirement Age is a benefit milestone, not a mandatory retirement requirement. You can continue working full-time with zero benefit reduction once you reach your FRA.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Is Social Security FRA the same as Medicare age?</h3>
+            <p>No. Medicare eligibility generally begins at age 65 regardless of birth year, whereas Social Security Full Retirement Age is 66 to 67 depending on your birth year.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Does this calculator tell me how much Social Security I will receive?</h3>
+            <p>No. This tool calculates age-based milestone dates. Your dollar benefit check depends on your 35 highest-earning career years and is officially estimated through your personal my Social Security account.</p>
+          </div>
+        </section>
+
+        <!-- Official Disclaimer -->
+        <div class="callout-box warning" id="disclaimer">
+          <h3>Official Educational Planning Disclaimer</h3>
+          <p>This calculator is an educational planning tool based on publicly available Social Security retirement-age rules. It is not an official Social Security Administration calculator and does not provide personalized benefit estimates. Social Security rules can change. For an official determination or personalized benefit estimate, verify your information with the Social Security Administration.</p>
+        </div>
+
+        <!-- Author Bio Card -->
+        <section class="author-card">
+          <img class="author-img" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="80" height="80" loading="lazy">
+          <div class="author-info">
+            <h3 class="author-name">Navjeet Kamboj</h3>
+            <div class="author-meta">Researcher &amp; Developer · Age Calculator Lab</div>
+            <p class="author-bio">Navjeet specializes in mathematical algorithms, date-difference frameworks, and statutory chronological calculation standards. He designs verified tools and guides to clarify personal milestones and retirement timelines.</p>
+          </div>
+        </section>
+
+        <!-- Related Tools Grid -->
+        <section id="related-tools">
+          <h2>Related Retirement &amp; Professional Calculators</h2>
+          <div class="related-grid">
+            <a class="related-card" href="../../tools/retirement-age-calculator/">
+              <small>Retirement Planning</small>
+              <h4>Retirement Age Calculator</h4>
+              <span>Calculate your target retirement date by chosen age →</span>
+            </a>
+            <a class="related-card" href="../../tools/rmd-age-calculator/">
+              <small>Tax &amp; IRA Planning</small>
+              <h4>RMD Age Calculator</h4>
+              <span>Find required minimum distribution age milestones →</span>
+            </a>
+            <a class="related-card" href="../../tools/pension-age-date-calculator/">
+              <small>Pension Timetable</small>
+              <h4>Pension Age Date Calculator</h4>
+              <span>Calculate exact pension eligibility dates →</span>
+            </a>
+            <a class="related-card" href="../../tools/early-retirement-date-calculator/">
+              <small>Financial Independence</small>
+              <h4>Early Retirement Date Calculator</h4>
+              <span>Determine countdown to early retirement targets →</span>
+            </a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-grid footer-grid-rich">
+<div class="footer-brand-panel">
+<a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a>
+<p>Practical, verified calculators and guides for age, dates, milestones and planning. No registration required.</p>
+<a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a>
+</div>
+<div>
+<h3>Calculators</h3>
+<a href="../../">Exact Age</a>
+<a href="../../tools/chronological-age-calculator/">Chronological Age</a>
+<a href="../../tools/age-difference-calculator/">Age Difference</a>
+<a href="../../tools/dating-age-calculator/">Dating Age</a>
+<a href="../../categories/">All categories</a>
+</div>
+<div class="footer-guides">
+<h3>Articles &amp; Guides</h3>
+<a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a>
+<a href="../../articles/ymd-semicolon-format-guide/">Y;M;D format</a>
+<a href="../../articles/dating-age-rule/">Dating age rule</a>
+<a class="footer-guides-all" href="../../articles/">Browse all guides →</a>
+</div>
+<div>
+<h3>Explore</h3>
+<a href="../../categories/">Categories</a>
+<a href="../../methodology/">Methodology</a>
+<a href="../../about/">About</a>
+<a href="../../disclaimer/">Disclaimer</a>
+</div>
+<div>
+<h3>Important</h3>
+<a href="../../privacy/">Privacy</a>
+<a href="../../terms/">Terms</a>
+<a href="../../contact/">Contact</a>
+<a href="../../sitemap.xml">Sitemap</a>
+</div>
+</div>
+<div class="copyright">
+<span>© 2026 Age Calculator Lab.</span>
+<span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span>
+</div>
+</div>
+</footer>
+
+<script src="../../assets/app.js?v=20260824e"></script>
+<script>
+// Client-Side Social Security Age Calculation Engine
+function getSSA_FRA(birthYear, birthMonth, birthDay) {
+  // January 1 Rule: If born on January 1, use previous year
+  let effectiveYear = birthYear;
+  let isJan1 = (birthMonth === 1 && birthDay === 1);
+  if (isJan1) {
+    effectiveYear = birthYear - 1;
+  }
+
+  let years = 67;
+  let months = 0;
+
+  if (effectiveYear <= 1937) {
+    years = 65; months = 0;
+  } else if (effectiveYear === 1938) {
+    years = 65; months = 2;
+  } else if (effectiveYear === 1939) {
+    years = 65; months = 4;
+  } else if (effectiveYear === 1940) {
+    years = 65; months = 6;
+  } else if (effectiveYear === 1941) {
+    years = 65; months = 8;
+  } else if (effectiveYear === 1942) {
+    years = 65; months = 10;
+  } else if (effectiveYear >= 1943 && effectiveYear <= 1954) {
+    years = 66; months = 0;
+  } else if (effectiveYear === 1955) {
+    years = 66; months = 2;
+  } else if (effectiveYear === 1956) {
+    years = 66; months = 4;
+  } else if (effectiveYear === 1957) {
+    years = 66; months = 6;
+  } else if (effectiveYear === 1958) {
+    years = 66; months = 8;
+  } else if (effectiveYear === 1959) {
+    years = 66; months = 10;
+  } else {
+    // 1960 and later
+    years = 67; months = 0;
+  }
+
+  return { years, months, isJan1, effectiveYear };
+}
+
+function formatDate(d) {
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  return d.toLocaleDateString('en-US', options);
+}
+
+function calculateSSA() {
+  const month = parseInt(document.getElementById('birthMonth').value, 10);
+  const day = parseInt(document.getElementById('birthDay').value, 10);
+  const year = parseInt(document.getElementById('birthYear').value, 10);
+
+  if (isNaN(month) || isNaN(day) || isNaN(year) || day < 1 || day > 31 || year < 1900 || year > 2050) {
+    alert('Please enter a valid date of birth.');
+    return;
+  }
+
+  const fraInfo = getSSA_FRA(year, month, day);
+
+  // Calculate FRA string
+  let fraString = fraInfo.years + ' Years';
+  if (fraInfo.months > 0) {
+    fraString += ' and ' + fraInfo.months + ' Months';
+  }
+
+  // Calculate Milestone Dates
+  // Base birth date
+  const birthDate = new Date(year, month - 1, day);
+
+  // Age 62 date
+  const age62Date = new Date(year + 62, month - 1, day);
+
+  // FRA date: add years and months
+  let targetYear = year + fraInfo.years;
+  let targetMonth = (month - 1) + fraInfo.months;
+  if (targetMonth >= 12) {
+    targetYear += Math.floor(targetMonth / 12);
+    targetMonth = targetMonth % 12;
+  }
+  const fraDate = new Date(targetYear, targetMonth, day);
+
+  // Age 70 date
+  const age70Date = new Date(year + 70, month - 1, day);
+
+  // Display outputs
+  document.getElementById('resFraAge').innerText = fraString;
+  document.getElementById('resFraDate').innerText = formatDate(fraDate);
+  document.getElementById('resFraBadge').innerText = 'Age ' + fraInfo.years + (fraInfo.months > 0 ? ' + ' + fraInfo.months + 'm' : '');
+  document.getElementById('resFraSubDate').innerText = formatDate(fraDate);
+  document.getElementById('resAge62Date').innerText = formatDate(age62Date);
+  document.getElementById('resAge70Date').innerText = formatDate(age70Date);
+
+  const jan1El = document.getElementById('jan1Alert');
+  if (fraInfo.isJan1) {
+    jan1El.style.display = 'inline-block';
+    jan1El.innerText = 'ⓘ Born on January 1: Social Security legally uses previous year (' + fraInfo.effectiveYear + ') for FRA lookup.';
+  } else {
+    jan1El.style.display = 'none';
+  }
+}
+
+function resetSSA() {
+  document.getElementById('birthMonth').value = '6';
+  document.getElementById('birthDay').value = '15';
+  document.getElementById('birthYear').value = '1960';
+  calculateSSA();
+}
+
+// Initial calculation on load
+document.addEventListener('DOMContentLoaded', calculateSSA);
+</script>
+</body>
+</html>

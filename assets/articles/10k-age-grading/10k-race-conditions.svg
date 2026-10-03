@@ -20,7 +20,7 @@
 
   <!-- 4 Scenario Cards Grid -->
   <g transform="translate(80, 155)" filter="url(#condSh)">
-    <!-- Card 1: Flat & Cool Baseline -->
+    <!-- Card 1: Flat &amp; Cool Baseline -->
     <g transform="translate(0, 0)">
       <rect width="500" height="210" rx="14" fill="#FFFFFF" stroke="#075433" stroke-width="2"/>
       <rect x="0" y="0" width="8" height="210" rx="4" fill="#075433"/>
@@ -56,7 +56,7 @@
       </g>
     </g>
 
-    <!-- Card 3: Heat & Humidity -->
+    <!-- Card 3: Heat &amp; Humidity -->
     <g transform="translate(0, 235)">
       <rect width="500" height="210" rx="14" fill="#FFFFFF" stroke="#E2DDD0" stroke-width="1.5"/>
       <rect x="0" y="0" width="8" height="210" rx="4" fill="#FF754D"/>

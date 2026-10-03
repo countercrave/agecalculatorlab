@@ -45,7 +45,7 @@
       <line x1="60" y1="455" x2="515" y2="455" />
     </g>
 
-    <!-- Title & Date Stamp (Properly Separated) -->
+    <!-- Title &amp; Date Stamp (Properly Separated) -->
     <text x="75" y="44" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold">My Career Timeline &amp; Milestones</text>
     <text x="505" y="32" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="end">Sept 2026</text>
 
@@ -76,7 +76,7 @@
       <text x="215" y="224" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="15">Director tenure tier</text>
     </g>
 
-    <!-- Circled Callout: NEXT MILESTONE 10 YEARS (Clean Positioning & Ample Margins) -->
+    <!-- Circled Callout: NEXT MILESTONE 10 YEARS (Clean Positioning &amp; Ample Margins) -->
     <g transform="translate(110, 335)">
       <!-- Hand drawn oval around callout -->
       <ellipse cx="155" cy="38" rx="148" ry="30" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="350 10" transform="rotate(-2 155 38)" />

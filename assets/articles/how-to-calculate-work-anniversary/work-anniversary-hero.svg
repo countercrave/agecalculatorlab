@@ -27,7 +27,7 @@
     <line x1="900" y1="0" x2="900" y2="675" />
   </g>
 
-  <!-- Title & Kicker -->
+  <!-- Title &amp; Kicker -->
   <g transform="translate(80, 48)">
     <rect x="0" y="0" width="220" height="28" rx="14" fill="#6366f1" fill-opacity="0.2" stroke="#818cf8" stroke-width="1.2" />
     <text x="110" y="19" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">ANNIVERSARY ENGINE</text>
@@ -71,7 +71,7 @@
       </g>
     </g>
 
-    <!-- CENTER ARROW & CYCLE BADGE -->
+    <!-- CENTER ARROW &amp; CYCLE BADGE -->
     <g transform="translate(330, 115)">
       <path d="M 0,75 L 120,75" fill="none" stroke="#818cf8" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6" />
       <polygon points="120,75 105,67 105,83" fill="#818cf8" />
@@ -86,7 +86,7 @@
       <text x="60" y="146" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Countdown</text>
     </g>
 
-    <!-- RIGHT CARD: Next Anniversary & Countdown Result -->
+    <!-- RIGHT CARD: Next Anniversary &amp; Countdown Result -->
     <g transform="translate(470, 0)" filter="url(#anniv-shadow)">
       <rect x="0" y="0" width="570" height="390" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="2" />
       <rect x="0" y="0" width="570" height="6" rx="3" fill="url(#glow-teal)" />
@@ -97,7 +97,7 @@
         <text x="0" y="28" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="24" font-weight="800">Your Next Work Anniversary</text>
       </g>
 
-      <!-- Date & Milestone Block -->
+      <!-- Date &amp; Milestone Block -->
       <g transform="translate(30, 88)">
         <rect x="0" y="0" width="510" height="100" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1.8" />
         
@@ -113,7 +113,7 @@
         </g>
       </g>
 
-      <!-- Countdown Bar & Metrics -->
+      <!-- Countdown Bar &amp; Metrics -->
       <g transform="translate(30, 212)">
         <!-- Countdown Metric Block -->
         <g transform="translate(0, 0)">

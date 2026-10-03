@@ -70,7 +70,7 @@
       <text x="790" y="44" fill="#065F46" font-family="'Comic Sans MS', cursive" font-size="15" font-weight="700" text-anchor="middle">CHECK DOB</text>
     </g>
 
-    <!-- Handwritten Annotations & Real Examples -->
+    <!-- Handwritten Annotations &amp; Real Examples -->
     <g transform="translate(180, 335)">
       <rect width="840" height="220" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
       

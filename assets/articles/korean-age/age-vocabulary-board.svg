@@ -36,13 +36,13 @@
   <!-- Top Accent Bar -->
   <rect x="0" y="0" width="1200" height="8" fill="url(#headerGrad)"/>
 
-  <!-- Top Category Eyebrow & Stamp -->
+  <!-- Top Category Eyebrow &amp; Stamp -->
   <g transform="translate(80, 48)">
     <rect x="0" y="0" width="260" height="32" rx="16" fill="#042F2A" fill-opacity="0.06"/>
     <text x="130" y="21" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" letter-spacing="1.5" text-anchor="middle">KOREAN LANGUAGE REFERENCE</text>
   </g>
 
-  <!-- Title & Subtitle -->
+  <!-- Title &amp; Subtitle -->
   <text x="80" y="118" font-family="'Fraunces', Georgia, serif" font-size="34" font-weight="700" fill="#042F2A" letter-spacing="-0.5">Korean Age Vocabulary &amp; Expressions</text>
   <text x="80" y="148" font-family="'Inter', sans-serif" font-size="15" fill="#5D7069">Essential vocabulary, counters, and sentence patterns for asking and saying age in Korean.</text>
 
@@ -65,7 +65,7 @@
       <text x="139" y="164" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#075433" text-anchor="middle">"Age"</text>
       <line x1="20" y1="185" x2="258" y2="185" stroke="#EAEFEA" stroke-width="1"/>
       
-      <!-- Description & Usage -->
+      <!-- Description &amp; Usage -->
       <text x="139" y="212" font-family="'Inter', sans-serif" font-size="13" fill="#3D5A51" text-anchor="middle">General noun referring to age.</text>
       <text x="139" y="234" font-family="'Inter', sans-serif" font-size="12" fill="#718B82" text-anchor="middle">Example: 나이가 어떻게 되세요?</text>
       <text x="139" y="254" font-family="'Inter', sans-serif" font-size="11" font-style="italic" fill="#5D7069" text-anchor="middle">(Polite standard: "What is your age?")</text>
@@ -89,7 +89,7 @@
       <text x="139" y="164" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#C2410C" text-anchor="middle">"Years Old"</text>
       <line x1="20" y1="185" x2="258" y2="185" stroke="#EAEFEA" stroke-width="1"/>
       
-      <!-- Description & Usage -->
+      <!-- Description &amp; Usage -->
       <text x="139" y="212" font-family="'Inter', sans-serif" font-size="13" fill="#3D5A51" text-anchor="middle">Suffix attached to Native numbers.</text>
       <text x="139" y="234" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#075433" text-anchor="middle">스무 살 (seumu sal) = 20 years old</text>
       <text x="139" y="254" font-family="'Inter', sans-serif" font-size="11" font-style="italic" fill="#5D7069" text-anchor="middle">Never used alone; always follows a number.</text>
@@ -113,7 +113,7 @@
       <text x="140" y="164" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#075433" text-anchor="middle">"How old are you?"</text>
       <line x1="20" y1="185" x2="260" y2="185" stroke="#EAEFEA" stroke-width="1"/>
       
-      <!-- Description & Usage -->
+      <!-- Description &amp; Usage -->
       <text x="140" y="212" font-family="'Inter', sans-serif" font-size="13" fill="#3D5A51" text-anchor="middle">Polite everyday question.</text>
       <text x="140" y="234" font-family="'Inter', sans-serif" font-size="12" fill="#718B82" text-anchor="middle">Answer: 저는 ___살이에요.</text>
       <text x="140" y="254" font-family="'Inter', sans-serif" font-size="11" font-style="italic" fill="#5D7069" text-anchor="middle">(I am ___ years old.)</text>

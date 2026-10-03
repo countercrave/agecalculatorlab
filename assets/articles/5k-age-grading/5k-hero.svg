@@ -21,7 +21,7 @@
   <!-- Canvas Background -->
   <rect width="1200" height="675" fill="url(#heroBg)"/>
 
-  <!-- Stylized Track & Distance Ribbons -->
+  <!-- Stylized Track &amp; Distance Ribbons -->
   <g opacity="0.35" stroke="#52796F" stroke-width="2" fill="none">
     <path d="M-50,560 C300,560 500,450 800,470 C1050,490 1150,410 1250,410"/>
     <path d="M-50,590 C300,590 500,480 800,500 C1050,520 1150,440 1250,440"/>

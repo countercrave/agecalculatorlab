@@ -27,7 +27,7 @@
   <!-- Background -->
   <rect width="1200" height="675" fill="url(#bg-grad)"/>
 
-  <!-- Subtle Editorial Grid & Coordinate Lines -->
+  <!-- Subtle Editorial Grid &amp; Coordinate Lines -->
   <g stroke="#9FE7BD" stroke-opacity="0.07" stroke-width="1">
     <line x1="100" y1="0" x2="100" y2="675"/>
     <line x1="250" y1="0" x2="250" y2="675"/>
@@ -43,7 +43,7 @@
     <line x1="0" y1="600" x2="1200" y2="600"/>
   </g>
 
-  <!-- Left Side: Editorial Typography & Context -->
+  <!-- Left Side: Editorial Typography &amp; Context -->
   <g transform="translate(80, 110)">
     <rect x="0" y="0" width="170" height="28" rx="14" fill="#9FE7BD" fill-opacity="0.15" stroke="#9FE7BD" stroke-opacity="0.3"/>
     <text x="85" y="18" fill="#9FE7BD" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">FACIAL BIOMETRICS</text>
@@ -101,7 +101,7 @@
       <path d="M 110,35 C 50,35 25,85 25,160 C 25,235 55,295 110,305 C 165,295 195,235 195,160 C 195,85 170,35 110,35 Z" 
             fill="#09382B" stroke="#9FE7BD" stroke-width="2" stroke-opacity="0.7"/>
 
-      <!-- Neck & Shoulders -->
+      <!-- Neck &amp; Shoulders -->
       <path d="M 68,285 C 50,320 15,345 -20,360 L 240,360 C 205,345 170,320 152,285 Z" 
             fill="#062920" stroke="#9FE7BD" stroke-opacity="0.3" stroke-width="1.5"/>
 
@@ -126,7 +126,7 @@
       <path d="M 85,240 Q 110,234 135,240" fill="none" stroke="#D3E5DE" stroke-width="1.8"/>
       <path d="M 92,246 Q 110,252 128,246" fill="none" stroke="#D3E5DE" stroke-width="1.5"/>
 
-      <!-- Right Side (Geometric Mesh & Facial Landmarks) -->
+      <!-- Right Side (Geometric Mesh &amp; Facial Landmarks) -->
       <!-- Right Eyebrow Landmarks -->
       <circle cx="125" cy="124" r="3" fill="#9FE7BD"/>
       <circle cx="145" cy="120" r="3" fill="#9FE7BD"/>
@@ -138,7 +138,7 @@
       <polygon points="135,140 148,133 162,140 148,146" fill="#9FE7BD" fill-opacity="0.2" stroke="#9FE7BD" stroke-width="1.2"/>
       <circle cx="148" cy="140" r="3" fill="#FF754D"/>
 
-      <!-- Cheek & Jaw Landmark Mesh -->
+      <!-- Cheek &amp; Jaw Landmark Mesh -->
       <polygon points="110,205 145,195 170,180 155,225" fill="#9FE7BD" fill-opacity="0.08" stroke="#9FE7BD" stroke-width="1" stroke-dasharray="2 2"/>
       <polygon points="110,240 145,235 155,225 110,205" fill="#9FE7BD" fill-opacity="0.05" stroke="#9FE7BD" stroke-width="1" stroke-dasharray="2 2"/>
       <polygon points="110,285 140,270 155,225 110,240" fill="#9FE7BD" fill-opacity="0.06" stroke="#9FE7BD" stroke-width="1" stroke-dasharray="2 2"/>

@@ -25,7 +25,7 @@
   <!-- Office Interior Wall -->
   <rect width="800" height="600" fill="url(#office-wall)" />
 
-  <!-- Background Office Window & Subtle City View -->
+  <!-- Background Office Window &amp; Subtle City View -->
   <g transform="translate(60, 40)">
     <rect width="320" height="240" rx="4" fill="#e0f2fe" stroke="#cbd5e1" stroke-width="4" />
     <line x1="160" y1="0" x2="160" y2="240" stroke="#cbd5e1" stroke-width="3" />

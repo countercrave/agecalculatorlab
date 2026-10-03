@@ -30,7 +30,7 @@
     <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
   </g>
 
-  <!-- Top Category Kicker & Title -->
+  <!-- Top Category Kicker &amp; Title -->
   <rect x="80" y="52" width="280" height="32" rx="16" fill="url(#mintBadgeHero)" />
   <text x="220" y="73" font-size="12" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">MASTERS RUNNING &amp; LONGEVITY</text>
   <text x="80" y="122" font-size="30" font-weight="800" fill="#0B233A" letter-spacing="-0.5">Age Grading for Masters Runners</text>

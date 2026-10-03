@@ -29,7 +29,7 @@
   <!-- Background Canvas -->
   <rect width="1280" height="720" fill="url(#bgGrad)"/>
 
-  <!-- Subtle Running Track & Distance Grid Lines -->
+  <!-- Subtle Running Track &amp; Distance Grid Lines -->
   <g opacity="0.10" stroke="#FFFFFF" stroke-width="2.5" fill="none">
     <ellipse cx="640" cy="860" rx="900" ry="440"/>
     <ellipse cx="640" cy="880" rx="980" ry="480"/>
@@ -46,7 +46,7 @@
     <text x="32" y="22" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#D3E5DE" letter-spacing="1.5">5K ROAD &amp; PARKRUN GUIDE</text>
   </g>
 
-  <!-- Main Title & Subtitle -->
+  <!-- Main Title &amp; Subtitle -->
   <text x="100" y="165" font-family="'Fraunces', Georgia, serif" font-size="52" font-weight="700" fill="#FFFFFF" letter-spacing="-1">5K Age Grading Explained</text>
   <text x="100" y="215" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="400" fill="#D3E5DE">How to calculate your 5,000m demographic percentage and true aerobic speed</text>
 

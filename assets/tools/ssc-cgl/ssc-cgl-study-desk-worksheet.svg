@@ -58,7 +58,7 @@
     <rect x="120" y="85" width="460" height="34" rx="4" fill="#FEF08A" opacity="0.7"/>
     <text x="135" y="107" font-family="'Courier New', monospace" font-size="14" font-weight="700" fill="#854D0E">RULE: Use 10th/Matriculation Certificate DOB only!</text>
 
-    <!-- Work Sheet Lines & Data -->
+    <!-- Work Sheet Lines &amp; Data -->
     <text x="120" y="155" font-family="'Courier New', monospace" font-size="16" fill="#334155">1. Candidate DOB:</text>
     <text x="320" y="155" font-family="'Courier New', monospace" font-size="18" font-weight="700" fill="#1E40AF">12 / 07 / 1999</text>
 

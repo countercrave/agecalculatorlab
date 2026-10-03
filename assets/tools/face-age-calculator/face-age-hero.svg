@@ -86,7 +86,7 @@
       <!-- Oval Head Silhouette -->
       <ellipse cx="0" cy="0" rx="90" ry="120" fill="#F4F8F5" stroke="#075433" stroke-width="2" stroke-dasharray="4 4"/>
       
-      <!-- Eyebrow & Eyes Landmarks -->
+      <!-- Eyebrow &amp; Eyes Landmarks -->
       <path d="M-55,-35 Q-35,-45 -15,-35" stroke="#0B233A" stroke-width="2.5" fill="none"/>
       <path d="M15,-35 Q35,-45 55,-35" stroke="#0B233A" stroke-width="2.5" fill="none"/>
       
@@ -95,7 +95,7 @@
       <circle cx="35" cy="-20" r="10" fill="#FFFFFF" stroke="#075433" stroke-width="2"/>
       <circle cx="35" cy="-20" r="4" fill="#0B233A"/>
       
-      <!-- Nose Bridge & Tip -->
+      <!-- Nose Bridge &amp; Tip -->
       <path d="M0,-25 L0,20 L12,20" stroke="#075433" stroke-width="2" fill="none"/>
       
       <!-- Mouth Contour -->

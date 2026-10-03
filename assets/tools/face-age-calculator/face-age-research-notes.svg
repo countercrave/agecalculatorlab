@@ -69,11 +69,11 @@
     <text x="96" y="138" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#075433" letter-spacing="0.5">01 · CHRONOLOGICAL AGE</text>
     <text x="325" y="138" font-family="'Inter', sans-serif" font-size="14.5" font-weight="600" fill="#0B233A">Subject actual age = 38 (Date of Birth)</text>
 
-    <!-- Row 2: Lighting & Exposure Test -->
+    <!-- Row 2: Lighting &amp; Exposure Test -->
     <text x="96" y="196" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#075433" letter-spacing="0.5">02 · LIGHTING &amp; EXPOSURE</text>
     <text x="325" y="196" font-family="'Inter', sans-serif" font-size="14.5" font-weight="600" fill="#0B233A">Diffuse light softens shadows (−3 yrs perceived)</text>
 
-    <!-- Row 3: Texture & Edge Gradient -->
+    <!-- Row 3: Texture &amp; Edge Gradient -->
     <text x="96" y="254" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#075433" letter-spacing="0.5">03 · TEXTURE GRADIENT</text>
     <text x="325" y="254" font-family="'Inter', sans-serif" font-size="14.5" font-weight="600" fill="#0B233A">Low midface frequency gradient (youthful volume)</text>
 

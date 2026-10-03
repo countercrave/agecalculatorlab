@@ -29,7 +29,7 @@
     <line x1="0" y1="615" x2="1200" y2="615" stroke="#E2DDD0" stroke-width="1" stroke-dasharray="4 4" />
   </g>
 
-  <!-- Header Category & Title -->
+  <!-- Header Category &amp; Title -->
   <rect x="80" y="52" width="230" height="30" rx="15" fill="url(#mintBadge)" />
   <text x="195" y="72" font-size="11.5" font-weight="700" fill="#075433" letter-spacing="1.2" text-anchor="middle">SPORTS SCIENCE AUDIT</text>
   <text x="80" y="118" font-size="27" font-weight="800" fill="#0B233A" letter-spacing="-0.5">Analyst Field Notes: Interpreting Age Grade %</text>
@@ -76,7 +76,7 @@
       <text x="492" y="25" font-size="13.5" font-weight="700" fill="#0B233A" text-anchor="end">26:24.0 (1,584.0 sec)</text>
     </g>
 
-    <!-- Row 5: WMA Factor & Age Standard -->
+    <!-- Row 5: WMA Factor &amp; Age Standard -->
     <g transform="translate(25, 282)">
       <rect x="0" y="0" width="510" height="40" rx="6" fill="#FFFFFF" stroke="#E5EFEA" stroke-width="1" />
       <text x="18" y="25" font-size="13" font-weight="600" fill="#52796F">WMA Factor → Age Standard</text>
@@ -96,7 +96,7 @@
     </g>
   </g>
 
-  <!-- Right Side Column: Interpretation & Handwritten Coaching Callouts -->
+  <!-- Right Side Column: Interpretation &amp; Handwritten Coaching Callouts -->
   <g transform="translate(680, 172)">
     <!-- Interpretation Spectrum Card -->
     <rect x="0" y="0" width="440" height="210" rx="16" fill="url(#navyGrad)" filter="url(#cardShadow)" />

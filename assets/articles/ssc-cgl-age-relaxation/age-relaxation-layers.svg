@@ -48,7 +48,7 @@
     <text x="975" y="43" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CRUCIAL DATE: 01-AUG-2026</text>
   </g>
 
-  <!-- Left: Candidate Profile & Concept Panel -->
+  <!-- Left: Candidate Profile &amp; Concept Panel -->
   <g transform="translate(50, 136)">
     <rect width="320" height="495" rx="12" fill="url(#card-grad)" stroke="#1B4D40" stroke-width="1" />
     

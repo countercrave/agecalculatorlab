@@ -18,7 +18,7 @@
   
   <!-- Header Bar -->
   <rect x="36" y="32" width="728" height="48" rx="8" fill="url(#headerGrad)"/>
-  <text x="56" y="62" fill="#ffffff" font-size="16" font-weight="700" letter-spacing="0.5">MINIMUM DATING AGE: FORMULA STEPS & ADULT FLOOR</text>
+  <text x="56" y="62" fill="#ffffff" font-size="16" font-weight="700" letter-spacing="0.5">MINIMUM DATING AGE: FORMULA STEPS &amp; ADULT FLOOR</text>
   <text x="744" y="62" text-anchor="end" fill="#9fe7bd" font-size="12" font-weight="600">LOWER BOUND CALCULATION</text>
   
   <!-- Content Area -->

@@ -74,7 +74,7 @@
       </g>
     </g>
 
-    <!-- Center Hero: The Professional Employee & Active Tenure -->
+    <!-- Center Hero: The Professional Employee &amp; Active Tenure -->
     <g transform="translate(500, 110)">
       <!-- Backdrop Halo -->
       <ellipse cx="0" cy="90" rx="140" ry="120" fill="#10b981" fill-opacity="0.08" filter="url(#shadow)" />
@@ -83,7 +83,7 @@
       <g fill="#10b981" opacity="0.95">
         <!-- Head -->
         <circle cx="0" cy="18" r="16" fill="#34d399" />
-        <!-- Torso & Suit -->
+        <!-- Torso &amp; Suit -->
         <path d="M -24,42 C -24,34 -14,32 0,32 C 14,32 24,34 24,42 L 20,86 L -20,86 Z" fill="#10b981" />
         <!-- Tie -->
         <path d="M -3,34 L 3,34 L 4,52 L 0,60 L -4,52 Z" fill="#fbbf24" />
@@ -102,7 +102,7 @@
         <text x="0" y="48" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" text-anchor="middle">Employment Tenure</text>
       </g>
 
-      <!-- Floating Badge: Years, Months & Days -->
+      <!-- Floating Badge: Years, Months &amp; Days -->
       <g transform="translate(0, 195)" filter="url(#shadow)">
         <rect x="-150" y="0" width="300" height="42" rx="21" fill="#0f172a" stroke="#fbbf24" stroke-width="2" />
         <text x="0" y="26" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">&#10024; Measured in Years + Months + Days</text>

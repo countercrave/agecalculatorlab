@@ -35,7 +35,7 @@
       <text x="468" y="16" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#075433">Age Grade % (Steadily Climbing)</text>
     </g>
 
-    <!-- Grid Lines & X-Axis Columns -->
+    <!-- Grid Lines &amp; X-Axis Columns -->
     <g stroke="#F1F5F9" stroke-width="1.5">
       <line x1="120" y1="80" x2="120" y2="380"/>
       <line x1="280" y1="80" x2="280" y2="380"/>
@@ -58,7 +58,7 @@
     <!-- Curve 1: Raw Finish Time Path (Rising line from 41:30 to 50:40) -->
     <path d="M120,320 L280,290 L440,255 L600,220 L760,180 L920,135" fill="none" stroke="#FF754D" stroke-width="4"/>
     
-    <!-- Curve 1 Nodes & Badges -->
+    <!-- Curve 1 Nodes &amp; Badges -->
     <g>
       <!-- Age 35: 41:30 -->
       <circle cx="120" cy="320" r="7" fill="#FF754D" stroke="#FFFFFF" stroke-width="2"/>
@@ -94,7 +94,7 @@
     <!-- Curve 2: Age Grade % Path (Rising from 64.2% to 67.2%) -->
     <path d="M120,240 L280,225 L440,205 L600,180 L760,150 L920,110" fill="none" stroke="#075433" stroke-width="4" stroke-dasharray="8 6"/>
 
-    <!-- Curve 2 Nodes & Badges -->
+    <!-- Curve 2 Nodes &amp; Badges -->
     <g>
       <!-- Age 35: 64.2% -->
       <circle cx="120" cy="240" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>

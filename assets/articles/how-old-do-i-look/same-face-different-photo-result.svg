@@ -56,7 +56,7 @@
     <text x="150" y="347" fill="#075433" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Smooth contours · Balanced tone</text>
   </g>
 
-  <!-- Polaroid B: Harsh Lighting & Angle -->
+  <!-- Polaroid B: Harsh Lighting &amp; Angle -->
   <g transform="translate(520, 160)" filter="url(#paper-shadow)">
     <!-- Photo Backing -->
     <rect x="0" y="0" width="300" height="380" rx="10" fill="#FFFFFF" stroke="#D3E5DE" stroke-width="1.5"/>
@@ -75,7 +75,7 @@
       <path d="M 70,30 C 50,30 35,65 35,115 C 35,165 50,205 70,210 Z" fill="#0D1F1A" fill-opacity="0.75"/>
       <!-- Shoulders -->
       <path d="M 45,195 C 25,215 5,230 -15,240 L 155,240 C 135,230 115,215 95,195 Z" fill="#152B23"/>
-      <!-- Squinting lines & shadow emphasis -->
+      <!-- Squinting lines &amp; shadow emphasis -->
       <line x1="50" y1="106" x2="66" y2="106" stroke="#9FE7BD" stroke-width="2"/>
       <line x1="74" y1="106" x2="90" y2="106" stroke="#9FE7BD" stroke-width="2"/>
       <!-- Furrow lines between brow -->
@@ -89,7 +89,7 @@
     <text x="150" y="347" fill="#C53A1A" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Sharp shadows · Emphasized lines</text>
   </g>
 
-  <!-- Right Side: Handwritten Notes, Arrows & Callouts -->
+  <!-- Right Side: Handwritten Notes, Arrows &amp; Callouts -->
   <g transform="translate(860, 160)">
     <!-- Main Sticky / Notepad Card -->
     <rect x="0" y="0" width="280" height="380" rx="12" fill="#F8FCFA" stroke="#9FE7BD" stroke-width="1.5"/>

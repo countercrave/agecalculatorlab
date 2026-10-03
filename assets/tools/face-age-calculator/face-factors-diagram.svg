@@ -34,7 +34,7 @@
     <path d="M90,75 Q150,65 210,75" stroke="#9FE7BD" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
     <path d="M85,95 Q150,85 215,95" stroke="#9FE7BD" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
 
-    <!-- Eyebrows & Eyes (Factor 2 & 3) -->
+    <!-- Eyebrows &amp; Eyes (Factor 2 &amp; 3) -->
     <path d="M80,125 Q110,115 130,125" stroke="#D3E5DE" stroke-width="3" fill="none"/>
     <path d="M170,125 Q190,115 220,125" stroke="#D3E5DE" stroke-width="3" fill="none"/>
 
@@ -53,10 +53,10 @@
     <path d="M225,142 L236,142" stroke="#FF754D" stroke-width="2"/>
     <path d="M222,146 L232,152" stroke="#FF754D" stroke-width="2"/>
 
-    <!-- Nose Bridge & Tip -->
+    <!-- Nose Bridge &amp; Tip -->
     <path d="M150,128 L145,195 Q150,202 155,195 Z" fill="#0D4434" stroke="#9FE7BD" stroke-width="1.5"/>
 
-    <!-- Nasolabial Folds (Factor 1 & 2) -->
+    <!-- Nasolabial Folds (Factor 1 &amp; 2) -->
     <path d="M135,198 Q120,230 115,255" stroke="#FF754D" stroke-width="2.5" fill="none"/>
     <path d="M165,198 Q180,230 185,255" stroke="#FF754D" stroke-width="2.5" fill="none"/>
 
@@ -64,7 +64,7 @@
     <path d="M120,250 Q150,265 180,250" stroke="#D3E5DE" stroke-width="2.5" fill="none"/>
     <path d="M125,252 Q150,270 175,252" stroke="#387762" stroke-width="1.5" fill="none"/>
 
-    <!-- Jawline & Submental Plane (Factor 5) -->
+    <!-- Jawline &amp; Submental Plane (Factor 5) -->
     <path d="M70,230 Q110,310 150,345 Q190,310 230,230" stroke="#9FE7BD" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
 
     <!-- Lighting Direction Arrow Overlay -->

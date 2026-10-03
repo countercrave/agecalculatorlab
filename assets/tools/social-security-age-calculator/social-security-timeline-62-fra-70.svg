@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="100%" height="auto" style="max-width:920px;font-family:'Inter',system-ui,sans-serif;background:#042f2a;border-radius:12px;border:1px solid #1e684c;box-shadow:0 8px 24px rgba(0,0,0,0.25)">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#042f2a"/>
+      <stop offset="100%" stop-color="#075433"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="380" rx="12" fill="url(#bgGrad)"/>
+  
+  <!-- Title Badge -->
+  <rect x="270" y="22" width="380" height="34" rx="17" fill="#0b3d2b" stroke="#9fe7bd" stroke-width="1.5"/>
+  <text x="460" y="44" fill="#9fe7bd" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">SOCIAL SECURITY CLAIMING TIMELINE</text>
+
+  <!-- Horizontal Axis Line -->
+  <line x1="120" y1="180" x2="800" y2="180" stroke="#1e684c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="120" y1="180" x2="460" y2="180" stroke="#ff754d" stroke-width="6" stroke-linecap="round"/>
+  <line x1="460" y1="180" x2="800" y2="180" stroke="#20a67b" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Milestone Node 1: Age 62 -->
+  <g transform="translate(120, 180)">
+    <circle r="18" fill="#042f2a" stroke="#ff754d" stroke-width="4"/>
+    <circle r="7" fill="#ff754d"/>
+  </g>
+  <!-- Card 1: Age 62 (Above Line) -->
+  <g transform="translate(40, 70)" filter="url(#shadow)">
+    <rect width="210" height="95" rx="10" fill="#063826" stroke="#ff754d" stroke-width="1.5"/>
+    <text x="105" y="26" fill="#ff855f" font-size="11" font-weight="700" text-anchor="middle">EARLIEST CLAIMING</text>
+    <text x="105" y="55" fill="#ffffff" font-size="22" font-weight="800" text-anchor="middle">Age 62</text>
+    <text x="105" y="78" fill="#d3e5de" font-size="11" text-anchor="middle">Reduced monthly benefit</text>
+  </g>
+
+  <!-- Milestone Node 2: Full Retirement Age (FRA) -->
+  <g transform="translate(460, 180)">
+    <circle r="22" fill="#042f2a" stroke="#ffd180" stroke-width="4"/>
+    <circle r="9" fill="#ffd180"/>
+  </g>
+  <!-- Card 2: FRA (Below Line) -->
+  <g transform="translate(340, 215)" filter="url(#shadow)">
+    <rect width="240" height="115" rx="10" fill="#08472f" stroke="#ffd180" stroke-width="2"/>
+    <text x="120" y="26" fill="#ffd180" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.5">FULL RETIREMENT AGE</text>
+    <text x="120" y="58" fill="#ffffff" font-size="24" font-weight="800" text-anchor="middle">Age 66 to 67</text>
+    <text x="120" y="82" fill="#9fe7bd" font-size="12" font-weight="700" text-anchor="middle">100% Unreduced Benefit</text>
+    <text x="120" y="100" fill="#d3e5de" font-size="11" text-anchor="middle">Exact age determined by birth year</text>
+  </g>
+
+  <!-- Milestone Node 3: Age 70 -->
+  <g transform="translate(800, 180)">
+    <circle r="18" fill="#042f2a" stroke="#20a67b" stroke-width="4"/>
+    <circle r="7" fill="#9fe7bd"/>
+  </g>
+  <!-- Card 3: Age 70 (Above Line) -->
+  <g transform="translate(680, 70)" filter="url(#shadow)">
+    <rect width="210" height="95" rx="10" fill="#063826" stroke="#20a67b" stroke-width="1.5"/>
+    <text x="105" y="26" fill="#9fe7bd" font-size="11" font-weight="700" text-anchor="middle">MAXIMUM CREDITS</text>
+    <text x="105" y="55" fill="#ffffff" font-size="22" font-weight="800" text-anchor="middle">Age 70</text>
+    <text x="105" y="78" fill="#d3e5de" font-size="11" text-anchor="middle">Delayed credits stop accumulating</text>
+  </g>
+
+  <!-- Footer Caption -->
+  <text x="460" y="358" fill="#9fe7bd" font-size="11" text-anchor="middle">Social Security Administration (SSA) Standard Claiming Corridor • Educational Milestone Guide</text>
+</svg>

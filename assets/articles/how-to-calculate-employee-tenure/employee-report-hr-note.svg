@@ -49,7 +49,7 @@
         <line x1="20" y1="80" x2="430" y2="80" stroke="#b45309" stroke-width="2" stroke-linecap="round" />
       </g>
 
-      <!-- Signature & Date -->
+      <!-- Signature &amp; Date -->
       <g transform="translate(10, 395)" font-family="'Segoe Print', cursive, sans-serif" font-size="14" fill="#64748b">
         <text x="0" y="0">Verified by HR Operations</text>
         <text x="320" y="0">23 Sept 2026</text>

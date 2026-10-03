@@ -66,7 +66,7 @@
     <!-- Title Handwritten in Blue Ink -->
     <text x="130" y="60" fill="#1e3a8a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="24" font-weight="bold">Service Calculation</text>
 
-    <!-- Joining & Evaluation Dates -->
+    <!-- Joining &amp; Evaluation Dates -->
     <g transform="translate(130, 85)">
       <text x="0" y="22" fill="#0f172a" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="18" font-weight="bold">Joined:</text>
       <text x="110" y="22" fill="#1d4ed8" font-family="'Segoe Print', 'Comic Sans MS', cursive, sans-serif" font-size="20" font-weight="bold">15 Mar 2018</text>

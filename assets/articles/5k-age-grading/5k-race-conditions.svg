@@ -23,7 +23,7 @@
 
   <!-- 4 Environmental Condition Cards -->
   <g transform="translate(80, 150)">
-    <!-- Card 1: Course Profile & Elevation -->
+    <!-- Card 1: Course Profile &amp; Elevation -->
     <g transform="translate(0, 0)" filter="url(#condCardShadow)">
       <rect width="505" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
       <rect x="24" y="24" width="44" height="44" rx="10" fill="#ECFDF5"/>
@@ -61,7 +61,7 @@
       <text x="36" y="175" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#C2410C">Parkrun Note: Cross-country 5Ks yield lower nominal grades</text>
     </g>
 
-    <!-- Card 3: Weather (Heat, Humidity & Sun) -->
+    <!-- Card 3: Weather (Heat, Humidity &amp; Sun) -->
     <g transform="translate(0, 230)" filter="url(#condCardShadow)">
       <rect width="505" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
       <rect x="24" y="24" width="44" height="44" rx="10" fill="#FEF2F2"/>
@@ -80,7 +80,7 @@
       <text x="36" y="175" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#B91C1C">Adjustment: Compare summer 5Ks with seasonal context</text>
     </g>
 
-    <!-- Card 4: Wind & Aerodynamic Drag -->
+    <!-- Card 4: Wind &amp; Aerodynamic Drag -->
     <g transform="translate(535, 230)" filter="url(#condCardShadow)">
       <rect width="505" height="205" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
       <rect x="24" y="24" width="44" height="44" rx="10" fill="#F0FDF4"/>
