@@ -8,45 +8,61 @@
   <!-- 3 Pillars -->
   <!-- Pillar 1 -->
   <g transform="translate(40, 110)">
-    <rect width="245" height="300" rx="10" fill="#F4F8F6" stroke="#D3E5DE" stroke-width="1.5"/>
+    <rect width="245" height="310" rx="10" fill="#F4F8F6" stroke="#D3E5DE" stroke-width="1.5"/>
     <rect width="245" height="46" rx="10" fill="#075433"/>
     <text x="122" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1. Immediate Access</text>
     
-    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Earliest Retirement Cash</text>
-    <text x="20" y="105" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Up to 60 additional monthly checks before age 67</text>
-    <text x="20" y="145" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Immediate cash flow for bridge retirement or health</text>
-    <text x="20" y="185" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Independence from portfolio drawdown pressure</text>
+    <text x="20" y="78" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Earliest Retirement Cash</text>
+    <text x="20" y="104" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Up to 60 extra checks</text>
+    <text x="28" y="121" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">before reaching FRA</text>
 
-    <rect x="20" y="240" width="205" height="36" rx="6" fill="#E6F5EE"/>
-    <text x="122" y="263" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" text-anchor="middle">Advantage: Immediate Liquidity</text>
+    <text x="20" y="148" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Immediate cash flow for</text>
+    <text x="28" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">early bridge retirement</text>
+
+    <text x="20" y="192" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Reduces pressure on</text>
+    <text x="28" y="209" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">investment portfolio</text>
+
+    <rect x="20" y="248" width="205" height="36" rx="6" fill="#E6F5EE"/>
+    <text x="122" y="271" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" text-anchor="middle">Advantage: Liquidity</text>
   </g>
 
   <!-- Pillar 2 -->
   <g transform="translate(305, 110)">
-    <rect width="245" height="300" rx="10" fill="#FFF5F5" stroke="#F5C6CB" stroke-width="1.5"/>
+    <rect width="245" height="310" rx="10" fill="#FFF5F5" stroke="#F5C6CB" stroke-width="1.5"/>
     <rect width="245" height="46" rx="10" fill="#C82333"/>
-    <text x="122" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2. Permanent Reduction</text>
+    <text x="122" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2. Permanent Cut</text>
     
-    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#721C24">Up to -30% for Life</text>
-    <text x="20" y="105" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Cut is permanent; does not jump back up at FRA</text>
-    <text x="20" y="145" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Future COLA percentage increases apply to a smaller base</text>
-    <text x="20" y="185" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Can reduce surviving spouse benefit amounts</text>
+    <text x="20" y="78" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#721C24">Lifetime Reduction</text>
+    <text x="20" y="104" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Cut is permanent: up to</text>
+    <text x="28" y="121" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">30% reduction for life</text>
 
-    <rect x="20" y="240" width="205" height="36" rx="6" fill="#F8D7DA"/>
-    <text x="122" y="263" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#721C24" text-anchor="middle">Cost: Lower Monthly Ceiling</text>
+    <text x="20" y="148" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Future COLA boosts</text>
+    <text x="28" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">apply to smaller base</text>
+
+    <text x="20" y="192" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Lowers potential</text>
+    <text x="28" y="209" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">surviving spouse payout</text>
+
+    <rect x="20" y="248" width="205" height="36" rx="6" fill="#F8D7DA"/>
+    <text x="122" y="271" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#721C24" text-anchor="middle">Cost: Lower Ceiling</text>
   </g>
 
   <!-- Pillar 3 -->
   <g transform="translate(570, 110)">
-    <rect width="245" height="300" rx="10" fill="#FFFBF0" stroke="#FFEEBA" stroke-width="1.5"/>
+    <rect width="245" height="310" rx="10" fill="#FFFBF0" stroke="#FFEEBA" stroke-width="1.5"/>
     <rect width="245" height="46" rx="10" fill="#D39E00"/>
     <text x="122" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="middle">3. Earnings Limit</text>
     
-    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#856404">Retirement Earnings Test</text>
-    <text x="20" y="105" font-family="'Inter', sans-serif" font-size="12" fill="#856404">• If working while claiming, $1 withheld for every $2 earned over limit</text>
-    <text x="20" y="155" font-family="'Inter', sans-serif" font-size="12" fill="#856404">• Benefits are withheld, not lost forever (recalculated at FRA)</text>
+    <text x="20" y="78" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#856404">Wage Limitation</text>
+    <text x="20" y="104" font-family="'Inter', sans-serif" font-size="12" fill="#856404">• If working before FRA,</text>
+    <text x="28" y="121" font-family="'Inter', sans-serif" font-size="12" fill="#856404">$1 withheld per $2 over cap</text>
 
-    <rect x="20" y="240" width="205" height="36" rx="6" fill="#FFF3CD"/>
-    <text x="122" y="263" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#856404" text-anchor="middle">Restriction: Wage Limitation</text>
+    <text x="20" y="148" font-family="'Inter', sans-serif" font-size="12" fill="#856404">• Withheld dollars are</text>
+    <text x="28" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#856404">credited back at FRA</text>
+
+    <text x="20" y="192" font-family="'Inter', sans-serif" font-size="12" fill="#856404">• Earnings test ends</text>
+    <text x="28" y="209" font-family="'Inter', sans-serif" font-size="12" fill="#856404">month you reach FRA</text>
+
+    <rect x="20" y="248" width="205" height="36" rx="6" fill="#FFF3CD"/>
+    <text x="122" y="271" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#856404" text-anchor="middle">Rule: Income Cap</text>
   </g>
 </svg>

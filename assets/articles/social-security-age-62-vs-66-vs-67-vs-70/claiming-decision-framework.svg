@@ -9,46 +9,66 @@
   <!-- 4 Decision Pillars -->
   <!-- Factor 1 -->
   <g transform="translate(50, 115)">
-    <rect width="175" height="200" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <rect width="175" height="205" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
     <circle cx="28" cy="28" r="14" fill="#075433"/>
     <text x="28" y="33" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
-    <text x="52" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Current Cash</text>
-    <text x="15" y="65" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Do you have sufficient retirement savings or pensions to cover expenses without claiming early?</text>
-    <rect x="15" y="150" width="145" height="36" rx="4" fill="#E6F5EE"/>
-    <text x="87" y="173" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">Cash Need → 62</text>
+    <text x="50" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Current Cash</text>
+    
+    <text x="15" y="66" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Do you need income</text>
+    <text x="15" y="83" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">immediately to cover</text>
+    <text x="15" y="100" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">living costs or bridge</text>
+    <text x="15" y="117" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">to retirement?</text>
+
+    <rect x="15" y="152" width="145" height="36" rx="4" fill="#E6F5EE"/>
+    <text x="87" y="175" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">Cash Need → 62</text>
   </g>
 
   <!-- Factor 2 -->
   <g transform="translate(245, 115)">
-    <rect width="175" height="200" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <rect width="175" height="205" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
     <circle cx="28" cy="28" r="14" fill="#075433"/>
     <text x="28" y="33" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
-    <text x="52" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Health &amp; Longevity</text>
-    <text x="15" y="65" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Personal and family medical history. Delaying pays off if living past the break-even age (~78–82).</text>
-    <rect x="15" y="150" width="145" height="36" rx="4" fill="#E6F5EE"/>
-    <text x="87" y="173" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">High Longevity → 70</text>
+    <text x="50" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Longevity</text>
+    
+    <text x="15" y="66" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Consider medical</text>
+    <text x="15" y="83" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">history. Waiting to 70</text>
+    <text x="15" y="100" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">pays off if you live</text>
+    <text x="15" y="117" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">past age 78–82.</text>
+
+    <rect x="15" y="152" width="145" height="36" rx="4" fill="#E6F5EE"/>
+    <text x="87" y="175" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">High Longevity → 70</text>
   </g>
 
   <!-- Factor 3 -->
   <g transform="translate(440, 115)">
-    <rect width="175" height="200" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <rect width="175" height="205" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
     <circle cx="28" cy="28" r="14" fill="#075433"/>
     <text x="28" y="33" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
-    <text x="52" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Working Status</text>
-    <text x="15" y="65" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">If you continue earning above the Retirement Earnings Test limit before FRA, benefits are withheld.</text>
-    <rect x="15" y="150" width="145" height="36" rx="4" fill="#E6F5EE"/>
-    <text x="87" y="173" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">Still Working → FRA</text>
+    <text x="50" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Work Status</text>
+    
+    <text x="15" y="66" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">If working before FRA,</text>
+    <text x="15" y="83" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">earnings above the cap</text>
+    <text x="15" y="100" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">will trigger benefit</text>
+    <text x="15" y="117" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">withholding.</text>
+
+    <rect x="15" y="152" width="145" height="36" rx="4" fill="#E6F5EE"/>
+    <text x="87" y="175" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">Still Working → FRA</text>
   </g>
 
   <!-- Factor 4 -->
   <g transform="translate(635, 115)">
-    <rect width="175" height="200" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <rect width="175" height="205" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
     <circle cx="28" cy="28" r="14" fill="#075433"/>
     <text x="28" y="33" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
-    <text x="52" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Spousal Needs</text>
-    <text x="15" y="65" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Higher earner delaying to 70 locks in the highest possible surviving spouse survivor benefit protection.</text>
-    <rect x="15" y="150" width="145" height="36" rx="4" fill="#042F2A"/>
-    <text x="87" y="173" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FF754D" text-anchor="middle">Survivor Anchor → 70</text>
+    <text x="50" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Spousal Needs</text>
+    
+    <text x="15" y="66" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">A higher earner who</text>
+    <text x="15" y="83" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">delays to 70 locks in</text>
+    <text x="15" y="100" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">the maximum survivor</text>
+    <text x="15" y="117" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">protection for spouse.</text>
+
+    <rect x="15" y="152" width="145" height="36" rx="4" fill="#042F2A"/>
+    <text x="87" y="175" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FF754D" text-anchor="middle">Survivor Anchor → 70</text>
   </g>
 
   <!-- Bottom Bar -->

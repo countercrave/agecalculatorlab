@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="100%" height="auto">
+  <rect width="860" height="400" fill="#FFFFFF" rx="16" stroke="#E2EBE6" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="40" y="50" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#042F2A">Statutory Two-Tier Early Claiming Reduction Formula</text>
+  <text x="40" y="75" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#4B6358">How the Social Security Administration calculates benefit cuts before Full Retirement Age</text>
+
+  <!-- Tier 1 -->
+  <g transform="translate(40, 105)">
+    <rect width="375" height="200" rx="10" fill="#F8FCFA" stroke="#C4DEC3" stroke-width="1.5"/>
+    <rect width="375" height="40" rx="10" fill="#075433"/>
+    <text x="187" y="26" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Tier 1: First 36 Months Early</text>
+
+    <text x="25" y="75" font-family="'Inter', sans-serif" font-size="24" font-weight="800" fill="#075433">5/9 of 1% per month</text>
+    <text x="25" y="98" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">Equivalent to 0.5556% per month</text>
+
+    <text x="25" y="130" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#042F2A">36 Months × 5/9 of 1% =</text>
+    <text x="25" y="155" font-family="'Inter', sans-serif" font-size="18" font-weight="800" fill="#C82333">20.0% Reduction</text>
+    <text x="25" y="180" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">Standard rate for claiming up to 3 yrs early</text>
+  </g>
+
+  <!-- Tier 2 -->
+  <g transform="translate(445, 105)">
+    <rect width="375" height="200" rx="10" fill="#FFF5F5" stroke="#F5C6CB" stroke-width="1.5"/>
+    <rect width="375" height="40" rx="10" fill="#C82333"/>
+    <text x="187" y="26" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Tier 2: Next 24 Months Early</text>
+
+    <text x="25" y="75" font-family="'Inter', sans-serif" font-size="24" font-weight="800" fill="#721C24">5/12 of 1% per month</text>
+    <text x="25" y="98" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">Equivalent to 0.4167% per month</text>
+
+    <text x="25" y="130" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#721C24">24 Months × 5/12 of 1% =</text>
+    <text x="25" y="155" font-family="'Inter', sans-serif" font-size="18" font-weight="800" fill="#C82333">10.0% Additional Reduction</text>
+    <text x="25" y="180" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">Applies to months 37 through 60 (up to 5 yrs early)</text>
+  </g>
+
+  <!-- Combined Bar -->
+  <g transform="translate(40, 325)">
+    <rect width="780" height="48" rx="8" fill="#042F2A"/>
+    <text x="390" y="29" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Total Early Reduction at Age 62 (for FRA 67) = 20.0% + 10.0% = 30.0% Permanent Cut</text>
+  </g>
+</svg>

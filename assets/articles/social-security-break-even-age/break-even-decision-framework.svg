@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="100%" height="auto">
+  <rect width="860" height="420" fill="#FFFFFF" rx="16" stroke="#E2EBE6" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="40" y="50" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#042F2A">Evaluating Your Personal Break-Even Point</text>
+  <text x="40" y="75" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#4B6358">Four strategic factors that determine whether waiting past 62 pays off for you</text>
+
+  <!-- 4 Cards -->
+  <g transform="translate(40, 105)">
+    <!-- Factor 1 -->
+    <rect x="0" y="0" width="180" height="210" rx="8" fill="#F4F8F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="14" fill="#075433"/>
+    <text x="28" y="33" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="50" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Life Span</text>
+    
+    <text x="15" y="70" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">If personal or family</text>
+    <text x="15" y="88" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">health suggests living</text>
+    <text x="15" y="106" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">past 80, delaying</text>
+    <text x="15" y="124" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">maximizes total cash.</text>
+
+    <rect x="15" y="152" width="150" height="34" rx="4" fill="#E6F5EE"/>
+    <text x="90" y="174" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">Age 80+ → Delay</text>
+
+    <!-- Factor 2 -->
+    <rect x="195" y="0" width="180" height="210" rx="8" fill="#F4F8F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <circle cx="223" cy="28" r="14" fill="#075433"/>
+    <text x="223" y="33" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="245" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Cash Needs</text>
+
+    <text x="210" y="70" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">If you lack portfolio</text>
+    <text x="210" y="88" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">assets or savings to</text>
+    <text x="210" y="106" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">bridge daily expenses,</text>
+    <text x="210" y="124" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">claiming early is vital.</text>
+
+    <rect x="210" y="152" width="150" height="34" rx="4" fill="#E6F5EE"/>
+    <text x="285" y="174" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">Cash Need → 62</text>
+
+    <!-- Factor 3 -->
+    <rect x="390" y="0" width="180" height="210" rx="8" fill="#F4F8F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <circle cx="418" cy="28" r="14" fill="#075433"/>
+    <text x="418" y="33" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="440" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Spousal Base</text>
+
+    <text x="405" y="70" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Higher earner delaying</text>
+    <text x="405" y="88" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">to 70 anchors highest</text>
+    <text x="405" y="106" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">lifetime benefit for</text>
+    <text x="405" y="124" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">surviving partner.</text>
+
+    <rect x="405" y="152" width="150" height="34" rx="4" fill="#042F2A"/>
+    <text x="480" y="174" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FF754D" text-anchor="middle">Survivor Anchor → 70</text>
+
+    <!-- Factor 4 -->
+    <rect x="585" y="0" width="195" height="210" rx="8" fill="#F4F8F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <circle cx="613" cy="28" r="14" fill="#075433"/>
+    <text x="613" y="33" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="635" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Work Status</text>
+
+    <text x="600" y="70" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Wages earned before</text>
+    <text x="600" y="88" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">FRA trigger earnings</text>
+    <text x="600" y="106" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">penalties ($1 per $2),</text>
+    <text x="600" y="124" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">making early claim moot.</text>
+
+    <rect x="600" y="152" width="165" height="34" rx="4" fill="#E6F5EE"/>
+    <text x="682" y="174" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">Working → Wait to FRA</text>
+  </g>
+
+  <!-- Bottom Note -->
+  <g transform="translate(40, 335)">
+    <rect width="780" height="42" rx="6" fill="#075433"/>
+    <text x="390" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Calculations assume zero investment returns. If investing early checks, break-even shifts later.</text>
+  </g>
+</svg>

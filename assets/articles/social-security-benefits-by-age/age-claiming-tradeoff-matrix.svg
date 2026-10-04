@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="100%" height="auto">
+  <rect width="860" height="420" fill="#FFFFFF" rx="16" stroke="#E2EBE6" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="40" y="50" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#042F2A">Claiming Age Strategic Trade-Off Matrix</text>
+  <text x="40" y="75" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#4B6358">Balancing early cash flow, lifetime longevity, and spousal financial protection</text>
+
+  <!-- Headers -->
+  <g transform="translate(40, 100)">
+    <rect width="780" height="38" rx="6" fill="#075433"/>
+    <text x="20" y="24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">AGE</text>
+    <text x="110" y="24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">PAYOUT %</text>
+    <text x="240" y="24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">PRIMARY ADVANTAGE</text>
+    <text x="520" y="24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">MAIN FINANCIAL RISK</text>
+  </g>
+
+  <!-- Rows -->
+  <g transform="translate(40, 148)">
+    <!-- Row 1: 62 -->
+    <rect y="0" width="780" height="52" rx="4" fill="#F8FCFA"/>
+    <text x="20" y="32" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#C82333">Age 62</text>
+    <text x="110" y="32" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#C82333">70.0%</text>
+    <text x="240" y="32" font-family="'Inter', sans-serif" font-size="13" fill="#042F2A">Immediate liquidity; up to 5 yrs extra checks</text>
+    <text x="520" y="32" font-family="'Inter', sans-serif" font-size="13" fill="#721C24">Permanent -30% cut; strict earnings test</text>
+
+    <!-- Row 2: 65 -->
+    <rect y="60" width="780" height="52" rx="4" fill="#FFFFFF"/>
+    <text x="20" y="92" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433">Age 65</text>
+    <text x="110" y="92" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">86.7%</text>
+    <text x="240" y="92" font-family="'Inter', sans-serif" font-size="13" fill="#042F2A">Aligns with Medicare Part B premium deduction</text>
+    <text x="520" y="92" font-family="'Inter', sans-serif" font-size="13" fill="#856404">Still reduced by 13.3% below full baseline</text>
+
+    <!-- Row 3: 67 -->
+    <rect y="120" width="780" height="52" rx="4" fill="#F8FCFA"/>
+    <text x="20" y="152" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433">Age 67</text>
+    <text x="110" y="152" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">100.0%</text>
+    <text x="240" y="152" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#042F2A">Full statutory PIA; zero wage penalty</text>
+    <text x="520" y="152" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">Misses +24% delayed credit upside</text>
+
+    <!-- Row 4: 70 -->
+    <rect y="180" width="780" height="52" rx="4" fill="#042F2A"/>
+    <text x="20" y="212" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FF754D">Age 70</text>
+    <text x="110" y="212" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#9FE7BD">124.0%</text>
+    <text x="240" y="212" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Maximum monthly check &amp; spousal survivor base</text>
+    <text x="520" y="212" font-family="'Inter', sans-serif" font-size="13" fill="#9FE7BD">Requires bridging living expenses to 70</text>
+  </g>
+</svg>

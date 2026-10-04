@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="100%" height="auto">
+  <rect width="860" height="420" fill="#FFFFFF" rx="16" stroke="#E2EBE6" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="40" y="50" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#042F2A">The Historical Shift: How FRA Evolved from 65 to 67</text>
+  <text x="40" y="75" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#4B6358">Statutory milestones legislated by the Greenspan Commission in 1983</text>
+
+  <!-- Horizontal Axis -->
+  <line x1="60" y1="210" x2="800" y2="210" stroke="#CBDDD3" stroke-width="4"/>
+
+  <!-- Milestone 1: 1937 and earlier -->
+  <g transform="translate(110, 0)">
+    <circle cx="0" cy="210" r="16" fill="#075433"/>
+    <circle cx="0" cy="210" r="6" fill="#FFFFFF"/>
+    
+    <rect x="-80" y="115" width="160" height="68" rx="8" fill="#F4F8F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <text x="0" y="142" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433" text-anchor="middle">Born ≤ 1937</text>
+    <text x="0" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">Original baseline</text>
+
+    <text x="0" y="255" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#042F2A" text-anchor="middle">FRA = 65</text>
+    <text x="0" y="278" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">20% cut at 62</text>
+  </g>
+
+  <!-- Milestone 2: 1943–1954 -->
+  <g transform="translate(370, 0)">
+    <circle cx="0" cy="210" r="16" fill="#075433"/>
+    <circle cx="0" cy="210" r="6" fill="#FFFFFF"/>
+    
+    <rect x="-80" y="115" width="160" height="68" rx="8" fill="#F4F8F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <text x="0" y="142" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433" text-anchor="middle">Born 1943–1954</text>
+    <text x="0" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">Baby Boomer plateau</text>
+
+    <text x="0" y="255" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#042F2A" text-anchor="middle">FRA = 66</text>
+    <text x="0" y="278" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">25% cut at 62</text>
+  </g>
+
+  <!-- Milestone 3: 1955–1959 -->
+  <g transform="translate(590, 0)">
+    <circle cx="0" cy="210" r="16" fill="#D39E00"/>
+    <circle cx="0" cy="210" r="6" fill="#FFFFFF"/>
+    
+    <rect x="-80" y="115" width="160" height="68" rx="8" fill="#FFFDF5" stroke="#FFEBAA" stroke-width="1.5"/>
+    <text x="0" y="142" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#856404" text-anchor="middle">Born 1955–1959</text>
+    <text x="0" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#856404" text-anchor="middle">Gradual phase-in</text>
+
+    <text x="0" y="255" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#856404" text-anchor="middle">66y + 2m to 10m</text>
+    <text x="0" y="278" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">25.8% to 29.2% cut</text>
+  </g>
+
+  <!-- Milestone 4: 1960+ -->
+  <g transform="translate(760, 0)">
+    <circle cx="0" cy="210" r="18" fill="#FF754D"/>
+    <circle cx="0" cy="210" r="6" fill="#FFFFFF"/>
+    
+    <rect x="-65" y="115" width="130" height="68" rx="8" fill="#042F2A" stroke="#075433" stroke-width="1.5"/>
+    <text x="0" y="142" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FF754D" text-anchor="middle">Born 1960+</text>
+    <text x="0" y="165" font-family="'Inter', sans-serif" font-size="11" fill="#9FE7BD" text-anchor="middle">Current cap</text>
+
+    <text x="0" y="255" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#FF754D" text-anchor="middle">FRA = 67</text>
+    <text x="0" y="278" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">30% cut at 62</text>
+  </g>
+
+  <!-- Bottom Explanatory -->
+  <g transform="translate(40, 340)">
+    <rect width="780" height="42" rx="6" fill="#F4F8F6" stroke="#D3E5DE" stroke-width="1"/>
+    <text x="390" y="26" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">Statutory Citation: Section 216(l) of Title II, Social Security Act (42 U.S. Code § 416(l)).</text>
+  </g>
+</svg>

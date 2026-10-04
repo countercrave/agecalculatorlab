@@ -18,7 +18,7 @@
     <rect x="0" y="0" width="160" height="58" rx="8" fill="#E6F5EE"/>
     <text x="20" y="35" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433">1937 or Earlier</text>
     <text x="200" y="35" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">Full Retirement Age: 65 Years</text>
-    <text x="600" y="35" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">Original statutory baseline</text>
+    <text x="740" y="35" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358" text-anchor="end">Original statutory baseline</text>
   </g>
 
   <!-- Cohort 2 -->
@@ -27,7 +27,7 @@
     <rect x="0" y="0" width="160" height="58" rx="8" fill="#E6F5EE"/>
     <text x="20" y="35" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433">1938 – 1942</text>
     <text x="200" y="35" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">65 Years + 2 to 10 Months</text>
-    <text x="600" y="35" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">First 2-month phase-in</text>
+    <text x="740" y="35" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358" text-anchor="end">First 2-month phase-in</text>
   </g>
 
   <!-- Cohort 3 -->
@@ -36,7 +36,7 @@
     <rect x="0" y="0" width="160" height="58" rx="8" fill="#075433"/>
     <text x="20" y="35" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">1943 – 1954</text>
     <text x="200" y="35" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">Full Retirement Age: 66 Years</text>
-    <text x="600" y="35" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">Stable 11-year plateau</text>
+    <text x="740" y="35" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358" text-anchor="end">Stable 11-year plateau</text>
   </g>
 
   <!-- Cohort 4 -->
@@ -45,7 +45,7 @@
     <rect x="0" y="0" width="160" height="58" rx="8" fill="#E6F5EE"/>
     <text x="20" y="35" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#075433">1955 – 1959</text>
     <text x="200" y="35" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">66 Years + 2 to 10 Months</text>
-    <text x="600" y="35" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">Second 2-month phase-in</text>
+    <text x="740" y="35" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358" text-anchor="end">Second 2-month phase-in</text>
   </g>
 
   <!-- Cohort 5 -->
@@ -54,6 +54,6 @@
     <rect x="0" y="0" width="160" height="58" rx="8" fill="#042F2A"/>
     <text x="20" y="35" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FF754D">1960 or Later</text>
     <text x="200" y="35" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Full Retirement Age: 67 Years</text>
-    <text x="600" y="35" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#9FE7BD">Current law maximum benchmark</text>
+    <text x="740" y="35" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#9FE7BD" text-anchor="end">Current law maximum benchmark</text>
   </g>
 </svg>
