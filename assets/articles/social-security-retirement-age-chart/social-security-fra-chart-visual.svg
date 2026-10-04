@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="100%" height="auto">
+  <rect width="880" height="500" fill="#FFFFFF" rx="16" stroke="#E2EBE6" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="40" y="50" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#042F2A">Official Social Security Full Retirement Age Chart</text>
+  <text x="40" y="76" font-family="'Inter', system-ui, sans-serif" font-size="14" fill="#4B6358">Standard retirement age schedule established under Title II of the Social Security Act</text>
+
+  <!-- Table Header -->
+  <g transform="translate(40, 105)">
+    <rect width="800" height="42" rx="6" fill="#075433"/>
+    <text x="25" y="27" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">BIRTH YEAR</text>
+    <text x="240" y="27" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">FULL RETIREMENT AGE (FRA)</text>
+    <text x="560" y="27" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">AGE 62 BENEFIT REDUCTION</text>
+  </g>
+
+  <!-- Rows -->
+  <g transform="translate(40, 155)">
+    <!-- Row 1 -->
+    <rect y="0" width="800" height="40" fill="#F8FCFA"/>
+    <text x="25" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#042F2A">1937 or earlier</text>
+    <text x="240" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">65</text>
+    <text x="560" y="26" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">20.00% reduction (80.0% benefit)</text>
+
+    <!-- Row 2 -->
+    <rect y="44" width="800" height="40" fill="#FFFFFF"/>
+    <text x="25" y="70" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#042F2A">1938 – 1942</text>
+    <text x="240" y="70" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">65 + 2 mos to 10 mos</text>
+    <text x="560" y="70" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">20.83% to 24.17% reduction</text>
+
+    <!-- Row 3 -->
+    <rect y="88" width="800" height="40" fill="#F8FCFA"/>
+    <text x="25" y="114" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#042F2A">1943 – 1954</text>
+    <text x="240" y="114" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">66</text>
+    <text x="560" y="114" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">25.00% reduction (75.0% benefit)</text>
+
+    <!-- Row 4 -->
+    <rect y="132" width="800" height="40" fill="#FFFFFF"/>
+    <text x="25" y="158" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#042F2A">1955</text>
+    <text x="240" y="158" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">66 + 2 months</text>
+    <text x="560" y="158" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">25.83% reduction (74.17% benefit)</text>
+
+    <!-- Row 5 -->
+    <rect y="176" width="800" height="40" fill="#F8FCFA"/>
+    <text x="25" y="202" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#042F2A">1956 – 1958</text>
+    <text x="240" y="202" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">66 + 4 mos to 8 mos</text>
+    <text x="560" y="202" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">26.67% to 28.33% reduction</text>
+
+    <!-- Row 6 -->
+    <rect y="220" width="800" height="40" fill="#FFFFFF"/>
+    <text x="25" y="246" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#042F2A">1959</text>
+    <text x="240" y="246" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433">66 + 10 months</text>
+    <text x="560" y="246" font-family="'Inter', sans-serif" font-size="13" fill="#4B6358">29.17% reduction (70.83% benefit)</text>
+
+    <!-- Row 7 -->
+    <rect y="264" width="800" height="44" rx="4" fill="#042F2A"/>
+    <text x="25" y="291" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FF754D">1960 or later</text>
+    <text x="240" y="291" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#9FE7BD">67</text>
+    <text x="560" y="291" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">30.00% reduction (70.00% benefit)</text>
+  </g>
+</svg>

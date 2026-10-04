@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="100%" height="auto">
+  <defs>
+    <filter id="shadow2" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="440" fill="#F8FCFA" rx="16"/>
+  <rect x="25" y="20" width="850" height="400" fill="#FFFFFF" rx="12" stroke="#E2EBE6" stroke-width="1.5" filter="url(#shadow2)"/>
+
+  <!-- Title -->
+  <text x="50" y="65" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#042F2A">Social Security Claiming Age Milestones</text>
+  <text x="50" y="92" font-family="'Inter', system-ui, sans-serif" font-size="14" fill="#4B6358">Benefit percentage benchmarks based on claiming age relative to Full Retirement Age (for 1960+ birth cohort)</text>
+
+  <!-- Horizontal Axis Line -->
+  <line x1="80" y1="210" x2="820" y2="210" stroke="#CBDDD3" stroke-width="4"/>
+
+  <!-- Milestone 1: Age 62 -->
+  <g transform="translate(130, 0)">
+    <circle cx="0" cy="210" r="16" fill="#D9534F"/>
+    <circle cx="0" cy="210" r="6" fill="#FFFFFF"/>
+    
+    <!-- Top Card -->
+    <rect x="-85" y="115" width="170" height="70" rx="8" fill="#FFF5F5" stroke="#F5C6CB" stroke-width="1.5"/>
+    <text x="0" y="142" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#721C24" text-anchor="middle">Age 62</text>
+    <text x="0" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#721C24" text-anchor="middle">Earliest Eligibility</text>
+
+    <!-- Bottom Description -->
+    <text x="0" y="250" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#042F2A" text-anchor="middle">~70% of FRA Benefit</text>
+    <text x="0" y="272" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">Permanent 30% reduction</text>
+    <text x="0" y="290" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">Subject to Earnings Test</text>
+  </g>
+
+  <!-- Milestone 2: Age 67 (FRA) -->
+  <g transform="translate(450, 0)">
+    <circle cx="0" cy="210" r="20" fill="#075433"/>
+    <circle cx="0" cy="210" r="8" fill="#FFFFFF"/>
+    
+    <!-- Top Card -->
+    <rect x="-105" y="105" width="210" height="80" rx="8" fill="#E6F5EE" stroke="#075433" stroke-width="2"/>
+    <text x="0" y="136" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#075433" text-anchor="middle">Age 67 (FRA)</text>
+    <text x="0" y="162" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#042F2A" text-anchor="middle">Full Statutory Milestone</text>
+
+    <!-- Bottom Description -->
+    <text x="0" y="250" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#075433" text-anchor="middle">100% of Benefit (PIA)</text>
+    <text x="0" y="272" font-family="'Inter', sans-serif" font-size="12" fill="#042F2A" text-anchor="middle">Zero early reduction penalty</text>
+    <text x="0" y="290" font-family="'Inter', sans-serif" font-size="12" fill="#042F2A" text-anchor="middle">Earnings Test disappears</text>
+  </g>
+
+  <!-- Milestone 3: Age 70 -->
+  <g transform="translate(770, 0)">
+    <circle cx="0" cy="210" r="16" fill="#FF754D"/>
+    <circle cx="0" cy="210" r="6" fill="#FFFFFF"/>
+    
+    <!-- Top Card -->
+    <rect x="-85" y="115" width="170" height="70" rx="8" fill="#FFF3EE" stroke="#FFD8CC" stroke-width="1.5"/>
+    <text x="0" y="142" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#B23815" text-anchor="middle">Age 70</text>
+    <text x="0" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#B23815" text-anchor="middle">Maximum Benefit Cap</text>
+
+    <!-- Bottom Description -->
+    <text x="0" y="250" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#042F2A" text-anchor="middle">~124% of FRA Benefit</text>
+    <text x="0" y="272" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">+8% per year delayed credit</text>
+    <text x="0" y="290" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358" text-anchor="middle">Credits stop accruing at 70</text>
+  </g>
+
+  <!-- Bottom Explanatory Banner -->
+  <g transform="translate(50, 330)">
+    <rect width="800" height="65" rx="8" fill="#042F2A"/>
+    <text x="25" y="27" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FF754D">CRITICAL DISTINCTION:</text>
+    <text x="25" y="47" font-family="'Inter', sans-serif" font-size="12" fill="#FFFFFF">Full Retirement Age is a financial calculation threshold, not mandatory retirement. You can work before, during, or after FRA.</text>
+  </g>
+</svg>

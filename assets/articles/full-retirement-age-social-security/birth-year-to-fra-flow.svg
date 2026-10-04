@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" width="100%" height="auto">
+  <defs>
+    <linearGradient id="cardGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#042F2A"/>
+      <stop offset="100%" stop-color="#075433"/>
+    </linearGradient>
+    <filter id="shadow1" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="460" fill="#F8FCFA" rx="16"/>
+  <rect x="20" y="20" width="820" height="420" fill="#FFFFFF" rx="12" stroke="#E2EBE6" stroke-width="1.5" filter="url(#shadow1)"/>
+
+  <!-- Header -->
+  <text x="50" y="65" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#042F2A">How Full Retirement Age (FRA) Is Determined</text>
+  <text x="50" y="92" font-family="'Inter', system-ui, sans-serif" font-size="14" fill="#4B6358">Statutory SSA logic mapping birth records to official claiming benchmarks</text>
+
+  <!-- Process Steps -->
+  <!-- Step 1 -->
+  <g transform="translate(50, 130)">
+    <rect width="165" height="130" rx="10" fill="#E6F5EE" stroke="#A3D9C2" stroke-width="1.5"/>
+    <circle cx="32" cy="32" r="14" fill="#075433"/>
+    <text x="32" y="37" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="55" y="36" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Birth Date</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="12" fill="#2E4D40">Exact calendar date</text>
+    <text x="20" y="86" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Includes SSA Jan 1</text>
+    <text x="20" y="102" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">prior-year attainment</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M225 195 L255 195" stroke="#075433" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="4 3"/>
+  <polygon points="255,190 265,195 255,200" fill="#075433"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(275, 130)">
+    <rect width="165" height="130" rx="10" fill="#E6F5EE" stroke="#A3D9C2" stroke-width="1.5"/>
+    <circle cx="32" cy="32" r="14" fill="#075433"/>
+    <text x="32" y="37" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="55" y="36" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Birth Year</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="12" fill="#2E4D40">Statutory cohort year</text>
+    <text x="20" y="86" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Identifies baseline</text>
+    <text x="20" y="102" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">legislated cohort tier</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <polygon points="450,190 460,195 450,200" fill="#075433"/>
+  <path d="M440 195 L450 195" stroke="#075433" stroke-width="2.5"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(470, 130)">
+    <rect width="165" height="130" rx="10" fill="#E6F5EE" stroke="#A3D9C2" stroke-width="1.5"/>
+    <circle cx="32" cy="32" r="14" fill="#075433"/>
+    <text x="32" y="37" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="55" y="36" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">SSA Schedule</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="12" fill="#2E4D40">Title II Social Security</text>
+    <text x="20" y="86" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">Applies 1983 statutory</text>
+    <text x="20" y="102" font-family="'Inter', sans-serif" font-size="11" fill="#4B6358">amendment phase-in</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <polygon points="645,190 655,195 645,200" fill="#075433"/>
+  <path d="M635 195 L645 195" stroke="#075433" stroke-width="2.5"/>
+
+  <!-- Step 4 (Result) -->
+  <g transform="translate(665, 130)">
+    <rect width="145" height="130" rx="10" fill="url(#cardGrad1)" stroke="#075433" stroke-width="1.5"/>
+    <circle cx="28" cy="32" r="14" fill="#FF754D"/>
+    <text x="28" y="37" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓</text>
+    <text x="50" y="36" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Full FRA</text>
+    <text x="18" y="68" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#9FE7BD">Years &amp; Months</text>
+    <text x="18" y="86" font-family="'Inter', sans-serif" font-size="11" fill="#D3E5DE">100% Primary Ins.</text>
+    <text x="18" y="102" font-family="'Inter', sans-serif" font-size="11" fill="#D3E5DE">Amount (PIA) date</text>
+  </g>
+
+  <!-- Examples Banner -->
+  <g transform="translate(50, 290)">
+    <rect width="760" height="110" rx="10" fill="#042F2A"/>
+    <text x="30" y="35" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#FF754D" letter-spacing="1">STATUTORY COHORT EXAMPLES</text>
+    
+    <g transform="translate(30, 50)">
+      <rect width="220" height="42" rx="6" fill="#075433"/>
+      <text x="15" y="26" font-family="'Inter', sans-serif" font-size="13" fill="#FFFFFF">Born 1943–1954: <tspan font-weight="700" fill="#9FE7BD">66 Years</tspan></text>
+    </g>
+
+    <g transform="translate(270, 50)">
+      <rect width="220" height="42" rx="6" fill="#075433"/>
+      <text x="15" y="26" font-family="'Inter', sans-serif" font-size="13" fill="#FFFFFF">Born 1957: <tspan font-weight="700" fill="#9FE7BD">66y + 6 Mo</tspan></text>
+    </g>
+
+    <g transform="translate(510, 50)">
+      <rect width="220" height="42" rx="6" fill="#075433"/>
+      <text x="15" y="26" font-family="'Inter', sans-serif" font-size="13" fill="#FFFFFF">Born 1960+: <tspan font-weight="700" fill="#FF754D">67 Years</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 440" width="100%" height="auto">
+  <rect width="840" height="440" fill="#F8FCFA" rx="16"/>
+  <rect x="25" y="20" width="790" height="400" fill="#FFFFFF" rx="12" stroke="#E2EBE6" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="50" y="65" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="700" fill="#042F2A">The 1955–1960 Phase-In Window</text>
+  <text x="50" y="90" font-family="'Inter', system-ui, sans-serif" font-size="14" fill="#4B6358">Every birth year from 1955 to 1959 increases Full Retirement Age by exactly 2 months</text>
+
+  <!-- Grid of 6 Cards -->
+  <!-- 1955 -->
+  <g transform="translate(50, 120)">
+    <rect width="230" height="110" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <text x="20" y="38" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#075433">Born 1955</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">66 yrs + 2 mos</text>
+    <text x="20" y="90" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">Earliest 62 claim: ~74.2%</text>
+  </g>
+
+  <!-- 1956 -->
+  <g transform="translate(305, 120)">
+    <rect width="230" height="110" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <text x="20" y="38" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#075433">Born 1956</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">66 yrs + 4 mos</text>
+    <text x="20" y="90" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">Earliest 62 claim: ~73.3%</text>
+  </g>
+
+  <!-- 1957 -->
+  <g transform="translate(560, 120)">
+    <rect width="230" height="110" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <text x="20" y="38" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#075433">Born 1957</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">66 yrs + 6 mos</text>
+    <text x="20" y="90" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">Earliest 62 claim: ~72.5%</text>
+  </g>
+
+  <!-- 1958 -->
+  <g transform="translate(50, 250)">
+    <rect width="230" height="110" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <text x="20" y="38" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#075433">Born 1958</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">66 yrs + 8 mos</text>
+    <text x="20" y="90" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">Earliest 62 claim: ~71.7%</text>
+  </g>
+
+  <!-- 1959 -->
+  <g transform="translate(305, 250)">
+    <rect width="230" height="110" rx="8" fill="#F4F9F6" stroke="#C4DEC3" stroke-width="1.5"/>
+    <text x="20" y="38" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#075433">Born 1959</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042F2A">66 yrs + 10 mos</text>
+    <text x="20" y="90" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">Earliest 62 claim: ~70.8%</text>
+  </g>
+
+  <!-- 1960+ -->
+  <g transform="translate(560, 250)">
+    <rect width="230" height="110" rx="8" fill="#042F2A" stroke="#075433" stroke-width="1.5"/>
+    <text x="20" y="38" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#FF754D">Born 1960 or Later</text>
+    <text x="20" y="68" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">67 Years (Flat)</text>
+    <text x="20" y="90" font-family="'Inter', sans-serif" font-size="12" fill="#9FE7BD">Earliest 62 claim: 70.0%</text>
+  </g>
+</svg>

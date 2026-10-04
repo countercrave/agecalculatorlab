@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" width="100%" height="auto">
+  <rect width="860" height="460" fill="#FFFFFF" rx="16" stroke="#E2EBE6" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="40" y="50" font-family="'Fraunces', Georgia, serif" font-size="24" font-weight="700" fill="#042F2A">Claiming Social Security at 62: The 3 Core Trade-Offs</text>
+  <text x="40" y="76" font-family="'Inter', system-ui, sans-serif" font-size="14" fill="#4B6358">Understanding what early claiming provides versus what you forfeit</text>
+
+  <!-- 3 Pillars -->
+  <!-- Pillar 1 -->
+  <g transform="translate(40, 110)">
+    <rect width="245" height="300" rx="10" fill="#F4F8F6" stroke="#D3E5DE" stroke-width="1.5"/>
+    <rect width="245" height="46" rx="10" fill="#075433"/>
+    <text x="122" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1. Immediate Access</text>
+    
+    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042F2A">Earliest Retirement Cash</text>
+    <text x="20" y="105" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Up to 60 additional monthly checks before age 67</text>
+    <text x="20" y="145" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Immediate cash flow for bridge retirement or health</text>
+    <text x="20" y="185" font-family="'Inter', sans-serif" font-size="12" fill="#4B6358">• Independence from portfolio drawdown pressure</text>
+
+    <rect x="20" y="240" width="205" height="36" rx="6" fill="#E6F5EE"/>
+    <text x="122" y="263" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433" text-anchor="middle">Advantage: Immediate Liquidity</text>
+  </g>
+
+  <!-- Pillar 2 -->
+  <g transform="translate(305, 110)">
+    <rect width="245" height="300" rx="10" fill="#FFF5F5" stroke="#F5C6CB" stroke-width="1.5"/>
+    <rect width="245" height="46" rx="10" fill="#C82333"/>
+    <text x="122" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2. Permanent Reduction</text>
+    
+    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#721C24">Up to -30% for Life</text>
+    <text x="20" y="105" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Cut is permanent; does not jump back up at FRA</text>
+    <text x="20" y="145" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Future COLA percentage increases apply to a smaller base</text>
+    <text x="20" y="185" font-family="'Inter', sans-serif" font-size="12" fill="#721C24">• Can reduce surviving spouse benefit amounts</text>
+
+    <rect x="20" y="240" width="205" height="36" rx="6" fill="#F8D7DA"/>
+    <text x="122" y="263" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#721C24" text-anchor="middle">Cost: Lower Monthly Ceiling</text>
+  </g>
+
+  <!-- Pillar 3 -->
+  <g transform="translate(570, 110)">
+    <rect width="245" height="300" rx="10" fill="#FFFBF0" stroke="#FFEEBA" stroke-width="1.5"/>
+    <rect width="245" height="46" rx="10" fill="#D39E00"/>
+    <text x="122" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="middle">3. Earnings Limit</text>
+    
+    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#856404">Retirement Earnings Test</text>
+    <text x="20" y="105" font-family="'Inter', sans-serif" font-size="12" fill="#856404">• If working while claiming, $1 withheld for every $2 earned over limit</text>
+    <text x="20" y="155" font-family="'Inter', sans-serif" font-size="12" fill="#856404">• Benefits are withheld, not lost forever (recalculated at FRA)</text>
+
+    <rect x="20" y="240" width="205" height="36" rx="6" fill="#FFF3CD"/>
+    <text x="122" y="263" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#856404" text-anchor="middle">Restriction: Wage Limitation</text>
+  </g>
+</svg>
