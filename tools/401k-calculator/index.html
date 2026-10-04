@@ -1,0 +1,1632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YM7P2RQ4Z7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YM7P2RQ4Z7');
+</script>
+<meta name="google-site-verification" content="Y5be21WsrJ2pH_gQfwHr57ucbKKUDO1wtzNvumLDzh0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>401(k) Calculator: Estimate Your Retirement Savings</title>
+<meta name="description" content="Use our 401(k) Calculator to estimate your retirement savings based on your age, balance, contributions, employer match, salary, and expected investment growth.">
+<link rel="canonical" href="https://www.agecalculatorlab.com/tools/401k-calculator/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
+<meta property="og:title" content="401(k) Calculator: Estimate Your Retirement Savings">
+<meta property="og:description" content="Estimate how your 401(k) could grow by retirement based on your current balance, age, contributions, employer match, salary and expected investment return.">
+<meta property="og:url" content="https://www.agecalculatorlab.com/tools/401k-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.agecalculatorlab.com/assets/tools/401k-calculator/featured-401k-calculator.jpg">
+<meta property="og:site_name" content="Age Calculator Lab">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="401(k) Calculator: Estimate Your Retirement Savings">
+<meta name="twitter:description" content="Project your 401(k) balance at retirement with our interactive calculator. Compare age milestones, employer matching, and contribution scenarios.">
+<meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/tools/401k-calculator/featured-401k-calculator.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/style.css?v=20260824e">
+<style>
+/* Scoped 401(k) Calculator & Financial Hub Styling */
+.tool-hero { padding: 40px 0 32px; background: linear-gradient(180deg, #f2f7f4 0%, #ffffff 100%); border-bottom: 1px solid #dce9e2; }
+.tool-hero-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: start; }
+@media(min-width: 1024px) { .tool-hero-grid { grid-template-columns: 1.1fr 1.15fr; } }
+
+.tool-hero-copy .eyebrow { display: inline-block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--editorial-sage, #075433); margin-bottom: 8px; }
+.tool-hero-copy h1 { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2.1rem, 3.8vw, 2.9rem); line-height: 1.2; color: var(--editorial-navy, #042f2a); margin: 0 0 14px; }
+.tool-hero-copy .lead { font-size: 1.1rem; line-height: 1.6; color: #2e4b3f; margin-bottom: 20px; }
+.trust-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+.trust-pill { background: #eaf3ee; color: #075433; font-size: 0.82rem; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #d5e6dc; }
+
+/* Interactive Calculator Container */
+.calculator-card { background: #ffffff; border: 2px solid #075433; border-radius: 14px; padding: 26px; box-shadow: 0 12px 32px rgba(4,47,42,0.08); }
+.calc-header { margin-bottom: 20px; border-bottom: 1px solid #e1ede6; padding-bottom: 14px; }
+.calc-header h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.45rem; color: #042f2a; margin: 0 0 4px; }
+.calc-header p { margin: 0; font-size: 0.88rem; color: #52796f; }
+
+.calc-section-title { font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.75px; color: #075433; margin: 18px 0 10px; display: flex; align-items: center; gap: 8px; }
+.calc-section-title::after { content: ""; flex: 1; height: 1px; background: #e2ede7; }
+
+.calc-form-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media(min-width: 520px) { .calc-form-grid { grid-template-columns: 1fr 1fr; } }
+
+.calc-field { display: flex; flex-direction: column; gap: 5px; }
+.calc-field.full-width { grid-column: 1 / -1; }
+.calc-field label { font-size: 0.88rem; font-weight: 700; color: #042f2a; display: flex; justify-content: space-between; align-items: baseline; }
+.calc-field label small { font-weight: 500; color: #52796f; font-size: 0.8rem; }
+.input-with-prefix { position: relative; display: flex; align-items: center; }
+.input-prefix { position: absolute; left: 12px; color: #52796f; font-weight: 700; font-size: 1rem; pointer-events: none; }
+.input-with-suffix { position: relative; display: flex; align-items: center; }
+.input-suffix { position: absolute; right: 12px; color: #52796f; font-weight: 700; font-size: 0.95rem; pointer-events: none; }
+
+.calc-field input, .calc-field select { width: 100%; padding: 10px 12px; border: 1.5px solid #c2dbcf; border-radius: 8px; font-size: 0.98rem; color: #0d2b23; background: #fdfdfd; transition: border-color 0.2s, box-shadow 0.2s; font-family: inherit; }
+.input-with-prefix input { padding-left: 28px; }
+.input-with-suffix input { padding-right: 28px; }
+.calc-field input:focus, .calc-field select:focus { outline: none; border-color: #075433; box-shadow: 0 0 0 3px rgba(7,84,51,0.15); }
+
+.field-hint { font-size: 0.78rem; color: #52796f; line-height: 1.35; margin-top: 2px; }
+.match-dynamic-note { background: #f4f9f6; border-left: 3px solid #075433; padding: 8px 12px; border-radius: 0 6px 6px 0; font-size: 0.82rem; color: #234d3d; font-weight: 600; margin-top: 6px; }
+
+/* Match Toggle */
+.toggle-row { display: flex; align-items: center; justify-content: space-between; background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 8px; padding: 10px 14px; margin-bottom: 10px; }
+.toggle-label { font-size: 0.88rem; font-weight: 700; color: #042f2a; }
+.toggle-options { display: flex; gap: 8px; }
+.toggle-btn { background: #ffffff; border: 1.5px solid #c2dbcf; color: #2e4b3f; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.15s; }
+.toggle-btn.active { background: #075433; border-color: #075433; color: #ffffff; }
+
+/* Advanced Collapsible */
+.advanced-details { margin: 16px 0 20px; border: 1px solid #dce9e2; border-radius: 8px; background: #fbfdfc; overflow: hidden; }
+.advanced-details summary { padding: 12px 16px; font-size: 0.88rem; font-weight: 700; color: #075433; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: space-between; background: #f4f9f6; }
+.advanced-content { padding: 16px; }
+
+/* Buttons */
+.calc-btn-row { display: flex; gap: 12px; margin-top: 22px; }
+.btn-calc { flex: 2; background: #075433; color: #ffffff; font-weight: 700; font-size: 1.05rem; padding: 13px 20px; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s, transform 0.15s; text-align: center; }
+.btn-calc:hover { background: #042f2a; transform: translateY(-1px); }
+.btn-reset { flex: 1; background: #f1f5f3; color: #2e4b3f; font-weight: 600; font-size: 0.95rem; padding: 13px 16px; border: 1px solid #dce9e2; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.btn-reset:hover { background: #e5ece8; }
+
+/* Results Panel */
+.results-panel { display: flex; flex-direction: column; gap: 18px; }
+.result-banner { background: #042f2a; color: #ffffff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 8px 24px rgba(4,47,42,0.12); position: relative; overflow: hidden; }
+.result-banner::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #ff754d, #ffd180, #20a67b); }
+.result-banner small { display: block; text-transform: uppercase; letter-spacing: 1.2px; color: #9fe7bd; font-size: 0.82rem; font-weight: 700; margin-bottom: 6px; }
+.result-banner .main-balance { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2.3rem, 4.5vw, 3.2rem); line-height: 1.15; color: #ffd180; margin: 4px 0 8px; font-weight: 700; }
+.result-banner .banner-subtext { font-size: 0.92rem; color: #d3e5de; line-height: 1.5; margin: 0; }
+.result-banner .today-dollars-badge { display: inline-block; background: rgba(255, 117, 77, 0.22); color: #ffab91; border: 1px solid rgba(255, 117, 77, 0.4); font-size: 0.82rem; font-weight: 700; padding: 5px 12px; border-radius: 6px; margin-top: 12px; }
+
+/* 4 Summary Cards */
+.metrics-quad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.metric-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px; }
+.metric-card .metric-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: #52796f; }
+.metric-card .metric-value { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.3rem; font-weight: 700; color: #042f2a; }
+.metric-card.highlight { background: #eef7f2; border-color: #badbc7; }
+.metric-card.highlight .metric-value { color: #075433; }
+
+/* Visual Bar Breakdown */
+.breakdown-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 16px; }
+.breakdown-card h3 { font-size: 0.92rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #042f2a; margin: 0 0 12px; }
+.stacked-bar-wrap { height: 18px; border-radius: 9px; overflow: hidden; display: flex; background: #e0ece5; margin-bottom: 12px; }
+.stacked-slice { height: 100%; transition: width 0.3s ease; }
+.slice-start { background: #52796f; }
+.slice-employee { background: #20a67b; }
+.slice-match { background: #ff754d; }
+.slice-growth { background: #042f2a; }
+
+.legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.8rem; }
+@media(min-width: 480px) { .legend-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+.legend-item { display: flex; align-items: center; gap: 6px; color: #2e4b3f; font-weight: 600; }
+.legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+
+/* Full-Width Interactive Chart & Tables Below Fold */
+.tool-visuals-strip { padding: 44px 0 20px; background: #fdfefe; border-bottom: 1px solid #e1ede6; }
+.visual-panel-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 14px; padding: 28px; box-shadow: 0 4px 18px rgba(0,0,0,0.03); margin-bottom: 32px; }
+.visual-panel-card h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.55rem; color: #042f2a; margin: 0 0 8px; }
+.visual-panel-card p.subtitle { color: #52796f; font-size: 0.94rem; margin: 0 0 20px; }
+
+/* SVG Chart */
+.chart-container { position: relative; width: 100%; overflow-x: auto; }
+.chart-svg { width: 100%; max-width: 820px; height: auto; display: block; margin: 0 auto; }
+.chart-tooltip-box { display: none; position: absolute; background: #042f2a; color: #ffffff; padding: 8px 12px; border-radius: 6px; font-size: 0.82rem; pointer-events: none; z-index: 10; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transform: translate(-50%, -120%); white-space: nowrap; }
+
+/* Scenario Grids */
+.scenario-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 18px; }
+@media(min-width: 640px) { .scenario-grid { grid-template-columns: repeat(3, 1fr); } }
+.scenario-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-align: center; }
+.scenario-card strong { display: block; font-size: 1.1rem; color: #075433; margin-bottom: 6px; font-family: var(--font-display, 'Fraunces', serif); }
+.scenario-card .scenario-balance { font-size: 1.4rem; font-weight: 800; color: #042f2a; margin-bottom: 4px; }
+.scenario-card small { font-size: 0.82rem; color: #52796f; }
+
+/* Educational Content Section */
+.tool-content-layout { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 280px 1fr; align-items: start; } }
+
+.tool-toc { background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 22px; position: sticky; top: 90px; }
+.tool-toc strong { display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.8px; color: #075433; margin-bottom: 14px; }
+.tool-toc a { display: block; font-size: 0.88rem; color: #2e4b3f; text-decoration: none; padding: 6px 0; border-bottom: 1px solid #f0f5f2; transition: color 0.15s, padding-left 0.15s; }
+.tool-toc a:hover { color: #ff754d; padding-left: 4px; }
+
+.tool-article { max-width: 820px; font-size: 1rem; line-height: 1.7; color: #1c382f; }
+.tool-article h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.85rem; color: #042f2a; margin: 44px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e1ede6; }
+.tool-article h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.35rem; color: #075433; margin: 28px 0 12px; }
+.tool-article p { margin: 0 0 18px; }
+.tool-article ul, .tool-article ol { margin: 0 0 22px; padding-left: 24px; }
+.tool-article li { margin-bottom: 8px; }
+
+/* Reference Tables */
+.table-wrap { overflow-x: auto; margin: 26px 0; border: 1px solid #dce9e2; border-radius: 10px; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+.styled-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; text-align: left; }
+.styled-table th { background: #042f2a; color: #ffffff; padding: 14px 16px; font-weight: 700; letter-spacing: 0.5px; }
+.styled-table td { padding: 12px 16px; border-bottom: 1px solid #eef4f0; color: #1c382f; }
+.styled-table tr:nth-child(even) { background: #fbfdfc; }
+.styled-table tr:hover { background: #f1f7f4; }
+.highlight-cell { font-weight: 700; color: #075433; }
+
+/* Callout Box */
+.callout-box { background: #ffffff; border-left: 4px solid #075433; border-radius: 0 10px 10px 0; padding: 22px; margin: 28px 0; box-shadow: 0 4px 14px rgba(4,47,42,0.05); }
+.callout-box.warning { border-left-color: #ff754d; background: #fffcfb; }
+.callout-box h3 { margin: 0 0 10px; color: #042f2a; font-size: 1.15rem; }
+
+/* Figures */
+.infographic-figure { margin: 34px 0; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.04); }
+.infographic-figure img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.infographic-figure figcaption { font-size: 0.84rem; color: #52796f; text-align: center; margin-top: 10px; }
+
+/* Author Profile */
+.author-card { display: flex; flex-direction: column; gap: 16px; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 24px; margin: 40px 0; }
+@media(min-width: 600px) { .author-card { flex-direction: row; align-items: flex-start; } }
+.author-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #9fe7bd; flex-shrink: 0; }
+.author-info { flex: 1; }
+.author-name { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.25rem; color: #042f2a; margin: 0 0 4px; }
+.author-meta { font-size: 0.84rem; color: #52796f; margin-bottom: 10px; }
+.author-bio { font-size: 0.92rem; line-height: 1.6; color: #2e4b3f; margin: 0; }
+
+/* FAQs */
+.faq-block { margin: 36px 0; }
+.faq-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; }
+.faq-card h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.15rem; color: #042f2a; margin: 0 0 10px; }
+.faq-card p { margin: 0; color: #2e4b3f; font-size: 0.95rem; }
+
+/* Related Grid */
+.related-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 24px 0 40px; }
+@media(min-width: 600px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+.related-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-decoration: none; color: inherit; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+.related-card:hover { transform: translateY(-3px); border-color: #ff754d; }
+.related-card small { color: #52796f; font-size: 0.78rem; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+.related-card h4 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.05rem; color: #042f2a; margin: 0 0 8px; }
+.related-card span { font-size: 0.86rem; color: #ff754d; font-weight: 600; }
+</style>
+
+<!-- JSON-LD Structured Data: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.agecalculatorlab.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Finance & Professional", "item": "https://www.agecalculatorlab.com/categories/finance-professional/" },
+    { "@type": "ListItem", "position": 3, "name": "401(k) Calculator", "item": "https://www.agecalculatorlab.com/tools/401k-calculator/" }
+  ]
+}
+</script>
+
+<!-- JSON-LD Structured Data: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "401(k) Calculator",
+  "operatingSystem": "All",
+  "applicationCategory": "FinanceApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Interactive 401(k) retirement calculator estimating future balance, employer matching contributions, salary escalation, compound investment returns, and inflation-adjusted purchasing power."
+}
+</script>
+
+<!-- JSON-LD Structured Data: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a 401(k) calculator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 401(k) calculator is an interactive retirement savings projection tool that estimates how much money you could have accumulated in your defined contribution plan by the time you retire based on starting balance, ongoing contributions, employer match, and compounding investment returns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a 401(k) calculator work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculator applies an annual compounding growth model. Each year, your starting balance earns the assumed annual return rate while your employee and employer contributions are deposited and compound over your remaining career horizon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much should I have in my 401(k) by age?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "General financial benchmarks suggest having 1x your annual salary by age 30, 3x by age 40, 6x by age 50, 8x by age 60, and 10x by age 67. However, individual targets depend heavily on personal lifestyle, Social Security benefits, debt, and retirement goals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does employer matching affect my 401(k)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Employer matching provides an immediate, guaranteed return on your contributions. For instance, a 50% match up to 6% of salary gives an extra 3% in retirement savings each year, which compounds alongside your personal funds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What rate of return should I use for a 401(k) calculator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical long-term assumption for a diversified portfolio (such as 60/40 or 80/20 stocks to bonds) is 6% to 8% nominal before inflation, or 4% to 5% after inflation. Using conservative assumptions protects against overestimating your future nest egg."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator account for inflation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, through our Advanced Options toggle. When inflation adjustment is enabled, future nominal dollars are discounted to today's purchasing power using your chosen annual inflation rate (default 3%)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator account for taxes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The calculator models pre-tax accumulation inside a traditional or Roth 401(k). Withdrawals from traditional 401(k) accounts are taxed as ordinary income at retirement, while Roth distributions are typically tax-free if qualified."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+<div class="container nav">
+<a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+<img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto">
+</a>
+<button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+<nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+<details class="nav-dropdown nav-dropdown-categories">
+<summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+<div class="nav-mega">
+<div class="nav-mega-head">
+<div><small>168 focused tools</small><strong>Main calculator categories</strong></div>
+<a href="../../categories/">View category directory →</a>
+</div>
+<div class="nav-category-grid">
+<a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+<a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+<a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>10 tools</small></a>
+<a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>15 tools</small></a>
+<a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+<a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>16 tools</small></a>
+<a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>16 tools</small></a>
+<a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+<a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+<a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a>
+<a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a>
+</div>
+<div class="nav-quick-row">
+<span>Popular</span>
+<a href="../../">Age Calculator</a>
+<a href="../../tools/social-security-age-calculator/">Social Security Age</a>
+<a href="../../tools/date-difference-calculator/">Date Difference</a>
+<a href="../../tools/401k-calculator/">401(k) Calculator</a>
+</div>
+</div>
+</details>
+
+<details class="nav-dropdown nav-dropdown-guides">
+<summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+<div class="nav-mega nav-mega-guides">
+<div class="nav-mega-head">
+<div><small>157 practical guides</small><strong>Learn the method</strong></div>
+<a href="../../articles/">Browse all guides →</a>
+</div>
+<div class="nav-guide-grid">
+<a href="../../articles/full-retirement-age-social-security/"><small>Finance &amp; Professional</small><span>What Is Full Retirement Age for Social Security?</span></a>
+<a href="../../articles/social-security-retirement-age-by-birth-year/"><small>Finance &amp; Professional</small><span>Social Security Retirement Age by Birth Year</span></a>
+<a href="../../articles/social-security-benefits-by-age/"><small>Finance &amp; Professional</small><span>How Social Security Changes by Age: 62, 65, 67 &amp; 70</span></a>
+<a href="../../articles/can-you-get-social-security-at-62/"><small>Finance &amp; Professional</small><span>Can You Get Social Security at 62? Eligibility &amp; Cuts</span></a>
+<a href="../../articles/social-security-break-even-age/"><small>Finance &amp; Professional</small><span>Social Security Break-Even Age: When Waiting Pays Off</span></a>
+<a href="../../articles/best-age-to-claim-social-security/"><small>Finance &amp; Professional</small><span>What Is the Best Age to Claim Social Security?</span></a>
+</div>
+</div>
+</details>
+
+<a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
+<a href="../../categories/">Categories</a>
+<a href="../../methodology/">Methodology</a>
+
+<div class="nav-search-wrap" id="nav-search-wrap">
+<div class="nav-search-box">
+<svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+<circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle>
+<path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+<input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autocomplete="off">
+</div>
+<div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div>
+</div>
+
+<a class="nav-cta" href="../../#calculator">Calculate age</a>
+</nav>
+</div>
+</header>
+
+<main id="main-content">
+<section class="tool-hero">
+<div class="container tool-hero-grid">
+
+<!-- Hero Copy Left -->
+<div class="tool-hero-copy">
+<span class="eyebrow">Retirement Savings Projection Engine</span>
+<h1>401(k) Calculator</h1>
+<p class="lead">Estimate how your 401(k) could grow by retirement based on your current balance, age, contributions, employer match, salary and expected investment return.</p>
+
+<div class="trust-row">
+<span class="trust-pill">✓ Compounding Growth Engine</span>
+<span class="trust-pill">✓ Employer Matching Math</span>
+<span class="trust-pill">✓ Purchasing Power Inflation Model</span>
+<span class="trust-pill">✓ 100% Private Client-Side Calculation</span>
+</div>
+
+<!-- Interactive Calculator Form -->
+<div class="calculator-card" id="calculator-section">
+<div class="calc-header">
+<h2>Calculate Your 401(k) Growth</h2>
+<p>Enter your savings details below to project your future nest egg and milestones.</p>
+</div>
+
+<form id="calc401kForm" onsubmit="event.preventDefault(); run401kCalculation();">
+
+<!-- Step 1: Age Inputs -->
+<div class="calc-section-title">Step 1 — Your Age &amp; Horizon</div>
+<div class="calc-form-grid">
+<div class="calc-field">
+<label for="currentAge">Current Age <small>(18–80)</small></label>
+<input type="number" id="currentAge" min="18" max="80" value="35" required>
+</div>
+<div class="calc-field">
+<label for="retirementAge">Target Retirement Age <small>(> Current)</small></label>
+<input type="number" id="retirementAge" min="19" max="90" value="65" required>
+</div>
+</div>
+
+<!-- Step 2 & 3: Savings & Salary -->
+<div class="calc-section-title">Step 2 &amp; 3 — Balance &amp; Income</div>
+<div class="calc-form-grid">
+<div class="calc-field">
+<label for="currentBalance">Current 401(k) Balance</label>
+<div class="input-with-prefix">
+<span class="input-prefix">$</span>
+<input type="number" id="currentBalance" min="0" step="500" value="50000" required>
+</div>
+<span class="field-hint">Starting balance (enter $0 if starting fresh)</span>
+</div>
+<div class="calc-field">
+<label for="annualSalary">Annual Salary</label>
+<div class="input-with-prefix">
+<span class="input-prefix">$</span>
+<input type="number" id="annualSalary" min="1000" step="1000" value="80000" required>
+</div>
+<span class="field-hint">Gross annual earnings</span>
+</div>
+</div>
+
+<!-- Step 4: Your Contribution -->
+<div class="calc-section-title">Step 4 — Your Contribution</div>
+<div class="calc-form-grid">
+<div class="calc-field full-width">
+<label for="contribPercent">Your Annual Contribution Rate <small id="contribDollarReadout">($6,400 / year)</small></label>
+<div class="input-with-suffix">
+<input type="number" id="contribPercent" min="0" max="100" step="0.5" value="8" required>
+<span class="input-suffix">%</span>
+</div>
+<span class="field-hint">Percentage of gross paycheck contributed to your 401(k)</span>
+</div>
+</div>
+
+<!-- Step 5: Employer Match -->
+<div class="calc-section-title">Step 5 — Employer Match</div>
+<div class="toggle-row">
+<span class="toggle-label">Does your employer offer matching funds?</span>
+<div class="toggle-options">
+<button type="button" class="toggle-btn active" id="btnMatchYes" onclick="setEmployerMatch(true)">Yes</button>
+<button type="button" class="toggle-btn" id="btnMatchNo" onclick="setEmployerMatch(false)">No</button>
+</div>
+</div>
+
+<div id="matchFieldsWrap">
+<div class="calc-form-grid">
+<div class="calc-field">
+<label for="matchPercent">Employer Matches</label>
+<div class="input-with-suffix">
+<input type="number" id="matchPercent" min="0" max="100" step="5" value="50">
+<span class="input-suffix">%</span>
+</div>
+<span class="field-hint">e.g. 50% = 50¢ on the dollar</span>
+</div>
+<div class="calc-field">
+<label for="matchLimitPercent">Up to % of Salary</label>
+<div class="input-with-suffix">
+<input type="number" id="matchLimitPercent" min="0" max="25" step="0.5" value="6">
+<span class="input-suffix">%</span>
+</div>
+<span class="field-hint">e.g. up to 6% of your earnings</span>
+</div>
+</div>
+<div class="match-dynamic-note" id="matchDynamicNote">
+Your company contributes 50% of your contributions up to 6% of salary ($2,400/year in employer match).
+</div>
+</div>
+
+<!-- Step 6 & 7: Market Return & Salary Growth -->
+<div class="calc-section-title">Step 6 &amp; 7 — Growth Assumptions</div>
+<div class="calc-form-grid">
+<div class="calc-field">
+<label for="annualReturn">Expected Annual Return</label>
+<div class="input-with-suffix">
+<input type="number" id="annualReturn" min="0" max="20" step="0.5" value="7">
+<span class="input-suffix">%</span>
+</div>
+<span class="field-hint">Long-term portfolio return (typical: 6%–8%)</span>
+</div>
+<div class="calc-field">
+<label for="salaryGrowth">Annual Salary Raise</label>
+<div class="input-with-suffix">
+<input type="number" id="salaryGrowth" min="0" max="15" step="0.5" value="3">
+<span class="input-suffix">%</span>
+</div>
+<span class="field-hint">Projected annual merit raises and COLAs</span>
+</div>
+</div>
+
+<!-- Step 8: Advanced Options -->
+<details class="advanced-details">
+<summary>
+<span>⚙️ Advanced Options &amp; Inflation Adjustment</span>
+<span aria-hidden="true">▾</span>
+</summary>
+<div class="advanced-content">
+<div class="calc-form-grid">
+<div class="calc-field">
+<label for="inflationRate">Assumed Inflation Rate</label>
+<div class="input-with-suffix">
+<input type="number" id="inflationRate" min="0" max="10" step="0.25" value="3">
+<span class="input-suffix">%</span>
+</div>
+<span class="field-hint">Historical US CPI baseline (~3.0%)</span>
+</div>
+<div class="calc-field">
+<label for="toggleInflationToday">Show Purchasing Power</label>
+<select id="toggleInflationToday">
+<option value="false">Show Future Dollars (Nominal)</option>
+<option value="true">Show Today's Dollars (Real Purchasing Power)</option>
+</select>
+<span class="field-hint">Discounts future nest egg to today's living costs</span>
+</div>
+</div>
+</div>
+</details>
+
+<div class="calc-btn-row">
+<button type="submit" class="btn-calc">Calculate My 401(k)</button>
+<button type="button" class="btn-reset" onclick="reset401kForm()">Reset</button>
+</div>
+</form>
+</div>
+</div>
+
+<!-- Results Column Right -->
+<div class="results-panel" id="resultsPanel" aria-live="polite">
+
+<!-- Main Highlight Banner -->
+<div class="result-banner">
+<small>Estimated 401(k) Balance at Retirement</small>
+<div class="main-balance" id="resMainBalance">$1,601,160</div>
+<p class="banner-subtext" id="resBannerSubtext">Projected total at age 65 across 30 years of compounding growth and systematic deposits.</p>
+<div class="today-dollars-badge" id="resTodayDollarsBadge" style="display:none;">
+Equivalent to <span id="resTodayDollarsVal">$659,657</span> in today's purchasing power
+</div>
+</div>
+
+<!-- 4 Key Result Cards -->
+<div class="metrics-quad-grid">
+<div class="metric-card">
+<span class="metric-label">Current Balance</span>
+<span class="metric-value" id="resCardStarting">$50,000</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Your Contributions</span>
+<span class="metric-value" id="resCardEmployee">$304,483</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Employer Match</span>
+<span class="metric-value" id="resCardEmployer">$114,181</span>
+</div>
+<div class="metric-card highlight">
+<span class="metric-label">Investment Growth</span>
+<span class="metric-value" id="resCardGrowth">$1,132,496</span>
+</div>
+</div>
+
+<!-- Stacked Breakdown Card -->
+<div class="breakdown-card">
+<h3>Where Your 401(k) Money Comes From</h3>
+<div class="stacked-bar-wrap" id="stackedBarWrap">
+<div class="stacked-slice slice-start" id="sliceStart" style="width: 3.1%;" title="Starting Balance"></div>
+<div class="stacked-slice slice-employee" id="sliceEmployee" style="width: 19.0%;" title="Your Deposits"></div>
+<div class="stacked-slice slice-match" id="sliceMatch" style="width: 7.1%;" title="Employer Match"></div>
+<div class="stacked-slice slice-growth" id="sliceGrowth" style="width: 70.8%;" title="Investment Return"></div>
+</div>
+<div class="legend-grid">
+<div class="legend-item"><span class="legend-dot slice-start"></span><span id="legStart">Balance (3%)</span></div>
+<div class="legend-item"><span class="legend-dot slice-employee"></span><span id="legEmp">Your Money (19%)</span></div>
+<div class="legend-item"><span class="legend-dot slice-match"></span><span id="legMatch">Match (7%)</span></div>
+<div class="legend-item"><span class="legend-dot slice-growth"></span><span id="legGrowth">Growth (71%)</span></div>
+</div>
+</div>
+
+<!-- Match Impact Comparison Card -->
+<div class="callout-box" style="margin: 0; background: #fdfefe; border: 1.5px solid #dce9e2; border-left: 5px solid #20a67b;">
+<h3 style="margin-top:0; font-size:1.05rem;">🎁 How Much Does Your Employer Match Add?</h3>
+<p style="margin-bottom:8px; font-size:0.92rem; color:#234d3d;">
+Without an employer match, your nest egg would be <strong id="resWithoutMatchVal">$1,164,570</strong>. 
+With your employer match of <span id="resMatchPctDetail">50% up to 6%</span>, company matching adds <strong id="resMatchAddedVal">$436,590</strong> in lifetime value (contributions + compounding).
+</p>
+<small style="color:#52796f;">That represents pure company-funded growth that you receive on top of your own paycheck savings.</small>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Full-Width Interactive Strip: Growth Chart & By-Age Table -->
+<section class="tool-visuals-strip">
+<div class="container">
+
+<!-- Interactive Growth Chart -->
+<div class="visual-panel-card">
+<h2>How Your 401(k) Could Grow Over Time</h2>
+<p class="subtitle">Trajectory of your portfolio balance from your current age to retirement. Hover or tap any point to inspect year-by-year deposits and compounding gains.</p>
+
+<div class="chart-container" id="chartContainer">
+<div class="chart-tooltip-box" id="chartTooltip"></div>
+<svg class="chart-svg" id="growthSvg" viewBox="0 0 800 360" role="img" aria-label="Interactive 401(k) Savings Growth Chart">
+<!-- Dynamic SVG content will be injected by JavaScript -->
+</svg>
+</div>
+</div>
+
+<!-- 401(k) Calculator by Age Table -->
+<div class="visual-panel-card">
+<h2>401(k) Calculator by Age: Milestone Projections</h2>
+<p class="subtitle">Review your expected nest egg at 5-year career intervals based on your current contributions, salary growth, and 7% investment return.</p>
+
+<div class="table-wrap">
+<table class="styled-table" id="byAgeTable">
+<thead>
+<tr>
+<th>Age Milestone</th>
+<th>Projected 401(k) Balance</th>
+<th>Your Total Deposits</th>
+<th>Employer Match Total</th>
+<th>Compound Growth</th>
+</tr>
+</thead>
+<tbody id="byAgeTbody">
+<!-- Dynamic rows injected by JavaScript -->
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- Contribution Scenarios -->
+<div class="visual-panel-card">
+<h2>What If You Contribute More? (Scenario Analysis)</h2>
+<p class="subtitle">See how bumping your personal savings rate changes your total nest egg at retirement age.</p>
+
+<div class="scenario-grid" id="scenarioGrid">
+<!-- Injected by JavaScript -->
+</div>
+</div>
+
+<!-- Return Scenarios -->
+<div class="visual-panel-card">
+<h2>How Investment Returns Affect Your 401(k)</h2>
+<p class="subtitle">Comparing conservative, moderate, and aggressive portfolio allocations. Higher returns offer higher upside but entail greater volatility.</p>
+
+<div class="scenario-grid" id="returnScenarioGrid">
+<!-- Injected by JavaScript -->
+</div>
+<p style="font-size:0.82rem; color:#628277; margin-top:14px; text-align:center;">
+*These scenarios are mathematical illustrations based on steady annualized compounding and do not constitute financial guarantees or market forecasts.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- Educational Editorial Content Section -->
+<section class="section">
+<div class="container tool-content-layout">
+
+<!-- Table of Contents Aside -->
+<aside class="tool-toc" aria-label="Table of Contents">
+<strong>Guide Navigation</strong>
+<a href="#what-is-401k-calc">1. What Is a 401(k) Calculator?</a>
+<a href="#how-calc-works">2. How This Calculator Works</a>
+<a href="#future-value-model">3. Projection Methodology</a>
+<a href="#how-much-by-age">4. How Much by Age?</a>
+<a href="#balance-by-age-factors">5. 401(k) Balance by Age</a>
+<a href="#employer-matching">6. How Employer Matching Works</a>
+<a href="#contribution-impact">7. Increasing Contributions</a>
+<a href="#investment-returns">8. Impact of Investment Returns</a>
+<a href="#growth-timeline">9. How Long to Grow?</a>
+<a href="#age-50-rules">10. What Changes at Age 50?</a>
+<a href="#retirement-age-impact">11. Retirement Age Dynamics</a>
+<a href="#enough-to-retire">12. Is Your 401(k) Enough?</a>
+<a href="#social-security-cross">13. 401(k) and Social Security</a>
+<a href="#inflation-effects">14. Accounting for Inflation</a>
+<a href="#fees-impact">15. 401(k) Fees &amp; Growth</a>
+<a href="#faq">16. Frequently Asked Questions</a>
+<a href="#related-tools">17. Related Retirement Tools</a>
+<a href="#methodology-trust">18. Methodology &amp; Trust</a>
+</aside>
+
+<!-- Article Body -->
+<article class="tool-article">
+
+<section id="what-is-401k-calc">
+<h2>1. What Is a 401(k) Calculator?</h2>
+<p>A <strong>401(k) calculator</strong> is an interactive retirement savings projection engine designed to estimate how much money you can accumulate in an employer-sponsored defined-contribution retirement plan by the time you retire. Rather than relying on guesswork, the calculator models the mathematical interaction of several core variables:</p>
+<ul>
+<li><strong>Your Current Age &amp; Target Retirement Age:</strong> Establishing the exact number of years your funds have to compound uninterrupted.</li>
+<li><strong>Starting Account Balance:</strong> The initial principal already working in the market.</li>
+<li><strong>Annual Salary &amp; Wage Escalation:</strong> Tracking your earnings over time to model growing future contributions.</li>
+<li><strong>Employee Contribution Percentage:</strong> The share of each paycheck automatically deferred into your retirement fund.</li>
+<li><strong>Employer Match Formula:</strong> The additional matching dollars contributed by your employer (often described as “free money”).</li>
+<li><strong>Assumed Investment Rate of Return:</strong> The annualized growth rate produced by your underlying asset allocation (stocks, bonds, and mutual funds).</li>
+<li><strong>Inflation Adjustment:</strong> The option to view your ending nest egg in today’s real purchasing power.</li>
+</ul>
+<p>By bringing these variables together in an annual projection framework, a 401(k) retirement calculator helps you answer fundamental planning questions: <em>Am I saving enough? What is my employer match truly worth over 30 years? And what difference does an extra 2% contribution make to my financial freedom?</em></p>
+</section>
+
+<figure class="infographic-figure">
+<img decoding="async" src="../../assets/tools/401k-calculator/featured-401k-calculator.jpg" alt="Retirement planning financial dashboard and 401k calculator analysis" width="1280" height="720" loading="lazy">
+<figcaption>A comprehensive 401(k) calculator models starting balance, career deposits, company matching, and long-term compound market growth.</figcaption>
+</figure>
+
+<section id="how-calc-works">
+<h2>2. How This 401(k) Calculator Works</h2>
+<p>The foundational arithmetic of a 401(k) projection relies on continuous deposits paired with compound interest. In financial terms, every dollar inside your 401(k) operates on a tiered sequence:</p>
+<div class="callout-box">
+<h3>The 401(k) Growth Sequence</h3>
+<p style="margin:0; font-weight:700; color:#075433; font-size:1.05rem;">
+Starting 401(k) Balance + Employee Contributions + Employer Contributions + Investment Growth = Projected Future Retirement Balance
+</p>
+</div>
+<p>Unlike a traditional savings account that yields simple interest, a 401(k) benefits from exponential compounding. In the early stages of a career (ages 20 to 35), personal deposits represent the vast majority of account growth. However, after 15 to 20 years of steady accumulation, the interest earned on previous interest dwarfs annual contributions. As demonstrated in our interactive charts, investment gains often account for over 65% to 75% of a healthy 30-year 401(k) nest egg.</p>
+</section>
+
+<section id="future-value-model">
+<h2>3. Future Value Methodology &amp; Annual Projection Model</h2>
+<p>Our 401(k) calculator executes an annual iterative simulation from your current age until your target retirement age. For each calendar year $t$ over the investment timeline ($N = 	ext{Retirement Age} - 	ext{Current Age}$):</p>
+<ol>
+<li><strong>Salary Escalation:</strong> Beginning in year two, your annual gross earnings grow by your selected salary growth percentage:
+$$	ext{Salary}_t = 	ext{Salary}_{t-1} 	imes (1 + g)$$
+where $g$ represents the annual salary growth rate (default 3%).</li>
+<li><strong>Employee Contributions:</strong> Your annual personal savings amount is derived from your salary:
+$$	ext{Employee Contribution}_t = 	ext{Salary}_t 	imes c$$
+where $c$ is your contribution percentage.</li>
+<li><strong>Employer Match Calculation:</strong> If company matching is enabled, the eligible salary portion is capped at your employer’s ceiling percentage ($m_{	ext{limit}}$) and matched at rate $m_{	ext{rate}}$:
+$$	ext{Eligible Rate} = min(c, m_{	ext{limit}})$$
+$$	ext{Employer Contribution}_t = 	ext{Salary}_t 	imes 	ext{Eligible Rate} 	imes m_{	ext{rate}}$$</li>
+<li><strong>Annual Compounding &amp; Ending Balance:</strong> Starting balance plus the year's total contributions accumulate investment growth at the expected annual rate $r$:
+$$	ext{Ending Balance}_t = (	ext{Starting Balance}_t + 	ext{Total Contributions}_t) 	imes (1 + r)$$</li>
+<li><strong>Inflation Adjustment (Optional Purchasing Power):</strong> If you select "Show in today's dollars," the nominal final balance is discounted across $N$ years at inflation rate $i$:
+$$	ext{Real Purchasing Power} = rac{	ext{Nominal Balance}}{(1 + i)^N}$$</li>
+</ol>
+<div class="callout-box warning">
+<h3>⚠️ Important Timing &amp; Modeling Assumptions</h3>
+<p>This tool utilizes an annualized deposit-and-growth model. In real workplace plans, contributions are deducted bi-weekly or semi-monthly from paychecks, and investment gains fluctuate on a daily basis. An annual model provides a transparent, reliable projection that avoids spurious precision while establishing an accurate trajectory for long-term planning.</p>
+</div>
+</section>
+
+<section id="how-much-by-age">
+<h2>4. How Much Should I Have in My 401(k) by Age?</h2>
+<p>One of the most frequently asked questions in retirement planning is: <em>“How much should I have saved in my 401(k) right now?”</em> Leading actuarial and institutional guidelines (such as Fidelity and T. Rowe Price) suggest tracking your savings against your annual salary at specific age milestones:</p>
+
+<div class="table-wrap">
+<table class="styled-table">
+<thead>
+<tr>
+<th>Age Milestone</th>
+<th>Recommended Savings Benchmark</th>
+<th>Example on $80,000 Salary</th>
+<th>Primary Focus at This Life Stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Age 30</strong></td>
+<td><strong>1× Annual Salary</strong></td>
+<td>$80,000</td>
+<td>Establishing budgeting habits, securing full employer match, eliminating consumer debt.</td>
+</tr>
+<tr>
+<td><strong>Age 35</strong></td>
+<td><strong>1.5× to 2× Annual Salary</strong></td>
+<td>$120,000 – $160,000</td>
+<td>Accelerating savings rates to 10%–15%, managing housing costs, career salary growth.</td>
+</tr>
+<tr>
+<td><strong>Age 40</strong></td>
+<td><strong>3× Annual Salary</strong></td>
+<td>$240,000</td>
+<td>Compounding reaches critical mass; investment gains start rivaling annual contributions.</td>
+</tr>
+<tr>
+<td><strong>Age 45</strong></td>
+<td><strong>4× Annual Salary</strong></td>
+<td>$320,000</td>
+<td>Mid-career peak earnings; maintaining savings discipline through family expenses.</td>
+</tr>
+<tr>
+<td><strong>Age 50</strong></td>
+<td><strong>6× Annual Salary</strong></td>
+<td>$480,000</td>
+<td>Eligible for IRS catch-up contributions; reassessing asset allocation and bond ratios.</td>
+</tr>
+<tr>
+<td><strong>Age 55</strong></td>
+<td><strong>7× to 8× Annual Salary</strong></td>
+<td>$560,000 – $640,000</td>
+<td>Evaluating early retirement target dates; tax-efficient account diversification.</td>
+</tr>
+<tr>
+<td><strong>Age 60</strong></td>
+<td><strong>8× Annual Salary</strong></td>
+<td>$640,000</td>
+<td>Utilizing enhanced SECURE 2.0 catch-up limits; modeling Social Security claiming ages.</td>
+</tr>
+<tr>
+<td><strong>Age 65–67</strong></td>
+<td><strong>10× Annual Salary</strong></td>
+<td>$800,000</td>
+<td>Entering retirement distribution phase; coordinating 401(k) withdrawals with Medicare and FRA.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Crucial Context:</strong> These benchmarks are rules of thumb rather than rigid requirements. Your actual needed balance depends on your expected retirement living expenses, healthcare needs, whether your home is fully paid off, and whether you will receive a pension or significant Social Security income.</p>
+</section>
+
+<figure class="infographic-figure">
+<img decoding="async" src="../../assets/tools/401k-calculator/401k-retirement-planning-worksheet.jpg" alt="Handwritten retirement planning worksheet and 401k milestone roadmap" width="1280" height="720" loading="lazy">
+<figcaption>Mapping age milestones, contribution percentages, and compound growth parameters on a planning worksheet.</figcaption>
+</figure>
+
+<section id="balance-by-age-factors">
+<h2>5. 401(k) Balance by Age: What Drives Account Discrepancies?</h2>
+<p>National survey data consistently reveals large disparities between median and average 401(k) balances. Understanding why balances vary across different demographics helps you focus on what you can control:</p>
+
+<div class="table-wrap">
+<table class="styled-table">
+<thead>
+<tr>
+<th>Age Cohort</th>
+<th>Primary Growth Engine</th>
+<th>Key Risk Factor or Obstacle</th>
+<th>Strategic Action Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>20–29</strong></td>
+<td>Years of future compounding</td>
+<td>Job switching, cashing out small balances</td>
+<td>Roll over old 401(k)s into an IRA; capture employer match immediately.</td>
+</tr>
+<tr>
+<td><strong>30–39</strong></td>
+<td>Contribution rate increases</td>
+<td>Lifestyle creep, child-rearing costs, mortgage debt</td>
+<td>Automate 1% annual contribution escalations every time you receive a raise.</td>
+</tr>
+<tr>
+<td><strong>40–49</strong></td>
+<td>Compound returns on existing balance</td>
+<td>Overly conservative asset allocations (too much cash)</td>
+<td>Ensure portfolio retains sufficient equity exposure for long-term growth.</td>
+</tr>
+<tr>
+<td><strong>50–59</strong></td>
+<td>Catch-up contribution capacity</td>
+<td>Taking 401(k) loans; helping adult children financially</td>
+<td>Maximize pre-tax or Roth limits; maintain a dedicated emergency fund outside the 401(k).</td>
+</tr>
+<tr>
+<td><strong>60–67</strong></td>
+<td>Capital preservation &amp; sequencing</td>
+<td>Sequence of returns risk right before retiring</td>
+<td>Build a 2-year cash buffer to avoid selling depressed equities in down markets.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="employer-matching">
+<h2>6. How Employer Matching Affects Your 401(k)</h2>
+<p>Employer matching is one of the most lucrative wealth-building incentives available to American workers. In economic terms, an employer match provides an <strong>immediate, risk-free 50% to 100% return</strong> on your invested dollars before your money even enters the market.</p>
+
+<h3>Common Matching Formulas</h3>
+<ul>
+<li><strong>Dollar-for-Dollar (100% Match):</strong> Your company matches 100% of your contributions up to a set ceiling (e.g., 4% or 5% of your salary). If you earn $80,000 and contribute 5% ($4,000), your employer deposits an additional $4,000.</li>
+<li><strong>50 Cents on the Dollar (50% Match):</strong> The most common corporate formula. The employer matches 50% of your deposits up to 6% of salary. If you contribute 6% ($4,800), your employer adds 3% ($2,400).</li>
+<li><strong>Tiered Formulas:</strong> For example, 100% on the first 3% of salary, followed by 50% on the next 2%.</li>
+</ul>
+
+<h3>The Severe Cost of Not Capturing the Full Match</h3>
+<p>Failing to contribute enough to earn your full employer match is equivalent to leaving earned compensation on the table. In our default calculator scenario ($80,000 salary with a 50% match up to 6%), the company contributes $2,400 in year one. Over a 30-year career with 3% salary growth and a 7% annual investment return, that matching money compounds into <strong>$436,590 in additional retirement wealth</strong>. Always make contributing up to the full employer match your absolute top financial priority.</p>
+
+<h3>Understanding Vesting Schedules</h3>
+<p>While your own personal contributions and their earnings always belong to you 100% immediately, employer matching dollars are subject to your company’s <em>vesting schedule</em>:</p>
+<ul>
+<li><strong>Immediate Vesting:</strong> You own 100% of the match the moment it enters the account.</li>
+<li><strong>Cliff Vesting:</strong> You own 0% of the matching funds until you complete a specified service duration (typically 2 or 3 years), after which you become 100% vested.</li>
+<li><strong>Graded Vesting:</strong> You gain ownership incrementally (e.g., 20% after year 2, 40% after year 3, up to 100% by year 6).</li>
+</ul>
+</section>
+
+<section id="contribution-impact">
+<h2>7. How Increasing Your 401(k) Contribution Can Affect Your Retirement Savings</h2>
+<p>Because compound growth accelerates over time, even small incremental bumps in your savings percentage generate dramatic differences over decades. Consider an employee earning $80,000 at age 35 with a $50,000 starting balance and a 7% return until age 65:</p>
+
+<div class="table-wrap">
+<table class="styled-table">
+<thead>
+<tr>
+<th>Employee Contribution Rate</th>
+<th>Annual Deposit (Year 1)</th>
+<th>Estimated Balance at 65</th>
+<th>Difference vs. 5% Baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5% Contribution</strong></td>
+<td>$4,000 / year</td>
+<td>$1,368,000</td>
+<td>Baseline</td>
+</tr>
+<tr>
+<td><strong>8% Contribution</strong></td>
+<td>$6,400 / year</td>
+<td>$1,601,160</td>
+<td>+$233,160 (+17%)</td>
+</tr>
+<tr>
+<td><strong>10% Contribution</strong></td>
+<td>$8,000 / year</td>
+<td>$1,756,600</td>
+<td>+$388,600 (+28%)</td>
+</tr>
+<tr>
+<td><strong>12% Contribution</strong></td>
+<td>$9,600 / year</td>
+<td>$1,912,040</td>
+<td>+$544,040 (+40%)</td>
+</tr>
+<tr>
+<td><strong>15% Contribution</strong></td>
+<td>$12,000 / year</td>
+<td>$2,145,200</td>
+<td>+$777,200 (+57%)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Notice that increasing your contribution from 8% to 12% costs $3,200 more per year in gross pay (less after accounting for pre-tax tax savings), but yields <strong>over $310,000 in additional wealth at age 65</strong>. Utilizing automated annual escalation features in your 401(k) portal is an effortless way to achieve these milestones without feeling sudden budgetary pinch.</p>
+</section>
+
+<section id="investment-returns">
+<h2>8. How Investment Returns Affect 401(k) Growth</h2>
+<p>Investment return is the exponent in the compound interest formula. Over long horizons, small differences in annualized return dramatically reshape your retirement outcome:</p>
+<ul>
+<li><strong>5% Return (Conservative / Capital Preservation):</strong> Typical of a heavy bond/fixed-income allocation (e.g., 30% equities, 70% bonds). Yields lower volatility and shallower drawdowns during market corrections, but generates significantly less total wealth over 30 years.</li>
+<li><strong>7% Return (Balanced Portfolio Baseline):</strong> A widely utilized historical benchmark for a balanced 60/40 or 70/30 stock-and-bond allocation after modest fee adjustments.</li>
+<li><strong>9% Return (Aggressive Equity Allocation):</strong> Reflective of a heavy stock-market portfolio (e.g., 90%–100% S&amp;P 500 or global equities). Delivers superior historical compound growth, but requires high emotional tolerance for sharp 20% to 40% cyclical market pullbacks.</li>
+</ul>
+<div class="callout-box">
+<h3>⚠️ Risk and Return Trade-off</h3>
+<p>Higher assumed returns produce enticing spreadsheet numbers, but higher investment returns always require taking greater market risk. Actual stock market returns do not arrive in smooth, steady annual increments; they are characterized by volatile years (+25%, -15%, +12%). Maintaining an age-appropriate asset allocation is crucial to preventing panic-selling during market lows.</p>
+</div>
+</section>
+
+<section id="growth-timeline">
+<h2>9. How Long Does It Take a 401(k) to Grow?</h2>
+<p>The trajectory of retirement savings is fundamentally non-linear. Many savers feel discouraged during their first 5 to 10 years because account balances appear to grow sluggishly. Understanding the four distinct phases of 401(k) growth provides vital psychological endurance:</p>
+<ol>
+<li><strong>Years 1 to 5 (The Foundation Phase):</strong> Growth is dominated by your payroll deductions. Investment returns account for less than 15% of total balance growth. The primary objective is establishing automated savings discipline.</li>
+<li><strong>Years 6 to 15 (The Accumulation Phase):</strong> The portfolio reaches six figures. Compound earnings begin matching your annual payroll contributions. A 10% market year produces as much financial progress as an entire year of personal saving.</li>
+<li><strong>Years 16 to 25 (The Acceleration Phase):</strong> Investment returns permanently surpass personal deposits. Even if you were to pause contributions, the existing balance generates more growth in a single good year than five years of payroll savings combined.</li>
+<li><strong>Years 26 to 35 (The Exponential Harvest Phase):</strong> Your nest egg enters its largest dollar expansion. The daily fluctuations of the portfolio can exceed your monthly paycheck, reflecting the profound power of multi-decade compounding.</li>
+</ol>
+</section>
+
+<section id="age-50-rules">
+<h2>10. What Changes for Your 401(k) Around Age 50? (Catch-Up Contributions)</h2>
+<p>When you reach age 50, IRS regulations recognize that retirement is approaching and unlock special savings provisions known as <strong>Catch-Up Contributions</strong>:</p>
+<ul>
+<li><strong>Standard Catch-Up Eligibility:</strong> Starting in the calendar year you turn 50, you are permitted to contribute an additional catch-up amount above the standard annual elective deferral limit (governed by IRC § 414(v)).</li>
+<li><strong>SECURE 2.0 Enhanced Catch-Up (Ages 60–63):</strong> Beginning under the landmark SECURE 2.0 legislation, workers who attain ages 60, 61, 62, or 63 are eligible for an even higher enhanced catch-up contribution limit (calculated as the greater of $10,000 or 150% of the regular catch-up limit).</li>
+<li><strong>Rule of 55:</strong> If you separate from service (leave your employer) in or after the calendar year you turn age 55, IRS rules permit penalty-free withdrawals from that specific employer’s 401(k) plan, avoiding the standard 10% early withdrawal penalty (though ordinary income tax still applies).</li>
+</ul>
+<p>These catch-up provisions allow mid-career professionals to rapidly build reserves during their peak earning years.</p>
+</section>
+
+<section id="retirement-age-impact">
+<h2>11. How Retirement Age Changes Your 401(k)</h2>
+<p>Choosing when to exit the workforce fundamentally alters both sides of the retirement equation: <em>how long your money compounds</em> versus <em>how many years your portfolio must fund</em>:</p>
+<ul>
+<li><strong>Retiring at Age 60:</strong> Fewer years of contributions and compounding; portfolio must sustain 25 to 35 years of living expenses. Higher reliance on taxable savings before Medicare (age 65) and Social Security.</li>
+<li><strong>Retiring at Age 65:</strong> Aligns seamlessly with Medicare eligibility; provides an additional 5 years of salary growth and compound gains compared to age 60.</li>
+<li><strong>Retiring at Age 67:</strong> Aligns with statutory Full Retirement Age for Americans born in 1960 or later, unlocking 100% of earned Social Security benefits without early claiming penalties.</li>
+<li><strong>Retiring at Age 70:</strong> Delivers maximum delayed retirement credits from Social Security (+24% permanent boost) while allowing your 401(k) five extra years to compound without withdrawals.</li>
+</ul>
+</section>
+
+<section id="enough-to-retire">
+<h2>12. Is Your 401(k) Enough to Retire?</h2>
+<p>A large 401(k) balance is exciting, but financial independence requires translating an accumulated nest egg into predictable monthly cash flow. Planners evaluate readiness using established withdrawal frameworks:</p>
+
+<h3>The 4% Safe Withdrawal Rule</h3>
+<p>The traditional 4% rule (derived from the historic Trinity Study) posits that an investor with a balanced stock-and-bond portfolio can safely withdraw 4% of their initial portfolio value in year one of retirement, adjust that dollar amount annually for inflation, and face a very low probability of exhausting funds over a 30-year horizon:</p>
+<ul>
+<li><strong>$500,000 Portfolio:</strong> $20,000 / year ($1,667 / month) in sustainable withdrawals.</li>
+<li><strong>$1,000,000 Portfolio:</strong> $40,000 / year ($3,333 / month) in sustainable withdrawals.</li>
+<li><strong>$1,500,000 Portfolio:</strong> $60,000 / year ($5,000 / month) in sustainable withdrawals.</li>
+<li><strong>$2,000,000 Portfolio:</strong> $80,000 / year ($6,667 / month) in sustainable withdrawals.</li>
+</ul>
+<p>To determine if your projected balance is enough, combine your projected 4% safe withdrawal with your anticipated Social Security benefits and any pension income. If that sum covers your anticipated retirement lifestyle, you are on track for financial freedom.</p>
+</section>
+
+<section id="social-security-cross">
+<h2>13. 401(k) Savings and Social Security: Building a Cohesive Retirement Strategy</h2>
+<p>Your 401(k) and Social Security are the twin pillars of American retirement planning. Rather than treating them as separate silos, coordinating their timing unlocks substantial synergies:</p>
+<p>If your 401(k) is well-funded, you can use 401(k) withdrawals between ages 62 and 70 to "bridge" your living expenses, enabling you to delay claiming Social Security until age 70. Every year you delay Social Security past your Full Retirement Age earns an 8% guaranteed increase in lifetime benefits—an inflation-protected return that no market asset can match.</p>
+<p>Use our dedicated retirement chronological tools to synchronize your dates:</p>
+<ul>
+<li>Calculate your exact statutory FRA using our <a href="../../tools/social-security-age-calculator/"><strong>Social Security Age Calculator</strong></a>.</li>
+<li>Explore cohort rules in our complete guide: <a href="../../articles/full-retirement-age-social-security/"><strong>What Is Full Retirement Age for Social Security?</strong></a></li>
+<li>Compare claiming ages with our guide: <a href="../../articles/social-security-benefits-by-age/"><strong>How Does Social Security Change by Age? (62, 65, 67 &amp; 70)</strong></a></li>
+</ul>
+</section>
+
+<section id="inflation-effects">
+<h2>14. Does This Calculator Account for Inflation? (Nominal vs. Real Dollars)</h2>
+<p>Over a 30-year career horizon, inflation silently erodes purchasing power. A projected balance of $1,600,000 sounds enormous today, but if average annual inflation runs at 3%, consumer prices will more than double over three decades.</p>
+<p>Under our <strong>Advanced Options</strong> panel, enabling <em>“Show Today’s Dollars”</em> discounts your nominal ending balance back to today’s cost of living:</p>
+<div class="callout-box">
+<p style="margin:0; font-size:1rem; color:#042f2a;">
+At 3% annual inflation over 30 years, <strong>$1,601,160 in future dollars</strong> provides approximately <strong>$659,657 of purchasing power</strong> in today’s goods and services.
+</p>
+</div>
+<p>Viewing both figures helps you set realistic savings targets: nominal dollars represent the actual statement balance you will see at retirement, while real purchasing power indicates the true standard of living that balance can purchase.</p>
+</section>
+
+<section id="fees-impact">
+<h2>15. How 401(k) Fees Can Affect Long-Term Growth</h2>
+<p>While this calculator models gross investment returns, real-world 401(k) accounts incur internal fees that drag down net returns. The two most common fee structures are:</p>
+<ol>
+<li><strong>Expense Ratios:</strong> The annual management fee charged by mutual funds and ETFs inside your plan (ranging from 0.03% for low-cost index funds to over 1.25% for actively managed funds).</li>
+<li><strong>Plan Administrative Fees:</strong> Recordkeeping, legal, and custodial fees charged by the 401(k) provider.</li>
+</ol>
+<p>A difference of just 1% in total annual fees can consume over 25% of your total ending wealth over a 30-year career. Review your plan’s investment menu and prioritize low-cost, broad-market index funds to keep your compounding working for you rather than financial intermediaries.</p>
+</section>
+
+<section id="faq" class="faq-block">
+<h2>16. Frequently Asked Questions</h2>
+
+<div class="faq-card">
+<h3>What is a 401(k) calculator?</h3>
+<p>A 401(k) calculator is an interactive financial planning tool that projects how retirement savings can grow over time based on your current age, target retirement age, salary, personal contributions, employer match, and assumed market growth rates.</p>
+</div>
+
+<div class="faq-card">
+<h3>How does a 401(k) calculator work?</h3>
+<p>The calculator runs an annual compounding model. Each year, your starting balance earns interest while your periodic employee contributions and company matching funds are added to principal. Compounding then applies to the combined total year after year.</p>
+</div>
+
+<div class="faq-card">
+<h3>How much should I have in my 401(k) by age?</h3>
+<p>Widely referenced financial rules of thumb suggest having approximately 1× your annual salary by age 30, 3× by age 40, 6× by age 50, 8× by age 60, and 10× by age 67. However, individual requirements depend on personal spending, debt, and Social Security entitlements.</p>
+</div>
+
+<div class="faq-card">
+<h3>How much should I have in my 401(k) at age 30?</h3>
+<p>Aiming for 1× your annual salary by age 30 is a common benchmark. For an individual earning $60,000, having $60,000 saved across retirement accounts indicates strong early career savings momentum.</p>
+</div>
+
+<div class="faq-card">
+<h3>How much should I have in my 401(k) at age 40?</h3>
+<p>A common guideline is 3× your annual salary by age 40. For an $80,000 earner, this equals $240,000. At this stage, compound market growth typically begins contributing as much to account expansion as your annual deposits.</p>
+</div>
+
+<div class="faq-card">
+<h3>How much should I have in my 401(k) at age 50?</h3>
+<p>Targeting 6× your annual salary by age 50 provides a healthy cushion. If you earn $100,000, a $600,000 nest egg positions you well as you enter catch-up contribution eligibility.</p>
+</div>
+
+<div class="faq-card">
+<h3>How much should I have in my 401(k) at age 60?</h3>
+<p>Institutional benchmarks recommend 8× your annual salary by age 60. At this juncture, planning transitions from pure capital accumulation toward risk mitigation, asset preservation, and withdrawal sequencing.</p>
+</div>
+
+<div class="faq-card">
+<h3>How much will my 401(k) be worth?</h3>
+<p>Your ultimate 401(k) balance depends on your savings rate, career duration, and asset allocation returns. Enter your actual numbers into our calculator above to generate an immediate, customized dollar projection and 5-year milestone table.</p>
+</div>
+
+<div class="faq-card">
+<h3>How does employer matching affect my 401(k)?</h3>
+<p>Employer matching provides a direct 50% to 100% immediate boost on matched dollars. Over 20 to 30 years, matching contributions compound alongside your funds, frequently adding several hundred thousand dollars to your final retirement total.</p>
+</div>
+
+<div class="faq-card">
+<h3>What rate of return should I use for a 401(k) calculator?</h3>
+<p>A realistic long-term assumption for a diversified balanced portfolio (such as 70% stocks and 30% bonds) is 6% to 8% before inflation. Using a conservative estimate (such as 6% or 7%) helps prevent overestimating your future readiness.</p>
+</div>
+
+<div class="faq-card">
+<h3>How much should I contribute to my 401(k)?</h3>
+<p>At minimum, contribute enough to capture 100% of your employer’s match. Beyond the match, aiming for a total savings rate of 12% to 15% of gross earnings (including match) is recommended by most financial planners for comprehensive retirement security.</p>
+</div>
+
+<div class="faq-card">
+<h3>Can I retire with $1 million in my 401(k)?</h3>
+<p>Yes, depending on your lifestyle and expenses. Under the 4% safe withdrawal rule, a $1,000,000 portfolio generates approximately $40,000 per year ($3,333/month) in inflation-adjusted income. Combined with Social Security, this comfortably covers living expenses for many households.</p>
+</div>
+
+<div class="faq-card">
+<h3>Does this calculator account for inflation?</h3>
+<p>Yes. Under the Advanced Options panel, you can view your projected balance in today's purchasing power using your chosen inflation rate (default 3%).</p>
+</div>
+
+<div class="faq-card">
+<h3>Does this calculator account for taxes?</h3>
+<p>No. This tool models pre-tax accumulation inside your plan. Traditional 401(k) withdrawals are subject to ordinary income taxes upon distribution, whereas qualified Roth 401(k) withdrawals are tax-free. Consult a CPA or financial advisor for personalized tax planning.</p>
+</div>
+</section>
+
+<section id="related-tools">
+<h2>17. Related Retirement &amp; Chronological Calculators</h2>
+<p>Explore verified planning tools from our Finance &amp; Professional category:</p>
+<div class="related-grid">
+<a class="related-card" href="../../tools/social-security-age-calculator/">
+<small>Finance &amp; Professional</small>
+<h4>Social Security Age Calculator</h4>
+<span>Calculate statutory Full Retirement Age, early claiming at 62, and delayed credits at 70 →</span>
+</a>
+<a class="related-card" href="../../tools/retirement-age-calculator/">
+<small>Finance &amp; Professional</small>
+<h4>Retirement Age Calculator</h4>
+<span>Find exact calendar dates when reaching chosen career retirement milestones →</span>
+</a>
+<a class="related-card" href="../../tools/years-of-service-calculator/">
+<small>Finance &amp; Professional</small>
+<h4>Years of Service Calculator</h4>
+<span>Calculate total employment duration and vested qualifying service intervals →</span>
+</a>
+<a class="related-card" href="../../tools/pension-age-date-calculator/">
+<small>Finance &amp; Professional</small>
+<h4>Pension Age Date Calculator</h4>
+<span>Calculate the calendar date when reaching target pension entitlement ages →</span>
+</a>
+</div>
+</section>
+
+<section id="methodology-trust" class="callout-box" style="margin-top:40px; border-left-color: #075433;">
+<h3>18. Calculator Methodology &amp; Analytical Integrity</h3>
+<p>This calculator uses mathematical compound interest algorithms and annual contribution escalation modeling based on Title 26 of the Internal Revenue Code governing Defined Contribution Plans. Computations are executed client-side in your web browser—no personal financial data, account numbers, or income records are transmitted, tracked, or stored on external servers.</p>
+<p><strong>Disclaimer:</strong> This 401(k) calculator provides an educational projection based on the assumptions entered by the user. It does not guarantee future investment performance, market returns, or retirement income. Actual results will vary due to market volatility, inflation, tax law changes, investment fees, and plan-specific terms. This tool is not financial, legal, investment, or tax advice.</p>
+</section>
+
+<div class="author-card">
+<img class="author-img" decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="80" height="80">
+<div class="author-info">
+<h3 class="author-name">Navjeet Kamboj</h3>
+<div class="author-meta">Author &amp; Quantitative Engine Specialist | Age Calculator Lab</div>
+<p class="author-bio">Navjeet Kamboj specializes in chronological algorithms, actuarial projections, and financial milestone modeling. He designs mathematical engines that bridge complex statutory legislation with clear, verified, and transparent user interfaces across Age Calculator Lab.</p>
+</div>
+</div>
+
+</article>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-grid footer-grid-rich">
+<div class="footer-brand-panel">
+<a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a>
+<p>Practical, verified calculators and guides for age, dates, milestones and planning. No registration required.</p>
+<a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a>
+</div>
+<div>
+<h3>Calculators</h3>
+<a href="../../">Exact Age</a>
+<a href="../../tools/chronological-age-calculator/">Chronological Age</a>
+<a href="../../tools/social-security-age-calculator/">Social Security Age</a>
+<a href="../../tools/401k-calculator/">401(k) Calculator</a>
+<a href="../../categories/">All categories</a>
+</div>
+<div class="footer-guides">
+<h3>Articles &amp; Guides</h3>
+<a href="../../articles/full-retirement-age-social-security/">Full retirement age</a>
+<a href="../../articles/social-security-retirement-age-by-birth-year/">Retirement age by birth year</a>
+<a href="../../articles/dating-age-rule/">Dating age rule</a>
+<a class="footer-guides-all" href="../../articles/">Browse all guides →</a>
+</div>
+<div>
+<h3>Explore</h3>
+<a href="../../categories/">Categories</a>
+<a href="../../methodology/">Methodology</a>
+<a href="../../about/">About</a>
+<a href="../../disclaimer/">Disclaimer</a>
+</div>
+<div>
+<h3>Important</h3>
+<a href="../../privacy/">Privacy</a>
+<a href="../../terms/">Terms</a>
+<a href="../../contact/">Contact</a>
+<a href="../../sitemap.xml">Sitemap</a>
+</div>
+</div>
+<div class="copyright">
+<span>© 2026 Age Calculator Lab.</span>
+<span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span>
+</div>
+</div>
+</footer>
+
+<script>
+// Interactive 401(k) Calculator Engine
+let isMatchEnabled = true;
+
+function setEmployerMatch(enable) {
+  isMatchEnabled = enable;
+  const btnYes = document.getElementById('btnMatchYes');
+  const btnNo = document.getElementById('btnMatchNo');
+  const fieldsWrap = document.getElementById('matchFieldsWrap');
+  if (enable) {
+    btnYes.classList.add('active');
+    btnNo.classList.remove('active');
+    fieldsWrap.style.display = 'block';
+  } else {
+    btnYes.classList.remove('active');
+    btnNo.classList.add('active');
+    fieldsWrap.style.display = 'none';
+  }
+  updateLiveReadouts();
+  run401kCalculation();
+}
+
+function updateLiveReadouts() {
+  const salary = parseFloat(document.getElementById('annualSalary').value) || 0;
+  const contribPct = parseFloat(document.getElementById('contribPercent').value) || 0;
+  const annualContrib = salary * (contribPct / 100);
+  document.getElementById('contribDollarReadout').textContent = '($' + Math.round(annualContrib).toLocaleString('en-US') + ' / year)';
+
+  if (isMatchEnabled) {
+    const matchPct = parseFloat(document.getElementById('matchPercent').value) || 0;
+    const matchLimitPct = parseFloat(document.getElementById('matchLimitPercent').value) || 0;
+    const eligiblePct = Math.min(contribPct, matchLimitPct);
+    const employerAnnual = salary * (eligiblePct / 100) * (matchPct / 100);
+    document.getElementById('matchDynamicNote').textContent = 
+      'Your company contributes ' + matchPct + '% of your contributions up to ' + matchLimitPct + '% of salary ($' + Math.round(employerAnnual).toLocaleString('en-US') + '/year in employer match).';
+  }
+}
+
+function run401kCalculation() {
+  const currentAge = parseInt(document.getElementById('currentAge').value, 10) || 35;
+  let retirementAge = parseInt(document.getElementById('retirementAge').value, 10) || 65;
+  if (retirementAge <= currentAge) {
+    retirementAge = currentAge + 1;
+    document.getElementById('retirementAge').value = retirementAge;
+  }
+  const currentBalance = parseFloat(document.getElementById('currentBalance').value) || 0;
+  const annualSalary = parseFloat(document.getElementById('annualSalary').value) || 0;
+  const contribPct = parseFloat(document.getElementById('contribPercent').value) || 0;
+  const matchPct = isMatchEnabled ? (parseFloat(document.getElementById('matchPercent').value) || 0) : 0;
+  const matchLimitPct = isMatchEnabled ? (parseFloat(document.getElementById('matchLimitPercent').value) || 0) : 0;
+  const annualReturnPct = parseFloat(document.getElementById('annualReturn').value) || 0;
+  const salaryGrowthPct = parseFloat(document.getElementById('salaryGrowth').value) || 0;
+  const inflationPct = parseFloat(document.getElementById('inflationRate').value) || 0;
+  const showTodayDollars = document.getElementById('toggleInflationToday').value === 'true';
+
+  const years = retirementAge - currentAge;
+  const returnRate = annualReturnPct / 100;
+  const salaryGrowthRate = salaryGrowthPct / 100;
+  const contribRate = contribPct / 100;
+  const mPct = matchPct / 100;
+  const mLimitRate = matchLimitPct / 100;
+
+  let balance = currentBalance;
+  let salary = annualSalary;
+  let totalEmployeeContrib = 0;
+  let totalEmployerContrib = 0;
+
+  const history = [{
+    age: currentAge,
+    year: 0,
+    salary: salary,
+    employeeContrib: 0,
+    employerContrib: 0,
+    totalContrib: 0,
+    growthThisYear: 0,
+    balance: balance
+  }];
+
+  for (let y = 1; y <= years; y++) {
+    const age = currentAge + y;
+    if (y > 1) {
+      salary = salary * (1 + salaryGrowthRate);
+    }
+    const empContrib = salary * contribRate;
+    let empMatch = 0;
+    if (isMatchEnabled) {
+      const eligibleRate = Math.min(contribRate, mLimitRate);
+      empMatch = salary * eligibleRate * mPct;
+    }
+    const yearContrib = empContrib + empMatch;
+    totalEmployeeContrib += empContrib;
+    totalEmployerContrib += empMatch;
+
+    const prevBalance = balance;
+    balance = (prevBalance + yearContrib) * (1 + returnRate);
+    const growthThisYear = balance - prevBalance - yearContrib;
+
+    history.push({
+      age: age,
+      year: y,
+      salary: salary,
+      employeeContrib: empContrib,
+      employerContrib: empMatch,
+      totalContrib: yearContrib,
+      growthThisYear: growthThisYear,
+      balance: balance
+    });
+  }
+
+  const finalBalance = balance;
+  const totalGrowth = Math.max(0, finalBalance - currentBalance - totalEmployeeContrib - totalEmployerContrib);
+  const inflationFactor = Math.pow(1 + (inflationPct / 100), years);
+  const todayDollarsVal = finalBalance / inflationFactor;
+
+  // Update Display
+  const displayBalance = showTodayDollars ? todayDollarsVal : finalBalance;
+  document.getElementById('resMainBalance').textContent = '$' + Math.round(displayBalance).toLocaleString('en-US');
+  document.getElementById('resBannerSubtext').textContent = 
+    'Projected total at age ' + retirementAge + ' across ' + years + ' years of compounding growth and systematic deposits.';
+
+  const todayBadge = document.getElementById('resTodayDollarsBadge');
+  if (!showTodayDollars) {
+    todayBadge.style.display = 'inline-block';
+    document.getElementById('resTodayDollarsVal').textContent = '$' + Math.round(todayDollarsVal).toLocaleString('en-US');
+  } else {
+    todayBadge.style.display = 'none';
+  }
+
+  // Summary Cards
+  document.getElementById('resCardStarting').textContent = '$' + Math.round(currentBalance).toLocaleString('en-US');
+  document.getElementById('resCardEmployee').textContent = '$' + Math.round(totalEmployeeContrib).toLocaleString('en-US');
+  document.getElementById('resCardEmployer').textContent = '$' + Math.round(totalEmployerContrib).toLocaleString('en-US');
+  document.getElementById('resCardGrowth').textContent = '$' + Math.round(totalGrowth).toLocaleString('en-US');
+
+  // Stacked Bar Slices
+  const totalSum = Math.max(1, currentBalance + totalEmployeeContrib + totalEmployerContrib + totalGrowth);
+  const pStart = ((currentBalance / totalSum) * 100).toFixed(1);
+  const pEmp = ((totalEmployeeContrib / totalSum) * 100).toFixed(1);
+  const pMatch = ((totalEmployerContrib / totalSum) * 100).toFixed(1);
+  const pGrowth = ((totalGrowth / totalSum) * 100).toFixed(1);
+
+  document.getElementById('sliceStart').style.width = pStart + '%';
+  document.getElementById('sliceEmployee').style.width = pEmp + '%';
+  document.getElementById('sliceMatch').style.width = pMatch + '%';
+  document.getElementById('sliceGrowth').style.width = pGrowth + '%';
+
+  document.getElementById('legStart').textContent = 'Starting (' + Math.round(pStart) + '%)';
+  document.getElementById('legEmp').textContent = 'Your Money (' + Math.round(pEmp) + '%)';
+  document.getElementById('legMatch').textContent = 'Match (' + Math.round(pMatch) + '%)';
+  document.getElementById('legGrowth').textContent = 'Growth (' + Math.round(pGrowth) + '%)';
+
+  // Without Match Calculation
+  let balNoMatch = currentBalance;
+  let salNoMatch = annualSalary;
+  for (let y = 1; y <= years; y++) {
+    if (y > 1) salNoMatch = salNoMatch * (1 + salaryGrowthRate);
+    const empContribOnly = salNoMatch * contribRate;
+    balNoMatch = (balNoMatch + empContribOnly) * (1 + returnRate);
+  }
+  const matchAdded = Math.max(0, finalBalance - balNoMatch);
+  document.getElementById('resWithoutMatchVal').textContent = '$' + Math.round(balNoMatch).toLocaleString('en-US');
+  document.getElementById('resMatchAddedVal').textContent = '$' + Math.round(matchAdded).toLocaleString('en-US');
+  document.getElementById('resMatchPctDetail').textContent = isMatchEnabled ? (matchPct + '% up to ' + matchLimitPct + '%') : '0%';
+
+  // Render Visuals
+  renderGrowthChart(history, currentAge, retirementAge);
+  renderByAgeTable(history, currentAge, retirementAge);
+  renderScenarios(currentAge, retirementAge, currentBalance, annualSalary, matchPct, matchLimitPct, returnRate, salaryGrowthRate);
+}
+
+function renderGrowthChart(history, startAge, endAge) {
+  const svg = document.getElementById('growthSvg');
+  const width = 800;
+  const height = 360;
+  const padLeft = 85;
+  const padRight = 35;
+  const padTop = 35;
+  const padBottom = 55;
+
+  const chartW = width - padLeft - padRight;
+  const chartH = height - padTop - padBottom;
+
+  const maxBal = Math.max(...history.map(d => d.balance), 10000);
+  const minBal = Math.min(0, ...history.map(d => d.balance));
+
+  // Generate SVG path points
+  const points = history.map((d, i) => {
+    const x = padLeft + (i / (history.length - 1)) * chartW;
+    const y = padTop + chartH - ((d.balance - minBal) / (maxBal - minBal)) * chartH;
+    return { x, y, data: d };
+  });
+
+  const pathD = points.map((p, i) => (i === 0 ? 'M' : 'L') + p.x.toFixed(1) + ',' + p.y.toFixed(1)).join(' ');
+  const areaD = pathD + ' L' + points[points.length - 1].x.toFixed(1) + ',' + (padTop + chartH) + ' L' + points[0].x.toFixed(1) + ',' + (padTop + chartH) + ' Z';
+
+  // Gridlines & Y labels
+  let gridSvg = '';
+  const yTicks = 5;
+  for (let i = 0; i <= yTicks; i++) {
+    const val = minBal + (i / yTicks) * (maxBal - minBal);
+    const yPos = padTop + chartH - (i / yTicks) * chartH;
+    let label = '$' + (val >= 1000000 ? (val / 1000000).toFixed(1) + 'M' : Math.round(val / 1000) + 'K');
+    if (val === 0) label = '$0';
+    gridSvg += '<line x1="' + padLeft + '" y1="' + yPos + '" x2="' + (width - padRight) + '" y2="' + yPos + '" stroke="#e2ece6" stroke-dasharray="4 4" stroke-width="1"/>';
+    gridSvg += '<text x="' + (padLeft - 12) + '" y="' + (yPos + 4) + '" fill="#52796f" font-size="12" font-family="Inter, sans-serif" text-anchor="end" font-weight="600">' + label + '</text>';
+  }
+
+  // X labels
+  let xLabelsSvg = '';
+  const step = Math.max(1, Math.round(history.length / 6));
+  for (let i = 0; i < history.length; i += step) {
+    const p = points[i];
+    xLabelsSvg += '<text x="' + p.x.toFixed(1) + '" y="' + (padTop + chartH + 24) + '" fill="#042f2a" font-size="12" font-family="Inter, sans-serif" text-anchor="middle" font-weight="700">Age ' + p.data.age + '</text>';
+    xLabelsSvg += '<line x1="' + p.x.toFixed(1) + '" y1="' + (padTop + chartH) + '" x2="' + p.x.toFixed(1) + '" y2="' + (padTop + chartH + 6) + '" stroke="#52796f" stroke-width="1.5"/>';
+  }
+  // Ensure last age is printed
+  if ((history.length - 1) % step !== 0) {
+    const lastP = points[points.length - 1];
+    xLabelsSvg += '<text x="' + lastP.x.toFixed(1) + '" y="' + (padTop + chartH + 24) + '" fill="#042f2a" font-size="12" font-family="Inter, sans-serif" text-anchor="middle" font-weight="700">Age ' + lastP.data.age + '</text>';
+  }
+
+  // Interactive dots
+  let dotsSvg = '';
+  points.forEach((p, idx) => {
+    dotsSvg += '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="5" fill="#ffffff" stroke="#075433" stroke-width="3" style="cursor:pointer; transition: transform 0.15s;" onmouseover="showChartTooltip(event, ' + p.data.age + ', ' + Math.round(p.data.balance) + ', ' + p.x + ', ' + p.y + ')" onmouseout="hideChartTooltip()"/>';
+  });
+
+  svg.innerHTML = `
+    <defs>
+      <linearGradient id="growthGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#20a67b" stop-opacity="0.38"/>
+        <stop offset="100%" stop-color="#20a67b" stop-opacity="0.02"/>
+      </linearGradient>
+    </defs>
+    ${gridSvg}
+    <path d="${areaD}" fill="url(#growthGrad)"/>
+    <path d="${pathD}" fill="none" stroke="#075433" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    ${xLabelsSvg}
+    ${dotsSvg}
+  `;
+}
+
+function showChartTooltip(evt, age, balance, x, y) {
+  const tip = document.getElementById('chartTooltip');
+  const container = document.getElementById('chartContainer');
+  const rect = container.getBoundingClientRect();
+  tip.innerHTML = '<strong>Age ' + age + ':</strong> $' + balance.toLocaleString('en-US');
+  tip.style.display = 'block';
+  // Normalize coordinates relative to container width
+  const svg = document.getElementById('growthSvg');
+  const svgRect = svg.getBoundingClientRect();
+  const relX = (x / 800) * svgRect.width;
+  const relY = (y / 360) * svgRect.height;
+  tip.style.left = relX + 'px';
+  tip.style.top = relY + 'px';
+}
+
+function hideChartTooltip() {
+  document.getElementById('chartTooltip').style.display = 'none';
+}
+
+function renderByAgeTable(history, startAge, endAge) {
+  const tbody = document.getElementById('byAgeTbody');
+  tbody.innerHTML = '';
+  
+  // Select every 5 years + start age + end age
+  const selectedIndices = new Set();
+  selectedIndices.add(0);
+  for (let i = 0; i < history.length; i++) {
+    if (history[i].age % 5 === 0) selectedIndices.add(i);
+  }
+  selectedIndices.add(history.length - 1);
+
+  const sorted = Array.from(selectedIndices).sort((a, b) => a - b);
+  let cumEmp = 0;
+  let cumMatch = 0;
+  
+  sorted.forEach(idx => {
+    const item = history[idx];
+    // Calculate cumulative deposits up to this index
+    let totalEmpToIdx = 0;
+    let totalMatchToIdx = 0;
+    for (let j = 0; j <= idx; j++) {
+      totalEmpToIdx += history[j].employeeContrib;
+      totalMatchToIdx += history[j].employerContrib;
+    }
+    const growthToIdx = Math.max(0, item.balance - history[0].balance - totalEmpToIdx - totalMatchToIdx);
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="highlight-cell">Age ${item.age}</td>
+      <td style="font-weight:700; color:#042f2a;">$${Math.round(item.balance).toLocaleString('en-US')}</td>
+      <td>$${Math.round(totalEmpToIdx).toLocaleString('en-US')}</td>
+      <td>$${Math.round(totalMatchToIdx).toLocaleString('en-US')}</td>
+      <td style="color:#075433; font-weight:600;">$${Math.round(growthToIdx).toLocaleString('en-US')}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function renderScenarios(startAge, endAge, startBal, salary, matchPct, matchLimitPct, returnRate, salaryGrowthRate) {
+  const years = endAge - startAge;
+  const contribRates = [5, 8, 10, 15, 20];
+  const grid1 = document.getElementById('scenarioGrid');
+  grid1.innerHTML = '';
+
+  contribRates.forEach(cr => {
+    let bal = startBal;
+    let sal = salary;
+    const cRate = cr / 100;
+    const mRate = matchPct / 100;
+    const mLimit = matchLimitPct / 100;
+
+    for (let y = 1; y <= years; y++) {
+      if (y > 1) sal = sal * (1 + salaryGrowthRate);
+      const emp = sal * cRate;
+      let match = 0;
+      if (isMatchEnabled) {
+        match = sal * Math.min(cRate, mLimit) * mRate;
+      }
+      bal = (bal + emp + match) * (1 + returnRate);
+    }
+
+    const card = document.createElement('div');
+    card.className = 'scenario-card';
+    card.innerHTML = `
+      <strong>${cr}% Contribution</strong>
+      <div class="scenario-balance">$${Math.round(bal).toLocaleString('en-US')}</div>
+      <small>Year 1: $${Math.round(salary * cRate).toLocaleString('en-US')} / yr</small>
+    `;
+    grid1.appendChild(card);
+  });
+
+  // Return Scenarios (5%, 7%, 9%)
+  const returnOptions = [
+    { label: '5% Conservative', rate: 0.05, desc: 'Heavy bond / low-volatility focus' },
+    { label: '7% Balanced', rate: 0.07, desc: 'Traditional 60/40 or 70/30 baseline' },
+    { label: '9% Aggressive', rate: 0.09, desc: 'High-equity index portfolio' }
+  ];
+  const grid2 = document.getElementById('returnScenarioGrid');
+  grid2.innerHTML = '';
+
+  const userContribRate = (parseFloat(document.getElementById('contribPercent').value) || 8) / 100;
+  returnOptions.forEach(opt => {
+    let bal = startBal;
+    let sal = salary;
+    for (let y = 1; y <= years; y++) {
+      if (y > 1) sal = sal * (1 + salaryGrowthRate);
+      const emp = sal * userContribRate;
+      let match = 0;
+      if (isMatchEnabled) {
+        match = sal * Math.min(userContribRate, matchLimitPct / 100) * (matchPct / 100);
+      }
+      bal = (bal + emp + match) * (1 + opt.rate);
+    }
+
+    const card = document.createElement('div');
+    card.className = 'scenario-card';
+    card.innerHTML = `
+      <strong>${opt.label}</strong>
+      <div class="scenario-balance">$${Math.round(bal).toLocaleString('en-US')}</div>
+      <small>${opt.desc}</small>
+    `;
+    grid2.appendChild(card);
+  });
+}
+
+function reset401kForm() {
+  document.getElementById('currentAge').value = 35;
+  document.getElementById('retirementAge').value = 65;
+  document.getElementById('currentBalance').value = 50000;
+  document.getElementById('annualSalary').value = 80000;
+  document.getElementById('contribPercent').value = 8;
+  document.getElementById('matchPercent').value = 50;
+  document.getElementById('matchLimitPercent').value = 6;
+  document.getElementById('annualReturn').value = 7;
+  document.getElementById('salaryGrowth').value = 3;
+  document.getElementById('inflationRate').value = 3;
+  document.getElementById('toggleInflationToday').value = 'false';
+  setEmployerMatch(true);
+}
+
+// Attach live input listeners
+document.addEventListener('DOMContentLoaded', () => {
+  const liveInputs = [
+    'currentAge', 'retirementAge', 'currentBalance', 'annualSalary', 
+    'contribPercent', 'matchPercent', 'matchLimitPercent', 'annualReturn', 
+    'salaryGrowth', 'inflationRate', 'toggleInflationToday'
+  ];
+  liveInputs.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('input', () => {
+        updateLiveReadouts();
+        run401kCalculation();
+      });
+      el.addEventListener('change', () => {
+        updateLiveReadouts();
+        run401kCalculation();
+      });
+    }
+  });
+
+  updateLiveReadouts();
+  run401kCalculation();
+});
+</script>
+<script src="../../assets/app.js?v=20260824c"></script>
+</body>
+</html>
