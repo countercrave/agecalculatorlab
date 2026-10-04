@@ -347,6 +347,11 @@ const SITE_SEARCH_INDEX = [
     "t": "Calculator"
   },
   {
+    "n": "401(k) Balance by Age: How Much Should You Have Saved?",
+    "u": "/articles/401k-balance-by-age/",
+    "t": "Guide"
+  },
+  {
     "n": "401(k) Calculator With Employer Match",
     "u": "/articles/401k-calculator-with-employer-match/",
     "t": "Guide",
@@ -365,6 +370,11 @@ const SITE_SEARCH_INDEX = [
     "n": "401(k) Calculator: Estimate Your Retirement Savings",
     "u": "/tools/401k-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "401(k) Calculator: How to Estimate Your Retirement Savings",
+    "u": "/articles/how-to-use-a-401k-calculator/",
+    "t": "Guide"
   },
   {
     "n": "5K Age Grading Explained: How to Calculate Your Age Grade",
@@ -1232,6 +1242,16 @@ const SITE_SEARCH_INDEX = [
     "t": "Guide"
   },
   {
+    "n": "How Much Can a 401(k) Grow in 5, 10, 20 or 30 Years?",
+    "u": "/articles/401k-growth-5-10-20-years/",
+    "t": "Guide"
+  },
+  {
+    "n": "How Much Do You Need in a 401(k) to Retire?",
+    "u": "/articles/how-much-do-you-need-in-a-401k-to-retire/",
+    "t": "Guide"
+  },
+  {
     "n": "How Much of Your Life Have You Spent Asleep?",
     "u": "/articles/sleep-time-lived-estimate/",
     "t": "Guide"
@@ -1934,6 +1954,11 @@ const SITE_SEARCH_INDEX = [
   {
     "n": "What Is Years of Service? Meaning, Tenure & Length of Employment",
     "u": "/articles/what-is-years-of-service/",
+    "t": "Guide"
+  },
+  {
+    "n": "What Rate of Return Should You Use for a 401(k) Calculator?",
+    "u": "/articles/401k-rate-of-return/",
     "t": "Guide"
   },
   {

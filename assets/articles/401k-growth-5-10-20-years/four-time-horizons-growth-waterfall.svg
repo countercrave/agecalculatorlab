@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="100%" height="auto" role="img" aria-label="401(k) Growth Across 5, 10, 20, and 30 Years">
+  <rect width="100%" height="100%" fill="#f4f9f6" rx="12"/>
+  <rect x="20" y="20" width="800" height="380" fill="#ffffff" rx="10" stroke="#d5e6dc" stroke-width="1.5"/>
+  <text x="40" y="55" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#042f2a">How a 401(k) Compounds: 5, 10, 20 &amp; 30-Year Horizons</text>
+  <text x="40" y="78" font-family="'Inter', sans-serif" font-size="13" fill="#5a7368">Hypothetical scenario: $50k starting balance, $900/mo total deposits (you + match), 7% annual return.</text>
+
+  <!-- Grid of 4 Horizons -->
+  <g transform="translate(45, 110)">
+    <!-- 5 Years -->
+    <rect x="0" y="0" width="165" height="250" fill="#f8faf9" rx="8" stroke="#d5e6dc"/>
+    <rect x="0" y="0" width="165" height="36" fill="#042f2a" rx="8 8 0 0"/>
+    <text x="82" y="24" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">5 Years</text>
+    <text x="82" y="65" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#075433" text-anchor="middle">$137,000</text>
+    <text x="82" y="85" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Projected Balance</text>
+    <line x1="20" y1="105" x2="145" y2="105" stroke="#e0ece5"/>
+    <text x="20" y="130" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Start: $50,000</text>
+    <text x="20" y="152" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Deposits: $54,000</text>
+    <text x="20" y="174" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#ff754d">Growth: $33,000</text>
+    <rect x="15" y="200" width="135" height="36" fill="#eaf3ee" rx="4"/>
+    <text x="82" y="222" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">Deposits = 62% of Gains</text>
+
+    <!-- 10 Years -->
+    <g transform="translate(190, 0)">
+      <rect x="0" y="0" width="165" height="250" fill="#f8faf9" rx="8" stroke="#d5e6dc"/>
+      <rect x="0" y="0" width="165" height="36" fill="#042f2a" rx="8 8 0 0"/>
+      <text x="82" y="24" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">10 Years</text>
+      <text x="82" y="65" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#075433" text-anchor="middle">$260,000</text>
+      <text x="82" y="85" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Projected Balance</text>
+      <line x1="20" y1="105" x2="145" y2="105" stroke="#e0ece5"/>
+      <text x="20" y="130" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Start: $50,000</text>
+      <text x="20" y="152" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Deposits: $108,000</text>
+      <text x="20" y="174" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#ff754d">Growth: $102,000</text>
+      <rect x="15" y="200" width="135" height="36" fill="#eaf3ee" rx="4"/>
+      <text x="82" y="222" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">Tipping Point Reached</text>
+    </g>
+
+    <!-- 20 Years -->
+    <g transform="translate(380, 0)">
+      <rect x="0" y="0" width="165" height="250" fill="#f8faf9" rx="8" stroke="#d5e6dc"/>
+      <rect x="0" y="0" width="165" height="36" fill="#042f2a" rx="8 8 0 0"/>
+      <text x="82" y="24" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">20 Years</text>
+      <text x="82" y="65" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#075433" text-anchor="middle">$672,000</text>
+      <text x="82" y="85" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Projected Balance</text>
+      <line x1="20" y1="105" x2="145" y2="105" stroke="#e0ece5"/>
+      <text x="20" y="130" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Start: $50,000</text>
+      <text x="20" y="152" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Deposits: $216,000</text>
+      <text x="20" y="174" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#ff754d">Growth: $406,000</text>
+      <rect x="15" y="200" width="135" height="36" fill="#eaf3ee" rx="4"/>
+      <text x="82" y="222" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">Growth Dominates 60%+</text>
+    </g>
+
+    <!-- 30 Years -->
+    <g transform="translate(570, 0)">
+      <rect x="0" y="0" width="175" height="250" fill="#f8faf9" rx="8" stroke="#075433" stroke-width="2"/>
+      <rect x="0" y="0" width="175" height="36" fill="#075433" rx="8 8 0 0"/>
+      <text x="87" y="24" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">30 Years</text>
+      <text x="87" y="65" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#ff754d" text-anchor="middle">$1,483,000</text>
+      <text x="87" y="85" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Projected Balance</text>
+      <line x1="20" y1="105" x2="155" y2="105" stroke="#e0ece5"/>
+      <text x="20" y="130" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Start: $50,000</text>
+      <text x="20" y="152" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Deposits: $324,000</text>
+      <text x="20" y="174" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433">Growth: $1,109,000</text>
+      <rect x="15" y="200" width="145" height="36" fill="#075433" rx="4"/>
+      <text x="87" y="222" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ffd180" text-anchor="middle">Growth = 75% of Wealth</text>
+    </g>
+  </g>
+</svg>

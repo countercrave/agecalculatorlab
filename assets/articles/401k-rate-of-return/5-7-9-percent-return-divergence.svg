@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 400" width="100%" height="auto" role="img" aria-label="5% vs 7% vs 9% Return Assumptions Over 30 Years">
+  <rect width="100%" height="100%" fill="#f4f9f6" rx="12"/>
+  <rect x="20" y="20" width="800" height="360" fill="#ffffff" rx="10" stroke="#d5e6dc" stroke-width="1.5"/>
+  <text x="40" y="55" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#042f2a">How Return Assumptions Multiply Over 30 Years</text>
+  <text x="40" y="78" font-family="'Inter', sans-serif" font-size="13" fill="#5a7368">Hypothetical $100,000 starting balance with no further deposits. A 2% difference compounds into hundreds of thousands.</text>
+
+  <!-- Path 1: 5% Conservative -->
+  <g transform="translate(50, 110)">
+    <rect width="220" height="230" fill="#f0f7f3" rx="8" stroke="#075433" stroke-width="1"/>
+    <text x="110" y="32" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042f2a" text-anchor="middle">5% Conservative</text>
+    <text x="110" y="52" font-family="'Inter', sans-serif" font-size="12" fill="#5a7368" text-anchor="middle">Bond-heavy / Near-retirement</text>
+    <line x1="20" y1="70" x2="200" y2="70" stroke="#d5e6dc"/>
+    <text x="20" y="100" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">10 Years: <tspan font-weight="700" fill="#042f2a">$162,889</tspan></text>
+    <text x="20" y="130" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">20 Years: <tspan font-weight="700" fill="#042f2a">$265,330</tspan></text>
+    <text x="20" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">30 Years: <tspan font-weight="700" fill="#075433">$432,194</tspan></text>
+    <rect x="20" y="185" width="180" height="26" fill="#075433" rx="4"/>
+    <text x="110" y="202" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Final Multiple: 4.3× Principal</text>
+  </g>
+
+  <!-- Path 2: 7% Balanced -->
+  <g transform="translate(310, 110)">
+    <rect width="220" height="230" fill="#ffffff" rx="8" stroke="#075433" stroke-width="2"/>
+    <rect width="220" height="28" fill="#075433" rx="8 8 0 0"/>
+    <text x="110" y="19" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">7% Balanced (Baseline)</text>
+    <text x="110" y="52" font-family="'Inter', sans-serif" font-size="12" fill="#5a7368" text-anchor="middle">Diversified Stock/Bond Index</text>
+    <line x1="20" y1="70" x2="200" y2="70" stroke="#d5e6dc"/>
+    <text x="20" y="100" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">10 Years: <tspan font-weight="700" fill="#042f2a">$196,715</tspan></text>
+    <text x="20" y="130" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">20 Years: <tspan font-weight="700" fill="#042f2a">$386,968</tspan></text>
+    <text x="20" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">30 Years: <tspan font-weight="700" fill="#075433">$761,225</tspan></text>
+    <rect x="20" y="185" width="180" height="26" fill="#075433" rx="4"/>
+    <text x="110" y="202" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Final Multiple: 7.6× Principal</text>
+  </g>
+
+  <!-- Path 3: 9% Aggressive -->
+  <g transform="translate(570, 110)">
+    <rect width="220" height="230" fill="#fff7f5" rx="8" stroke="#ff754d" stroke-width="1.5"/>
+    <text x="110" y="32" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#042f2a" text-anchor="middle">9% Aggressive</text>
+    <text x="110" y="52" font-family="'Inter', sans-serif" font-size="12" fill="#5a7368" text-anchor="middle">100% Equity / Long Horizon</text>
+    <line x1="20" y1="70" x2="200" y2="70" stroke="#fcdad1"/>
+    <text x="20" y="100" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">10 Years: <tspan font-weight="700" fill="#042f2a">$236,736</tspan></text>
+    <text x="20" y="130" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">20 Years: <tspan font-weight="700" fill="#042f2a">$560,441</tspan></text>
+    <text x="20" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#2e4b3f">30 Years: <tspan font-weight="700" fill="#ff754d">$1,326,767</tspan></text>
+    <rect x="20" y="185" width="180" height="26" fill="#ff754d" rx="4"/>
+    <text x="110" y="202" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Final Multiple: 13.3× Principal</text>
+  </g>
+</svg>

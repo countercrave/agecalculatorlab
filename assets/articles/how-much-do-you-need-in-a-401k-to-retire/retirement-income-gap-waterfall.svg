@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 400" width="100%" height="auto" role="img" aria-label="Calculating Your Retirement Income Gap">
+  <rect width="100%" height="100%" fill="#f4f9f6" rx="12"/>
+  <rect x="20" y="20" width="800" height="360" fill="#ffffff" rx="10" stroke="#d5e6dc" stroke-width="1.5"/>
+  <text x="40" y="55" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#042f2a">The Retirement Income Gap: How Much 401(k) Do You Need?</text>
+  <text x="40" y="78" font-family="'Inter', sans-serif" font-size="13" fill="#5a7368">Your 401(k) does not need to cover 100% of spending; it only needs to bridge the gap left after guaranteed income.</text>
+
+  <!-- Step 1: Total Spending -->
+  <g transform="translate(50, 115)">
+    <rect width="160" height="180" fill="#042f2a" rx="8"/>
+    <text x="80" y="32" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffd180" text-anchor="middle">1. Total Need</text>
+    <text x="80" y="75" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">$75,000</text>
+    <text x="80" y="98" font-family="'Inter', sans-serif" font-size="11" fill="#d3e5de" text-anchor="middle">Annual Spending</text>
+    <text x="80" y="145" font-family="'Inter', sans-serif" font-size="11" fill="#9fe7bd" text-anchor="middle">Housing, medical,</text>
+    <text x="80" y="160" font-family="'Inter', sans-serif" font-size="11" fill="#9fe7bd" text-anchor="middle">food, travel, taxes</text>
+  </g>
+
+  <!-- Minus -->
+  <text x="235" y="210" font-family="'Inter', sans-serif" font-size="28" font-weight="700" fill="#075433" text-anchor="middle">−</text>
+
+  <!-- Step 2: Social Security & Pension -->
+  <g transform="translate(260, 115)">
+    <rect width="160" height="180" fill="#eaf3ee" rx="8" stroke="#075433" stroke-width="1.5"/>
+    <text x="80" y="32" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#075433" text-anchor="middle">2. Guaranteed Income</text>
+    <text x="80" y="75" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#075433" text-anchor="middle">$35,000</text>
+    <text x="80" y="98" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Per Year</text>
+    <text x="80" y="145" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">Social Security Benefit</text>
+    <text x="80" y="160" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">+ Pension Income</text>
+  </g>
+
+  <!-- Equals -->
+  <text x="445" y="210" font-family="'Inter', sans-serif" font-size="28" font-weight="700" fill="#075433" text-anchor="middle">=</text>
+
+  <!-- Step 3: Portfolio Gap -->
+  <g transform="translate(470, 115)">
+    <rect width="160" height="180" fill="#fff7f5" rx="8" stroke="#ff754d" stroke-width="1.5"/>
+    <text x="80" y="32" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ff754d" text-anchor="middle">3. Annual 401(k) Gap</text>
+    <text x="80" y="75" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#ff754d" text-anchor="middle">$40,000</text>
+    <text x="80" y="98" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Annual Withdrawal</text>
+    <text x="80" y="145" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368">Amount needed from</text>
+    <text x="80" y="160" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368">invested portfolio</text>
+  </g>
+
+  <!-- Multiply by 25 -->
+  <text x="655" y="210" font-family="'Inter', sans-serif" font-size="24" font-weight="700" fill="#075433" text-anchor="middle">×25</text>
+
+  <!-- Step 4: Nest Egg Target -->
+  <g transform="translate(680, 115)">
+    <rect width="120" height="180" fill="#075433" rx="8"/>
+    <text x="60" y="32" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffd180" text-anchor="middle">4. Nest Egg</text>
+    <text x="60" y="75" font-family="'Fraunces', serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">$1.0M</text>
+    <text x="60" y="98" font-family="'Inter', sans-serif" font-size="10" fill="#d3e5de" text-anchor="middle">Target 401(k)</text>
+    <text x="60" y="145" font-family="'Inter', sans-serif" font-size="10" fill="#9fe7bd" text-anchor="middle">Based on 4%</text>
+    <text x="60" y="160" font-family="'Inter', sans-serif" font-size="10" fill="#9fe7bd" text-anchor="middle">withdrawal rule</text>
+  </g>
+</svg>

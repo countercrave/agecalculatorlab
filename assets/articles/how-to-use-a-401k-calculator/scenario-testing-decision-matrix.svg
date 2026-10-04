@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 380" width="100%" height="auto" role="img" aria-label="401(k) Calculator Decision Matrix">
+  <rect width="100%" height="100%" fill="#f4f9f6" rx="12"/>
+  <rect x="20" y="20" width="800" height="340" fill="#ffffff" rx="10" stroke="#d5e6dc" stroke-width="1.5"/>
+  <text x="40" y="55" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#042f2a">Testing 401(k) Scenarios: What Levers Can You Pull?</text>
+  <text x="40" y="78" font-family="'Inter', sans-serif" font-size="13" fill="#5a7368">When running the calculator, evaluate these four primary adjustments to see how they impact your retirement date.</text>
+
+  <g transform="translate(45, 110)">
+    <rect x="0" y="0" width="170" height="200" fill="#f8faf9" rx="6" stroke="#d5e6dc"/>
+    <text x="85" y="32" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#042f2a" text-anchor="middle">1. Increase Rate</text>
+    <text x="15" y="65" font-family="'Inter', sans-serif" font-size="12" fill="#2e4b3f">Bumping contribution from 6% to 10% or 15%.</text>
+    <rect x="15" y="110" width="140" height="30" fill="#eaf3ee" rx="4"/>
+    <text x="85" y="130" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">+35% to +60% Balance</text>
+    <text x="85" y="170" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Largest immediate lever</text>
+  </g>
+
+  <g transform="translate(235, 110)">
+    <rect x="0" y="0" width="170" height="200" fill="#f8faf9" rx="6" stroke="#d5e6dc"/>
+    <text x="85" y="32" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#042f2a" text-anchor="middle">2. Auto-Escalation</text>
+    <text x="15" y="65" font-family="'Inter', sans-serif" font-size="12" fill="#2e4b3f">Increasing deferral rate by 1% of salary per year.</text>
+    <rect x="15" y="110" width="140" height="30" fill="#eaf3ee" rx="4"/>
+    <text x="85" y="130" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">Pain-Free Growth</text>
+    <text x="85" y="170" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Matches annual raises</text>
+  </g>
+
+  <g transform="translate(425, 110)">
+    <rect x="0" y="0" width="170" height="200" fill="#f8faf9" rx="6" stroke="#d5e6dc"/>
+    <text x="85" y="32" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#042f2a" text-anchor="middle">3. Extend Horizon</text>
+    <text x="15" y="65" font-family="'Inter', sans-serif" font-size="12" fill="#2e4b3f">Delaying retirement from age 62 to age 65 or 67.</text>
+    <rect x="15" y="110" width="140" height="30" fill="#eaf3ee" rx="4"/>
+    <text x="85" y="130" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#075433" text-anchor="middle">+25% to +40% Extra</text>
+    <text x="85" y="170" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Time fuels compounding</text>
+  </g>
+
+  <g transform="translate(615, 110)">
+    <rect x="0" y="0" width="170" height="200" fill="#f8faf9" rx="6" stroke="#d5e6dc"/>
+    <text x="85" y="32" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#042f2a" text-anchor="middle">4. Max Out Match</text>
+    <text x="15" y="65" font-family="'Inter', sans-serif" font-size="12" fill="#2e4b3f">Ensuring 100% of company match is captured.</text>
+    <rect x="15" y="110" width="140" height="30" fill="#ff754d" rx="4"/>
+    <text x="85" y="130" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Free 50%–100% Instant ROI</text>
+    <text x="85" y="170" font-family="'Inter', sans-serif" font-size="11" fill="#5a7368" text-anchor="middle">Zero-risk financial win</text>
+  </g>
+</svg>
