@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" width="100%" height="auto" role="img" aria-label="Lifetime Impact of Employer Match">
+  <rect width="840" height="360" rx="14" fill="#042F2A"/>
+  <rect x="18" y="18" width="804" height="324" rx="10" fill="#075433" stroke="#20A67B" stroke-width="1.5"/>
+  
+  <text x="420" y="52" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="21" font-weight="700" text-anchor="middle">The 30-Year Compounding Value of an Employer Match</text>
+  <text x="420" y="76" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Comparing Lifetime Retirement Balance With vs Without Company Match</text>
+
+  <!-- Left Bar: Without Match -->
+  <g transform="translate(100, 105)">
+    <rect width="280" height="190" rx="8" fill="#042F2A" stroke="#52796F" stroke-width="1.5"/>
+    <text x="140" y="32" fill="#D3E5DE" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">Without Employer Match</text>
+    <line x1="20" y1="46" x2="260" y2="46" stroke="#52796F" stroke-width="1"/>
+    <text x="140" y="80" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="28" font-weight="700" text-anchor="middle">$1,164,570</text>
+    <text x="40" y="115" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Employee Deposits: $304,483</text>
+    <text x="40" y="137" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Employer Match: $0</text>
+    <text x="40" y="159" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="12">• Compound Growth: $810,087</text>
+    <text x="140" y="182" fill="#52796F" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">100% funded from your paychecks</text>
+  </g>
+
+  <!-- Right Bar: With Match -->
+  <g transform="translate(460, 105)">
+    <rect width="280" height="190" rx="8" fill="#042F2A" stroke="#FF754D" stroke-width="2"/>
+    <text x="140" y="32" fill="#FFD180" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">With Employer Match</text>
+    <line x1="20" y1="46" x2="260" y2="46" stroke="#FF754D" stroke-width="1"/>
+    <text x="140" y="80" fill="#FF754D" font-family="'Fraunces', serif" font-size="28" font-weight="700" text-anchor="middle">$1,601,160</text>
+    <text x="40" y="115" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Employee Deposits: $304,483</text>
+    <text x="40" y="137" fill="#FFAB91" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Employer Match: $114,181</text>
+    <text x="40" y="159" fill="#FFD180" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Compound Growth: $1,132,496</text>
+    <text x="140" y="182" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">+$436,590 (+37.5%) in Extra Wealth</text>
+  </g>
+
+  <text x="420" y="320" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">
+    Notice: $114k in company matching generates over $322k in additional market compound growth!
+  </text>
+</svg>

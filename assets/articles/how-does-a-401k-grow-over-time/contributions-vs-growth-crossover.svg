@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" width="100%" height="auto" role="img" aria-label="Contributions vs Growth Crossover Phases">
+  <rect width="840" height="360" rx="14" fill="#042F2A"/>
+  <rect x="18" y="18" width="804" height="324" rx="10" fill="#075433" stroke="#20A67B" stroke-width="1.5"/>
+  
+  <text x="420" y="52" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="21" font-weight="700" text-anchor="middle">The 4 Distinct Phases of 401(k) Growth</text>
+  <text x="420" y="76" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Tracking the transition from personal effort to passive market compounding</text>
+
+  <g transform="translate(45, 105)">
+    <!-- Phase 1 -->
+    <rect x="0" y="0" width="180" height="180" rx="8" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <text x="90" y="28" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="15" font-weight="700" text-anchor="middle">Phase 1: Foundation</text>
+    <text x="90" y="48" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Years 1 to 5</text>
+    <line x1="20" y1="60" x2="160" y2="60" stroke="#20A67B" stroke-width="1"/>
+    <text x="20" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12">• Deposits = 85%+</text>
+    <text x="20" y="108" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Market gains = 15%</text>
+    <text x="20" y="131" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Habit building</text>
+    <text x="90" y="160" fill="#FFD180" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">High Effort / Low Multiplier</text>
+
+    <!-- Phase 2 -->
+    <rect x="195" y="0" width="180" height="180" rx="8" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <text x="285" y="28" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="15" font-weight="700" text-anchor="middle">Phase 2: Accumulation</text>
+    <text x="285" y="48" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Years 6 to 15</text>
+    <line x1="215" y1="60" x2="355" y2="60" stroke="#20A67B" stroke-width="1"/>
+    <text x="215" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12">• Six-figure nest egg</text>
+    <text x="215" y="108" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Returns match deposits</text>
+    <text x="215" y="131" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Upward momentum</text>
+    <text x="285" y="160" fill="#FFD180" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">The Critical Crossover</text>
+
+    <!-- Phase 3 -->
+    <rect x="390" y="0" width="180" height="180" rx="8" fill="#042F2A" stroke="#FF754D" stroke-width="1.5"/>
+    <text x="480" y="28" fill="#FFD180" font-family="'Fraunces', serif" font-size="15" font-weight="700" text-anchor="middle">Phase 3: Acceleration</text>
+    <text x="480" y="48" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Years 16 to 25</text>
+    <line x1="410" y1="60" x2="550" y2="60" stroke="#FF754D" stroke-width="1"/>
+    <text x="410" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12">• Returns surpass savings</text>
+    <text x="410" y="108" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• 10% gain > annual pay</text>
+    <text x="410" y="131" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Catch-up eligible</text>
+    <text x="480" y="160" fill="#FF754D" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Compounding Leads Growth</text>
+
+    <!-- Phase 4 -->
+    <rect x="585" y="0" width="165" height="180" rx="8" fill="#042F2A" stroke="#FFD180" stroke-width="2"/>
+    <text x="667" y="28" fill="#FFD180" font-family="'Fraunces', serif" font-size="15" font-weight="700" text-anchor="middle">Phase 4: Harvest</text>
+    <text x="667" y="48" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Years 26 to 35</text>
+    <line x1="605" y1="60" x2="735" y2="60" stroke="#FFD180" stroke-width="1"/>
+    <text x="605" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12">• Millions accumulated</text>
+    <text x="605" y="108" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Growth is 75%+ total</text>
+    <text x="605" y="131" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Distribution prep</text>
+    <text x="667" y="160" fill="#FFD180" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Exponential Maturity</text>
+  </g>
+
+  <text x="420" y="320" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">
+    Staying invested through market corrections is the non-negotiable prerequisite to reaching Phases 3 and 4.
+  </text>
+</svg>

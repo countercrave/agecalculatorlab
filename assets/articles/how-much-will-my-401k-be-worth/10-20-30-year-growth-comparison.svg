@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" width="100%" height="auto" role="img" aria-label="10, 20, and 30 Year 401k Growth Comparison">
+  <rect width="840" height="360" rx="14" fill="#042F2A"/>
+  <rect x="18" y="18" width="804" height="324" rx="10" fill="#075433" stroke="#20A67B" stroke-width="1.5"/>
+  
+  <text x="420" y="52" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="21" font-weight="700" text-anchor="middle">Exponential Horizon: 10 vs 20 vs 30 Years of Growth</text>
+  <text x="420" y="76" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Starting with $50,000 Balance + $8,800/yr Total Deposits at 7% Annual Return</text>
+
+  <!-- 10 Year Column -->
+  <g transform="translate(65, 105)">
+    <rect width="210" height="190" rx="8" fill="#042F2A" stroke="#52796F" stroke-width="1.5"/>
+    <text x="105" y="34" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="18" font-weight="700" text-anchor="middle">10 Years Invested</text>
+    <text x="105" y="66" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="24" font-weight="700" text-anchor="middle">~$230,000</text>
+    <line x1="20" y1="80" x2="190" y2="80" stroke="#20A67B" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="20" y="106" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Deposits: $88,000</text>
+    <text x="20" y="128" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Start Capital: $50,000</text>
+    <text x="20" y="150" fill="#FFD180" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Growth: $92,000 (40%)</text>
+    <text x="105" y="174" fill="#52796F" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Principal dominates balance</text>
+  </g>
+
+  <!-- 20 Year Column -->
+  <g transform="translate(315, 105)">
+    <rect width="210" height="190" rx="8" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <text x="105" y="34" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="18" font-weight="700" text-anchor="middle">20 Years Invested</text>
+    <text x="105" y="66" fill="#FFD180" font-family="'Fraunces', serif" font-size="24" font-weight="700" text-anchor="middle">~$590,000</text>
+    <line x1="20" y1="80" x2="190" y2="80" stroke="#20A67B" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="20" y="106" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Deposits: $176,000</text>
+    <text x="20" y="128" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Start Capital: $50,000</text>
+    <text x="20" y="150" fill="#FFD180" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Growth: $364,000 (62%)</text>
+    <text x="105" y="174" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Growth doubles contributions</text>
+  </g>
+
+  <!-- 30 Year Column -->
+  <g transform="translate(565, 105)">
+    <rect width="210" height="190" rx="8" fill="#042F2A" stroke="#FF754D" stroke-width="2"/>
+    <text x="105" y="34" fill="#FFD180" font-family="'Fraunces', serif" font-size="18" font-weight="700" text-anchor="middle">30 Years Invested</text>
+    <text x="105" y="66" fill="#FF754D" font-family="'Fraunces', serif" font-size="24" font-weight="700" text-anchor="middle">~$1,350,000</text>
+    <line x1="20" y1="80" x2="190" y2="80" stroke="#FF754D" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="20" y="106" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Deposits: $264,000</text>
+    <text x="20" y="128" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Start Capital: $50,000</text>
+    <text x="20" y="150" fill="#FFD180" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Growth: $1,036,000 (77%)</text>
+    <text x="105" y="174" fill="#FFAB91" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Growth delivers 3/4 of nest egg</text>
+  </g>
+
+  <text x="420" y="322" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">
+    Notice how the final 10 years (from year 20 to 30) creates more wealth ($760,000) than the entire first 20 years combined!
+  </text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 380" width="100%" height="auto" role="img" aria-label="Two People Same Age Comparison Diagram">
+  <rect width="840" height="380" rx="14" fill="#042F2A"/>
+  <rect x="18" y="18" width="804" height="344" rx="10" fill="#075433" stroke="#20A67B" stroke-width="1.5"/>
+  
+  <text x="420" y="52" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="21" font-weight="700" text-anchor="middle">Why Age Alone Does Not Determine Your 401(k) Target</text>
+  <text x="420" y="76" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Comparing Two 40-Year-Old Professionals With Identical 10% Savings Rates</text>
+
+  <!-- Column Left: Person A -->
+  <rect x="45" y="102" width="350" height="230" rx="8" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+  <rect x="45" y="102" width="350" height="38" rx="8" fill="#0B442D"/>
+  <text x="220" y="126" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">Person A: High Income + Match</text>
+  
+  <text x="65" y="162" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">• Current Age: 40</text>
+  <text x="65" y="186" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13">• Annual Salary: $100,000</text>
+  <text x="65" y="210" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13">• Current Balance: $150,000 (1.5× Salary)</text>
+  <text x="65" y="234" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13">• Employee Deposit: $10,000 / year (10%)</text>
+  <text x="65" y="258" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13">• Employer Match: $3,000 / year (50% up to 6%)</text>
+  <line x1="65" y1="272" x2="375" y2="272" stroke="#20A67B" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="65" y="296" fill="#FFD180" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Projected at 65 (7% return): ~$1.88M</text>
+  <text x="65" y="318" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="12">Annual retirement income need: ~$80,000</text>
+
+  <!-- Column Right: Person B -->
+  <rect x="445" y="102" width="350" height="230" rx="8" fill="#042F2A" stroke="#FF754D" stroke-width="1.5"/>
+  <rect x="445" y="102" width="350" height="38" rx="8" fill="#402016"/>
+  <text x="620" y="126" fill="#FFD180" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">Person B: Lower Income &amp; Expenses</text>
+  
+  <text x="465" y="162" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">• Current Age: 40</text>
+  <text x="465" y="186" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13">• Annual Salary: $60,000</text>
+  <text x="465" y="210" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13">• Current Balance: $50,000 (0.8× Salary)</text>
+  <text x="465" y="234" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13">• Employee Deposit: $6,000 / year (10%)</text>
+  <text x="465" y="258" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13">• Employer Match: $0 (No company match)</text>
+  <line x1="465" y1="272" x2="775" y2="272" stroke="#FF754D" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="465" y="296" fill="#FFD180" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Projected at 65 (7% return): ~$790K</text>
+  <text x="465" y="318" fill="#FFAB91" font-family="'Inter', sans-serif" font-size="12">Annual retirement income need: ~$45,000</text>
+</svg>

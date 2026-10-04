@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" width="100%" height="auto" role="img" aria-label="401k Savings Milestones by Age Spectrum">
+  <rect width="860" height="380" rx="14" fill="#042F2A"/>
+  <rect x="18" y="18" width="824" height="344" rx="10" fill="#075433" stroke="#20A67B" stroke-width="1.5"/>
+  
+  <text x="430" y="52" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="21" font-weight="700" text-anchor="middle">Institutional 401(k) Savings Milestones by Age</text>
+  <text x="430" y="76" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Multiples of Annual Gross Salary (General Planning Benchmarks)</text>
+  
+  <!-- Horizontal Milestone Axis -->
+  <line x1="60" y1="185" x2="800" y2="185" stroke="#20A67B" stroke-width="3" stroke-dasharray="6 4"/>
+  
+  <!-- Milestone 1: Age 30 (1x) -->
+  <g transform="translate(90, 110)">
+    <circle cx="25" cy="75" r="14" fill="#FF754D"/>
+    <text x="25" y="79" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">30</text>
+    <rect x="-15" y="-10" width="80" height="60" rx="6" fill="#042F2A" stroke="#FF754D" stroke-width="1.5"/>
+    <text x="25" y="14" fill="#FFD180" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">1× Salary</text>
+    <text x="25" y="34" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Age 30 Target</text>
+  </g>
+
+  <!-- Milestone 2: Age 35 (1.5x-2x) -->
+  <g transform="translate(210, 195)">
+    <circle cx="25" cy="-10" r="14" fill="#20A67B"/>
+    <text x="25" y="-6" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">35</text>
+    <rect x="-15" y="15" width="80" height="60" rx="6" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <text x="25" y="39" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">2× Salary</text>
+    <text x="25" y="59" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Age 35 Target</text>
+  </g>
+
+  <!-- Milestone 3: Age 40 (3x) -->
+  <g transform="translate(330, 110)">
+    <circle cx="25" cy="75" r="14" fill="#FF754D"/>
+    <text x="25" y="79" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">40</text>
+    <rect x="-15" y="-10" width="80" height="60" rx="6" fill="#042F2A" stroke="#FF754D" stroke-width="1.5"/>
+    <text x="25" y="14" fill="#FFD180" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">3× Salary</text>
+    <text x="25" y="34" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Age 40 Target</text>
+  </g>
+
+  <!-- Milestone 4: Age 50 (6x) -->
+  <g transform="translate(470, 195)">
+    <circle cx="25" cy="-10" r="14" fill="#20A67B"/>
+    <text x="25" y="-6" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">50</text>
+    <rect x="-15" y="15" width="80" height="60" rx="6" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <text x="25" y="39" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">6× Salary</text>
+    <text x="25" y="59" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Age 50 Target</text>
+  </g>
+
+  <!-- Milestone 5: Age 60 (8x) -->
+  <g transform="translate(610, 110)">
+    <circle cx="25" cy="75" r="14" fill="#FF754D"/>
+    <text x="25" y="79" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">60</text>
+    <rect x="-15" y="-10" width="80" height="60" rx="6" fill="#042F2A" stroke="#FF754D" stroke-width="1.5"/>
+    <text x="25" y="14" fill="#FFD180" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">8× Salary</text>
+    <text x="25" y="34" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Age 60 Target</text>
+  </g>
+
+  <!-- Milestone 6: Age 67 (10x) -->
+  <g transform="translate(730, 195)">
+    <circle cx="25" cy="-10" r="14" fill="#20A67B"/>
+    <text x="25" y="-6" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">67</text>
+    <rect x="-20" y="15" width="90" height="60" rx="6" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <text x="25" y="39" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">10× Salary</text>
+    <text x="25" y="59" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Retirement Target</text>
+  </g>
+
+  <!-- Bottom Legend -->
+  <text x="430" y="338" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">
+    *Benchmarks serve as general guideposts. Individual targets vary based on expenses, debt, pensions, and Social Security.
+  </text>
+</svg>

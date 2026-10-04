@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" width="100%" height="auto" role="img" aria-label="Future Value Building Blocks Diagram">
+  <rect width="840" height="360" rx="14" fill="#042F2A"/>
+  <rect x="18" y="18" width="804" height="324" rx="10" fill="#075433" stroke="#20A67B" stroke-width="1.5"/>
+  
+  <text x="420" y="52" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="21" font-weight="700" text-anchor="middle">The 4 Pillars of Future 401(k) Value</text>
+  <text x="420" y="76" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">How four distinct components unite to produce your retirement nest egg</text>
+
+  <!-- Block 1: Starting Balance -->
+  <g transform="translate(45, 105)">
+    <rect width="165" height="180" rx="8" fill="#042F2A" stroke="#52796F" stroke-width="1.5"/>
+    <rect width="165" height="32" rx="8" fill="#1C382F"/>
+    <text x="82" y="22" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Pillar 1</text>
+    <text x="82" y="60" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">Starting Balance</text>
+    <text x="82" y="90" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Existing capital</text>
+    <text x="82" y="110" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Early base</text>
+    <text x="82" y="130" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Full horizon time</text>
+    <text x="82" y="155" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Compounds from day 1</text>
+  </g>
+
+  <!-- Plus 1 -->
+  <text x="225" y="200" fill="#FFD180" font-family="'Fraunces', serif" font-size="28" font-weight="700" text-anchor="middle">+</text>
+
+  <!-- Block 2: Employee Contributions -->
+  <g transform="translate(245, 105)">
+    <rect width="165" height="180" rx="8" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <rect width="165" height="32" rx="8" fill="#0E4A34"/>
+    <text x="82" y="22" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Pillar 2</text>
+    <text x="82" y="60" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">Your Deposits</text>
+    <text x="82" y="90" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Payroll deductions</text>
+    <text x="82" y="110" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Contribution %</text>
+    <text x="82" y="130" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Salary escalation</text>
+    <text x="82" y="155" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Disciplined habit</text>
+  </g>
+
+  <!-- Plus 2 -->
+  <text x="425" y="200" fill="#FFD180" font-family="'Fraunces', serif" font-size="28" font-weight="700" text-anchor="middle">+</text>
+
+  <!-- Block 3: Employer Matching -->
+  <g transform="translate(445, 105)">
+    <rect width="165" height="180" rx="8" fill="#042F2A" stroke="#FF754D" stroke-width="1.5"/>
+    <rect width="165" height="32" rx="8" fill="#4A261C"/>
+    <text x="82" y="22" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Pillar 3</text>
+    <text x="82" y="60" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">Employer Match</text>
+    <text x="82" y="90" fill="#FFAB91" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Company funds</text>
+    <text x="82" y="110" fill="#FFAB91" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Instant 50%–100%</text>
+    <text x="82" y="130" fill="#FFAB91" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Vested growth</text>
+    <text x="82" y="155" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Accelerates totals</text>
+  </g>
+
+  <!-- Plus 3 -->
+  <text x="625" y="200" fill="#FFD180" font-family="'Fraunces', serif" font-size="28" font-weight="700" text-anchor="middle">+</text>
+
+  <!-- Block 4: Compound Investment Returns -->
+  <g transform="translate(645, 105)">
+    <rect width="150" height="180" rx="8" fill="#042F2A" stroke="#FFD180" stroke-width="2"/>
+    <rect width="150" height="32" rx="8" fill="#473A16"/>
+    <text x="75" y="22" fill="#FFD180" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Pillar 4 (Largest)</text>
+    <text x="75" y="60" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">Market Growth</text>
+    <text x="75" y="90" fill="#FFD180" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Multi-year returns</text>
+    <text x="75" y="110" fill="#FFD180" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• Interest on gains</text>
+    <text x="75" y="130" fill="#FFD180" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">• 60%–75% of nest egg</text>
+    <text x="75" y="155" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">Exponential engine</text>
+  </g>
+
+  <text x="420" y="322" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">
+    All 4 elements interact annually in our 401(k) calculator model to produce your customized retirement nest egg.
+  </text>
+</svg>

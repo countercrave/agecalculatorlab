@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>401(k) Calculator With Employer Match: How Matching Works</title>
+<meta name="description" content="Use a 401(k) calculator with employer match to understand how employee contributions, employer matching and investment growth can affect retirement savings.">
+<link rel="canonical" href="https://www.agecalculatorlab.com/articles/401k-calculator-with-employer-match/">
+<meta property="og:title" content="401(k) Calculator With Employer Match: How Matching Works">
+<meta property="og:description" content="Use a 401(k) calculator with employer match to understand how employee contributions, employer matching and investment growth can affect retirement savings.">
+<meta property="og:url" content="https://www.agecalculatorlab.com/articles/401k-calculator-with-employer-match/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Age Calculator Lab">
+<meta property="og:image" content="https://www.agecalculatorlab.com/assets/articles/401k-calculator-with-employer-match/featured-401k-calculator-with-employer-match.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="401(k) Calculator With Employer Match: How Matching Works">
+<meta name="twitter:description" content="Use a 401(k) calculator with employer match to understand how employee contributions, employer matching and investment growth can affect retirement savings.">
+<meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/articles/401k-calculator-with-employer-match/featured-401k-calculator-with-employer-match.jpg">
+<link rel="icon" type="image/png" href="../../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<style>
+.article-page { padding: 40px 0 60px; background: #fafdfb; }
+.article-container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+.article-breadcrumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.88rem; color: #5a7368; margin-bottom: 24px; align-items: center; }
+.article-breadcrumbs a { color: #075433; text-decoration: none; font-weight: 500; }
+.article-breadcrumbs a:hover { text-decoration: underline; }
+.article-header { margin-bottom: 32px; }
+.article-eyebrow { display: inline-block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #075433; background: #eaf3ee; padding: 4px 12px; border-radius: 4px; margin-bottom: 14px; }
+.article-header h1 { font-family: 'Fraunces', serif; font-size: clamp(2.1rem, 4vw, 2.85rem); line-height: 1.2; color: #042f2a; margin: 0 0 16px; }
+.article-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; color: #5a7368; font-size: 0.92rem; padding-bottom: 20px; border-bottom: 1px solid #dce9e2; margin-bottom: 24px; }
+.author-mini { display: flex; align-items: center; gap: 10px; }
+.author-mini img { border-radius: 50%; object-fit: cover; }
+.author-mini strong a { color: #042f2a; text-decoration: none; }
+.author-mini small { display: block; color: #5a7368; font-size: 0.8rem; }
+.article-featured-media { margin: 0 0 36px; border-radius: 12px; overflow: hidden; border: 1px solid #dce9e2; box-shadow: 0 4px 20px rgba(4,47,42,0.06); }
+.article-featured-media img { width: 100%; height: auto; display: block; }
+.article-featured-media figcaption { padding: 12px 18px; font-size: 0.88rem; color: #5a7368; background: #ffffff; border-top: 1px solid #eef4f0; }
+
+.article-content { font-size: 1.08rem; line-height: 1.7; color: #1c362d; }
+.article-content h2 { font-family: 'Fraunces', serif; font-size: 1.85rem; line-height: 1.25; color: #042f2a; margin: 44px 0 18px; padding-top: 12px; border-top: 1px solid #e2ece6; }
+.article-content h3 { font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #075433; margin: 28px 0 12px; }
+.article-content p { margin: 0 0 20px; }
+.article-content ul, .article-content ol { margin: 0 0 24px; padding-left: 26px; }
+.article-content li { margin-bottom: 8px; }
+.article-content a { color: #075433; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.article-content a:hover { color: #ff754d; }
+
+.highlight-box { background: #f0f7f3; border-left: 4px solid #075433; padding: 22px 24px; border-radius: 0 10px 10px 0; margin: 28px 0; }
+.highlight-box h3 { margin-top: 0; color: #042f2a; }
+.highlight-box p:last-child { margin-bottom: 0; }
+
+.cta-box { background: linear-gradient(135deg, #042f2a 0%, #075433 100%); color: #ffffff; padding: 32px; border-radius: 12px; margin: 36px 0; text-align: center; }
+.cta-box h3 { color: #ffd180; font-family: 'Fraunces', serif; font-size: 1.7rem; margin: 0 0 10px; }
+.cta-box p { color: #d3e5de; margin-bottom: 22px; max-width: 620px; margin-left: auto; margin-right: auto; }
+.cta-box .btn-cta { display: inline-block; background: #ff754d; color: #ffffff; font-weight: 700; padding: 13px 28px; border-radius: 8px; text-decoration: none; transition: background 0.2s; box-shadow: 0 4px 12px rgba(255,117,77,0.3); }
+.cta-box .btn-cta:hover { background: #ff5e2e; }
+
+.data-table-wrap { overflow-x: auto; margin: 28px 0 32px; border-radius: 10px; border: 1px solid #dce9e2; box-shadow: 0 2px 8px rgba(4,47,42,0.04); background: #ffffff; }
+.data-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.98rem; }
+.data-table th { background: #042f2a; color: #ffffff; padding: 14px 16px; font-weight: 600; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.data-table td { padding: 14px 16px; border-bottom: 1px solid #eef4f0; color: #1c362d; }
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tr:nth-child(even) td { background: #fbfdfc; }
+.data-table tr:hover td { background: #f2f7f4; }
+.table-footnote { font-size: 0.85rem; color: #5a7368; padding: 10px 16px; background: #f8faf9; border-top: 1px solid #eef4f0; }
+
+.diagram-figure { margin: 34px 0; border: 1px solid #dce9e2; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 4px 16px rgba(4,47,42,0.05); }
+.diagram-figure svg, .diagram-figure img { width: 100%; height: auto; display: block; }
+.diagram-figure figcaption { padding: 14px 18px; font-size: 0.9rem; color: #466155; background: #f6faf8; border-top: 1px solid #eef4f0; font-weight: 500; }
+
+.faq-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 22px 24px; margin-bottom: 16px; }
+.faq-card h3 { margin: 0 0 10px; font-size: 1.18rem; color: #042f2a; font-family: 'Inter', sans-serif; }
+.faq-card p { margin: 0; color: #2e4b3f; font-size: 1.02rem; }
+
+.disclaimer-card { background: #fdfaf3; border: 1px solid #e8dcbe; border-radius: 8px; padding: 18px 22px; font-size: 0.88rem; color: #6a5933; margin: 40px 0 20px; line-height: 1.55; }
+.article-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0 20px; }
+.article-nav-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 20px; text-decoration: none; color: inherit; transition: border-color 0.2s, box-shadow 0.2s; }
+.article-nav-card:hover { border-color: #075433; box-shadow: 0 4px 12px rgba(4,47,42,0.08); }
+.article-nav-card .nav-direction { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #ff754d; margin-bottom: 6px; display: block; }
+.article-nav-card strong { font-size: 1.05rem; color: #042f2a; line-height: 1.35; display: block; }
+@media(max-width: 640px) { .article-nav { grid-template-columns: 1fr; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://www.agecalculatorlab.com/articles/401k-calculator-with-employer-match/#article",
+      "isPartOf": {
+        "@type": "WebPage",
+        "@id": "https://www.agecalculatorlab.com/articles/401k-calculator-with-employer-match/"
+      },
+      "headline": "401(k) Calculator With Employer Match: How Matching Works",
+      "description": "Use a 401(k) calculator with employer match to understand how employee contributions, employer matching and investment growth can affect retirement savings.",
+      "image": "https://www.agecalculatorlab.com/assets/articles/401k-calculator-with-employer-match/featured-401k-calculator-with-employer-match.jpg",
+      "datePublished": "2026-10-04T08:00:00+00:00",
+      "dateModified": "2026-10-04T08:00:00+00:00",
+      "author": {
+        "@type": "Person",
+        "name": "Navjeet Kamboj",
+        "url": "https://www.agecalculatorlab.com/author/navjeet-kamboj/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Age Calculator Lab",
+        "url": "https://www.agecalculatorlab.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.agecalculatorlab.com/assets/age-calculator-lab-logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.agecalculatorlab.com/articles/401k-calculator-with-employer-match/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.agecalculatorlab.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://www.agecalculatorlab.com/articles/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "401(k) Calculator With Match",
+          "item": "https://www.agecalculatorlab.com/articles/401k-calculator-with-employer-match/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a 401(k) employer match?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An employer match is additional money contributed by your employer into your 401(k) account based on the amount you contribute from your own paycheck. It is an extra compensation benefit that functions as an immediate 50% to 100% return on your saved dollars."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does '50% match up to 6%' mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This means your employer contributes $0.50 for every $1.00 you deposit into your 401(k), up to a maximum employee contribution of 6% of your salary. If you contribute 6%, your employer adds 3%, bringing your total retirement savings rate to 9%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does '100% match up to 5%' mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is a dollar-for-dollar match where your employer matches every dollar you contribute up to 5% of your salary. If you contribute 5%, your employer contributes another 5%, instantly doubling your total savings rate to 10%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a 401(k) vesting schedule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vesting refers to your ownership of employer-contributed matching funds. While your own payroll contributions are always 100% vested immediately, company matching dollars may vest over time through a cliff schedule (e.g., 100% after 3 years) or a graded schedule (e.g., 20% per year over 5 years)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does employer matching count toward the IRS employee 401(k) limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Employer matching contributions do not count toward your individual employee elective deferral limit ($23,000 for 2024 / $23,500 for 2025). Instead, they count toward the broader overall Section 415(c) limit ($69,000 for 2024 / $70,000 for 2025)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I contribute more than the match threshold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you contribute more than your employer's match cap (e.g., you contribute 10% when the match stops at 6%), your extra 4% still goes into your 401(k) and compounds tax-advantaged, but you will not receive additional employer match on that excess portion."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+<img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto">
+</a>
+<nav class="nav-desktop" aria-label="Main navigation">
+<div class="nav-item has-dropdown">
+<button class="nav-link dropdown-toggle" type="button" aria-expanded="false">Calculators <span class="nav-arrow">▾</span></button>
+<div class="mega-menu" role="menu">
+<div class="mega-grid">
+<div class="mega-col">
+<span class="mega-col-title">Age &amp; Date Tools</span>
+<a class="mega-link" href="../../" role="menuitem">Exact Age Calculator</a>
+<a class="mega-link" href="../../tools/chronological-age-calculator/" role="menuitem">Chronological Age Calculator</a>
+<a class="mega-link" href="../../tools/birthday-calculator/" role="menuitem">Birthday Calculator</a>
+<a class="mega-link" href="../../tools/age-difference-calculator/" role="menuitem">Age Difference Calculator</a>
+<a class="mega-link" href="../../tools/date-difference-calculator/" role="menuitem">Date Difference Calculator</a>
+<a class="mega-link" href="../../tools/half-birthday-calculator/" role="menuitem">Half Birthday Calculator</a>
+</div>
+<div class="mega-col">
+<span class="mega-col-title">Milestones &amp; Planning</span>
+<a class="mega-link" href="../../tools/retirement-age-calculator/" role="menuitem">Retirement Age Calculator</a>
+<a class="mega-link" href="../../tools/401k-calculator/" role="menuitem">401(k) Calculator</a>
+<a class="mega-link" href="../../tools/social-security-age-calculator/" role="menuitem">Social Security Age Calculator</a>
+<a class="mega-link" href="../../tools/pensionable-age-calculator/" role="menuitem">Pensionable Age Calculator</a>
+<a class="mega-link" href="../../tools/life-expectancy-calculator/" role="menuitem">Life Expectancy Calculator</a>
+<a class="mega-link" href="../../tools/school-start-age-calculator/" role="menuitem">School Start Age Calculator</a>
+</div>
+<div class="mega-col mega-col-featured">
+<span class="mega-col-title">Popular Calculations</span>
+<a class="mega-featured-card" href="../../tools/401k-calculator/">
+<span class="mega-card-tag">Interactive</span>
+<strong>401(k) Nest Egg Projection</strong>
+<p>Model growth, match, inflation &amp; savings targets.</p>
+</a>
+<a class="mega-featured-card" href="../../tools/social-security-age-calculator/">
+<span class="mega-card-tag">Retirement</span>
+<strong>Social Security Age Calculator</strong>
+<p>Find your Full Retirement Age and claim milestones.</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="nav-item has-dropdown">
+<button class="nav-link dropdown-toggle" type="button" aria-expanded="false">Guides <span class="nav-arrow">▾</span></button>
+<div class="mega-menu mega-menu-sm" role="menu">
+<div class="mega-grid">
+<div class="mega-col">
+<span class="mega-col-title">Featured Financial &amp; Age Guides</span>
+<a class="mega-link" href="../how-much-should-i-have-in-my-401k-by-age/" role="menuitem">401(k) Balance by Age Benchmarks</a>
+<a class="mega-link" href="../how-much-will-my-401k-be-worth/" role="menuitem">How Much Will My 401(k) Be Worth?</a>
+<a class="mega-link" href="../how-does-a-401k-grow-over-time/" role="menuitem">How Does a 401(k) Grow Over Time?</a>
+<a class="mega-link" href="../401k-calculator-with-employer-match/" role="menuitem">401(k) Employer Match Guide</a>
+<a class="mega-link" href="../full-retirement-age-social-security/" role="menuitem">Full Retirement Age Explained</a>
+<a class="mega-link" href="../dating-age-rule/" role="menuitem">Dating Age Rule: Half-Your-Age-Plus-7</a>
+</div>
+</div>
+</div>
+</div>
+
+<a class="nav-link" href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
+<a class="nav-link" href="../../categories/">Categories</a>
+<a class="nav-link" href="../../methodology/">Methodology</a>
+</nav>
+
+<div class="header-actions">
+<div class="nav-search-wrap" id="nav-search-wrap">
+<button class="nav-search-toggle" id="nav-search-btn" type="button" aria-label="Open search" aria-expanded="false">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+</button>
+<div class="nav-search-dropdown" id="nav-search-dropdown">
+<input class="nav-search-input" id="nav-search-input" type="search" placeholder="Search calculators &amp; guides…" autocomplete="off">
+<div class="nav-search-results" id="nav-search-results"></div>
+</div>
+</div>
+<a class="nav-cta" href="../../#calculator">Calculate age</a>
+<button class="nav-mobile-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">
+<span class="hamburger-line"></span>
+<span class="hamburger-line"></span>
+<span class="hamburger-line"></span>
+</button>
+</div>
+</div>
+</header>
+
+<main class="article-page">
+<div class="article-container">
+
+<nav class="article-breadcrumbs" aria-label="Breadcrumb">
+<a href="../../">Home</a>
+<span>/</span>
+<a href="../../articles/">Guides</a>
+<span>/</span>
+<span>401(k) Employer Match</span>
+</nav>
+
+<header class="article-header">
+<span class="article-eyebrow">Retirement &amp; Financial Planning</span>
+<h1>401(k) Calculator With Employer Match: How Matching Works</h1>
+<div class="article-meta">
+<div class="author-mini">
+<img decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="44" height="44">
+<div>
+<strong><a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></strong>
+<small>Lead Calculation Specialist &amp; Editorial Director</small>
+</div>
+</div>
+<span>•</span>
+<time datetime="2026-10-04">Updated October 4, 2026</time>
+<span>•</span>
+<span>Read time: 14 min</span>
+<span>•</span>
+<span>Verified Financial Modeling</span>
+</div>
+</header>
+
+<figure class="article-featured-media">
+<img decoding="async" src="../../assets/articles/401k-calculator-with-employer-match/featured-401k-calculator-with-employer-match.jpg" alt="A financial advisor demonstrating 401(k) employer matching calculations on a tablet screen" width="1200" height="675">
+<figcaption>Employer matching represents immediate bonus compensation that compounds inside your tax-advantaged retirement portfolio.</figcaption>
+</figure>
+
+<div class="article-content">
+
+<p class="lead" style="font-size:1.2rem;font-weight:500;color:#042f2a;line-height:1.65;margin-bottom:24px;">
+Using a <strong>401(k) calculator with employer match</strong> reveals how powerful company contributions are in building your retirement balance. When an employer provides a match, they are giving you an immediate <strong>50% to 100% return</strong> on your saved dollars before market growth even begins. You can calculate the exact lifetime value of your match using our interactive <a href="../../tools/401k-calculator/">401(k) Calculator with employer match</a>.
+</p>
+
+<p>
+Employer matching is often referred to by financial planners as "free money"—and mathematically, that is exactly what it is. It is part of your total workplace compensation package. If you contribute less than the amount required to capture the full match, you are effectively declining a portion of your agreed-upon salary.
+</p>
+
+<p>
+In this comprehensive guide, we unpack the most common employer matching formulas, show you how to calculate your company's exact contribution, explain vesting schedules, and demonstrate the massive multi-decade compounding effect of capturing every single match dollar.
+</p>
+
+<div class="cta-box">
+<h3>Model Your Employer Match in Real Time</h3>
+<p>Enter your salary, personal contribution percentage, and company match formula to project your lifetime matched nest egg.</p>
+<a class="btn-cta" href="../../tools/401k-calculator/">Launch 401(k) Calculator →</a>
+</div>
+
+<h2>What Is a 401(k) Employer Match?</h2>
+
+<p>
+A 401(k) employer match is a formal retirement plan provision where an employer contributes additional money into an employee's 401(k) account based on the employee's personal salary deferrals.
+</p>
+
+<p>
+Company matching programs are designed to incentivize employees to save for retirement. However, the employer does not simply hand you money into your checking account; they deposit it directly into your 401(k) custodian account alongside your payroll deductions, where it is immediately invested into the mutual funds or index portfolios you selected.
+</p>
+
+<figure class="diagram-figure">
+<img decoding="async" src="../../assets/articles/401k-calculator-with-employer-match/employer-match-formula-breakdown.svg" alt="Diagram breaking down the mechanics of a 50% match up to 6% of salary" width="800" height="400">
+<figcaption>Visual breakdown of the classic '50% match up to 6%' formula. Contributing 6% unlocks the maximum 3% company contribution, generating an immediate 50% return.</figcaption>
+</figure>
+
+<h2>The Most Common 401(k) Matching Formulas Explained</h2>
+
+<p>
+While employers can design customized plan formulas, the vast majority of U.S. corporate plans use one of four standard matching structures:
+</p>
+
+<h3>1. Partial Match: 50% Up to 6% of Salary</h3>
+<p>
+This is the single most common matching formula in the United States. Your employer contributes $0.50 for every $1.00 you contribute, up to a maximum employee deferral of 6% of your gross salary:
+</p>
+
+<ul>
+<li>If you earn <strong>$80,000</strong> and contribute 6% ($4,800/year), your employer contributes 3% (<strong>$2,400/year</strong>).</li>
+<li>Total annual 401(k) funding: <strong>$7,200</strong> (a 9% total savings rate).</li>
+<li>If you contribute only 4% ($3,200), your employer contributes only 2% ($1,600), leaving $800 in free company money behind.</li>
+</ul>
+
+<h3>2. Dollar-for-Dollar Match: 100% Up to 4% or 5%</h3>
+<p>
+In a dollar-for-dollar formula, your employer matches 100% of your contributions up to a specific percentage cap:
+</p>
+
+<ul>
+<li>If you earn <strong>$70,000</strong> and your plan matches 100% up to 5%, contributing 5% ($3,500) results in your employer adding another <strong>$3,500</strong>.</li>
+<li>Total annual 401(k) funding: <strong>$7,000</strong> (a 10% total savings rate).</li>
+<li>This represents an immediate 100% overnight return on your money.</li>
+</ul>
+
+<h3>3. Tiered or Stretch Match: 100% on First 3%, 50% on Next 2%</h3>
+<p>
+Many "Safe Harbor" 401(k) plans utilize a tiered formula. For example, 100% match on the first 3% of compensation, plus 50% match on the next 2%:
+</p>
+
+<ul>
+<li>To capture the full match, you must contribute <strong>5% of your salary</strong>.</li>
+<li>Your employer contributes: 3% (from the first tier) + 1% (50% of the next 2%) = <strong>4% total match</strong>.</li>
+<li>Total annual 401(k) funding: <strong>9% of salary</strong>.</li>
+</ul>
+
+<h3>4. Non-Elective Employer Contribution</h3>
+<p>
+Some employers provide a non-elective contribution (often 3% of salary) that is deposited into your 401(k) regardless of whether you contribute anything yourself. If you contribute on top of this, your total savings rate accelerates even faster.
+</p>
+
+<div class="data-table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>Formula Type</th>
+<th>Employee Deferral</th>
+<th>Employer Match Rate</th>
+<th>Total Annual Savings</th>
+<th>Immediate ROI on Employee Cash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>50% up to 6%</strong></td>
+<td>6% of salary</td>
+<td>3% of salary</td>
+<td>9% of salary</td>
+<td><strong>+50% instant gain</strong></td>
+</tr>
+<tr>
+<td><strong>100% up to 4%</strong></td>
+<td>4% of salary</td>
+<td>4% of salary</td>
+<td>8% of salary</td>
+<td><strong>+100% instant gain</strong></td>
+</tr>
+<tr>
+<td><strong>100% up to 5%</strong></td>
+<td>5% of salary</td>
+<td>5% of salary</td>
+<td>10% of salary</td>
+<td><strong>+100% instant gain</strong></td>
+</tr>
+<tr>
+<td><strong>Tiered (100% on 3%, 50% on 2%)</strong></td>
+<td>5% of salary</td>
+<td>4% of salary</td>
+<td>9% of salary</td>
+<td><strong>+80% instant gain</strong></td>
+</tr>
+<tr>
+<td><strong>50% up to 8%</strong></td>
+<td>8% of salary</td>
+<td>4% of salary</td>
+<td>12% of salary</td>
+<td><strong>+50% instant gain</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<figure class="diagram-figure">
+<img decoding="async" src="../../assets/articles/401k-calculator-with-employer-match/employer-match-breakdown.jpg" alt="Worksheet showing the step-by-step calculation of employer matching contributions" width="1200" height="675">
+<figcaption>Calculating employer match: Multiply gross salary by your contribution rate to find your deposit, then apply company matching rules to calculate the company contribution.</figcaption>
+</figure>
+
+<h2>The Long-Term Cost of Leaving Match Money on the Table</h2>
+
+<p>
+What happens if you contribute only 3% when your employer matches up to 6%? Many savers assume they are only losing a few hundred dollars a year. However, when you factor in 20 to 30 years of compound growth, the loss is staggering.
+</p>
+
+<p>
+Consider a worker earning $75,000 who misses out on a $2,250 annual employer match over a 30-year career:
+</p>
+
+<ul>
+<li>Cash match foregone: $2,250 × 30 years = <strong>$67,500</strong></li>
+<li>Foregone compound investment growth (at 7% return): <strong>$215,870</strong></li>
+<li><strong>Total Retirement Wealth Lost: Over $283,000!</strong></li>
+</ul>
+
+<p>
+Leaving company match dollars unclaimed is one of the costliest financial mistakes an employee can make. Securing the full match should always be your number one financial priority, even ahead of paying down low-interest debt.
+</p>
+
+<figure class="diagram-figure">
+<img decoding="async" src="../../assets/articles/401k-calculator-with-employer-match/lifetime-matching-compounding-impact.svg" alt="Bar chart showing the multi-decade compounding impact of claiming vs missing the employer match" width="800" height="400">
+<figcaption>Lifetime matching impact: Over 30 years, an employer match of $2,500/year compounds into more than $240,000 in additional retirement wealth.</figcaption>
+</figure>
+
+<h2>Understanding Vesting Schedules</h2>
+
+<p>
+When examining employer matching, you must pay attention to your plan's <strong>vesting schedule</strong>.
+</p>
+
+<p>
+Your own payroll contributions are always <strong>100% vested immediately</strong>—that money is yours unconditionally from day one. However, company matching dollars may be subject to a waiting period before they belong to you permanently:
+</p>
+
+<ul>
+<li><strong>Immediate Vesting:</strong> 100% of employer matching dollars are yours the moment they hit your account. (Common in competitive tech, finance, and Safe Harbor plans).</li>
+<li><strong>Cliff Vesting:</strong> You own 0% of the company match until you complete a required service period (e.g., 3 years), at which point you become 100% vested overnight. If you leave the company after 2 years and 11 months, you forfeit the entire match balance.</li>
+<li><strong>Graded Vesting:</strong> You gain ownership gradually over time (e.g., 20% after year 1, 40% after year 2, up to 100% after year 5). If you leave after 3 years, you keep 60% of the match funds, while 40% returns to the employer plan.</li>
+</ul>
+
+<h2>Does Employer Matching Count Toward IRS Contribution Limits?</h2>
+
+<p>
+A common misconception is that employer matching counts toward your annual employee 401(k) limit.
+</p>
+
+<div class="highlight-box">
+<h3>IRS Limit Rules: Employee Limit vs. Overall Plan Limit</h3>
+<p>Under IRS regulations, there are two distinct limits:</p>
+<ul>
+<li><strong>Employee Elective Deferral Limit ($23,000 for 2024 / $23,500 for 2025):</strong> This applies ONLY to your personal salary deferrals (Traditional pre-tax and Roth 401k). Employer match does NOT count toward this limit.</li>
+<li><strong>Section 415(c) Overall Defined Contribution Limit ($69,000 for 2024 / $70,000 for 2025):</strong> This represents the cap on ALL contributions combined (employee deferrals + employer matching + employer profit sharing).</li>
+</ul>
+<p>This means you can contribute the full $23,500 maximum from your own salary and STILL receive your complete employer match on top of it without penalty!</p>
+</div>
+
+<h2>How to Use the 401(k) Calculator with Employer Match</h2>
+
+<p>
+Our verified <a href="../../tools/401k-calculator/">401(k) Calculator</a> makes it easy to model your company's matching rules:
+</p>
+
+<ol>
+<li><strong>Select Your Match Rate:</strong> Enter whether your company provides a 50%, 100%, or custom match percentage.</li>
+<li><strong>Set the Match Limit:</strong> Enter the salary percentage cap where matching stops (e.g., 6%).</li>
+<li><strong>Compare Scenarios:</strong> Use the interactive scenario toggles to compare what happens if you contribute only enough to get the match versus increasing your savings to 10% or 15%.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-card">
+<h3>What is a 401(k) employer match?</h3>
+<p>An employer match is additional money contributed by your employer into your 401(k) account based on the amount you contribute from your own paycheck. It is an extra compensation benefit that functions as an immediate 50% to 100% return on your saved dollars.</p>
+</div>
+
+<div class="faq-card">
+<h3>What does '50% match up to 6%' mean?</h3>
+<p>This means your employer contributes $0.50 for every $1.00 you deposit into your 401(k), up to a maximum employee contribution of 6% of your salary. If you contribute 6%, your employer adds 3%, bringing your total retirement savings rate to 9%.</p>
+</div>
+
+<div class="faq-card">
+<h3>What does '100% match up to 5%' mean?</h3>
+<p>This is a dollar-for-dollar match where your employer matches every dollar you contribute up to 5% of your salary. If you contribute 5%, your employer contributes another 5%, instantly doubling your total savings rate to 10%.</p>
+</div>
+
+<div class="faq-card">
+<h3>What is a 401(k) vesting schedule?</h3>
+<p>Vesting refers to your ownership of employer-contributed matching funds. While your own payroll contributions are always 100% vested immediately, company matching dollars may vest over time through a cliff schedule (e.g., 100% after 3 years) or a graded schedule (e.g., 20% per year over 5 years).</p>
+</div>
+
+<div class="faq-card">
+<h3>Does employer matching count toward the IRS employee 401(k) limit?</h3>
+<p>No. Employer matching contributions do not count toward your individual employee elective deferral limit ($23,000 for 2024 / $23,500 for 2025). Instead, they count toward the broader overall Section 415(c) limit ($69,000 for 2024 / $70,000 for 2025).</p>
+</div>
+
+<div class="faq-card">
+<h3>What happens if I contribute more than the match threshold?</h3>
+<p>If you contribute more than your employer's match cap (e.g., you contribute 10% when the match stops at 6%), your extra 4% still goes into your 401(k) and compounds tax-advantaged, but you will not receive additional employer match on that excess portion.</p>
+</div>
+
+<div class="disclaimer-card">
+<strong>Educational Disclaimer:</strong> This article and our calculation tools provide general educational estimates and benchmarks. They do not constitute personalized financial, investment, tax, or legal advice. Real-world retirement outcomes depend on individual market performance, contribution consistency, employer matching formulas, fees, inflation, and plan rules.
+</div>
+
+<nav class="article-nav">
+<a class="article-nav-card" href="../how-does-a-401k-grow-over-time/">
+<span class="nav-direction">Previous Guide in Series</span>
+<strong>How Does a 401(k) Grow Over Time? →</strong>
+</a>
+<a class="article-nav-card" href="../how-much-should-i-contribute-to-my-401k/">
+<span class="nav-direction">Next Guide in Series</span>
+<strong>How Much Should I Contribute to My 401(k)? →</strong>
+</a>
+</nav>
+
+</div>
+</div>
+</main>
+
+
+<section class="author-section" data-author-bio>
+<div class="container">
+<div class="author-profile">
+<img decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj, author at Age Calculator Lab" width="170" height="170" loading="lazy">
+<div>
+<span class="kicker">About the author</span>
+<h2>Navjeet Kamboj</h2>
+<p>Navjeet Kamboj is the lead calculation specialist and editor of Age Calculator Lab. He designs chronological measurement engines, actuarial timeline models, and demographic algorithms. His editorial work focuses on mathematical transparency, edge-case precision, and responsible analytical boundaries across all tools and guides.</p>
+<div class="author-links">
+<a href="../../author/navjeet-kamboj/">View full profile &amp; editorial methodology →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-grid footer-grid-rich">
+<div class="footer-brand-panel">
+<a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a>
+<p>Practical, verified calculators and guides for age, dates, milestones and planning. No registration required.</p>
+<a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a>
+</div>
+<div>
+<h3>Calculators</h3>
+<a href="../../">Exact Age</a>
+<a href="../../tools/chronological-age-calculator/">Chronological Age</a>
+<a href="../../tools/401k-calculator/">401(k) Calculator</a>
+<a href="../../tools/social-security-age-calculator/">Social Security Age</a>
+<a href="../../tools/retirement-age-calculator/">Retirement Age</a>
+<a href="../../tools/pensionable-age-calculator/">Pensionable Age</a>
+<a href="../../tools/birthday-calculator/">Birthday</a>
+<a href="../../tools/">All Calculators →</a>
+</div>
+<div>
+<h3>Guides</h3>
+<a href="../how-much-should-i-have-in-my-401k-by-age/">401(k) by Age Guide</a>
+<a href="../how-much-will-my-401k-be-worth/">Future 401(k) Balance</a>
+<a href="../how-does-a-401k-grow-over-time/">401(k) Growth Over Time</a>
+<a href="../401k-calculator-with-employer-match/">401(k) Employer Match</a>
+<a href="../how-much-should-i-contribute-to-my-401k/">How Much to Contribute</a>
+<a class="footer-guides-all" href="../../articles/">Browse all guides →</a>
+</div>
+<div>
+<h3>Lab &amp; Trust</h3>
+<a href="../../about/">About</a>
+<a href="../../author/navjeet-kamboj/">Author &amp; Editorial</a>
+<a href="../../methodology/">Calculation Methodology</a>
+<a href="../../verification/">Verification Process</a>
+<a href="../../editorial-standards/">Editorial Standards</a>
+<a href="../../privacy/">Privacy Policy</a>
+<a href="../../terms/">Terms of Use</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Age Calculator Lab. Verified chronological tools, actuarial datasets, and milestone guides.</p>
+</div>
+</div>
+</footer>
+
+<script src="../../assets/app.js"></script>
+</body>
+</html>

@@ -66,6 +66,14 @@
 
 /* Results Panel */
 .results-panel { display: block; animation: fadeIn 0.3s ease-in-out; }
+@media(min-width: 992px) {
+  .results-panel {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 85px;
+    align-self: start;
+  }
+}
 .result-banner { background: #042f2a; color: #ffffff; border-radius: 10px; padding: 22px; margin-bottom: 20px; text-align: center; }
 .result-banner small { display: block; text-transform: uppercase; letter-spacing: 1px; color: #9fe7bd; font-size: 0.82rem; font-weight: 700; margin-bottom: 6px; }
 .result-banner .fra-highlight { font-family: var(--font-display, 'Fraunces', serif); font-size: 2.2rem; line-height: 1.2; color: #ffd180; margin: 4px 0 8px; }
@@ -321,7 +329,7 @@
 <div class="nav-mega nav-mega-guides">
 <div class="nav-mega-head">
 <div>
-<small>157 practical guides</small>
+<small>162 practical guides</small>
 <strong>Learn the method</strong>
 </div>
 <a href="../../articles/">Browse all guides →</a>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" width="100%" height="auto" role="img" aria-label="Compounding Flywheel Diagram">
+  <rect width="840" height="360" rx="14" fill="#042F2A"/>
+  <rect x="18" y="18" width="804" height="324" rx="10" fill="#075433" stroke="#20A67B" stroke-width="1.5"/>
+  
+  <text x="420" y="52" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="21" font-weight="700" text-anchor="middle">The 401(k) Compound Growth Flywheel</text>
+  <text x="420" y="76" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">How automated deposits and reinvested market gains fuel exponential acceleration</text>
+
+  <!-- Flywheel Step 1 -->
+  <g transform="translate(60, 115)">
+    <rect width="150" height="150" rx="10" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <circle cx="75" cy="35" r="18" fill="#20A67B"/>
+    <text x="75" y="41" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="800" text-anchor="middle">1</text>
+    <text x="75" y="80" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="14" font-weight="700" text-anchor="middle">Payroll Deductions</text>
+    <text x="75" y="105" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Consistent pre-tax</text>
+    <text x="75" y="122" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">savings from wages</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M220 190 L245 190" stroke="#FFD180" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Flywheel Step 2 -->
+  <g transform="translate(255, 115)">
+    <rect width="150" height="150" rx="10" fill="#042F2A" stroke="#FF754D" stroke-width="1.5"/>
+    <circle cx="75" cy="35" r="18" fill="#FF754D"/>
+    <text x="75" y="41" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="800" text-anchor="middle">2</text>
+    <text x="75" y="80" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="14" font-weight="700" text-anchor="middle">Employer Match</text>
+    <text x="75" y="105" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Immediate 50%–100%</text>
+    <text x="75" y="122" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">matching leverage</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M415 190 L440 190" stroke="#FFD180" stroke-width="3" fill="none"/>
+
+  <!-- Flywheel Step 3 -->
+  <g transform="translate(450, 115)">
+    <rect width="150" height="150" rx="10" fill="#042F2A" stroke="#20A67B" stroke-width="1.5"/>
+    <circle cx="75" cy="35" r="18" fill="#20A67B"/>
+    <text x="75" y="41" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="800" text-anchor="middle">3</text>
+    <text x="75" y="80" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="14" font-weight="700" text-anchor="middle">Asset Allocation</text>
+    <text x="75" y="105" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Diversified index</text>
+    <text x="75" y="122" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">equities &amp; bonds</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <path d="M610 190 L635 190" stroke="#FFD180" stroke-width="3" fill="none"/>
+
+  <!-- Flywheel Step 4 -->
+  <g transform="translate(645, 115)">
+    <rect width="140" height="150" rx="10" fill="#042F2A" stroke="#FFD180" stroke-width="2"/>
+    <circle cx="70" cy="35" r="18" fill="#FFD180"/>
+    <text x="70" y="41" fill="#042F2A" font-family="'Inter', sans-serif" font-size="13" font-weight="800" text-anchor="middle">4</text>
+    <text x="70" y="80" fill="#FFD180" font-family="'Fraunces', serif" font-size="14" font-weight="700" text-anchor="middle">Growth on Growth</text>
+    <text x="70" y="105" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Compounding gains</text>
+    <text x="70" y="122" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">dwarf deposits</text>
+  </g>
+
+  <text x="420" y="305" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">
+    ↺ Reinvested automatically: dividends and capital appreciation compound uninterrupted inside pre-tax or Roth shelters.
+  </text>
+</svg>

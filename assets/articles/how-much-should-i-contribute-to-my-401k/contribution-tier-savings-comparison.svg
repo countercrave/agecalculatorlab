@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" width="100%" height="auto" role="img" aria-label="Contribution Rate Tier Comparison Chart">
+  <rect width="840" height="360" rx="14" fill="#042F2A"/>
+  <rect x="18" y="18" width="804" height="324" rx="10" fill="#075433" stroke="#20A67B" stroke-width="1.5"/>
+  
+  <text x="420" y="52" fill="#FFFFFF" font-family="'Fraunces', Georgia, serif" font-size="21" font-weight="700" text-anchor="middle">Contribution Rate vs. Projected 30-Year Balance</text>
+  <text x="420" y="76" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Starting at Age 35 ($80k Salary, 3% Raises, 7% Return, 50% Match up to 6%)</text>
+
+  <!-- 5 Tiers Horizontal Bars -->
+  <!-- Tier 1: 5% -->
+  <g transform="translate(60, 105)">
+    <text x="0" y="22" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">5% ($4,000/yr)</text>
+    <rect x="150" y="6" width="280" height="24" rx="4" fill="#52796F"/>
+    <text x="445" y="23" fill="#D3E5DE" font-family="'Fraunces', serif" font-size="15" font-weight="700">$1.36 Million</text>
+  </g>
+
+  <!-- Tier 2: 8% -->
+  <g transform="translate(60, 145)">
+    <text x="0" y="22" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">8% ($6,400/yr)</text>
+    <rect x="150" y="6" width="350" height="24" rx="4" fill="#20A67B"/>
+    <text x="515" y="23" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="15" font-weight="700">$1.60 Million</text>
+  </g>
+
+  <!-- Tier 3: 10% -->
+  <g transform="translate(60, 185)">
+    <text x="0" y="22" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">10% ($8,000/yr)</text>
+    <rect x="150" y="6" width="400" height="24" rx="4" fill="#20A67B"/>
+    <text x="565" y="23" fill="#9FE7BD" font-family="'Fraunces', serif" font-size="15" font-weight="700">$1.75 Million</text>
+  </g>
+
+  <!-- Tier 4: 12% -->
+  <g transform="translate(60, 225)">
+    <text x="0" y="22" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">12% ($9,600/yr)</text>
+    <rect x="150" y="6" width="450" height="24" rx="4" fill="#FFD180"/>
+    <text x="615" y="23" fill="#FFD180" font-family="'Fraunces', serif" font-size="15" font-weight="700">$1.91 Million</text>
+  </g>
+
+  <!-- Tier 5: 15% -->
+  <g transform="translate(60, 265)">
+    <text x="0" y="22" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700">15% ($12,000/yr)</text>
+    <rect x="150" y="6" width="510" height="24" rx="4" fill="#FF754D"/>
+    <text x="675" y="23" fill="#FFAB91" font-family="'Fraunces', serif" font-size="15" font-weight="700">$2.14 Million</text>
+  </g>
+
+  <text x="420" y="325" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">
+    Increasing contribution from 8% to 15% yields over $540,000 in additional wealth at retirement.
+  </text>
+</svg>

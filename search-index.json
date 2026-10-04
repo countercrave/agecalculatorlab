@@ -1,82 +1,5 @@
 [
   {
-    "title": "401(k) Calculator: Estimate Your Retirement Savings",
-    "description": "Estimate how your 401(k) could grow by retirement based on your current balance, age, contributions, employer match, salary and expected investment return.",
-    "url": "tools/401k-calculator/",
-    "category": "Finance & Professional",
-    "keywords": "401k calculator, 401(k) calculator, 401k calculator by age, 401k age calculator, 401k retirement calculator, 401k growth calculator, 401k calculator with match, 401k calculator with employer match, 401k savings calculator, 401k investment calculator, 401k projection calculator, 401k future value calculator, 401k balance calculator, retirement savings calculator, 401k calculator by age and salary"
-  },
-  {
-    "title": "How Does Social Security Change by Age? Benefits at 62, 65, 67 & 70",
-    "description": "Discover how Social Security benefits change across ages 62, 65, 67, and 70. Learn monthly payout differences, reduction formulas, and delayed credits.",
-    "url": "articles/social-security-benefits-by-age/",
-    "category": "Finance & Professional",
-    "keywords": "social security benefits calculator by age, social security benefits by age, social security benefits by age 62 65 67 70, social security calculator by age, social security retirement age chart, social security retirement benefits by age"
-  },
-  {
-    "title": "Early Retirement and Social Security: What Happens If You Claim Before Full Retirement Age?",
-    "description": "Explore what happens if you take early retirement and claim Social Security before FRA. Learn permanent reduction math, earnings test traps, and spousal rules.",
-    "url": "articles/early-retirement-social-security/",
-    "category": "Finance & Professional",
-    "keywords": "early retirement social security, early retirement and social security, retiring early social security, taking social security early, can i retire early on social security, social security early retirement age, early retirement age social security"
-  },
-  {
-    "title": "How Is Social Security Full Retirement Age Calculated?",
-    "description": "Understand the statutory formula behind Social Security FRA calculation, statutory birth cohort schedules, and the Social Security Amendments of 1983.",
-    "url": "articles/how-is-social-security-full-retirement-age-calculated/",
-    "category": "Finance & Professional",
-    "keywords": "how is social security full retirement age calculated, how is full retirement age calculated for social security, calculate full retirement age social security, how is social security retirement age calculated, social security full retirement age calculation"
-  },
-  {
-    "title": "Social Security Break-Even Age: How to Calculate When Waiting Pays Off",
-    "description": "Calculate your Social Security break-even age between 62, 67, and 70. Compare cumulative lifetime payouts, opportunity costs, and longevity factors.",
-    "url": "articles/social-security-break-even-age/",
-    "category": "Finance & Professional",
-    "keywords": "social security break even age, social security break-even age, break even age social security, social security break even calculator, break-even age social security, calculate social security break even age, social security break even analysis"
-  },
-  {
-    "title": "What Is the Best Age to Claim Social Security?",
-    "description": "Determine the best age to claim Social Security based on personal health, marital status, cash flow needs, and longevity analysis.",
-    "url": "articles/best-age-to-claim-social-security/",
-    "category": "Finance & Professional",
-    "keywords": "what is the best age to claim social security, best age to claim social security, when is the best age to claim social security, what is the best age to draw social security, ideal age to claim social security, best age to take social security"
-  },
-  {
-    "title": "Age 62 vs 66 vs 67 vs 70: When Should You Claim Social Security?",
-    "description": "Compare Social Security at ages 62, 66, 67 and 70. Learn how claiming age, Full Retirement Age and delayed retirement credits can affect your benefits.",
-    "url": "articles/social-security-age-62-vs-66-vs-67-vs-70/",
-    "category": "Finance & Professional",
-    "keywords": "social security calculator age 66 vs 70, social security age 62 vs 66 vs 67 vs 70, social security age 62 vs 67, social security age 66 vs 70, social security age 62 vs 70, best age to claim social security, when should you claim social security"
-  },
-  {
-    "title": "Can You Get Social Security at 62? Eligibility, Benefits & What to Know",
-    "description": "Can you get Social Security at 62? Learn when you can claim retirement benefits, how claiming before full retirement age can affect benefits, and what to consider.",
-    "url": "articles/can-you-get-social-security-at-62/",
-    "category": "Finance & Professional",
-    "keywords": "social security at age 62, can you get social security at 62, can i get social security at 62, social security age 62, social security benefits at 62, claiming social security at 62, early social security retirement age"
-  },
-  {
-    "title": "Social Security Retirement Age Chart: 1955–1960 and Later",
-    "description": "View the Social Security retirement age chart by birth year, including 1955–1960 and later. Find your Full Retirement Age and key claiming milestones.",
-    "url": "articles/social-security-retirement-age-chart/",
-    "category": "Finance & Professional",
-    "keywords": "social security retirement age chart, social security retirement age chart 1955, social security retirement age chart 1960, social security full retirement age chart, full retirement age chart, social security retirement age by birth year, social security age chart"
-  },
-  {
-    "title": "Social Security Retirement Age by Birth Year",
-    "description": "Find your Social Security retirement age by birth year. See the full retirement age chart and learn when you can claim Social Security at 62, FRA, or 70.",
-    "url": "articles/social-security-retirement-age-by-birth-year/",
-    "category": "Finance & Professional",
-    "keywords": "social security retirement age by birth year, social security retirement age, social security retirement age chart, full retirement age by birth year, social security full retirement age by birth year, social security retirement age 1955, social security retirement age 1960, social security retirement age 67"
-  },
-  {
-    "title": "What Is Full Retirement Age for Social Security?",
-    "description": "Learn what Full Retirement Age means for Social Security, how FRA is determined by birth year, and how to find your retirement age using our calculator.",
-    "url": "articles/full-retirement-age-social-security/",
-    "category": "Finance & Professional",
-    "keywords": "full retirement age for social security, full retirement age social security, social security full retirement age, full retirement age calculator, what is full retirement age for social security, social security retirement age, full retirement age chart, social security fra, fra by birth year"
-  },
-  {
     "n": "1,000 Days Old Calculator",
     "u": "/tools/1000-days-old-calculator/",
     "t": "Calculator"
@@ -99,6 +22,26 @@
   {
     "n": "20,000 Days Old Calculator",
     "u": "/tools/20000-days-old-calculator/",
+    "t": "Calculator"
+  },
+  {
+    "n": "401(k) Calculator With Employer Match",
+    "u": "/articles/401k-calculator-with-employer-match/",
+    "t": "Guide",
+    "title": "401(k) Calculator With Employer Match",
+    "description": "Understand how company matching formulas, vesting schedules, and compounding multiply your total retirement wealth.",
+    "url": "articles/401k-calculator-with-employer-match/",
+    "category": "Finance & Professional",
+    "keywords": "401k calculator with match, 401k employer match calculator, 401k matching calculator, employer match 401k"
+  },
+  {
+    "title": "401(k) Calculator: Estimate Your Retirement Savings",
+    "description": "Estimate how your 401(k) could grow by retirement based on your current balance, age, contributions, employer match, salary and expected investment return.",
+    "url": "tools/401k-calculator/",
+    "category": "Finance & Professional",
+    "keywords": "401k calculator, 401(k) calculator, 401k calculator by age, 401k age calculator, 401k retirement calculator, 401k growth calculator, 401k calculator with match, 401k calculator with employer match, 401k savings calculator, 401k investment calculator, 401k projection calculator, 401k future value calculator, 401k balance calculator, retirement savings calculator, 401k calculator by age and salary",
+    "n": "401(k) Calculator: Estimate Your Retirement Savings",
+    "u": "/tools/401k-calculator/",
     "t": "Calculator"
   },
   {
@@ -154,6 +97,16 @@
   {
     "n": "Adjusted Age vs Chronological Age: Which Number Goes Where",
     "u": "/articles/adjusted-vs-chronological-age/",
+    "t": "Guide"
+  },
+  {
+    "title": "Age 62 vs 66 vs 67 vs 70: When Should You Claim Social Security?",
+    "description": "Compare Social Security at ages 62, 66, 67 and 70. Learn how claiming age, Full Retirement Age and delayed retirement credits can affect your benefits.",
+    "url": "articles/social-security-age-62-vs-66-vs-67-vs-70/",
+    "category": "Finance & Professional",
+    "keywords": "social security calculator age 66 vs 70, social security age 62 vs 66 vs 67 vs 70, social security age 62 vs 67, social security age 66 vs 70, social security age 62 vs 70, best age to claim social security, when should you claim social security",
+    "n": "Age 62 vs 66 vs 67 vs 70: When Should You Claim Social Security?",
+    "u": "/articles/social-security-age-62-vs-66-vs-67-vs-70/",
     "t": "Guide"
   },
   {
@@ -472,6 +425,16 @@
     "t": "Guide"
   },
   {
+    "title": "Can You Get Social Security at 62? Eligibility, Benefits & What to Know",
+    "description": "Can you get Social Security at 62? Learn when you can claim retirement benefits, how claiming before full retirement age can affect benefits, and what to consider.",
+    "url": "articles/can-you-get-social-security-at-62/",
+    "category": "Finance & Professional",
+    "keywords": "social security at age 62, can you get social security at 62, can i get social security at 62, social security age 62, social security benefits at 62, claiming social security at 62, early social security retirement age",
+    "n": "Can You Get Social Security at 62? Eligibility, Benefits & What to Know",
+    "u": "/articles/can-you-get-social-security-at-62/",
+    "t": "Guide"
+  },
+  {
     "n": "Can You Retire at 60 in the UK? Pension & Early Retirement Guide",
     "u": "/articles/can-you-retire-at-60-uk/",
     "t": "Guide"
@@ -687,6 +650,16 @@
     "t": "Guide"
   },
   {
+    "title": "Early Retirement and Social Security: What Happens If You Claim Before Full Retirement Age?",
+    "description": "Explore what happens if you take early retirement and claim Social Security before FRA. Learn permanent reduction math, earnings test traps, and spousal rules.",
+    "url": "articles/early-retirement-social-security/",
+    "category": "Finance & Professional",
+    "keywords": "early retirement social security, early retirement and social security, retiring early social security, taking social security early, can i retire early on social security, social security early retirement age, early retirement age social security",
+    "n": "Early Retirement and Social Security: What Happens If You Claim Before Full Retirement Age?",
+    "u": "/articles/early-retirement-social-security/",
+    "t": "Guide"
+  },
+  {
     "n": "Early Retirement Date Calculator",
     "u": "/tools/early-retirement-date-calculator/",
     "t": "Calculator"
@@ -877,8 +850,28 @@
     "t": "Guide"
   },
   {
+    "n": "How Does a 401(k) Grow Over Time?",
+    "u": "/articles/how-does-a-401k-grow-over-time/",
+    "t": "Guide",
+    "title": "How Does a 401(k) Grow Over Time?",
+    "description": "Explore the mechanics of compound interest, employer matching, and the crossover point where growth outstrips deposits.",
+    "url": "articles/how-does-a-401k-grow-over-time/",
+    "category": "Finance & Professional",
+    "keywords": "401k growth, how does a 401k grow, 401k compound growth, 401k balance growth, 401k compound interest"
+  },
+  {
     "n": "How Does Face Age Estimation Work? AI & Facial Age Explained",
     "u": "/articles/how-does-face-age-estimation-work/",
+    "t": "Guide"
+  },
+  {
+    "title": "How Does Social Security Change by Age? Benefits at 62, 65, 67 & 70",
+    "description": "Discover how Social Security benefits change across ages 62, 65, 67, and 70. Learn monthly payout differences, reduction formulas, and delayed credits.",
+    "url": "articles/social-security-benefits-by-age/",
+    "category": "Finance & Professional",
+    "keywords": "social security benefits calculator by age, social security benefits by age, social security benefits by age 62 65 67 70, social security calculator by age, social security retirement age chart, social security retirement benefits by age",
+    "n": "How Does Social Security Change by Age? Benefits at 62, 65, 67 & 70",
+    "u": "/articles/social-security-benefits-by-age/",
     "t": "Guide"
   },
   {
@@ -889,6 +882,16 @@
   {
     "n": "How Is Age Grade Calculated? Formula, Examples & Guide",
     "u": "/articles/how-is-age-grade-calculated/",
+    "t": "Guide"
+  },
+  {
+    "title": "How Is Social Security Full Retirement Age Calculated?",
+    "description": "Understand the statutory formula behind Social Security FRA calculation, statutory birth cohort schedules, and the Social Security Amendments of 1983.",
+    "url": "articles/how-is-social-security-full-retirement-age-calculated/",
+    "category": "Finance & Professional",
+    "keywords": "how is social security full retirement age calculated, how is full retirement age calculated for social security, calculate full retirement age social security, how is social security retirement age calculated, social security full retirement age calculation",
+    "n": "How Is Social Security Full Retirement Age Calculated?",
+    "u": "/articles/how-is-social-security-full-retirement-age-calculated/",
     "t": "Guide"
   },
   {
@@ -910,6 +913,36 @@
     "n": "How Much of Your Life Have You Spent Asleep?",
     "u": "/articles/sleep-time-lived-estimate/",
     "t": "Guide"
+  },
+  {
+    "n": "How Much Should I Contribute to My 401(k)?",
+    "u": "/articles/how-much-should-i-contribute-to-my-401k/",
+    "t": "Guide",
+    "title": "How Much Should I Contribute to My 401(k)?",
+    "description": "Discover practical contribution tiers, age-based savings targets, and the long-term impact of annual auto-escalation.",
+    "url": "articles/how-much-should-i-contribute-to-my-401k/",
+    "category": "Finance & Professional",
+    "keywords": "how much should i contribute to my 401k, 401k contribution percentage, 401k contribution by age, 401k savings rate"
+  },
+  {
+    "n": "How Much Should I Have in My 401(k) by Age?",
+    "u": "/articles/how-much-should-i-have-in-my-401k-by-age/",
+    "t": "Guide",
+    "title": "How Much Should I Have in My 401(k) by Age?",
+    "description": "Compare common salary multiple benchmarks, average balances, and calculate your personalized savings timeline.",
+    "url": "articles/how-much-should-i-have-in-my-401k-by-age/",
+    "category": "Finance & Professional",
+    "keywords": "how much 401k by age, 401k balance by age, 401k age chart, average 401k balance by age, 401k benchmark by age"
+  },
+  {
+    "n": "How Much Will My 401(k) Be Worth?",
+    "u": "/articles/how-much-will-my-401k-be-worth/",
+    "t": "Guide",
+    "title": "How Much Will My 401(k) Be Worth?",
+    "description": "Learn how contributions, employer matching, time and investment returns affect your future retirement nest egg.",
+    "url": "articles/how-much-will-my-401k-be-worth/",
+    "category": "Finance & Professional",
+    "keywords": "how much will my 401k be worth, 401k future value, 401k growth calculator, 401k projection calculator"
   },
   {
     "n": "How Old Am I",
@@ -1332,6 +1365,36 @@
     "t": "Calculator"
   },
   {
+    "title": "Social Security Break-Even Age: How to Calculate When Waiting Pays Off",
+    "description": "Calculate your Social Security break-even age between 62, 67, and 70. Compare cumulative lifetime payouts, opportunity costs, and longevity factors.",
+    "url": "articles/social-security-break-even-age/",
+    "category": "Finance & Professional",
+    "keywords": "social security break even age, social security break-even age, break even age social security, social security break even calculator, break-even age social security, calculate social security break even age, social security break even analysis",
+    "n": "Social Security Break-Even Age: How to Calculate When Waiting Pays Off",
+    "u": "/articles/social-security-break-even-age/",
+    "t": "Guide"
+  },
+  {
+    "title": "Social Security Retirement Age by Birth Year",
+    "description": "Find your Social Security retirement age by birth year. See the full retirement age chart and learn when you can claim Social Security at 62, FRA, or 70.",
+    "url": "articles/social-security-retirement-age-by-birth-year/",
+    "category": "Finance & Professional",
+    "keywords": "social security retirement age by birth year, social security retirement age, social security retirement age chart, full retirement age by birth year, social security full retirement age by birth year, social security retirement age 1955, social security retirement age 1960, social security retirement age 67",
+    "n": "Social Security Retirement Age by Birth Year",
+    "u": "/articles/social-security-retirement-age-by-birth-year/",
+    "t": "Guide"
+  },
+  {
+    "title": "Social Security Retirement Age Chart: 1955–1960 and Later",
+    "description": "View the Social Security retirement age chart by birth year, including 1955–1960 and later. Find your Full Retirement Age and key claiming milestones.",
+    "url": "articles/social-security-retirement-age-chart/",
+    "category": "Finance & Professional",
+    "keywords": "social security retirement age chart, social security retirement age chart 1955, social security retirement age chart 1960, social security full retirement age chart, full retirement age chart, social security retirement age by birth year, social security age chart",
+    "n": "Social Security Retirement Age Chart: 1955–1960 and Later",
+    "u": "/articles/social-security-retirement-age-chart/",
+    "t": "Guide"
+  },
+  {
     "n": "Sports Eligibility Age Calculator",
     "u": "/tools/sports-eligibility-age-calculator/",
     "t": "Calculator"
@@ -1522,8 +1585,28 @@
     "t": "Guide"
   },
   {
+    "title": "What Is Full Retirement Age for Social Security?",
+    "description": "Learn what Full Retirement Age means for Social Security, how FRA is determined by birth year, and how to find your retirement age using our calculator.",
+    "url": "articles/full-retirement-age-social-security/",
+    "category": "Finance & Professional",
+    "keywords": "full retirement age for social security, full retirement age social security, social security full retirement age, full retirement age calculator, what is full retirement age for social security, social security retirement age, full retirement age chart, social security fra, fra by birth year",
+    "n": "What Is Full Retirement Age for Social Security?",
+    "u": "/articles/full-retirement-age-social-security/",
+    "t": "Guide"
+  },
+  {
     "n": "What Is Pensionable Age? Pensionable Age vs Retirement Age Explained",
     "u": "/articles/what-is-pensionable-age/",
+    "t": "Guide"
+  },
+  {
+    "title": "What Is the Best Age to Claim Social Security?",
+    "description": "Determine the best age to claim Social Security based on personal health, marital status, cash flow needs, and longevity analysis.",
+    "url": "articles/best-age-to-claim-social-security/",
+    "category": "Finance & Professional",
+    "keywords": "what is the best age to claim social security, best age to claim social security, when is the best age to claim social security, what is the best age to draw social security, ideal age to claim social security, best age to take social security",
+    "n": "What Is the Best Age to Claim Social Security?",
+    "u": "/articles/best-age-to-claim-social-security/",
     "t": "Guide"
   },
   {

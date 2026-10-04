@@ -363,3 +363,9 @@ Written and reviewed by Navjeet Kamboj. Results are informational: clinical, leg
 - [How Is Social Security Full Retirement Age Calculated?](https://www.agecalculatorlab.com/articles/how-is-social-security-full-retirement-age-calculated/): Detailed explanation of statutory birth cohort formulas, the 1983 Amendments, and FRA math.
 - [Social Security Break-Even Age: How to Calculate When Waiting Pays Off](https://www.agecalculatorlab.com/articles/social-security-break-even-age/): Complete mathematical guide and formulas for calculating the break-even age between claiming at 62, 67, and 70.
 - [What Is the Best Age to Claim Social Security?](https://www.agecalculatorlab.com/articles/best-age-to-claim-social-security/): Strategic decision framework evaluating longevity, marital status, cash flow, and tax considerations.
+
+- [How Much Should I Have in My 401(k) by Age?](https://www.agecalculatorlab.com/articles/how-much-should-i-have-in-my-401k-by-age/): Benchmark salary multiples, average vs median balances, and personalized retirement target modeling.
+- [How Much Will My 401(k) Be Worth?](https://www.agecalculatorlab.com/articles/how-much-will-my-401k-be-worth/): Compound interest formula, 10/20/30-year growth trajectories, and inflation-adjusted purchasing power.
+- [How Does a 401(k) Grow Over Time?](https://www.agecalculatorlab.com/articles/how-does-a-401k-grow-over-time/): Understanding payroll contributions, employer match, and the crossover point where compounding outpaces deposits.
+- [401(k) Calculator With Employer Match](https://www.agecalculatorlab.com/articles/401k-calculator-with-employer-match/): Detailed matching formulas (50% up to 6%, dollar-for-dollar), vesting schedules, and compounding value.
+- [How Much Should I Contribute to My 401(k)?](https://www.agecalculatorlab.com/articles/how-much-should-i-contribute-to-my-401k/): Hierarchy of 401(k) contributions, 5% vs 10% vs 15% comparisons, and annual auto-escalation strategies.
