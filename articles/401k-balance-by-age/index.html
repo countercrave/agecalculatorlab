@@ -82,6 +82,39 @@
 .article-nav-card .nav-direction { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #ff754d; margin-bottom: 6px; display: block; }
 .article-nav-card strong { font-size: 1.05rem; color: #042f2a; line-height: 1.35; display: block; }
 @media(max-width: 640px) { .article-nav { grid-template-columns: 1fr; } }
+
+/* Layout & Hero */
+.article-hero { background: linear-gradient(180deg, #f3f8f5 0%, #fbfdfc 100%); padding: 36px 0 24px; }
+.article-hero-grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+@media (min-width: 881px) { .article-hero-grid { grid-template-columns: 1.2fr 0.8fr; } }
+.article-hero-copy .eyebrow { color: var(--brand, #075433); text-transform: uppercase; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; margin-bottom: 8px; display: inline-block; }
+.article-hero-copy h1 { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(1.9rem, 3.4vw, 2.55rem); line-height: 1.22; color: var(--brand-dark, #042f2a); margin: 0 0 14px; }
+.article-hero-copy .lead { font-size: 1.08rem; line-height: 1.6; color: var(--ink-2, #2d4a3e); margin: 0 0 20px; }
+.hero-cta-group { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.hero-btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 10px; background: var(--brand-dark, #042f2a); color: #ffffff; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all .18s ease; }
+.hero-btn-primary:hover { background: var(--brand, #075433); color: #ffffff; transform: translateY(-1px); }
+.hero-btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 10px; background: #eaf4ef; color: var(--brand-dark, #042f2a); font-weight: 650; text-decoration: none; border: 1px solid #c8e0d4; font-size: 0.95rem; transition: all .18s ease; }
+.hero-btn-secondary:hover { background: #dfeee5; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; color: #52796f; margin-bottom: 16px; }
+.author-mini { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid #dce9e2; }
+.author-mini img { border-radius: 50%; width: 44px; height: 44px; object-fit: cover; border: 2px solid #9fe7bd; }
+.author-mini div { display: flex; flex-direction: column; font-size: 0.84rem; }
+.author-mini div strong a { color: var(--brand-dark, #042f2a); text-decoration: none; font-weight: 700; }
+.author-mini div small { color: #6c8b7f; font-size: 0.78rem; }
+.article-featured-media { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 24px rgba(4,47,42,0.08); border: 1px solid #d5e5dc; background: #03251e; }
+.article-featured-media img { width: 100%; height: auto; display: block; aspect-ratio: 16/9; object-fit: cover; }
+.article-featured-media figcaption { font-size: 0.78rem; color: #6b8a7d; padding: 8px 14px; background: #f8fbf9; border-top: 1px solid #e1ede6; text-align: center; }
+
+/* Sticky TOC & 2-Column Article Layout */
+.article-layout { display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 36px; margin-bottom: 60px; }
+@media (min-width: 921px) { .article-layout { grid-template-columns: 270px minmax(0, 1fr); } }
+.article-toc { background: #f8fbf9; border: 1px solid #d3e5de; border-radius: 12px; padding: 22px; align-self: start; }
+@media (min-width: 921px) { .article-toc { position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto; } }
+.article-toc strong { display: block; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--brand-dark, #042f2a); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #dce9e2; }
+.article-toc a { display: block; font-size: 0.86rem; color: #355648; text-decoration: none; padding: 5px 0; line-height: 1.45; transition: color .15s ease; }
+.article-toc a:hover { color: var(--brand, #075433); font-weight: 600; padding-left: 3px; }
+.article-content { min-width: 0; line-height: 1.75; color: var(--ink-2, #243831); font-size: 1.02rem; }
+
 </style>
 <script type="application/ld+json">
 {
@@ -249,85 +282,147 @@
 <body>
 
 <header class="site-header">
-<div class="header-container">
-<a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto"></a>
-<div class="nav-wrap">
-<nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
-<button class="nav-mobile-close" id="nav-close" type="button" aria-label="Close menu">✕</button>
-<div class="nav-item mega-dropdown">
-<button class="nav-link mega-toggle" type="button" aria-expanded="false" aria-haspopup="true">Calculators <span class="nav-arrow">▾</span></button>
-<div class="mega-menu">
-<div class="mega-grid">
-<div class="mega-col"><span class="mega-head">Core Chronology</span><a href="../../">Exact Age Calculator</a><a href="../../tools/chronological-age-calculator/">Chronological Age</a><a href="../../tools/birthday-calculator/">Birthday Calculator</a><a href="../../tools/half-birthday-calculator/">Half Birthday</a></div>
-<div class="mega-col"><span class="mega-head">Finance &amp; Career</span><a href="../../tools/401k-calculator/">401(k) Calculator</a><a href="../../tools/social-security-age-calculator/">Social Security Age</a><a href="../../tools/retirement-age-calculator/">Retirement Age</a><a href="../../tools/pensionable-age-calculator/">Pensionable Age</a></div>
-<div class="mega-col"><span class="mega-head">Directories</span><a href="../../tools/">All 169+ Tools →</a><a href="../../categories/">Category Directory</a></div>
+<div class="container nav">
+<a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+<img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto">
+</a>
+<button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+<span></span>
+</button>
+<nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+<details class="nav-dropdown nav-dropdown-categories">
+<summary>Calculators <span class="nav-chevron" aria-hidden="true">▾</span></summary>
+<div class="nav-mega">
+<div class="nav-mega-head">
+<div>
+<small>168 focused tools</small>
+<strong>Main calculator categories</strong>
+</div>
+<a href="../../categories/">View category directory →</a>
+</div>
+<div class="nav-category-grid">
+<a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+<a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+<a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>10 tools</small></a>
+<a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+<a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+<a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>16 tools</small></a>
+<a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>16 tools</small></a>
+<a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+<a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+<a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a>
+<a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a>
+</div>
+<div class="nav-quick-row">
+<span>Popular</span>
+<a href="../../">Age Calculator</a>
+<a href="../../tools/date-difference-calculator/">Date Difference</a>
+<a href="../../tools/corrected-age-calculator/">Corrected Age</a>
+<a href="../../tools/countdown-to-date-calculator/">Countdown</a>
 </div>
 </div>
+</details>
+<details class="nav-dropdown nav-dropdown-guides">
+<summary>Guides <span class="nav-chevron" aria-hidden="true">▾</span></summary>
+<div class="nav-mega nav-mega-guides">
+<div class="nav-mega-head">
+<div>
+<small>167 practical guides</small>
+<strong>Learn the method</strong>
 </div>
-<div class="nav-item mega-dropdown">
-<button class="nav-link mega-toggle" type="button" aria-expanded="false" aria-haspopup="true">Guides <span class="nav-arrow">▾</span></button>
-<div class="mega-menu">
-<div class="mega-grid">
-<div class="mega-col"><span class="mega-head">Featured Guides</span><a href="../how-much-should-i-have-in-my-401k-by-age/">401(k) by Age Benchmarks</a><a href="../how-much-will-my-401k-be-worth/">Future 401(k) Balance</a><a href="../full-retirement-age-social-security/">Full Retirement Age (FRA)</a></div>
-<div class="mega-col"><span class="mega-head">Relationship &amp; Demographics</span><a href="../dating-age-rule/">Dating Age Rule</a><a href="../half-your-age-plus-seven/">Half-Your-Age-Plus-7</a></div>
-<div class="mega-col"><span class="mega-head">Library</span><a href="../../articles/">All Guides Archive →</a></div>
+<a href="../../articles/">Browse all guides →</a>
+</div>
+<div class="nav-guide-grid">
+<a href="../../articles/how-much-should-i-have-in-my-401k-by-age/"><small>Finance &amp; Professional</small><span>How Much Should I Have in My 401(k) by Age?</span></a>
+<a href="../../articles/how-much-will-my-401k-be-worth/"><small>Finance &amp; Professional</small><span>How Much Will My 401(k) Be Worth?</span></a>
+<a href="../../articles/how-does-a-401k-grow-over-time/"><small>Finance &amp; Professional</small><span>How Does a 401(k) Grow Over Time?</span></a>
+<a href="../../articles/401k-calculator-with-employer-match/"><small>Finance &amp; Professional</small><span>401(k) Calculator with Employer Match</span></a>
+<a href="../../articles/full-retirement-age-social-security/"><small>Finance &amp; Professional</small><span>What Is Full Retirement Age for Social Security?</span></a>
+<a href="../../articles/dating-age-rule/"><small>Culture &amp; Milestones</small><span>Dating Age Rule Explained</span></a>
 </div>
 </div>
-</div>
-<a class="nav-link" href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
-<a class="nav-link" href="../../categories/">Categories</a>
-<a class="nav-link" href="../../methodology/">Methodology</a>
-</nav>
+</details>
+<a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
+<a href="../../categories/">Categories</a>
+<a href="../../methodology/">Methodology</a>
 <div class="nav-search-wrap" id="nav-search-wrap">
-<button class="nav-search-btn" id="search-open" type="button" aria-label="Open search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></button>
-<div class="nav-search-drawer" id="search-drawer" hidden>
-<form class="nav-search-form" id="search-form" action="../../search/" method="get">
-<input class="nav-search-input" id="search-input" type="search" name="q" placeholder="Search calculators, topics, guides..." autocomplete="off">
-<button class="nav-search-submit" type="submit">Search</button>
-</form>
-<div class="nav-search-results" id="search-results"></div>
+<div class="nav-search-box">
+<svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+<circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle>
+<path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+<input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autocomplete="off">
 </div>
+<div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div>
 </div>
 <a class="nav-cta" href="../../#calculator">Calculate age</a>
-<button class="nav-toggle" id="nav-open" type="button" aria-label="Open menu"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span></button>
-</div>
+</nav>
 </div>
 </header>
 
-<main class="article-page">
-<div class="article-container">
-
-<nav class="article-breadcrumbs" aria-label="Breadcrumb">
-<a href="../../">Home</a> <span>/</span>
-<a href="../../articles/">Guides</a> <span>/</span>
-<span>401(k) Balance by Age</span>
-</nav>
-
-<header class="article-header">
-<span class="article-eyebrow">Retirement Savings &amp; Benchmarks</span>
+<main id="main-content">
+<section class="article-hero">
+<div class="container">
+<div class="article-hero-grid">
+<div class="article-hero-copy">
+<span class="eyebrow">Retirement Savings &amp; Benchmarks</span>
 <h1>401(k) Balance by Age: How Much Should You Have Saved?</h1>
+<p class="lead">When workers ask, <em>“How much should I have in my 401(k) at my age?”</em>, they are usually looking for a clear, reassuring milestone. However, there is no single dollar amount that applies equally to every 30-year-old, 40-year-old, or 60-year-old. A 40-year-old earning $50,000 with modest living expenses requires a completely different retirement portfolio than a 40-year-old earning $175,000 who maintains an expensive lifestyle. Your ideal 401(k) balance depends on your current income, your contribution rate, employer matching, your target retirement age, expected Social Security benefits, and long-term investment returns.</p>
+<div class="hero-cta-group">
+<a class="hero-btn-primary" href="../../tools/401k-calculator/">Launch 401(k) Calculator →</a>
+<a class="hero-btn-secondary" href="#what-does-401-k-balance-by-age-actually-mean">Jump to Guide ↓</a>
+</div>
 <div class="article-meta">
+<span>Published: October 4, 2026</span>
+<span>•</span>
+<span>Reading Time: 16 min read</span>
+<span>•</span>
+<span>Verified Financial Modeling</span>
+</div>
 <div class="author-mini">
-<img src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="36" height="36">
+<img decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="44" height="44">
 <div>
 <strong><a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></strong>
-<small>Calculation Specialist &amp; Research Editor</small>
+<small>Lead Calculation Specialist &amp; Editorial Director</small>
 </div>
 </div>
-<span>•</span>
-<time datetime="2026-10-04">October 4, 2026</time>
-<span>•</span>
-<span>16 min read</span>
 </div>
-</header>
-
 <figure class="article-featured-media">
-<img src="../../assets/articles/401k-balance-by-age/featured-401k-balance-by-age.jpg" alt="401(k) Balance by Age savings timeline and retirement financial analysis" width="1200" height="675" loading="eager">
+<img decoding="async" src="../../assets/articles/401k-balance-by-age/featured-401k-balance-by-age.jpg" alt="401(k) Balance by Age savings timeline and retirement financial analysis" width="1200" height="675">
 <figcaption>Age-based 401(k) analysis requires examining income multiples, compound growth horizons, and individual savings habits rather than misleading national averages.</figcaption>
 </figure>
+</div>
+</div>
+</section>
 
-<div class="article-content">
+<div class="container article-layout">
+<aside class="article-toc" aria-label="Table of Contents">
+<strong>On this page</strong>
+<a href="#what-does-401-k-balance-by-age-actually-mean">1. What Does “401(k) Balance by Age” Actually Mean?</a>
+<a href="#401-k-balance-by-age-chart-overview-by-decade">2. 401(k) Balance by Age Chart: Overview by Decade</a>
+<a href="#how-much-should-you-have-in-your-401-k-at-age-30">3. How Much Should You Have in Your 401(k) at Age 30?</a>
+<a href="#how-much-should-you-have-in-your-401-k-at-age-40">4. How Much Should You Have in Your 401(k) at Age 40?</a>
+<a href="#how-much-should-you-have-in-your-401-k-at-age-50">5. How Much Should You Have in Your 401(k) at Age 50?</a>
+<a href="#how-much-should-you-have-in-your-401-k-at-age-60">6. How Much Should You Have in Your 401(k) at Age 60?</a>
+<a href="#how-much-should-you-have-in-your-401-k-at-age-65">7. How Much Should You Have in Your 401(k) at Age 65?</a>
+<a href="#why-your-income-matters-when-comparing-401-k-balan">8. Why Your Income Matters When Comparing 401(k) Balances</a>
+<a href="#why-starting-age-dictates-your-lifetime-trajectory">9. Why Starting Age Dictates Your Lifetime Trajectory</a>
+<a href="#how-employer-matching-supercharges-your-balance">10. How Employer Matching Supercharges Your Balance</a>
+<a href="#how-your-contribution-rate-directly-dictates-your-">11. How Your Contribution Rate Directly Dictates Your Future Nest Egg</a>
+<a href="#average-401-k-balance-vs-how-much-you-should-have">12. Average 401(k) Balance vs. How Much You Should Have</a>
+<a href="#should-you-compare-your-401-k-balance-with-people-">13. Should You Compare Your 401(k) Balance With People Your Age?</a>
+<a href="#401-k-balance-benchmarks-by-age-how-rules-of-thumb">14. 401(k) Balance Benchmarks by Age: How Rules of Thumb Work</a>
+<a href="#what-if-your-401-k-balance-is-below-the-benchmark">15. What If Your 401(k) Balance Is Below the Benchmark?</a>
+<a href="#what-if-your-401-k-balance-is-above-the-benchmark">16. What If Your 401(k) Balance Is Above the Benchmark?</a>
+<a href="#how-to-calculate-your-personal-401-k-target-in-8-s">17. How to Calculate Your Personal 401(k) Target in 8 Steps</a>
+<a href="#401-k-balance-example-two-real-world-scenarios">18. 401(k) Balance Example: Two Real-World Scenarios</a>
+<a href="#how-much-should-your-401-k-grow-each-year">19. How Much Should Your 401(k) Grow Each Year?</a>
+<a href="#factoring-in-inflation-nominal-vs-real-401-k-balan">20. Factoring In Inflation: Nominal vs. Real 401(k) Balances</a>
+<a href="#common-401-k-balance-mistakes-to-avoid">21. Common 401(k) Balance Mistakes to Avoid</a>
+<a href="#frequently-asked-questions">22. Frequently Asked Questions</a>
+</aside>
 
+<article class="article-content">
 <p>When workers ask, <em>“How much should I have in my 401(k) at my age?”</em>, they are usually looking for a clear, reassuring milestone. However, there is no single dollar amount that applies equally to every 30-year-old, 40-year-old, or 60-year-old. A 40-year-old earning $50,000 with modest living expenses requires a completely different retirement portfolio than a 40-year-old earning $175,000 who maintains an expensive lifestyle. Your ideal 401(k) balance depends on your current income, your contribution rate, employer matching, your target retirement age, expected Social Security benefits, and long-term investment returns.</p>
 
 <p>Instead of relying on broad population statistics that blend corporate executives with entry-level workers, the most reliable way to evaluate your personal progress is to use our interactive <a href="../../tools/401k-calculator/">401(k) Calculator</a>. By testing your actual salary, current savings, deferral rate, and employer match formula, you can establish an authentic, personalized savings trajectory tailored to your financial goals.</p>
@@ -337,7 +432,7 @@
 <p>Financial planning firms such as Fidelity and J.P. Morgan measure retirement readiness in <strong>multiples of annual salary</strong> rather than fixed dollar values. Common targets recommend saving <strong>1x your salary by age 30</strong>, <strong>3x by 40</strong>, <strong>6x by 50</strong>, <strong>8x by 60</strong>, and <strong>10x by 67</strong>. Because retirement expenses mirror your pre-retirement earnings, salary multiples provide a far more reliable benchmark than raw averages.</p>
 </div>
 
-<h2>What Does “401(k) Balance by Age” Actually Mean?</h2>
+<h2 id="what-does-401-k-balance-by-age-actually-mean">What Does “401(k) Balance by Age” Actually Mean?</h2>
 <p>When reviewing financial headlines or survey data, the phrase “401(k) balance by age” is often used interchangeably to describe four fundamentally different measurements. Confusing these terms can lead to unnecessary financial anxiety or dangerous complacency:</p>
 
 <ul>
@@ -352,7 +447,7 @@
 <figcaption>Figure 1: Comparison of average versus median 401(k) balances across age brackets (Data source: Vanguard "How America Saves"). Note how mathematical averages distort typical participant savings.</figcaption>
 </figure>
 
-<h2>401(k) Balance by Age Chart: Overview by Decade</h2>
+<h2 id="401-k-balance-by-age-chart-overview-by-decade">401(k) Balance by Age Chart: Overview by Decade</h2>
 <p>Rather than obsessing over rigid dollar numbers, retirement planning across your career should follow distinct strategic priorities. The table below outlines what participants should focus on during each phase of their accumulation and transition years:</p>
 
 <div class="data-table-wrap">
@@ -407,7 +502,7 @@
 <div class="table-footnote">Note: Multiples reflect total household retirement savings guidelines established by institutional wealth managers (e.g., Fidelity, Vanguard). Individual requirements vary.</div>
 </div>
 
-<h2>How Much Should You Have in Your 401(k) at Age 30?</h2>
+<h2 id="how-much-should-you-have-in-your-401-k-at-age-30">How Much Should You Have in Your 401(k) at Age 30?</h2>
 <p>At age 30, most workers are roughly five to eight years into their primary career. A widely cited industry guideline suggests having <strong>1x your current annual salary</strong> accumulated across your retirement accounts by your 30th birthday. If you earn $60,000 per year, your target benchmark is approximately $60,000.</p>
 
 <p>However, many 30-year-olds find themselves below this figure due to student loan repayments, graduate schooling, early career transitions, or saving for a first home down payment. Falling short of 1x salary at age 30 is neither uncommon nor fatal to your retirement security. Because you still have 35 to 37 years of investment horizon ahead of you, compound interest is on your side. What matters far more than your current dollar balance at 30 is establishing an aggressive contribution rate—ideally 10% to 15% including employer matching—and investing in low-cost broad-market index funds.</p>
@@ -418,27 +513,27 @@
 <a class="btn-cta" href="../../tools/401k-calculator/">Launch 401(k) Calculator →</a>
 </div>
 
-<h2>How Much Should You Have in Your 401(k) at Age 40?</h2>
+<h2 id="how-much-should-you-have-in-your-401-k-at-age-40">How Much Should You Have in Your 401(k) at Age 40?</h2>
 <p>By age 40, you are entering your peak earning years. Financial planning models typically recommend having <strong>3x your annual salary</strong> accumulated by age 40. For a professional earning $90,000, that translates to a benchmark target of $270,000; for a worker earning $50,000, the target is $150,000.</p>
 
 <p>Age 40 represents an essential mathematical inflection point in wealth accumulation. Up until your late thirties, your annual account growth was driven predominantly by your personal payroll deductions and employer matches. By age 40, a $250,000 balance generating an average 7% annual return produces $17,500 in market returns alone—often eclipsing your annual payroll contributions. If your balance at 40 is behind the 3x benchmark, now is the time to raise your contribution rate by 1% to 2% with every pay raise.</p>
 
-<h2>How Much Should You Have in Your 401(k) at Age 50?</h2>
+<h2 id="how-much-should-you-have-in-your-401-k-at-age-50">How Much Should You Have in Your 401(k) at Age 50?</h2>
 <p>At age 50, the recommended planning guideline is <strong>6x your annual salary</strong>. If your household earnings are $110,000, your target nest egg is approximately $660,000. At this juncture, retirement is roughly 15 to 17 years away, giving you adequate runway to stage an aggressive catch-up strategy if you are lagging behind.</p>
 
 <p>Turning 50 unlocks a key provision under IRS regulations: <strong>catch-up contributions</strong>. For 2026, participants aged 50 and older can contribute an additional $7,500 beyond the standard $23,500 elective deferral limit, enabling an annual contribution of up to $31,000 in pre-tax or Roth 401(k) dollars. Furthermore, the SECURE 2.0 Act introduced higher catch-up limits for workers aged 60 through 63, allowing late-career workers to dramatically accelerate accumulation.</p>
 
-<h2>How Much Should You Have in Your 401(k) at Age 60?</h2>
+<h2 id="how-much-should-you-have-in-your-401-k-at-age-60">How Much Should You Have in Your 401(k) at Age 60?</h2>
 <p>By age 60, retirement planning shifts from theoretical accumulation to concrete distribution logistics. The conventional benchmark at age 60 is <strong>8x your annual salary</strong> ($640,000 for an $80,000 earner; $960,000 for a $120,000 earner).</p>
 
 <p>At age 60, your 401(k) target cannot be examined in isolation. It must be directly coordinated with your planned Social Security claiming strategy. Retiring at 62 results in a permanent 30% reduction in monthly Social Security benefits compared to your Full Retirement Age (67 for everyone born in 1960 or later). If you plan to retire before age 67, your 401(k) must serve as a temporary bridge to fund expenses, requiring a larger nest egg. Use our <a href="../../tools/social-security-age-calculator/">Social Security Age Calculator</a> to model the trade-offs between claiming at 62 versus waiting until 67 or 70.</p>
 
-<h2>How Much Should You Have in Your 401(k) at Age 65?</h2>
+<h2 id="how-much-should-you-have-in-your-401-k-at-age-65">How Much Should You Have in Your 401(k) at Age 65?</h2>
 <p>By age 65 to 67, benchmarks recommend having <strong>8x to 10x your final annual salary</strong> saved. For an individual with pre-retirement earnings of $85,000, a 10x target yields an $850,000 nest egg. Assuming a standard 4% annual withdrawal rate, an $850,000 portfolio generates $34,000 in annual inflation-adjusted retirement income. When combined with an average Social Security benefit of $24,000 to $28,000 per year, total annual retirement income reaches $58,000 to $62,000—successfully replacing roughly 70% to 73% of pre-retirement gross earnings.</p>
 
 <p>However, age 65 is no longer the mandated retirement age. Millions of workers choose to work until 68 or 70, allowing their investments to continue compounding without withdrawals while accumulating delayed retirement credits on Social Security.</p>
 
-<h2>Why Your Income Matters When Comparing 401(k) Balances</h2>
+<h2 id="why-your-income-matters-when-comparing-401-k-balan">Why Your Income Matters When Comparing 401(k) Balances</h2>
 <p>The single greatest flaw in comparing raw 401(k) dollar amounts across peer groups is that a fixed dollar balance represents entirely different financial realities depending on your salary and standard of living.</p>
 
 <p>Consider two 40-year-old coworkers who both hold exactly $100,000 in their 401(k) accounts:</p>
@@ -453,17 +548,17 @@
 <figcaption>Figure 2: Why identical balances represent completely different retirement trajectories. Income multiples measure actual lifestyle replacement capacity.</figcaption>
 </figure>
 
-<h2>Why Starting Age Dictates Your Lifetime Trajectory</h2>
+<h2 id="why-starting-age-dictates-your-lifetime-trajectory">Why Starting Age Dictates Your Lifetime Trajectory</h2>
 <p>The math of compound growth heavily rewards the years your money spends in the market. In our companion guide on <a href="../how-does-a-401k-grow-over-time/">how a 401(k) grows over time</a>, we explore how early contributions do the heavy lifting of lifetime wealth creation.</p>
 
 <p>Consider an investor who starts contributing $500 per month ($6,000 per year) at age 25 with a 7% average annual return. By age 65, their portfolio grows to approximately <strong>$1,268,000</strong> on total out-of-pocket contributions of just $240,000. If that same investor delays starting until age 35, contributing the exact same $500 per month for 30 years yields approximately <strong>$590,000</strong>. Waiting 10 years cuts the eventual retirement balance by more than half, demonstrating why building savings habits in your twenties creates an enormous structural advantage.</p>
 
-<h2>How Employer Matching Supercharges Your Balance</h2>
+<h2 id="how-employer-matching-supercharges-your-balance">How Employer Matching Supercharges Your Balance</h2>
 <p>Two workers with identical salaries, identical contribution percentages, and identical investment allocations can end up with radically different 401(k) balances at age 50 simply due to their employer's matching formula. In our guide to the <a href="../401k-calculator-with-employer-match/">401(k) calculator with employer match</a>, we demonstrate how matching acts as an immediate, guaranteed boost to your savings rate.</p>
 
 <p>A typical match formula offers 50% on employee contributions up to 6% of salary, providing a 3% company contribution. Over 30 years on an average $75,000 salary, that 3% employer match adds over $225,000 in compound balance at retirement—entirely funded by company contributions and their compound returns. Always contribute at least enough to capture your complete company match before allocating savings elsewhere.</p>
 
-<h2>How Your Contribution Rate Directly Dictates Your Future Nest Egg</h2>
+<h2 id="how-your-contribution-rate-directly-dictates-your-">How Your Contribution Rate Directly Dictates Your Future Nest Egg</h2>
 <p>While investment returns are subject to market fluctuations, your savings rate is the one variable entirely within your control. Increasing your contribution percentage by just a few points creates dramatic compounding divergence over a career:</p>
 
 <div class="data-table-wrap">
@@ -513,7 +608,7 @@
 <figcaption>Auditing your personal retirement plan requires reviewing contribution percentages, current balances, and salary multiples annually.</figcaption>
 </figure>
 
-<h2>Average 401(k) Balance vs. How Much You Should Have</h2>
+<h2 id="average-401-k-balance-vs-how-much-you-should-have">Average 401(k) Balance vs. How Much You Should Have</h2>
 <p>One of the most common mistakes workers make is comparing their account statement to published national averages and concluding they are in good shape. According to Vanguard's <em>How America Saves</em> data:</p>
 
 <ul>
@@ -526,7 +621,7 @@
 
 <p>Notice the massive chasm between averages and medians. In the 55–64 bracket, the average balance ($247,000) is almost triple the median balance ($88,000). More importantly, neither $88,000 nor $247,000 is sufficient to fund a comfortable 25-year retirement without substantial supplemental income. Published averages reflect where participants currently stand, not where they <em>need</em> to be for financial independence.</p>
 
-<h2>Should You Compare Your 401(k) Balance With People Your Age?</h2>
+<h2 id="should-you-compare-your-401-k-balance-with-people-">Should You Compare Your 401(k) Balance With People Your Age?</h2>
 <p>The short answer is <strong>no</strong>. Comparing your account balance to peers is an unreliable yardstick because you cannot see the full picture of their balance sheet:</p>
 
 <ul>
@@ -536,7 +631,7 @@
 <li>Conversely, a coworker with a large 401(k) balance may carry debilitating credit card debt, medical liens, or private student loans.</li>
 </ul>
 
-<h2>401(k) Balance Benchmarks by Age: How Rules of Thumb Work</h2>
+<h2 id="401-k-balance-benchmarks-by-age-how-rules-of-thumb">401(k) Balance Benchmarks by Age: How Rules of Thumb Work</h2>
 <p>Institutional retirement frameworks evaluate adequacy using three primary methodologies:</p>
 
 <ol>
@@ -545,7 +640,7 @@
 <li><strong>Cash Flow Replacement Need:</strong> Calculating how much annual income your portfolio must generate to cover your projected retirement living expenses (typically 75% to 80% of final earnings minus Social Security).</li>
 </ol>
 
-<h2>What If Your 401(k) Balance Is Below the Benchmark?</h2>
+<h2 id="what-if-your-401-k-balance-is-below-the-benchmark">What If Your 401(k) Balance Is Below the Benchmark?</h2>
 <p>Discovering that your 401(k) balance is below the recommended benchmark for your age is common, but it is not a reason to panic. Take the following proactive steps:</p>
 
 <ul>
@@ -555,7 +650,7 @@
 <li><strong>Evaluate your planned retirement age:</strong> Working just two additional years (e.g., from age 65 to 67) has a triple benefit: your portfolio compounds for two more years, you contribute for two more years, and you avoid two years of portfolio withdrawals.</li>
 </ul>
 
-<h2>What If Your 401(k) Balance Is Above the Benchmark?</h2>
+<h2 id="what-if-your-401-k-balance-is-above-the-benchmark">What If Your 401(k) Balance Is Above the Benchmark?</h2>
 <p>If your balance exceeds the standard age benchmark, congratulations—your savings discipline is paying dividends. However, being ahead of the benchmark does not automatically guarantee you can retire tomorrow. You must still account for:</p>
 
 <ul>
@@ -564,7 +659,7 @@
 <li><strong>Inflation and market sequence of returns:</strong> Early retirement extends your distribution phase to 30 or 40 years, increasing exposure to long-term inflation risk.</li>
 </ul>
 
-<h2>How to Calculate Your Personal 401(k) Target in 8 Steps</h2>
+<h2 id="how-to-calculate-your-personal-401-k-target-in-8-s">How to Calculate Your Personal 401(k) Target in 8 Steps</h2>
 <p>Rather than relying on generic charts, follow this 8-step process to establish your custom retirement target:</p>
 
 <ol>
@@ -578,7 +673,7 @@
 <li><strong>Step 8 — Calibrate Savings Annually:</strong> Revisit your numbers once per year to adjust for raises, market performance, and life changes.</li>
 </ol>
 
-<h2>401(k) Balance Example: Two Real-World Scenarios</h2>
+<h2 id="401-k-balance-example-two-real-world-scenarios">401(k) Balance Example: Two Real-World Scenarios</h2>
 <p>To see how these principles interact, consider two real-world case studies:</p>
 
 <div class="highlight-box">
@@ -597,15 +692,15 @@
 <strong>Analysis:</strong> Sarah holds ~2.7x her salary, below the 6.0x benchmark for age 50. Recognizing the shortfall, she aggressively raised her contribution into the catch-up zone. With $29,350 annual contributions compounding at 6.5% for 14 years, her balance will grow to approximately <strong>$1,425,000</strong>, successfully closing the gap before retirement.</p>
 </div>
 
-<h2>How Much Should Your 401(k) Grow Each Year?</h2>
+<h2 id="how-much-should-your-401-k-grow-each-year">How Much Should Your 401(k) Grow Each Year?</h2>
 <p>Many investors mistakenly expect their 401(k) to grow by a smooth 7% every twelve months. In reality, market returns are volatile: a single year might deliver a +24% gain, followed by a flat year (+1%), followed by a -12% decline. In our deep-dive analysis on <a href="../401k-rate-of-return/">what rate of return to use for a 401(k) calculator</a>, we show why multi-decade annualized averages (typically 6% to 8% before inflation) are appropriate for long-term planning, while short-term swings must be anticipated without panic.</p>
 
-<h2>Factoring In Inflation: Nominal vs. Real 401(k) Balances</h2>
+<h2 id="factoring-in-inflation-nominal-vs-real-401-k-balan">Factoring In Inflation: Nominal vs. Real 401(k) Balances</h2>
 <p>When our calculator projects that your 401(k) will reach $1,500,000 thirty years from now, that figure is expressed in <strong>nominal dollars</strong>. Due to inflation, $1.5 million in 2056 will not purchase the same basket of goods and services that $1.5 million buys today.</p>
 
 <p>Assuming a long-term inflation rate of 2.5% to 3.0%, the purchasing power of your money roughly halves every 24 to 28 years. A nominal $1.5 million nest egg in 30 years represents approximately $620,000 to $700,000 in today's purchasing power. That is why planning frameworks recommend targeting 8x to 10x your final, inflation-adjusted salary rather than fixed static figures.</p>
 
-<h2>Common 401(k) Balance Mistakes to Avoid</h2>
+<h2 id="common-401-k-balance-mistakes-to-avoid">Common 401(k) Balance Mistakes to Avoid</h2>
 <ol>
 <li><strong>Mistake 1: Treating national averages as personal targets.</strong> Never measure your readiness against top-heavy statistical averages.</li>
 <li><strong>Mistake 2: Ignoring your personal salary level.</strong> A $200,000 balance is great for a $45,000 salary, but inadequate for a $140,000 salary.</li>
@@ -616,7 +711,7 @@
 <li><strong>Mistake 7: Isolating your 401(k) from Social Security.</strong> Failing to plan how your 401(k) coordinates with Social Security claiming age leaves retirement income on the table.</li>
 </ol>
 
-<h2>Frequently Asked Questions</h2>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 
 <div class="faq-card">
 <h3>How much should I have in my 401(k) by age?</h3>
@@ -692,8 +787,7 @@
 <strong>How Much Can a 401(k) Grow in 5, 10, 20 or 30 Years? →</strong>
 </a>
 </nav>
-
-</div>
+</article>
 </div>
 </main>
 

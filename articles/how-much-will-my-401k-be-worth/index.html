@@ -85,6 +85,39 @@
 .article-nav-card .nav-direction { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #ff754d; margin-bottom: 6px; display: block; }
 .article-nav-card strong { font-size: 1.05rem; color: #042f2a; line-height: 1.35; display: block; }
 @media(max-width: 640px) { .article-nav { grid-template-columns: 1fr; } }
+
+/* Layout & Hero */
+.article-hero { background: linear-gradient(180deg, #f3f8f5 0%, #fbfdfc 100%); padding: 36px 0 24px; }
+.article-hero-grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+@media (min-width: 881px) { .article-hero-grid { grid-template-columns: 1.2fr 0.8fr; } }
+.article-hero-copy .eyebrow { color: var(--brand, #075433); text-transform: uppercase; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; margin-bottom: 8px; display: inline-block; }
+.article-hero-copy h1 { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(1.9rem, 3.4vw, 2.55rem); line-height: 1.22; color: var(--brand-dark, #042f2a); margin: 0 0 14px; }
+.article-hero-copy .lead { font-size: 1.08rem; line-height: 1.6; color: var(--ink-2, #2d4a3e); margin: 0 0 20px; }
+.hero-cta-group { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.hero-btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 10px; background: var(--brand-dark, #042f2a); color: #ffffff; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all .18s ease; }
+.hero-btn-primary:hover { background: var(--brand, #075433); color: #ffffff; transform: translateY(-1px); }
+.hero-btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 10px; background: #eaf4ef; color: var(--brand-dark, #042f2a); font-weight: 650; text-decoration: none; border: 1px solid #c8e0d4; font-size: 0.95rem; transition: all .18s ease; }
+.hero-btn-secondary:hover { background: #dfeee5; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; color: #52796f; margin-bottom: 16px; }
+.author-mini { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid #dce9e2; }
+.author-mini img { border-radius: 50%; width: 44px; height: 44px; object-fit: cover; border: 2px solid #9fe7bd; }
+.author-mini div { display: flex; flex-direction: column; font-size: 0.84rem; }
+.author-mini div strong a { color: var(--brand-dark, #042f2a); text-decoration: none; font-weight: 700; }
+.author-mini div small { color: #6c8b7f; font-size: 0.78rem; }
+.article-featured-media { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 24px rgba(4,47,42,0.08); border: 1px solid #d5e5dc; background: #03251e; }
+.article-featured-media img { width: 100%; height: auto; display: block; aspect-ratio: 16/9; object-fit: cover; }
+.article-featured-media figcaption { font-size: 0.78rem; color: #6b8a7d; padding: 8px 14px; background: #f8fbf9; border-top: 1px solid #e1ede6; text-align: center; }
+
+/* Sticky TOC & 2-Column Article Layout */
+.article-layout { display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 36px; margin-bottom: 60px; }
+@media (min-width: 921px) { .article-layout { grid-template-columns: 270px minmax(0, 1fr); } }
+.article-toc { background: #f8fbf9; border: 1px solid #d3e5de; border-radius: 12px; padding: 22px; align-self: start; }
+@media (min-width: 921px) { .article-toc { position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto; } }
+.article-toc strong { display: block; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--brand-dark, #042f2a); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #dce9e2; }
+.article-toc a { display: block; font-size: 0.86rem; color: #355648; text-decoration: none; padding: 5px 0; line-height: 1.45; transition: color .15s ease; }
+.article-toc a:hover { color: var(--brand, #075433); font-weight: 600; padding-left: 3px; }
+.article-content { min-width: 0; line-height: 1.75; color: var(--ink-2, #243831); font-size: 1.02rem; }
+
 </style>
 <script type="application/ld+json">
 {
@@ -205,107 +238,103 @@
 
 
 <header class="site-header">
-<div class="container header-inner">
+<div class="container nav">
 <a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
 <img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto">
 </a>
-<nav class="nav-desktop" aria-label="Main navigation">
-<div class="nav-item has-dropdown">
-<button class="nav-link dropdown-toggle" type="button" aria-expanded="false">Calculators <span class="nav-arrow">▾</span></button>
-<div class="mega-menu" role="menu">
-<div class="mega-grid">
-<div class="mega-col">
-<span class="mega-col-title">Age &amp; Date Tools</span>
-<a class="mega-link" href="../../" role="menuitem">Exact Age Calculator</a>
-<a class="mega-link" href="../../tools/chronological-age-calculator/" role="menuitem">Chronological Age Calculator</a>
-<a class="mega-link" href="../../tools/birthday-calculator/" role="menuitem">Birthday Calculator</a>
-<a class="mega-link" href="../../tools/age-difference-calculator/" role="menuitem">Age Difference Calculator</a>
-<a class="mega-link" href="../../tools/date-difference-calculator/" role="menuitem">Date Difference Calculator</a>
-<a class="mega-link" href="../../tools/half-birthday-calculator/" role="menuitem">Half Birthday Calculator</a>
-</div>
-<div class="mega-col">
-<span class="mega-col-title">Milestones &amp; Planning</span>
-<a class="mega-link" href="../../tools/retirement-age-calculator/" role="menuitem">Retirement Age Calculator</a>
-<a class="mega-link" href="../../tools/401k-calculator/" role="menuitem">401(k) Calculator</a>
-<a class="mega-link" href="../../tools/social-security-age-calculator/" role="menuitem">Social Security Age Calculator</a>
-<a class="mega-link" href="../../tools/pensionable-age-calculator/" role="menuitem">Pensionable Age Calculator</a>
-<a class="mega-link" href="../../tools/life-expectancy-calculator/" role="menuitem">Life Expectancy Calculator</a>
-<a class="mega-link" href="../../tools/school-start-age-calculator/" role="menuitem">School Start Age Calculator</a>
-</div>
-<div class="mega-col mega-col-featured">
-<span class="mega-col-title">Popular Calculations</span>
-<a class="mega-featured-card" href="../../tools/401k-calculator/">
-<span class="mega-card-tag">Interactive</span>
-<strong>401(k) Nest Egg Projection</strong>
-<p>Model growth, match, inflation &amp; savings targets.</p>
-</a>
-<a class="mega-featured-card" href="../../tools/social-security-age-calculator/">
-<span class="mega-card-tag">Retirement</span>
-<strong>Social Security Age Calculator</strong>
-<p>Find your Full Retirement Age and claim milestones.</p>
-</a>
-</div>
-</div>
-</div>
-</div>
-
-<div class="nav-item has-dropdown">
-<button class="nav-link dropdown-toggle" type="button" aria-expanded="false">Guides <span class="nav-arrow">▾</span></button>
-<div class="mega-menu mega-menu-sm" role="menu">
-<div class="mega-grid">
-<div class="mega-col">
-<span class="mega-col-title">Featured Financial &amp; Age Guides</span>
-<a class="mega-link" href="../how-much-should-i-have-in-my-401k-by-age/" role="menuitem">401(k) Balance by Age Benchmarks</a>
-<a class="mega-link" href="../how-much-will-my-401k-be-worth/" role="menuitem">How Much Will My 401(k) Be Worth?</a>
-<a class="mega-link" href="../full-retirement-age-social-security/" role="menuitem">Full Retirement Age Explained</a>
-<a class="mega-link" href="../social-security-benefits-by-age/" role="menuitem">Social Security Benefits at 62, 65, 67 &amp; 70</a>
-<a class="mega-link" href="../dating-age-rule/" role="menuitem">Dating Age Rule: Half-Your-Age-Plus-7</a>
-<a class="mega-link" href="../state-pension-age-for-women-born-in-1950s/" role="menuitem">State Pension Age for 1950s Women</a>
-</div>
-</div>
-</div>
-</div>
-
-<a class="nav-link" href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
-<a class="nav-link" href="../../categories/">Categories</a>
-<a class="nav-link" href="../../methodology/">Methodology</a>
-</nav>
-
-<div class="header-actions">
-<div class="nav-search-wrap" id="nav-search-wrap">
-<button class="nav-search-toggle" id="nav-search-btn" type="button" aria-label="Open search" aria-expanded="false">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+<button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+<span></span>
 </button>
-<div class="nav-search-dropdown" id="nav-search-dropdown">
-<input class="nav-search-input" id="nav-search-input" type="search" placeholder="Search calculators &amp; guides…" autocomplete="off">
-<div class="nav-search-results" id="nav-search-results"></div>
+<nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+<details class="nav-dropdown nav-dropdown-categories">
+<summary>Calculators <span class="nav-chevron" aria-hidden="true">▾</span></summary>
+<div class="nav-mega">
+<div class="nav-mega-head">
+<div>
+<small>168 focused tools</small>
+<strong>Main calculator categories</strong>
 </div>
+<a href="../../categories/">View category directory →</a>
+</div>
+<div class="nav-category-grid">
+<a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+<a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+<a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>10 tools</small></a>
+<a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+<a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+<a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>16 tools</small></a>
+<a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>16 tools</small></a>
+<a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+<a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+<a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a>
+<a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a>
+</div>
+<div class="nav-quick-row">
+<span>Popular</span>
+<a href="../../">Age Calculator</a>
+<a href="../../tools/date-difference-calculator/">Date Difference</a>
+<a href="../../tools/corrected-age-calculator/">Corrected Age</a>
+<a href="../../tools/countdown-to-date-calculator/">Countdown</a>
+</div>
+</div>
+</details>
+<details class="nav-dropdown nav-dropdown-guides">
+<summary>Guides <span class="nav-chevron" aria-hidden="true">▾</span></summary>
+<div class="nav-mega nav-mega-guides">
+<div class="nav-mega-head">
+<div>
+<small>167 practical guides</small>
+<strong>Learn the method</strong>
+</div>
+<a href="../../articles/">Browse all guides →</a>
+</div>
+<div class="nav-guide-grid">
+<a href="../../articles/how-much-should-i-have-in-my-401k-by-age/"><small>Finance &amp; Professional</small><span>How Much Should I Have in My 401(k) by Age?</span></a>
+<a href="../../articles/how-much-will-my-401k-be-worth/"><small>Finance &amp; Professional</small><span>How Much Will My 401(k) Be Worth?</span></a>
+<a href="../../articles/how-does-a-401k-grow-over-time/"><small>Finance &amp; Professional</small><span>How Does a 401(k) Grow Over Time?</span></a>
+<a href="../../articles/401k-calculator-with-employer-match/"><small>Finance &amp; Professional</small><span>401(k) Calculator with Employer Match</span></a>
+<a href="../../articles/full-retirement-age-social-security/"><small>Finance &amp; Professional</small><span>What Is Full Retirement Age for Social Security?</span></a>
+<a href="../../articles/dating-age-rule/"><small>Culture &amp; Milestones</small><span>Dating Age Rule Explained</span></a>
+</div>
+</div>
+</details>
+<a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
+<a href="../../categories/">Categories</a>
+<a href="../../methodology/">Methodology</a>
+<div class="nav-search-wrap" id="nav-search-wrap">
+<div class="nav-search-box">
+<svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+<circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle>
+<path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+<input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autocomplete="off">
+</div>
+<div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div>
 </div>
 <a class="nav-cta" href="../../#calculator">Calculate age</a>
-<button class="nav-mobile-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">
-<span class="hamburger-line"></span>
-<span class="hamburger-line"></span>
-<span class="hamburger-line"></span>
-</button>
-</div>
+</nav>
 </div>
 </header>
 
-<main class="article-page">
-<div class="article-container">
-
-<nav class="article-breadcrumbs" aria-label="Breadcrumb">
-<a href="../../">Home</a>
-<span>/</span>
-<a href="../../articles/">Guides</a>
-<span>/</span>
-<span>401(k) Future Value</span>
-</nav>
-
-<header class="article-header">
-<span class="article-eyebrow">Retirement &amp; Financial Planning</span>
+<main id="main-content">
+<section class="article-hero">
+<div class="container">
+<div class="article-hero-grid">
+<div class="article-hero-copy">
+<span class="eyebrow">Retirement &amp; Financial Planning</span>
 <h1>How Much Will My 401(k) Be Worth? Calculate Your Future Balance</h1>
+<p class="lead">To calculate <strong>how much will my 401(k) be worth</strong> at retirement, you must evaluate four core financial components: your current balance, regular employee and employer contributions, the number of compounding years remaining, and your expected annual rate of return. While a standard $50,000 balance contributing $1,000 monthly can grow to over <strong>$1.6 million across 30 years</strong> at 7%, you can project your exact numbers in seconds using our interactive <a href="../../tools/401k-calculator/">401(k) Calculator</a>.</p>
+<div class="hero-cta-group">
+<a class="hero-btn-primary" href="../../tools/401k-calculator/">Launch 401(k) Calculator →</a>
+<a class="hero-btn-secondary" href="#the-four-building-blocks-of-future-401-k-value">Jump to Guide ↓</a>
+</div>
 <div class="article-meta">
+<span>Published: October 4, 2026</span>
+<span>•</span>
+<span>Reading Time: 14 min read</span>
+<span>•</span>
+<span>Verified Financial Modeling</span>
+</div>
 <div class="author-mini">
 <img decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="44" height="44">
 <div>
@@ -313,22 +342,29 @@
 <small>Lead Calculation Specialist &amp; Editorial Director</small>
 </div>
 </div>
-<span>•</span>
-<time datetime="2026-10-04">Updated October 4, 2026</time>
-<span>•</span>
-<span>Read time: 15 min</span>
-<span>•</span>
-<span>Verified Financial Modeling</span>
 </div>
-</header>
-
 <figure class="article-featured-media">
 <img decoding="async" src="../../assets/articles/how-much-will-my-401k-be-worth/featured-how-much-will-my-401k-be-worth.jpg" alt="A financial planning desk with charts and digital tablet projecting future 401(k) growth" width="1200" height="675">
 <figcaption>Projecting the future value of your 401(k) requires evaluating starting balance, recurring contributions, time horizon, and annual compound return.</figcaption>
 </figure>
+</div>
+</div>
+</section>
 
-<div class="article-content">
+<div class="container article-layout">
+<aside class="article-toc" aria-label="Table of Contents">
+<strong>On this page</strong>
+<a href="#the-four-building-blocks-of-future-401-k-value">1. The Four Building Blocks of Future 401(k) Value</a>
+<a href="#the-future-value-formula-explained">2. The Future Value Formula Explained</a>
+<a href="#10-year-20-year-and-30-year-401-k-growth-scenarios">3. 10-Year, 20-Year, and 30-Year 401(k) Growth Scenarios</a>
+<a href="#how-employer-matching-boosts-your-future-nest-egg">4. How Employer Matching Boosts Your Future Nest Egg</a>
+<a href="#future-value-vs-today-s-dollars-accounting-for-inf">5. Future Value vs. Today's Dollars: Accounting for Inflation</a>
+<a href="#what-rate-of-return-should-you-assume-in-projectio">6. What Rate of Return Should You Assume in Projections?</a>
+<a href="#how-to-use-the-interactive-401-k-calculator">7. How to Use the Interactive 401(k) Calculator</a>
+<a href="#frequently-asked-questions">8. Frequently Asked Questions</a>
+</aside>
 
+<article class="article-content">
 <p class="lead" style="font-size:1.2rem;font-weight:500;color:#042f2a;line-height:1.65;margin-bottom:24px;">
 To calculate <strong>how much will my 401(k) be worth</strong> at retirement, you must evaluate four core financial components: your current balance, regular employee and employer contributions, the number of compounding years remaining, and your expected annual rate of return. While a standard $50,000 balance contributing $1,000 monthly can grow to over <strong>$1.6 million across 30 years</strong> at 7%, you can project your exact numbers in seconds using our interactive <a href="../../tools/401k-calculator/">401(k) Calculator</a>.
 </p>
@@ -347,7 +383,7 @@ In this guide, we break down the exact mathematics of future value, compare real
 <a class="btn-cta" href="../../tools/401k-calculator/">Open 401(k) Calculator →</a>
 </div>
 
-<h2>The Four Building Blocks of Future 401(k) Value</h2>
+<h2 id="the-four-building-blocks-of-future-401-k-value">The Four Building Blocks of Future 401(k) Value</h2>
 
 <p>
 Every future balance projection rests on four fundamental levers. Adjusting any single lever changes the final outcome significantly:
@@ -365,7 +401,7 @@ Every future balance projection rests on four fundamental levers. Adjusting any 
 <figcaption>The 401(k) growth engine: Starting principal and ongoing deposits provide the raw fuel, while time and compound returns multiply the total nest egg.</figcaption>
 </figure>
 
-<h2>The Future Value Formula Explained</h2>
+<h2 id="the-future-value-formula-explained">The Future Value Formula Explained</h2>
 
 <p>
 Behind every professional retirement calculator is the mathematical formula for the <strong>Future Value (FV) of an Annuity with a Lump Sum Principal</strong>:
@@ -394,7 +430,7 @@ For example, if you start with $40,000 at age 35 and contribute $10,000 per year
 Notice that while you only deposited $340,000 in actual cash over those 30 years ($40k initial + $300k deposits), compounding generated over <strong>$909,000 in pure growth</strong>!
 </p>
 
-<h2>10-Year, 20-Year, and 30-Year 401(k) Growth Scenarios</h2>
+<h2 id="10-year-20-year-and-30-year-401-k-growth-scenarios">10-Year, 20-Year, and 30-Year 401(k) Growth Scenarios</h2>
 
 <p>
 To see how time accelerates growth, consider the following table. It models how different starting balances and monthly savings amounts expand over 10, 20, and 30 years, assuming a balanced 7% annualized return:
@@ -465,7 +501,7 @@ Assumes 7% annual compounding return, monthly compounding frequency, and constan
 <figcaption>Growth trajectory comparison across 10, 20, and 30 years. Notice how total wealth multiplies exponentially in the final decade.</figcaption>
 </figure>
 
-<h2>How Employer Matching Boosts Your Future Nest Egg</h2>
+<h2 id="how-employer-matching-boosts-your-future-nest-egg">How Employer Matching Boosts Your Future Nest Egg</h2>
 
 <p>
 Employer matching is one of the most powerful wealth-building tools available to working professionals. When an employer matches 50% or 100% of your contributions up to 5% or 6% of your salary, they are not just giving you immediate cash—they are handing you productive assets that compound forever.
@@ -500,7 +536,7 @@ By taking advantage of the match, the employee added more than <strong>$212,000<
 <figcaption>Projecting future value across a 30-year horizon highlights the compounding inflection point where returns eclipse deposits.</figcaption>
 </figure>
 
-<h2>Future Value vs. Today's Dollars: Accounting for Inflation</h2>
+<h2 id="future-value-vs-today-s-dollars-accounting-for-inf">Future Value vs. Today's Dollars: Accounting for Inflation</h2>
 
 <p>
 One of the most common surprises for retirement planners is understanding the difference between a <strong>nominal balance</strong> and <strong>purchasing power in today's dollars</strong>.
@@ -517,7 +553,7 @@ If your 401(k) calculator tells you your account will be worth $2,000,000 in 30 
 <p>At a 2.5% annual inflation rate over 30 years, $2,000,000 in the future has the purchasing power of approximately <strong>$953,500 today</strong>. Always ensure your retirement plan accounts for this purchasing power discount!</p>
 </div>
 
-<h2>What Rate of Return Should You Assume in Projections?</h2>
+<h2 id="what-rate-of-return-should-you-assume-in-projectio">What Rate of Return Should You Assume in Projections?</h2>
 
 <p>
 Because stock markets fluctuate year to year, picking an appropriate rate of return is essential for realistic planning:
@@ -529,7 +565,7 @@ Because stock markets fluctuate year to year, picking an appropriate rate of ret
 <li><strong>Aggressive (8.0% to 9.5% nominal):</strong> Suitable for young savers in their 20s and 30s invested in 100% equity portfolios (e.g., S&amp;P 500 or Total Stock Market index funds). Note that the historical annualized return of the S&amp;P 500 since 1957 has been roughly 10% nominal (around 7% real after inflation).</li>
 </ul>
 
-<h2>How to Use the Interactive 401(k) Calculator</h2>
+<h2 id="how-to-use-the-interactive-401-k-calculator">How to Use the Interactive 401(k) Calculator</h2>
 
 <p>
 To get the most accurate estimate of your future nest egg, follow these steps in our verified <a href="../../tools/401k-calculator/">401(k) Calculator</a>:
@@ -543,7 +579,7 @@ To get the most accurate estimate of your future nest egg, follow these steps in
 <li><strong>Inspect the Output:</strong> Review your projected total nest egg, total lifetime contributions, employer match total, milestone trajectory by age, and purchasing power badge.</li>
 </ol>
 
-<h2>Frequently Asked Questions</h2>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 
 <div class="faq-card">
 <h3>How much will my 401(k) be worth when I retire?</h3>
@@ -589,8 +625,7 @@ To get the most accurate estimate of your future nest egg, follow these steps in
 <strong>How Does a 401(k) Grow Over Time? →</strong>
 </a>
 </nav>
-
-</div>
+</article>
 </div>
 </main>
 

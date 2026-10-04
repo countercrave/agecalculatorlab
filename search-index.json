@@ -1758,5 +1758,55 @@
     "n": "Zodiac Sign Calculator",
     "u": "/tools/zodiac-sign-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "401(k) Balance by Age: How Much Should You Have Saved?",
+    "u": "/articles/401k-balance-by-age/",
+    "t": "Guide",
+    "title": "401(k) Balance by Age: How Much Should You Have Saved?",
+    "description": "Explore age-based benchmarks, average vs median balances, and how to project your personalized nest egg.",
+    "url": "articles/401k-balance-by-age/",
+    "category": "Finance & Professional",
+    "keywords": "401k balance by age, 401k by age chart, average 401k balance by age, retirement savings by age"
+  },
+  {
+    "n": "How Much Can a 401(k) Grow in 5, 10, 20 or 30 Years?",
+    "u": "/articles/401k-growth-5-10-20-years/",
+    "t": "Guide",
+    "title": "How Much Can a 401(k) Grow in 5, 10, 20 or 30 Years?",
+    "description": "Model 401(k) balance trajectories across 5, 10, 20, and 30-year horizons with compound interest and employer matches.",
+    "url": "articles/401k-growth-5-10-20-years/",
+    "category": "Finance & Professional",
+    "keywords": "401k growth 10 years, 401k growth 20 years, 401k growth 30 years, 401k growth timeline"
+  },
+  {
+    "n": "What Rate of Return Should You Use for a 401(k) Calculator?",
+    "u": "/articles/401k-rate-of-return/",
+    "t": "Guide",
+    "title": "What Rate of Return Should You Use for a 401(k) Calculator?",
+    "description": "Learn how to select realistic return assumptions (5%, 7%, 9%) accounting for inflation, fees, and asset allocation.",
+    "url": "articles/401k-rate-of-return/",
+    "category": "Finance & Professional",
+    "keywords": "401k rate of return, 401k expected return, 401k average annual return, real rate of return 401k"
+  },
+  {
+    "n": "401(k) Calculator: How to Estimate Your Retirement Savings",
+    "u": "/articles/how-to-use-a-401k-calculator/",
+    "t": "Guide",
+    "title": "401(k) Calculator: How to Estimate Your Retirement Savings",
+    "description": "Step-by-step tutorial on configuring inputs, stress-testing assumptions, and interpreting your 401(k) projection.",
+    "url": "articles/how-to-use-a-401k-calculator/",
+    "category": "Finance & Professional",
+    "keywords": "how to use a 401k calculator, 401k calculator inputs, 401k retirement estimate, 401k projection guide"
+  },
+  {
+    "n": "How Much Do You Need in a 401(k) to Retire?",
+    "u": "/articles/how-much-do-you-need-in-a-401k-to-retire/",
+    "t": "Guide",
+    "title": "How Much Do You Need in a 401(k) to Retire?",
+    "description": "Calculate your retirement nest egg using the 4% rule, annual spending targets, and Social Security offsets.",
+    "url": "articles/how-much-do-you-need-in-a-401k-to-retire/",
+    "category": "Finance & Professional",
+    "keywords": "how much do you need in a 401k to retire, 401k retirement target, 4 percent rule nest egg, retirement number"
   }
 ]

@@ -82,6 +82,39 @@
 .article-nav-card .nav-direction { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #ff754d; margin-bottom: 6px; display: block; }
 .article-nav-card strong { font-size: 1.05rem; color: #042f2a; line-height: 1.35; display: block; }
 @media(max-width: 640px) { .article-nav { grid-template-columns: 1fr; } }
+
+/* Layout & Hero */
+.article-hero { background: linear-gradient(180deg, #f3f8f5 0%, #fbfdfc 100%); padding: 36px 0 24px; }
+.article-hero-grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+@media (min-width: 881px) { .article-hero-grid { grid-template-columns: 1.2fr 0.8fr; } }
+.article-hero-copy .eyebrow { color: var(--brand, #075433); text-transform: uppercase; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; margin-bottom: 8px; display: inline-block; }
+.article-hero-copy h1 { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(1.9rem, 3.4vw, 2.55rem); line-height: 1.22; color: var(--brand-dark, #042f2a); margin: 0 0 14px; }
+.article-hero-copy .lead { font-size: 1.08rem; line-height: 1.6; color: var(--ink-2, #2d4a3e); margin: 0 0 20px; }
+.hero-cta-group { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.hero-btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 10px; background: var(--brand-dark, #042f2a); color: #ffffff; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all .18s ease; }
+.hero-btn-primary:hover { background: var(--brand, #075433); color: #ffffff; transform: translateY(-1px); }
+.hero-btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 10px; background: #eaf4ef; color: var(--brand-dark, #042f2a); font-weight: 650; text-decoration: none; border: 1px solid #c8e0d4; font-size: 0.95rem; transition: all .18s ease; }
+.hero-btn-secondary:hover { background: #dfeee5; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; color: #52796f; margin-bottom: 16px; }
+.author-mini { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid #dce9e2; }
+.author-mini img { border-radius: 50%; width: 44px; height: 44px; object-fit: cover; border: 2px solid #9fe7bd; }
+.author-mini div { display: flex; flex-direction: column; font-size: 0.84rem; }
+.author-mini div strong a { color: var(--brand-dark, #042f2a); text-decoration: none; font-weight: 700; }
+.author-mini div small { color: #6c8b7f; font-size: 0.78rem; }
+.article-featured-media { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 24px rgba(4,47,42,0.08); border: 1px solid #d5e5dc; background: #03251e; }
+.article-featured-media img { width: 100%; height: auto; display: block; aspect-ratio: 16/9; object-fit: cover; }
+.article-featured-media figcaption { font-size: 0.78rem; color: #6b8a7d; padding: 8px 14px; background: #f8fbf9; border-top: 1px solid #e1ede6; text-align: center; }
+
+/* Sticky TOC & 2-Column Article Layout */
+.article-layout { display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 36px; margin-bottom: 60px; }
+@media (min-width: 921px) { .article-layout { grid-template-columns: 270px minmax(0, 1fr); } }
+.article-toc { background: #f8fbf9; border: 1px solid #d3e5de; border-radius: 12px; padding: 22px; align-self: start; }
+@media (min-width: 921px) { .article-toc { position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto; } }
+.article-toc strong { display: block; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--brand-dark, #042f2a); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #dce9e2; }
+.article-toc a { display: block; font-size: 0.86rem; color: #355648; text-decoration: none; padding: 5px 0; line-height: 1.45; transition: color .15s ease; }
+.article-toc a:hover { color: var(--brand, #075433); font-weight: 600; padding-left: 3px; }
+.article-content { min-width: 0; line-height: 1.75; color: var(--ink-2, #243831); font-size: 1.02rem; }
+
 </style>
 <script type="application/ld+json">
 {
@@ -241,85 +274,135 @@
 <body>
 
 <header class="site-header">
-<div class="header-container">
-<a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto"></a>
-<div class="nav-wrap">
-<nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
-<button class="nav-mobile-close" id="nav-close" type="button" aria-label="Close menu">✕</button>
-<div class="nav-item mega-dropdown">
-<button class="nav-link mega-toggle" type="button" aria-expanded="false" aria-haspopup="true">Calculators <span class="nav-arrow">▾</span></button>
-<div class="mega-menu">
-<div class="mega-grid">
-<div class="mega-col"><span class="mega-head">Core Chronology</span><a href="../../">Exact Age Calculator</a><a href="../../tools/chronological-age-calculator/">Chronological Age</a><a href="../../tools/birthday-calculator/">Birthday Calculator</a><a href="../../tools/half-birthday-calculator/">Half Birthday</a></div>
-<div class="mega-col"><span class="mega-head">Finance &amp; Career</span><a href="../../tools/401k-calculator/">401(k) Calculator</a><a href="../../tools/social-security-age-calculator/">Social Security Age</a><a href="../../tools/retirement-age-calculator/">Retirement Age</a><a href="../../tools/pensionable-age-calculator/">Pensionable Age</a></div>
-<div class="mega-col"><span class="mega-head">Directories</span><a href="../../tools/">All 169+ Tools →</a><a href="../../categories/">Category Directory</a></div>
+<div class="container nav">
+<a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home">
+<img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto">
+</a>
+<button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+<span></span>
+</button>
+<nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+<details class="nav-dropdown nav-dropdown-categories">
+<summary>Calculators <span class="nav-chevron" aria-hidden="true">▾</span></summary>
+<div class="nav-mega">
+<div class="nav-mega-head">
+<div>
+<small>168 focused tools</small>
+<strong>Main calculator categories</strong>
+</div>
+<a href="../../categories/">View category directory →</a>
+</div>
+<div class="nav-category-grid">
+<a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>27 tools</small></a>
+<a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a>
+<a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>10 tools</small></a>
+<a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a>
+<a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a>
+<a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>16 tools</small></a>
+<a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>16 tools</small></a>
+<a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a>
+<a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a>
+<a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a>
+<a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a>
+</div>
+<div class="nav-quick-row">
+<span>Popular</span>
+<a href="../../">Age Calculator</a>
+<a href="../../tools/date-difference-calculator/">Date Difference</a>
+<a href="../../tools/corrected-age-calculator/">Corrected Age</a>
+<a href="../../tools/countdown-to-date-calculator/">Countdown</a>
 </div>
 </div>
+</details>
+<details class="nav-dropdown nav-dropdown-guides">
+<summary>Guides <span class="nav-chevron" aria-hidden="true">▾</span></summary>
+<div class="nav-mega nav-mega-guides">
+<div class="nav-mega-head">
+<div>
+<small>167 practical guides</small>
+<strong>Learn the method</strong>
 </div>
-<div class="nav-item mega-dropdown">
-<button class="nav-link mega-toggle" type="button" aria-expanded="false" aria-haspopup="true">Guides <span class="nav-arrow">▾</span></button>
-<div class="mega-menu">
-<div class="mega-grid">
-<div class="mega-col"><span class="mega-head">Featured Guides</span><a href="../how-much-should-i-have-in-my-401k-by-age/">401(k) by Age Benchmarks</a><a href="../401k-balance-by-age/">401(k) Balance by Age</a><a href="../401k-growth-5-10-20-years/">401(k) Growth Horizons</a></div>
-<div class="mega-col"><span class="mega-head">Relationship &amp; Demographics</span><a href="../dating-age-rule/">Dating Age Rule</a><a href="../half-your-age-plus-seven/">Half-Your-Age-Plus-7</a></div>
-<div class="mega-col"><span class="mega-head">Library</span><a href="../../articles/">All Guides Archive →</a></div>
+<a href="../../articles/">Browse all guides →</a>
+</div>
+<div class="nav-guide-grid">
+<a href="../../articles/how-much-should-i-have-in-my-401k-by-age/"><small>Finance &amp; Professional</small><span>How Much Should I Have in My 401(k) by Age?</span></a>
+<a href="../../articles/how-much-will-my-401k-be-worth/"><small>Finance &amp; Professional</small><span>How Much Will My 401(k) Be Worth?</span></a>
+<a href="../../articles/how-does-a-401k-grow-over-time/"><small>Finance &amp; Professional</small><span>How Does a 401(k) Grow Over Time?</span></a>
+<a href="../../articles/401k-calculator-with-employer-match/"><small>Finance &amp; Professional</small><span>401(k) Calculator with Employer Match</span></a>
+<a href="../../articles/full-retirement-age-social-security/"><small>Finance &amp; Professional</small><span>What Is Full Retirement Age for Social Security?</span></a>
+<a href="../../articles/dating-age-rule/"><small>Culture &amp; Milestones</small><span>Dating Age Rule Explained</span></a>
 </div>
 </div>
-</div>
-<a class="nav-link" href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
-<a class="nav-link" href="../../categories/">Categories</a>
-<a class="nav-link" href="../../methodology/">Methodology</a>
-</nav>
+</details>
+<a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a>
+<a href="../../categories/">Categories</a>
+<a href="../../methodology/">Methodology</a>
 <div class="nav-search-wrap" id="nav-search-wrap">
-<button class="nav-search-btn" id="search-open" type="button" aria-label="Open search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></button>
-<div class="nav-search-drawer" id="search-drawer" hidden>
-<form class="nav-search-form" id="search-form" action="../../search/" method="get">
-<input class="nav-search-input" id="search-input" type="search" name="q" placeholder="Search calculators, topics, guides..." autocomplete="off">
-<button class="nav-search-submit" type="submit">Search</button>
-</form>
-<div class="nav-search-results" id="search-results"></div>
+<div class="nav-search-box">
+<svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+<circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle>
+<path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+<input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autocomplete="off">
 </div>
+<div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div>
 </div>
 <a class="nav-cta" href="../../#calculator">Calculate age</a>
-<button class="nav-toggle" id="nav-open" type="button" aria-label="Open menu"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span></button>
-</div>
+</nav>
 </div>
 </header>
 
-<main class="article-page">
-<div class="article-container">
-
-<nav class="article-breadcrumbs" aria-label="Breadcrumb">
-<a href="../../">Home</a> <span>/</span>
-<a href="../../articles/">Guides</a> <span>/</span>
-<span>401(k) Rate of Return</span>
-</nav>
-
-<header class="article-header">
-<span class="article-eyebrow">Retirement Assumptions &amp; Modeling</span>
+<main id="main-content">
+<section class="article-hero">
+<div class="container">
+<div class="article-hero-grid">
+<div class="article-hero-copy">
+<span class="eyebrow">Retirement Assumptions &amp; Modeling</span>
 <h1>What Rate of Return Should You Use for a 401(k) Calculator?</h1>
+<p class="lead">When modeling your future retirement savings, the single most sensitive—and most frequently misunderstood—variable is your <strong>assumed annual rate of return</strong>. While your current age, salary, and savings percentage are objective facts today, your future investment return is an assumption. Setting that number too high creates a false sense of security, encouraging you to save too little. Setting it unrealistically low can cause needless panic or lead to excessive sacrifices during your working years.</p>
+<div class="hero-cta-group">
+<a class="hero-btn-primary" href="../../tools/401k-calculator/">Launch 401(k) Calculator →</a>
+<a class="hero-btn-secondary" href="#why-the-rate-of-return-assumption-is-so-critical">Jump to Guide ↓</a>
+</div>
 <div class="article-meta">
+<span>Published: October 4, 2026</span>
+<span>•</span>
+<span>Reading Time: 15 min read</span>
+<span>•</span>
+<span>Verified Financial Modeling</span>
+</div>
 <div class="author-mini">
-<img src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="36" height="36">
+<img decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj" width="44" height="44">
 <div>
 <strong><a href="../../author/navjeet-kamboj/">Navjeet Kamboj</a></strong>
-<small>Calculation Specialist &amp; Research Editor</small>
+<small>Lead Calculation Specialist &amp; Editorial Director</small>
 </div>
 </div>
-<span>•</span>
-<time datetime="2026-10-04">October 4, 2026</time>
-<span>•</span>
-<span>15 min read</span>
 </div>
-</header>
-
 <figure class="article-featured-media">
-<img src="../../assets/articles/401k-rate-of-return/featured-401k-rate-of-return.jpg" alt="401(k) rate of return assumptions and investment yield analysis" width="1200" height="675" loading="eager">
+<img decoding="async" src="../../assets/articles/401k-rate-of-return/featured-401k-rate-of-return.jpg" alt="401(k) rate of return assumptions and investment yield analysis" width="1200" height="675">
 <figcaption>Selecting the right rate of return in a 401(k) calculator determines whether your retirement projection provides an authentic roadmap or a dangerous illusion.</figcaption>
 </figure>
+</div>
+</div>
+</section>
 
-<div class="article-content">
+<div class="container article-layout">
+<aside class="article-toc" aria-label="Table of Contents">
+<strong>On this page</strong>
+<a href="#why-the-rate-of-return-assumption-is-so-critical">1. Why the Rate of Return Assumption Is So Critical</a>
+<a href="#nominal-vs-real-rate-of-return-the-inflation-reali">2. Nominal vs. Real Rate of Return: The Inflation Reality</a>
+<a href="#historical-market-returns-what-history-teaches-us">3. Historical Market Returns: What History Teaches Us</a>
+<a href="#the-impact-of-asset-allocation-on-your-return">4. The Impact of Asset Allocation on Your Return</a>
+<a href="#age-based-asset-allocation-the-glide-path-concept">5. Age-Based Asset Allocation: The Glide Path Concept</a>
+<a href="#the-hidden-drag-how-fees-erode-your-net-return">6. The Hidden Drag: How Fees Erode Your Net Return</a>
+<a href="#sequence-of-returns-risk-why-averages-can-mislead">7. Sequence of Returns Risk: Why Averages Can Mislead</a>
+<a href="#sensitivity-analysis-testing-scenarios-by-time-hor">8. Sensitivity Analysis: Testing Scenarios by Time Horizon</a>
+<a href="#common-return-assumption-mistakes-to-avoid">9. Common Return Assumption Mistakes to Avoid</a>
+<a href="#frequently-asked-questions">10. Frequently Asked Questions</a>
+</aside>
 
+<article class="article-content">
 <p>When modeling your future retirement savings, the single most sensitive—and most frequently misunderstood—variable is your <strong>assumed annual rate of return</strong>. While your current age, salary, and savings percentage are objective facts today, your future investment return is an assumption. Setting that number too high creates a false sense of security, encouraging you to save too little. Setting it unrealistically low can cause needless panic or lead to excessive sacrifices during your working years.</p>
 
 <p>To see how different return assumptions transform your personal nest egg, use our interactive <a href="../../tools/401k-calculator/">401(k) Calculator</a>. By testing conservative (5%), moderate (7%), and aggressive (9%) scenarios against your actual salary and contribution numbers, you can stress-test your retirement plan across realistic market environments.</p>
@@ -333,7 +416,7 @@
 </ul>
 </div>
 
-<h2>Why the Rate of Return Assumption Is So Critical</h2>
+<h2 id="why-the-rate-of-return-assumption-is-so-critical">Why the Rate of Return Assumption Is So Critical</h2>
 <p>In mathematics, compound interest is an exponential function: ( A = P(1 + r)^t ). Because the interest rate ( r ) sits in the base of an exponential equation, small changes in the return percentage produce staggering divergence over multi-decade time horizons.</p>
 
 <p>Consider an investor contributing $10,000 per year over a 30-year career. Look at how a 2% change in assumed return reshapes their eventual nest egg:</p>
@@ -351,7 +434,7 @@
 <figcaption>Figure 1: Exponential divergence of 5%, 7%, and 9% returns over a 30-year accumulation horizon. Note how the gap accelerates in decades two and three.</figcaption>
 </figure>
 
-<h2>Nominal vs. Real Rate of Return: The Inflation Reality</h2>
+<h2 id="nominal-vs-real-rate-of-return-the-inflation-reali">Nominal vs. Real Rate of Return: The Inflation Reality</h2>
 <p>One of the most dangerous errors in retirement calculations is confusing <strong>nominal returns</strong> with <strong>real returns</strong>:</p>
 
 <ul>
@@ -366,7 +449,7 @@
 <figcaption>Figure 2: The erosive impact of inflation. Over a 30-year horizon, nominal portfolio gains must be adjusted for purchasing power decay.</figcaption>
 </figure>
 
-<h2>Historical Market Returns: What History Teaches Us</h2>
+<h2 id="historical-market-returns-what-history-teaches-us">Historical Market Returns: What History Teaches Us</h2>
 <p>To ground your assumptions in reality, examine the long-term empirical performance of major asset classes over the past 90+ years (1926–2025):</p>
 
 <div class="data-table-wrap">
@@ -423,7 +506,7 @@
 
 <p>While the S&P 500 has averaged roughly 10% nominal return over long periods, an individual's 401(k) portfolio rarely holds 100% S&P 500 index funds. Most participants hold diversified blends including international stocks, fixed income, cash reserves, and Target Date Funds, resulting in an expected portfolio return between <strong>6.5% and 8.0%</strong>.</p>
 
-<h2>The Impact of Asset Allocation on Your Return</h2>
+<h2 id="the-impact-of-asset-allocation-on-your-return">The Impact of Asset Allocation on Your Return</h2>
 <p>Your expected rate of return is directly dictated by your portfolio's <strong>asset allocation</strong>—the percentage split between equities (stocks) and fixed income (bonds). Equities provide long-term growth, while bonds provide income and buffer market downturns:</p>
 
 <ul>
@@ -433,7 +516,7 @@
 <li><strong>Capital Preservation (20% Stocks / 80% Bonds):</strong> Expected nominal return of <strong>3.5% to 4.5%</strong>. Minimal market downside, but high risk of purchasing power erosion from inflation.</li>
 </ul>
 
-<h2>Age-Based Asset Allocation: The Glide Path Concept</h2>
+<h2 id="age-based-asset-allocation-the-glide-path-concept">Age-Based Asset Allocation: The Glide Path Concept</h2>
 <p>In our foundational guide on <a href="../how-much-should-i-have-in-my-401k-by-age/">401(k) balances by age</a>, we emphasize that your investment strategy should evolve across your career. Most modern 401(k) plans utilize <strong>Target Date Funds</strong> that follow an automated <em>glide path</em>:</p>
 
 <ol>
@@ -450,7 +533,7 @@
 <a class="btn-cta" href="../../tools/401k-calculator/">Launch 401(k) Calculator →</a>
 </div>
 
-<h2>The Hidden Drag: How Fees Erode Your Net Return</h2>
+<h2 id="the-hidden-drag-how-fees-erode-your-net-return">The Hidden Drag: How Fees Erode Your Net Return</h2>
 <p>When you select a return rate in a calculator, remember that you are assuming your <em>net</em> return after all fees. In workplace retirement plans, fees fall into two primary categories:</p>
 
 <ul>
@@ -465,12 +548,12 @@
 <figcaption>Modeling return scenarios on paper or in a calculator reveals how small differences in net return create massive compounding disparities.</figcaption>
 </figure>
 
-<h2>Sequence of Returns Risk: Why Averages Can Mislead</h2>
+<h2 id="sequence-of-returns-risk-why-averages-can-mislead">Sequence of Returns Risk: Why Averages Can Mislead</h2>
 <p>Mathematical calculators assume smooth compounding every year—for instance, exactly 7.0% every twelve months. In real financial markets, returns are volatile and unpredictable. The order in which those returns occur is called the <strong>sequence of returns</strong>.</p>
 
 <p>During your accumulation years (when you are continually depositing new cash), negative market years are actually advantageous. Due to dollar-cost averaging, your monthly contributions purchase fund shares at bargain prices, accelerating future recoveries. However, in the five years immediately preceding or following retirement, a severe market drawdown combined with portfolio withdrawals can irreparably deplete your capital. This is why financial planners advise lowering your return assumptions and reducing stock exposure as you approach your target retirement age.</p>
 
-<h2>Sensitivity Analysis: Testing Scenarios by Time Horizon</h2>
+<h2 id="sensitivity-analysis-testing-scenarios-by-time-hor">Sensitivity Analysis: Testing Scenarios by Time Horizon</h2>
 <p>The table below provides recommended rate of return assumptions based on your remaining investment horizon and portfolio composition:</p>
 
 <div class="data-table-wrap">
@@ -513,7 +596,7 @@
 <div class="table-footnote">Assumes 2.7% long-term projected inflation and low-cost index fund fees (under 0.10%).</div>
 </div>
 
-<h2>Common Return Assumption Mistakes to Avoid</h2>
+<h2 id="common-return-assumption-mistakes-to-avoid">Common Return Assumption Mistakes to Avoid</h2>
 <ol>
 <li><strong>Mistake 1: Projecting 10% to 12% returns based on recent bull markets.</strong> Extrapolating short-term rallies over 30 years leads to severe under-saving.</li>
 <li><strong>Mistake 2: Forgetting to subtract inflation.</strong> An $800,000 nominal balance in 25 years will not buy what $800,000 buys today.</li>
@@ -522,7 +605,7 @@
 <li><strong>Mistake 5: Relying on overly pessimistic 2% to 3% returns.</strong> Keeping your 401(k) in cash or short-term stable value funds virtually guarantees your wealth will be eroded by inflation.</li>
 </ol>
 
-<h2>Frequently Asked Questions</h2>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 
 <div class="faq-card">
 <h3>What is a realistic rate of return for a 401(k) calculator?</h3>
@@ -593,8 +676,7 @@
 <strong>401(k) Calculator: How to Estimate Your Retirement Savings →</strong>
 </a>
 </nav>
-
-</div>
+</article>
 </div>
 </main>
 
