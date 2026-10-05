@@ -324,7 +324,7 @@ const SITE_SEARCH_INDEX = [{"n":"1,000 Days Old Calculator","u":"/tools/1000-day
 
 function initNavigation(){
  const navDropdowns=$$('details.nav-dropdown');
- const desktopHover=()=>matchMedia('(min-width:941px) and (hover:hover)').matches;
+ const desktopHover=()=>matchMedia('(min-width:1201px) and (hover:hover)').matches;
  
  navDropdowns.forEach(dropdown=>{
   let closeTimeout = null;

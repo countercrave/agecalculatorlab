@@ -3,7 +3,7 @@
 ## 1. Standard Site Header & Navigation (Mandatory)
 Every new article, calculator, or page MUST strictly use the site-wide `<header class="site-header">` markup:
 - Logo: `<a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto"></a>`
-- Navigation structure: Include standard mobile menu button, Calculators mega-menu, Guides mega-menu, "Born in a year" link (`https://born-in.agecalculatorlab.com/born-in/`), Categories, Methodology, live search bar (`<div class="nav-search-wrap" id="nav-search-wrap">...</div>`), and the "Calculate age" CTA button (`<a class="nav-cta" href="../../#calculator">Calculate age</a>`).
+- Navigation structure: Include standard mobile menu button, Calculators mega-menu, Days & Dates mega-menu (`https://days.agecalculatorlab.com/`), Guides mega-menu, "Born in a year" link (`https://born-in.agecalculatorlab.com/born-in/`), Categories, Methodology, live search bar (`<div class="nav-search-wrap" id="nav-search-wrap">...</div>`), and the "Calculate age" CTA button (`<a class="nav-cta" href="../../#calculator">Calculate age</a>`).
 - Never write simplified, unstyled, or ad-hoc header tags.
 
 ## 2. Standard Author Profile & Bio Card (Mandatory)
