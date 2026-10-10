@@ -368,18 +368,36 @@
       font-weight: 900;
     }
 
-    /* ── Hero Graphic Frame ── */
+    /* ── Hero Two-Column Grid & Graphic Frame ── */
+    .cgl-hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 36px;
+      align-items: center;
+      margin: 12px 0 28px;
+    }
+    @media (max-width: 960px) {
+      .cgl-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
     .cgl-hero-media-card {
-      margin: 0 0 36px;
-      border-radius: 20px;
+      margin: 0;
+      border-radius: 18px;
       overflow: hidden;
       border: 1px solid var(--aclx-line);
-      box-shadow: 0 14px 36px rgba(4, 47, 42, 0.07);
+      box-shadow: 0 10px 30px rgba(4, 47, 42, 0.08);
       background: var(--aclx-deep);
+      max-width: 500px;
+      width: 100%;
+      justify-self: center;
     }
     .cgl-hero-media-card img {
       width: 100%;
       height: auto;
+      max-height: 340px;
+      object-fit: contain;
       display: block;
     }
 
@@ -1132,17 +1150,48 @@
       margin: 0;
     }
 
-    .cgl-editorial-media {
+    /* ── Two-Column Layout for Explanatory Sections ── */
+    .cgl-two-col {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: center;
       margin: 28px 0;
+    }
+    .cgl-two-col.reverse {
+      grid-template-columns: 0.85fr 1.15fr;
+    }
+    @media (max-width: 960px) {
+      .cgl-two-col,
+      .cgl-two-col.reverse {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .cgl-two-col.reverse > :first-child {
+        order: 2;
+      }
+      .cgl-two-col.reverse > :last-child {
+        order: 1;
+      }
+    }
+    .cgl-col-copy p:last-child {
+      margin-bottom: 0;
+    }
+    .cgl-editorial-media {
+      margin: 0 auto;
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid var(--aclx-line);
       box-shadow: 0 4px 18px rgba(4, 47, 42, 0.05);
       background: #ffffff;
+      max-width: 500px;
+      width: 100%;
     }
     .cgl-editorial-media img {
       width: 100%;
       height: auto;
+      max-height: 350px;
+      object-fit: contain;
       display: block;
     }
 
@@ -1375,25 +1424,29 @@
     <!-- Editorial Hero Section -->
     <section class="cgl-hero-editorial">
       <div class="container">
-        <div class="cgl-badge-row">
-          <span class="cgl-badge-kicker">Staff Selection Commission</span>
-          <span class="cgl-badge-cutoff">Crucial Reckoning Date: 01 August 2026</span>
-          <span class="cgl-badge-verified">DoPT Norms Verified: September 2026</span>
-        </div>
-        <h1>SSC CGL Age Calculator 2026 – <span>Check Your Age Eligibility</span></h1>
-        <p class="cgl-hero-lead">
-          Determine your exact post-wise eligibility for the Combined Graduate Level (CGL) examination. Check your age against the official <strong>1 August 2026</strong> crucial cutoff date, apply statutory category relaxations, verify your eligible date of birth range, and discover alternative eligible posts.
-        </p>
-        <div class="cgl-trust-row">
-          <span class="cgl-trust-pill">Official 1 August 2026 Cutoff</span>
-          <span class="cgl-trust-pill">All 4 Cadre Bands (18–27, 20–30, 18–30, 18–32)</span>
-          <span class="cgl-trust-pill">Statutory Relaxations (OBC, SC/ST, PwBD, ESM)</span>
-          <span class="cgl-trust-pill">100% In-Browser &amp; Private</span>
-        </div>
+        <div class="cgl-hero-grid">
+          <div class="cgl-hero-copy">
+            <div class="cgl-badge-row">
+              <span class="cgl-badge-kicker">Staff Selection Commission</span>
+              <span class="cgl-badge-cutoff">Crucial Reckoning Date: 01 August 2026</span>
+              <span class="cgl-badge-verified">DoPT Norms Verified: September 2026</span>
+            </div>
+            <h1>SSC CGL Age Calculator 2026 – <span>Check Your Age Eligibility</span></h1>
+            <p class="cgl-hero-lead">
+              Determine your exact post-wise eligibility for the Combined Graduate Level (CGL) examination. Check your age against the official <strong>1 August 2026</strong> crucial cutoff date, apply statutory category relaxations, verify your eligible date of birth range, and discover alternative eligible posts.
+            </p>
+            <div class="cgl-trust-row">
+              <span class="cgl-trust-pill">Official 1 August 2026 Cutoff</span>
+              <span class="cgl-trust-pill">All 4 Cadre Bands (18–27, 20–30, 18–30, 18–32)</span>
+              <span class="cgl-trust-pill">Statutory Relaxations (OBC, SC/ST, PwBD, ESM)</span>
+              <span class="cgl-trust-pill">100% In-Browser &amp; Private</span>
+            </div>
+          </div>
 
-        <!-- Editorial Hero Graphic -->
-        <div class="cgl-hero-media-card">
-          <img src="../../assets/tools/ssc-cgl/career-eligibility-control-panel.svg" alt="SSC CGL Career Eligibility Control Panel" width="1200" height="675" fetchpriority="high">
+          <!-- Editorial Hero Graphic -->
+          <div class="cgl-hero-media-card">
+            <img src="../../assets/tools/ssc-cgl/career-eligibility-control-panel.svg" alt="SSC CGL Career Eligibility Control Panel" width="1200" height="675" fetchpriority="high">
+          </div>
         </div>
       </div>
     </section>
@@ -1787,15 +1840,22 @@
       
       <!-- Section 1: How SSC CGL Age Is Calculated (5-Step Pipeline) -->
       <section class="cgl-editorial-section" id="how-calculated">
-        <span class="cgl-editorial-kicker">Statutory Methodology</span>
-        <h2>How Is Age Calculated for SSC CGL?</h2>
-        <p>
-          Determining age eligibility for the Staff Selection Commission Combined Graduate Level Examination is not a matter of simple subtraction between your birth year and the exam year. The Commission enforces strict statutory benchmarks laid down in the official notification. Here is the five-step legal methodology used to determine candidate eligibility:
-        </p>
+        <div class="cgl-two-col">
+          <div class="cgl-col-copy">
+            <span class="cgl-editorial-kicker">Statutory Methodology</span>
+            <h2>How Is Age Calculated for SSC CGL?</h2>
+            <p>
+              Determining age eligibility for the Staff Selection Commission Combined Graduate Level Examination is not a matter of simple subtraction between your birth year and the exam year. The Commission enforces strict statutory benchmarks laid down in the official notification.
+            </p>
+            <p>
+              Under Department of Personnel and Training (DoPT) guidelines, examinations held in the second half of the calendar year anchor age reckoning to <strong>1 August 2026</strong>. Candidate eligibility is evaluated through an authoritative five-step legal pipeline.
+            </p>
+          </div>
 
-        <!-- Pipeline SVG graphic -->
-        <div class="cgl-editorial-media">
-          <img src="../../assets/tools/ssc-cgl/candidate-exam-journey-desk.svg" alt="SSC CGL Candidate Eligibility Reckoning Pipeline" width="1200" height="675" loading="lazy">
+          <!-- Pipeline SVG graphic -->
+          <div class="cgl-editorial-media">
+            <img src="../../assets/tools/ssc-cgl/candidate-exam-journey-desk.svg" alt="SSC CGL Candidate Eligibility Reckoning Pipeline" width="1200" height="675" loading="lazy">
+          </div>
         </div>
 
         <div class="cgl-cards-grid">
@@ -1829,23 +1889,25 @@
 
       <!-- Section 2: SSC CGL 2026 Age Limits by Band (Interactive Visual Chart) -->
       <section class="cgl-editorial-section" id="age-limits">
-        <span class="cgl-editorial-kicker">Cadre Classification</span>
-        <h2>SSC CGL Age Limits 2026 by Post Band</h2>
-        <p>
-          The official notice groups vacancies across four standard age brackets. Understanding these bands prevents the common mistake of assuming that eligibility for one post implies eligibility for all 30+ cadres:
-        </p>
-        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 4px solid #10b981; border-radius: 8px; padding: 14px 18px; margin: 20px 0; font-size: 0.875rem; color: #166534; display: flex; flex-direction: column; gap: 8px;">
-          <div>🎓 <strong>Complete Eligibility Pillar:</strong> Review overall educational degree requirements, final-year student rules, and nationality conditions in our master pillar: <a href="../../articles/ssc-cgl-eligibility-criteria/" style="color: #064e3b; font-weight: 700; text-decoration: underline;">SSC CGL eligibility criteria 2026</a>.</div>
-          <div>📖 <strong>In-Depth Authority Guide:</strong> Read our comprehensive breakdown on <a href="../../articles/ssc-cgl-age-limit/" style="color: #064e3b; font-weight: 700; text-decoration: underline;">SSC CGL Age Limit 2026: Post-Wise Age Limit, DOB &amp; Age Relaxation</a> covering complete cadre charts, DoPT reckoning dates, and category exemptions.</div>
-          <div>🏛️ <strong>Post-Wise Age Limit Database:</strong> Need to look up the exact statutory age limit for a particular post code, ministry, or department? Browse our searchable <a href="../../articles/ssc-cgl-post-wise-age-limit/" style="color: #064e3b; font-weight: 700; text-decoration: underline;">ssc cgl post wise age limit</a> database for all 32+ official cadres.</div>
-          <div>🗓️ <strong>DOB Permissible Windows:</strong> Not sure which birth date range applies to your post? See our complete <a href="../../articles/ssc-cgl-dob-eligibility/" style="color: #064e3b; font-weight: 700; text-decoration: underline;">SSC CGL DOB eligibility</a> guide for exact earliest and latest birth dates and matriculation certificate rules.</div>
-          <div>🎖️ <strong>Category Age Relaxations:</strong> Claiming reservation for OBC, SC, ST, PwBD, or Ex-Servicemen? Read our detailed <a href="../../articles/ssc-cgl-age-relaxation/" style="color: #064e3b; font-weight: 700; text-decoration: underline;">SSC CGL age relaxation</a> guide for exact deduction formulas and ceiling extensions.</div>
+        <div class="cgl-two-col">
+          <div class="cgl-col-copy">
+            <span class="cgl-editorial-kicker">Cadre Classification</span>
+            <h2>SSC CGL Age Limits 2026 by Post Band</h2>
+            <p>
+              The official notice groups vacancies across four standard age brackets. Understanding these bands prevents the common mistake of assuming that eligibility for one post implies eligibility for all 30+ cadres.
+            </p>
+            <p>
+              Each band defines an exact statutory date of birth window for unreserved candidates, anchored strictly to the 1 August crucial date.
+            </p>
+          </div>
+
+          <!-- Band Chart SVG -->
+          <div class="cgl-editorial-media">
+            <img src="../../assets/tools/ssc-cgl/dob-eligibility-window-concept.svg" alt="SSC CGL DOB Eligibility Windows by Age Band" width="1200" height="675" loading="lazy">
+          </div>
         </div>
 
-        <!-- Band Chart SVG -->
-        <div class="cgl-editorial-media">
-          <img src="../../assets/tools/ssc-cgl/dob-eligibility-window-concept.svg" alt="SSC CGL DOB Eligibility Windows by Age Band" width="1200" height="675" loading="lazy">
-        </div>
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 4px solid #10b981; border-radius: 8px; padding: 14px 18px; margin: 20px 0; font-size: 0.875rem; color: #166534; display: flex; flex-direction: column; gap: 8px;">
 
         <div class="cgl-table-wrapper">
           <table class="cgl-data-table">
@@ -1894,15 +1956,22 @@
 
       <!-- Section 3: Official Category-Wise Age Relaxation Rules -->
       <section class="cgl-editorial-section" id="age-relaxation">
-        <span class="cgl-editorial-kicker">Reservation Framework</span>
-        <h2>Category-Wise Age Relaxation Rules</h2>
-        <p>
-          Statutory reservation confers upper-age concessions in accordance with Government of India orders. Below is the authoritative breakdown of upper-age extensions and qualifying conditions:
-        </p>
+        <div class="cgl-two-col">
+          <div class="cgl-col-copy">
+            <span class="cgl-editorial-kicker">Reservation Framework</span>
+            <h2>Category-Wise Age Relaxation Rules</h2>
+            <p>
+              Statutory reservation confers upper-age concessions in accordance with Government of India orders. Below is the authoritative breakdown of upper-age extensions and qualifying conditions across all reserved categories.
+            </p>
+            <p>
+              These concessions extend the maximum permissible age limit while leaving the minimum age threshold (18 or 20 years) unchanged.
+            </p>
+          </div>
 
-        <!-- Relaxation Ledger Breakdown SVG -->
-        <div class="cgl-editorial-media">
-          <img src="../../assets/tools/ssc-cgl/relaxation-ledger-breakdown.svg" alt="SSC CGL Statutory Age Relaxation Ledger Breakdown" width="1200" height="675" loading="lazy">
+          <!-- Relaxation Ledger Breakdown SVG -->
+          <div class="cgl-editorial-media">
+            <img src="../../assets/tools/ssc-cgl/relaxation-ledger-breakdown.svg" alt="SSC CGL Statutory Age Relaxation Ledger Breakdown" width="1200" height="675" loading="lazy">
+          </div>
         </div>
 
         <div class="cgl-cards-grid">
@@ -1941,15 +2010,26 @@
 
       <!-- Section 4: Aspirant's Study Desk Worksheet -->
       <section class="cgl-editorial-section" id="study-worksheet">
-        <span class="cgl-editorial-kicker">Documentary Readiness</span>
-        <h2>Aspirant's Study Desk: Verifying Your Age Checklist</h2>
-        <p>
-          Before filling out the online application on the SSC portal, competitive aspirants maintain a verified dossier checklist to ensure documentary alignment across certificates, notifications, and reservation codes:
-        </p>
+        <div class="cgl-two-col reverse">
+          <!-- Desk Worksheet SVG -->
+          <div class="cgl-editorial-media">
+            <img src="../../assets/tools/ssc-cgl/ssc-cgl-study-desk-worksheet.svg" alt="Aspirant Study Desk SSC CGL Age Check Worksheet" width="800" height="600" loading="lazy">
+          </div>
 
-        <!-- Desk Worksheet SVG -->
-        <div class="cgl-editorial-media" style="max-width: 860px; margin: 28px auto;">
-          <img src="../../assets/tools/ssc-cgl/ssc-cgl-study-desk-worksheet.svg" alt="Aspirant Study Desk SSC CGL Age Check Worksheet" width="800" height="600" loading="lazy">
+          <div class="cgl-col-copy">
+            <span class="cgl-editorial-kicker">Documentary Readiness</span>
+            <h2>Aspirant's Study Desk: Verifying Your Age Checklist</h2>
+            <p>
+              Before submitting your online application on the Staff Selection Commission portal, cross-verify these crucial documentary benchmarks:
+            </p>
+            <ul style="padding-left: 20px; line-height: 1.8; color: var(--aclx-ink-light); margin: 0;">
+              <li><strong>Matriculation Certificate:</strong> Exact date of birth, name spelling, and parent details matching your application form verbatim.</li>
+              <li><strong>Crucial Reckoning Date:</strong> Your exact completed age on <strong>1 August 2026</strong>, not on the notification release date or exam day.</li>
+              <li><strong>Category Certificate Validity:</strong> OBC Non-Creamy Layer or EWS certificate issued within the prescribed financial year window.</li>
+              <li><strong>Disability / Discharge Papers:</strong> PwBD medical certificate (&ge;40% impairment) or Armed Forces discharge book for ESM claims.</li>
+              <li><strong>Cadre-Wise Permissible DOBs:</strong> Confirmation that your birth date falls strictly within the permissible window for each opted post.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -2284,19 +2364,26 @@
 
       <!-- Section 9: Edge Cases — What If My Birthday Is After August 1? -->
       <section class="cgl-editorial-section" id="august-edge-case">
-        <span class="cgl-editorial-kicker">Border Scenarios</span>
-        <h2>What If My Birthday Is After August 1?</h2>
-        <p>
-          One of the most frequent dilemmas aspirants face involves birthdays in late August, September, October, November, or December. Because the crucial date is anchored to <strong>1 August 2026</strong>, your birthday has not yet occurred for the reckoning:
-        </p>
+        <div class="cgl-two-col">
+          <div class="cgl-col-copy">
+            <span class="cgl-editorial-kicker">Border Scenarios</span>
+            <h2>What If My Birthday Is After August 1?</h2>
+            <p>
+              One of the most frequent dilemmas aspirants face involves birthdays in late August, September, October, November, or December.
+            </p>
+            <p>
+              Because the crucial date is anchored strictly to <strong>1 August 2026</strong>, your upcoming birthday has not yet occurred for the reckoning. You remain your earlier age on the crucial cutoff date, regardless of when you submit the application form.
+            </p>
+          </div>
 
-        <div style="background: var(--aclx-paper); border: 1px solid var(--aclx-line); border-radius: 14px; padding: 22px; margin: 20px 0;">
-          <h4 style="color: var(--aclx-deep); margin: 0 0 10px; font-family: var(--font-display), 'Fraunces', Georgia, serif; font-size: 1.08rem;">Worked Example: Candidate Born on 15 August 1998</h4>
-          <ul style="color: var(--aclx-ink-light); font-size: 0.94rem; line-height: 1.75; padding-left: 20px; margin: 0;">
-            <li>On 15 August 2026, the candidate will turn 28 years old.</li>
-            <li>However, on the crucial date of <strong>1 August 2026</strong>, they are exactly <strong>27 years, 11 months, and 17 days old</strong>.</li>
-            <li><strong>Verdict:</strong> Under the law, they have not yet crossed 28. For posts requiring 20–30 or 18–30 years, they are comfortably within the limit!</li>
-          </ul>
+          <div style="background: var(--aclx-paper); border: 1px solid var(--aclx-line); border-radius: 14px; padding: 22px; margin: 0;">
+            <h4 style="color: var(--aclx-deep); margin: 0 0 10px; font-family: var(--font-display), 'Fraunces', Georgia, serif; font-size: 1.08rem;">Worked Example: Candidate Born on 15 August 1998</h4>
+            <ul style="color: var(--aclx-ink-light); font-size: 0.94rem; line-height: 1.75; padding-left: 20px; margin: 0;">
+              <li>On 15 August 2026, the candidate will turn 28 years old.</li>
+              <li>However, on the crucial date of <strong>1 August 2026</strong>, they are exactly <strong>27 years, 11 months, and 17 days old</strong>.</li>
+              <li><strong>Verdict:</strong> Under the law, they have not yet crossed 28. For posts requiring 20–30 or 18–30 years, they are comfortably within the limit!</li>
+            </ul>
+          </div>
         </div>
       </section>
 
