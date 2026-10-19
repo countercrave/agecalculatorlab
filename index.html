@@ -1724,7 +1724,7 @@
     if (isDiff) {
       outMetaStandard.textContent = (r.whoIsOlder ? r.whoIsOlder + ' · ' : '') + 'Calendar gap: ' + r.years + 'y ' + r.months + 'm ' + r.days + 'd (' + r.totalDays.toLocaleString() + ' days)';
     } else if (activeCalcMode === 'date') {
-      outMetaStandard.textContent = 'Birthday on the selected date · Total ' + r.totalDays.toLocaleString() + ' days lived';
+      outMetaStandard.textContent = 'Age on the selected date · Total ' + r.totalDays.toLocaleString() + ' days lived';
     } else {
       outMetaStandard.textContent = 'Total ' + r.totalDays.toLocaleString() + ' days lived · ' + 
         (r.nextBdayDays === 0 ? 'Birthday is TODAY!' : 'Next birthday in ' + r.nextBdayDays + ' days');
