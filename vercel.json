@@ -349,6 +349,46 @@
       "source": "/guides/can-you-retire-at-60-uk/",
       "destination": "/articles/can-you-retire-at-60-uk/",
       "permanent": true
+    },
+    {
+      "source": "/how-old-am-i",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/how-old-am-i/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/career-length-calculator",
+      "destination": "/tools/employment-duration-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/career-length-calculator/",
+      "destination": "/tools/employment-duration-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/work-anniversary-guide",
+      "destination": "/articles/how-to-calculate-work-anniversary/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/work-anniversary-guide/",
+      "destination": "/articles/how-to-calculate-work-anniversary/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/premature-baby-age-calculator",
+      "destination": "/tools/corrected-age-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/premature-baby-age-calculator/",
+      "destination": "/tools/corrected-age-calculator/",
+      "permanent": true
     }
   ],
   "cleanUrls": true,
