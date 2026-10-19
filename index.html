@@ -6079,21 +6079,24 @@
           <h3 style="font-family:'Fraunces',Georgia,serif;font-size:1.15rem;color:#042f2a;margin:0 0 10px;">Strict Calendar Borrowing Function</h3>
           <p style="font-size:0.86rem;color:#5d7069;margin:0 0 14px;line-height:1.5;">Pure client-side date function with month-length borrowing and leap-day clamping support.</p>
           <div style="position:relative;background:#042f2a;border-radius:10px;padding:14px;margin-bottom:14px;overflow-x:auto;">
-            <code id="code-snippet-js" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78rem;color:#a9ead1;white-space:pre-wrap;word-break:break-all;">function function getExactAge(birthDate, asOf = new Date()) {
-  // Anniversary clamping: Jan 31 + 1 month = Feb 28 (never negative days)
+            <code id="code-snippet-js" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78rem;color:#a9ead1;white-space:pre-wrap;word-break:break-all;">function getExactAge(birthDate, asOf = new Date()) {
+  // Each month anniversary derives from the original birth date (anchor),
+  // clamped to month length: Jan 31 + 1 month = Feb 28, + 2 months = Mar 31.
   const daysIn = (y, m) =&gt; new Date(y, m + 1, 0).getDate();
-  const addMonths = (d, n) =&gt; {
-    const t = new Date(d.getFullYear(), d.getMonth() + n, 1);
-    t.setDate(Math.min(d.getDate(), daysIn(t.getFullYear(), t.getMonth())));
+  const anniversary = (n) =&gt; {
+    const t = new Date(birthDate.getFullYear(), birthDate.getMonth() + n, 1);
+    t.setDate(Math.min(birthDate.getDate(), daysIn(t.getFullYear(), t.getMonth())));
     return t;
   };
   let y = asOf.getFullYear() - birthDate.getFullYear();
-  let anchor = addMonths(birthDate, y * 12);
-  if (anchor &gt; asOf) { y--; anchor = addMonths(birthDate, y * 12); }
-  let m = 0, next = addMonths(anchor, 1);
-  while (m &lt; 11 &amp;&amp; next &lt;= asOf) { anchor = next; m++; next = addMonths(anchor, 1); }
+  let anchor = anniversary(y * 12);
+  if (anchor &gt; asOf) { y--; anchor = anniversary(y * 12); }
+  let m = 0;
+  while (m &lt; 11 &amp;&amp; anniversary(y * 12 + m + 1) &lt;= asOf) { m++; }
+  anchor = anniversary(y * 12 + m);
   const d = Math.round((asOf - anchor) / 86400000);
   return { years: y, months: m, days: d };
+};
 }</code>
           </div>
         </div>
