@@ -939,7 +939,7 @@
     <span style="display:inline-flex;align-items:center;gap:6px;"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="#12784a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 11 8 15 16 6"/></svg> 100% Free &amp; Open Access</span>
     <span style="display:inline-flex;align-items:center;gap:6px;"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="#12784a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 11 8 15 16 6"/></svg> Zero Data Stored or Sent</span>
     <span style="display:inline-flex;align-items:center;gap:6px;"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="#12784a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 11 8 15 16 6"/></svg> Runs 100% in Browser (Client-Side)</span>
-    <span style="display:inline-flex;align-items:center;gap:6px;"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="#12784a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 11 8 15 16 6"/></svg> Strict ISO 8601 Calendar Math</span>
+    <span style="display:inline-flex;align-items:center;gap:6px;"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="#12784a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 11 8 15 16 6"/></svg> Civil-Date Calendar Math</span>
     <span style="display:inline-flex;align-items:center;gap:6px;"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="#12784a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 11 8 15 16 6"/></svg> Instant Offline Execution</span>
   </div>
 </aside>
@@ -5990,7 +5990,7 @@
             <h4 class="aclx-kb-q-title">Can I use this age calculator result for official documents?</h4>
             <div class="aclx-kb-q-body">
               <p>
-                Yes, our calculation engine follows standard ISO 8601 calendar arithmetic, exactly matching the mathematical protocols applied by courts, government agencies, and the Social Security Administration.
+                Yes, our calculation engine follows standard ISO 8601 calendar arithmetic, following standard civil-date arithmetic with documented anniversary-clamping for month ends.
               </p>
               <p>
                 <strong>Official Submission Notice:</strong> While our mathematical outputs are verified, formal statutory bodies (such as passport offices, DMV branches, and immigration authorities) require certified government birth certificates and may apply local statutory rules regarding the exact instant of legal day transition.
@@ -6058,6 +6058,9 @@
           <p style="font-size:0.86rem;color:#5d7069;margin:0 0 14px;line-height:1.5;">Calculates completed years, residual months, and residual calendar days from cell A2 (DOB) as of today.</p>
           <div style="position:relative;background:#042f2a;border-radius:10px;padding:14px;margin-bottom:14px;overflow-x:auto;">
             <code id="code-snippet-excel" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.82rem;color:#a9ead1;white-space:pre-wrap;word-break:break-all;">="Age: " &amp; DATEDIF(A2,TODAY(),"y") &amp; " yrs, " &amp; DATEDIF(A2,TODAY(),"ym") &amp; " mos, " &amp; DATEDIF(A2,TODAY(),"md") &amp; " days"</code>
+            <div style="font-size:0.75rem;color:#52675f;margin-top:6px;line-height:1.4;">
+              Limitation: the "MD" unit can return unexpected day counts for month-end dates (e.g., Jan 31). Cross-check against the JavaScript snippet or the calculator above for exact results.
+            </div>
           </div>
         </div>
         <button type="button" class="btn btn-sm btn-outline aclx-copy-snippet-btn" data-target="code-snippet-excel" style="align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;border:1.5px solid #08745a;background:transparent;color:#08745a;font-weight:750;font-size:0.82rem;cursor:pointer;">

@@ -169,7 +169,7 @@
 
     <!-- Preset Chips Bar -->
     <div class="preset-sample-bar">
-      <span style="font-size:11.5px;font-weight:750;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:8px">Or try a sample preset portrait:</span>
+      <span style="font-size:11.5px;font-weight:750;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:8px">Or try a demonstration preset portrait (illustrative, not a real analysis):</span>
       <div style="display:flex;flex-wrap:wrap;gap:8px">
         <button type="button" class="preset-chip btn-preset" data-age="28" data-range="26–31" data-label="Young Adult (28)" data-symmetry="98" data-texture="Smooth" data-conf="94%">Sample 1: Age 28</button>
         <button type="button" class="preset-chip btn-preset" data-age="44" data-range="41–47" data-label="Mid-Career (44)" data-symmetry="95" data-texture="Moderate" data-conf="91%">Sample 2: Age 44</button>
@@ -293,7 +293,7 @@
         </div>
         <div class="metric">
           <span style="color:#d3e5de;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em">Model Confidence</span>
-          <strong id="metricConfidence" style="color:#ffffff;font-size:16px;margin:2px 0 4px">High (91%)</strong>
+          <strong id="metricConfidence" style="color:#ffffff;font-size:16px;margin:2px 0 4px">Experimental</strong>
           <div style="height:4px;background:rgba(255,255,255,.15);border-radius:2px;overflow:hidden"><div id="barConfidence" style="height:100%;background:#9fe7bd;width:91%;border-radius:2px"></div></div>
         </div>
       </div>
@@ -1085,8 +1085,8 @@ document.addEventListener('DOMContentLoaded', () => {
       barLighting.style.width = lightingScore + '%';
       metricSymmetry.textContent = symmetryScore + '%';
       barSymmetry.style.width = symmetryScore + '%';
-      metricConfidence.textContent = 'High (91%)';
-      barConfidence.style.width = '91%';
+      metricConfidence.textContent = 'Experimental';
+      barConfidence.style.width = '50%';
 
       showResult();
     }, 400);
