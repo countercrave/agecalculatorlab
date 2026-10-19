@@ -1382,3 +1382,9 @@ a.calc-cta-btn svg {
     font-size: 0.8125rem;
   }
 }
+
+/* F20: keep tool hero compact on mobile so the calculator form stays near the fold */
+@media (max-width: 640px) {
+  .tool-featured-media img, .article-featured-media img { aspect-ratio: 21/9; }
+  .tool-featured-media, .article-featured-media { max-width: 100%; }
+}
