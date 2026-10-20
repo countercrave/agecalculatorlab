@@ -8,7 +8,7 @@ once and caught late. Check this file before any content publish.
 
 Ground truth (as of 2026-10-20):
 
-- Main site: **168 tools, 172 guides/articles** (source: `search-index.json`)
+- Main site: **168 tools, 167 guides/articles** (source: count of page files in `tools/` and `articles/` — never a tally of search-index type labels; the index once double-listed 5 articles and produced a wrong 172 that spread across the site)
 - Days subdomain: **215 pages** (source: days sitemap.xml)
 - Born-in subdomain: **128 URLs** (source: born-in sitemap)
 
@@ -28,6 +28,8 @@ changes, update ALL of these in the SAME pull request:
 Before merging, run a full-site sweep for the OLD numbers (e.g. search the
 live sitemap URLs for `\d+ (calculators|tools|guides|articles)`) and confirm
 zero stale values remain. A count fix is not done until the sweep is clean.
+
+Also: `search-index.json` must never contain duplicate URLs — one entry per page.
 
 ## Rule 2 — Cross-subdomain counts describe the OTHER site's inventory
 
