@@ -122,7 +122,7 @@
         "name": "How do I calculate how many days I have worked?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To calculate total calendar days of service, subtract your start date from your end (or reference) date. For formal HR tenure and payroll, you add +1 day to make the count inclusive of both your first and last shift: Total Days = (End Date - Start Date) + 1."
+          "text": "To calculate total calendar days of service, subtract your start date from your end (or reference) date. For formal HR tenure and payroll records, you add +1 day to make the count inclusive of both your first and last shifts: Total Days = (End Date − Start Date) + 1."
         }
       },
       {
@@ -130,7 +130,7 @@
         "name": "What is the difference between calendar days worked and working business days?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Calendar days measure total elapsed elapsed days on the calendar (including weekends and holidays, totaling 365 or 366 days/year). Business or working days exclude weekends (52 Saturdays and 52 Sundays = 104 days), resulting in standard ~260 workdays per year, or ~250 days after subtracting statutory public holidays."
+          "text": "Calendar days measure every elapsed 24-hour sunrise on the calendar (including weekends and holidays, totaling 365 or 366 days/year). Business or working days exclude weekends (104 weekend days per year), resulting in standard ~260 workdays per year, or ~250 days after subtracting statutory public holidays."
         }
       },
       {
@@ -138,7 +138,7 @@
         "name": "Why do HR departments add 1 day to service date calculations?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Standard mathematical subtraction (Date B - Date A) measures elapsed time between two midnight timestamps. Because an employee works both their first day on duty and their final day before departure, HR systems use inclusive date counting: (Date B - Date A) + 1 day to ensure full payroll credit."
+          "text": "Standard mathematical subtraction (Date B − Date A) measures elapsed time between two midnight timestamps. Because an employee works both their first day on duty and their final day before departure, HR systems use inclusive date counting: (Date B − Date A) + 1 day to ensure full payroll credit for both working days."
         }
       },
       {
@@ -154,7 +154,7 @@
         "name": "How many working days are in a typical 1-year employment period?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A standard non-leap year has 365 calendar days. With a Monday-to-Friday work schedule, there are exactly 260 weekdays (52 weeks x 5 days). After accounting for ~10 observed federal or public holidays, an employee actively works approximately 250 days before paid time off (PTO)."
+          "text": "A standard non-leap year has 365 calendar days. With a Monday-to-Friday work schedule, there are exactly 260 weekdays (52 weeks × 5 days). After accounting for ~10 observed federal or public holidays, an employee actively works approximately 250 days before paid time off (PTO)."
         }
       },
       {
@@ -163,6 +163,22 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "For calendar days including both start and end dates, use =DATEDIF(A1, B1, \"d\") + 1 or simply =(B1 - A1) + 1. For business days excluding weekends and public holidays, use the formula =NETWORKDAYS(A1, B1, Holidays_Range)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do sick days and vacation days count toward total days of service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. For legal tenure, retirement vesting, and seniority, paid sick leave, annual vacation days, and observed holidays are fully credited as active days of service. Only unpaid leaves of absence or temporary layoffs may be deducted depending on company policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does a 90-day probation period calculate in practice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 90-day probation period counts 90 consecutive calendar days from your official hire date (including weekends). To find your completion date, add 89 days to your start date. For example, if you started on January 15, your 90th day is April 14 (or April 13 in a leap year)."
         }
       }
     ]
@@ -1053,7 +1069,7 @@
             <h4>Written &amp; Fact-Checked by Navjeet Kamboj</h4>
             <div class="author-title">Founder &amp; Technical Editor, Age Calculator Lab</div>
             <p class="author-desc">
-              Navjeet is a software engineer and date arithmetic specialist dedicated to building hyper-accurate chronology tools. He has developed over 160 specialized calculators spanning chronological age, civil service tenure, astronomical milestones, and international calendar systems.
+              Navjeet is a software engineer and date arithmetic specialist dedicated to building hyper-accurate chronology tools. He has developed 168 specialized calculators spanning chronological age, civil service tenure, astronomical milestones, and international calendar systems.
             </p>
             <div class="author-socials">
               <a href="https://in.linkedin.com/in/navjeet-kamboj" target="_blank" rel="noopener">LinkedIn Profile</a>
