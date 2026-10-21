@@ -64,7 +64,7 @@
 .runner-badge{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;padding:3px 9px;border-radius:6px;margin-bottom:8px}
 .badge-young{background:#e0f2fe;color:#0369a1}
 .badge-master{background:#dcfce7;color:#166534}
-.runner-card h4{margin:0 0 8px;font-size:16px;color:var(--editorial-navy)}
+.runner-card h4, .runner-card .qh4 {margin:0 0 8px;font-size:16px;color:var(--editorial-navy)}
 .runner-card p{margin:0 0 10px;font-size:13px;color:var(--ink-2);line-height:1.5}
 .runner-stat-pill{display:inline-block;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:700;background:#042f2a;color:#9fe7bd}
 
@@ -96,7 +96,7 @@
 
 /* Cluster Directory Box */
 .cluster-roadmap{background:#f8fcfa;border:1px solid #d3e5de;border-radius:14px;padding:20px 24px;margin:24px 0}
-.cluster-roadmap h4{margin:0 0 12px;font-size:16px;color:#042f2a}
+.cluster-roadmap h4, .cluster-roadmap .qh4 {margin:0 0 12px;font-size:16px;color:#042f2a}
 .cluster-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
 @media(max-width:640px){.cluster-list{grid-template-columns:1fr}}
 .cluster-list li{font-size:13px;color:var(--ink-2);display:flex;align-items:center;gap:8px}
@@ -201,7 +201,7 @@
 <figure class="article-featured-media" style="margin:24px 0"><img loading="lazy" decoding="async" src="../../assets/thumbnails/articles/age-grading-runners.webp" alt="Diverse masters and younger runners on athletic track" width="1200" height="675"><figcaption>Masters Athletics · Age grading provides an objective measure of athletic longevity</figcaption></figure>
 <p>Age grading completely changes this dynamic. By evaluating performance against age-specific regression curves, masters athletes often discover that their relative conditioning is reaching all-time highs even as their raw times slow down:</p>
 <div class="comparison-grid">
-<div class="runner-card"><span class="runner-badge badge-young">Runner A · Younger Athlete</span><h4>Male, Age 25</h4><p>Distance: 5K Road<br>Finish Time: 19:30 (Pace: 3:54 /km)<br>Performance: Above-average recreational enthusiast.</p><span class="runner-stat-pill">Age Grade: 65.73% · Local Club Class</span></div>
+<div class="runner-card"><span class="runner-badge badge-young">Runner A · Younger Athlete</span><h3 class="qh4">Male, Age 25</h3><p>Distance: 5K Road<br>Finish Time: 19:30 (Pace: 3:54 /km)<br>Performance: Above-average recreational enthusiast.</p><span class="runner-stat-pill">Age Grade: 65.73% · Local Club Class</span></div>
 <div class="runner-card"><span class="runner-badge badge-master">Runner B · Masters Athlete</span><h4>Male, Age 58</h4><p>Distance: 5K Road<br>Finish Time: 21:15 (Pace: 4:15 /km)<br>Performance: Seasoned competitive masters athlete.</p><span class="runner-stat-pill">Age Grade: 73.85% · Regional Class</span></div>
 </div>
 <p>In this real-world scenario, Runner A crossed the finish line 1 minute and 45 seconds ahead of Runner B. Yet Runner B achieved a <strong>73.85% Regional Class score</strong>, demonstrating substantially greater relative athletic achievement than Runner A's <strong>65.73%</strong>. Age grading gives Runner B the recognition their conditioning deserves.</p>
@@ -309,7 +309,7 @@
 
 <section id="cluster-resources"><h2>Age Grading Topic Cluster Resources</h2><p>This guide serves as the foundation for our comprehensive running performance series. Explore additional resources in this cluster:</p>
 <div class="cluster-roadmap">
-<h4>Running Performance Cluster Guides</h4>
+<h3 class="qh4">Running Performance Cluster Guides</h3>
 <ul class="cluster-list">
 <li class="current">What Is Age Grading in Running? A Complete Guide (Current)</li>
 <li><a href="../../articles/how-is-age-grade-calculated/" style="color:#075433;font-weight:600;">How Is Age Grade Calculated? Formula, Examples &amp; Explanation →</a></li>

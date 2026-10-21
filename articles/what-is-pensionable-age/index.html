@@ -17,7 +17,7 @@
 /* Custom scoped components for pensionable age explainer */
 .timeline-card{padding:var(--s-6);border:1px solid var(--line);border-radius:var(--r-md);background:var(--panel);box-shadow:var(--sh-1);margin:var(--s-6) 0}
 .timeline-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--s-4);flex-wrap:wrap;gap:8px}
-.timeline-header h4{margin:0;font-size:var(--t-lg);color:var(--ink)}
+.timeline-header h4, .timeline-header .qh4 {margin:0;font-size:var(--t-lg);color:var(--ink)}
 .timeline-badge{display:inline-block;padding:4px 10px;border-radius:var(--r-pill);background:var(--brand-soft);color:var(--brand-dark);font-size:var(--t-xs);font-weight:700}
 .timeline-track{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-4);position:relative;margin-top:var(--s-4)}
 @media (max-width:768px){.timeline-track{grid-template-columns:1fr;gap:var(--s-4)}}
@@ -32,7 +32,7 @@
 .compare-box{padding:var(--s-6);border-radius:var(--r-md);border:1px solid var(--line)}
 .compare-box-private{background:linear-gradient(170deg,#fcfdfd,#f3f8f6);border-left:4px solid #137752}
 .compare-box-state{background:linear-gradient(170deg,#fdfdfd,#f6f9fc);border-left:4px solid #005ea5}
-.compare-box h4{margin:0 0 6px;font-size:var(--t-lg);color:var(--ink)}
+.compare-box h4, .compare-box .qh4 {margin:0 0 6px;font-size:var(--t-lg);color:var(--ink)}
 .compare-box .milestone-num{font-family:var(--font-display);font-size:2.2rem;font-weight:700;color:var(--brand-dark);line-height:1;margin:8px 0}
 .compare-box p{margin:6px 0 0;font-size:var(--t-sm);color:var(--ink-2);line-height:1.5}
 .gov-disclaimer-box{display:flex;gap:16px;padding:var(--s-5) var(--s-6);border:1px solid #d3e5de;border-radius:var(--r-md);background:#f2f8f5;margin:var(--s-6) 0;align-items:flex-start}
@@ -52,7 +52,7 @@
 .tag-transition{background:#fff3cd;color:#664d03}
 .tag-67{background:#e8f4fd;color:#0a58ca}
 .tag-68{background:#f8d7da;color:#842029}
-.example-card h4{margin:0 0 4px;font-size:var(--t-lg);color:var(--ink)}
+.example-card h4, .example-card .qh4 {margin:0 0 4px;font-size:var(--t-lg);color:var(--ink)}
 .example-card .calc-date{font-family:var(--font-display);font-size:var(--t-xl);color:var(--brand-dark);margin:4px 0 8px}
 .example-card p{margin:0;font-size:var(--t-sm);color:var(--ink-2);line-height:1.55}
 @media (max-width:640px){
@@ -105,7 +105,7 @@
 
 <div class="timeline-card">
 <div class="timeline-header">
-<h4>UK State Pension Age Legislative Trajectory</h4>
+<h3 class="qh4">UK State Pension Age Legislative Trajectory</h3>
 <span class="timeline-badge">Current Enacted Law</span>
 </div>
 <div class="timeline-track">
@@ -275,7 +275,7 @@
 <div class="compare-diagram">
 <div class="compare-box compare-box-private">
 <span class="timeline-badge">Private &amp; Workplace Pots</span>
-<h4>Normal Minimum Pension Age (NMPA)</h4>
+<h3 class="qh4">Normal Minimum Pension Age (NMPA)</h3>
 <div class="milestone-num">55 → 57</div>
 <p>The earliest age you can access personal or workplace pensions without an unauthorized payment penalty (up to 55% tax). Under the <em>Finance Act 2022</em>, the NMPA increases from <strong>age 55 to 57 on 6 April 2028</strong>.</p>
 </div>
@@ -307,7 +307,7 @@
 <div class="worked-examples-grid">
 <div class="example-card">
 <span class="example-card-tag tag-reached">Cohort 66 · Baseline</span>
-<h4>Born 15 May 1958</h4>
+<h3 class="qh4">Born 15 May 1958</h3>
 <div class="calc-date">15 May 2024 (Age 66)</div>
 <p>Under the Pensions Act 2011, individuals in this cohort reached their statutory State Pension age at exactly 66 years old. This milestone has already passed, meaning this individual is currently entitled to claim.</p>
 </div>
