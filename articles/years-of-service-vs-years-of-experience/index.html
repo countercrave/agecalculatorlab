@@ -10,7 +10,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-YM7P2RQ4Z7');
+  gtag('config', 'G-YM7P2RQ4Z7', {page_location: location.origin + location.pathname});
 </script>
 
   <meta charset="utf-8">
@@ -1525,6 +1525,7 @@
         <div>
           <h3>Important</h3>
           <a href="../../privacy/">Privacy</a>
+          <a href="#" onclick="if(window.googlefc&&googlefc.showRevocationMessage){googlefc.showRevocationMessage();}return false;">Privacy choices</a>
           <a href="../../terms/">Terms</a>
           <a href="../../contact/">Contact</a>
           <a href="../../sitemap.xml">Sitemap</a>
