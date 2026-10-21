@@ -47,7 +47,7 @@
 
 /* Methodology Callout */
 .methodology-box{background:#fdfcf7;border:1px solid #e2ddd0;border-left:5px solid #075433;border-radius:12px;padding:18px 22px;margin:22px 0}
-.methodology-box h4{margin:0 0 8px;font-size:15px;color:#042f2a}
+.methodology-box h4, .methodology-box .qh4 {margin:0 0 8px;font-size:15px;color:#042f2a}
 .methodology-box p{margin:0;font-size:13.5px;color:#4a635a;line-height:1.55}
 
 /* Comparison Tables */
@@ -62,7 +62,7 @@
 .steps-pipeline-vertical{display:flex;flex-direction:column;gap:14px;margin:22px 0}
 .step-card-row{display:flex;gap:16px;background:var(--panel);border:1px solid var(--line);border-left:4px solid #075433;border-radius:12px;padding:18px 20px;box-shadow:var(--sh-1)}
 .step-card-num{display:flex;align-items:center;justify-content:center;min-width:36px;height:36px;border-radius:50%;background:#042f2a;color:#9fe7bd;font-weight:800;font-size:14px;flex-shrink:0}
-.step-card-body h4{margin:0 0 6px;font-size:16px;color:var(--editorial-navy)}
+.step-card-body h4, .step-card-body .qh4 {margin:0 0 6px;font-size:16px;color:var(--editorial-navy)}
 .step-card-body p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.55}
 
 /* Worked Example Card */
@@ -205,7 +205,7 @@
 <div class="step-card-row">
 <div class="step-card-num">1</div>
 <div class="step-card-body">
-<h4>Determine the Runner's Age on Race Day</h4>
+<h3 class="qh4">Determine the Runner's Age on Race Day</h3>
 <p>Age grading relies on the runner's exact age on the day of competition, not their age at the beginning of the calendar year or when they registered for the event. In World Masters Athletics (WMA) protocols, age factors are defined in single-year increments (e.g., age 48 has a distinct factor from age 49). If a runner turns 50 on Saturday and races on Sunday, their performance is evaluated under the age 50 standard.</p>
 </div>
 </div>
@@ -508,7 +508,7 @@
 <section id="reference-standards"><h2>Why Reference Standards Matter</h2><p>An age-grade percentage is not an absolute law of physics; it is a statistical ratio whose accuracy depends entirely on the quality and integrity of the reference dataset behind it.</p><p>If a calculator uses outdated records from 1994, runners will be compared against historical standards that have since been superseded by modern training, nutrition, and advanced footwear technology. Conversely, if a calculator uses arbitrary formulas without empirical grounding, the percentages become meaningless vanity metrics.</p>
 
 <div class="methodology-box">
-<h4>Age Calculator Lab: Calculation Engine &amp; E-E-A-T Standards</h4>
+<h3 class="qh4">Age Calculator Lab: Calculation Engine &amp; E-E-A-T Standards</h3>
 <p><strong>Official Reference Source:</strong> World Masters Athletics (WMA) Road Standards, developed in collaboration with USA Track &amp; Field (USATF).<br>
 <strong>Dataset Edition:</strong> WMA 2020 Tables (with current 2025/2026 record calibrations).<br>
 <strong>Interpolation Engine:</strong> Single-year discrete factor matching with full floating-point precision.<br>

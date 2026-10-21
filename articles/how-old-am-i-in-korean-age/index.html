@@ -864,7 +864,10 @@
       line-height: 1.5;
       margin-bottom: 0 !important;
     }
-  </style>
+  
+/* heading-level fix: preserve retagged heading styles */
+.preset-demo-box .preset-display-card .qh4 { line-height: 1.12; margin-top: 0; }
+</style>
   <meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/articles/how-old-am-i-in-korean-age/featured-how-old-am-i-in-korean-age-v2.webp">
 </head>
 <body>
@@ -1077,7 +1080,7 @@
             </div>
 
             <div class="preset-display-card" id="preset-card-body">
-              <h4 style="font-family: var(--font-display, serif); font-size: 1.15rem; color: #042F2A; margin-bottom: 6px;" id="preset-title">January 15, 2000</h4>
+              <h3 class="qh4" style="font-family: var(--font-display, serif); font-size: 1.15rem; color: #042F2A; margin-bottom: 6px;" id="preset-title">January 15, 2000</h3>
               <p style="font-size: 0.95rem; color: #3D5A51; line-height: 1.5; margin-bottom: 10px;" id="preset-explanation">
                 Because January 15 has already occurred earlier this calendar year, International Age is 26. Traditional Korean Age is 27 (2026 − 2000 + 1). The current difference is <strong>+1 year</strong>.
               </p>

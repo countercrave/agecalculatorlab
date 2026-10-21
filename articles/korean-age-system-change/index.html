@@ -301,7 +301,7 @@
       border-top: none;
     }
 
-    .article-content h3 {
+    .article-content h3, .article-content .qh3 {
       font-family: var(--font-display, "Fraunces", Georgia, serif);
       font-size: 1.35rem;
       font-weight: 600;
@@ -844,7 +844,11 @@
       line-height: 1.5;
       margin-bottom: 0 !important;
     }
-  </style>
+  
+/* heading-level fix: preserve retagged heading styles */
+.article-body .quick-answer-box .qh3 { border-top: none; margin-top: 32px; padding-top: 0; }
+.timeline-wrap .timeline-node .qh4 { color: #042F2A; font-size: 1.15rem; font-weight: 700; line-height: 1.12; margin-bottom: 6px; margin-top: 0; }
+</style>
   <meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/articles/korean-age-system-change/featured-korean-age-system-change-v2.webp">
 </head>
 <body>
@@ -912,7 +916,7 @@
         <section id="quick-answer">
           <div class="quick-answer-box">
             <div class="quick-answer-label">Executive Policy Summary</div>
-            <h3 class="quick-answer-h3">Did Korea Get Rid of Korean Age?</h3>
+            <h2 class="quick-answer-h3 qh3">Did Korea Get Rid of Korean Age?</h2>
             <p class="quick-answer-body">
               <strong>South Korea standardized full-age counting for official, legal, administrative, and contractual purposes on June 28, 2023.</strong> Under the revised Civil Act, a person’s legal age begins at zero on the day they are born and increases by one year on each subsequent birthday. The traditional counting method—where a person is one year old at birth and gains a year every January 1st—is no longer recognized on government forms, medical records, or legal contracts, but it continues to exist informally in everyday cultural interaction.
             </p>
@@ -1186,7 +1190,7 @@
           <div class="timeline-wrap">
             <div class="timeline-node">
               <div class="timeline-date">March 2022</div>
-              <h4 class="timeline-h4">Presidential Election Campaign Pledge</h4>
+              <h3 class="timeline-h4 qh4">Presidential Election Campaign Pledge</h3>
               <p class="timeline-desc">
                 Unifying the national age system was introduced as a key presidential governance objective to resolve administrative disputes and reduce economic transaction costs.
               </p>

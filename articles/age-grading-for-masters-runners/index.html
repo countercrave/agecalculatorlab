@@ -29,7 +29,7 @@
 @media(max-width:680px){.dual-perf-grid{grid-template-columns:1fr}}
 .dual-perf-card{background:#ffffff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--sh-1)}
 .dual-perf-card.highlight{border-color:#075433;background:#f9fdfa}
-.dual-perf-card h4{margin:0 0 6px;font-size:16px;color:var(--editorial-navy)}
+.dual-perf-card h4, .dual-perf-card .qh4 {margin:0 0 6px;font-size:16px;color:var(--editorial-navy)}
 .dual-perf-card .badge{display:inline-block;padding:3px 9px;border-radius:4px;font-size:11.5px;font-weight:700;text-transform:uppercase;margin-bottom:10px}
 .badge-clock{background:#f1f5f9;color:#475569}
 .badge-agegrade{background:#ebf5f0;color:#075433}
@@ -38,7 +38,7 @@
 /* Masters Performance Timeline Component */
 .masters-timeline-wrap{background:#ffffff;border:1px solid var(--line);border-radius:16px;padding:26px 24px;margin:28px 0;box-shadow:var(--sh-1)}
 .masters-timeline-head{text-align:center;margin-bottom:22px}
-.masters-timeline-head h4{margin:0 0 6px;font-size:18px;color:var(--editorial-navy)}
+.masters-timeline-head h4, .masters-timeline-head .qh4 {margin:0 0 6px;font-size:18px;color:var(--editorial-navy)}
 .masters-timeline-head p{margin:0;font-size:13px;color:var(--ink-2)}
 .masters-timeline-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;position:relative}
 @media(max-width:768px){.masters-timeline-grid{grid-template-columns:1fr;gap:14px}}
@@ -64,7 +64,7 @@
 @media(max-width:540px){.factors-grid{grid-template-columns:1fr}}
 .factor-card{background:#ffffff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--sh-1)}
 .factor-card .factor-icon{font-size:22px;margin-bottom:8px;display:inline-block}
-.factor-card h4{margin:0 0 6px;font-size:14.5px;color:var(--editorial-navy)}
+.factor-card h4, .factor-card .qh4 {margin:0 0 6px;font-size:14.5px;color:var(--editorial-navy)}
 .factor-card p{margin:0;font-size:12.5px;color:var(--ink-2);line-height:1.5}
 
 /* Comparison Tables */
@@ -139,7 +139,7 @@
 <div class="dual-perf-grid">
 <div class="dual-perf-card">
 <span class="badge badge-clock">Raw Clock Performance</span>
-<h4>What Happened on the Course</h4>
+<h3 class="qh4">What Happened on the Course</h3>
 <p>Your gross or net chip time recorded by official race timing mats. It measures absolute speed across terrain, but completely ignores biological age, hormonal shifts, and decade-long cellular aging.</p>
 </div>
 <div class="dual-perf-card highlight">
@@ -320,7 +320,7 @@
 <div class="dual-perf-grid">
 <div class="dual-perf-card">
 <span class="badge badge-clock">Layer 1: Raw Clock Finish</span>
-<h4>The Stopwatch Record</h4>
+<h3 class="qh4">The Stopwatch Record</h3>
 <p>Your net chip time from start line to finish arch. Tells you your physical pace on the course (e.g., 22:45 / 7:20 per mile).</p>
 </div>
 <div class="dual-perf-card">
@@ -347,7 +347,7 @@
 <section id="performance-timeline" class="masters-timeline-wrap">
 <div class="masters-timeline-head">
 <span class="eyebrow" style="color:#075433;">Visual Performance Tracker</span>
-<h4>Masters Performance Journey: Longitudinal Progression Case</h4>
+<h3 class="qh4">Masters Performance Journey: Longitudinal Progression Case</h3>
 <p>Demonstrating how a dedicated masters runner levels up relative aerobic quality over four consecutive years despite natural clock deceleration.</p>
 </div>
 
@@ -421,7 +421,7 @@
 <div class="factors-grid">
 <div class="factor-card">
 <span class="factor-icon">⏱️</span>
-<h4>1. Net Chip Finish Time</h4>
+<h3 class="qh4">1. Net Chip Finish Time</h3>
 <p>Your official recorded time from timing line to finish line directly determines the numerator or denominator of the age-grade ratio.</p>
 </div>
 <div class="factor-card">
