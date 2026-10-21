@@ -33,7 +33,7 @@
         <g transform="translate(0, 105)">
           <rect width="444" height="44" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
           <text x="16" y="27" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#075433">Impact on Clock:</text>
-          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="12.5" fill="#0B233A">0s penalty (100% of physiological capacity)</text>
+          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="11.5" fill="#0B233A">0s penalty (100% of physiological capacity)</text>
         </g>
       </g>
     </g>
@@ -51,7 +51,7 @@
         <g transform="translate(0, 105)">
           <rect width="444" height="44" rx="8" fill="#FFFDFB" stroke="#FF754D" stroke-width="1"/>
           <text x="16" y="27" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#FF754D">Impact on Clock:</text>
-          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="12.5" fill="#0B233A">+60s to +90s delay (~1.5% to 2.2% lower age grade)</text>
+          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="11.5" fill="#0B233A">+60s to +90s delay (~1.5% to 2.2% lower age grade)</text>
         </g>
       </g>
     </g>
@@ -69,7 +69,7 @@
         <g transform="translate(0, 105)">
           <rect width="444" height="44" rx="8" fill="#FFFDFB" stroke="#FF754D" stroke-width="1"/>
           <text x="16" y="27" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#FF754D">Impact on Clock:</text>
-          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="12.5" fill="#0B233A">+120s to +180s delay (~3.0% to 4.5% lower age grade)</text>
+          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="11.5" fill="#0B233A">+120s to +180s delay (~3.0% to 4.5% lower age grade)</text>
         </g>
       </g>
     </g>
@@ -87,7 +87,7 @@
         <g transform="translate(0, 105)">
           <rect width="444" height="44" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
           <text x="16" y="27" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#0B233A">Impact on Clock:</text>
-          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="12.5" fill="#0B233A">±30s to ±60s variance (distorts calculated percentage)</text>
+          <text x="140" y="27" font-family="'Inter', sans-serif" font-size="11.5" fill="#0B233A">±30s to ±60s variance (distorts calculated percentage)</text>
         </g>
       </g>
     </g>

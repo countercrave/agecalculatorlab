@@ -115,7 +115,8 @@
 
   <!-- Bottom Insight Bar -->
   <g transform="translate(80, 580)">
-    <rect width="1055" height="48" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
-    <text x="24" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Key Insight: <tspan font-weight="400" fill="#D3E5DE">Although raw clock time slowed from 21:30 to 23:50 (+2:20), the runner's demographic grade increased from 63.57% to 65.73%, reflecting outstanding aerobic preservation.</tspan></text>
+    <rect width="1055" height="68" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="24" y="28" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Key Insight: <tspan font-weight="400" fill="#D3E5DE">Although raw clock time slowed from 21:30 to 23:50 (+2:20), the runner's</tspan></text>
+    <text x="24" y="49" font-family="'Inter', sans-serif" font-size="14" font-weight="400" fill="#D3E5DE">demographic grade increased from 63.57% to 65.73%, reflecting outstanding aerobic preservation.</text>
   </g>
 </svg>

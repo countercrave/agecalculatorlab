@@ -16,7 +16,6 @@
 
   <!-- Background Lines -->
   <g opacity="0.3">
-    <line x1="80" y1="120" x2="1120" y2="120" stroke="#D3E5DE" stroke-width="1" stroke-dasharray="4 4" />
     <line x1="80" y1="240" x2="1120" y2="240" stroke="#D3E5DE" stroke-width="1" stroke-dasharray="4 4" />
     <line x1="80" y1="360" x2="1120" y2="360" stroke="#D3E5DE" stroke-width="1" stroke-dasharray="4 4" />
     <line x1="80" y1="480" x2="1120" y2="480" stroke="#D3E5DE" stroke-width="1" stroke-dasharray="4 4" />

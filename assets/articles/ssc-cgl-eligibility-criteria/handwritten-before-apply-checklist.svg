@@ -45,21 +45,23 @@
     <text x="145" y="70" font-size="30" font-weight="700">Before I Apply (SSC CGL 2026)</text>
     
     <!-- Checklist items with green checkmarks -->
-    <text x="145" y="112" font-size="22">&#10004; <tspan font-weight="700">Graduation Degree:</tspan> Result declared &#8804; 01 August 2026</text>
-    <text x="145" y="152" font-size="22">&#10004; <tspan font-weight="700">Date of Birth (DOB):</tspan> Exactly as printed on 10th Certificate</text>
-    <text x="145" y="192" font-size="22">&#10004; <tspan font-weight="700">Age on 01-Aug-2026:</tspan> Checked against target post band (e.g. 18-30)</text>
-    <text x="145" y="232" font-size="22">&#10004; <tspan font-weight="700">Nationality / Citizenship:</tspan> Citizen of India (Para 5 of notice)</text>
-    <text x="145" y="272" font-size="22">&#10004; <tspan font-weight="700">Post-Specific Requirements:</tspan> 60% Math (JSO) / Physical (Excise)</text>
-    <text x="145" y="312" font-size="22">&#10004; <tspan font-weight="700">Category Proof:</tspan> Valid OBC (NCL) / SC / ST / EWS in Central Govt Format</text>
-    <text x="145" y="352" font-size="22">&#10004; <tspan font-weight="700">Original Documents:</tspan> Marksheets, degree, photo &amp; signature scanned</text>
+    <text x="145" y="112" font-size="18.5">&#10004; <tspan font-weight="700">Graduation Degree:</tspan> Result declared &#8804; 01 August 2026</text>
+    <text x="145" y="152" font-size="18.5">&#10004; <tspan font-weight="700">Date of Birth (DOB):</tspan> Exactly as printed on 10th Certificate</text>
+    <text x="145" y="192" font-size="18.5">&#10004; <tspan font-weight="700">Age on 01-Aug-2026:</tspan> Checked against target post band (e.g. 18-30)</text>
+    <text x="145" y="232" font-size="18.5">&#10004; <tspan font-weight="700">Nationality / Citizenship:</tspan> Citizen of India (Para 5 of notice)</text>
+    <text x="145" y="272" font-size="18.5">&#10004; <tspan font-weight="700">Post-Specific Requirements:</tspan> 60% Math (JSO) / Physical (Excise)</text>
+    <text x="145" y="312" font-size="18.5">&#10004; <tspan font-weight="700">Category Proof:</tspan> Valid OBC (NCL) / SC /</text>
+    <text x="145" y="331" font-size="18.5">ST / EWS in Central Govt Format</text>
+    <text x="145" y="360" font-size="18.5">&#10004; <tspan font-weight="700">Original Documents:</tspan> Marksheets, degree,</text>
+    <text x="145" y="379" font-size="18.5">photo &amp; signature scanned</text>
 
     <!-- Red Circle / Underline Rule -->
-    <path d="M 140 375 C 280 372, 450 378, 620 374" stroke="#DC2626" stroke-width="2.5" fill="none"/>
-    <text x="145" y="415" font-size="24" font-weight="700" fill="#B91C1C">&#10140; ALL 7 MUST MATCH &#8594; THEN SUBMIT APPLICATION!</text>
+    <path d="M 140 418 C 280 415, 450 421, 620 417" stroke="#DC2626" stroke-width="2.5" fill="none"/>
+    <text x="145" y="452" font-size="21" font-weight="700" fill="#B91C1C">&#10140; ALL 7 MUST MATCH &#8594; THEN SUBMIT APPLICATION!</text>
   </g>
 
   <!-- Realistic Sticky Note at Bottom-Right -->
-  <g transform="translate(560, 290) rotate(4)" filter="url(#paperShadow)">
+  <g transform="translate(560, 282) rotate(4)" filter="url(#paperShadow)">
     <rect width="180" height="150" fill="#FEF08A" rx="4" stroke="#FDE047" stroke-width="1"/>
     <text x="20" y="34" fill="#854D0E" font-size="16" font-weight="700">REMINDER:</text>
     <text x="15" y="62" fill="#713F12" font-size="15">Aadhaar DOB is NOT</text>

@@ -64,13 +64,13 @@
         &#10004; RELAXATION &#8800; AUTOMATIC ELIGIBILITY &#10004;
       </text>
 
-      <text x="50" y="105" fill="#334155" font-family="'Courier New', monospace" font-size="13">
+      <text x="50" y="100" fill="#334155" font-family="'Courier New', monospace" font-size="13">
         Candidate must still fulfill:
       </text>
-      <text x="50" y="128" fill="#047857" font-family="'Courier New', monospace" font-size="13" font-weight="700">
+      <text x="50" y="121" fill="#047857" font-family="'Courier New', monospace" font-size="13" font-weight="700">
         1. Essential Educational Qualification (Bachelor's Degree) before cutoff date.
       </text>
-      <text x="490" y="128" fill="#047857" font-family="'Courier New', monospace" font-size="13" font-weight="700">
+      <text x="50" y="142" fill="#047857" font-family="'Courier New', monospace" font-size="13" font-weight="700">
         2. Valid Category Certificate in prescribed DoPT format.
       </text>
     </g>

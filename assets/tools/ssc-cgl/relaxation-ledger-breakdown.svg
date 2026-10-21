@@ -29,8 +29,8 @@
     <rect width="310" height="430" rx="14" fill="url(#cardGrad)" stroke="#0E6E5D" stroke-width="1.5"/>
     <rect width="310" height="48" rx="14" fill="#0A5A4D"/>
     <rect y="38" width="310" height="10" fill="#0A5A4D"/>
-    <text x="20" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">18–27 Post Cadres</text>
-    <text x="290" y="30" font-family="monospace" font-size="12" font-weight="700" fill="#FF9A77" text-anchor="end">BASE: 27 YRS</text>
+    <text x="20" y="21" font-family="system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#FFFFFF">18–27 Post Cadres</text>
+    <text x="20" y="40" font-family="monospace" font-size="11" font-weight="700" fill="#FF9A77">BASE: 27 YRS</text>
 
     <!-- Subcategories -->
     <g transform="translate(20, 70)" font-family="system-ui, sans-serif">
@@ -85,8 +85,8 @@
     <rect width="310" height="430" rx="14" fill="url(#cardGrad)" stroke="#0E6E5D" stroke-width="1.5"/>
     <rect width="310" height="48" rx="14" fill="#0A5A4D"/>
     <rect y="38" width="310" height="10" fill="#0A5A4D"/>
-    <text x="20" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">18/20–30 Posts (ASO/IT/Excise)</text>
-    <text x="290" y="30" font-family="monospace" font-size="12" font-weight="700" fill="#FF9A77" text-anchor="end">BASE: 30 YRS</text>
+    <text x="20" y="21" font-family="system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#FFFFFF">18/20–30 Posts (ASO/IT/Excise)</text>
+    <text x="20" y="40" font-family="monospace" font-size="11" font-weight="700" fill="#FF9A77">BASE: 30 YRS</text>
 
     <!-- Subcategories -->
     <g transform="translate(20, 70)" font-family="system-ui, sans-serif">
@@ -141,8 +141,8 @@
     <rect width="310" height="430" rx="14" fill="url(#cardGrad)" stroke="#0E6E5D" stroke-width="1.5"/>
     <rect width="310" height="48" rx="14" fill="#0A5A4D"/>
     <rect y="38" width="310" height="10" fill="#0A5A4D"/>
-    <text x="20" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">18–32 Posts (JSO - MoSPI)</text>
-    <text x="290" y="30" font-family="monospace" font-size="12" font-weight="700" fill="#FF9A77" text-anchor="end">BASE: 32 YRS</text>
+    <text x="20" y="21" font-family="system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#FFFFFF">18–32 Posts (JSO - MoSPI)</text>
+    <text x="20" y="40" font-family="monospace" font-size="11" font-weight="700" fill="#FF9A77">BASE: 32 YRS</text>
 
     <!-- Subcategories -->
     <g transform="translate(20, 70)" font-family="system-ui, sans-serif">

@@ -47,7 +47,9 @@
       <line x1="24" y1="185" x2="231" y2="185" stroke="#E2E8F0" stroke-width="1"/>
 
       <text x="24" y="220" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0B233A">What It Means:</text>
-      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#475569" width="200">The absolute elapsed physical time from start line to finish mat.</text>
+      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#475569">The absolute elapsed</text>
+      <text x="24" y="263" font-family="'Inter', sans-serif" font-size="13" fill="#475569">physical time from start line</text>
+      <text x="24" y="281" font-family="'Inter', sans-serif" font-size="13" fill="#475569">to finish mat.</text>
       <text x="24" y="305" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#94A3B8">Ignores age &amp; gender</text>
     </g>
 
@@ -64,7 +66,9 @@
       <line x1="24" y1="185" x2="231" y2="185" stroke="#E2E8F0" stroke-width="1"/>
 
       <text x="24" y="220" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0B233A">What It Means:</text>
-      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#475569">Placement across every competitor of all ages and sexes combined.</text>
+      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#475569">Placement across every</text>
+      <text x="24" y="263" font-family="'Inter', sans-serif" font-size="13" fill="#475569">competitor of all ages and</text>
+      <text x="24" y="281" font-family="'Inter', sans-serif" font-size="13" fill="#475569">sexes combined.</text>
       <text x="24" y="305" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#94A3B8">Heavily favors younger runners</text>
     </g>
 
@@ -81,7 +85,9 @@
       <line x1="24" y1="185" x2="231" y2="185" stroke="#FED7AA" stroke-width="1"/>
 
       <text x="24" y="220" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#C2410C">What It Means:</text>
-      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#7C2D12">Head-to-head placing against other M55 peers in this specific race.</text>
+      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#7C2D12">Head-to-head placing against</text>
+      <text x="24" y="263" font-family="'Inter', sans-serif" font-size="13" fill="#7C2D12">other M55 peers in this</text>
+      <text x="24" y="281" font-family="'Inter', sans-serif" font-size="13" fill="#7C2D12">specific race.</text>
       <text x="24" y="305" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#C2410C">● Highly variable by race turnout</text>
     </g>
 
@@ -98,7 +104,9 @@
       <line x1="24" y1="185" x2="231" y2="185" stroke="#BBF7D0" stroke-width="1"/>
 
       <text x="24" y="220" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">What It Means:</text>
-      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#14532D">Your speed relative to the theoretical demographic world record.</text>
+      <text x="24" y="245" font-family="'Inter', sans-serif" font-size="13" fill="#14532D">Your speed relative to the</text>
+      <text x="24" y="263" font-family="'Inter', sans-serif" font-size="13" fill="#14532D">theoretical demographic</text>
+      <text x="24" y="281" font-family="'Inter', sans-serif" font-size="13" fill="#14532D">world record.</text>
       <text x="24" y="305" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">● Repeatable across any race</text>
     </g>
   </g>

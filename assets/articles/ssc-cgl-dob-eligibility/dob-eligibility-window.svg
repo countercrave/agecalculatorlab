@@ -134,14 +134,12 @@
       </g>
 
       <!-- Bottom Status Banner inside Zone 2 -->
-      <g transform="translate(18, 172)">
-        <rect width="485" height="50" rx="8" fill="#042f24" stroke="#10b981" stroke-opacity="0.3"/>
-        <text x="242" y="22" font-size="12" font-weight="700" fill="#a7f3d0" text-anchor="middle">
-          Official Notification Clause: "Born not earlier than 02-08-1996 and not later than 01-08-2008"
-        </text>
-        <text x="242" y="38" font-size="11" font-weight="600" fill="#6ee7b7" text-anchor="middle">
-          &#x2713; All birth dates within this 12-year window are 100% eligible for Inspector vacancies
-        </text>
+      <g transform="translate(18, 168)">
+        <rect width="485" height="68" rx="8" fill="#042f24" stroke="#10b981" stroke-opacity="0.3"/>
+        <text x="242" y="17" font-size="11" font-weight="700" fill="#a7f3d0" text-anchor="middle">Official Notification Clause: "Born not earlier than 02-08-1996</text>
+        <text x="242" y="32" font-size="11" font-weight="700" fill="#a7f3d0" text-anchor="middle">and not later than 01-08-2008"</text>
+        <text x="242" y="48" font-size="10.5" font-weight="600" fill="#6ee7b7" text-anchor="middle">&#x2713; All birth dates within this 12-year window are 100% eligible</text>
+        <text x="242" y="62" font-size="10.5" font-weight="600" fill="#6ee7b7" text-anchor="middle">for Inspector vacancies</text>
       </g>
 
     </g>

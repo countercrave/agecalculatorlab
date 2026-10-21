@@ -57,37 +57,37 @@
     </g>
 
     <!-- Journal Header -->
-    <text x="105" y="72" font-family="'Caveat', cursive, sans-serif" font-size="28" font-weight="700" fill="#0B233A">10K Race Calculation Audit — Age Calculator Lab</text>
+    <text x="105" y="72" font-family="'Caveat', cursive, sans-serif" font-size="23" font-weight="700" fill="#0B233A">10K Race Calculation Audit — Age Calculator Lab</text>
     
     <!-- Step 1 -->
-    <text x="105" y="128" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">1. Actual Race Time:</text>
-    <text x="320" y="128" font-family="'Inter', monospace" font-size="16" font-weight="600" fill="#0B233A">45:00 = 2,700 seconds (Official chip time)</text>
+    <text x="105" y="112" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#075433">1. Actual Race Time:</text>
+    <text x="125" y="134" font-family="'Inter', monospace" font-size="14.5" font-weight="600" fill="#0B233A">45:00 = 2,700 seconds (Official chip time)</text>
 
     <!-- Step 2 -->
-    <text x="105" y="183" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">2. Demographic Profile:</text>
-    <text x="320" y="183" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#0B233A">Male, Age 45 on race morning (2025 WMA Table)</text>
+    <text x="105" y="167" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#075433">2. Demographic Profile:</text>
+    <text x="125" y="189" font-family="'Inter', sans-serif" font-size="14.5" font-weight="600" fill="#0B233A">Male, Age 45 on race morning (2025 WMA Table)</text>
 
     <!-- Step 3 -->
-    <text x="105" y="238" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">3. Demographic Standard:</text>
-    <text x="320" y="238" font-family="'Inter', monospace" font-size="16" font-weight="600" fill="#0B233A">28:19.4 = 1,699.4 seconds (Standard for M45)</text>
+    <text x="105" y="222" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#075433">3. Demographic Standard:</text>
+    <text x="125" y="244" font-family="'Inter', monospace" font-size="14.5" font-weight="600" fill="#0B233A">28:19.4 = 1,699.4 seconds (Standard for M45)</text>
 
     <!-- Step 4 -->
-    <text x="105" y="293" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#FF754D">4. Age Grade % Formula:</text>
-    <text x="320" y="293" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#042F2A">(1,699.4 ÷ 2,700) × 100 = </text>
-    <rect x="545" y="270" width="95" height="32" rx="6" fill="#075433"/>
-    <text x="592" y="292" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#9FE7BD" text-anchor="middle">62.94%</text>
+    <text x="105" y="277" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#FF754D">4. Age Grade % Formula:</text>
+    <text x="125" y="299" font-family="'Inter', monospace" font-size="14.5" font-weight="700" fill="#042F2A">(1,699.4 ÷ 2,700) × 100 = </text>
+    <rect x="545" y="277" width="95" height="32" rx="6" fill="#075433"/>
+    <text x="592" y="299" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#9FE7BD" text-anchor="middle">62.94%</text>
 
     <!-- Step 5 -->
-    <text x="105" y="348" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">5. Age Factor Method:</text>
-    <text x="320" y="348" font-family="'Inter', monospace" font-size="16" font-weight="600" fill="#0B233A">Factor = 0.9320 (Open standard / Age standard)</text>
+    <text x="105" y="332" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#075433">5. Age Factor Method:</text>
+    <text x="125" y="354" font-family="'Inter', monospace" font-size="14.5" font-weight="600" fill="#0B233A">Factor = 0.9320 (Open standard / Age standard)</text>
 
     <!-- Step 6 -->
-    <text x="105" y="403" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">6. Age-Graded Time:</text>
-    <text x="320" y="403" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#075433">2,700s × 0.9320 = 2,516.4s (41:56.4)</text>
+    <text x="105" y="387" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#075433">6. Age-Graded Time:</text>
+    <text x="125" y="409" font-family="'Inter', monospace" font-size="14.5" font-weight="700" fill="#075433">2,700s × 0.9320 = 2,516.4s (41:56.4)</text>
 
     <!-- Step 7 -->
-    <text x="105" y="458" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#0B233A">7. Performance Tier:</text>
-    <text x="320" y="458" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#0B233A">Competitive Local Club Tier (60.0% – 69.9%)</text>
+    <text x="105" y="442" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#0B233A">7. Performance Tier:</text>
+    <text x="125" y="464" font-family="'Inter', sans-serif" font-size="14.5" font-weight="700" fill="#0B233A">Competitive Local Club Tier (60.0% – 69.9%)</text>
 
     <!-- Verified Stamp in Notebook -->
     <g transform="translate(480, 480) rotate(-6)">

@@ -87,7 +87,8 @@
     <g transform="translate(25, 334)">
       <rect x="0" y="0" width="510" height="52" rx="8" fill="#042F2A" />
       <text x="20" y="32" font-size="13" font-weight="700" fill="#9FE7BD">CALCULATED AGE GRADE</text>
-      <text x="490" y="33" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="end">69.18% <tspan font-size="13" font-weight="600" fill="#9FE7BD">(Club Class)</tspan></text>
+      <text x="385" y="33" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="end">69.18%</text>
+      <text x="395" y="33" font-size="13" font-weight="600" fill="#9FE7BD">(Club Class)</text>
     </g>
 
     <!-- Verification Tagline -->
@@ -126,9 +127,9 @@
 
     <!-- Handwritten Analyst Sticky Note (Lower Right) -->
     <g transform="translate(0, 230)">
-      <rect x="0" y="0" width="440" height="210" rx="14" fill="#FFFEF2" stroke="#FDE68A" stroke-width="1.5" filter="url(#cardShadow)" />
+      <rect x="0" y="0" width="440" height="224" rx="14" fill="#FFFEF2" stroke="#FDE68A" stroke-width="1.5" filter="url(#cardShadow)" />
       <!-- Left decorative border -->
-      <rect x="0" y="0" width="8" height="210" rx="4" fill="#F59E0B" />
+      <rect x="0" y="0" width="8" height="224" rx="4" fill="#F59E0B" />
       
       <g transform="translate(24, 22)">
         <rect x="0" y="0" width="95" height="22" rx="4" fill="#0B233A" />
@@ -136,14 +137,16 @@
         <circle cx="112" cy="11" r="5" fill="#EF4444" />
 
         <!-- Handwritten cursive text simulation -->
-        <text x="0" y="55" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#1E293B">“Don’t let clock times deceive you.</text>
-        <text x="0" y="82" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#1E293B">At 55, running 44:30 in the 10K yields an age grade of</text>
-        <text x="0" y="109" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="700" fill="#075433">69.18% — knocking right on the 70% Regional door.</text>
-        <text x="0" y="136" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#1E293B">To match that ratio, a 25-year-old would need to run 38:09!”</text>
+        <text x="0" y="50" font-family="'Caveat', cursive, sans-serif" font-size="17.5" font-weight="600" fill="#1E293B">“Don’t let clock times deceive you.</text>
+        <text x="0" y="73" font-family="'Caveat', cursive, sans-serif" font-size="17.5" font-weight="600" fill="#1E293B">At 55, running 44:30 in the 10K yields</text>
+        <text x="0" y="96" font-family="'Caveat', cursive, sans-serif" font-size="17.5" font-weight="600" fill="#1E293B">an age grade of 69.18% —</text>
+        <text x="0" y="119" font-family="'Caveat', cursive, sans-serif" font-size="17.5" font-weight="700" fill="#075433">knocking right on the 70% Regional door.</text>
+        <text x="0" y="142" font-family="'Caveat', cursive, sans-serif" font-size="17.5" font-weight="600" fill="#1E293B">To match that ratio, a 25-year-old</text>
+        <text x="0" y="165" font-family="'Caveat', cursive, sans-serif" font-size="17.5" font-weight="600" fill="#1E293B">would need to run 38:09!”</text>
 
         <!-- Decorative underline arrow -->
-        <path d="M 0 152 Q 180 158 380 150" stroke="#FF754D" stroke-width="2.5" fill="none" stroke-linecap="round" />
-        <polygon points="380,147 388,150 380,154" fill="#FF754D" />
+        <path d="M 0 180 Q 180 186 380 178" stroke="#FF754D" stroke-width="2.5" fill="none" stroke-linecap="round" />
+        <polygon points="380,175 388,178 380,182" fill="#FF754D" />
       </g>
     </g>
   </g>

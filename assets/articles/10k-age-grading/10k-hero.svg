@@ -51,8 +51,9 @@
       <!-- Formula Display -->
       <g transform="translate(0, 95)">
         <rect width="438" height="95" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.15)"/>
-        <text x="219" y="38" font-family="'Inter', monospace" font-size="16" font-weight="700" fill="#9FE7BD" text-anchor="middle">Age Grade (%) = (Demographic Standard / Net Time) × 100</text>
-        <text x="219" y="70" font-family="'Inter', monospace" font-size="13.5" font-weight="500" fill="#D3E5DE" text-anchor="middle">Or: (Open World Record / Age-Adjusted Time) × 100</text>
+        <text x="219" y="31" font-family="'Inter', monospace" font-size="15" font-weight="700" fill="#9FE7BD" text-anchor="middle">Age Grade (%) =</text>
+        <text x="219" y="54" font-family="'Inter', monospace" font-size="15" font-weight="700" fill="#9FE7BD" text-anchor="middle">(Demographic Standard / Net Time) × 100</text>
+        <text x="219" y="77" font-family="'Inter', monospace" font-size="13" font-weight="500" fill="#D3E5DE" text-anchor="middle">Or: (Open World Record / Age-Adjusted Time) × 100</text>
       </g>
 
       <!-- Worked Example Mini-box -->
@@ -82,25 +83,27 @@
       </g>
 
       <!-- Input 2: Biological Sex -->
-      <g transform="translate(0, 137)">
-        <rect width="436" height="52" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
+      <g transform="translate(0, 133)">
+        <rect width="436" height="65" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
         <circle cx="26" cy="26" r="12" fill="#075433"/>
         <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
         <text x="48" y="24" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">Biological Sex</text>
-        <text x="48" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#52796F">Separate WMA tables for men and women calibrate physiological differences</text>
+        <text x="48" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#52796F">Separate WMA tables for men and women calibrate</text>
+        <text x="48" y="57" font-family="'Inter', sans-serif" font-size="11.5" fill="#52796F">physiological differences</text>
       </g>
 
       <!-- Input 3: Event Distance (10K Road) -->
-      <g transform="translate(0, 199)">
-        <rect width="436" height="52" rx="8" fill="#FFFDFB" stroke="#FF754D" stroke-width="1.5"/>
+      <g transform="translate(0, 204)">
+        <rect width="436" height="65" rx="8" fill="#FFFDFB" stroke="#FF754D" stroke-width="1.5"/>
         <circle cx="26" cy="26" r="12" fill="#FF754D"/>
         <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
         <text x="48" y="24" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#0B233A">10,000m Road Event Standard</text>
-        <text x="48" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#FF754D">Must use 10K road factor table, never track 10,000m or 5K/half marathon</text>
+        <text x="48" y="41" font-family="'Inter', sans-serif" font-size="11.5" fill="#FF754D">Must use 10K road factor table, never track 10,000m</text>
+        <text x="48" y="57" font-family="'Inter', sans-serif" font-size="11.5" fill="#FF754D">or 5K/half marathon</text>
       </g>
 
       <!-- Input 4: Chip Finish Time -->
-      <g transform="translate(0, 261)">
+      <g transform="translate(0, 275)">
         <rect width="436" height="52" rx="8" fill="#F4F8F5" stroke="#D3E5DE"/>
         <circle cx="26" cy="26" r="12" fill="#075433"/>
         <text x="26" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>

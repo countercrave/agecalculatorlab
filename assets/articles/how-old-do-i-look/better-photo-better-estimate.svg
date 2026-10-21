@@ -70,8 +70,9 @@
     </g>
 
     <!-- Bottom handwritten endorsement note -->
-    <rect x="24" y="388" width="467" height="42" rx="8" fill="#EAF5EF"/>
-    <text x="257" y="414" fill="#075433" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Produces consistent, reliable apparent-age baseline</text>
+    <rect x="24" y="388" width="467" height="54" rx="8" fill="#EAF5EF"/>
+    <text x="257" y="409" fill="#075433" font-family="'Caveat', cursive, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Produces consistent, reliable</text>
+    <text x="257" y="427" fill="#075433" font-family="'Caveat', cursive, sans-serif" font-size="17" font-weight="700" text-anchor="middle">apparent-age baseline</text>
   </g>
 
   <!-- Right Column: AVOID (Conditions That Skew Estimates) -->
@@ -126,7 +127,8 @@
     </g>
 
     <!-- Bottom handwritten warning note -->
-    <rect x="24" y="388" width="467" height="42" rx="8" fill="#FDF3F0"/>
-    <text x="257" y="414" fill="#C53A1A" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Can skew apparent age calculation by 5–10+ years!</text>
+    <rect x="24" y="388" width="467" height="54" rx="8" fill="#FDF3F0"/>
+    <text x="257" y="409" fill="#C53A1A" font-family="'Caveat', cursive, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Can skew apparent age calculation</text>
+    <text x="257" y="427" fill="#C53A1A" font-family="'Caveat', cursive, sans-serif" font-size="17" font-weight="700" text-anchor="middle">by 5–10+ years!</text>
   </g>
 </svg>
