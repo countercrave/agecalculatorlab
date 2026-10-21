@@ -107,8 +107,11 @@
 .example-box p:last-child{margin-bottom:0}
 .cohort-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0}
 .cohort-card{background:#f8fbf9 !important;border:1px solid #d3e5de !important;border-radius:10px;padding:18px;color:#243831 !important}
-.cohort-card h4{margin:0 0 6px;color:#042f2a !important;font-size:1.1rem;font-weight:700}
+.cohort-card h4, .cohort-card .qh4 {margin:0 0 6px;color:#042f2a !important;font-size:1.1rem;font-weight:700}
 .cohort-card p{margin:0;font-size:0.92rem;color:#243831 !important;line-height:1.55}
+
+/* heading-level fix: preserve retagged heading styles */
+.cohort-grid .cohort-card .qh4 { line-height: 1.12; }
 </style>
 <script type="application/ld+json">
 {
@@ -386,7 +389,7 @@
 <h2>The Three Main Social Security Claiming Strategies</h2>
 <div class="cohort-grid">
 <div class="cohort-card">
-<h4>1. The Cash-First Strategy (Age 62)</h4>
+<h3 class="qh4">1. The Cash-First Strategy (Age 62)</h3>
 <p>Focuses on immediate cash flow and early lifestyle flexibility. Accepts a permanent 25% to 30% reduction in exchange for receiving up to 96 additional monthly checks before age 70.</p>
 </div>
 <div class="cohort-card">

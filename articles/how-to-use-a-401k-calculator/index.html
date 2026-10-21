@@ -52,7 +52,7 @@
 
 .article-content { font-size: 1.08rem; line-height: 1.7; color: #1c362d; }
 .article-content h2 { font-family: 'Fraunces', serif; font-size: 1.85rem; line-height: 1.25; color: #042f2a; margin: 44px 0 18px; padding-top: 12px; border-top: 1px solid #e2ece6; }
-.article-content h3 { font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #075433; margin: 28px 0 12px; }
+.article-content h3, .article-content .qh3 { font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #075433; margin: 28px 0 12px; }
 .article-content p { margin: 0 0 20px; }
 .article-content ul, .article-content ol { margin: 0 0 24px; padding-left: 26px; }
 .article-content li { margin-bottom: 8px; }
@@ -60,7 +60,7 @@
 .article-content a:hover { color: #ff754d; }
 
 .highlight-box { background: #f0f7f3; border-left: 4px solid #075433; padding: 22px 24px; border-radius: 0 10px 10px 0; margin: 28px 0; }
-.highlight-box h3 { margin-top: 0; color: #042f2a; }
+.highlight-box h3, .highlight-box .qh3 { margin-top: 0; color: #042f2a; }
 .highlight-box p:last-child { margin-bottom: 0; }
 
 .cta-box { background: linear-gradient(135deg, #042f2a 0%, #075433 100%); color: #ffffff; padding: 32px; border-radius: 12px; margin: 36px 0; text-align: center; }
@@ -126,6 +126,9 @@
 .article-toc a:hover { color: var(--brand, #075433); font-weight: 600; padding-left: 3px; }
 .article-content { min-width: 0; line-height: 1.75; color: var(--ink-2, #243831); font-size: 1.02rem; }
 
+
+/* heading-level fix: preserve retagged heading styles */
+.article-content .highlight-box .qh3 { border-top: none; line-height: 1.12; padding-top: 0; }
 </style>
 <script type="application/ld+json">
 {
@@ -419,7 +422,7 @@
 <p>You can run your personal numbers right now using our verified <a href="../../tools/401k-calculator/">401(k) Calculator</a>. In this practical guide, we break down the calculation mechanics behind the tool, examine each input field, show you how to stress-test different savings scenarios, and help you interpret nominal versus inflation-adjusted results.</p>
 
 <div class="highlight-box">
-<h3>Why Run a 401(k) Calculation Today?</h3>
+<h2 class="qh3">Why Run a 401(k) Calculation Today?</h2>
 <p>Retirement savings math operates on an exponential curve. Discovering a savings gap at age 35 allows you to close it by increasing contributions by just 1% or 2% of salary. Waiting until age 55 to identify the same shortfall often requires saving 30% to 40% of income. Testing your numbers regularly gives you the leverage to make small, painless adjustments with massive long-term payoff.</p>
 </div>
 

@@ -52,7 +52,7 @@
 
 .article-content { font-size: 1.08rem; line-height: 1.7; color: #1c362d; }
 .article-content h2 { font-family: 'Fraunces', serif; font-size: 1.85rem; line-height: 1.25; color: #042f2a; margin: 44px 0 18px; padding-top: 12px; border-top: 1px solid #e2ece6; }
-.article-content h3 { font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #075433; margin: 28px 0 12px; }
+.article-content h3, .article-content .qh3 { font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #075433; margin: 28px 0 12px; }
 .article-content p { margin: 0 0 20px; }
 .article-content ul, .article-content ol { margin: 0 0 24px; padding-left: 26px; }
 .article-content li { margin-bottom: 8px; }
@@ -64,7 +64,7 @@
 .highlight-box p:last-child { margin-bottom: 0; }
 
 .cta-box { background: linear-gradient(135deg, #042f2a 0%, #075433 100%); color: #ffffff; padding: 32px; border-radius: 12px; margin: 36px 0; text-align: center; }
-.cta-box h3 { color: #ffd180; font-family: 'Fraunces', serif; font-size: 1.7rem; margin: 0 0 10px; }
+.cta-box h3, .cta-box .qh3 { color: #ffd180; font-family: 'Fraunces', serif; font-size: 1.7rem; margin: 0 0 10px; }
 .cta-box p { color: #d3e5de; margin-bottom: 22px; max-width: 620px; margin-left: auto; margin-right: auto; }
 .cta-box .btn-cta { display: inline-block; background: #ff754d; color: #ffffff; font-weight: 700; padding: 13px 28px; border-radius: 8px; text-decoration: none; transition: background 0.2s; box-shadow: 0 4px 12px rgba(255,117,77,0.3); }
 .cta-box .btn-cta:hover { background: #ff5e2e; }
@@ -126,6 +126,9 @@
 .article-toc a:hover { color: var(--brand, #075433); font-weight: 600; padding-left: 3px; }
 .article-content { min-width: 0; line-height: 1.75; color: var(--ink-2, #243831); font-size: 1.02rem; }
 
+
+/* heading-level fix: preserve retagged heading styles */
+.article-content .cta-box .qh3 { border-top: none; line-height: 1.12; padding-top: 0; }
 </style>
 <script type="application/ld+json">
 {
@@ -386,7 +389,7 @@ This guide explains how salary multiples work across every decade, examines the 
 </p>
 
 <div class="cta-box">
-<h3>Project Your Real 401(k) Growth</h3>
+<h2 class="qh3">Project Your Real 401(k) Growth</h2>
 <p>Static age charts can't account for your actual salary, employer match, or years until retirement. Run your custom numbers through our verified engine.</p>
 <a class="btn-cta" href="../../tools/401k-calculator/">Launch 401(k) Calculator →</a>
 </div>

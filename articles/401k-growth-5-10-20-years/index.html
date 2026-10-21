@@ -52,7 +52,7 @@
 
 .article-content { font-size: 1.08rem; line-height: 1.7; color: #1c362d; }
 .article-content h2 { font-family: 'Fraunces', serif; font-size: 1.85rem; line-height: 1.25; color: #042f2a; margin: 44px 0 18px; padding-top: 12px; border-top: 1px solid #e2ece6; }
-.article-content h3 { font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #075433; margin: 28px 0 12px; }
+.article-content h3, .article-content .qh3 { font-family: 'Inter', sans-serif; font-size: 1.35rem; font-weight: 700; color: #075433; margin: 28px 0 12px; }
 .article-content p { margin: 0 0 20px; }
 .article-content ul, .article-content ol { margin: 0 0 24px; padding-left: 26px; }
 .article-content li { margin-bottom: 8px; }
@@ -60,7 +60,7 @@
 .article-content a:hover { color: #ff754d; }
 
 .highlight-box { background: #f0f7f3; border-left: 4px solid #075433; padding: 22px 24px; border-radius: 0 10px 10px 0; margin: 28px 0; }
-.highlight-box h3 { margin-top: 0; color: #042f2a; }
+.highlight-box h3, .highlight-box .qh3 { margin-top: 0; color: #042f2a; }
 .highlight-box p:last-child { margin-bottom: 0; }
 
 .cta-box { background: linear-gradient(135deg, #042f2a 0%, #075433 100%); color: #ffffff; padding: 32px; border-radius: 12px; margin: 36px 0; text-align: center; }
@@ -126,6 +126,9 @@
 .article-toc a:hover { color: var(--brand, #075433); font-weight: 600; padding-left: 3px; }
 .article-content { min-width: 0; line-height: 1.75; color: var(--ink-2, #243831); font-size: 1.02rem; }
 
+
+/* heading-level fix: preserve retagged heading styles */
+.article-content .highlight-box .qh3 { border-top: none; line-height: 1.12; padding-top: 0; }
 </style>
 <script type="application/ld+json">
 {
@@ -424,7 +427,7 @@
 <p>To calculate how your specific retirement balance could evolve across these exact milestones, use our interactive <a href="../../tools/401k-calculator/">401(k) Calculator</a>. By testing your current age, salary, deferral percentage, and employer match formula, you can generate personalized year-by-year projections instead of guessing based on static rules of thumb.</p>
 
 <div class="highlight-box">
-<h3>Quick Answer: The Four Phases of 401(k) Compounding</h3>
+<h2 class="qh3">Quick Answer: The Four Phases of 401(k) Compounding</h2>
 <ul>
 <li><strong>5 Years (Foundation Phase):</strong> Your growth is dominated almost entirely by direct payroll contributions and employer matching. Compounding has barely begun.</li>
 <li><strong>10 Years (Momentum Phase):</strong> Investment returns begin generating meaningful growth, accounting for approximately 25% to 35% of total account value.</li>

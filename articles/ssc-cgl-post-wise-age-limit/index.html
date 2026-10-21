@@ -312,7 +312,7 @@
       box-shadow: 0 8px 24px rgba(4, 47, 42, 0.12);
     }
 
-    .cta-top-text h3 {
+    .cta-top-text h3, .cta-top-text .qh3 {
       font-family: var(--font-display, "Fraunces", Georgia, serif);
       font-size: 1.25rem;
       font-weight: 700;
@@ -982,6 +982,9 @@
       color: #2D4A41;
     }
 @media (max-width: 1080px){.article-toc{position:static;max-height:none}}
+
+/* heading-level fix: preserve retagged heading styles */
+.finder-tool-card .finder-result-panel .qh4 { line-height: 1.12; }
 </style>
 </head>
 <body>
@@ -1043,7 +1046,7 @@
         <!-- Above-The-Fold Calculator CTA Card -->
         <div class="calculator-cta-card-top">
           <div class="cta-top-text">
-            <h3>Check Your Exact Post Eligibility</h3>
+            <h2 class="qh3">Check Your Exact Post Eligibility</h2>
             <p>Enter your Date of Birth to instantly test compatibility across all 30+ SSC CGL post cadres as of 01 August 2026.</p>
           </div>
           <a href="../../tools/ssc-cgl-age-calculator/" class="cta-top-btn">
@@ -1294,7 +1297,7 @@
             </button>
 
             <div class="finder-result-panel" id="finderResultPanel">
-              <h4 style="margin:0 0 10px; font-size:1.1rem; color:#042F2A;" id="finderResultTitle">Matching Post Cadres</h4>
+              <h3 class="qh4" style="margin:0 0 10px; font-size:1.1rem; color:#042F2A;" id="finderResultTitle">Matching Post Cadres</h3>
               <div style="font-size:0.875rem; color:#2D4A41; line-height:1.6;" id="finderResultContent"></div>
             </div>
           </div>
