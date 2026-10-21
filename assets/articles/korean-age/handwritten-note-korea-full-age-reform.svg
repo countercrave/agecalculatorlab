@@ -104,7 +104,7 @@
   </g>
 
   <!-- Fountain Pen resting diagonally across bottom right -->
-  <g transform="translate(560, 320) rotate(32)" filter="url(#deskShadow)">
+  <g transform="translate(640, 340) rotate(32)" filter="url(#deskShadow)">
     <!-- Pen Barrel -->
     <rect x="-8" y="0" width="16" height="220" rx="7" fill="url(#penBody)"/>
     <!-- Gold Trim Rings -->

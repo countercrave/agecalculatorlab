@@ -106,7 +106,7 @@
 
     <!-- Bottom Takeaway Summary Card -->
     <g transform="translate(40, 236)">
-      <rect x="0" y="0" width="960" height="172" rx="12" fill="url(#navyTrackCard)" />
+      <rect x="0" y="0" width="960" height="188" rx="12" fill="url(#navyTrackCard)" />
 
       <g transform="translate(32, 24)">
         <rect x="0" y="0" width="140" height="24" rx="12" fill="rgba(159,231,189,0.18)" stroke="#9FE7BD" stroke-width="1" />
@@ -120,9 +120,8 @@
           However, by maintaining dedicated training, the athlete crossed from local recreational (64.2%) into regional competitive status (70.4%).
         </text>
 
-        <text x="0" y="134" font-size="18" font-weight="700" fill="#9FE7BD" class="handwritten">
-          Methodology Rule: Always use the exact same WMA factor edition when analyzing multi-year historical logs!
-        </text>
+        <text x="0" y="130" font-size="16.5" font-weight="700" fill="#9FE7BD" class="handwritten">Methodology Rule: Always use the exact same WMA factor edition when analyzing</text>
+        <text x="0" y="151" font-size="16.5" font-weight="700" fill="#9FE7BD" class="handwritten">multi-year historical logs!</text>
       </g>
     </g>
 

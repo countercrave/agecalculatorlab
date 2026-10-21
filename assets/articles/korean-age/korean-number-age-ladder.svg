@@ -73,7 +73,8 @@
     <text x="30" y="38" font-family="'Fraunces', serif" font-size="24" font-weight="700" fill="#E55328">20</text>
     <text x="120" y="38" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="700" fill="#042F2A">스무 살</text>
     <text x="240" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#E55328">[ seumu sal ]</text>
-    <text x="440" y="37" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#C2410C">20 Years Old (Adulthood)</text>
+    <text x="440" y="29" font-family="'Inter', sans-serif" font-size="13.5" font-weight="600" fill="#C2410C">20 Years Old</text>
+    <text x="440" y="46" font-family="'Inter', sans-serif" font-size="13.5" font-weight="600" fill="#C2410C">(Adulthood)</text>
     <text x="590" y="37" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E55328">seumul → seumu!</text>
   </g>
 

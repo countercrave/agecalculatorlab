@@ -174,9 +174,10 @@
 
     <!-- Bottom Methodology Disclaimer Bar -->
     <g transform="translate(30, 360)">
-      <rect x="0" y="0" width="980" height="50" rx="10" fill="#F8FCFA" stroke="#D3E5DE" />
-      <text x="24" y="30" font-size="12.5" font-weight="600" fill="#075433">💡 Note:</text>
-      <text x="75" y="30" font-size="12.5" fill="#4A635A">These percentage brackets are widely adopted interpretation guidelines across athletic bodies, not rigid medical cutoffs. Calculations reference WMA road standards.</text>
+      <rect x="0" y="0" width="980" height="62" rx="10" fill="#F8FCFA" stroke="#D3E5DE" />
+      <text x="24" y="32" font-size="12.5" font-weight="600" fill="#075433">💡 Note:</text>
+      <text x="75" y="24" font-size="12.5" fill="#4A635A">These percentage brackets are widely adopted interpretation guidelines across athletic bodies, not rigid</text>
+      <text x="75" y="41" font-size="12.5" fill="#4A635A">medical cutoffs. Calculations reference WMA road standards.</text>
     </g>
   </g>
 </svg>

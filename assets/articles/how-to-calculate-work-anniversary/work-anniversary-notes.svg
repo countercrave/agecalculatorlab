@@ -16,7 +16,7 @@
   <rect width="1200" height="675" fill="url(#desk-surface)" />
 
   <!-- Desktop Calendar Outline in Top-Right Corner -->
-  <g transform="translate(860, 40) rotate(6)" opacity="0.4">
+  <g transform="translate(880, 40) rotate(6)" opacity="0.4">
     <rect x="0" y="0" width="280" height="240" rx="10" fill="#0f172a" stroke="#64748b" stroke-width="2" />
     <rect x="0" y="0" width="280" height="40" rx="10" fill="#dc2626" />
     <text x="140" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">SEPTEMBER 2026</text>

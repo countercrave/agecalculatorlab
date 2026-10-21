@@ -51,9 +51,10 @@
     </g>
 
     <!-- Polaroid Caption Label -->
-    <text x="150" y="312" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Photo A: Soft Diffused Daylight</text>
-    <rect x="50" y="330" width="200" height="26" rx="13" fill="#EBF6F0"/>
-    <text x="150" y="347" fill="#075433" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Smooth contours · Balanced tone</text>
+    <text x="150" y="312" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Photo A: Soft Diffused</text>
+    <text x="150" y="330" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Daylight</text>
+    <rect x="50" y="340" width="200" height="26" rx="13" fill="#EBF6F0"/>
+    <text x="150" y="357" fill="#075433" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Smooth contours · Balanced tone</text>
   </g>
 
   <!-- Polaroid B: Harsh Lighting &amp; Angle -->
@@ -84,9 +85,10 @@
     </g>
 
     <!-- Polaroid Caption Label -->
-    <text x="150" y="312" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Photo B: Direct Hard Lighting</text>
-    <rect x="50" y="330" width="200" height="26" rx="13" fill="#FDECE7"/>
-    <text x="150" y="347" fill="#C53A1A" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Sharp shadows · Emphasized lines</text>
+    <text x="150" y="312" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Photo B: Direct Hard</text>
+    <text x="150" y="330" fill="#042F2A" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Lighting</text>
+    <rect x="50" y="340" width="200" height="26" rx="13" fill="#FDECE7"/>
+    <text x="150" y="357" fill="#C53A1A" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Sharp shadows · Emphasized lines</text>
   </g>
 
   <!-- Right Side: Handwritten Notes, Arrows &amp; Callouts -->
@@ -102,28 +104,32 @@
       <g transform="translate(0, 0)">
         <circle cx="8" cy="8" r="4" fill="#FF754D"/>
         <text x="22" y="12" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">1. Lighting</text>
-        <text x="22" y="30" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="19">Creates false depth &amp; creases</text>
+        <text x="22" y="29" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="18">Creates false depth &amp;</text>
+        <text x="22" y="46" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="18">creases</text>
       </g>
 
       <!-- Factor 2: Expression -->
       <g transform="translate(0, 58)">
         <circle cx="8" cy="8" r="4" fill="#075433"/>
         <text x="22" y="12" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">2. Expression</text>
-        <text x="22" y="30" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="19">Squinting folds periorbital skin</text>
+        <text x="22" y="29" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="18">Squinting folds</text>
+        <text x="22" y="46" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="18">periorbital skin</text>
       </g>
 
       <!-- Factor 3: Camera Angle -->
       <g transform="translate(0, 116)">
         <circle cx="8" cy="8" r="4" fill="#075433"/>
         <text x="22" y="12" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">3. Camera Angle</text>
-        <text x="22" y="30" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="19">Distorts lower facial height ratio</text>
+        <text x="22" y="29" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="18">Distorts lower facial</text>
+        <text x="22" y="46" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="18">height ratio</text>
       </g>
 
       <!-- Factor 4: Image Quality -->
       <g transform="translate(0, 174)">
         <circle cx="8" cy="8" r="4" fill="#FF754D"/>
         <text x="22" y="12" fill="#042F2A" font-family="'Inter', sans-serif" font-size="14" font-weight="700">4. Image Quality</text>
-        <text x="22" y="30" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="19">Compression blurs subtle skin tone</text>
+        <text x="22" y="29" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="18">Compression blurs</text>
+        <text x="22" y="46" fill="#52796F" font-family="'Caveat', cursive, sans-serif" font-size="18">subtle skin tone</text>
       </g>
     </g>
 

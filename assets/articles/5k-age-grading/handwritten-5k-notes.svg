@@ -85,26 +85,29 @@
 
     <!-- Hand-Drawn Style Annotations (Navy / Emerald ink) -->
     <g transform="translate(44, 440)">
-      <rect width="652" height="100" rx="10" fill="#F4F9F6" stroke="#9FE7BD" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <rect width="652" height="116" rx="10" fill="#F4F9F6" stroke="#9FE7BD" stroke-width="1.5" stroke-dasharray="6 4"/>
       
       <!-- Handwritten style notes -->
-      <text x="24" y="35" font-family="'Caveat', cursive, sans-serif" font-size="24" font-weight="700" fill="#075433">Takeaway: The 25:00 clock time is equal to a 21:58 open performance!</text>
-      <text x="24" y="68" font-family="'Caveat', cursive, sans-serif" font-size="21" font-weight="600" fill="#0B233A">→ Natural aerobic baseline intact: 57.26% places runner securely in solid local tier.</text>
-      <circle cx="560" cy="52" r="32" fill="none" stroke="#FF754D" stroke-width="2.5" stroke-dasharray="140 20"/>
-      <text x="560" y="59" font-family="'Inter', sans-serif" font-size="17" font-weight="900" fill="#FF754D" text-anchor="middle">57.26%</text>
+      <text x="24" y="30" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">Takeaway: The 25:00 clock time is equal to a</text>
+      <text x="24" y="54" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">21:58 open performance!</text>
+      <text x="24" y="80" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="600" fill="#0B233A">→ Natural aerobic baseline intact: 57.26% places</text>
+      <text x="24" y="104" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="600" fill="#0B233A">runner securely in solid local tier.</text>
+      <circle cx="598" cy="58" r="30" fill="none" stroke="#FF754D" stroke-width="2.5" stroke-dasharray="140 20"/>
+      <text x="598" y="64" font-family="'Inter', sans-serif" font-size="15" font-weight="900" fill="#FF754D" text-anchor="middle">57.26%</text>
     </g>
   </g>
 
   <!-- Sticky Note in Bottom Right Corner -->
-  <g transform="translate(860, 260) rotate(-2)" filter="url(#bibShadow)">
-    <rect width="280" height="230" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1"/>
+  <g transform="translate(848, 260) rotate(-2)" filter="url(#bibShadow)">
+    <rect width="336" height="230" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1"/>
     <g transform="translate(24, 28)">
       <text x="0" y="0" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#92400E">Rule of Thumb:</text>
-      <text x="0" y="32" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#78350F">• 50% = Typical healthy runner</text>
-      <text x="0" y="62" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#78350F">• 60% = Consistent local trainer</text>
-      <text x="0" y="92" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#78350F">• 70% = Regional podium contender</text>
-      <text x="0" y="122" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#78350F">• 80% = National master class</text>
-      <text x="0" y="152" font-family="'Caveat', cursive, sans-serif" font-size="19" font-weight="600" fill="#9A3412">Never compare times across ages without WMA tables!</text>
+      <text x="0" y="32" font-family="'Caveat', cursive, sans-serif" font-size="16.5" font-weight="600" fill="#78350F">• 50% = Typical healthy runner</text>
+      <text x="0" y="62" font-family="'Caveat', cursive, sans-serif" font-size="16.5" font-weight="600" fill="#78350F">• 60% = Consistent local trainer</text>
+      <text x="0" y="92" font-family="'Caveat', cursive, sans-serif" font-size="16.5" font-weight="600" fill="#78350F">• 70% = Regional podium contender</text>
+      <text x="0" y="122" font-family="'Caveat', cursive, sans-serif" font-size="16.5" font-weight="600" fill="#78350F">• 80% = National master class</text>
+      <text x="0" y="150" font-family="'Caveat', cursive, sans-serif" font-size="16.5" font-weight="600" fill="#9A3412">Never compare times across ages</text>
+      <text x="0" y="174" font-family="'Caveat', cursive, sans-serif" font-size="16.5" font-weight="600" fill="#9A3412">without WMA tables!</text>
     </g>
   </g>
 </svg>

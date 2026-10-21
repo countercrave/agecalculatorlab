@@ -53,8 +53,8 @@
       <rect x="0" y="0" width="460" height="350" rx="16" fill="url(#heroNavy)" />
       
       <!-- Top Pill -->
-      <rect x="25" y="24" width="150" height="26" rx="13" fill="rgba(159,231,189,0.18)" stroke="#9FE7BD" stroke-width="1" />
-      <text x="100" y="41" font-size="11.5" font-weight="700" fill="#9FE7BD" text-anchor="middle">PHYSIOLOGICAL PERSPECTIVE</text>
+      <rect x="25" y="24" width="180" height="26" rx="13" fill="rgba(159,231,189,0.18)" stroke="#9FE7BD" stroke-width="1" />
+      <text x="115" y="41" font-size="11.5" font-weight="700" fill="#9FE7BD" text-anchor="middle">PHYSIOLOGICAL PERSPECTIVE</text>
 
       <text x="25" y="86" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">The Stopwatch Paradox</text>
       <text x="25" y="112" font-size="13" fill="#D3E5DE" line-height="1.5">
@@ -96,8 +96,9 @@
         <rect x="0" y="0" width="460" height="74" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
         <rect x="16" y="16" width="42" height="42" rx="8" fill="#E0F2FE" />
         <text x="37" y="42" font-size="18" text-anchor="middle">📈</text>
-        <text x="70" y="32" font-size="14.5" font-weight="750" fill="#0B233A">Longitudinal Progress Over Decades</text>
-        <text x="70" y="52" font-size="12.5" fill="#475569">Track aerobic maintenance independent of natural chronological slowdown.</text>
+        <text x="70" y="28" font-size="14.5" font-weight="750" fill="#0B233A">Longitudinal Progress Over Decades</text>
+        <text x="70" y="45" font-size="12.5" fill="#475569">Track aerobic maintenance independent of</text>
+        <text x="70" y="60" font-size="12.5" fill="#475569">natural chronological slowdown.</text>
       </g>
 
       <!-- Pillar 2: Cross-Generational Equity -->
@@ -105,8 +106,9 @@
         <rect x="0" y="0" width="460" height="74" rx="12" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1.5" />
         <rect x="16" y="16" width="42" height="42" rx="8" fill="#DCFCE7" />
         <text x="37" y="42" font-size="18" text-anchor="middle">⚖️</text>
-        <text x="70" y="32" font-size="14.5" font-weight="750" fill="#075433">Fair Cross-Generational Equity</text>
-        <text x="70" y="52" font-size="12.5" fill="#475569">Compete fairly against runners 20 or 30 years younger on a unified scale.</text>
+        <text x="70" y="28" font-size="14.5" font-weight="750" fill="#075433">Fair Cross-Generational Equity</text>
+        <text x="70" y="45" font-size="12.5" fill="#475569">Compete fairly against runners 20 or 30 years</text>
+        <text x="70" y="60" font-size="12.5" fill="#475569">younger on a unified scale.</text>
       </g>
 
       <!-- Pillar 3: Lifelong Motivation -->
@@ -114,8 +116,9 @@
         <rect x="0" y="0" width="460" height="74" rx="12" fill="#FFF7ED" stroke="#FFEDD5" stroke-width="1.5" />
         <rect x="16" y="16" width="42" height="42" rx="8" fill="#FFEDD5" />
         <text x="37" y="42" font-size="18" text-anchor="middle">🎯</text>
-        <text x="70" y="32" font-size="14.5" font-weight="750" fill="#C2410C">Inspiring New Personal Records</text>
-        <text x="70" y="52" font-size="12.5" fill="#475569">Set new “Age-Graded Personal Bests” at age 50, 60, 70, and beyond.</text>
+        <text x="70" y="28" font-size="14.5" font-weight="750" fill="#C2410C">Inspiring New Personal Records</text>
+        <text x="70" y="45" font-size="12.5" fill="#475569">Set new “Age-Graded Personal Bests” at age 50,</text>
+        <text x="70" y="60" font-size="12.5" fill="#475569">60, 70, and beyond.</text>
       </g>
 
       <!-- Bottom Verified Badge -->

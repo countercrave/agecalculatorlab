@@ -86,13 +86,13 @@
           Age today: 27 yrs 11 mos
         </text>
         <line x1="0" y1="12" x2="160" y2="12" stroke="#dc2626" stroke-width="1.5"/>
-        <text x="175" y="16" font-size="11" font-weight="700" fill="#dc2626">
+        <text x="0" y="35" font-size="11" font-weight="700" fill="#dc2626">
           &#x2190; WRONG! Don't use today!
         </text>
       </g>
 
       <!-- Exact Calculation Box -->
-      <g transform="translate(0, 150)">
+      <g transform="translate(0, 164)">
         <rect width="250" height="60" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
         <text x="14" y="24" font-size="11" font-weight="700" fill="#15803d">EXACT AGE ON 01-AUG-2026:</text>
         <text x="14" y="48" font-size="18" font-weight="800" fill="#166534">27 Years, 10 Mos, 14 Days</text>

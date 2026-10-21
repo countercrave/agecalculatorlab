@@ -33,7 +33,7 @@
 
   <!-- Pill Badge -->
   <g transform="translate(80, 70)">
-    <rect width="360" height="42" rx="21" fill="rgba(255,255,255,0.12)" stroke="#9FE7BD" stroke-width="1.5"/>
+    <rect width="440" height="42" rx="21" fill="rgba(255,255,255,0.12)" stroke="#9FE7BD" stroke-width="1.5"/>
     <circle cx="24" cy="21" r="6" fill="#9FE7BD"/>
     <text x="44" y="26" font-family="'Inter', sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF" letter-spacing="1.2">BIOLOGICAL &amp; HEALTH · COMPUTER VISION</text>
   </g>

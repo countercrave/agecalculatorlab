@@ -21,8 +21,8 @@
   <!-- Central Shared Stopwatch -->
   <g transform="translate(460, 160)">
     <rect width="280" height="65" rx="32.5" fill="#042F2A" stroke="#9FE7BD" stroke-width="2"/>
-    <circle cx="35" cy="32.5" r="8" fill="#FF754D"/>
-    <text x="145" y="41" font-family="'Inter', monospace" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">45:00 FINISH TIME</text>
+    <circle cx="30" cy="32.5" r="8" fill="#FF754D"/>
+    <text x="154" y="41" font-family="'Inter', monospace" font-size="21.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">45:00 FINISH TIME</text>
   </g>
 
   <!-- 3 Runner Columns -->

@@ -32,11 +32,11 @@
       <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#64748B">WMA Factor: 0.9990 · Theoretical Open Time: 24:58</text>
 
       <!-- Bar Graphic -->
-      <rect x="520" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
-      <rect x="520" y="24" width="161" height="24" rx="6" fill="#94A3B8"/>
+      <rect x="470" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
+      <rect x="470" y="24" width="161" height="24" rx="6" fill="#94A3B8"/>
       
-      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#475569">50.36%</text>
-      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#64748B">Recreational</text>
+      <text x="805" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#475569">50.36%</text>
+      <text x="1025" y="41" text-anchor="end" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#64748B">Recreational</text>
     </g>
 
     <!-- Age 40 Male -->
@@ -49,11 +49,11 @@
       <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#64748B">WMA Factor: 0.9485 · Theoretical Open Time: 23:42</text>
 
       <!-- Bar Graphic -->
-      <rect x="520" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
-      <rect x="520" y="24" width="170" height="24" rx="6" fill="#52796F"/>
+      <rect x="470" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
+      <rect x="470" y="24" width="170" height="24" rx="6" fill="#52796F"/>
       
-      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#52796F">53.07%</text>
-      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#52796F">Local Runner</text>
+      <text x="805" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#52796F">53.07%</text>
+      <text x="1025" y="41" text-anchor="end" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#52796F">Local Runner</text>
     </g>
 
     <!-- Age 50 Male -->
@@ -66,11 +66,11 @@
       <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#64748B">WMA Factor: 0.8790 · Theoretical Open Time: 21:58</text>
 
       <!-- Bar Graphic -->
-      <rect x="520" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
-      <rect x="520" y="24" width="183" height="24" rx="6" fill="#075433"/>
+      <rect x="470" y="24" width="320" height="24" rx="6" fill="#F1F5F9"/>
+      <rect x="470" y="24" width="183" height="24" rx="6" fill="#075433"/>
       
-      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#075433">57.26%</text>
-      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">Solid Local</text>
+      <text x="805" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#075433">57.26%</text>
+      <text x="1025" y="41" text-anchor="end" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#075433">Solid Local</text>
     </g>
 
     <!-- Age 60 Male -->
@@ -83,11 +83,11 @@
       <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#065F46">WMA Factor: 0.8030 · Theoretical Open Time: 20:04</text>
 
       <!-- Bar Graphic -->
-      <rect x="520" y="24" width="320" height="24" rx="6" fill="#E2E8F0"/>
-      <rect x="520" y="24" width="200" height="24" rx="6" fill="#059669"/>
+      <rect x="470" y="24" width="320" height="24" rx="6" fill="#E2E8F0"/>
+      <rect x="470" y="24" width="200" height="24" rx="6" fill="#059669"/>
       
-      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#059669">62.67%</text>
-      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#059669">Local Competitive</text>
+      <text x="805" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#059669">62.67%</text>
+      <text x="1025" y="41" text-anchor="end" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#059669">Local Competitive</text>
     </g>
 
     <!-- Age 70 Male -->
@@ -100,11 +100,11 @@
       <text x="75" y="52" font-family="'Inter', sans-serif" font-size="12.5" fill="#9A3412">WMA Factor: 0.7180 · Theoretical Open Time: 17:57</text>
 
       <!-- Bar Graphic -->
-      <rect x="520" y="24" width="320" height="24" rx="6" fill="#FED7AA"/>
-      <rect x="520" y="24" width="224" height="24" rx="6" fill="#EA580C"/>
+      <rect x="470" y="24" width="320" height="24" rx="6" fill="#FED7AA"/>
+      <rect x="470" y="24" width="224" height="24" rx="6" fill="#EA580C"/>
       
-      <text x="860" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#EA580C">70.07%</text>
-      <text x="965" y="41" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#EA580C">Regional Class</text>
+      <text x="805" y="41" font-family="'Fraunces', Georgia, serif" font-size="22" font-weight="800" fill="#EA580C">70.07%</text>
+      <text x="1025" y="41" text-anchor="end" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#EA580C">Regional Class</text>
     </g>
   </g>
 
