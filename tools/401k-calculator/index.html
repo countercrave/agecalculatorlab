@@ -309,6 +309,28 @@
   ]
 }
 </script>
+
+<style>
+/* Mobile layout fixes (2026-10-22) — on small screens the guide navigation
+   scrolls with the page instead of pinning over the article, links go
+   two-up, and charts/tables get compact, legible treatment. */
+@media (max-width: 979px) {
+  .tool-toc { position: static; top: auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; padding: 18px 20px; }
+  .tool-toc strong { grid-column: 1 / -1; margin-bottom: 8px; }
+  .tool-toc a { font-size: 0.86rem; padding: 7px 0; }
+  .tool-content-layout { gap: 10px; padding: 36px 0 44px; }
+}
+@media (max-width: 640px) {
+  .chart-svg { min-width: 540px; }
+  .styled-table { font-size: 0.86rem; }
+  .styled-table th, .styled-table td { padding: 9px 10px; }
+  .tool-article h2 { font-size: 1.55rem; margin-top: 36px; }
+  .tool-article h3 { font-size: 1.22rem; }
+}
+@media (max-width: 399px) {
+  .tool-toc { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
