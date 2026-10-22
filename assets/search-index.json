@@ -1838,5 +1838,10 @@
     "n": "Sleep Cycle Calculator",
     "u": "/tools/sleep-cycle-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Days Together Calculator",
+    "u": "/tools/days-together-calculator/",
+    "t": "Calculator"
   }
 ]
