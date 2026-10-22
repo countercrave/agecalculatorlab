@@ -1,0 +1,838 @@
+<!doctype html><html lang="en"><head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6008816938247526"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YM7P2RQ4Z7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YM7P2RQ4Z7', {page_location: location.origin + location.pathname});
+</script>
+<meta name="google-site-verification" content="Y5be21WsrJ2pH_gQfwHr57ucbKKUDO1wtzNvumLDzh0"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Life Expectancy Calculator: Estimate Remaining Years</title><meta property="og:url" content="https://www.agecalculatorlab.com/tools/life-expectancy-calculator/"><link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
+<title>Average Age Calculator – Calculate the Mean Age</title>
+<meta name="robots" content="index, follow">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png"><link rel="manifest" href="../../site.webmanifest"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#075433"><link rel="canonical" href="https://www.agecalculatorlab.com/tools/average-age-calculator/"><meta name="description" content="Calculate the average age of a group using individual ages or dates of birth. Find the mean, compare age ranges, and understand the calculation."><meta property="og:type" content="website"><meta property="og:title" content="Average Age Calculator – Calculate the Mean Age"><meta property="og:description" content="Calculate the average age of a group using individual ages or dates of birth. Find the mean, compare age ranges, and understand the calculation."><meta property="og:image" content="https://www.agecalculatorlab.com/assets/tools/average-age-calculator/average-age-calculator-featured.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Average Age Calculator – Calculate the Mean Age"><meta name="twitter:description" content="Calculate the average age of a group using individual ages or dates of birth. Find the mean, compare age ranges, and understand the calculation."><meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/tools/average-age-calculator/average-age-calculator-featured.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="../../assets/style.css?v=20260824e"><style>
+/* Scoped 401(k) Calculator & Financial Hub Styling */
+.tool-hero { padding: 40px 0 32px; background: linear-gradient(180deg, #f2f7f4 0%, #ffffff 100%); border-bottom: 1px solid #dce9e2; }
+.tool-hero-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: start; }
+@media(min-width: 1024px) { .tool-hero-grid { grid-template-columns: 1.1fr 1.15fr; } }
+
+.tool-hero-copy .eyebrow { display: inline-block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--editorial-sage, #075433); margin-bottom: 8px; }
+.tool-hero-copy h1 { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2.1rem, 3.8vw, 2.9rem); line-height: 1.2; color: var(--editorial-navy, #042f2a); margin: 0 0 14px; }
+.tool-hero-copy .lead { font-size: 1.1rem; line-height: 1.6; color: #2e4b3f; margin-bottom: 20px; }
+.trust-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+.trust-pill { background: #eaf3ee; color: #075433; font-size: 0.82rem; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #d5e6dc; }
+
+/* Interactive Calculator Container */
+.calculator-card { background: #ffffff; border: 2px solid #075433; border-radius: 14px; padding: 26px; box-shadow: 0 12px 32px rgba(4,47,42,0.08); }
+.calc-header { margin-bottom: 20px; border-bottom: 1px solid #e1ede6; padding-bottom: 14px; }
+.calc-header h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.45rem; color: #042f2a; margin: 0 0 4px; }
+.calc-header p { margin: 0; font-size: 0.88rem; color: #52796f; }
+
+.calc-section-title { font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.75px; color: #075433; margin: 18px 0 10px; display: flex; align-items: center; gap: 8px; }
+.calc-section-title::after { content: ""; flex: 1; height: 1px; background: #e2ede7; }
+
+.calc-form-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media(min-width: 520px) { .calc-form-grid { grid-template-columns: 1fr 1fr; } }
+
+.calc-field { display: flex; flex-direction: column; gap: 5px; }
+.calc-field.full-width { grid-column: 1 / -1; }
+.calc-field label { font-size: 0.88rem; font-weight: 700; color: #042f2a; display: flex; justify-content: space-between; align-items: baseline; }
+.calc-field label small { font-weight: 500; color: #52796f; font-size: 0.8rem; }
+.input-with-prefix { position: relative; display: flex; align-items: center; }
+.input-prefix { position: absolute; left: 12px; color: #52796f; font-weight: 700; font-size: 1rem; pointer-events: none; }
+.input-with-suffix { position: relative; display: flex; align-items: center; }
+.input-suffix { position: absolute; right: 12px; color: #52796f; font-weight: 700; font-size: 0.95rem; pointer-events: none; }
+
+.calc-field input, .calc-field select { width: 100%; padding: 10px 12px; border: 1.5px solid #c2dbcf; border-radius: 8px; font-size: 0.98rem; color: #0d2b23; background: #fdfdfd; transition: border-color 0.2s, box-shadow 0.2s; font-family: inherit; }
+.input-with-prefix input { padding-left: 28px; }
+.input-with-suffix input { padding-right: 28px; }
+.calc-field input:focus, .calc-field select:focus { outline: none; border-color: #075433; box-shadow: 0 0 0 3px rgba(7,84,51,0.15); }
+
+.field-hint { font-size: 0.78rem; color: #52796f; line-height: 1.35; margin-top: 2px; }
+.match-dynamic-note { background: #f4f9f6; border-left: 3px solid #075433; padding: 8px 12px; border-radius: 0 6px 6px 0; font-size: 0.82rem; color: #234d3d; font-weight: 600; margin-top: 6px; }
+
+/* Match Toggle */
+.toggle-row { display: flex; align-items: center; justify-content: space-between; background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 8px; padding: 10px 14px; margin-bottom: 10px; }
+.toggle-label { font-size: 0.88rem; font-weight: 700; color: #042f2a; }
+.toggle-options { display: flex; gap: 8px; }
+.toggle-btn { background: #ffffff; border: 1.5px solid #c2dbcf; color: #2e4b3f; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.15s; }
+.toggle-btn.active { background: #075433; border-color: #075433; color: #ffffff; }
+
+/* Advanced Collapsible */
+.advanced-details { margin: 16px 0 20px; border: 1px solid #dce9e2; border-radius: 8px; background: #fbfdfc; overflow: hidden; }
+.advanced-details summary { padding: 12px 16px; font-size: 0.88rem; font-weight: 700; color: #075433; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: space-between; background: #f4f9f6; }
+.advanced-content { padding: 16px; }
+
+/* Buttons */
+.calc-btn-row { display: flex; gap: 12px; margin-top: 22px; }
+.btn-calc { flex: 2; background: #075433; color: #ffffff; font-weight: 700; font-size: 1.05rem; padding: 13px 20px; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s, transform 0.15s; text-align: center; }
+.btn-calc:hover { background: #042f2a; transform: translateY(-1px); }
+.btn-reset { flex: 1; background: #f1f5f3; color: #2e4b3f; font-weight: 600; font-size: 0.95rem; padding: 13px 16px; border: 1px solid #dce9e2; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.btn-reset:hover { background: #e5ece8; }
+
+/* Results Panel */
+.results-panel { display: flex; flex-direction: column; gap: 18px; }
+@media(min-width: 1024px) {
+  .results-panel {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 85px;
+    align-self: start;
+  }
+}
+.result-banner { background: #042f2a; color: #ffffff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 8px 24px rgba(4,47,42,0.12); position: relative; overflow: hidden; }
+.result-banner::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #ff754d, #ffd180, #20a67b); }
+.result-banner small { display: block; text-transform: uppercase; letter-spacing: 1.2px; color: #9fe7bd; font-size: 0.82rem; font-weight: 700; margin-bottom: 6px; }
+.result-banner .main-balance { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2.3rem, 4.5vw, 3.2rem); line-height: 1.15; color: #ffd180; margin: 4px 0 8px; font-weight: 700; }
+.result-banner .banner-subtext { font-size: 0.92rem; color: #d3e5de; line-height: 1.5; margin: 0; }
+.result-banner .today-dollars-badge { display: inline-block; background: rgba(255, 117, 77, 0.22); color: #ffab91; border: 1px solid rgba(255, 117, 77, 0.4); font-size: 0.82rem; font-weight: 700; padding: 5px 12px; border-radius: 6px; margin-top: 12px; }
+
+/* 4 Summary Cards */
+.metrics-quad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.metric-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px; }
+.metric-card .metric-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: #52796f; }
+.metric-card .metric-value { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.3rem; font-weight: 700; color: #042f2a; }
+.metric-card.highlight { background: #eef7f2; border-color: #badbc7; }
+.metric-card.highlight .metric-value { color: #075433; }
+
+/* Visual Bar Breakdown */
+.breakdown-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 16px; }
+.breakdown-card h3 { font-size: 0.92rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #042f2a; margin: 0 0 12px; }
+.stacked-bar-wrap { height: 18px; border-radius: 9px; overflow: hidden; display: flex; background: #e0ece5; margin-bottom: 12px; }
+.stacked-slice { height: 100%; transition: width 0.3s ease; }
+.slice-start { background: #52796f; }
+.slice-employee { background: #20a67b; }
+.slice-match { background: #ff754d; }
+.slice-growth { background: #042f2a; }
+
+.legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.8rem; }
+@media(min-width: 480px) { .legend-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+.legend-item { display: flex; align-items: center; gap: 6px; color: #2e4b3f; font-weight: 600; }
+.legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+
+/* Full-Width Interactive Chart & Tables Below Fold */
+.tool-visuals-strip { padding: 44px 0 20px; background: #fdfefe; border-bottom: 1px solid #e1ede6; }
+.visual-panel-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 14px; padding: 28px; box-shadow: 0 4px 18px rgba(0,0,0,0.03); margin-bottom: 32px; }
+.visual-panel-card h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.55rem; color: #042f2a; margin: 0 0 8px; }
+.visual-panel-card p.subtitle { color: #52796f; font-size: 0.94rem; margin: 0 0 20px; }
+
+/* SVG Chart */
+.chart-container { position: relative; width: 100%; overflow-x: auto; }
+.chart-svg { width: 100%; max-width: 820px; height: auto; display: block; margin: 0 auto; }
+.chart-tooltip-box { display: none; position: absolute; background: #042f2a; color: #ffffff; padding: 8px 12px; border-radius: 6px; font-size: 0.82rem; pointer-events: none; z-index: 10; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transform: translate(-50%, -120%); white-space: nowrap; }
+
+/* Scenario Grids */
+.scenario-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 18px; }
+@media(min-width: 640px) { .scenario-grid { grid-template-columns: repeat(3, 1fr); } }
+.scenario-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-align: center; }
+.scenario-card strong { display: block; font-size: 1.1rem; color: #075433; margin-bottom: 6px; font-family: var(--font-display, 'Fraunces', serif); }
+.scenario-card .scenario-balance { font-size: 1.4rem; font-weight: 800; color: #042f2a; margin-bottom: 4px; }
+.scenario-card small { font-size: 0.82rem; color: #52796f; }
+
+/* Educational Content Section */
+.tool-content-layout { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 280px 1fr; align-items: start; } }
+
+.tool-toc { background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 22px; position: sticky; top: 90px; }
+.tool-toc strong { display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.8px; color: #075433; margin-bottom: 14px; }
+.tool-toc a { display: block; font-size: 0.88rem; color: #2e4b3f; text-decoration: none; padding: 6px 0; border-bottom: 1px solid #f0f5f2; transition: color 0.15s, padding-left 0.15s; }
+.tool-toc a:hover { color: #ff754d; padding-left: 4px; }
+
+.tool-article { max-width: 820px; font-size: 1rem; line-height: 1.7; color: #1c382f; }
+.tool-article h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.85rem; color: #042f2a; margin: 44px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e1ede6; }
+.tool-article h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.35rem; color: #075433; margin: 28px 0 12px; }
+.tool-article p { margin: 0 0 18px; }
+.tool-article ul, .tool-article ol { margin: 0 0 22px; padding-left: 24px; }
+.tool-article li { margin-bottom: 8px; }
+
+/* Reference Tables */
+.table-wrap { overflow-x: auto; margin: 26px 0; border: 1px solid #dce9e2; border-radius: 10px; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+.styled-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; text-align: left; }
+.styled-table th { background: #042f2a; color: #ffffff; padding: 14px 16px; font-weight: 700; letter-spacing: 0.5px; }
+.styled-table td { padding: 12px 16px; border-bottom: 1px solid #eef4f0; color: #1c382f; }
+.styled-table tr:nth-child(even) { background: #fbfdfc; }
+.styled-table tr:hover { background: #f1f7f4; }
+.highlight-cell { font-weight: 700; color: #075433; }
+
+/* Callout Box */
+.callout-box { background: #ffffff; border-left: 4px solid #075433; border-radius: 0 10px 10px 0; padding: 22px; margin: 28px 0; box-shadow: 0 4px 14px rgba(4,47,42,0.05); }
+.callout-box.warning { border-left-color: #ff754d; background: #fffcfb; }
+.callout-box h3 { margin: 0 0 10px; color: #042f2a; font-size: 1.15rem; }
+
+/* Figures */
+.infographic-figure { margin: 34px 0; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.04); }
+.infographic-figure img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.infographic-figure figcaption { font-size: 0.84rem; color: #52796f; text-align: center; margin-top: 10px; }
+
+/* Author Profile */
+.author-card { display: flex; flex-direction: column; gap: 16px; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 24px; margin: 40px 0; }
+@media(min-width: 600px) { .author-card { flex-direction: row; align-items: flex-start; } }
+.author-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #9fe7bd; flex-shrink: 0; }
+.author-info { flex: 1; }
+.author-name { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.25rem; color: #042f2a; margin: 0 0 4px; }
+.author-meta { font-size: 0.84rem; color: #52796f; margin-bottom: 10px; }
+.author-bio { font-size: 0.92rem; line-height: 1.6; color: #2e4b3f; margin: 0; }
+
+/* FAQs */
+.faq-block { margin: 36px 0; }
+.faq-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; }
+.faq-card h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.15rem; color: #042f2a; margin: 0 0 10px; }
+.faq-card p { margin: 0; color: #2e4b3f; font-size: 0.95rem; }
+
+/* Related Grid */
+.related-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 24px 0 40px; }
+@media(min-width: 600px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+.related-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-decoration: none; color: inherit; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+.related-card:hover { transform: translateY(-3px); border-color: #ff754d; }
+.related-card small { color: #52796f; font-size: 0.78rem; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+.related-card h4 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.05rem; color: #042f2a; margin: 0 0 8px; }
+.related-card span { font-size: 0.86rem; color: #ff754d; font-weight: 600; }
+</style><style>
+.aa-mode-row { display: flex; gap: 10px; margin-bottom: 18px; }
+.aa-mode { flex: 1; padding: 11px 10px; border-radius: 8px; border: 1.5px solid #dce9e2; background: #f4f9f6; color: #2e4b3f; font-weight: 700; font-size: 0.95rem; cursor: pointer; }
+.aa-mode-active { background: #075433; border-color: #075433; color: #ffffff; }
+.aa-row { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 10px; }
+.aa-row-field { flex: 1; }
+.aa-remove { background: #fdfdfd; border: 1px solid #dce9e2; color: #8a4b3a; border-radius: 8px; padding: 10px 12px; font-size: 0.85rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.aa-remove:hover { background: #fff3ef; }
+.aa-add { width: 100%; padding: 11px; border: 1.5px dashed #9fc3ae; border-radius: 8px; background: #f8fbf9; color: #075433; font-weight: 700; cursor: pointer; margin-top: 2px; }
+.aa-add:hover { background: #eef7f2; }
+.aa-options { display: flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 0.92rem; color: #2e4b3f; font-weight: 600; }
+.aa-error { display: none; background: #fff3ef; border: 1px solid #ffb59d; color: #8a2f16; border-radius: 8px; padding: 12px 14px; margin-top: 16px; font-size: 0.9rem; }
+.aa-error p { margin: 0 0 4px; } .aa-error p:last-child { margin: 0; }
+.aa-ref { max-width: 260px; margin-bottom: 14px; }
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Average Age Calculator", "operatingSystem": "All", "applicationCategory": "UtilitiesApplication", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Calculate the average (mean) age of a group from individual ages or dates of birth, with median, youngest, oldest and age-range statistics."}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is an average age calculator?", "acceptedAnswer": {"@type": "Answer", "text": "An average age calculator finds the arithmetic mean of a group of ages. It adds all the valid ages together and divides the total by the number of people included, then reports supporting statistics such as the youngest and oldest ages and the age range."}}, {"@type": "Question", "name": "How do I calculate the average age of a group?", "acceptedAnswer": {"@type": "Answer", "text": "Add all the ages together and divide the total by the number of people included. For example, the mean of 20, 30, and 40 is (20 + 30 + 40) ÷ 3 = 30 years. This calculator does the same arithmetic for any group size, from two entries to a full class or team list."}}, {"@type": "Question", "name": "Can I calculate average age from dates of birth?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Switch to the Dates of Birth mode, enter each date of birth, and set one shared reference date. The calculator works out each person's exact age on that date — completed years plus the fraction of the current year — and then averages those ages. Every age is measured on the same date, so the result is consistent."}}, {"@type": "Question", "name": "What is the formula for average age?", "acceptedAnswer": {"@type": "Answer", "text": "Average age = the sum of all included ages divided by the number of valid entries: Mean = Σaᵢ ÷ n, where aᵢ is each person's age and n is the number of people. For ages 18, 24, 31, 42, and 55, that is 170 ÷ 5 = 34 years."}}, {"@type": "Question", "name": "Can the average age include decimal values?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The mean can be a decimal even when every individual age is a whole number — a group of 20, 30, and 41 averages 30.33 years. The decimal is the mathematical average of the group; it does not have to match any one person's age. This calculator shows the mean to two decimal places."}}, {"@type": "Question", "name": "What is the difference between average age and median age?", "acceptedAnswer": {"@type": "Answer", "text": "Average age usually means the arithmetic mean: every value counts, so unusually high or low ages pull the result toward them. Median age is the middle value after sorting, so it resists outliers. For ages 20, 22, 23, 24, and 71, the mean is 32 years but the median is 23 years. Tick “Also show median age” to see both side by side."}}, {"@type": "Question", "name": "Can I calculate the average age of two people?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Add the two ages and divide by two. The mean of 24 and 36 is (24 + 36) ÷ 2 = 30 years. The calculator accepts as few as one entry — with a single entry, the average is simply that age."}}, {"@type": "Question", "name": "Does the calculator ignore blank entries?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Blank rows are ignored rather than treated as zero, and the result line shows exactly how many valid entries were used and how many blanks were skipped. Invalid values — text, negative ages, or ages over 150 — are flagged with a message instead of being silently included."}}, {"@type": "Question", "name": "Can I use ages in months?", "acceptedAnswer": {"@type": "Answer", "text": "Convert months to years first, so every entry uses the same unit: divide months by 12 (18 months = 1.5 years). Decimal ages are accepted, so 1.5 works directly. Or use Dates of Birth mode, which handles the calendar arithmetic for you. Never mix months and years in the same calculation."}}, {"@type": "Question", "name": "Why is my average age different from the median?", "acceptedAnswer": {"@type": "Answer", "text": "Because the two statistics measure different things. The mean uses every value and is influenced by unusually high or low ages; the median depends only on the middle position of the sorted group. When a group has one much older or younger member, the mean moves toward them while the median stays near the typical member."}}, {"@type": "Question", "name": "Can I use this calculator for a class or team?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for descriptive group statistics — average class age, squad age profiles, family summaries, and similar. Make sure every entry uses the same convention and, in date-of-birth mode, the same reference date. A group average describes the group you entered; it does not automatically represent a wider population, and eligibility rules (such as age cut-offs) must still be checked separately."}}, {"@type": "Question", "name": "Is the average age calculator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Average Age Calculator is free on Age Calculator Lab, with no sign-up. The calculation runs entirely in your browser — the ages and dates you enter are not sent to or stored on a server."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.agecalculatorlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Universal Chronology", "item": "https://www.agecalculatorlab.com/categories/universal-chronology/"}, {"@type": "ListItem", "position": 3, "name": "Average Age Calculator", "item": "https://www.agecalculatorlab.com/tools/average-age-calculator/"}]}</script></head><body><header class="site-header"><div class="container nav"><a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto"></a><button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button><nav class="nav-links" id="primary-nav" aria-label="Primary navigation"><details class="nav-dropdown nav-dropdown-categories"><summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega"><div class="nav-mega-head"><div><small>170 focused tools</small><strong>Main calculator categories</strong></div><a href="../../categories/">View category directory →</a></div><div class="nav-category-grid"><a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>29 tools</small></a><a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a><a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>11 tools</small></a><a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>14 tools</small></a><a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>17 tools</small></a><a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>16 tools</small></a><a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>16 tools</small></a><a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a><a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a><a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a><a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a></div><div class="nav-quick-row"><span>Popular</span><a href="../../">Age Calculator</a><a href="../../tools/date-difference-calculator/">Date Difference</a><a href="../../tools/corrected-age-calculator/">Corrected Age</a><a href="../../tools/countdown-to-date-calculator/">Countdown</a></div></div></details><details class="nav-dropdown nav-dropdown-days"><summary>Days &amp; Dates <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-days"><div class="nav-mega-head"><div><small>114 focused date &amp; time tools</small><strong>Days Between Dates &amp; Time Lab</strong></div><a href="https://days.agecalculatorlab.com/">Visit Days &amp; Dates Lab →</a></div><div class="nav-days-grid"><a class="nav-days-card" href="https://days.agecalculatorlab.com/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div><div class="nav-days-text"><span class="nav-days-title">Days Between Dates</span><span class="nav-days-desc">Exact calendar days, whole weeks, weekends &amp; day span.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div class="nav-days-text"><span class="nav-days-title">Date Calculator (± Days)</span><span class="nav-days-desc">Add or subtract days, business days &amp; calendar months.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Working &amp; Business Days</span><span class="nav-days-desc">Count working days with custom weekends &amp; bank holidays.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/pst-to-est/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Time Zone Converter</span><span class="nav-days-desc">Live conversion between PST, EST, UTC &amp; world clocks.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calendar/2026/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M3 10h18"></path><path d="M10 14h4"></path><path d="M12 12v4"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Countdowns &amp; Calendars</span><span class="nav-days-desc">Holiday countdowns, full-year calendars &amp; ISO week numbers.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div><div class="nav-days-text"><span class="nav-days-title">All 114 Date Tools Directory</span><span class="nav-days-desc">Explore the full catalog of date, time and duration tools.</span></div></a></div><div class="nav-quick-row"><span>Popular on Days Lab</span><a href="https://days.agecalculatorlab.com/">Days Between Dates</a><a href="https://days.agecalculatorlab.com/calculators/">Business Days</a><a href="https://days.agecalculatorlab.com/pst-to-est/">PST to EST</a><a href="https://days.agecalculatorlab.com/calendar/2026/">2026 Calendar</a><a href="https://days.agecalculatorlab.com/calculators/">Browse all 114 tools →</a></div></div></details><details class="nav-dropdown nav-dropdown-guides"><summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-guides"><div class="nav-mega-head"><div><small>167 practical guides</small><strong>Learn the method</strong></div><a href="../../articles/">Browse all guides →</a></div><div class="nav-guide-grid"><a href="../../articles/10k-age-grading/"><small>Biological &amp; Health</small><span>10K Age Grading Explained: How Age Grade Works</span></a><a href="../../articles/5k-age-grading/"><small>Biological &amp; Health</small><span>5K Age Grading Explained: Calculate Your 5K Age Grade</span></a><a href="../../articles/age-graded-results-vs-age-group-results/"><small>Biological &amp; Health</small><span>Age-Graded Results vs Age-Group Results: Key Differences</span></a><a href="../../articles/age-grading-for-masters-runners/"><small>Biological &amp; Health</small><span>Age Grading for Masters Runners: How It Works &amp; Benefits</span></a><a href="../../articles/what-is-a-good-age-grade-in-running/"><small>Biological &amp; Health</small><span>What Is a Good Age Grade in Running? Percentage Guide</span></a><a href="../../articles/how-is-age-grade-calculated/"><small>Biological &amp; Health</small><span>How Is Age Grade Calculated? Formula, Examples &amp; Guide</span></a></div></div></details><a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><div class="nav-search-wrap" id="nav-search-wrap"><div class="nav-search-box"><svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg><input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autoComplete="off"></div><div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div></div><a class="nav-cta" href="../../#calculator">Calculate age</a></nav></div></header>
+<main id="main-content">
+<section class="tool-hero">
+<div class="container tool-hero-grid">
+<div class="tool-hero-copy">
+<div class="breadcrumbs"><a href="../../">Home</a> / <a href="../../categories/universal-chronology/">Universal Chronology</a> / Average Age Calculator</div>
+<span class="eyebrow">Group Age Statistics Calculator</span>
+<h1>Average Age Calculator</h1>
+<p class="lead">Use our Average Age Calculator to find the mean age of a group of people quickly and accurately. Enter individual ages or dates of birth, and calculate the average using a consistent reference date.</p>
+<p>Whether you are comparing the ages of family members, calculating the average age of a class, summarizing a team, or working with demographic data, this tool turns individual age values into one easy-to-understand summary — with the number of people counted, the youngest and oldest ages, and the age range shown alongside the mean.</p>
+<ul>
+<li>The arithmetic mean of multiple ages, shown to two decimal places.</li>
+<li>Average age from dates of birth, using one common reference date.</li>
+<li>The youngest age, the oldest age, and the difference between them.</li>
+<li>Optionally, the median age — useful when a group has one much older or younger member.</li>
+</ul>
+<div class="trust-row">
+<span class="trust-pill">✓ Free group statistics tool</span>
+<span class="trust-pill">✓ Ages or dates of birth</span>
+<span class="trust-pill">✓ Transparent formula</span>
+<span class="trust-pill">✓ 100% Private Client-Side Calculation</span>
+</div>
+<div class="calculator-card" id="calculator-section">
+<div class="calc-header">
+<h2>Calculate the Average Age</h2>
+<p>Enter the group below — add or remove entries as needed — then calculate.</p>
+</div>
+<div class="calc-section-title">Step 1 — Choose how to enter the group</div>
+<div class="aa-mode-row" role="group" aria-label="Input mode">
+<button type="button" class="aa-mode aa-mode-active" id="aaModeAges">Enter ages</button>
+<button type="button" class="aa-mode" id="aaModeDob">Enter dates of birth</button>
+</div>
+<div id="aaAgesPanel">
+<div class="calc-section-title">Step 2 — Enter each person's age</div>
+<div id="aaAgeRows"></div>
+<button type="button" class="aa-add" id="aaAddAge">+ Add another age</button>
+<p class="field-hint" style="margin-top:10px;">Ages in years, from 0 to 150. Decimals are allowed (for example 1.5 for 18 months). Blank rows are ignored — they are never counted as zero.</p>
+</div>
+<div id="aaDobPanel" style="display:none;">
+<div class="calc-section-title">Step 2 — Enter each date of birth</div>
+<div class="calc-field aa-ref">
+<label for="aaRefDate">Reference date <small>(ages are calculated as of this date)</small></label>
+<input type="date" id="aaRefDate">
+</div>
+<div id="aaDobRows"></div>
+<button type="button" class="aa-add" id="aaAddDob">+ Add another date of birth</button>
+<p class="field-hint" style="margin-top:10px;">Every age is calculated against the same reference date, which defaults to today. Ages are exact — completed years plus the fraction of the current year — not rounded whole years.</p>
+</div>
+<label class="aa-options"><input type="checkbox" id="aaMedian" checked> Also show median age</label>
+<div class="aa-error" id="aaError" role="alert"></div>
+<div class="calc-btn-row">
+<button type="button" class="btn-calc" id="aaCalc">Calculate Average Age</button>
+<button type="button" class="btn-reset" id="aaResetBtn">Reset</button>
+</div>
+</div>
+</div>
+<div class="results-panel" id="resultsPanel" aria-live="polite">
+<div class="result-banner">
+<small>Average (Mean) Age</small>
+<div class="main-balance" id="aaResMain">—</div>
+<p class="banner-subtext" id="aaResSub">Enter a group and select Calculate Average Age.</p>
+</div>
+<div class="metrics-quad-grid">
+<div class="metric-card">
+<span class="metric-label">Youngest</span>
+<span class="metric-value" id="aaResYoung">—</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Oldest</span>
+<span class="metric-value" id="aaResOld">—</span>
+</div>
+<div class="metric-card">
+<span class="metric-label" id="aaResThirdLabel">Median age</span>
+<span class="metric-value" id="aaResThird">—</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Age range</span>
+<span class="metric-value" id="aaResRange">—</span>
+</div>
+</div>
+<p class="banner-subtext" id="aaResNote" style="margin-top:14px;"></p>
+<button type="button" class="btn-reset" id="aaCopy" style="align-self:flex-start;">Copy result</button>
+</div>
+</div>
+</section>
+
+<section class="tool-visuals-strip">
+<div class="container">
+<div class="visual-panel-card">
+<h2>Where Each Age Falls</h2>
+<p class="subtitle">Every person in your group plotted by age. The dashed orange marker is the mean — the balance point of the group — and the teal marker, when enabled, is the median. One much older or younger person pulls the mean toward them; the median barely moves.</p>
+<div class="chart-container">
+<svg class="chart-svg" id="aaSvg" viewBox="0 0 800 330" role="img" aria-label="Dot plot of the group's ages with mean and median markers"></svg>
+</div>
+</div>
+<div class="visual-panel-card">
+<h2 id="aaSortedTitle">Your Ages, Sorted</h2>
+<p class="subtitle">The same entries in ascending order — the view the median is read from. The middle row (or the middle pair) of this table is the median age.</p>
+<div style="overflow-x:auto"><table class="styled-table">
+<thead><tr><th>#</th><th>Entry</th><th>Age</th></tr></thead>
+<tbody id="aaSortedBody"></tbody>
+</table></div>
+<p style="font-size:0.82rem; color:#628277; margin-top:14px; text-align:center;">*Both panels update with the calculator. In dates-of-birth mode, ages are exact fractional ages at your reference date.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container tool-content-layout">
+<aside class="tool-toc" aria-label="Table of Contents">
+<strong>Guide Navigation</strong>
+<a href="#what-is">1. What Is an Average Age Calculator?</a>
+<a href="#how-to-use">2. How to Use This Calculator</a>
+<a href="#how-to-calculate">3. How to Calculate Average Age</a>
+<a href="#dob-mode">4. Average Age from Dates of Birth</a>
+<a href="#mean-vs-median">5. Average Age vs. Median Age</a>
+<a href="#misleading">6. Why Can the Average Age Be Misleading?</a>
+<a href="#uses">7. Practical Uses</a>
+<a href="#how-many">8. How Many People Do You Need?</a>
+<a href="#rounding">9. Rounding and Accuracy</a>
+<a href="#spreadsheet">10. Average Age Formula for a Spreadsheet</a>
+<a href="#related-tools">11. Related Age Calculators</a>
+<a href="#faq">12. Frequently Asked Questions</a>
+<a href="#methodology-trust">13. Methodology &amp; Data Integrity</a>
+</aside>
+<article class="tool-article">
+
+<section id="what-is">
+<h2>1. What Is an Average Age Calculator?</h2>
+<p>An <strong>average age calculator</strong> finds the <strong>arithmetic mean</strong> of a group of ages: it adds every valid age together and divides the total by the number of people included. One number then summarises the whole group — the average age of a class, a team, a family, or a research sample.</p>
+<p>This calculator accepts the group in two ways. You can type the ages directly, or enter <strong>dates of birth</strong> and let the tool work out each person's exact age on a shared reference date before averaging. Alongside the mean it reports the number of valid entries, the <strong>youngest</strong> and <strong>oldest</strong> ages, the <strong>age range</strong>, and — optionally — the <strong>median age</strong> for comparison.</p>
+<p>The mean is a summary, not a description of any one person. A group of five can average 34 years without anyone in it actually being 34 — and that is normal. What the average gives you is a single, honest balance point for the group as entered.</p>
+</section>
+<figure class="infographic-figure">
+<img decoding="async" src="../../assets/tools/average-age-calculator/average-age-calculator-featured.webp" alt="Illustration of a group of people of different ages arranged along a data timeline, with a central marker showing the average age" width="1600" height="900" loading="lazy">
+<figcaption>People of different ages along one timeline — an average age calculator reduces the whole group to its balance point, the mean.</figcaption>
+</figure>
+
+<section id="how-to-use">
+<h2>2. How to Use This Calculator</h2>
+<ol>
+<li><strong>Choose how to enter the group.</strong> Use <em>Enter ages</em> if you already know everyone's age, or <em>Dates of birth</em> if you have a roster, class list, or family tree with birth dates.</li>
+<li><strong>Add one entry per person.</strong> Type each age (or date of birth). Use <em>+ Add another age</em> for larger groups, and <em>Remove</em> to delete a row. Leave rows blank if you added too many — blanks are ignored.</li>
+<li><strong>In date-of-birth mode, check the reference date.</strong> It defaults to today. Every age is calculated as of that one date, so the average is consistent.</li>
+<li><strong>Decide whether you want the median.</strong> The median is ticked by default and appears alongside the mean — the comparison is most useful when a group spans a wide age range.</li>
+<li><strong>Select Calculate Average Age.</strong> The result panel shows the mean to two decimal places, how many valid entries were used, the youngest and oldest ages, and the range. The dot plot and sorted table below the calculator update with the same numbers.</li>
+</ol>
+<p>Invalid entries are never silently included: a negative age, an age over 150, or a date of birth after the reference date produces a message naming the row to fix.</p>
+</section>
+
+<section id="how-to-calculate">
+<h2>3. How to Calculate Average Age</h2>
+<p>The average age of a group is calculated with the <strong>arithmetic mean</strong>. Add the ages of all valid people in the group, then divide the total by the number of included people:</p>
+<div class="callout-box">
+<h3>The average age formula</h3>
+<p style="font-size:1.2rem; text-align:center; margin:8px 0;"><strong>Average Age = (a₁ + a₂ + … + aₙ) ÷ n = Σaᵢ ÷ n</strong></p>
+<p style="margin:0;">Where <em>aᵢ</em> is the age of each person, <em>n</em> is the number of valid entries, and Σaᵢ is the sum of all included ages.</p>
+</div>
+<h3>Step-by-step calculation</h3>
+<ol>
+<li>Collect the age of each person, all in the same unit (years).</li>
+<li>Check that each value is valid — no blanks counted as zero, no mixed units.</li>
+<li>Add all included ages together.</li>
+<li>Count the number of included entries.</li>
+<li>Divide the total age by the number of entries.</li>
+<li>Round the final result for display — this calculator shows two decimal places.</li>
+</ol>
+<h3>Worked example</h3>
+<p>Suppose a group contains five people aged 18, 24, 31, 42, and 55:</p>
+<div style="overflow-x:auto"><table class="styled-table">
+<thead><tr><th>Person</th><th>Age</th></tr></thead>
+<tbody>
+<tr><td>Person 1</td><td>18</td></tr>
+<tr><td>Person 2</td><td>24</td></tr>
+<tr><td>Person 3</td><td>31</td></tr>
+<tr><td>Person 4</td><td>42</td></tr>
+<tr><td>Person 5</td><td>55</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>170</strong></td></tr>
+</tbody>
+</table></div>
+<p>The sum of the ages is 170 years and there are five people, so Average Age = 170 ÷ 5 = <strong>34 years</strong>. The youngest is 18, the oldest is 55, the age range is 55 − 18 = 37 years, and the median — the middle value of 18, 24, <strong>31</strong>, 42, 55 — is 31 years. These are exactly the values pre-loaded in the calculator above, so you can verify them yourself.</p>
+</section>
+<figure class="infographic-figure">
+<img decoding="async" src="../../assets/tools/average-age-calculator/average-age-calculation-formula.webp" alt="Infographic showing five people's ages flowing into one central summary value, illustrating how the arithmetic mean is calculated" width="1600" height="900" loading="lazy">
+<figcaption>Each person's age flows into a single summary value: the total of all ages divided by the number of people.</figcaption>
+</figure>
+
+<section id="dob-mode">
+<h2>4. Average Age from Dates of Birth</h2>
+<p>When you know birth dates rather than ages — a class list, a team roster, a family group — enter them in <strong>Dates of Birth mode</strong>. The calculator determines each person's age as of <strong>one common reference date</strong> and then averages those ages. Never average birth years instead: birth years ignore where birthdays fall in the year and produce the wrong average for the chosen date.</p>
+<h3>How date-of-birth mode works</h3>
+<ol>
+<li>Enter each date of birth.</li>
+<li>Select the reference date (it defaults to today).</li>
+<li>The calculator works out each person's exact age on that date.</li>
+<li>It averages the exact ages and shows the mean, with the reference date named in the result.</li>
+</ol>
+<div class="callout-box">
+<h3>How exact ages are calculated</h3>
+<p>Each age is <strong>completed years plus the fraction of the current year of age</strong>: the days since the person's last birthday divided by the days until their next birthday. A person halfway between their 36th and 37th birthdays is therefore 36.50, not 36. A February 29 birthday is observed on February 28 in non-leap years, matching the convention used by this site's other age calculators. The calculator never averages completed whole-year ages alone, because rounding every age down first would bias the mean downward by up to half a year per person.</p>
+</div>
+<h3>Worked example</h3>
+<p>Three people, evaluated on the same reference date — <strong>22 October 2026</strong>:</p>
+<div style="overflow-x:auto"><table class="styled-table">
+<thead><tr><th>Date of birth</th><th>Exact age on 22 Oct 2026</th></tr></thead>
+<tbody>
+<tr><td>15 March 1990</td><td>36.61 years</td></tr>
+<tr><td>2 July 2001</td><td>25.31 years</td></tr>
+<tr><td>28 November 1985</td><td>40.90 years</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>102.81 years</strong></td></tr>
+</tbody>
+</table></div>
+<p>Average age = 102.81 ÷ 3 = <strong>34.27 years</strong>. The youngest is 25.31, the oldest 40.90, and the range is 15.59 years. These dates are pre-loaded in date-of-birth mode — set the reference date to 22 October 2026 to reproduce them exactly.</p>
+</section>
+<figure class="infographic-figure">
+<img decoding="async" src="../../assets/tools/average-age-calculator/average-age-from-dob.webp" alt="Illustration of three calendar cards, one per person, feeding into a single age summary panel" width="1600" height="900" loading="lazy">
+<figcaption>Each date of birth is first converted to an exact age on one shared reference date; only then are the ages averaged.</figcaption>
+</figure>
+
+<section id="mean-vs-median">
+<h2>5. Average Age vs. Median Age</h2>
+<p>The mean and the median are both measures of the centre of a dataset, but they can tell different stories about the same group.</p>
+<h3>What is average age?</h3>
+<p>In everyday use, average age means the <strong>arithmetic mean</strong>: the sum of all ages divided by the number of people. Because every value counts, unusually high or low ages move the result.</p>
+<h3>What is median age?</h3>
+<p>The <strong>median</strong> is the middle value after all ages are sorted. With an odd number of entries it is the middle value itself; with an even number it is the mean of the two middle values. Position, not size, decides it — so one extreme age cannot move it much.</p>
+<h3>Why the distinction matters</h3>
+<p>Consider a group aged 20, 22, 23, 24, and 71. The mean is (20 + 22 + 23 + 24 + 71) ÷ 5 = 160 ÷ 5 = <strong>32 years</strong>. The median is <strong>23 years</strong>. The 71-year-old pulls the mean up by nine years, while the median still describes the typical member. Both numbers are correct — they answer different questions — which is why this calculator can show them together.</p>
+<div style="overflow-x:auto"><table class="styled-table">
+<thead><tr><th>Measure</th><th>How it is calculated</th><th>Best used for</th></tr></thead>
+<tbody>
+<tr><td>Mean age</td><td>Sum of ages ÷ number of entries</td><td>Summarising all values in one figure</td></tr>
+<tr><td>Median age</td><td>Middle value after sorting</td><td>The typical member when values are uneven</td></tr>
+<tr><td>Minimum age</td><td>Smallest included value</td><td>Identifying the youngest member</td></tr>
+<tr><td>Maximum age</td><td>Largest included value</td><td>Identifying the oldest member</td></tr>
+<tr><td>Age range</td><td>Maximum − minimum</td><td>Understanding the spread of the group</td></tr>
+</tbody>
+</table></div>
+</section>
+<figure class="infographic-figure">
+<img decoding="async" src="../../assets/tools/average-age-calculator/mean-vs-median-age.webp" alt="Infographic of a row of people with one much older person set apart, and two markers showing how the mean shifts toward the outlier while the median stays near the middle" width="1600" height="900" loading="lazy">
+<figcaption>One much older member pulls the mean toward them (amber marker); the median (teal marker) stays with the middle of the group.</figcaption>
+</figure>
+
+<section id="misleading">
+<h2>6. Why Can the Average Age Be Misleading?</h2>
+<p>The mean is useful, but it does not describe every characteristic of a group. Four things to keep in mind when you read one:</p>
+<h3>Averages can hide age differences</h3>
+<p>Two groups can share the same mean with completely different make-ups. Ages 30, 30, 30, 30 and ages 5, 25, 40, 50 both average 30 — one group is uniform, the other spans childhood to middle age. The youngest, oldest, and range statistics exist to reveal exactly this difference.</p>
+<h3>Outliers can change the result</h3>
+<p>A small number of unusually high or low values shifts the mean, as the 71-year-old did in the example above. Checking the median alongside the mean shows whether the "average" member is typical or an artefact of one extreme entry.</p>
+<h3>The number of entries matters</h3>
+<p>An average from three people and an average from three hundred are both arithmetically correct, but they support different conclusions. The small one describes only those three people; it says little about any larger group they came from.</p>
+<h3>Inconsistent data creates misleading averages</h3>
+<p>If some ages are entered in months and others in years, the mean is wrong unless everything is converted to one unit. With dates of birth, every age must be measured on the same reference date — this calculator enforces both rules, and blank entries are reported as skipped rather than quietly treated as zero.</p>
+</section>
+
+<section id="uses">
+<h2>7. Practical Uses of an Average Age Calculator</h2>
+<h3>Family age calculations</h3>
+<p>Families use the mean age of siblings, cousins, or several generations as a simple summary — for a reunion, a family record, or curiosity. It describes the group, not the "typical" member; the median helps there.</p>
+<h3>Classroom and student groups</h3>
+<p>Teachers and researchers summarise the ages in a class or study group, often alongside the age range, since a class with a wide spread may need different planning than a uniform one.</p>
+<h3>Workplace and team demographics</h3>
+<p>Organisations use group-level age statistics for descriptive reporting and workforce planning, working from authorised, aggregated data — never to draw conclusions about individual employees from a group figure.</p>
+<h3>Sports and activity groups</h3>
+<p>Coaches and organisers summarise squad ages to describe a team's composition. Category eligibility still depends on each athlete's exact age on the governing body's cut-off date, which the <a href="../age-on-date-calculator/">Age on Date Calculator</a> checks individually.</p>
+<h3>Surveys and demographic research</h3>
+<p>Researchers report mean age as one summary of a sample, together with the sample size and spread. A mean alone does not establish that a sample represents a wider population.</p>
+<h3>Family events and reunions</h3>
+<p>A group average is an interesting descriptive statistic for a gathering — most meaningful when every age is measured consistently and the group is clearly defined.</p>
+</section>
+
+<section id="how-many">
+<h2>8. How Many People Do You Need to Calculate an Average Age?</h2>
+<p>Mathematically, just one: with a single valid entry, the mean equals that entry. With two or more, the mean is their arithmetic average. There is no minimum group size for the calculation itself.</p>
+<p>Interpreting the result is different. The mean of five volunteers accurately summarises those five entries, but it does not necessarily represent the mean age of their school, company, city, or country. When you report an average age, include the number of observations — the result panel always shows it — and, for research or reporting, how the group was selected.</p>
+<h3>Should all ages be weighted equally?</h3>
+<p>In the standard calculation, yes: each included person counts once. Survey datasets sometimes need statistical weights, but that is a different, explicitly defined method — this calculator performs the standard unweighted mean and says so.</p>
+</section>
+
+<section id="rounding">
+<h2>9. Rounding and Accuracy</h2>
+<h3>Should average age be a whole number?</h3>
+<p>Not necessarily. A group can have a mean age of 28.60 years even when every individual age is a whole number. The fraction is mathematically real — it is the group's balance point, not a person's age.</p>
+<h3>How many decimal places are shown?</h3>
+<p>Two. The mean and median are displayed to two decimal places; the underlying calculation keeps full precision and rounds only the final displayed value. Rounding each person's age <em>before</em> averaging can shift the result, so this tool never does that — in date-of-birth mode it averages exact fractional ages, not completed years.</p>
+<h3>What counts as a valid entry?</h3>
+<p>In ages mode: a number from 0 to 150, decimals allowed. In date-of-birth mode: a real calendar date on or before the reference date, giving an age of at most 150. Anything else is flagged by row, and blank rows are ignored and counted in the result line so you always know how many values the average is based on.</p>
+</section>
+
+<section id="spreadsheet">
+<h2>10. Average Age Formula for a Spreadsheet</h2>
+<p>The same arithmetic works in Excel or Google Sheets. If the ages are stored in cells A2 through A11:</p>
+<div class="callout-box">
+<p style="font-size:1.15rem; text-align:center; margin:4px 0;"><strong>=AVERAGE(A2:A11)</strong></p>
+<p style="margin:0;">AVERAGE takes the arithmetic mean of the numerical entries in the range and ignores blank cells. Validate the data first — a stray text value or an age typed in months will quietly distort the result.</p>
+</div>
+<div class="callout-box warning">
+<h3>Do not average dates of birth directly</h3>
+<p style="margin:0;">Applying AVERAGE to a column of birth dates averages the date serial numbers — it returns a date, not an age. First calculate each person's age as of one shared reference date in a helper column (using the same completed-years-plus-fraction convention described in Section 4), then average those ages. Averaging birth <em>years</em> alone is also wrong: it ignores where birthdays fall within the year.</p>
+</div>
+</section>
+
+<section id="related-tools">
+<h2>11. Related Age Calculators</h2>
+<p>Each of these tools answers a different question — keep the group statistics here, and use them for individual ages:</p>
+<div class="related-grid">
+<a class="related-card" href="../age-calculator/">
+<small>Universal Chronology</small>
+<h4>Age Calculator</h4>
+<span>Calculate one person's age from a date of birth and a reference date →</span>
+</a>
+<a class="related-card" href="../age-difference-calculator/">
+<small>Universal Chronology</small>
+<h4>Age Difference Calculator</h4>
+<span>Find the exact difference between two people's ages →</span>
+</a>
+<a class="related-card" href="../exact-age-calculator/">
+<small>Universal Chronology</small>
+<h4>Exact Age Calculator</h4>
+<span>Calculate an exact chronological age in years, months, and days →</span>
+</a>
+<a class="related-card" href="../age-on-date-calculator/">
+<small>Universal Chronology</small>
+<h4>Age on Date Calculator</h4>
+<span>Find how old a person was or will be on a specified date →</span>
+</a>
+</div>
+<h3>Which calculator should you use?</h3>
+<div style="overflow-x:auto"><table class="styled-table">
+<thead><tr><th>Your question</th><th>Recommended tool</th></tr></thead>
+<tbody>
+<tr><td>What is the mean age of a group?</td><td>Average Age Calculator (this page)</td></tr>
+<tr><td>How many years apart are two people?</td><td>Age Difference Calculator</td></tr>
+<tr><td>How old is one person today?</td><td>Age Calculator</td></tr>
+<tr><td>What is someone's exact chronological age?</td><td>Exact Age Calculator</td></tr>
+<tr><td>How old was someone on a past date?</td><td>Age on Date Calculator</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section id="faq" class="faq-block">
+<h2>12. Frequently Asked Questions</h2>
+<div class="faq-card">
+<h3>What is an average age calculator?</h3>
+<p>An average age calculator finds the arithmetic mean of a group of ages. It adds all the valid ages together and divides the total by the number of people included, then reports supporting statistics such as the youngest and oldest ages and the age range.</p>
+</div>
+<div class="faq-card">
+<h3>How do I calculate the average age of a group?</h3>
+<p>Add all the ages together and divide the total by the number of people included. For example, the mean of 20, 30, and 40 is (20 + 30 + 40) ÷ 3 = 30 years. This calculator does the same arithmetic for any group size, from two entries to a full class or team list.</p>
+</div>
+<div class="faq-card">
+<h3>Can I calculate average age from dates of birth?</h3>
+<p>Yes. Switch to the Dates of Birth mode, enter each date of birth, and set one shared reference date. The calculator works out each person's exact age on that date — completed years plus the fraction of the current year — and then averages those ages. Every age is measured on the same date, so the result is consistent.</p>
+</div>
+<div class="faq-card">
+<h3>What is the formula for average age?</h3>
+<p>Average age = the sum of all included ages divided by the number of valid entries: Mean = Σaᵢ ÷ n, where aᵢ is each person's age and n is the number of people. For ages 18, 24, 31, 42, and 55, that is 170 ÷ 5 = 34 years.</p>
+</div>
+<div class="faq-card">
+<h3>Can the average age include decimal values?</h3>
+<p>Yes. The mean can be a decimal even when every individual age is a whole number — a group of 20, 30, and 41 averages 30.33 years. The decimal is the mathematical average of the group; it does not have to match any one person's age. This calculator shows the mean to two decimal places.</p>
+</div>
+<div class="faq-card">
+<h3>What is the difference between average age and median age?</h3>
+<p>Average age usually means the arithmetic mean: every value counts, so unusually high or low ages pull the result toward them. Median age is the middle value after sorting, so it resists outliers. For ages 20, 22, 23, 24, and 71, the mean is 32 years but the median is 23 years. Tick “Also show median age” to see both side by side.</p>
+</div>
+<div class="faq-card">
+<h3>Can I calculate the average age of two people?</h3>
+<p>Yes. Add the two ages and divide by two. The mean of 24 and 36 is (24 + 36) ÷ 2 = 30 years. The calculator accepts as few as one entry — with a single entry, the average is simply that age.</p>
+</div>
+<div class="faq-card">
+<h3>Does the calculator ignore blank entries?</h3>
+<p>Yes. Blank rows are ignored rather than treated as zero, and the result line shows exactly how many valid entries were used and how many blanks were skipped. Invalid values — text, negative ages, or ages over 150 — are flagged with a message instead of being silently included.</p>
+</div>
+<div class="faq-card">
+<h3>Can I use ages in months?</h3>
+<p>Convert months to years first, so every entry uses the same unit: divide months by 12 (18 months = 1.5 years). Decimal ages are accepted, so 1.5 works directly. Or use Dates of Birth mode, which handles the calendar arithmetic for you. Never mix months and years in the same calculation.</p>
+</div>
+<div class="faq-card">
+<h3>Why is my average age different from the median?</h3>
+<p>Because the two statistics measure different things. The mean uses every value and is influenced by unusually high or low ages; the median depends only on the middle position of the sorted group. When a group has one much older or younger member, the mean moves toward them while the median stays near the typical member.</p>
+</div>
+<div class="faq-card">
+<h3>Can I use this calculator for a class or team?</h3>
+<p>Yes, for descriptive group statistics — average class age, squad age profiles, family summaries, and similar. Make sure every entry uses the same convention and, in date-of-birth mode, the same reference date. A group average describes the group you entered; it does not automatically represent a wider population, and eligibility rules (such as age cut-offs) must still be checked separately.</p>
+</div>
+<div class="faq-card">
+<h3>Is the average age calculator free?</h3>
+<p>Yes. The Average Age Calculator is free on Age Calculator Lab, with no sign-up. The calculation runs entirely in your browser — the ages and dates you enter are not sent to or stored on a server.</p>
+</div>
+</section>
+
+<section id="methodology-trust" class="callout-box" style="margin-top:40px; border-left-color: #075433;">
+<h3>13. Calculator Methodology &amp; Data Integrity</h3>
+<p>This calculator performs the standard arithmetic mean over the entries you provide: mean = Σaᵢ ÷ n, with the median, minimum, maximum, and range computed from the same included values. In date-of-birth mode, each age is an exact fractional age at your chosen reference date — completed years plus days since the last birthday divided by the days in the current year of age, with February 29 birthdays observed on February 28 in non-leap years. Blank entries are excluded and counted openly; invalid entries are flagged, never silently corrected or treated as zero. All computation happens client-side in your browser — the ages and dates you enter are not transmitted to or stored on any server.</p>
+<p><strong>Disclaimer:</strong> Results are descriptive statistics for the group as entered. They do not determine eligibility for school, sport, employment, benefits, or any regulated purpose — for those decisions, use each person's exact age on the governing cut-off date and confirm with the responsible authority.</p>
+</section>
+
+</article>
+</div>
+</section>
+</main>
+<script>
+'use strict';
+/* Average Age Calculator — inline engine.
+   Ages mode: arithmetic mean of entered ages (0–150, decimals allowed).
+   DOB mode: exact fractional age at one shared reference date.
+   Fractional age convention: completed years (anniversary method; a Feb 29
+   birthday is observed on Feb 28 in non-leap years, matching this site's age
+   engine) + days since the last anniversary / days in the current year span. */
+var AA_MAX_AGE = 150;
+function aaParseDate(s) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || '');
+  if (!m) return null;
+  var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+  if (d.getUTCFullYear() !== +m[1] || d.getUTCMonth() !== +m[2] - 1 || d.getUTCDate() !== +m[3]) return null;
+  return d;
+}
+function aaAnniversary(dob, year) {
+  var month = dob.getUTCMonth(), day = dob.getUTCDate();
+  var d = new Date(Date.UTC(year, month, day));
+  if (d.getUTCMonth() !== month) d = new Date(Date.UTC(year, month + 1, 0)); /* Feb 29 -> Feb 28 */
+  return d;
+}
+function aaFractionalAge(dob, ref) {
+  var years = ref.getUTCFullYear() - dob.getUTCFullYear();
+  var last = aaAnniversary(dob, dob.getUTCFullYear() + years);
+  if (last > ref) { years -= 1; last = aaAnniversary(dob, dob.getUTCFullYear() + years); }
+  var next = aaAnniversary(dob, dob.getUTCFullYear() + years + 1);
+  var span = (next - last) / 86400000;
+  var since = (ref - last) / 86400000;
+  return years + (span > 0 ? since / span : 0);
+}
+function aaStats(values) {
+  var sorted = values.slice().sort(function (a, b) { return a - b; });
+  var n = sorted.length;
+  var sum = values.reduce(function (a, b) { return a + b; }, 0);
+  var mid = Math.floor(n / 2);
+  var median = n % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+  return { n: n, sum: sum, mean: sum / n, median: median, min: sorted[0], max: sorted[n - 1], range: sorted[n - 1] - sorted[0], sorted: sorted };
+}
+function aaFmt2(x) { return (Math.round(x * 100) / 100).toFixed(2); }
+function aaFmtTrim(x) {
+  var r = Math.round(x * 100) / 100;
+  return (r % 1 === 0) ? String(r) : r.toFixed(2);
+}
+/* ---- DOM layer ---- */
+var aaMode = 'ages';
+function aaEl(id) { return document.getElementById(id); }
+function aaRow(kind, value) {
+  var row = document.createElement('div');
+  row.className = 'aa-row';
+  var label = document.createElement('label');
+  label.className = 'calc-field aa-row-field';
+  var span = document.createElement('span');
+  span.className = 'aa-row-label';
+  label.appendChild(span);
+  var input = document.createElement('input');
+  if (kind === 'ages') { input.type = 'number'; input.min = '0'; input.max = String(AA_MAX_AGE); input.step = 'any'; input.inputMode = 'decimal'; input.placeholder = 'e.g. 34'; }
+  else { input.type = 'date'; }
+  input.className = 'aa-input';
+  if (value !== undefined && value !== null) input.value = value;
+  label.appendChild(input);
+  row.appendChild(label);
+  var btn = document.createElement('button');
+  btn.type = 'button'; btn.className = 'aa-remove'; btn.textContent = 'Remove'; btn.setAttribute('aria-label', 'Remove this entry');
+  btn.addEventListener('click', function () { row.remove(); aaRenumber(); });
+  row.appendChild(btn);
+  return row;
+}
+function aaRenumber() {
+  ['ages', 'dob'].forEach(function (kind) {
+    var box = aaEl(kind === 'ages' ? 'aaAgeRows' : 'aaDobRows');
+    if (!box) return;
+    var rows = box.querySelectorAll('.aa-row');
+    rows.forEach(function (row, i) {
+      row.querySelector('.aa-row-label').textContent = (kind === 'ages' ? 'Age ' : 'Date of birth ') + (i + 1) + (kind === 'ages' ? ' (years)' : '');
+      row.querySelector('.aa-remove').style.visibility = rows.length > 1 ? 'visible' : 'hidden';
+    });
+  });
+}
+function aaAddRow(kind, value) {
+  var box = aaEl(kind === 'ages' ? 'aaAgeRows' : 'aaDobRows');
+  box.appendChild(aaRow(kind, value));
+  aaRenumber();
+}
+function aaReadEntries() {
+  var errors = [], values = [], labels = [], skipped = 0;
+  if (aaMode === 'ages') {
+    aaEl('aaAgeRows').querySelectorAll('.aa-input').forEach(function (input, i) {
+      var raw = input.value.trim();
+      if (raw === '') { skipped++; return; }
+      var v = Number(raw);
+      if (!isFinite(v)) { errors.push('Entry ' + (i + 1) + ': "' + raw + '" is not a number.'); return; }
+      if (v < 0 || v > AA_MAX_AGE) { errors.push('Entry ' + (i + 1) + ': enter an age between 0 and ' + AA_MAX_AGE + '.'); return; }
+      values.push(v); labels.push('Age ' + aaFmtTrim(v));
+    });
+  } else {
+    var refRaw = aaEl('aaRefDate').value;
+    var ref = aaParseDate(refRaw);
+    if (!ref) { errors.push('Choose a valid reference date.'); return { errors: errors, values: values, labels: labels, skipped: skipped, ref: null }; }
+    aaEl('aaDobRows').querySelectorAll('.aa-input').forEach(function (input, i) {
+      var raw = input.value.trim();
+      if (raw === '') { skipped++; return; }
+      var dob = aaParseDate(raw);
+      if (!dob) { errors.push('Entry ' + (i + 1) + ': enter a valid date of birth.'); return; }
+      if (dob > ref) { errors.push('Entry ' + (i + 1) + ': date of birth is after the reference date.'); return; }
+      var age = aaFractionalAge(dob, ref);
+      if (age > AA_MAX_AGE) { errors.push('Entry ' + (i + 1) + ': age at the reference date is over ' + AA_MAX_AGE + ' — check the date.'); return; }
+      values.push(age); labels.push(dob.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }));
+    });
+    return { errors: errors, values: values, labels: labels, skipped: skipped, ref: ref };
+  }
+  return { errors: errors, values: values, labels: labels, skipped: skipped, ref: null };
+}
+function aaDrawVisuals(values, labels, st, showMedian) {
+  var svg = aaEl('aaSvg'), tbody = aaEl('aaSortedBody');
+  if (!svg || !tbody) return;
+  var maxV = Math.max(st.max, 1);
+  var top = Math.ceil(maxV / 10) * 10 || 10;
+  var L = 44, R = 16, Tp = 26, B = 30, W = 800, H = 330;
+  function X(v) { return L + (v / top) * (W - L - R); }
+  var base = H - B;
+  var out = '';
+  for (var gx = 0; gx <= top; gx += (top > 100 ? 25 : 10)) {
+    out += '<line x1="' + X(gx) + '" y1="' + Tp + '" x2="' + X(gx) + '" y2="' + base + '" stroke="#e3eee7" stroke-width="1"/>';
+    out += '<text x="' + X(gx) + '" y="' + (H - 8) + '" font-size="12" fill="#628277" text-anchor="middle">' + gx + '</text>';
+  }
+  out += '<line x1="' + L + '" y1="' + base + '" x2="' + (W - R) + '" y2="' + base + '" stroke="#9db8ab" stroke-width="1.5"/>';
+  /* stack duplicate / near-duplicate dots upward */
+  var used = {};
+  var pairs = values.map(function (v, i) { return { v: v, label: labels[i] }; }).sort(function (a, b) { return a.v - b.v; });
+  pairs.forEach(function (p) {
+    var key = Math.round(X(p.v) / 14);
+    var lvl = used[key] || 0; used[key] = lvl + 1;
+    var cy = base - 16 - lvl * 24;
+    out += '<circle cx="' + X(p.v).toFixed(1) + '" cy="' + cy + '" r="8" fill="#0b6e4f" fill-opacity="0.85" stroke="#ffffff" stroke-width="2"><title>' + p.label + '</title></circle>';
+  });
+  out += '<line x1="' + X(st.mean) + '" y1="' + (Tp - 6) + '" x2="' + X(st.mean) + '" y2="' + base + '" stroke="#ff754d" stroke-width="2.5" stroke-dasharray="6 4"/>';
+  out += '<text x="' + X(st.mean) + '" y="' + (Tp - 12) + '" font-size="12.5" font-weight="700" fill="#d94f26" text-anchor="middle">Mean ' + aaFmt2(st.mean) + '</text>';
+  if (showMedian) {
+    out += '<line x1="' + X(st.median) + '" y1="' + (Tp - 6) + '" x2="' + X(st.median) + '" y2="' + base + '" stroke="#0e7c86" stroke-width="2.5" stroke-dasharray="2 4"/>';
+    out += '<text x="' + X(st.median) + '" y="' + (Tp - 12) + '" font-size="12.5" font-weight="700" fill="#0e7c86" text-anchor="middle">Median ' + aaFmt2(st.median) + '</text>';
+  }
+  svg.innerHTML = out;
+  var sortedPairs = pairs.slice();
+  tbody.innerHTML = sortedPairs.map(function (p, i) {
+    return '<tr><td>' + (i + 1) + '</td><td>' + p.label + '</td><td>' + aaFmt2(p.v) + ' years</td></tr>';
+  }).join('');
+}
+function aaRun() {
+  var errBox = aaEl('aaError');
+  var read = aaReadEntries();
+  if (read.errors.length) {
+    errBox.style.display = 'block';
+    errBox.innerHTML = read.errors.map(function (e) { return '<p>' + e + '</p>'; }).join('');
+    return;
+  }
+  if (!read.values.length) {
+    errBox.style.display = 'block';
+    errBox.innerHTML = '<p>Enter at least one ' + (aaMode === 'ages' ? 'age' : 'date of birth') + ' to calculate.</p>';
+    return;
+  }
+  errBox.style.display = 'none';
+  var st = aaStats(read.values);
+  var showMedian = aaEl('aaMedian').checked;
+  aaEl('aaResMain').textContent = aaFmt2(st.mean) + ' years';
+  aaEl('aaResSub').textContent = 'Mean age · ' + st.n + ' valid ' + (st.n === 1 ? 'entry' : 'entries') + (read.skipped ? ' · ' + read.skipped + ' blank ignored' : '');
+  aaEl('aaResYoung').textContent = aaFmtTrim(st.min) + ' years';
+  aaEl('aaResOld').textContent = aaFmtTrim(st.max) + ' years';
+  if (showMedian) { aaEl('aaResThirdLabel').textContent = 'Median age'; aaEl('aaResThird').textContent = aaFmt2(st.median) + ' years'; }
+  else { aaEl('aaResThirdLabel').textContent = 'People counted'; aaEl('aaResThird').textContent = String(st.n); }
+  aaEl('aaResRange').textContent = aaFmtTrim(st.range) + ' years';
+  var note;
+  if (aaMode === 'ages') note = 'Arithmetic mean of ' + st.n + ' entered ages · Total age ' + aaFmtTrim(st.sum) + ' years ÷ ' + st.n + ' people';
+  else {
+    var refStr = read.ref.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+    note = 'Exact fractional ages as of ' + refStr + ' · Mean of ' + st.n + ' ages · Total ' + aaFmt2(st.sum) + ' years ÷ ' + st.n + ' people';
+  }
+  aaEl('aaResNote').textContent = note;
+  aaEl('aaCopy').dataset.text = 'Average age: ' + aaFmt2(st.mean) + ' years (' + st.n + ' people · youngest ' + aaFmtTrim(st.min) + ' · oldest ' + aaFmtTrim(st.max) + (showMedian ? ' · median ' + aaFmt2(st.median) : '') + ' · range ' + aaFmtTrim(st.range) + ')';
+  aaDrawVisuals(read.values, read.labels, st, showMedian);
+}
+function aaSetMode(mode) {
+  aaMode = mode;
+  aaEl('aaModeAges').classList.toggle('aa-mode-active', mode === 'ages');
+  aaEl('aaModeDob').classList.toggle('aa-mode-active', mode === 'dob');
+  aaEl('aaAgesPanel').style.display = mode === 'ages' ? '' : 'none';
+  aaEl('aaDobPanel').style.display = mode === 'dob' ? '' : 'none';
+  aaEl('aaSortedTitle').textContent = mode === 'ages' ? 'Your Ages, Sorted' : 'Your Group, Sorted by Age';
+  aaRun();
+}
+function aaReset() {
+  aaEl('aaAgeRows').innerHTML = ''; aaEl('aaDobRows').innerHTML = '';
+  [18, 24, 31, 42, 55].forEach(function (v) { aaAddRow('ages', v); });
+  ['1990-03-15', '2001-07-02', '1985-11-28'].forEach(function (v) { aaAddRow('dob', v); });
+  aaEl('aaMedian').checked = true;
+  aaSetToday();
+  aaSetMode('ages');
+}
+function aaSetToday() {
+  var t = new Date();
+  var iso = t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0');
+  aaEl('aaRefDate').value = iso;
+}
+function aaInit() {
+  aaReset();
+  aaEl('aaModeAges').addEventListener('click', function () { aaSetMode('ages'); });
+  aaEl('aaModeDob').addEventListener('click', function () { aaSetMode('dob'); });
+  aaEl('aaAddAge').addEventListener('click', function () { aaAddRow('ages'); });
+  aaEl('aaAddDob').addEventListener('click', function () { aaAddRow('dob'); });
+  aaEl('aaCalc').addEventListener('click', aaRun);
+  aaEl('aaResetBtn').addEventListener('click', aaReset);
+  aaEl('aaMedian').addEventListener('change', aaRun);
+  aaEl('aaRefDate').addEventListener('change', aaRun);
+  aaEl('aaCopy').addEventListener('click', function () {
+    var text = aaEl('aaCopy').dataset.text || '';
+    var btn = aaEl('aaCopy');
+    function done() { btn.textContent = 'Copied ✓'; setTimeout(function () { btn.textContent = 'Copy result'; }, 1600); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, done);
+    else done();
+  });
+}
+if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded', aaInit);
+if (typeof window !== 'undefined') window.__AA = { fractionalAge: aaFractionalAge, stats: aaStats, parseDate: aaParseDate };
+
+</script>
+<footer class="footer"><div class="container"><div class="footer-grid footer-grid-rich"><div class="footer-brand-panel"><a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a><p>Practical, verified calculators and guides for age, dates, milestones and planning. No registration required.</p><a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a></div><div><h3>Calculators</h3><a href="../../">Exact Age</a><a href="../../tools/chronological-age-calculator/">Chronological Age</a><a href="../../tools/age-difference-calculator/">Age Difference</a><a href="../../categories/">All categories</a></div><div class="footer-guides"><h3>Articles &amp; Guides</h3><a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a><a href="../../articles/ymd-semicolon-format-guide/">Y;M;D format</a><a href="../../articles/corrected-age-premature-babies/">Corrected age guide</a><a class="footer-guides-all" href="../../articles/">Browse all guides →</a></div><div><h3>Explore</h3><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><a href="../../about/">About</a><a href="../../disclaimer/">Disclaimer</a></div><div><h3>Important</h3><a href="../../privacy/">Privacy</a><a href="#" onclick="if(window.googlefc&&googlefc.showRevocationMessage){googlefc.showRevocationMessage();}return false;">Privacy choices</a><a href="../../terms/">Terms</a><a href="../../contact/">Contact</a><a href="../../sitemap.xml">Sitemap</a></div></div><div class="copyright"><span>© 2026 Age Calculator Lab.</span><span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span></div></div></footer><script src="../../assets/app.js?v=20261022a"></script></body></html></body></html>
