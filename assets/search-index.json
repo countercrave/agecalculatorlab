@@ -1818,5 +1818,10 @@
     "n": "Average Age Calculator",
     "u": "/tools/average-age-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Wedding Anniversary Calculator",
+    "u": "/tools/wedding-anniversary-calculator/",
+    "t": "Calculator"
   }
 ]
