@@ -1778,5 +1778,10 @@
     "n": "Days Sober Calculator",
     "u": "/tools/days-sober-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Ovulation Calculator",
+    "u": "/tools/ovulation-calculator/",
+    "t": "Calculator"
   }
 ]
