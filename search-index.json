@@ -1773,5 +1773,10 @@
     "n": "Wedding Anniversary Calculator",
     "u": "/tools/wedding-anniversary-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Days Sober Calculator",
+    "u": "/tools/days-sober-calculator/",
+    "t": "Calculator"
   }
 ]
