@@ -1758,5 +1758,15 @@
     "n": "Zodiac Sign Calculator",
     "u": "/tools/zodiac-sign-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Life Expectancy Calculator",
+    "u": "/tools/life-expectancy-calculator/",
+    "t": "Calculator"
+  },
+  {
+    "n": "Average Age Calculator",
+    "u": "/tools/average-age-calculator/",
+    "t": "Calculator"
   }
 ]
