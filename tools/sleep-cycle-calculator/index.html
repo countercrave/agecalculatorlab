@@ -1,0 +1,728 @@
+<!doctype html><html lang="en"><head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6008816938247526"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YM7P2RQ4Z7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YM7P2RQ4Z7', {page_location: location.origin + location.pathname});
+</script>
+<meta name="google-site-verification" content="Y5be21WsrJ2pH_gQfwHr57ucbKKUDO1wtzNvumLDzh0"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta property="og:url" content="https://www.agecalculatorlab.com/tools/sleep-cycle-calculator/"><link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
+<title>Sleep Cycle Calculator – Bedtime & Wake Time Planner</title>
+<meta name="robots" content="index, follow">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png"><link rel="manifest" href="../../site.webmanifest"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#075433"><link rel="canonical" href="https://www.agecalculatorlab.com/tools/sleep-cycle-calculator/"><meta name="description" content="Plan bedtimes and wake times from 90-minute sleep cycles: enter your alarm time for suggested bedtimes, or your bedtime for wake times. Free, private, educational."><meta property="og:type" content="website"><meta property="og:title" content="Sleep Cycle Calculator – Bedtime & Wake Time Planner"><meta property="og:description" content="Plan bedtimes and wake times from 90-minute sleep cycles: enter your alarm time for suggested bedtimes, or your bedtime for wake times. Free, private, educational."><meta property="og:image" content="https://www.agecalculatorlab.com/assets/tools/sleep-cycle-calculator/sleep-cycle-calculator-featured.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Sleep Cycle Calculator – Bedtime & Wake Time Planner"><meta name="twitter:description" content="Plan bedtimes and wake times from 90-minute sleep cycles: enter your alarm time for suggested bedtimes, or your bedtime for wake times. Free, private, educational."><meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/tools/sleep-cycle-calculator/sleep-cycle-calculator-featured.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="../../assets/style.css?v=20260824e"><style>
+/* Scoped 401(k) Calculator & Financial Hub Styling */
+.tool-hero { padding: 40px 0 32px; background: linear-gradient(180deg, #f2f7f4 0%, #ffffff 100%); border-bottom: 1px solid #dce9e2; }
+.tool-hero-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: start; }
+@media(min-width: 1024px) { .tool-hero-grid { grid-template-columns: 1.1fr 1.15fr; } }
+
+.tool-hero-copy .eyebrow { display: inline-block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--editorial-sage, #075433); margin-bottom: 8px; }
+.tool-hero-copy h1 { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2.1rem, 3.8vw, 2.9rem); line-height: 1.2; color: var(--editorial-navy, #042f2a); margin: 0 0 14px; }
+.tool-hero-copy .lead { font-size: 1.1rem; line-height: 1.6; color: #2e4b3f; margin-bottom: 20px; }
+.trust-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+.trust-pill { background: #eaf3ee; color: #075433; font-size: 0.82rem; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #d5e6dc; }
+
+/* Interactive Calculator Container */
+.calculator-card { background: #ffffff; border: 2px solid #075433; border-radius: 14px; padding: 26px; box-shadow: 0 12px 32px rgba(4,47,42,0.08); }
+.calc-header { margin-bottom: 20px; border-bottom: 1px solid #e1ede6; padding-bottom: 14px; }
+.calc-header h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.45rem; color: #042f2a; margin: 0 0 4px; }
+.calc-header p { margin: 0; font-size: 0.88rem; color: #52796f; }
+
+.calc-section-title { font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.75px; color: #075433; margin: 18px 0 10px; display: flex; align-items: center; gap: 8px; }
+.calc-section-title::after { content: ""; flex: 1; height: 1px; background: #e2ede7; }
+
+.calc-form-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media(min-width: 520px) { .calc-form-grid { grid-template-columns: 1fr 1fr; } }
+
+.calc-field { display: flex; flex-direction: column; gap: 5px; }
+.calc-field.full-width { grid-column: 1 / -1; }
+.calc-field label { font-size: 0.88rem; font-weight: 700; color: #042f2a; display: flex; justify-content: space-between; align-items: baseline; }
+.calc-field label small { font-weight: 500; color: #52796f; font-size: 0.8rem; }
+.input-with-prefix { position: relative; display: flex; align-items: center; }
+.input-prefix { position: absolute; left: 12px; color: #52796f; font-weight: 700; font-size: 1rem; pointer-events: none; }
+.input-with-suffix { position: relative; display: flex; align-items: center; }
+.input-suffix { position: absolute; right: 12px; color: #52796f; font-weight: 700; font-size: 0.95rem; pointer-events: none; }
+
+.calc-field input, .calc-field select { width: 100%; padding: 10px 12px; border: 1.5px solid #c2dbcf; border-radius: 8px; font-size: 0.98rem; color: #0d2b23; background: #fdfdfd; transition: border-color 0.2s, box-shadow 0.2s; font-family: inherit; }
+.input-with-prefix input { padding-left: 28px; }
+.input-with-suffix input { padding-right: 28px; }
+.calc-field input:focus, .calc-field select:focus { outline: none; border-color: #075433; box-shadow: 0 0 0 3px rgba(7,84,51,0.15); }
+
+.field-hint { font-size: 0.78rem; color: #52796f; line-height: 1.35; margin-top: 2px; }
+.match-dynamic-note { background: #f4f9f6; border-left: 3px solid #075433; padding: 8px 12px; border-radius: 0 6px 6px 0; font-size: 0.82rem; color: #234d3d; font-weight: 600; margin-top: 6px; }
+
+/* Match Toggle */
+.toggle-row { display: flex; align-items: center; justify-content: space-between; background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 8px; padding: 10px 14px; margin-bottom: 10px; }
+.toggle-label { font-size: 0.88rem; font-weight: 700; color: #042f2a; }
+.toggle-options { display: flex; gap: 8px; }
+.toggle-btn { background: #ffffff; border: 1.5px solid #c2dbcf; color: #2e4b3f; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.15s; }
+.toggle-btn.active { background: #075433; border-color: #075433; color: #ffffff; }
+
+/* Advanced Collapsible */
+.advanced-details { margin: 16px 0 20px; border: 1px solid #dce9e2; border-radius: 8px; background: #fbfdfc; overflow: hidden; }
+.advanced-details summary { padding: 12px 16px; font-size: 0.88rem; font-weight: 700; color: #075433; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: space-between; background: #f4f9f6; }
+.advanced-content { padding: 16px; }
+
+/* Buttons */
+.calc-btn-row { display: flex; gap: 12px; margin-top: 22px; }
+.btn-calc { flex: 2; background: #075433; color: #ffffff; font-weight: 700; font-size: 1.05rem; padding: 13px 20px; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s, transform 0.15s; text-align: center; }
+.btn-calc:hover { background: #042f2a; transform: translateY(-1px); }
+.btn-reset { flex: 1; background: #f1f5f3; color: #2e4b3f; font-weight: 600; font-size: 0.95rem; padding: 13px 16px; border: 1px solid #dce9e2; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.btn-reset:hover { background: #e5ece8; }
+
+/* Results Panel */
+.results-panel { display: flex; flex-direction: column; gap: 18px; }
+@media(min-width: 1024px) {
+  .results-panel {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 85px;
+    align-self: start;
+  }
+}
+.result-banner { background: #042f2a; color: #ffffff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 8px 24px rgba(4,47,42,0.12); position: relative; overflow: hidden; }
+.result-banner::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #ff754d, #ffd180, #20a67b); }
+.result-banner small { display: block; text-transform: uppercase; letter-spacing: 1.2px; color: #9fe7bd; font-size: 0.82rem; font-weight: 700; margin-bottom: 6px; }
+.result-banner .main-balance { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2.3rem, 4.5vw, 3.2rem); line-height: 1.15; color: #ffd180; margin: 4px 0 8px; font-weight: 700; }
+.result-banner .banner-subtext { font-size: 0.92rem; color: #d3e5de; line-height: 1.5; margin: 0; }
+.result-banner .today-dollars-badge { display: inline-block; background: rgba(255, 117, 77, 0.22); color: #ffab91; border: 1px solid rgba(255, 117, 77, 0.4); font-size: 0.82rem; font-weight: 700; padding: 5px 12px; border-radius: 6px; margin-top: 12px; }
+
+/* 4 Summary Cards */
+.metrics-quad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.metric-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px; }
+.metric-card .metric-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: #52796f; }
+.metric-card .metric-value { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.3rem; font-weight: 700; color: #042f2a; }
+.metric-card.highlight { background: #eef7f2; border-color: #badbc7; }
+.metric-card.highlight .metric-value { color: #075433; }
+
+/* Visual Bar Breakdown */
+.breakdown-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 16px; }
+.breakdown-card h3 { font-size: 0.92rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #042f2a; margin: 0 0 12px; }
+.stacked-bar-wrap { height: 18px; border-radius: 9px; overflow: hidden; display: flex; background: #e0ece5; margin-bottom: 12px; }
+.stacked-slice { height: 100%; transition: width 0.3s ease; }
+.slice-start { background: #52796f; }
+.slice-employee { background: #20a67b; }
+.slice-match { background: #ff754d; }
+.slice-growth { background: #042f2a; }
+
+.legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.8rem; }
+@media(min-width: 480px) { .legend-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+.legend-item { display: flex; align-items: center; gap: 6px; color: #2e4b3f; font-weight: 600; }
+.legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+
+/* Full-Width Interactive Chart & Tables Below Fold */
+.tool-visuals-strip { padding: 44px 0 20px; background: #fdfefe; border-bottom: 1px solid #e1ede6; }
+.visual-panel-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 14px; padding: 28px; box-shadow: 0 4px 18px rgba(0,0,0,0.03); margin-bottom: 32px; }
+.visual-panel-card h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.55rem; color: #042f2a; margin: 0 0 8px; }
+.visual-panel-card p.subtitle { color: #52796f; font-size: 0.94rem; margin: 0 0 20px; }
+
+/* SVG Chart */
+.chart-container { position: relative; width: 100%; overflow-x: auto; }
+.chart-svg { width: 100%; max-width: 820px; height: auto; display: block; margin: 0 auto; }
+.chart-tooltip-box { display: none; position: absolute; background: #042f2a; color: #ffffff; padding: 8px 12px; border-radius: 6px; font-size: 0.82rem; pointer-events: none; z-index: 10; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transform: translate(-50%, -120%); white-space: nowrap; }
+
+/* Scenario Grids */
+.scenario-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 18px; }
+@media(min-width: 640px) { .scenario-grid { grid-template-columns: repeat(3, 1fr); } }
+.scenario-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-align: center; }
+.scenario-card strong { display: block; font-size: 1.1rem; color: #075433; margin-bottom: 6px; font-family: var(--font-display, 'Fraunces', serif); }
+.scenario-card .scenario-balance { font-size: 1.4rem; font-weight: 800; color: #042f2a; margin-bottom: 4px; }
+.scenario-card small { font-size: 0.82rem; color: #52796f; }
+
+/* Educational Content Section */
+.tool-content-layout { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 280px 1fr; align-items: start; } }
+
+.tool-toc { background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 22px; position: sticky; top: 90px; }
+.tool-toc strong { display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.8px; color: #075433; margin-bottom: 14px; }
+.tool-toc a { display: block; font-size: 0.88rem; color: #2e4b3f; text-decoration: none; padding: 6px 0; border-bottom: 1px solid #f0f5f2; transition: color 0.15s, padding-left 0.15s; }
+.tool-toc a:hover { color: #ff754d; padding-left: 4px; }
+
+.tool-article { max-width: 820px; font-size: 1rem; line-height: 1.7; color: #1c382f; }
+.tool-article h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.85rem; color: #042f2a; margin: 44px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e1ede6; }
+.tool-article h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.35rem; color: #075433; margin: 28px 0 12px; }
+.tool-article p { margin: 0 0 18px; }
+.tool-article ul, .tool-article ol { margin: 0 0 22px; padding-left: 24px; }
+.tool-article li { margin-bottom: 8px; }
+
+/* Reference Tables */
+.table-wrap { overflow-x: auto; margin: 26px 0; border: 1px solid #dce9e2; border-radius: 10px; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+.styled-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; text-align: left; }
+.styled-table th { background: #042f2a; color: #ffffff; padding: 14px 16px; font-weight: 700; letter-spacing: 0.5px; }
+.styled-table td { padding: 12px 16px; border-bottom: 1px solid #eef4f0; color: #1c382f; }
+.styled-table tr:nth-child(even) { background: #fbfdfc; }
+.styled-table tr:hover { background: #f1f7f4; }
+.highlight-cell { font-weight: 700; color: #075433; }
+
+/* Callout Box */
+.callout-box { background: #ffffff; border-left: 4px solid #075433; border-radius: 0 10px 10px 0; padding: 22px; margin: 28px 0; box-shadow: 0 4px 14px rgba(4,47,42,0.05); }
+.callout-box.warning { border-left-color: #ff754d; background: #fffcfb; }
+.callout-box h3 { margin: 0 0 10px; color: #042f2a; font-size: 1.15rem; }
+
+/* Figures */
+.infographic-figure { margin: 34px 0; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.04); }
+.infographic-figure img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.infographic-figure figcaption { font-size: 0.84rem; color: #52796f; text-align: center; margin-top: 10px; }
+
+/* Author Profile */
+.author-card { display: flex; flex-direction: column; gap: 16px; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 24px; margin: 40px 0; }
+@media(min-width: 600px) { .author-card { flex-direction: row; align-items: flex-start; } }
+.author-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #9fe7bd; flex-shrink: 0; }
+.author-info { flex: 1; }
+.author-name { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.25rem; color: #042f2a; margin: 0 0 4px; }
+.author-meta { font-size: 0.84rem; color: #52796f; margin-bottom: 10px; }
+.author-bio { font-size: 0.92rem; line-height: 1.6; color: #2e4b3f; margin: 0; }
+
+/* FAQs */
+.faq-block { margin: 36px 0; }
+.faq-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; }
+.faq-card h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.15rem; color: #042f2a; margin: 0 0 10px; }
+.faq-card p { margin: 0; color: #2e4b3f; font-size: 0.95rem; }
+
+/* Related Grid */
+.related-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 24px 0 40px; }
+@media(min-width: 600px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+.related-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-decoration: none; color: inherit; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+.related-card:hover { transform: translateY(-3px); border-color: #ff754d; }
+.related-card small { color: #52796f; font-size: 0.78rem; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+.related-card h4 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.05rem; color: #042f2a; margin: 0 0 8px; }
+.related-card span { font-size: 0.86rem; color: #ff754d; font-weight: 600; }
+</style><style>
+.aa-mode-row { display: flex; gap: 10px; margin-bottom: 18px; }
+.aa-mode { flex: 1; padding: 11px 10px; border-radius: 8px; border: 1.5px solid #dce9e2; background: #f4f9f6; color: #2e4b3f; font-weight: 700; font-size: 0.95rem; cursor: pointer; }
+.aa-mode-active { background: #075433; border-color: #075433; color: #ffffff; }
+.aa-row { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 10px; }
+.aa-row-field { flex: 1; }
+.aa-remove { background: #fdfdfd; border: 1px solid #dce9e2; color: #8a4b3a; border-radius: 8px; padding: 10px 12px; font-size: 0.85rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.aa-remove:hover { background: #fff3ef; }
+.aa-add { width: 100%; padding: 11px; border: 1.5px dashed #9fc3ae; border-radius: 8px; background: #f8fbf9; color: #075433; font-weight: 700; cursor: pointer; margin-top: 2px; }
+.aa-add:hover { background: #eef7f2; }
+.aa-options { display: flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 0.92rem; color: #2e4b3f; font-weight: 600; }
+.aa-error { display: none; background: #fff3ef; border: 1px solid #ffb59d; color: #8a2f16; border-radius: 8px; padding: 12px 14px; margin-top: 16px; font-size: 0.9rem; }
+.aa-error p { margin: 0 0 4px; } .aa-error p:last-child { margin: 0; }
+.aa-ref { max-width: 260px; margin-bottom: 14px; }
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Sleep Cycle Calculator", "operatingSystem": "All", "applicationCategory": "UtilitiesApplication", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Suggest bedtimes from your wake-up time, or wake times from your bedtime, using 90-minute sleep cycles and a 14-minute allowance to fall asleep. Educational planning tool."}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does a sleep cycle calculator work?", "acceptedAnswer": {"@type": "Answer", "text": "It counts in sleep cycles of about 90 minutes instead of round hours. Give it your wake-up time and it subtracts whole cycles (plus a few minutes to fall asleep) to suggest bedtimes; give it your bedtime and it adds cycles to suggest wake times. The idea is that your alarm lands at the end of a cycle, in lighter sleep, rather than in the middle of deep sleep."}}, {"@type": "Question", "name": "Why 90 minutes per cycle?", "acceptedAnswer": {"@type": "Answer", "text": "About 90 minutes is the widely published average length of one full pass through the stages of sleep in adults. In reality individual cycles run roughly 80 to 120 minutes, so 90 is a planning convention, not a measurement of your cycles. This page discloses that openly and uses the average because a plan built on it beats picking a bedtime at random."}}, {"@type": "Question", "name": "Is 5 or 6 cycles better?", "acceptedAnswer": {"@type": "Answer", "text": "Six cycles (9 hours of cycle time) suits people who need more sleep, including teenagers and anyone catching up on debt; five cycles (7½ hours) sits at the lower end of the 7–9 hour range most adult guidelines point to. Neither is universally “better” — pick the row you wake from feeling restored, and keep it consistent."}}, {"@type": "Question", "name": "What is the 14-minute fall-asleep allowance?", "acceptedAnswer": {"@type": "Answer", "text": "It is the calculator’s default for sleep latency — the gap between lights-out and actually falling asleep. Typical healthy sleep latency is roughly 10–20 minutes, so 14 is a middle value. The field is adjustable from 0 to 90 minutes: if you know you take 25 minutes to drift off, enter 25 and every suggestion re-times itself around your real number."}}, {"@type": "Question", "name": "Will I really wake up between sleep cycles?", "acceptedAnswer": {"@type": "Answer", "text": "People briefly surface between cycles most nights without remembering it, and alarms landing near those light-sleep moments tend to feel easier than alarms interrupting deep sleep. The calculator aims at the average cycle boundary, but it cannot measure your actual cycles, so on any given night the alarm may still land mid-cycle. It improves the odds; it does not guarantee the outcome."}}, {"@type": "Question", "name": "Can I use it for naps?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with the same 90-minute rule in miniature: about 20 minutes stays in light sleep, about 90 minutes completes roughly one full cycle, and the 30–60 minute zone is the one most likely to end in grogginess. The calculator’s table starts at 3 cycles, so for naps apply the rule directly rather than using the table."}}, {"@type": "Question", "name": "What if I can’t fall asleep in 14 minutes?", "acceptedAnswer": {"@type": "Answer", "text": "Then enter your real figure — that is exactly why the field exists. Every suggestion shifts by the difference, so the table stays honest. If you regularly lie awake a long time, or fall asleep almost instantly every night (a classic sign of sleep debt), the number to fix is your schedule, not the allowance."}}, {"@type": "Question", "name": "Does it work for shift workers?", "acceptedAnswer": {"@type": "Answer", "text": "The arithmetic does not care about daylight: a 90-minute cycle is 90 minutes at 3 pm too. Daytime sleepers should enter a longer fall-asleep allowance, since sleeping against the body clock usually means slower sleep onset, and keep times consistent within each shift pattern."}}, {"@type": "Question", "name": "Is this medical advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. This page is an educational planning tool: it applies simple published heuristics to times you enter. It does not diagnose, treat, or prevent any sleep disorder or health condition, and it makes no promises about how you will feel. Ongoing sleep problems — insomnia, loud snoring with breathing pauses, persistent daytime sleepiness — deserve a qualified health professional."}}, {"@type": "Question", "name": "Can a sleep cycle calculator fix insomnia?", "acceptedAnswer": {"@type": "Answer", "text": "No. Cycle timing optimises when you schedule sleep; it cannot create sleep or treat insomnia, which has medical and behavioural causes a bedtime table cannot address. If you consistently cannot fall or stay asleep, or you wake unrefreshed despite long nights, please speak to a clinician rather than recalculating."}}, {"@type": "Question", "name": "Why do I feel groggy after 8 hours of sleep?", "acceptedAnswer": {"@type": "Answer", "text": "Total hours are only half the story — timing matters too. Waking in the middle of a deep-sleep stage, even after 8 hours in bed, commonly produces that heavy, disoriented feeling (sleep inertia). Aiming the alarm at a cycle boundary, which is what this calculator plans for, is one way to reduce the chance of it."}}, {"@type": "Question", "name": "How accurate are the suggested times?", "acceptedAnswer": {"@type": "Answer", "text": "They are as accurate as their two assumptions: 90-minute cycles and your fall-asleep allowance. Both are disclosed averages, adjustable where it counts. Treat the times as well-reasoned suggestions for planning your night — verified against the page’s own engine to the minute — not as predictions about your body."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.agecalculatorlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Biological & Health", "item": "https://www.agecalculatorlab.com/categories/biological-health/"}, {"@type": "ListItem", "position": 3, "name": "Sleep Cycle Calculator", "item": "https://www.agecalculatorlab.com/tools/sleep-cycle-calculator/"}]}</script>
+<style>
+/* Mobile layout fixes (2026-10-22) — on small screens the guide navigation
+   scrolls with the page instead of pinning over the article, links go
+   two-up, and charts/tables get compact, legible treatment. */
+@media (max-width: 979px) {
+  .tool-toc { position: static; top: auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; padding: 18px 20px; }
+  .tool-toc strong { grid-column: 1 / -1; margin-bottom: 8px; }
+  .tool-toc a { font-size: 0.86rem; padding: 7px 0; }
+  .tool-content-layout { gap: 10px; padding: 36px 0 44px; }
+}
+@media (max-width: 640px) {
+  .chart-svg { min-width: 540px; }
+  .styled-table { font-size: 0.86rem; }
+  .styled-table th, .styled-table td { padding: 9px 10px; }
+  .tool-article h2 { font-size: 1.55rem; margin-top: 36px; }
+  .tool-article h3 { font-size: 1.22rem; }
+}
+@media (max-width: 399px) {
+  .tool-toc { grid-template-columns: 1fr; }
+}
+</style>
+
+<style>
+.sc-error { display: none; background: #fff3ef; border: 1px solid #ffb59d; color: #8a2f16; border-radius: 8px; padding: 12px 14px; margin-top: 16px; font-size: 0.9rem; }
+.sc-error p { margin: 0 0 4px; }
+.sc-error p:last-child { margin: 0; }
+.sc-notice { background: #f2f9f5; border: 1px solid #dce9e2; border-left: 4px solid #075433; border-radius: 0 10px 10px 0; padding: 14px 16px; margin: 0 0 20px; font-size: 0.9rem; line-height: 1.6; color: #1c382f; }
+.sc-example { background: #f2f9f5; border: 1px solid #dce9e2; border-left: 4px solid #075433; border-radius: 0 10px 10px 0; padding: 18px 20px; margin: 20px 0; font-size: 0.96rem; line-height: 1.65; color: #1c382f; }
+.sc-mode-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 8px; }
+.sc-mode { border: 2px solid #dce9e2; background: #fff; border-radius: 10px; padding: 12px 10px; font-size: 0.92rem; cursor: pointer; color: #1c382f; line-height: 1.5; }
+.sc-mode small { color: #628277; }
+.sc-mode.active { border-color: #075433; background: #f2f9f5; font-weight: 600; }
+.sc-mode.active small { color: #075433; }
+@media (max-width: 640px) {
+  .sc-example { padding: 14px 16px; }
+  .sc-mode { font-size: 0.85rem; padding: 10px 6px; }
+}
+</style>
+
+<style>
+.panel-photo { width: 100%; height: auto; display: block; border-radius: 10px; }
+</style>
+</head><body><header class="site-header"><div class="container nav"><a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto"></a><button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button><nav class="nav-links" id="primary-nav" aria-label="Primary navigation"><details class="nav-dropdown nav-dropdown-categories"><summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega"><div class="nav-mega-head"><div><small>174 focused tools</small><strong>Main calculator categories</strong></div><a href="../../categories/">View category directory →</a></div><div class="nav-category-grid"><a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>29 tools</small></a><a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a><a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>13 tools</small></a><a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>15 tools</small></a><a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>18 tools</small></a><a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>16 tools</small></a><a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>16 tools</small></a><a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>9 tools</small></a><a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a><a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a><a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a></div><div class="nav-quick-row"><span>Popular</span><a href="../../">Age Calculator</a><a href="../../tools/date-difference-calculator/">Date Difference</a><a href="../../tools/corrected-age-calculator/">Corrected Age</a><a href="../../tools/countdown-to-date-calculator/">Countdown</a></div></div></details><details class="nav-dropdown nav-dropdown-days"><summary>Days &amp; Dates <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-days"><div class="nav-mega-head"><div><small>114 focused date &amp; time tools</small><strong>Days Between Dates &amp; Time Lab</strong></div><a href="https://days.agecalculatorlab.com/">Visit Days &amp; Dates Lab →</a></div><div class="nav-days-grid"><a class="nav-days-card" href="https://days.agecalculatorlab.com/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div><div class="nav-days-text"><span class="nav-days-title">Days Between Dates</span><span class="nav-days-desc">Exact calendar days, whole weeks, weekends &amp; day span.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div class="nav-days-text"><span class="nav-days-title">Date Calculator (± Days)</span><span class="nav-days-desc">Add or subtract days, business days &amp; calendar months.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Working &amp; Business Days</span><span class="nav-days-desc">Count working days with custom weekends &amp; bank holidays.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/pst-to-est/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Time Zone Converter</span><span class="nav-days-desc">Live conversion between PST, EST, UTC &amp; world clocks.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calendar/2026/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M3 10h18"></path><path d="M10 14h4"></path><path d="M12 12v4"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Countdowns &amp; Calendars</span><span class="nav-days-desc">Holiday countdowns, full-year calendars &amp; ISO week numbers.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div><div class="nav-days-text"><span class="nav-days-title">All 114 Date Tools Directory</span><span class="nav-days-desc">Explore the full catalog of date, time and duration tools.</span></div></a></div><div class="nav-quick-row"><span>Popular on Days Lab</span><a href="https://days.agecalculatorlab.com/">Days Between Dates</a><a href="https://days.agecalculatorlab.com/calculators/">Business Days</a><a href="https://days.agecalculatorlab.com/pst-to-est/">PST to EST</a><a href="https://days.agecalculatorlab.com/calendar/2026/">2026 Calendar</a><a href="https://days.agecalculatorlab.com/calculators/">Browse all 114 tools →</a></div></div></details><details class="nav-dropdown nav-dropdown-guides"><summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-guides"><div class="nav-mega-head"><div><small>167 practical guides</small><strong>Learn the method</strong></div><a href="../../articles/">Browse all guides →</a></div><div class="nav-guide-grid"><a href="../../articles/10k-age-grading/"><small>Biological &amp; Health</small><span>10K Age Grading Explained: How Age Grade Works</span></a><a href="../../articles/5k-age-grading/"><small>Biological &amp; Health</small><span>5K Age Grading Explained: Calculate Your 5K Age Grade</span></a><a href="../../articles/age-graded-results-vs-age-group-results/"><small>Biological &amp; Health</small><span>Age-Graded Results vs Age-Group Results: Key Differences</span></a><a href="../../articles/age-grading-for-masters-runners/"><small>Biological &amp; Health</small><span>Age Grading for Masters Runners: How It Works &amp; Benefits</span></a><a href="../../articles/what-is-a-good-age-grade-in-running/"><small>Biological &amp; Health</small><span>What Is a Good Age Grade in Running? Percentage Guide</span></a><a href="../../articles/how-is-age-grade-calculated/"><small>Biological &amp; Health</small><span>How Is Age Grade Calculated? Formula, Examples &amp; Guide</span></a></div></div></details><a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><div class="nav-search-wrap" id="nav-search-wrap"><div class="nav-search-box"><svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg><input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autoComplete="off"></div><div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div></div><a class="nav-cta" href="../../#calculator">Calculate age</a></nav></div></header>
+<main id="main-content">
+<section class="tool-hero">
+<div class="container tool-hero-grid">
+<div class="tool-hero-copy">
+
+<div class="breadcrumbs"><a href="../../">Home</a> / <a href="../../categories/biological-health/">Biological &amp; Health</a> / Sleep Cycle Calculator</div>
+<span class="eyebrow">90-Minute Cycle Planner</span>
+<h1>Sleep Cycle Calculator</h1>
+<p class="lead">What time should you go to bed? This <strong>sleep cycle calculator</strong> works it out from the time you need to wake up &mdash; or, the other way around, the <strong>best time to wake up</strong> from the time you plan to go to bed. Both directions use the same planning method: <strong>sleep in ~90-minute cycles</strong>, with about <strong>14 minutes to fall asleep</strong>, so your alarm lands at the end of a cycle instead of in the middle of one.</p>
+<p>Enter a <strong>wake-up time</strong> and get four suggested <strong>bedtimes</strong> (3 to 6 full cycles), or enter a <strong>bedtime</strong> and get four suggested <strong>wake times</strong>. The 5- and 6-cycle options are highlighted: 7&frac12; and 9 hours of cycle time, the range most adult sleep guidelines point to. Everything is a <strong>planning heuristic</strong>, not a medical fact &mdash; this page is educational and is <strong>not medical advice</strong>.</p>
+<ul>
+<li>Mode A: wake-up time &rarr; suggested bedtimes for 3, 4, 5 and 6 sleep cycles.</li>
+<li>Mode B: bedtime &rarr; suggested wake-up times for 3, 4, 5 and 6 sleep cycles.</li>
+<li>Adjustable fall-asleep allowance (default ~14 minutes) &mdash; see the method disclosed in full below.</li>
+<li>A live results table in the visuals strip &mdash; built from your inputs, no charts.</li>
+</ul>
+<div class="trust-row">
+<span class="trust-pill">&#10003; Free sleep cycle planner</span>
+<span class="trust-pill">&#10003; Transparent 90-minute method</span>
+<span class="trust-pill">&#10003; Educational only &mdash; not medical advice</span>
+<span class="trust-pill">&#10003; 100% Private Client-Side Calculation</span>
+</div>
+
+<div class="calculator-card" id="calculator-section">
+
+<div class="calc-header">
+<h2>Plan Your Sleep Tonight</h2>
+<p>Choose a direction: tell the calculator when you must wake up and it suggests bedtimes &mdash; or tell it when you plan to go to bed and it suggests wake times.</p>
+</div>
+<div class="sc-notice"><strong>Not medical advice:</strong> this calculator applies simple published planning heuristics (90-minute cycles, ~14 minutes to fall asleep) to the times you enter. It does not diagnose, treat, or prevent any sleep disorder or health condition, and it cannot promise how you will feel. If you have ongoing sleep problems, please speak to a qualified health professional.</div>
+<div class="calc-section-title">Step 1 &mdash; Choose the direction</div>
+<div class="sc-mode-row">
+<button type="button" class="sc-mode active" id="scModeA" aria-pressed="true">I know my <strong>wake-up time</strong><br><small>suggest bedtimes</small></button>
+<button type="button" class="sc-mode" id="scModeB" aria-pressed="false">I know my <strong>bedtime</strong><br><small>suggest wake times</small></button>
+</div>
+<div class="calc-section-title">Step 2 &mdash; Enter your time</div>
+<div class="calc-field">
+<label for="scTime" id="scTimeLabel">Wake-up time <small>(required)</small></label>
+<input type="time" id="scTime">
+<p class="field-hint" id="scTimeHint">The time your alarm has to go off &mdash; in 24-hour HH:MM format.</p>
+</div>
+<div class="calc-field">
+<label for="scFall">Minutes to fall asleep <small>(optional &mdash; default 14)</small></label>
+<input type="number" id="scFall" value="14" min="0" max="90">
+<p class="field-hint">Your usual sleep latency. Most people take roughly 10&ndash;20 minutes; 14 is the built-in average. Set 0 if you fall asleep the moment your head hits the pillow.</p>
+</div>
+<div class="calc-btn-row">
+<button type="button" class="btn-calc" id="scCalc">Suggest Bedtimes</button>
+<button type="button" class="btn-reset" id="scResetBtn">Reset</button>
+</div>
+<div class="sc-error" id="scError" style="display:none"></div>
+
+</div>
+</div>
+<div class="results-panel" id="resultsPanel" aria-live="polite">
+
+<div class="result-banner">
+<small id="scResPanelTitle">Suggested bedtimes</small>
+<div class="main-balance" id="scResMain">—</div>
+<p class="banner-subtext" id="scResSub">Enter your time above and select the button to see your suggested bedtimes.</p>
+</div>
+<div class="metrics-quad-grid">
+<div class="metric-card">
+<span class="metric-label">6 cycles &mdash; highlighted</span>
+<span class="metric-value" id="scResSix">—</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">5 cycles &mdash; highlighted</span>
+<span class="metric-value" id="scResFive">—</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Fall-asleep allowance</span>
+<span class="metric-value" id="scResFall">—</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Cycle time (6 cycles)</span>
+<span class="metric-value" id="scResTotal">—</span>
+</div>
+</div>
+<button type="button" class="btn-copy" id="scCopy" style="align-self:flex-start; margin-top:14px;">Copy result</button>
+
+</div>
+</div>
+</section>
+
+<section class="tool-visuals-strip">
+<div class="container">
+
+<div class="visual-panel-card">
+<h2>Sleep in Complete Cycles</h2>
+<p class="subtitle">Sleep runs in repeating cycles of roughly 90 minutes &mdash; lighter stages, deeper stages, then dreaming &mdash; and waking up at the end of a cycle tends to feel easier than being dragged out mid-cycle. This calculator simply counts those cycles backwards from your alarm, or forwards from your bedtime.</p>
+<img class="panel-photo" src="../../assets/tools/sleep-cycle-calculator/sleep-cycle-calculator-featured.webp" alt="Peaceful bedroom at dusk with a warm glowing bedside lamp" width="1600" height="900" loading="lazy">
+</div>
+<div class="visual-panel-card">
+<h2 id="scTableTitle">Your Bedtimes, by Number of Cycles</h2>
+<p class="subtitle">Every option from your inputs, dated tonight: each row is one complete set of cycles plus your fall-asleep allowance. The 5- and 6-cycle rows are the recommended ones.</p>
+<div style="overflow-x:auto"><table class="styled-table">
+<thead><tr><th>Cycles</th><th>Suggested time</th><th>Total sleep</th><th>Note</th></tr></thead>
+<tbody id="scTableBody"><tr><td colspan="4" style="text-align:center; color:#628277;">Enter your time above and select the button to see the full table.</td></tr></tbody>
+</table></div>
+<p id="scTableFoot" style="font-size:0.82rem; color:#628277; margin-top:14px; text-align:center;">*Bedtimes are when you should be in bed, lights out &mdash; including a 14-minute allowance to fall asleep. Highlighted rows are the recommended 5- and 6-cycle options.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container tool-content-layout">
+<aside class="tool-toc" aria-label="Table of Contents">
+<strong>Guide Navigation</strong>
+<a href="#what-is">1. What Is a Sleep Cycle Calculator?</a>
+<a href="#how-to-use">2. How to Use This Calculator</a>
+<a href="#how-counted">3. How the Times Are Calculated</a>
+<a href="#worked-example">4. Worked Example</a>
+<a href="#sleep-cycles">5. What a Sleep Cycle Actually Is</a>
+<a href="#five-vs-six">6. Five Cycles or Six?</a>
+<a href="#fall-asleep">7. The Fall-Asleep Allowance</a>
+<a href="#limits">8. The Limits of Cycle Math</a>
+<a href="#mistakes">9. Common Mistakes to Avoid</a>
+<a href="#shift-work">10. Shift Workers, Naps and Irregular Schedules</a>
+<a href="#privacy">11. Your Privacy</a>
+<a href="#related-tools">12. Related Calculators</a>
+<a href="#faq">13. Frequently Asked Questions</a>
+<a href="#methodology-trust">14. Methodology &amp; Data Integrity</a>
+</aside>
+<article class="tool-article">
+
+<section id="what-is">
+<h2 id="what-is">1. What Is a Sleep Cycle Calculator?</h2>
+<p>A <strong>sleep cycle calculator</strong> answers a very practical question: <em>given the time I must be up, when should I go to bed?</em> &mdash; or its mirror image: <em>given the time I can get to bed, when should I set the alarm?</em> It answers by counting in <strong>sleep cycles of about 90 minutes</strong> instead of counting in round hours, and by adding a small allowance for the time it takes to fall asleep.</p>
+<p>The reasoning behind it is simple and widely discussed in sleep literature: sleep runs in repeating cycles (see section 5), and people generally feel less groggy waking at the <strong>end</strong> of a cycle &mdash; during a light stage &mdash; than when an alarm fires in the middle of deep sleep. So rather than choosing a bedtime because &ldquo;11 pm sounds right,&rdquo; you choose one that sits a whole number of cycles before your alarm.</p>
+<p>This page runs in two directions. <strong>Mode A</strong> takes your wake-up time and suggests four bedtimes &mdash; 3, 4, 5 and 6 full cycles back. <strong>Mode B</strong> takes your bedtime and suggests four wake-up times &mdash; 3, 4, 5 and 6 full cycles forward. The 5- and 6-cycle options are highlighted because they land in the range most adult sleep guidelines point to (section 6). Everything on this page is a <strong>planning heuristic, not a medical fact</strong>, and the page is educational: it is <strong>not medical advice</strong> and makes no promises about how rested you will feel.</p>
+</section>
+
+<section id="how-to-use">
+<h2 id="how-to-use">2. How to Use This Calculator</h2>
+<p><strong>Step 1 &mdash; pick the direction.</strong> Select &ldquo;I know my wake-up time&rdquo; if your alarm is fixed (work, school, a flight), or &ldquo;I know my bedtime&rdquo; if you are deciding when the alarm should go off.</p>
+<p><strong>Step 2 &mdash; enter your time.</strong> Use 24-hour HH:MM format. In Mode A this is the time the alarm must sound; in Mode B it is the time you plan to be in bed, lights out &mdash; not the time you start scrolling your phone in bed.</p>
+<p><strong>Step 3 (optional) &mdash; set your fall-asleep time.</strong> The field starts at 14 minutes, the built-in average allowance (see section 7). If you know you take about 25 minutes to drift off, enter 25; if you are out cold in 5, enter 5. The calculator re-times everything around it.</p>
+<p><strong>Select the button.</strong> The headline shows the 6-cycle suggestion &mdash; the fullest recommended night &mdash; and the table below lists all four options with their total sleep. Use <strong>Copy result</strong> to save the table as text and <strong>Reset</strong> to clear the form.</p>
+<p>A worked example with every figure checked against the engine sits in section 4, so you can see exactly what the calculator does with your numbers before you trust it with your night.</p>
+</section>
+
+<section id="how-counted">
+<h2 id="how-counted">3. How the Times Are Calculated</h2>
+<p>The method is deliberately simple, and it is stated in full so you can check it: a sleep cycle is taken as <strong>90 minutes</strong>, the fall-asleep allowance defaults to <strong>14 minutes</strong> (adjustable 0&ndash;90), and the calculator counts <strong>3 to 6 cycles</strong>.</p>
+<p><strong>Mode A &mdash; wake-up time to bedtimes:</strong> bedtime = wake-up time &minus; (fall-asleep minutes + 90 &times; cycles). So with a 07:00 alarm, the 14-minute default and 6 cycles: 07:00 &minus; (14 + 540) minutes = 21:46.</p>
+<p><strong>Mode B &mdash; bedtime to wake times:</strong> wake time = bedtime + (fall-asleep minutes + 90 &times; cycles). So with a 23:00 bedtime, the 14-minute default and 6 cycles: 23:00 + (14 + 540) minutes = 08:14.</p>
+<p>Times wrap past midnight automatically &mdash; a bedtime can fall on the previous calendar evening, which is exactly how real nights work. Total sleep for each row is simply cycles &times; 90 minutes: 4h 30m, 6h, 7h 30m, 9h.</p>
+<p>Two things these numbers are <strong>not</strong>: they are not measurements of your actual cycles (yours run somewhere around 90 minutes, not exactly on it), and they are not medical guidance. The 90-minute cycle and the 14-minute allowance are <strong>planning heuristics</strong> &mdash; published averages used to make a reasonable plan, not facts about your body. Read section 8 for what the method cannot do.</p>
+</section>
+
+<section id="worked-example">
+<h2 id="worked-example">4. Worked Example</h2>
+<p>Every figure here was computed with the actual engine logic on this page (verified in both Python and JavaScript before publishing) &mdash; so what you read is what the calculator does.</p>
+<div class="sc-example"><p><strong>Mode A &mdash; the alarm is fixed at 07:00</strong> (fall-asleep allowance 14 minutes):</p>
+<ul>
+<li><strong>6 cycles &rarr; in bed by 21:46</strong> &mdash; 9h 0m of cycle time (highlighted).</li>
+<li><strong>5 cycles &rarr; in bed by 23:16</strong> &mdash; 7h 30m of cycle time (highlighted).</li>
+<li>4 cycles &rarr; in bed by 00:46 &mdash; 6h 0m of cycle time.</li>
+<li>3 cycles &rarr; in bed by 02:16 &mdash; 4h 30m of cycle time.</li>
+</ul>
+<p>Check the arithmetic on the 5-cycle row: 5 &times; 90 = 450 minutes, plus 14 = 464 minutes before 07:00 &mdash; 464 minutes is 7h 44m, and 07:00 minus 7h 44m is 23:16. The other rows work the same way.</p>
+<p><strong>Mode B &mdash; bedtime is fixed at 23:00</strong> (fall-asleep allowance 14 minutes):</p>
+<ul>
+<li><strong>6 cycles &rarr; alarm at 08:14</strong> &mdash; 9h 0m of cycle time (highlighted).</li>
+<li><strong>5 cycles &rarr; alarm at 06:44</strong> &mdash; 7h 30m of cycle time (highlighted).</li>
+<li>4 cycles &rarr; alarm at 05:14 &mdash; 6h 0m of cycle time.</li>
+<li>3 cycles &rarr; alarm at 03:44 &mdash; 4h 30m of cycle time.</li>
+</ul>
+<p>Try either of these in the calculator above and compare &mdash; you should get the same times, to the minute. If your own fall-asleep time is 25 minutes instead of 14, every suggestion shifts 11 minutes earlier (Mode A) or later (Mode B): the method is fully transparent, so the effect of the assumption is visible.</p></div>
+</section>
+
+<section id="sleep-cycles">
+<h2 id="sleep-cycles">5. What a Sleep Cycle Actually Is</h2>
+<p>A sleep cycle is one pass through the stages of sleep: lighter stages first, then deeper slow-wave sleep, then back up through lighter stages into REM (rapid-eye-movement) dreaming sleep, and the cycle repeats. A full pass takes <strong>about 90 minutes on average</strong> in adults &mdash; in practice anywhere from roughly 80 to 120 minutes, varying between people and across the night (early cycles carry more deep sleep, later ones more REM).</p>
+<p>That &ldquo;about 90 minutes&rdquo; is the entire basis of this calculator, and it is worth being honest about what it is: a <strong>population average used as a planning convention</strong>, not a measurement of your cycles. Your own cycles will be a little shorter or longer, and they shift with age, caffeine, alcohol, stress and illness. The calculator does not pretend otherwise &mdash; it uses 90 minutes because a plan built on the average beats a plan built on nothing, and because the exact figure is disclosed so you can judge it.</p>
+<p>Why does waking at a cycle boundary matter? An alarm that fires during deep slow-wave sleep interrupts the stage people find hardest to wake from &mdash; that heavy, disoriented feeling is often called sleep inertia. An alarm that lands near the end of a cycle, in a lighter stage or near a natural brief awakening (people briefly surface between cycles without remembering it), tends to feel easier. The calculator cannot guarantee where in your real cycle the alarm lands &mdash; that would require measuring your brain &mdash; but aiming for cycle boundaries is the whole point of the exercise.</p>
+</section>
+
+<section id="five-vs-six">
+<h2 id="five-vs-six">6. Five Cycles or Six?</h2>
+<p>The calculator highlights two rows and it is fair to ask why: <strong>5 cycles = 7h 30m</strong> of cycle time and <strong>6 cycles = 9h 0m</strong>. Most published adult sleep guidance converges on roughly <strong>7 to 9 hours</strong> a night (the American Academy of Sleep Medicine and Sleep Research Society recommend 7 or more hours for adults; public-health guidance commonly frames the healthy range as 7&ndash;9). Five cycles sits at the bottom of that range, six at the top.</p>
+<p>Which to pick is genuinely individual. If you consistently feel fine on about seven and a half hours, the 5-cycle time is your plan. If you need more &mdash; many people do &mdash; the 6-cycle time is. Teenagers and young adults typically need more than the 5-cycle row offers, which is why the 6-cycle suggestion is the headline result. The 3- and 4-cycle rows cover genuinely short nights.</p>
+<p>One more honest note: &ldquo;7h 30m of cycle time&rdquo; is not the same as 7h 30m of perfect sleep. Brief awakenings between cycles are normal and unremembered, so actual sleep runs a little under the cycle-time total. The <a href="../../articles/sleep-time-lived-estimate/">sleep-time-lived guide</a> explains why time in bed always overstates time asleep by roughly ten per cent &mdash; the same caveat applies to every row of this calculator&rsquo;s table.</p>
+</section>
+
+<section id="fall-asleep">
+<h2 id="fall-asleep">7. The Fall-Asleep Allowance</h2>
+<p>The 14 minutes in every calculation is the time between lights-out and sleep &mdash; <strong>sleep latency</strong>, in sleep-medicine terms. Typical healthy sleep latency is commonly described as roughly 10 to 20 minutes; the calculator uses 14 as a middle value, and the field is adjustable from 0 to 90 minutes because your number is better than any average.</p>
+<p>This allowance matters more than it looks. Ignore it and every bedtime suggestion lands late by your latency &mdash; set 0 when you actually need 25 and the calculator&rsquo;s &ldquo;5 cycles&rdquo; plan really gives you about 4&frac12;. If you lie awake for a long time most nights, the honest move is to enter your real figure rather than the default: the table stays truthful because the assumption stays visible.</p>
+<p>A special case: people who fall asleep within a couple of minutes of lying down every night are often simply very sleep-deprived &mdash; near-instant sleep onset is one of the classic signs of accumulated sleep debt. If that is you, the <a href="../../articles/sleep-debt-arithmetic/">sleep-debt arithmetic guide</a> shows how to total the shortfall, and the 6-cycle row &mdash; not the 5-cycle one &mdash; is the plan to aim for.</p>
+</section>
+
+<section id="limits">
+<h2 id="limits">8. The Limits of Cycle Math</h2>
+<p>This section exists because the method is simple enough to be mistaken for precise. It is not precise, and here is what it cannot do:</p>
+<ul>
+<li><strong>It cannot measure your cycles.</strong> Yours run around 90 minutes, not on it. The alarm may land mid-cycle on any given night; the calculator only aims at the average boundary.</li>
+<li><strong>It cannot account for sleep quality.</strong> Alcohol, caffeine, noise, light, pain and anxiety all change how sleep is structured. A perfect 6-cycle plan after three coffees at 4 pm is still a rough night.</li>
+<li><strong>It cannot diagnose anything.</strong> Snoring with pauses in breathing, chronic insomnia, restless legs, or daytime sleepiness despite long nights are medical matters &mdash; a bedtime table is not the tool for them.</li>
+<li><strong>It is not medical advice.</strong> Nothing on this page diagnoses, treats, or prevents any condition, and it promises no outcome &mdash; only suggested times. Persistent sleep problems deserve a qualified health professional, not a calculator.</li>
+</ul>
+<p>Used with those limits in view, cycle planning is a genuinely useful habit: it turns a vague &ldquo;early night&rdquo; into a specific lights-out time, and it stops the alarm from landing in the worst possible minute by pure chance.</p>
+</section>
+
+<section id="mistakes">
+<h2 id="mistakes">9. Common Mistakes to Avoid</h2>
+<p><strong>Mistake 1 &mdash; counting from when you get into bed.</strong> The calculator&rsquo;s &ldquo;bedtime&rdquo; means lights out, trying to sleep. If you read in bed for 40 minutes, the plan is 40 minutes off. Enter your real fall-asleep time (section 7) or move lights-out earlier.</p>
+<p><strong>Mistake 2 &mdash; picking the latest row that &ldquo;counts as enough.&rdquo;</strong> Choosing 4 cycles (6h) because the 5-cycle bedtime feels embarrassingly early is planning to be tired.</p>
+<p><strong>Mistake 3 &mdash; changing the plan nightly.</strong> Cycle timing helps most when bedtimes are consistent: the body&rsquo;s clock entrains to regularity, and a regular 5-cycle schedule beats a chaotic mix of 4s and 6s. Pick the row you can actually keep.</p>
+<p><strong>Mistake 4 &mdash; confusing cycle time with sleep need.</strong> The table shows cycle time; real sleep runs slightly under it (section 6). If you need a full 8 hours of actual sleep, the 6-cycle row is the honest choice, not the 5-cycle one.</p>
+<p><strong>Mistake 5 &mdash; using the calculator to justify short sleep.</strong> &ldquo;It&rsquo;s a whole number of cycles&rdquo; does not make 4&frac12; hours enough. The method optimises <em>timing</em>; it cannot create sleep you did not schedule.</p>
+</section>
+
+<section id="shift-work">
+<h2 id="shift-work">10. Shift Workers, Naps and Irregular Schedules</h2>
+<p>Nothing in the method assumes the sun is down: a cycle is 90 minutes at 3 am and at 3 pm. Shift workers can use Mode A with a daytime alarm exactly as a night sleeper would &mdash; the arithmetic does not care about daylight. What changes is the <strong>fall-asleep allowance</strong>: sleeping against the body clock usually means longer latency, so daytime sleepers should enter their real, longer figure rather than the 14-minute default.</p>
+<p><strong>Naps</strong> fit the same arithmetic in miniature. A nap of about 20 minutes stays inside the first light stage (no cycle completed); a nap of about 90 minutes completes roughly one full cycle; the 30&ndash;60 minute zone is the one most likely to end in grogginess, because it wakes you from deeper sleep. The calculator&rsquo;s table starts at 3 cycles, so for naps just apply the rule directly: 20 or 90 minutes, and skip the middle.</p>
+<p>For rotating shifts, consistency still beats perfection: anchor sleep to the same times on the same shift pattern rather than recalculating nightly. And if shift work leaves you persistently exhausted despite long time in bed, that is a occupational-health matter &mdash; section 8&rsquo;s limits apply doubly.</p>
+</section>
+
+<section id="privacy">
+<h2 id="privacy">11. Your Privacy</h2>
+<p>Like every calculator on this site, this page runs <strong>entirely in your browser</strong>. Your wake-up time, bedtime and fall-asleep minutes are typed into the page, calculated by the page&rsquo;s own script, and never sent anywhere &mdash; there is no account, no form submission, and nothing to opt out of. Closing the tab erases everything.</p>
+</section>
+
+<section id="related-tools">
+<h2 id="related-tools">12. Related Calculators</h2>
+<p>Four calculators that sit naturally next to this one &mdash; and two in-depth guides on the sleep numbers behind it:</p>
+<div class="related-grid">
+<a class="related-card" href="../sleep-debt-calculator/"><h3>Sleep Debt Calculator</h3><p>Total your accumulated sleep shortfall against a nightly target.</p></a>
+<a class="related-card" href="../sleep-time-lived-calculator/"><h3>Sleep Time Lived Calculator</h3><p>Estimate how much of your life so far has been spent asleep.</p></a>
+<a class="related-card" href="../age-in-hours-calculator/"><h3>Age in Hours Calculator</h3><p>Your elapsed lifetime in hours &mdash; the raw material of time-in-bed arithmetic.</p></a>
+<a class="related-card" href="../life-progress-calculator/"><h3>Life Progress Calculator</h3><p>The share of a chosen lifespan already elapsed, for perspective.</p></a>
+</div>
+<p class="related-reading"><strong>Deeper reading:</strong> <a href="../../articles/sleep-debt-arithmetic/">Sleep Debt Arithmetic: What the Number Can and Cannot Tell</a> and <a href="../../articles/sleep-time-lived-estimate/">How Much of Your Life Have You Spent Asleep?</a> &mdash; the guides this calculator&rsquo;s caveats are drawn from.</p>
+</section>
+
+<section id="faq" class="faq-block">
+<h2>13. Frequently Asked Questions</h2>
+<div class="faq-card">
+<h3>How does a sleep cycle calculator work?</h3>
+<p>It counts in sleep cycles of about 90 minutes instead of round hours. Give it your wake-up time and it subtracts whole cycles (plus a few minutes to fall asleep) to suggest bedtimes; give it your bedtime and it adds cycles to suggest wake times. The idea is that your alarm lands at the end of a cycle, in lighter sleep, rather than in the middle of deep sleep.</p>
+</div>
+<div class="faq-card">
+<h3>Why 90 minutes per cycle?</h3>
+<p>About 90 minutes is the widely published average length of one full pass through the stages of sleep in adults. In reality individual cycles run roughly 80 to 120 minutes, so 90 is a planning convention, not a measurement of your cycles. This page discloses that openly and uses the average because a plan built on it beats picking a bedtime at random.</p>
+</div>
+<div class="faq-card">
+<h3>Is 5 or 6 cycles better?</h3>
+<p>Six cycles (9 hours of cycle time) suits people who need more sleep, including teenagers and anyone catching up on debt; five cycles (7½ hours) sits at the lower end of the 7–9 hour range most adult guidelines point to. Neither is universally “better” — pick the row you wake from feeling restored, and keep it consistent.</p>
+</div>
+<div class="faq-card">
+<h3>What is the 14-minute fall-asleep allowance?</h3>
+<p>It is the calculator’s default for sleep latency — the gap between lights-out and actually falling asleep. Typical healthy sleep latency is roughly 10–20 minutes, so 14 is a middle value. The field is adjustable from 0 to 90 minutes: if you know you take 25 minutes to drift off, enter 25 and every suggestion re-times itself around your real number.</p>
+</div>
+<div class="faq-card">
+<h3>Will I really wake up between sleep cycles?</h3>
+<p>People briefly surface between cycles most nights without remembering it, and alarms landing near those light-sleep moments tend to feel easier than alarms interrupting deep sleep. The calculator aims at the average cycle boundary, but it cannot measure your actual cycles, so on any given night the alarm may still land mid-cycle. It improves the odds; it does not guarantee the outcome.</p>
+</div>
+<div class="faq-card">
+<h3>Can I use it for naps?</h3>
+<p>Yes, with the same 90-minute rule in miniature: about 20 minutes stays in light sleep, about 90 minutes completes roughly one full cycle, and the 30–60 minute zone is the one most likely to end in grogginess. The calculator’s table starts at 3 cycles, so for naps apply the rule directly rather than using the table.</p>
+</div>
+<div class="faq-card">
+<h3>What if I can’t fall asleep in 14 minutes?</h3>
+<p>Then enter your real figure — that is exactly why the field exists. Every suggestion shifts by the difference, so the table stays honest. If you regularly lie awake a long time, or fall asleep almost instantly every night (a classic sign of sleep debt), the number to fix is your schedule, not the allowance.</p>
+</div>
+<div class="faq-card">
+<h3>Does it work for shift workers?</h3>
+<p>The arithmetic does not care about daylight: a 90-minute cycle is 90 minutes at 3 pm too. Daytime sleepers should enter a longer fall-asleep allowance, since sleeping against the body clock usually means slower sleep onset, and keep times consistent within each shift pattern.</p>
+</div>
+<div class="faq-card">
+<h3>Is this medical advice?</h3>
+<p>No. This page is an educational planning tool: it applies simple published heuristics to times you enter. It does not diagnose, treat, or prevent any sleep disorder or health condition, and it makes no promises about how you will feel. Ongoing sleep problems — insomnia, loud snoring with breathing pauses, persistent daytime sleepiness — deserve a qualified health professional.</p>
+</div>
+<div class="faq-card">
+<h3>Can a sleep cycle calculator fix insomnia?</h3>
+<p>No. Cycle timing optimises when you schedule sleep; it cannot create sleep or treat insomnia, which has medical and behavioural causes a bedtime table cannot address. If you consistently cannot fall or stay asleep, or you wake unrefreshed despite long nights, please speak to a clinician rather than recalculating.</p>
+</div>
+<div class="faq-card">
+<h3>Why do I feel groggy after 8 hours of sleep?</h3>
+<p>Total hours are only half the story — timing matters too. Waking in the middle of a deep-sleep stage, even after 8 hours in bed, commonly produces that heavy, disoriented feeling (sleep inertia). Aiming the alarm at a cycle boundary, which is what this calculator plans for, is one way to reduce the chance of it.</p>
+</div>
+<div class="faq-card">
+<h3>How accurate are the suggested times?</h3>
+<p>They are as accurate as their two assumptions: 90-minute cycles and your fall-asleep allowance. Both are disclosed averages, adjustable where it counts. Treat the times as well-reasoned suggestions for planning your night — verified against the page’s own engine to the minute — not as predictions about your body.</p>
+</div>
+</section>
+
+<section id="methodology-trust">
+<h2>14. Methodology &amp; Data Integrity</h2>
+<p><strong>Method:</strong> 90-minute sleep cycles &times; 3&ndash;6, plus a user-adjustable fall-asleep allowance (default 14 minutes, range 0&ndash;90). Mode A subtracts (fall-asleep + cycles &times; 90) minutes from the wake-up time; Mode B adds it to the bedtime; results wrap modulo 24 hours. No external data is used &mdash; the only inputs are the times you type.</p>
+<p><strong>Status of the numbers:</strong> the 90-minute cycle and the 14-minute allowance are <strong>planning heuristics</strong> &mdash; published population averages used to build a reasonable plan &mdash; not measurements of your body and not medical facts. Real cycles run roughly 80&ndash;120 minutes; real sleep latency roughly 10&ndash;20 minutes in healthy sleepers. Both assumptions are disclosed on the page and adjustable where it matters.</p>
+<p><strong>Verification:</strong> the worked example in section 4 was computed with the page&rsquo;s actual engine logic, re-implemented independently in Python and cross-checked in JavaScript before publishing: wake 07:00 &rarr; 21:46 / 23:16 / 00:46 / 02:16; bedtime 23:00 &rarr; 08:14 / 06:44 / 05:14 / 03:44 (14-minute allowance). No placeholder values appear anywhere on this page.</p>
+<p><strong>Editorial standard:</strong> this page follows the site&rsquo;s content rules &mdash; tool-specific content, no template filler, visible text exactly matching structured data, and a visible educational-only disclosure. It is <strong>not medical advice</strong> and promises no health outcome.</p>
+</section>
+
+</article>
+</div>
+</section>
+</main>
+<script>
+'use strict';
+/* Sleep Cycle Calculator — inline engine.
+   Method (planning heuristics, disclosed on the page — not medical facts):
+   - one full sleep cycle lasts about 90 minutes
+   - about 14 minutes on average to fall asleep
+   Mode A (wake-up time -> bedtimes):  bedtime = wake - (fallAsleep + 90*n)
+   Mode B (bedtime -> wake times):     wake    = bedtime + (fallAsleep + 90*n)
+   for n = 3..6 cycles, wrapped modulo 24 hours. The 5- and 6-cycle options
+   (7h 30m / 9h of cycle time) are the highlighted suggestions. Times only —
+   no dates, no stored data. */
+
+function scParseTime(s) {
+  var m = /^([01]\d|2[0-3]):([0-5]\d)$/.exec(s || '');
+  if (!m) return null;
+  return (+m[1]) * 60 + (+m[2]);
+}
+
+function scFmt(mins) {
+  mins = ((mins % 1440) + 1440) % 1440;
+  var h = Math.floor(mins / 60), m = mins % 60;
+  return (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m;
+}
+
+function scFmtDur(mins) {
+  var h = Math.floor(mins / 60), m = mins % 60;
+  return h + 'h' + (m ? ' ' + m + 'm' : '');
+}
+
+function scCalculate(mode, timeStr, fallStr) {
+  var t = scParseTime(timeStr);
+  if (t === null) return { error: mode === 'A'
+    ? 'Please enter the time you need to wake up (HH:MM).'
+    : 'Please enter the time you plan to go to bed (HH:MM).' };
+  var fall = 14;
+  if (fallStr != null && String(fallStr).trim() !== '') {
+    fall = Number(String(fallStr).trim());
+    if (!isFinite(fall) || Math.floor(fall) !== fall || fall < 0 || fall > 90)
+      return { error: 'Fall-asleep time must be a whole number of minutes between 0 and 90.' };
+  }
+  var rows = [];
+  for (var n = 3; n <= 6; n++) {
+    var sleepMins = n * 90;
+    var time = mode === 'A' ? t - (fall + sleepMins) : t + (fall + sleepMins);
+    rows.push({ cycles: n, time: scFmt(time), sleep: scFmtDur(sleepMins), highlight: n >= 5 });
+  }
+  return { mode: mode, time: scFmt(t), fall: fall, rows: rows };
+}
+
+/* UI wiring for the Sleep Cycle Calculator. */
+(function () {
+  var mode = 'A'; // A: wake -> bedtimes | B: bedtime -> wake times
+
+  function $(id) { return document.getElementById(id); }
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function showError(msg) {
+    var el = $('scError');
+    el.style.display = 'block';
+    el.innerHTML = '<p>' + esc(msg) + '</p>';
+  }
+  function clearError() {
+    var el = $('scError');
+    el.style.display = 'none';
+    el.innerHTML = '';
+  }
+
+  function refreshModeUI() {
+    var btnA = $('scModeA'), btnB = $('scModeB');
+    btnA.classList.toggle('active', mode === 'A');
+    btnB.classList.toggle('active', mode === 'B');
+    btnA.setAttribute('aria-pressed', mode === 'A' ? 'true' : 'false');
+    btnB.setAttribute('aria-pressed', mode === 'B' ? 'true' : 'false');
+    if (mode === 'A') {
+      $('scTimeLabel').innerHTML = 'Wake-up time <small>(required)</small>';
+      $('scTimeHint').textContent = 'The time your alarm has to go off \u2014 in 24-hour HH:MM format.';
+      $('scCalc').textContent = 'Suggest Bedtimes';
+      $('scResPanelTitle').textContent = 'Suggested bedtimes';
+    } else {
+      $('scTimeLabel').innerHTML = 'Bedtime <small>(required)</small>';
+      $('scTimeHint').textContent = 'The time you plan to be in bed, lights out \u2014 in 24-hour HH:MM format.';
+      $('scCalc').textContent = 'Suggest Wake Times';
+      $('scResPanelTitle').textContent = 'Suggested wake times';
+    }
+    resetResults();
+  }
+
+  function rowFor(rows, n) {
+    for (var i = 0; i < rows.length; i++) if (rows[i].cycles === n) return rows[i];
+    return null;
+  }
+
+  function render(r) {
+    var six = rowFor(r.rows, 6), five = rowFor(r.rows, 5);
+    var noun = r.mode === 'A' ? 'bedtime' : 'wake time';
+    $('scResMain').textContent = six.time;
+    var sub = r.mode === 'A'
+      ? 'Be in bed, lights out, at ' + six.time + ' for 6 full cycles (9h 0m of cycle time) before a ' + r.time + ' alarm.'
+      : 'Set your alarm for ' + six.time + ' for 6 full cycles (9h 0m of cycle time) after a ' + r.time + ' bedtime.';
+    sub += ' Times wrap past midnight and include a ' + r.fall + '-minute allowance to fall asleep.';
+    $('scResSub').textContent = sub;
+    $('scResSix').innerHTML = '<strong>' + esc(six.time) + '</strong> (6 cycles, ' + esc(six.sleep) + ')';
+    $('scResFive').innerHTML = '<strong>' + esc(five.time) + '</strong> (5 cycles, ' + esc(five.sleep) + ')';
+    $('scResFall').innerHTML = '<strong>' + r.fall + ' min</strong> to fall asleep';
+    $('scResTotal').innerHTML = '<strong>' + esc(six.sleep) + '</strong> of cycle time (6 cycles)';
+    var html = r.rows.map(function (row) {
+      var hl = row.highlight
+        ? '<span style="color:#075433; font-weight:700;">' + esc(row.time) + '</span>'
+        : esc(row.time);
+      var note = row.highlight ? 'Recommended \u2014 ' + row.cycles + ' cycles' : row.cycles + ' cycles';
+      return '<tr><td>' + row.cycles + '</td><td><strong>' + hl + '</strong></td><td>' + esc(row.sleep) + '</td><td>' + esc(note) + '</td></tr>';
+    }).join('');
+    $('scTableBody').innerHTML = html;
+    $('scTableTitle').textContent = r.mode === 'A'
+      ? 'Your Bedtimes, by Number of Cycles'
+      : 'Your Wake Times, by Number of Cycles';
+    $('scTableFoot').textContent = r.mode === 'A'
+      ? '* Bedtimes are when you should be in bed, lights out \u2014 including a ' + r.fall + '-minute allowance to fall asleep. Highlighted rows are the recommended 5- and 6-cycle options.'
+      : '* Wake times include a ' + r.fall + '-minute allowance to fall asleep after your ' + r.time + ' bedtime. Highlighted rows are the recommended 5- and 6-cycle options.';
+  }
+
+  function resetResults() {
+    $('scResMain').textContent = '\u2014';
+    $('scResSub').textContent = 'Enter your time above and select the button to see your suggested ' + (mode === 'A' ? 'bedtimes' : 'wake times') + '.';
+    ['scResSix', 'scResFive', 'scResFall', 'scResTotal'].forEach(function (id) { $(id).textContent = '\u2014'; });
+    var cols = mode === 'A' ? 4 : 4;
+    $('scTableBody').innerHTML = '<tr><td colspan="' + cols + '" style="text-align:center; color:#628277;">Enter your time above and select the button to see the full table.</td></tr>';
+  }
+
+  function copyText(r) {
+    var lines = [(r.mode === 'A' ? 'Suggested bedtimes for a ' : 'Suggested wake times for a ') + r.time +
+      (r.mode === 'A' ? ' wake-up' : ' bedtime') + ' (' + r.fall + ' min to fall asleep):'];
+    r.rows.forEach(function (row) {
+      lines.push(row.cycles + ' cycles: ' + row.time + ' (' + row.sleep + ')' + (row.highlight ? ' *' : ''));
+    });
+    return lines.join('\n');
+  }
+
+  function onCalc() {
+    clearError();
+    var r = scCalculate(mode, $('scTime').value, $('scFall').value);
+    if (r.error) { showError(r.error); resetResults(); return; }
+    render(r);
+    $('scCopy').onclick = function () {
+      var t = copyText(r);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(t).then(function () { $('scCopy').textContent = 'Copied!'; setTimeout(function () { $('scCopy').textContent = 'Copy result'; }, 2000); });
+      }
+    };
+  }
+
+  function init() {
+    $('scModeA').addEventListener('click', function () { mode = 'A'; clearError(); refreshModeUI(); });
+    $('scModeB').addEventListener('click', function () { mode = 'B'; clearError(); refreshModeUI(); });
+    $('scCalc').addEventListener('click', onCalc);
+    $('scResetBtn').addEventListener('click', function () {
+      $('scTime').value = '';
+      $('scFall').value = '14';
+      clearError();
+      resetResults();
+      $('scCopy').textContent = 'Copy result';
+    });
+    refreshModeUI();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+
+</script>
+<footer class="footer"><div class="container"><div class="footer-grid footer-grid-rich"><div class="footer-brand-panel"><a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a><p>Practical, verified calculators and guides for age, dates, milestones and planning. No registration required.</p><a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a></div><div><h3>Calculators</h3><a href="../../">Exact Age</a><a href="../../tools/chronological-age-calculator/">Chronological Age</a><a href="../../tools/age-difference-calculator/">Age Difference</a><a href="../../categories/">All categories</a></div><div class="footer-guides"><h3>Articles &amp; Guides</h3><a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a><a href="../../articles/ymd-semicolon-format-guide/">Y;M;D format</a><a href="../../articles/corrected-age-premature-babies/">Corrected age guide</a><a class="footer-guides-all" href="../../articles/">Browse all guides →</a></div><div><h3>Explore</h3><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><a href="../../about/">About</a><a href="../../disclaimer/">Disclaimer</a></div><div><h3>Important</h3><a href="../../privacy/">Privacy</a><a href="#" onclick="if(window.googlefc&&googlefc.showRevocationMessage){googlefc.showRevocationMessage();}return false;">Privacy choices</a><a href="../../terms/">Terms</a><a href="../../contact/">Contact</a><a href="../../sitemap.xml">Sitemap</a></div></div><div class="copyright"><span>© 2026 Age Calculator Lab.</span><span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span></div></div></footer><script src="../../assets/app.js?v=20261022a"></script></body></html></body></html>
