@@ -289,7 +289,7 @@
 <div class="visual-panel-card">
 <h2>Life Expectancy by Age: Milestone Values</h2>
 <p class="subtitle">Remaining life expectancy and the corresponding approximate average age at each milestone age, for the selected population. Values update with the calculator.</p>
-<div style="overflow-x:auto"><table>
+<div style="overflow-x:auto"><table class="styled-table">
 <thead><tr><th>Age</th><th>Remaining years</th><th>Approximate age at the average</th></tr></thead>
 <tbody id="leAgeTable"></tbody>
 </table></div>
@@ -387,7 +387,7 @@
 <p>This is a standard life-table relationship. In a production calculator, the published age-specific remaining-life-expectancy value is used when available — which is exactly what this tool does — rather than re-deriving it from the raw columns.</p>
 <h3>A worked example from this calculator's data</h3>
 <p>Using the SRS Abridged Life Tables 2020–24 for India, female table:</p>
-<div style="overflow-x:auto"><table>
+<div style="overflow-x:auto"><table class="styled-table">
 <thead><tr><th>Item</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td>Current age</td><td>30 years</td></tr>
@@ -403,7 +403,7 @@
 <h2>6. Life Expectancy by Country</h2>
 <p>Life expectancy differs between countries because populations experience different mortality patterns, healthcare conditions, social environments, and demographic changes. Comparing countries can help readers understand broad trends, but comparisons should use consistent definitions and clearly labelled reference periods.</p>
 <p>A country with a higher life expectancy at birth does not necessarily have the same advantage in remaining life expectancy at every age. The answer depends on the age-specific mortality patterns in each population — which is why this table shows both measures, taken from the same official life tables the calculator uses. Each row keeps its own source's reference period, because national statistics offices publish on different cycles.</p>
-<div style="overflow-x:auto"><table>
+<div style="overflow-x:auto"><table class="styled-table">
 <thead><tr><th>Country or region</th><th>At birth — female</th><th>At birth — male</th><th>Remaining at 60 — female</th><th>Remaining at 60 — male</th><th>Reference period</th></tr></thead>
 <tbody><tr><td>India</td><td>72.8</td><td>68.7</td><td>19.8</td><td>17.5</td><td>2020–2024</td></tr><tr><td>United States</td><td>80.2</td><td>74.7</td><td>24.1</td><td>21.1</td><td>2022</td></tr><tr><td>United Kingdom</td><td>83.0</td><td>79.1</td><td>25.4</td><td>22.8</td><td>2022–2024</td></tr><tr><td>Canada</td><td>83.9</td><td>79.5</td><td>26.5</td><td>23.5</td><td>2022/2024</td></tr><tr><td>Australia</td><td>85.1</td><td>81.1</td><td>27.2</td><td>24.2</td><td>2022–2024</td></tr></tbody></table></div>
 <p>Where the source also publishes an all-sexes table, life expectancy at birth is 70.6 years for India (2020–2024) and 81.6 years for Canada (2022/2024).</p>
@@ -431,7 +431,7 @@
 <section id="vs-terms">
 <h2>8. Life Expectancy vs. Lifespan vs. Longevity</h2>
 <p>These terms are related, but they are not interchangeable.</p>
-<div style="overflow-x:auto"><table>
+<div style="overflow-x:auto"><table class="styled-table">
 <thead><tr><th>Concept</th><th>Meaning</th></tr></thead>
 <tbody>
 <tr><td>Life expectancy</td><td>A statistical measure of expected years of life under defined mortality assumptions.</td></tr>
@@ -500,7 +500,7 @@
 <section id="data-sources">
 <h2>12. Data Sources &amp; Reference Periods</h2>
 <p>Every value in the calculator, the milestone table and the country comparison above comes from one of these official publications. No placeholder, estimated or third-party figures are used, and the source and reference period travel with every result the calculator displays.</p>
-<div style="overflow-x:auto"><table>
+<div style="overflow-x:auto"><table class="styled-table">
 <thead><tr><th>Country</th><th>Source publication</th><th>Reference period</th><th>Ages covered</th><th>Groups published</th></tr></thead>
 <tbody>
 <tr><td>India</td><td>SRS Abridged Life Tables — Office of the Registrar General, India</td><td>2020–2024</td><td>0–85 (abridged)</td><td>All sexes, female, male</td></tr>
@@ -684,6 +684,8 @@ function drawLeVisuals() {
   for (var gx = 0; gx <= maxA; gx += 20) {
     out += '<text x="' + X(gx) + '" y="' + (H - 8) + '" font-size="12" fill="#628277" text-anchor="middle">' + gx + '</text>';
   }
+  out += '<defs><linearGradient id="leGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#20a67b" stop-opacity="0.38"/><stop offset="100%" stop-color="#20a67b" stop-opacity="0.02"/></linearGradient></defs>';
+  out += '<polygon points="' + pts + ' ' + X(maxA).toFixed(1) + ',' + (H - B) + ' ' + X(ages[0]).toFixed(1) + ',' + (H - B) + '" fill="url(#leGrad)"/>';
   out += '<polyline points="' + pts + '" fill="none" stroke="#0b6e4f" stroke-width="2.5"/>';
   if (isFinite(sel.age) && sel.age >= 0 && sel.age <= maxA) {
     var ce = leLookup(t, sel.sex, sel.age);
