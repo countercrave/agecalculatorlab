@@ -331,6 +331,10 @@
   .tool-toc { grid-template-columns: 1fr; }
 }
 </style>
+
+<style>
+.panel-photo { width: 100%; height: auto; display: block; border-radius: 10px; }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -640,21 +644,15 @@ With your employer match of <span id="resMatchPctDetail">50% up to 6%</span>, co
 </div>
 </section>
 
-<!-- Full-Width Interactive Strip: Growth Chart & By-Age Table -->
+<!-- Full-Width Strip: Photo & By-Age Table -->
 <section class="tool-visuals-strip">
 <div class="container">
 
-<!-- Interactive Growth Chart -->
+<!-- Retirement photo -->
 <div class="visual-panel-card">
-<h2>How Your 401(k) Could Grow Over Time</h2>
-<p class="subtitle">Trajectory of your portfolio balance from your current age to retirement. Hover or tap any point to inspect year-by-year deposits and compounding gains.</p>
-
-<div class="chart-container" id="chartContainer">
-<div class="chart-tooltip-box" id="chartTooltip"></div>
-<svg class="chart-svg" id="growthSvg" viewBox="0 0 800 360" role="img" aria-label="Interactive 401(k) Savings Growth Chart">
-<!-- Dynamic SVG content will be injected by JavaScript -->
-</svg>
-</div>
+<h2>The Retirement Your Savings Are Building</h2>
+<p class="subtitle">Behind every projection is the life it pays for — unhurried mornings, a home you love, and days spent your way. The milestone table alongside breaks your projection down by age, deposits, employer match and compound growth.</p>
+<img class="panel-photo" src="../../assets/tools/401k-calculator/401k-retirement-life-photo.webp" alt="Photograph of a retired couple drinking coffee on their garden porch at golden hour, a bicycle beside them" width="1600" height="900" loading="lazy">
 </div>
 
 <!-- 401(k) Calculator by Age Table -->
@@ -765,7 +763,7 @@ With your employer match of <span id="resMatchPctDetail">50% up to 6%</span>, co
 Starting 401(k) Balance + Employee Contributions + Employer Contributions + Investment Growth = Projected Future Retirement Balance
 </p>
 </div>
-<p>Unlike a traditional savings account that yields simple interest, a 401(k) benefits from exponential compounding. In the early stages of a career (ages 20 to 35), personal deposits represent the vast majority of account growth. However, after 15 to 20 years of steady accumulation, the interest earned on previous interest dwarfs annual contributions. As demonstrated in our interactive charts, investment gains often account for over 65% to 75% of a healthy 30-year 401(k) nest egg.</p>
+<p>Unlike a traditional savings account that yields simple interest, a 401(k) benefits from exponential compounding. In the early stages of a career (ages 20 to 35), personal deposits represent the vast majority of account growth. However, after 15 to 20 years of steady accumulation, the interest earned on previous interest dwarfs annual contributions. Over a healthy 30-year 401(k) projection, investment gains often account for over 65% to 75% of the final nest egg.</p>
 </section>
 
 <section id="future-value-model">
@@ -1427,6 +1425,7 @@ function run401kCalculation() {
 
 function renderGrowthChart(history, startAge, endAge) {
   const svg = document.getElementById('growthSvg');
+  if (!svg) return;
   const width = 800;
   const height = 360;
   const padLeft = 85;
