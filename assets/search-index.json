@@ -1833,5 +1833,10 @@
     "n": "Ovulation Calculator",
     "u": "/tools/ovulation-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Sleep Cycle Calculator",
+    "u": "/tools/sleep-cycle-calculator/",
+    "t": "Calculator"
   }
 ]
