@@ -2165,7 +2165,7 @@
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
      AGE CALCULATOR LAB — SECTION 2: CALCULATOR FINDER
-     Fast interactive launcher & search across all 168 focused calculation tools
+     Fast interactive launcher & search across all 175 focused calculation tools
      ══════════════════════════════════════════════════════════════════════════ -->
 <style>
   .aclx-finder {
@@ -2637,7 +2637,7 @@
     </div>
 
     <div class="aclx-finder-footer">
-      <span class="aclx-finder-count" id="aclx-tool-count">Showing <strong>12</strong> highlighted tools from <strong>168</strong> total calculators</span>
+      <span class="aclx-finder-count" id="aclx-tool-count">Showing <strong>14</strong> highlighted tools from <strong>175</strong> total calculators</span>
       <a class="aclx-finder-all-btn" href="./tools/">Browse All 175 Tools Directory →</a>
     </div>
 
@@ -2674,7 +2674,7 @@
   var currentCat = 'all';
   var allCalculatorsRegistry = [];
 
-  // Load complete 168-tool registry from search-index.json for complete discovery
+  // Load complete 175-tool registry from search-index.json for complete discovery
   fetch('./assets/search-index.json')
     .then(function(res) { return res.json(); })
     .then(function(data) {
@@ -2699,7 +2699,7 @@
         toolsGrid.appendChild(card);
       });
       if (countEl) {
-        countEl.innerHTML = 'Showing <strong>12</strong> featured calculators from <strong>168</strong> total calculators';
+        countEl.innerHTML = 'Showing <strong>14</strong> featured calculators from <strong>175</strong> total calculators';
       }
       return;
     }
@@ -2761,7 +2761,7 @@
         toolsGrid.appendChild(card);
       });
       if (countEl) {
-        countEl.innerHTML = 'Showing <strong>' + matches.length + '</strong> matching calculators from <strong>168</strong> total calculators';
+        countEl.innerHTML = 'Showing <strong>' + matches.length + '</strong> matching calculators from <strong>175</strong> total calculators';
       }
     }
   }
