@@ -6979,7 +6979,6 @@ main section[id] { scroll-margin-top: 118px; }
 .tool-article .aclx-preterm-grid,
 .tool-article .aclx-pet-grid,
 .tool-article .aclx-kb-q-grid,
-.tool-article .aclx-article-cards-grid,
 .tool-article .aclx-diff-grid,
 .tool-article .aclx-cln-inputs { grid-template-columns: 1fr !important; }
 .tool-article [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
@@ -6988,5 +6987,10 @@ main section[id] { scroll-margin-top: 118px; }
 <style>
   /* === PR114: trust single column + bio dedup === */
   .aclx-trust-master .aclx-trust-top-grid { grid-template-columns: 1fr !important; }
+</style>
+<style>
+  /* === PR115: Guides & Rules blog cards in 2 columns (user preference) === */
+  .tool-article .aclx-article-cards-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  @media (max-width: 640px) { .tool-article .aclx-article-cards-grid { grid-template-columns: 1fr !important; } }
 </style>
 </body></html>
