@@ -6965,4 +6965,11 @@ main section[id] { scroll-margin-top: 118px; }
   .author-band-body { text-align: left; }
 }
 </style>
+<style>
+/* Trust author card: restore its own dark design (2026-10-23). The generic
+   .author-card skin from the tool-page format block leaked into this dark
+   section — it turned the card white and left its mint text unreadable. */
+.aclx-trust-master .aclx-author-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.15); border-radius: 20px; padding: clamp(24px, 4vw, 32px); margin: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 0; box-shadow: none; }
+.aclx-trust-master .aclx-author-img { width: 76px; height: 76px; border: 2.5px solid #a9ead1; }
+</style>
 </body></html>
