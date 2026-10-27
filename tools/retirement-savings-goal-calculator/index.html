@@ -1,0 +1,608 @@
+<!doctype html><html lang="en"><head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6008816938247526"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YM7P2RQ4Z7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YM7P2RQ4Z7', {page_location: location.origin + location.pathname});
+</script>
+<meta name="google-site-verification" content="Y5be21WsrJ2pH_gQfwHr57ucbKKUDO1wtzNvumLDzh0"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta property="og:url" content="https://www.agecalculatorlab.com/tools/retirement-savings-goal-calculator/"><link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon.png">
+<title>Retirement Savings Goal Calculator | Age Calculator Lab</title>
+<meta name="robots" content="index, follow">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png"><link rel="manifest" href="../../site.webmanifest"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#075433"><link rel="canonical" href="https://www.agecalculatorlab.com/tools/retirement-savings-goal-calculator/"><meta name="description" content="How much must you save each month to reach your retirement target? Enter your current age, retirement age, current savings, target and expected return for a monthly figure. Free, private, browser-based."><meta property="og:type" content="website"><meta property="og:title" content="Retirement Savings Goal Calculator | Age Calculator Lab"><meta property="og:description" content="How much must you save each month to reach your retirement target? Enter your current age, retirement age, current savings, target and expected return for a monthly figure. Free, private, browser-based."><meta property="og:image" content="https://www.agecalculatorlab.com/assets/thumbnails/calculators/retirement-savings-goal-calculator.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Retirement Savings Goal Calculator | Age Calculator Lab"><meta name="twitter:description" content="How much must you save each month to reach your retirement target? Enter your current age, retirement age, current savings, target and expected return for a monthly figure. Free, private, browser-based."><meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/thumbnails/calculators/retirement-savings-goal-calculator.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="../../assets/style.css?v=20260824e"><style>
+/* Scoped 401(k) Calculator & Financial Hub Styling */
+.tool-hero { padding: 40px 0 32px; background: linear-gradient(180deg, #f2f7f4 0%, #ffffff 100%); border-bottom: 1px solid #dce9e2; }
+.tool-hero-grid { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: start; }
+@media(min-width: 1024px) { .tool-hero-grid { grid-template-columns: 1.1fr 1.15fr; } }
+
+.tool-hero-copy .eyebrow { display: inline-block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--editorial-sage, #075433); margin-bottom: 8px; }
+.tool-hero-copy h1 { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2.1rem, 3.8vw, 2.9rem); line-height: 1.2; color: var(--editorial-navy, #042f2a); margin: 0 0 14px; }
+.tool-hero-copy .lead { font-size: 1.1rem; line-height: 1.6; color: #2e4b3f; margin-bottom: 20px; }
+.trust-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+.trust-pill { background: #eaf3ee; color: #075433; font-size: 0.82rem; font-weight: 600; padding: 5px 12px; border-radius: 6px; border: 1px solid #d5e6dc; }
+
+/* Interactive Calculator Container */
+.calculator-card { background: #ffffff; border: 2px solid #075433; border-radius: 14px; padding: 26px; box-shadow: 0 12px 32px rgba(4,47,42,0.08); }
+.calc-header { margin-bottom: 20px; border-bottom: 1px solid #e1ede6; padding-bottom: 14px; }
+.calc-header h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.45rem; color: #042f2a; margin: 0 0 4px; }
+.calc-header p { margin: 0; font-size: 0.88rem; color: #52796f; }
+
+.calc-section-title { font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.75px; color: #075433; margin: 18px 0 10px; display: flex; align-items: center; gap: 8px; }
+.calc-section-title::after { content: ""; flex: 1; height: 1px; background: #e2ede7; }
+
+.calc-form-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media(min-width: 520px) { .calc-form-grid { grid-template-columns: 1fr 1fr; } }
+
+.calc-field { display: flex; flex-direction: column; gap: 5px; }
+.calc-field.full-width { grid-column: 1 / -1; }
+.calc-field label { font-size: 0.88rem; font-weight: 700; color: #042f2a; display: flex; justify-content: space-between; align-items: baseline; }
+.calc-field label small { font-weight: 500; color: #52796f; font-size: 0.8rem; }
+.input-with-prefix { position: relative; display: flex; align-items: center; }
+.input-prefix { position: absolute; left: 12px; color: #52796f; font-weight: 700; font-size: 1rem; pointer-events: none; }
+.input-with-suffix { position: relative; display: flex; align-items: center; }
+.input-suffix { position: absolute; right: 12px; color: #52796f; font-weight: 700; font-size: 0.95rem; pointer-events: none; }
+
+.calc-field input, .calc-field select { width: 100%; padding: 10px 12px; border: 1.5px solid #c2dbcf; border-radius: 8px; font-size: 0.98rem; color: #0d2b23; background: #fdfdfd; transition: border-color 0.2s, box-shadow 0.2s; font-family: inherit; }
+.input-with-prefix input { padding-left: 28px; }
+.input-with-suffix input { padding-right: 28px; }
+.calc-field input:focus, .calc-field select:focus { outline: none; border-color: #075433; box-shadow: 0 0 0 3px rgba(7,84,51,0.15); }
+
+.field-hint { font-size: 0.78rem; color: #52796f; line-height: 1.35; margin-top: 2px; }
+.match-dynamic-note { background: #f4f9f6; border-left: 3px solid #075433; padding: 8px 12px; border-radius: 0 6px 6px 0; font-size: 0.82rem; color: #234d3d; font-weight: 600; margin-top: 6px; }
+
+/* Match Toggle */
+.toggle-row { display: flex; align-items: center; justify-content: space-between; background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 8px; padding: 10px 14px; margin-bottom: 10px; }
+.toggle-label { font-size: 0.88rem; font-weight: 700; color: #042f2a; }
+.toggle-options { display: flex; gap: 8px; }
+.toggle-btn { background: #ffffff; border: 1.5px solid #c2dbcf; color: #2e4b3f; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.15s; }
+.toggle-btn.active { background: #075433; border-color: #075433; color: #ffffff; }
+
+/* Advanced Collapsible */
+.advanced-details { margin: 16px 0 20px; border: 1px solid #dce9e2; border-radius: 8px; background: #fbfdfc; overflow: hidden; }
+.advanced-details summary { padding: 12px 16px; font-size: 0.88rem; font-weight: 700; color: #075433; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: space-between; background: #f4f9f6; }
+.advanced-content { padding: 16px; }
+
+/* Buttons */
+.calc-btn-row { display: flex; gap: 12px; margin-top: 22px; }
+.btn-calc { flex: 2; background: #075433; color: #ffffff; font-weight: 700; font-size: 1.05rem; padding: 13px 20px; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s, transform 0.15s; text-align: center; }
+.btn-calc:hover { background: #042f2a; transform: translateY(-1px); }
+.btn-reset { flex: 1; background: #f1f5f3; color: #2e4b3f; font-weight: 600; font-size: 0.95rem; padding: 13px 16px; border: 1px solid #dce9e2; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.btn-reset:hover { background: #e5ece8; }
+
+/* Results Panel */
+.results-panel { display: flex; flex-direction: column; gap: 18px; }
+@media(min-width: 1024px) {
+  .results-panel {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 85px;
+    align-self: start;
+  }
+}
+.result-banner { background: #042f2a; color: #ffffff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 8px 24px rgba(4,47,42,0.12); position: relative; overflow: hidden; }
+.result-banner::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #ff754d, #ffd180, #20a67b); }
+.result-banner small { display: block; text-transform: uppercase; letter-spacing: 1.2px; color: #9fe7bd; font-size: 0.82rem; font-weight: 700; margin-bottom: 6px; }
+.result-banner .main-balance { font-family: var(--font-display, 'Fraunces', serif); font-size: clamp(2.3rem, 4.5vw, 3.2rem); line-height: 1.15; color: #ffd180; margin: 4px 0 8px; font-weight: 700; }
+.result-banner .banner-subtext { font-size: 0.92rem; color: #d3e5de; line-height: 1.5; margin: 0; }
+.result-banner .today-dollars-badge { display: inline-block; background: rgba(255, 117, 77, 0.22); color: #ffab91; border: 1px solid rgba(255, 117, 77, 0.4); font-size: 0.82rem; font-weight: 700; padding: 5px 12px; border-radius: 6px; margin-top: 12px; }
+
+/* 4 Summary Cards */
+.metrics-quad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.metric-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px; }
+.metric-card .metric-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: #52796f; }
+.metric-card .metric-value { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.3rem; font-weight: 700; color: #042f2a; }
+.metric-card.highlight { background: #eef7f2; border-color: #badbc7; }
+.metric-card.highlight .metric-value { color: #075433; }
+
+/* Visual Bar Breakdown */
+.breakdown-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 16px; }
+.breakdown-card h3 { font-size: 0.92rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: #042f2a; margin: 0 0 12px; }
+.stacked-bar-wrap { height: 18px; border-radius: 9px; overflow: hidden; display: flex; background: #e0ece5; margin-bottom: 12px; }
+.stacked-slice { height: 100%; transition: width 0.3s ease; }
+.slice-start { background: #52796f; }
+.slice-employee { background: #20a67b; }
+.slice-match { background: #ff754d; }
+.slice-growth { background: #042f2a; }
+
+.legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.8rem; }
+@media(min-width: 480px) { .legend-grid { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+.legend-item { display: flex; align-items: center; gap: 6px; color: #2e4b3f; font-weight: 600; }
+.legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+
+/* Full-Width Interactive Chart & Tables Below Fold */
+.tool-visuals-strip { padding: 44px 0 20px; background: #fdfefe; border-bottom: 1px solid #e1ede6; }
+.visual-panel-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 14px; padding: 28px; box-shadow: 0 4px 18px rgba(0,0,0,0.03); margin-bottom: 32px; }
+.visual-panel-card h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.55rem; color: #042f2a; margin: 0 0 8px; }
+.visual-panel-card p.subtitle { color: #52796f; font-size: 0.94rem; margin: 0 0 20px; }
+
+/* SVG Chart */
+.chart-container { position: relative; width: 100%; overflow-x: auto; }
+.chart-svg { width: 100%; max-width: 820px; height: auto; display: block; margin: 0 auto; }
+.chart-tooltip-box { display: none; position: absolute; background: #042f2a; color: #ffffff; padding: 8px 12px; border-radius: 6px; font-size: 0.82rem; pointer-events: none; z-index: 10; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transform: translate(-50%, -120%); white-space: nowrap; }
+
+/* Scenario Grids */
+.scenario-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 18px; }
+@media(min-width: 640px) { .scenario-grid { grid-template-columns: repeat(3, 1fr); } }
+.scenario-card { background: #f8fbf9; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-align: center; }
+.scenario-card strong { display: block; font-size: 1.1rem; color: #075433; margin-bottom: 6px; font-family: var(--font-display, 'Fraunces', serif); }
+.scenario-card .scenario-balance { font-size: 1.4rem; font-weight: 800; color: #042f2a; margin-bottom: 4px; }
+.scenario-card small { font-size: 0.82rem; color: #52796f; }
+
+/* Educational Content Section */
+.tool-content-layout { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 280px 1fr; align-items: start; } }
+
+.tool-toc { background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 22px; position: sticky; top: 90px; }
+.tool-toc strong { display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.8px; color: #075433; margin-bottom: 14px; }
+.tool-toc a { display: block; font-size: 0.88rem; color: #2e4b3f; text-decoration: none; padding: 6px 0; border-bottom: 1px solid #f0f5f2; transition: color 0.15s, padding-left 0.15s; }
+.tool-toc a:hover { color: #ff754d; padding-left: 4px; }
+
+.tool-article { max-width: 820px; font-size: 1rem; line-height: 1.7; color: #1c382f; }
+.tool-article h2 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.85rem; color: #042f2a; margin: 44px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e1ede6; }
+.tool-article h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.35rem; color: #075433; margin: 28px 0 12px; }
+.tool-article p { margin: 0 0 18px; }
+.tool-article ul, .tool-article ol { margin: 0 0 22px; padding-left: 24px; }
+.tool-article li { margin-bottom: 8px; }
+
+/* Reference Tables */
+.table-wrap { overflow-x: auto; margin: 26px 0; border: 1px solid #dce9e2; border-radius: 10px; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+.styled-table { width: 100%; border-collapse: collapse; font-size: 0.94rem; text-align: left; }
+.styled-table th { background: #042f2a; color: #ffffff; padding: 14px 16px; font-weight: 700; letter-spacing: 0.5px; }
+.styled-table td { padding: 12px 16px; border-bottom: 1px solid #eef4f0; color: #1c382f; }
+.styled-table tr:nth-child(even) { background: #fbfdfc; }
+.styled-table tr:hover { background: #f1f7f4; }
+.highlight-cell { font-weight: 700; color: #075433; }
+
+/* Callout Box */
+.callout-box { background: #ffffff; border-left: 4px solid #075433; border-radius: 0 10px 10px 0; padding: 22px; margin: 28px 0; box-shadow: 0 4px 14px rgba(4,47,42,0.05); }
+.callout-box.warning { border-left-color: #ff754d; background: #fffcfb; }
+.callout-box h3 { margin: 0 0 10px; color: #042f2a; font-size: 1.15rem; }
+
+/* Figures */
+.infographic-figure { margin: 34px 0; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.04); }
+.infographic-figure img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.infographic-figure figcaption { font-size: 0.84rem; color: #52796f; text-align: center; margin-top: 10px; }
+
+/* Author Profile */
+.author-card { display: flex; flex-direction: column; gap: 16px; background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 24px; margin: 40px 0; }
+@media(min-width: 600px) { .author-card { flex-direction: row; align-items: flex-start; } }
+.author-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #9fe7bd; flex-shrink: 0; }
+.author-info { flex: 1; }
+.author-name { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.25rem; color: #042f2a; margin: 0 0 4px; }
+.author-meta { font-size: 0.84rem; color: #52796f; margin-bottom: 10px; }
+.author-bio { font-size: 0.92rem; line-height: 1.6; color: #2e4b3f; margin: 0; }
+
+/* FAQs */
+.faq-block { margin: 36px 0; }
+.faq-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; }
+.faq-card h3 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.15rem; color: #042f2a; margin: 0 0 10px; }
+.faq-card p { margin: 0; color: #2e4b3f; font-size: 0.95rem; }
+
+/* Related Grid */
+.related-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 24px 0 40px; }
+@media(min-width: 600px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+.related-card { background: #ffffff; border: 1px solid #dce9e2; border-radius: 10px; padding: 18px; text-decoration: none; color: inherit; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+.related-card:hover { transform: translateY(-3px); border-color: #ff754d; }
+.related-card small { color: #52796f; font-size: 0.78rem; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+.related-card h4 { font-family: var(--font-display, 'Fraunces', serif); font-size: 1.05rem; color: #042f2a; margin: 0 0 8px; }
+.related-card span { font-size: 0.86rem; color: #ff754d; font-weight: 600; }
+</style><style>
+.aa-mode-row { display: flex; gap: 10px; margin-bottom: 18px; }
+.aa-mode { flex: 1; padding: 11px 10px; border-radius: 8px; border: 1.5px solid #dce9e2; background: #f4f9f6; color: #2e4b3f; font-weight: 700; font-size: 0.95rem; cursor: pointer; }
+.aa-mode-active { background: #075433; border-color: #075433; color: #ffffff; }
+.aa-row { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 10px; }
+.aa-row-field { flex: 1; }
+.aa-remove { background: #fdfdfd; border: 1px solid #dce9e2; color: #8a4b3a; border-radius: 8px; padding: 10px 12px; font-size: 0.85rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.aa-remove:hover { background: #fff3ef; }
+.aa-add { width: 100%; padding: 11px; border: 1.5px dashed #9fc3ae; border-radius: 8px; background: #f8fbf9; color: #075433; font-weight: 700; cursor: pointer; margin-top: 2px; }
+.aa-add:hover { background: #eef7f2; }
+.aa-options { display: flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 0.92rem; color: #2e4b3f; font-weight: 600; }
+.aa-error { display: none; background: #fff3ef; border: 1px solid #ffb59d; color: #8a2f16; border-radius: 8px; padding: 12px 14px; margin-top: 16px; font-size: 0.9rem; }
+.aa-error p { margin: 0 0 4px; } .aa-error p:last-child { margin: 0; }
+.aa-ref { max-width: 260px; margin-bottom: 14px; }
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Retirement Savings Goal Calculator", "operatingSystem": "All", "applicationCategory": "CalculatorApplication", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "How much must you save each month to reach your retirement target? Enter your current age, retirement age, current savings, target and expected return for a monthly figure. Free, private, browser-based."}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does this calculator work out?", "acceptedAnswer": {"@type": "Answer", "text": "The monthly contribution you need to make, from now until your retirement age, to reach a target amount at retirement, given your current savings and an expected annual return."}}, {"@type": "Question", "name": "What formula does it use?", "acceptedAnswer": {"@type": "Answer", "text": "Monthly compounding. With monthly return r, months n, current savings PV and target FV, the required monthly saving is (FV − PV × (1 + r)^n) × r ÷ ((1 + r)^n − 1). At zero return it is simply the gap divided by the months."}}, {"@type": "Question", "name": "What if my current savings already reach the target?", "acceptedAnswer": {"@type": "Answer", "text": "The calculator says you are already on track and shows the projected value of your current savings at retirement, instead of a negative monthly saving."}}, {"@type": "Question", "name": "What return should I assume?", "acceptedAnswer": {"@type": "Answer", "text": "Use a conservative long-run assumption for the investments you actually hold, and test a lower one too. The return is an assumption you supply, not a prediction the calculator makes, and the monthly figure moves sharply with it."}}, {"@type": "Question", "name": "Does the result include inflation?", "acceptedAnswer": {"@type": "Answer", "text": "No. The target is a nominal amount at retirement. If you want the target in today’s purchasing power, enter the inflation-adjusted figure: today’s target × (1 + inflation)^years."}}, {"@type": "Question", "name": "Are taxes and fees included?", "acceptedAnswer": {"@type": "Answer", "text": "No. Taxes, fund charges and adviser fees are not deducted, so the required saving is a pre-tax, pre-fee figure. Your actual required saving may be higher once those are counted."}}, {"@type": "Question", "name": "Are contributions monthly or yearly?", "acceptedAnswer": {"@type": "Answer", "text": "Monthly, assumed paid at each month-end and compounded monthly. If you save yearly, divide the monthly figure by 12 only as a rough guide, because yearly contributions compound differently."}}, {"@type": "Question", "name": "Can I change my retirement age to see the effect?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Retiring later adds months of contributions and compounding, which lowers the monthly figure; retiring earlier raises it. Run both ages to see the trade-off."}}, {"@type": "Question", "name": "Why does starting early matter so much?", "acceptedAnswer": {"@type": "Answer", "text": "Because growth compounds. In the worked example, a 30-year-old saving ₹8,848 a month contributes ₹31,85,153 in total and growth supplies ₹1,68,14,847 — more than five times the contributions. Starting later shifts that balance toward your own money."}}, {"@type": "Question", "name": "Is the result guaranteed?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is a projection under a constant-return assumption. Real returns vary, and the outcome will differ. Treat the figure as a planning guide, not a guarantee, and review it as your circumstances change."}}, {"@type": "Question", "name": "Is this calculator free, and are my figures private?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it is free, and it runs entirely in your browser. Your ages, savings and target are never sent to a server or stored anywhere."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.agecalculatorlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Finance & Professional", "item": "https://www.agecalculatorlab.com/categories/finance-professional/"}, {"@type": "ListItem", "position": 3, "name": "Retirement Savings Goal Calculator", "item": "https://www.agecalculatorlab.com/tools/retirement-savings-goal-calculator/"}]}</script>
+<style>
+/* Mobile layout fixes (2026-10-22) — on small screens the guide navigation
+   scrolls with the page instead of pinning over the article, links go
+   two-up, and charts/tables get compact, legible treatment. */
+@media (max-width: 979px) {
+  .tool-toc { position: static; top: auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; padding: 18px 20px; }
+  .tool-toc strong { grid-column: 1 / -1; margin-bottom: 8px; }
+  .tool-toc a { font-size: 0.86rem; padding: 7px 0; }
+  .tool-content-layout { gap: 10px; padding: 36px 0 44px; }
+}
+@media (max-width: 640px) {
+  .chart-svg { min-width: 540px; }
+  .styled-table { font-size: 0.86rem; }
+  .styled-table th, .styled-table td { padding: 9px 10px; }
+  .tool-article h2 { font-size: 1.55rem; margin-top: 36px; }
+  .tool-article h3 { font-size: 1.22rem; }
+}
+@media (max-width: 399px) {
+  .tool-toc { grid-template-columns: 1fr; }
+}
+</style>
+
+<style>
+.wa-error { display: none; background: #fff3ef; border: 1px solid #ffb59d; color: #8a2f16; border-radius: 8px; padding: 12px 14px; margin-top: 16px; font-size: 0.9rem; }
+.wa-error p { margin: 0 0 4px; }
+.wa-error p:last-child { margin: 0; }
+.wa-example { background: #f2f9f5; border: 1px solid #dce9e2; border-left: 4px solid #075433; border-radius: 0 10px 10px 0; padding: 18px 20px; margin: 20px 0; font-size: 0.96rem; line-height: 1.65; color: #1c382f; }
+@media (max-width: 640px) {
+  .wa-example { padding: 14px 16px; }
+}
+</style>
+
+<style>
+.panel-photo { width: 100%; height: auto; display: block; border-radius: 10px; }
+</style>
+</head><header class="site-header"><div class="container nav"><a class="brand brand-image-link" href="../../" aria-label="Age Calculator Lab home"><img decoding="async" class="brand-logo brand-logo-nav" src="../../assets/age-calculator-lab-logo.png" alt="Age Calculator Lab — Calculate, Discover, Know" width="175" height="52" style="width:auto;max-width:180px;height:auto"></a><button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span></button><nav class="nav-links" id="primary-nav" aria-label="Primary navigation"><details class="nav-dropdown nav-dropdown-categories"><summary>Calculators <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega"><div class="nav-mega-head"><div><small>180 focused tools</small><strong>Main calculator categories</strong></div><a href="../../categories/">View category directory →</a></div><div class="nav-category-grid"><a href="../../categories/universal-chronology/"><span>Universal Chronology</span><small>30 tools</small></a><a href="../../categories/clinical-academic/"><span>Clinical &amp; Academic</span><small>6 tools</small></a><a href="../../categories/biological-health/"><span>Biological &amp; Health</span><small>13 tools</small></a><a href="../../categories/pregnancy-pediatric/"><span>Pregnancy &amp; Pediatric</span><small>15 tools</small></a><a href="../../categories/birthday-milestones/"><span>Birthday &amp; Milestones</span><small>19 tools</small></a><a href="../../categories/professional-education/"><span>Professional &amp; Education</span><small>17 tools</small></a><a href="../../categories/finance-professional/"><span>Finance &amp; Professional</span><small>18 tools</small></a><a href="../../categories/nature-life-cycles/"><span>Nature &amp; Life Cycles</span><small>10 tools</small></a><a href="../../categories/life-statistics/"><span>Life Statistics</span><small>6 tools</small></a><a href="../../categories/culture-birth-profile/"><span>Culture &amp; Birth Profile</span><small>13 tools</small></a><a href="../../categories/date-lab/"><span>Date Lab</span><small>35 tools</small></a></div><div class="nav-quick-row"><span>Popular</span><a href="../../">Age Calculator</a><a href="../../tools/date-difference-calculator/">Date Difference</a><a href="../../tools/corrected-age-calculator/">Corrected Age</a><a href="../../tools/countdown-to-date-calculator/">Countdown</a></div></div></details><details class="nav-dropdown nav-dropdown-days"><summary>Days &amp; Dates <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-days"><div class="nav-mega-head"><div><small>114 focused date &amp; time tools</small><strong>Days Between Dates &amp; Time Lab</strong></div><a href="https://days.agecalculatorlab.com/">Visit Days &amp; Dates Lab →</a></div><div class="nav-days-grid"><a class="nav-days-card" href="https://days.agecalculatorlab.com/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div><div class="nav-days-text"><span class="nav-days-title">Days Between Dates</span><span class="nav-days-desc">Exact calendar days, whole weeks, weekends &amp; day span.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div class="nav-days-text"><span class="nav-days-title">Date Calculator (± Days)</span><span class="nav-days-desc">Add or subtract days, business days &amp; calendar months.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Working &amp; Business Days</span><span class="nav-days-desc">Count working days with custom weekends &amp; bank holidays.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/pst-to-est/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Time Zone Converter</span><span class="nav-days-desc">Live conversion between PST, EST, UTC &amp; world clocks.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calendar/2026/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M3 10h18"></path><path d="M10 14h4"></path><path d="M12 12v4"></path></svg></div><div class="nav-days-text"><span class="nav-days-title">Countdowns &amp; Calendars</span><span class="nav-days-desc">Holiday countdowns, full-year calendars &amp; ISO week numbers.</span></div></a><a class="nav-days-card" href="https://days.agecalculatorlab.com/calculators/"><div class="nav-days-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div><div class="nav-days-text"><span class="nav-days-title">All 114 Date Tools Directory</span><span class="nav-days-desc">Explore the full catalog of date, time and duration tools.</span></div></a></div><div class="nav-quick-row"><span>Popular on Days Lab</span><a href="https://days.agecalculatorlab.com/">Days Between Dates</a><a href="https://days.agecalculatorlab.com/calculators/">Business Days</a><a href="https://days.agecalculatorlab.com/pst-to-est/">PST to EST</a><a href="https://days.agecalculatorlab.com/calendar/2026/">2026 Calendar</a><a href="https://days.agecalculatorlab.com/calculators/">Browse all 114 tools →</a></div></div></details><details class="nav-dropdown nav-dropdown-guides"><summary>Guides <span class="nav-chevron" aria-hidden="true">⌄</span></summary><div class="nav-mega nav-mega-guides"><div class="nav-mega-head"><div><small>167 practical guides</small><strong>Learn the method</strong></div><a href="../../articles/">Browse all guides →</a></div><div class="nav-guide-grid"><a href="../../articles/10k-age-grading/"><small>Biological &amp; Health</small><span>10K Age Grading Explained: How Age Grade Works</span></a><a href="../../articles/5k-age-grading/"><small>Biological &amp; Health</small><span>5K Age Grading Explained: Calculate Your 5K Age Grade</span></a><a href="../../articles/age-graded-results-vs-age-group-results/"><small>Biological &amp; Health</small><span>Age-Graded Results vs Age-Group Results: Key Differences</span></a><a href="../../articles/age-grading-for-masters-runners/"><small>Biological &amp; Health</small><span>Age Grading for Masters Runners: How It Works &amp; Benefits</span></a><a href="../../articles/what-is-a-good-age-grade-in-running/"><small>Biological &amp; Health</small><span>What Is a Good Age Grade in Running? Percentage Guide</span></a><a href="../../articles/how-is-age-grade-calculated/"><small>Biological &amp; Health</small><span>How Is Age Grade Calculated? Formula, Examples &amp; Guide</span></a></div></div></details><a href="https://born-in.agecalculatorlab.com/born-in/">Born in a year</a><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><div class="nav-search-wrap" id="nav-search-wrap"><div class="nav-search-box"><svg class="nav-search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"></circle><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg><input type="search" class="nav-search-input" placeholder="Search calculators…" aria-label="Search calculators" id="nav-search-input" autoComplete="off"></div><div class="nav-search-dropdown" id="nav-search-dropdown" hidden="" aria-live="polite"></div></div><a class="nav-cta" href="../../#calculator">Calculate age</a></nav></div></header><main id="main-content">
+<section class="tool-hero">
+<div class="container tool-hero-grid">
+<div class="tool-hero-copy">
+<div class="breadcrumbs"><a href="../../">Home</a> / <a href="../../categories/finance-professional/">Finance &amp; Professional</a> / Retirement Savings Goal Calculator</div>
+<span class="eyebrow">Retirement Planning</span>
+<h1>Retirement Savings Goal Calculator</h1>
+<p class="lead">How much do you need to save each month to retire on your number? Enter your current age and retirement age, what you have saved so far, the amount you want at retirement, and the annual return you expect. The calculator solves for the monthly contribution that gets you there, and shows how much of the final amount is your own money and how much is growth.</p>
+<div class="calculator-card" id="calculator-section">
+<div class="calc-header">
+<h2>Calculate Your Monthly Saving</h2>
+<p>Five inputs &mdash; the calculator solves for the monthly contribution that reaches your target.</p>
+</div>
+<div class="calc-section-title">Step 1 &mdash; Your timeline</div>
+<div class="calc-field">
+<label for="rgCurAge">Current age <small>(required)</small></label>
+<input type="number" id="rgCurAge" min="0" max="120" step="1" placeholder="e.g. 30">
+</div>
+<div class="calc-field">
+<label for="rgRetAge">Retirement age <small>(required)</small></label>
+<input type="number" id="rgRetAge" min="1" max="120" step="1" placeholder="e.g. 60">
+</div>
+<div class="calc-section-title">Step 2 &mdash; Your money</div>
+<div class="calc-field">
+<label for="rgCurrent">Current savings <small>(required)</small></label>
+<input type="number" id="rgCurrent" min="0" step="any" placeholder="e.g. 0">
+</div>
+<div class="calc-field">
+<label for="rgTarget">Target at retirement <small>(required)</small></label>
+<input type="number" id="rgTarget" min="1" step="any" placeholder="e.g. 20000000">
+</div>
+<div class="calc-field">
+<label for="rgReturn">Expected annual return (%) <small>(required)</small></label>
+<input type="number" id="rgReturn" min="0" max="50" step="any" placeholder="e.g. 10">
+<p class="field-hint">An assumption for illustration, not a prediction. Try a lower return to see how much more you would need to save.</p>
+</div>
+<div class="calc-error" id="rgError" role="alert" style="display:none"></div>
+<div class="calc-btn-row">
+<button type="button" class="btn-calc" id="rgCalc">Calculate Monthly Saving</button>
+<button type="button" class="btn-reset" id="rgResetBtn">Reset</button>
+</div>
+</div>
+<p>Most retirement tools run forwards: give them a monthly saving and they project a final balance. This one runs backwards, which is the question people actually ask &mdash; &ldquo;I want this much at retirement; what must I save each month to get there?&rdquo; The answer depends on time, on what you already have, and on the return you assume, and this page shows all three working together.</p>
+<ul>
+<li><strong>Required monthly contribution</strong> to reach your target by your retirement age.</li>
+<li><strong>Split of the final amount</strong> &mdash; your contributions versus investment growth, so you can see what compounding does.</li>
+<li><strong>On-track check</strong> &mdash; if your current savings alone grow to the target, the calculator says so instead of inventing a saving.</li>
+<li><strong>Milestone projection</strong> &mdash; the balance every 5 years on the required monthly saving.</li>
+</ul>
+<div class="trust-row">
+<span class="trust-pill">&#10003; Free retirement tool</span>
+<span class="trust-pill">&#10003; Monthly compounding math</span>
+<span class="trust-pill">&#10003; No invented assumptions</span>
+<span class="trust-pill">&#10003; 100% Private Client-Side Calculation</span>
+</div>
+</div>
+<div class="results-panel" id="resultsPanel" aria-live="polite">
+<div class="result-banner">
+<small>Save Each Month</small>
+<div class="main-balance" id="rgResMain">&mdash;</div>
+<p class="banner-subtext" id="rgResSub">Enter your ages, savings, target and return, then select Calculate Monthly Saving.</p>
+</div>
+<div class="metrics-quad-grid">
+<div class="metric-card">
+<span class="metric-label">Months to retirement</span>
+<span class="metric-value" id="rgResMonths">&mdash;</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Total you contribute</span>
+<span class="metric-value" id="rgResContrib">&mdash;</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Growth</span>
+<span class="metric-value" id="rgResGrowth">&mdash;</span>
+</div>
+<div class="metric-card">
+<span class="metric-label">Target at retirement</span>
+<span class="metric-value" id="rgResTarget">&mdash;</span>
+</div>
+</div>
+<p class="banner-subtext" id="rgResNote" style="margin-top:14px;"></p>
+<button type="button" class="btn-reset" id="rgCopy" style="align-self:flex-start;">Copy result</button>
+</div>
+</div>
+</section>
+<section class="tool-visuals-strip">
+<div class="container">
+<div class="visual-panel-card">
+<h2>Retirement Is a Number, Not a Guess</h2>
+<p class="subtitle">A glass piggy bank and the coins beside it &mdash; the question this calculator answers is how many coins a month, for how many years, reach the number you chose.</p>
+<img class="panel-photo" src="../../assets/thumbnails/calculators/retirement-savings-goal-calculator.webp" alt="Photograph of a glass piggy bank with coins on a wooden table in warm sunlight" width="1280" height="720" loading="lazy">
+</div>
+<div class="visual-panel-card">
+<h2 id="rgProjTitle">Your Milestone Projection</h2>
+<p class="subtitle">The balance every 5 years if you save the required amount monthly &mdash; this table fills in when you calculate. The example below uses the worked example: age 30 to 60, starting from zero, target &#8377;2 crore at 10%.</p>
+<div style="overflow-x:auto"><table class="styled-table">
+<thead><tr><th>After</th><th>Balance</th></tr></thead>
+<tbody id="rgProjBody"><tr><td colspan="2" style="text-align:center; color:#628277;">Enter your figures above and select Calculate Monthly Saving to see your projection.</td></tr></tbody>
+</table></div>
+<p style="font-size:0.82rem; color:#628277; margin-top:14px; text-align:center;">Projection assumes monthly contributions at month-end and a constant annual return, compounded monthly.</p>
+</div>
+
+</div>
+</section>
+<section class="section">
+<div class="container tool-content-layout">
+<aside class="tool-toc" aria-label="Table of Contents">
+<strong>Guide Navigation</strong>
+<a href="#what-is">1. What Is a Retirement Savings Goal Calculator?</a>
+<a href="#how-to-use">2. How to Use This Calculator</a>
+<a href="#how-calculated">3. How the Monthly Figure Is Calculated</a>
+<a href="#worked-examples">4. Worked Examples</a>
+<a href="#limits">5. Limits &amp; Notes</a>
+<a href="#related-tools">6. Related Calculators</a>
+<a href="#faq">7. Frequently Asked Questions</a>
+<a href="#methodology-trust">8. Methodology &amp; Data Integrity</a>
+</aside>
+<article class="tool-article">
+<section id="what-is">
+<h2 id="what-is">1. What Is a Retirement Savings Goal Calculator?</h2>
+<p>A <strong>retirement savings goal calculator</strong> answers the reverse of the usual retirement question. Instead of &ldquo;what will my savings grow to?&rdquo;, it answers &ldquo;what must I save each month to reach the amount I want?&rdquo; You state the target, the time available, what you have already saved, and the return you expect &mdash; and the calculator solves for the monthly contribution that closes the gap.</p>
+<p>That framing matters because the target is usually the fixed part of a retirement plan: a lifestyle costs what it costs. The monthly saving is the variable you control, and it changes sharply with time &mdash; starting ten years earlier can cut the required monthly amount by more than half, because growth does more of the work.</p>
+<p>Everything runs in your browser &mdash; your ages, savings and target are never sent anywhere.</p>
+</section>
+
+<section id="how-to-use">
+<h2 id="how-to-use">2. How to Use This Calculator</h2>
+<p>There are five inputs. <strong>Current age</strong> and <strong>retirement age</strong> set the time available, in months. <strong>Current savings</strong> is what you have already put aside for retirement (enter 0 if you are starting now). <strong>Target at retirement</strong> is the amount you want to have on the day you retire. <strong>Expected annual return</strong> is the rate your investments are assumed to earn, as a percentage per year.</p>
+<p>Select <strong>Calculate Monthly Saving</strong> and the results panel shows the headline figure &mdash; the monthly contribution required &mdash; alongside the months to retirement, the total you will contribute, the growth that makes up the rest, and the target. The milestone table fills in with your projected balance every 5 years. <strong>Reset</strong> clears all inputs; <strong>Copy result</strong> puts a one-line summary on your clipboard.</p>
+</section>
+
+<section id="how-calculated">
+<h2 id="how-calculated">3. How the Monthly Figure Is Calculated</h2>
+<p>The calculation uses monthly compounding. Let <em>r</em> be the monthly return (annual return &divide; 12), <em>n</em> the number of months to retirement, <em>PV</em> your current savings, and <em>FV</em> your target. Your current savings grow to PV &times; (1 + r)<sup>n</sup>. The remaining gap must be filled by monthly contributions, and a monthly contribution <em>P</em> grows to P &times; ((1 + r)<sup>n</sup> &minus; 1) &divide; r. Solving for <em>P</em> gives the required monthly saving: <strong>P = (FV &minus; PV &times; (1 + r)<sup>n</sup>) &times; r &divide; ((1 + r)<sup>n</sup> &minus; 1)</strong>.</p>
+<p>If the expected return is zero, the answer is simply the gap divided by the months: (FV &minus; PV) &divide; n. If your current savings alone grow to the target or beyond, the required monthly saving is zero or negative &mdash; the calculator reports that you are already on track and shows the projected value of your current savings instead of a meaningless negative saving.</p>
+<p>The milestone projection applies the same math at each 5-year point: the grown value of current savings plus the grown value of the monthly contributions made so far.</p>
+</section>
+
+<section id="worked-examples">
+<h2 id="worked-examples">4. Worked Examples</h2>
+<p><strong>Example 1 &mdash; starting from zero.</strong> Age 30, retiring at 60 (360 months), no current savings, target &#8377;2 crore, expected return 10% per year. The required saving is &#8377;8,848 per month. Over 30 years you contribute &#8377;31,85,153 and growth supplies the remaining &#8377;1,68,14,847 &mdash; more than five times what you put in.</p>
+<p><strong>Example 2 &mdash; a head start.</strong> Age 35, retiring at 60 (300 months), current savings &#8377;5 lakh, target &#8377;1 crore, expected return 8% per year. The required saving is &#8377;6,656 per month &mdash; lower than Example 1 despite the smaller target, because the existing &#8377;5 lakh does 25 years of compounding work.</p>
+<p><strong>Example 3 &mdash; no return at all.</strong> Age 40, retiring at 60 (240 months), no current savings, target &#8377;12 lakh, expected return 0%. The required saving is simply &#8377;12,00,000 &divide; 240 = &#8377;5,000 per month, which is a useful check that the formula behaves when growth is absent.</p>
+</section>
+
+<section id="limits">
+<h2 id="limits">5. Limits &amp; Notes</h2>
+<p>This is a projection, not a promise. It assumes a constant annual return, monthly contributions at each month-end, and no taxes, fees, inflation or salary growth. Real returns vary year to year, and a constant-return projection will differ from any actual outcome &mdash; that is why the return input is worth stress-testing: run the same target at a lower return and see how much the monthly figure rises.</p>
+<p>The target is a nominal figure: &#8377;2 crore in 30 years buys less than &#8377;2 crore today. If you want a target in today’s purchasing power, enter the inflation-adjusted amount instead &mdash; roughly, multiply today’s target by (1 + inflation)<sup>years</sup>. The calculator deliberately does not add an inflation assumption of its own, because that would be an invented input dressed up as a result.</p>
+<p>The result is also not financial advice. Pension rules, tax treatment and employer contributions all change the picture for an individual, and a qualified adviser should review any retirement plan before it is relied on.</p>
+</section>
+
+<section id="related-tools">
+<h2 id="related-tools">6. Related Calculators</h2>
+<p>If this tool is not quite the question you are asking, a neighbouring calculator probably is:</p>
+<div style="overflow-x:auto"><table class="styled-table">
+<thead><tr><th>Your question</th><th>Calculator</th></tr></thead>
+<tbody>
+<tr><td>What will my 401k grow to?</td><td><a href="../../tools/401k-calculator/">401k Calculator</a></td></tr>
+<tr><td>At what age can I retire?</td><td><a href="../../tools/retirement-age-calculator/">Retirement Age Calculator</a></td></tr>
+<tr><td>When can I retire early?</td><td><a href="../../tools/early-retirement-date-calculator/">Early Retirement Date Calculator</a></td></tr>
+<tr><td>When does my pension age arrive?</td><td><a href="../../tools/pension-age-date-calculator/">Pension Age Date Calculator</a></td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section id="faq" class="faq-block">
+<h2>7. Frequently Asked Questions</h2>
+<div class="faq-card">
+<h3>What does this calculator work out?</h3>
+<p>The monthly contribution you need to make, from now until your retirement age, to reach a target amount at retirement, given your current savings and an expected annual return.</p>
+</div>
+<div class="faq-card">
+<h3>What formula does it use?</h3>
+<p>Monthly compounding. With monthly return r, months n, current savings PV and target FV, the required monthly saving is (FV − PV × (1 + r)^n) × r ÷ ((1 + r)^n − 1). At zero return it is simply the gap divided by the months.</p>
+</div>
+<div class="faq-card">
+<h3>What if my current savings already reach the target?</h3>
+<p>The calculator says you are already on track and shows the projected value of your current savings at retirement, instead of a negative monthly saving.</p>
+</div>
+<div class="faq-card">
+<h3>What return should I assume?</h3>
+<p>Use a conservative long-run assumption for the investments you actually hold, and test a lower one too. The return is an assumption you supply, not a prediction the calculator makes, and the monthly figure moves sharply with it.</p>
+</div>
+<div class="faq-card">
+<h3>Does the result include inflation?</h3>
+<p>No. The target is a nominal amount at retirement. If you want the target in today’s purchasing power, enter the inflation-adjusted figure: today’s target × (1 + inflation)^years.</p>
+</div>
+<div class="faq-card">
+<h3>Are taxes and fees included?</h3>
+<p>No. Taxes, fund charges and adviser fees are not deducted, so the required saving is a pre-tax, pre-fee figure. Your actual required saving may be higher once those are counted.</p>
+</div>
+<div class="faq-card">
+<h3>Are contributions monthly or yearly?</h3>
+<p>Monthly, assumed paid at each month-end and compounded monthly. If you save yearly, divide the monthly figure by 12 only as a rough guide, because yearly contributions compound differently.</p>
+</div>
+<div class="faq-card">
+<h3>Can I change my retirement age to see the effect?</h3>
+<p>Yes. Retiring later adds months of contributions and compounding, which lowers the monthly figure; retiring earlier raises it. Run both ages to see the trade-off.</p>
+</div>
+<div class="faq-card">
+<h3>Why does starting early matter so much?</h3>
+<p>Because growth compounds. In the worked example, a 30-year-old saving ₹8,848 a month contributes ₹31,85,153 in total and growth supplies ₹1,68,14,847 — more than five times the contributions. Starting later shifts that balance toward your own money.</p>
+</div>
+<div class="faq-card">
+<h3>Is the result guaranteed?</h3>
+<p>No. It is a projection under a constant-return assumption. Real returns vary, and the outcome will differ. Treat the figure as a planning guide, not a guarantee, and review it as your circumstances change.</p>
+</div>
+<div class="faq-card">
+<h3>Is this calculator free, and are my figures private?</h3>
+<p>Yes, it is free, and it runs entirely in your browser. Your ages, savings and target are never sent to a server or stored anywhere.</p>
+</div>
+</section>
+
+<section id="methodology-trust">
+<h2 id="methodology-trust">8. Methodology &amp; Data Integrity</h2>
+<p>The math is the standard future-value-of-an-annuity formula with monthly compounding, solved for the payment. No return, inflation or fee assumption is built in: every assumption is an input you supply, and the page states that the result is a projection, not a prediction or advice.</p>
+<p>Worked examples on this page were produced by the calculator’s own engine: age 30 to 60, ₹0 to ₹2 crore at 10% = ₹8,848 per month (₹31,85,153 contributed, ₹1,68,14,847 growth); age 35 to 60, ₹5 lakh to ₹1 crore at 8% = ₹6,656 per month; zero-return case ₹12 lakh over 240 months = ₹5,000 per month. Monthly figures are rounded to the nearest rupee.</p>
+<p>This tool does not give financial advice and does not account for tax, fees, inflation, salary growth or pension rules. A retirement plan built on it should be reviewed by a qualified adviser.</p>
+</section>
+
+</article>
+</div>
+</section>
+<section class="author-section" data-author-bio><div class="container"><div class="author-profile"><img loading="lazy" decoding="async" src="../../assets/navjeet-kamboj.webp" alt="Navjeet Kamboj, author at Age Calculator Lab"><div><span class="kicker">About the author</span><h2>Navjeet Kamboj</h2><p>Navjeet Kamboj is the author and editor of Age Calculator Lab. He focuses on making age, date, milestone and planning calculations easier to understand through clearly explained methods, practical examples and responsible limitations.</p><div class="author-links"><a href="../../author/navjeet-kamboj/">Full author profile</a><a href="https://in.linkedin.com/in/navjeet-kamboj" rel="me noopener" target="_blank">LinkedIn ↗</a><a href="https://www.instagram.com/jeet_7.7/" rel="me noopener" target="_blank">Instagram ↗</a><a href="../../methodology/">Editorial methodology</a></div></div></div></div></section>
+</main>
+<script>
+
+/* Retirement Savings Goal Calculator — inline engine.
+   Method: monthly compounding, solved for the monthly payment. r = annual
+   return / 12, n = months to retirement, PV = current savings, FV = target.
+   P = (FV - PV(1+r)^n) x r / ((1+r)^n - 1); at zero return, P = (FV - PV)/n.
+   If P <= 0 the current savings already reach the target. */
+function rgCalculate(curAgeStr, retAgeStr, curStr, tgtStr, retStr) {
+  var curAge = parseFloat(curAgeStr), retAge = parseFloat(retAgeStr);
+  var current = parseFloat(curStr), target = parseFloat(tgtStr), retPct = parseFloat(retStr);
+  if (isNaN(curAge) || isNaN(retAge) || isNaN(current) || isNaN(target) || isNaN(retPct))
+    return { ok: false, error: 'Fill in all five inputs with numbers.' };
+  if (!(retAge > curAge)) return { ok: false, error: 'Retirement age must be greater than current age.' };
+  if (!(target > 0)) return { ok: false, error: 'The target at retirement must be greater than zero.' };
+  if (current < 0 || retPct < 0) return { ok: false, error: 'Current savings and expected return cannot be negative.' };
+  var months = Math.round((retAge - curAge) * 12);
+  var r = retPct / 100 / 12;
+  var g = Math.pow(1 + r, months);
+  var monthly = (r === 0) ? (target - current) / months : (target - current * g) * r / (g - 1);
+  var onTrack = monthly <= 0;
+  var projected = onTrack ? current * g : target;
+  var totalContrib = onTrack ? 0 : monthly * months;
+  var growth = projected - current - totalContrib;
+  var table = [];
+  for (var y = 5; y <= (retAge - curAge); y += 5) {
+    var m = y * 12, gt = Math.pow(1 + r, m);
+    var bal = current * gt + (r === 0 ? monthly * m : monthly * (gt - 1) / r);
+    table.push({ year: y, balance: bal });
+  }
+  if ((retAge - curAge) % 5 !== 0) table.push({ year: (retAge - curAge), balance: projected });
+  return { ok: true, months: months, monthly: monthly, onTrack: onTrack, projected: projected, totalContrib: totalContrib, growth: growth, table: table };
+}
+function inr(n) { return '\u20B9' + Math.round(n).toLocaleString('en-IN'); }
+function num(n) { return n.toLocaleString('en-US'); }
+
+/* UI wiring for the Retirement Savings Goal Calculator. */
+(function () {
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function showError(msg) { var el = $('rgError'); el.style.display = 'block'; el.innerHTML = '<p>' + esc(msg) + '</p>'; }
+  function clearError() { var el = $('rgError'); el.style.display = 'none'; el.innerHTML = ''; }
+  function render(r) {
+    $('rgResMain').textContent = r.onTrack ? 'Already on track' : inr(r.monthly) + ' / month';
+    $('rgResMonths').textContent = num(r.months) + ' months';
+    $('rgResContrib').textContent = r.onTrack ? inr(0) : inr(r.totalContrib);
+    $('rgResGrowth').textContent = inr(r.growth);
+    $('rgResTarget').textContent = inr(r.projected);
+    $('rgResSub').textContent = r.onTrack ? 'Your current savings are projected to reach the target on their own.' : 'Save this much every month to reach your target at retirement.';
+    $('rgResNote').textContent = r.onTrack ? 'Projected value of current savings at retirement: ' + inr(r.projected) + '. No monthly saving is required for this target and return.'
+      : 'Of the ' + inr(r.projected) + ' target, you contribute ' + inr(r.totalContrib) + ' and growth supplies ' + inr(r.growth) + '. This is a projection under a constant return, not a guarantee.';
+    $('rgProjBody').innerHTML = r.table.map(function (row) {
+      return '<tr><td>' + row.year + ' years</td><td>' + esc(inr(row.balance)) + '</td></tr>';
+    }).join('');
+  }
+  function resetResults() {
+    $('rgResMain').textContent = '\u2014';
+    $('rgResSub').textContent = 'Enter your ages, savings, target and return, then select Calculate Monthly Saving.';
+    ['rgResMonths', 'rgResContrib', 'rgResGrowth', 'rgResTarget'].forEach(function (id) { $(id).textContent = '\u2014'; });
+    $('rgResNote').textContent = '';
+    $('rgProjBody').innerHTML = '<tr><td colspan="2" style="text-align:center; color:#628277;">Enter your figures above and select Calculate Monthly Saving to see your projection.</td></tr>';
+  }
+  $('rgCalc').addEventListener('click', function () {
+    clearError();
+    var r = rgCalculate($('rgCurAge').value, $('rgRetAge').value, $('rgCurrent').value, $('rgTarget').value, $('rgReturn').value);
+    if (!r.ok) { showError(r.error); return; }
+    render(r);
+  });
+  $('rgResetBtn').addEventListener('click', function () {
+    ['rgCurAge', 'rgRetAge', 'rgCurrent', 'rgTarget', 'rgReturn'].forEach(function (id) { $(id).value = ''; });
+    clearError(); resetResults();
+  });
+  $('rgCopy').addEventListener('click', function () {
+    var main = $('rgResMain').textContent;
+    if (main === '\u2014') return;
+    var txt = 'Retirement saving: ' + main + ' (total contributed ' + $('rgResContrib').textContent + '; growth ' + $('rgResGrowth').textContent + '). \u2014 via Age Calculator Lab';
+    var done = function () { $('rgCopy').textContent = 'Copied!'; setTimeout(function () { $('rgCopy').textContent = 'Copy result'; }, 1600); };
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(txt).then(done, done); }
+    else { var ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} document.body.removeChild(ta); done(); }
+  });
+})();
+
+</script><footer class="footer"><div class="container"><div class="footer-grid footer-grid-rich"><div class="footer-brand-panel"><a class="footer-wordmark" href="../../">Age Calculator <span>Lab</span></a><p>Practical, verified calculators and guides for age, dates, milestones and planning. No registration required.</p><a class="footer-author-link" href="../../author/navjeet-kamboj/">Created and maintained by Navjeet Kamboj →</a></div><div><h3>Calculators</h3><a href="../../">Exact Age</a><a href="../../tools/chronological-age-calculator/">Chronological Age</a><a href="../../tools/age-difference-calculator/">Age Difference</a><a href="../../categories/">All categories</a></div><div class="footer-guides"><h3>Articles &amp; Guides</h3><a href="../../articles/calculate-exact-age-years-months-days/">Calculate exact age</a><a href="../../articles/ymd-semicolon-format-guide/">Y;M;D format</a><a href="../../articles/corrected-age-premature-babies/">Corrected age guide</a><a class="footer-guides-all" href="../../articles/">Browse all guides →</a></div><div><h3>Explore</h3><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><a href="../../about/">About</a><a href="../../disclaimer/">Disclaimer</a></div><div><h3>Important</h3><a href="../../privacy/">Privacy</a><a href="#" onclick="if(window.googlefc&&googlefc.showRevocationMessage){googlefc.showRevocationMessage();}return false;">Privacy choices</a><a href="../../terms/">Terms</a><a href="../../contact/">Contact</a><a href="../../sitemap.xml">Sitemap</a></div></div><div class="copyright"><span>© 2026 Age Calculator Lab.</span><span>Results are informational; verify clinical, legal, financial and eligibility decisions with the responsible professional or authority.</span></div></div></footer><script src="../../assets/app.js?v=20261022a"></script><style>
+/* Scrollable guide navigation + scrollspy (2026-10-23): the guide navigation
+   caps at the viewport height and scrolls internally, so on tall guides every
+   link stays reachable instead of running off the bottom of the screen. */
+.tool-toc { scrollbar-width: thin; scrollbar-color: #9fc5b2 #eef5f1; }
+.tool-toc::-webkit-scrollbar { width: 6px; }
+.tool-toc::-webkit-scrollbar-track { background: #eef5f1; border-radius: 3px; }
+.tool-toc::-webkit-scrollbar-thumb { background: #9fc5b2; border-radius: 3px; }
+@media (min-width: 980px) {
+  .tool-toc { max-height: calc(100vh - 108px); overflow-y: auto; overscroll-behavior: contain; }
+}
+@media (max-width: 979px) {
+  .tool-toc { position: static; top: auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; padding: 18px 20px; max-height: 60vh; overflow-y: auto; overscroll-behavior: contain; }
+  .tool-toc strong { grid-column: 1 / -1; margin-bottom: 8px; }
+  .tool-toc a { font-size: 0.86rem; padding: 7px 0; }
+}
+@media (max-width: 399px) {
+  .tool-toc { grid-template-columns: 1fr; }
+}
+.tool-toc a.toc-active { color: #ff754d; font-weight: 600; padding-left: 4px; box-shadow: inset 3px 0 0 #ff754d; }
+.tool-article section[id] { scroll-margin-top: 96px; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+</style>
+<script>
+/* Scrollspy: highlight the guide-navigation link for the section in view and
+   keep that link visible inside the scrollable navigation card. */
+(function () {
+  var toc = document.querySelector('.tool-toc');
+  if (!toc || !('IntersectionObserver' in window)) return;
+  var links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
+  var byId = {};
+  links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+  var targets = Object.keys(byId).map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  if (!targets.length) return;
+  var visible = {};
+  function activate(id) {
+    links.forEach(function (a) { a.classList.toggle('toc-active', byId[id] === a); });
+    var link = byId[id];
+    if (link && toc.scrollHeight > toc.clientHeight) {
+      var lr = link.getBoundingClientRect(), tr = toc.getBoundingClientRect();
+      if (lr.top < tr.top || lr.bottom > tr.bottom) {
+        toc.scrollTop += (lr.top - tr.top) - toc.clientHeight / 2 + link.offsetHeight / 2;
+      }
+    }
+  }
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
+    for (var i = 0; i < targets.length; i++) {
+      if (visible[targets[i].id]) { activate(targets[i].id); break; }
+    }
+  }, { rootMargin: '-25% 0px -65% 0px', threshold: 0 });
+  targets.forEach(function (t) { observer.observe(t); });
+})();
+</script>
+</body></html>
