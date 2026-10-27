@@ -469,7 +469,12 @@
     "u": "/articles/cat-years-human-years/",
     "t": "Guide"
   },
-  {
+    {
+    "n": "Child Height Predictor",
+    "u": "/tools/child-height-predictor/",
+    "t": "Calculator"
+  },
+{
     "n": "Chinese Zodiac Calculator",
     "u": "/tools/chinese-zodiac-calculator/",
     "t": "Calculator"
