@@ -1589,7 +1589,12 @@
     "u": "/articles/weekday-and-day-of-year/",
     "t": "Guide"
   },
-  {
+    {
+    "n": "Weekends Lived Calculator",
+    "u": "/tools/weekends-lived-calculator/",
+    "t": "Calculator"
+  },
+{
     "n": "Weeks Between Dates Calculator",
     "u": "/tools/weeks-between-dates-calculator/",
     "t": "Calculator"
