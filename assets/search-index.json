@@ -1793,5 +1793,30 @@
     "n": "Days Together Calculator",
     "u": "/tools/days-together-calculator/",
     "t": "Calculator"
+  },
+  {
+    "n": "Gratuity Calculator",
+    "u": "/tools/gratuity-calculator/",
+    "t": "Calculator"
+  },
+  {
+    "n": "Retirement Savings Goal Calculator",
+    "u": "/tools/retirement-savings-goal-calculator/",
+    "t": "Calculator"
+  },
+  {
+    "n": "Maternity Leave Calculator",
+    "u": "/tools/maternity-leave-calculator/",
+    "t": "Calculator"
+  },
+  {
+    "n": "100 Days Old Calculator",
+    "u": "/tools/100-days-old-calculator/",
+    "t": "Calculator"
+  },
+  {
+    "n": "Moon Age Calculator",
+    "u": "/tools/moon-age-calculator/",
+    "t": "Calculator"
   }
 ]
