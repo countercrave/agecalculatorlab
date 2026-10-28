@@ -1430,3 +1430,16 @@ a.calc-cta-btn svg {
 .results-panel td:empty::before { content: "—"; color: #9db5ab; }
 .calc-field .ftin-row { display: flex; gap: 10px; }
 .calc-field .ftin-row input { flex: 1 1 0; width: auto; min-width: 0; }
+
+/* Article section rhythm (2026-10-28) — article sections wrap every heading, so the
+   direct-child .article-body>h2 / >h3 / >p / >ul rules never matched and headings
+   fell back to margin:0 (the boxed Easter H2 sat ~20px under the previous paragraph
+   with 0px under itself). Scope the intended rhythm to sections instead. */
+.article-body section { margin-top: var(--s-16); }
+.article-body section:first-child { margin-top: 0; }
+.article-body section:not(.quick-answer) > h2 { margin: 0 0 var(--s-4); font-size: var(--t-3xl); }
+.article-body section > h3 { margin: var(--s-8) 0 var(--s-3); font-size: var(--t-xl); }
+.article-body section > p { margin: 0 0 var(--s-5); }
+.article-body section > ul { padding: 0; list-style: none; margin: var(--s-5) 0; }
+.article-body section > ul li { position: relative; margin: 10px 0; padding: 14px 18px 14px 44px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--soft); font-size: var(--t-md); }
+.article-body section > ul li::before { content: "✓"; position: absolute; left: 18px; top: 14px; color: var(--brand); font-weight: 750; }
