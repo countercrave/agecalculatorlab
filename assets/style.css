@@ -1443,3 +1443,15 @@ a.calc-cta-btn svg {
 .article-body section > ul { padding: 0; list-style: none; margin: var(--s-5) 0; }
 .article-body section > ul li { position: relative; margin: 10px 0; padding: 14px 18px 14px 44px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--soft); font-size: var(--t-md); }
 .article-body section > ul li::before { content: "✓"; position: absolute; left: 18px; top: 14px; color: var(--brand); font-weight: 750; }
+
+/* Phase 2 grid fix (2026-10-29) — Related Guides modules inside the narrow
+   article column: the paired-section label + 3-col grid squeezes cards to
+   ~165px inside a 780px .article-body, so titles wrap one word per line.
+   Stack the label above a 2-col grid instead. Scoped to Phase 1/2 modules
+   (data-related-guides) inside .article-body only, so tool pages and
+   full-width article modules are untouched. Below 821px the existing
+   responsive rules keep applying. */
+@media (min-width: 821px) {
+  .article-body section[data-related-guides] .paired-section { grid-template-columns: 1fr; }
+  .article-body section[data-related-guides] .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
