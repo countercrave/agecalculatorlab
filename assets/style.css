@@ -155,7 +155,7 @@ hr{border:0;border-top:1px solid var(--line);margin:var(--s-8) 0}
 .skip-link:focus{transform:translateY(0)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
 main{scroll-margin-top:calc(var(--header-h) + 20px)}
-[id]{scroll-margin-top:calc(var(--header-h) + 24px)}
+[id]{scroll-margin-top:calc(var(--header-h) + 64px)}
 
 /* --- Shared type utilities --------------------------------- */
 .kicker,.eyebrow,.calc-label,.comparison-label,.card-badge{
