@@ -975,227 +975,7 @@
   </div>
 </aside>
 
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     AGE CALCULATOR LAB — 2. SPECIALIZED MODE SWITCHER BAR
-     Sticky navigation bar for instant jump to all core calculator & guide modules
-     ══════════════════════════════════════════════════════════════════════════ -->
-<style>
-  .aclx-switcher-sticky {
-    position: sticky;
-    top: var(--header-h, 60px);
-    z-index: 45;
-    background: rgba(4, 47, 42, 0.96);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-    box-shadow: 0 8px 30px rgba(0, 25, 22, 0.28);
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  }
-  .aclx-switcher-sticky, .aclx-switcher-sticky * { box-sizing: border-box; }
 
-  .aclx-switcher-inner {
-    width: min(calc(100% - 32px), 1200px);
-    margin-inline: auto;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 0;
-  }
-
-  .aclx-switcher-label {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-  }
-
-  .aclx-switcher-kicker {
-    color: #ff9a77;
-    font-size: .66rem;
-    font-weight: 850;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-
-  .aclx-switcher-title {
-    color: #ffffff;
-    font-size: .84rem;
-    font-weight: 750;
-    white-space: nowrap;
-  }
-
-  @media (max-width: 980px) {
-    .aclx-switcher-label { display: none; }
-  }
-
-  /* Wrap container for arrows + scrollable tabs */
-  .aclx-switcher-nav-controls {
-    position: relative;
-    flex: 1 1 auto;
-    min-width: 0;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .aclx-switcher-arrow {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    background: rgba(255, 255, 255, 0.12);
-    color: #ffffff;
-    font-size: 1.15rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all .16s ease;
-    flex-shrink: 0;
-    padding: 0;
-    line-height: 1;
-    user-select: none;
-  }
-  .aclx-switcher-arrow:hover {
-    background: #ff754d;
-    border-color: #ff754d;
-    color: #ffffff;
-    transform: scale(1.1);
-    box-shadow: 0 2px 10px rgba(255, 117, 77, 0.4);
-  }
-  .aclx-switcher-arrow:disabled {
-    opacity: 0.2;
-    cursor: default;
-    pointer-events: none;
-    transform: none;
-  }
-
-  .aclx-switcher-tabs {
-    flex: 1 1 auto;
-    min-width: 0;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(169, 234, 209, 0.55) rgba(255, 255, 255, 0.08);
-    -webkit-overflow-scrolling: touch;
-    padding: 3px 2px 5px 2px;
-    cursor: grab;
-  }
-  .aclx-switcher-tabs:active {
-    cursor: grabbing;
-  }
-  .aclx-switcher-tabs::-webkit-scrollbar {
-    height: 4px;
-  }
-  .aclx-switcher-tabs::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 999px;
-  }
-  .aclx-switcher-tabs::-webkit-scrollbar-thumb {
-    background: rgba(169, 234, 209, 0.55);
-    border-radius: 999px;
-  }
-  .aclx-switcher-tabs::-webkit-scrollbar-thumb:hover {
-    background: #ff754d;
-  }
-
-  .aclx-switch-tab {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    background: rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.9);
-    font: inherit;
-    font-size: .78rem;
-    font-weight: 750;
-    white-space: nowrap;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all .16s ease;
-    flex-shrink: 0;
-    user-select: none;
-  }
-
-  .aclx-switch-tab:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.18);
-    border-color: rgba(255, 255, 255, 0.35);
-  }
-
-  .aclx-switch-tab.active, .aclx-switch-tab[aria-selected="true"], .aclx-switch-tab.is-active {
-    background: #ff754d;
-    color: #ffffff;
-    border-color: #ff754d;
-    box-shadow: 0 4px 14px rgba(255, 117, 77, 0.4);
-  }
-
-  .aclx-switcher-cta-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: #ff754d;
-    color: #ffffff;
-    font-size: .78rem;
-    font-weight: 800;
-    text-decoration: none;
-    white-space: nowrap;
-    padding: 7px 14px;
-    border-radius: 999px;
-    flex-shrink: 0;
-    box-shadow: 0 4px 14px rgba(255, 117, 77, 0.35);
-    transition: all .15s ease;
-  }
-  .aclx-switcher-cta-btn:hover {
-    background: #ff8e6d;
-    color: #ffffff;
-    transform: translateY(-1px);
-  }
-  @media (max-width: 640px) {
-    .aclx-switcher-cta-btn span { display: none; }
-    .aclx-switcher-cta-btn { padding: 7px 10px; }
-  }
-</style>
-
-<nav class="aclx-switcher-sticky" id="specialized-switcher-bar" aria-label="Page section navigation">
-  <div class="aclx-switcher-inner">
-    <div class="aclx-switcher-label">
-      <span class="aclx-switcher-kicker">Navigation</span>
-      <span class="aclx-switcher-title">Table of Contents</span>
-    </div>
-
-    <!-- Scrollable Navigation Wrap with Prev / Next Arrows -->
-    <div class="aclx-switcher-nav-controls">
-      <button type="button" class="aclx-switcher-arrow left" id="aclx-scroll-left" aria-label="Scroll Table of Contents left" title="Scroll left">‹</button>
-
-      <div class="aclx-switcher-tabs" id="aclx-switcher-tabs" role="tablist" aria-label="Homepage sections">
-        
-        <a class="aclx-switch-tab" href="#calculator-finder"><span>Tool Finder</span></a>
-        <a class="aclx-switch-tab" href="#calculation-audit"><span>Audit &amp; Math</span></a>
-        <a class="aclx-switch-tab" href="#clinical-engine"><span>Clinical (Y;M;D)</span></a>
-        <a class="aclx-switch-tab" href="#prematurity-module"><span>Corrected Age</span></a>
-        <a class="aclx-switch-tab" href="#pet-epigenetic"><span>Pet Age</span></a>
-        <a class="aclx-switch-tab" href="#guides-directory"><span>Guides</span></a>
-        <a class="aclx-switch-tab" href="#knowledge-base"><span>Knowledge Hub</span></a>
-        <a class="aclx-switch-tab" href="#formula-guide"><span>Formulas</span></a><a class="aclx-switch-tab" href="#faq"><span>FAQs</span></a>
-        <a class="aclx-switch-tab" href="#privacy-trust-footer"><span>Trust &amp; Author</span></a>
-      </div>
-
-      <button type="button" class="aclx-switcher-arrow right" id="aclx-scroll-right" aria-label="Scroll Table of Contents right" title="Scroll right">›</button>
-    </div>
-
-    <a class="aclx-switcher-cta-btn" href="#calculator" title="Return to calculator">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
-      <span>Calculator</span>
-    </a>
-  </div>
-</nav>
 
 <!-- Self-Contained Multi-Profile Calculator & Confetti Script -->
 <script>
@@ -2980,7 +2760,19 @@
 
 <section class="section" id="page-contents" style="background:#ffffff; padding-top:6px;">
 <div class="container tool-content-layout">
-
+<aside class="tool-toc" aria-label="Guide Navigation">
+<strong>Guide Navigation</strong>
+<a href="#calculator-finder">1. Tool Finder: All 185 Calculators</a>
+<a href="#calculation-audit">2. Calculation Audit Trail</a>
+<a href="#clinical-engine">3. Clinical Assessment Engine</a>
+<a href="#prematurity-module">4. Prematurity &amp; Corrected Age</a>
+<a href="#pet-epigenetic">5. Pet Epigenetic Age</a>
+<a href="#guides-directory">6. Practical Guides Directory</a>
+<a href="#knowledge-base">7. Knowledge Hub: 20 Core Questions</a>
+<a href="#formula-guide">8. Spreadsheet &amp; Code Formulas</a>
+<a href="#faq">9. Frequently Asked Questions</a>
+        <a href="#privacy-trust-footer">10. Trust, Privacy &amp; Author</a>
+</aside>
 <article class="tool-article">
 <section class="aclx-audit-sec" id="calculation-audit" aria-labelledby="aclx-audit-title">
   <div class="aclx-audit-wrap">
@@ -6806,7 +6598,7 @@
 
 /* Educational Content Section */
 .tool-content-layout { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
-@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 1fr; align-items: start; } .tool-content-layout .tool-article { margin-inline: auto; } }
+@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 280px 1fr; align-items: start; } }
 
 .tool-toc { background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 22px; position: sticky; top: 90px; }
 .tool-toc strong { display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.8px; color: #075433; margin-bottom: 14px; }
