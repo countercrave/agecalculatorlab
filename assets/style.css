@@ -1455,3 +1455,10 @@ a.calc-cta-btn svg {
   .article-body section[data-related-guides] .paired-section { grid-template-columns: 1fr; }
   .article-body section[data-related-guides] .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Phase 3 (2026-10-29) — stacked article guides modules: keep the label static
+   so its intro never tucks behind the first card row while scrolling. The
+   sticky label is only safe on the side-by-side layout (see #189); inside
+   .article-body the module stacks, so static is correct at every width.
+   Same scope as #189, so tool pages and full-width modules are untouched. */
+.article-body section[data-related-guides] .sticky-cell { position: static; }
