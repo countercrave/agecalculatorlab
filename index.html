@@ -1175,7 +1175,7 @@
       <button type="button" class="aclx-switcher-arrow left" id="aclx-scroll-left" aria-label="Scroll Table of Contents left" title="Scroll left">‹</button>
 
       <div class="aclx-switcher-tabs" id="aclx-switcher-tabs" role="tablist" aria-label="Homepage sections">
-        <a class="aclx-switch-tab" href="#page-contents"><span>Contents</span></a>
+        
         <a class="aclx-switch-tab" href="#calculator-finder"><span>Tool Finder</span></a>
         <a class="aclx-switch-tab" href="#calculation-audit"><span>Audit &amp; Math</span></a>
         <a class="aclx-switch-tab" href="#clinical-engine"><span>Clinical (Y;M;D)</span></a>
@@ -1183,7 +1183,7 @@
         <a class="aclx-switch-tab" href="#pet-epigenetic"><span>Pet Age</span></a>
         <a class="aclx-switch-tab" href="#guides-directory"><span>Guides</span></a>
         <a class="aclx-switch-tab" href="#knowledge-base"><span>Knowledge Hub</span></a>
-        <a class="aclx-switch-tab" href="#formula-guide"><span>Formulas</span></a>
+        <a class="aclx-switch-tab" href="#formula-guide"><span>Formulas</span></a><a class="aclx-switch-tab" href="#faq"><span>FAQs</span></a>
         <a class="aclx-switch-tab" href="#privacy-trust-footer"><span>Trust &amp; Author</span></a>
       </div>
 
@@ -2980,19 +2980,7 @@
 
 <section class="section" id="page-contents" style="background:#ffffff; padding-top:6px;">
 <div class="container tool-content-layout">
-<aside class="tool-toc" aria-label="Guide Navigation">
-<strong>Guide Navigation</strong>
-<a href="#calculator-finder">1. Tool Finder: All 185 Calculators</a>
-<a href="#calculation-audit">2. Calculation Audit Trail</a>
-<a href="#clinical-engine">3. Clinical Assessment Engine</a>
-<a href="#prematurity-module">4. Prematurity &amp; Corrected Age</a>
-<a href="#pet-epigenetic">5. Pet Epigenetic Age</a>
-<a href="#guides-directory">6. Practical Guides Directory</a>
-<a href="#knowledge-base">7. Knowledge Hub: 20 Core Questions</a>
-<a href="#formula-guide">8. Spreadsheet &amp; Code Formulas</a>
-<a href="#faq">9. Frequently Asked Questions</a>
-        <a href="#privacy-trust-footer">10. Trust, Privacy &amp; Author</a>
-</aside>
+
 <article class="tool-article">
 <section class="aclx-audit-sec" id="calculation-audit" aria-labelledby="aclx-audit-title">
   <div class="aclx-audit-wrap">
@@ -6818,7 +6806,7 @@
 
 /* Educational Content Section */
 .tool-content-layout { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
-@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 280px 1fr; align-items: start; } }
+@media(min-width: 980px) { .tool-content-layout { grid-template-columns: 1fr; align-items: start; } .tool-content-layout .tool-article { margin-inline: auto; } }
 
 .tool-toc { background: #ffffff; border: 1px solid #dce9e2; border-radius: 12px; padding: 22px; position: sticky; top: 90px; }
 .tool-toc strong { display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.8px; color: #075433; margin-bottom: 14px; }
