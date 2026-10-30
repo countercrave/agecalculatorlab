@@ -795,6 +795,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+<url>
+    <loc>https://www.agecalculatorlab.com/articles/what-is-julian-day-number/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 <url><loc>https://www.agecalculatorlab.com/tools/upsc-cse-age-calculator/</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.agecalculatorlab.com/tools/easter-date-calculator/</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://www.agecalculatorlab.com/tools/weekends-lived-calculator/</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://www.agecalculatorlab.com/tools/julian-day-number-converter/</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://www.agecalculatorlab.com/tools/child-height-predictor/</loc><lastmod>2026-10-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
