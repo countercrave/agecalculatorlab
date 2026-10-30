@@ -2758,6 +2758,170 @@
   }
 </style>
 
+<section class="aclx-bento-sec" id="life-milestones" aria-labelledby="aclx-bento-title">
+  <div class="aclx-bento-wrap">
+
+    <!-- Header & Date Sync -->
+    <div class="aclx-bento-head">
+      <div class="aclx-bento-titles">
+        <p class="aclx-bento-eyebrow">MORE THAN A BIRTHDAY</p>
+        <h2 id="aclx-bento-title">Discover the next milestone on your calendar</h2>
+        <p>Find your birth weekday, your next 1,000-day milestone, and other memorable dates. Enter a birth date or use the one already entered above.</p>
+      </div>
+
+      <div class="aclx-bento-sync-box">
+        <label for="aclx-bento-dob">Milestones for DOB:</label>
+        <input type="date" id="aclx-bento-dob" class="aclx-bento-sync-input" value="2000-01-15">
+      </div>
+    </div>
+
+    <!-- Bento Grid Container -->
+    <!-- Two-Column Layout: Milestones | Vital Units -->
+    <div class="aclx-bento-grid-2col">
+      <div class="aclx-bento-col">
+        <h3 class="aclx-bento-col-title">Milestones</h3>
+<!-- Bento Card 2: Circular Progress Ring to Next 1,000 Days -->
+      <div class="aclx-bento-card aclx-card-ring">
+        <span class="aclx-bento-tag aclx-tag-mint">Next 1,000-Day Mark</span>
+        <div class="aclx-ring-container">
+          <svg class="aclx-ring-svg" viewBox="0 0 140 140">
+            <circle class="aclx-ring-bg" cx="70" cy="70" r="60"/>
+            <circle class="aclx-ring-progress" id="bento-ring-circle" cx="70" cy="70" r="60"/>
+          </svg>
+          <div class="aclx-ring-content">
+            <span class="aclx-ring-percent" id="bento-ring-val">74.2%</span>
+            <span class="aclx-ring-sublabel">Progress</span>
+          </div>
+        </div>
+        <div id="bento-ring-endpoints" style="font-size:.78rem;font-weight:750;color:#08745a;margin-bottom:8px">From 9,000 to 10,000 days</div>
+        <p class="aclx-ring-footer-text" id="bento-ring-text">
+          <strong>258 days remaining</strong> until reaching your <strong>10,000th day alive</strong> milestone!
+        </p>
+      </div>
+<!-- Bento Card 3: Weekday Born Badge -->
+      <div class="aclx-bento-card aclx-card-weekday">
+        <div>
+          <span class="aclx-bento-tag aclx-tag-mint">📅 Day You Were Born</span>
+          <div class="aclx-weekday-badge" id="bento-weekday-name">
+            <span>✨</span> <span id="bento-weekday-text">Saturday</span>
+          </div>
+          <p class="aclx-weekday-lore" id="bento-weekday-lore">
+            Born on a Saturday: According to traditional folklore, <em>"Saturday's child works hard for a living"</em> — symbolizing determination, grit, and grounded focus.
+          </p>
+        </div>
+        <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--bto-line)">
+          <span style="font-size:.74rem;color:var(--bto-muted);display:block;font-weight:700">Golden Birthday:</span>
+          <strong style="font-size:.92rem;color:var(--bto-green)" id="bento-golden-date">January 15, 2015 (Turned 15 on the 15th)</strong>
+        </div>
+      </div>
+<!-- Bento Card 4: Milestone Horizon Checklist -->
+      <div class="aclx-bento-card aclx-card-milestones">
+        <span class="aclx-bento-tag aclx-tag-mint">⏳ Landmark Milestones</span>
+        <ul class="aclx-milestone-list" id="bento-milestone-list">
+          <li class="aclx-milestone-row is-reached">
+            <div>
+              <div class="aclx-m-name">1,000 Days Alive</div>
+              <div class="aclx-m-date" id="m-date-1k">Oct 11, 2002</div>
+            </div>
+            <span class="aclx-m-chip aclx-chip-done">✓ Completed</span>
+          </li>
+          <li class="aclx-milestone-row is-reached">
+            <div>
+              <div class="aclx-m-name">5,000 Days Alive</div>
+              <div class="aclx-m-date" id="m-date-5k">Sep 23, 2013</div>
+            </div>
+            <span class="aclx-m-chip aclx-chip-done">✓ Completed</span>
+          </li>
+          <li class="aclx-milestone-row">
+            <div>
+              <div class="aclx-m-name">10,000 Days (Jubilee)</div>
+              <div class="aclx-m-date" id="m-date-10k">Jun 2, 2027</div>
+            </div>
+            <span class="aclx-m-chip aclx-chip-upcoming" id="m-chip-10k">Upcoming</span>
+          </li>
+          <li class="aclx-milestone-row">
+            <div>
+              <div class="aclx-m-name">1 Billion Seconds</div>
+              <div class="aclx-m-date" id="m-date-1b">Sep 23, 2031</div>
+            </div>
+            <span class="aclx-m-chip aclx-chip-upcoming" id="m-chip-1b">Upcoming</span>
+          </li>
+        </ul>
+      </div>
+<!-- Bento Card 5: 1-Click Social Share Graphic Card -->
+      <div class="aclx-bento-card aclx-card-share">
+        <div>
+          <span class="aclx-bento-tag aclx-tag-mint">🎉 1-Click Share Card</span>
+
+          <!-- Card Mockup -->
+          <div class="aclx-share-preview" id="bento-share-card">
+            <div class="aclx-share-preview-top">
+              <span>Age Calculator Lab</span>
+              <span>Milestone Pass</span>
+            </div>
+            <div class="aclx-share-preview-main" id="bento-share-days">9,742 Days Alive</div>
+            <div class="aclx-share-preview-sub" id="bento-share-subtitle">Born on a Saturday · Next: 10,000 Days</div>
+          </div>
+        </div>
+
+        <div class="aclx-share-btns">
+          <button type="button" class="aclx-share-btn-action aclx-btn-primary-share" id="bento-copy-share">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy Text
+          </button>
+          <button type="button" class="aclx-share-btn-action aclx-btn-secondary-share" id="bento-download-card">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Save Graphic
+          </button>
+        </div>
+      </div>
+      </div>
+      <div class="aclx-bento-col">
+        <h3 class="aclx-bento-col-title">Vital Units</h3>
+<!-- Bento Card 1: Days Alive Counter -->
+      <div class="aclx-bento-card aclx-card-daysalive">
+        <div>
+          <span class="aclx-bento-tag aclx-tag-emerald">🌍 Planetary Journey</span>
+          <div class="aclx-days-number" id="bento-days-count">9,742</div>
+          <div class="aclx-days-label">Total days lived</div>
+          <p style="margin:0 0 16px;font-size:.88rem;color:rgba(255,255,255,.82);line-height:1.6">
+            Every day is a full rotation of the Earth. In your lifetime so far, you have lived through over 233,000 hours of continuous calendar existence.
+          </p>
+        </div>
+
+        <div>
+          <details class="aclx-vital-disclosure" style="margin-bottom:16px;border-top:1px solid rgba(255,255,255,.16);padding-top:12px;">
+            <summary style="cursor:pointer;color:#a9ead1;font-weight:700;font-size:.84rem;margin-bottom:12px;outline:none;">Estimated life statistics ▾</summary>
+            <div class="aclx-vital-stats" style="border:none;padding:0;margin:0 0 10px;">
+              <div class="aclx-vital-item">
+                <span>Solar Orbits</span>
+                <strong id="bento-orbits">26.68 Yrs</strong>
+              </div>
+              <div class="aclx-vital-item">
+                <span>Heartbeats (~80 bpm, est.)</span>
+                <strong id="bento-heartbeats">1.12 Billion</strong>
+              </div>
+              <div class="aclx-vital-item">
+                <span>Breaths Taken</span>
+                <strong id="bento-breaths">224 Million</strong>
+              </div>
+              <div class="aclx-vital-item">
+                <span>Lunar Cycles</span>
+                <strong id="bento-moons">330 Cycles</strong>
+              </div>
+            </div>
+          </details>
+
+          <a href="./tools/10000-days-old-calculator/" style="color:#a9ead1;font-size:.8rem;font-weight:750;text-decoration:none;display:inline-flex;align-items:center;gap:6px">
+            Explore 10,000 Days Calculator →
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 <section class="section" id="page-contents" style="background:#ffffff; padding-top:6px;">
 <div class="container tool-content-layout">
 <aside class="tool-toc" aria-label="Guide Navigation">
@@ -5902,172 +6066,9 @@
   .aclx-bento-grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
   .aclx-bento-col { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
   .aclx-bento-col-title { margin: 0 0 4px; font-size: 1.3rem; color: #042f2a; }
-  @media (max-width: 740px) { .aclx-bento-grid-2col { grid-template-columns: 1fr; } }
+  @media (max-width: 740px) { .aclx-bento-grid-2col { grid-template-columns: 1fr; } } @media (min-width: 741px) { /* Vital Units column sticks while the Milestones column scrolls */ .aclx-bento-grid-2col > .aclx-bento-col:last-child { position: sticky; top: 90px; } }
 </style>
-<section class="aclx-bento-sec" id="life-milestones" aria-labelledby="aclx-bento-title">
-  <div class="aclx-bento-wrap">
-
-    <!-- Header & Date Sync -->
-    <div class="aclx-bento-head">
-      <div class="aclx-bento-titles">
-        <p class="aclx-bento-eyebrow">MORE THAN A BIRTHDAY</p>
-        <h2 id="aclx-bento-title">Discover the next milestone on your calendar</h2>
-        <p>Find your birth weekday, your next 1,000-day milestone, and other memorable dates. Enter a birth date or use the one already entered above.</p>
-      </div>
-
-      <div class="aclx-bento-sync-box">
-        <label for="aclx-bento-dob">Milestones for DOB:</label>
-        <input type="date" id="aclx-bento-dob" class="aclx-bento-sync-input" value="2000-01-15">
-      </div>
-    </div>
-
-    <!-- Bento Grid Container -->
-    <!-- Two-Column Layout: Milestones | Vital Units -->
-    <div class="aclx-bento-grid-2col">
-      <div class="aclx-bento-col">
-        <h3 class="aclx-bento-col-title">Milestones</h3>
-<!-- Bento Card 2: Circular Progress Ring to Next 1,000 Days -->
-      <div class="aclx-bento-card aclx-card-ring">
-        <span class="aclx-bento-tag aclx-tag-mint">Next 1,000-Day Mark</span>
-        <div class="aclx-ring-container">
-          <svg class="aclx-ring-svg" viewBox="0 0 140 140">
-            <circle class="aclx-ring-bg" cx="70" cy="70" r="60"/>
-            <circle class="aclx-ring-progress" id="bento-ring-circle" cx="70" cy="70" r="60"/>
-          </svg>
-          <div class="aclx-ring-content">
-            <span class="aclx-ring-percent" id="bento-ring-val">74.2%</span>
-            <span class="aclx-ring-sublabel">Progress</span>
-          </div>
-        </div>
-        <div id="bento-ring-endpoints" style="font-size:.78rem;font-weight:750;color:#08745a;margin-bottom:8px">From 9,000 to 10,000 days</div>
-        <p class="aclx-ring-footer-text" id="bento-ring-text">
-          <strong>258 days remaining</strong> until reaching your <strong>10,000th day alive</strong> milestone!
-        </p>
-      </div>
-<!-- Bento Card 3: Weekday Born Badge -->
-      <div class="aclx-bento-card aclx-card-weekday">
-        <div>
-          <span class="aclx-bento-tag aclx-tag-mint">📅 Day You Were Born</span>
-          <div class="aclx-weekday-badge" id="bento-weekday-name">
-            <span>✨</span> <span id="bento-weekday-text">Saturday</span>
-          </div>
-          <p class="aclx-weekday-lore" id="bento-weekday-lore">
-            Born on a Saturday: According to traditional folklore, <em>"Saturday's child works hard for a living"</em> — symbolizing determination, grit, and grounded focus.
-          </p>
-        </div>
-        <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--bto-line)">
-          <span style="font-size:.74rem;color:var(--bto-muted);display:block;font-weight:700">Golden Birthday:</span>
-          <strong style="font-size:.92rem;color:var(--bto-green)" id="bento-golden-date">January 15, 2015 (Turned 15 on the 15th)</strong>
-        </div>
-      </div>
-<!-- Bento Card 4: Milestone Horizon Checklist -->
-      <div class="aclx-bento-card aclx-card-milestones">
-        <span class="aclx-bento-tag aclx-tag-mint">⏳ Landmark Milestones</span>
-        <ul class="aclx-milestone-list" id="bento-milestone-list">
-          <li class="aclx-milestone-row is-reached">
-            <div>
-              <div class="aclx-m-name">1,000 Days Alive</div>
-              <div class="aclx-m-date" id="m-date-1k">Oct 11, 2002</div>
-            </div>
-            <span class="aclx-m-chip aclx-chip-done">✓ Completed</span>
-          </li>
-          <li class="aclx-milestone-row is-reached">
-            <div>
-              <div class="aclx-m-name">5,000 Days Alive</div>
-              <div class="aclx-m-date" id="m-date-5k">Sep 23, 2013</div>
-            </div>
-            <span class="aclx-m-chip aclx-chip-done">✓ Completed</span>
-          </li>
-          <li class="aclx-milestone-row">
-            <div>
-              <div class="aclx-m-name">10,000 Days (Jubilee)</div>
-              <div class="aclx-m-date" id="m-date-10k">Jun 2, 2027</div>
-            </div>
-            <span class="aclx-m-chip aclx-chip-upcoming" id="m-chip-10k">Upcoming</span>
-          </li>
-          <li class="aclx-milestone-row">
-            <div>
-              <div class="aclx-m-name">1 Billion Seconds</div>
-              <div class="aclx-m-date" id="m-date-1b">Sep 23, 2031</div>
-            </div>
-            <span class="aclx-m-chip aclx-chip-upcoming" id="m-chip-1b">Upcoming</span>
-          </li>
-        </ul>
-      </div>
-<!-- Bento Card 5: 1-Click Social Share Graphic Card -->
-      <div class="aclx-bento-card aclx-card-share">
-        <div>
-          <span class="aclx-bento-tag aclx-tag-mint">🎉 1-Click Share Card</span>
-
-          <!-- Card Mockup -->
-          <div class="aclx-share-preview" id="bento-share-card">
-            <div class="aclx-share-preview-top">
-              <span>Age Calculator Lab</span>
-              <span>Milestone Pass</span>
-            </div>
-            <div class="aclx-share-preview-main" id="bento-share-days">9,742 Days Alive</div>
-            <div class="aclx-share-preview-sub" id="bento-share-subtitle">Born on a Saturday · Next: 10,000 Days</div>
-          </div>
-        </div>
-
-        <div class="aclx-share-btns">
-          <button type="button" class="aclx-share-btn-action aclx-btn-primary-share" id="bento-copy-share">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            Copy Text
-          </button>
-          <button type="button" class="aclx-share-btn-action aclx-btn-secondary-share" id="bento-download-card">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Save Graphic
-          </button>
-        </div>
-      </div>
-      </div>
-      <div class="aclx-bento-col">
-        <h3 class="aclx-bento-col-title">Vital Units</h3>
-<!-- Bento Card 1: Days Alive Counter -->
-      <div class="aclx-bento-card aclx-card-daysalive">
-        <div>
-          <span class="aclx-bento-tag aclx-tag-emerald">🌍 Planetary Journey</span>
-          <div class="aclx-days-number" id="bento-days-count">9,742</div>
-          <div class="aclx-days-label">Total days lived</div>
-          <p style="margin:0 0 16px;font-size:.88rem;color:rgba(255,255,255,.82);line-height:1.6">
-            Every day is a full rotation of the Earth. In your lifetime so far, you have lived through over 233,000 hours of continuous calendar existence.
-          </p>
-        </div>
-
-        <div>
-          <details class="aclx-vital-disclosure" style="margin-bottom:16px;border-top:1px solid rgba(255,255,255,.16);padding-top:12px;">
-            <summary style="cursor:pointer;color:#a9ead1;font-weight:700;font-size:.84rem;margin-bottom:12px;outline:none;">Estimated life statistics ▾</summary>
-            <div class="aclx-vital-stats" style="border:none;padding:0;margin:0 0 10px;">
-              <div class="aclx-vital-item">
-                <span>Solar Orbits</span>
-                <strong id="bento-orbits">26.68 Yrs</strong>
-              </div>
-              <div class="aclx-vital-item">
-                <span>Heartbeats (~80 bpm, est.)</span>
-                <strong id="bento-heartbeats">1.12 Billion</strong>
-              </div>
-              <div class="aclx-vital-item">
-                <span>Breaths Taken</span>
-                <strong id="bento-breaths">224 Million</strong>
-              </div>
-              <div class="aclx-vital-item">
-                <span>Lunar Cycles</span>
-                <strong id="bento-moons">330 Cycles</strong>
-              </div>
-            </div>
-          </details>
-
-          <a href="./tools/10000-days-old-calculator/" style="color:#a9ead1;font-size:.8rem;font-weight:750;text-decoration:none;display:inline-flex;align-items:center;gap:6px">
-            Explore 10,000 Days Calculator →
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-
-  </div>
-</section> <section class="aclx-trust-master" id="privacy-trust-footer" aria-labelledby="aclx-tst-title">
+ <section class="aclx-trust-master" id="privacy-trust-footer" aria-labelledby="aclx-tst-title">
   <div class="aclx-trust-m-wrap">
 
     <!-- Privacy Shield Badges Row -->
