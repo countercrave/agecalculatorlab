@@ -4465,6 +4465,10 @@
 </style>
 
 <!-- Guides grid: uniform 2-column, no feature card (all 6 cards equal). -->
+<style>
+/* Guides grid: 3 columns on desktop (user request). Tablet stays 2 columns, phones 1 column. */
+@media (min-width: 981px) { #guides .aclx-article-cards-grid { grid-template-columns: repeat(3, 1fr) !important; } }
+</style>
 <section class="aclx-guides-sec" id="guides" aria-labelledby="aclx-gds-title">
   <!-- Anchor alias for backwards compatibility -->
   <span id="guides-directory" style="display:block;position:relative;top:-90px;visibility:hidden;height:0;"></span>
