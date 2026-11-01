@@ -4465,13 +4465,13 @@
 </style>
 
 <style>
-#guides .aclx-article-cards-grid { grid-template-columns: 1.15fr 1fr; }
-#guides .aclx-article-cards-grid > :first-child { grid-row: span 2; }
-#guides .aclx-article-cards-grid > :not(:first-child) { flex-direction: row; }
-#guides .aclx-article-cards-grid > :not(:first-child) .aclx-guide-card-thumb-wrap { width: 150px; flex-shrink: 0; aspect-ratio: 4 / 3; }
-#guides .aclx-article-cards-grid > :not(:first-child) .aclx-guide-card-body { padding: 14px 16px; }
-#guides .aclx-article-cards-grid > :not(:first-child) h3 { font-size: 1rem; }
-@media (max-width: 980px) { #guides .aclx-article-cards-grid { grid-template-columns: 1fr; } #guides .aclx-article-cards-grid > :first-child { grid-row: auto; } #guides .aclx-article-cards-grid > :not(:first-child) { flex-direction: column; } #guides .aclx-article-cards-grid > :not(:first-child) .aclx-guide-card-thumb-wrap { width: 100%; aspect-ratio: 16 / 9; } }
+/* Magazine feature: first guide spans the full row as a horizontal feature; the other five
+   keep the original vertical card layout. No row spans (those inflated grid rows and
+   stretched the small cards' thumbnails tall). */
+#guides .aclx-article-cards-grid > :first-child { grid-column: 1 / -1; flex-direction: row; }
+#guides .aclx-article-cards-grid > :first-child .aclx-guide-card-thumb-wrap { width: 42%; flex-shrink: 0; aspect-ratio: auto; }
+#guides .aclx-article-cards-grid > :first-child .aclx-guide-card-body { justify-content: center; }
+@media (max-width: 980px) { #guides .aclx-article-cards-grid > :first-child { flex-direction: column; } #guides .aclx-article-cards-grid > :first-child .aclx-guide-card-thumb-wrap { width: 100%; aspect-ratio: 16 / 9; } }
 </style>
 <section class="aclx-guides-sec" id="guides" aria-labelledby="aclx-gds-title">
   <!-- Anchor alias for backwards compatibility -->
