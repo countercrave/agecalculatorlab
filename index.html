@@ -5764,4 +5764,17 @@ main section[id] { scroll-margin-top: 118px; }
    so no interior void remains. Snippets untouched. */
 .formula-cards-grid { align-items: start; }
 </style>
+<style>
+/* Sticky short columns (2026-11-02, user request, milestones precedent):
+   in the visuals strip and the formula cards, the shorter column now
+   stays pinned (top: 90px, below the sticky header) while the longer
+   neighbour scrolls, so no blank gap appears beside the scrolling
+   content. Applied to both items in each row; the taller one has no
+   travel, so it scrolls normally. Desktop only - both rows stack to
+   one column at <=768px, where sticky would be a no-op. */
+@media (min-width: 769px) {
+  .tool-visuals-strip > .container > .visual-panel-card { position: sticky; top: 90px; }
+  .formula-cards-grid > div { position: sticky; top: 90px; }
+}
+</style>
 </body></html>
