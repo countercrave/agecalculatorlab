@@ -5724,4 +5724,13 @@ main section[id] { scroll-margin-top: 118px; }
 .formula-cards-grid { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 768px) { .formula-cards-grid { grid-template-columns: 1fr; } }
 </style>
+<style>
+/* Bottom-of-article tightening (2026-11-02): the white band between the last
+   FAQ card and the dark trust section was card margin (14px) + FAQ section
+   padding-bottom (28px) + article-container padding-bottom (48px) = 90px of
+   empty white. Cut it to ~22px by trimming only these two bottom paddings;
+   tops and every other section are untouched. */
+#faq { padding-bottom: 8px !important; }
+#page-contents .tool-content-layout { padding-bottom: 0; }
+</style>
 </body></html>
