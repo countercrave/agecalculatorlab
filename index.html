@@ -2051,37 +2051,13 @@
     box-shadow: 0 0 0 3.5px rgba(8, 116, 90, .14);
   }
 
-  .aclx-finder-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 28px;
-  }
+  
 
-  .aclx-finder-pill {
-    padding: 7px 14px;
-    border: 1px solid var(--fnd-line);
-    border-radius: 999px;
-    color: #3b544d;
-    background: var(--fnd-paper);
-    font: inherit;
-    font-size: .8rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all .16s ease;
-  }
+  
 
-  .aclx-finder-pill:hover {
-    border-color: var(--fnd-green);
-    color: var(--fnd-green);
-    background: var(--fnd-mint-soft);
-  }
+  
 
-  .aclx-finder-pill[aria-pressed="true"] {
-    border-color: var(--fnd-green);
-    color: #ffffff;
-    background: var(--fnd-green);
-  }
+  
 
   .aclx-finder-grid {
     display: grid;
@@ -2240,16 +2216,7 @@
     </div>
 
     <!-- Category Filter Pills -->
-    <div class="aclx-finder-pills" role="toolbar" aria-label="Filter calculators by category">
-      <button class="aclx-finder-pill" data-category="all" aria-pressed="true">All 185 Calculators</button>
-      <button class="aclx-finder-pill" data-category="chronology" aria-pressed="false">Universal Chronology</button>
-      <button class="aclx-finder-pill" data-category="biological" aria-pressed="false">Biological &amp; Health</button>
-      <button class="aclx-finder-pill" data-category="clinical" aria-pressed="false">Clinical &amp; Assessments</button>
-      <button class="aclx-finder-pill" data-category="pregnancy" aria-pressed="false">Pregnancy &amp; Pediatric</button>
-      <button class="aclx-finder-pill" data-category="milestones" aria-pressed="false">Birthday &amp; Milestones</button>
-      <button class="aclx-finder-pill" data-category="professional" aria-pressed="false">School &amp; Employment</button>
-      <button class="aclx-finder-pill" data-category="datelab" aria-pressed="false">Date Lab</button>
-    </div>
+    
 
     <!-- Quick Tool Cards Grid -->
     <div class="aclx-finder-grid" id="aclx-tools-grid">
@@ -2425,7 +2392,7 @@
     </div>
 
     <div class="aclx-finder-footer">
-      <span class="aclx-finder-count" id="aclx-tool-count">Showing <strong>14</strong> highlighted tools from <strong>182</strong> total calculators</span>
+      <span class="aclx-finder-count" id="aclx-tool-count">Showing <strong>14</strong> featured calculators from <strong>185</strong> total calculators</span>
       <a class="aclx-finder-all-btn" href="./tools/">Browse All 185 Tools Directory →</a>
     </div>
 
@@ -2447,12 +2414,11 @@
 (function() {
   'use strict';
   var searchInput = document.getElementById('aclx-tool-search');
-  var pills = document.querySelectorAll('.aclx-finder-pill');
   var toolsGrid = document.getElementById('aclx-tools-grid');
   var countEl = document.getElementById('aclx-tool-count');
   var featuredCards = Array.prototype.slice.call(document.querySelectorAll('.aclx-finder-card'));
 
-  // Task shortcuts event delegation
+  // Task shortcuts: jump to the hero calculator and set its mode
   document.querySelectorAll('.aclx-task-shortcut[data-task]').forEach(function(btn) {
     btn.addEventListener('click', function() {
       var task = btn.getAttribute('data-task');
@@ -2470,10 +2436,9 @@
 
   if (!searchInput || !toolsGrid) return;
 
-  var currentCat = 'all';
   var allCalculatorsRegistry = [];
 
-  // Load complete 185-tool registry from search-index.json for complete discovery
+  // Load the full tool registry from search-index.json for complete discovery
   fetch('./assets/search-index.json')
     .then(function(res) { return res.json(); })
     .then(function(data) {
@@ -2490,20 +2455,20 @@
   function filterTools() {
     var q = searchInput.value.toLowerCase().trim();
 
-    // 1. When no search query and category is 'all': show default 12 featured cards
-    if (!q && currentCat === 'all') {
+    // 1. No search query: show the 14 featured cards
+    if (!q) {
       toolsGrid.innerHTML = '';
       featuredCards.forEach(function(card) {
         card.style.display = 'flex';
         toolsGrid.appendChild(card);
       });
       if (countEl) {
-        countEl.innerHTML = 'Showing <strong>14</strong> featured calculators from <strong>182</strong> total calculators';
+        countEl.innerHTML = 'Showing <strong>14</strong> featured calculators from <strong>185</strong> total calculators';
       }
       return;
     }
 
-    // 2. When searching or category filtered, query against full published catalog
+    // 2. Searching: query the full published catalog
     var matches = [];
     if (allCalculatorsRegistry.length > 0) {
       matches = allCalculatorsRegistry.filter(function(item) {
@@ -2516,11 +2481,8 @@
       featuredCards.forEach(function(card) {
         var title = card.querySelector('h3').textContent.toLowerCase();
         var desc = card.querySelector('p').textContent.toLowerCase();
-        var cat = card.getAttribute('data-cat') || '';
         var kw = card.getAttribute('data-keywords') || '';
-        var matchesCat = (currentCat === 'all') || cat.indexOf(currentCat) !== -1;
-        var matchesQuery = !q || title.indexOf(q) !== -1 || desc.indexOf(q) !== -1 || kw.indexOf(q) !== -1;
-        if (matchesCat && matchesQuery) {
+        if (title.indexOf(q) !== -1 || desc.indexOf(q) !== -1 || kw.indexOf(q) !== -1) {
           matches.push({ n: card.querySelector('h3').textContent, u: card.getAttribute('href') });
         }
       });
@@ -2538,8 +2500,6 @@
       if (clearBtn) {
         clearBtn.addEventListener('click', function() {
           searchInput.value = '';
-          currentCat = 'all';
-          pills.forEach(function(p) { p.setAttribute('aria-pressed', p.getAttribute('data-category') === 'all' ? 'true' : 'false'); });
           filterTools();
         });
       }
@@ -2560,21 +2520,12 @@
         toolsGrid.appendChild(card);
       });
       if (countEl) {
-        countEl.innerHTML = 'Showing <strong>' + matches.length + '</strong> matching calculators from <strong>182</strong> total calculators';
+        countEl.innerHTML = 'Showing <strong>' + matches.length + '</strong> matching calculators';
       }
     }
   }
 
   searchInput.addEventListener('input', filterTools);
-
-  pills.forEach(function(pill) {
-    pill.addEventListener('click', function() {
-      pills.forEach(function(p) { p.setAttribute('aria-pressed', 'false'); });
-      pill.setAttribute('aria-pressed', 'true');
-      currentCat = pill.getAttribute('data-category');
-      filterTools();
-    });
-  });
 })();
 </script>
 
