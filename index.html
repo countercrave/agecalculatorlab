@@ -5751,4 +5751,17 @@ main section[id] { scroll-margin-top: 118px; }
    Scoped to the FIRST panel only, so the right panel's subtitle is untouched. */
 .tool-visuals-strip > .container > .visual-panel-card:first-child p.subtitle { font-size: 1.05rem; }
 </style>
+<style>
+/* KB method callout + breathing room (2026-11-02, user request):
+   the method paragraph sat flush under the step cards (the grid has no
+   margin-bottom and the paragraph no margin-top), so the gap was ~0.
+   It now reads as a takeaway callout with room above it. Text unchanged. */
+#knowledge-base .kb-steps-grid + p { margin-top: 28px; background: #f0f7f3; border-left: 4px solid #08745a; border-radius: 12px; padding: 18px 20px; }
+/* Formula cards: stop stretching to equal height (2026-11-02, user request):
+   the shorter Excel card showed a large white void above its copy button
+   (card stretched to the JS card height, button pinned to the bottom by
+   justify-content: space-between). Cards now size to their own content,
+   so no interior void remains. Snippets untouched. */
+.formula-cards-grid { align-items: start; }
+</style>
 </body></html>
