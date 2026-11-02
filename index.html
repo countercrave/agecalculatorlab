@@ -5741,4 +5741,16 @@ main section[id] { scroll-margin-top: 118px; }
 .tool-visuals-strip .visual-panel-card { margin-bottom: 0; }
 @media (max-width: 768px) { .tool-visuals-strip > .container { grid-template-columns: 1fr; } }
 </style>
+<style>
+/* Grid-blowout prevention (user report 2026-11-02: guides 3rd column cut at right edge).
+   Grid items default to min-width:auto (= min-content), so a card whose content
+   is wider than its 1fr share forces its column wider and the whole grid past
+   the container's right edge, while the left edge stays aligned with the header.
+   min-width:0 lets the grid item shrink to its 1fr share instead (text already
+   wraps, thumbnails are width:100%, so this is a no-op on correct renders and
+   only caps the blowout). Same for the article itself as a grid item of
+   .tool-content-layout, so no article section can widen its track. */
+.tool-article { min-width: 0; }
+.aclx-guide-article-card { min-width: 0; }
+</style>
 </body></html>
