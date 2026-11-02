@@ -5733,4 +5733,16 @@ main section[id] { scroll-margin-top: 118px; }
 #faq { padding-bottom: 8px !important; }
 #page-contents .tool-content-layout { padding-bottom: 0; }
 </style>
+<style>
+/* Bottom-gap follow-up (2026-11-02): PR #230 cut the FAQ/container bottoms
+   but the rendered check still showed a large white band. The remaining
+   piece was the #page-contents section itself: it carries class="section"
+   whose shared rule sets padding-bottom to --section-y
+   (clamp(56px, 7vw, 92px) = 92px at full-width desktop), while its inline
+   style only overrides the TOP padding (6px). Zeroing only this section's
+   bottom padding leaves the white band at ~22px (last card margin 14px +
+   FAQ padding-bottom 8px). The section's top padding and every other
+   section are untouched. */
+#page-contents { padding-bottom: 0; }
+</style>
 </body></html>
