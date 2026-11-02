@@ -5730,4 +5730,15 @@ main section[id] { scroll-margin-top: 118px; }
   .tool-article .aclx-article-cards-grid { grid-template-columns: repeat(2, 1fr) !important; }
   @media (max-width: 640px) { .tool-article .aclx-article-cards-grid { grid-template-columns: 1fr !important; } }
 </style>
+<style>
+/* Homepage side padding + visuals strip columns (user request, 2026-11-02).
+   Wider side gutters on every .container section at narrower viewports
+   (40px -> 80px total inset; the 1180px max is unchanged, so wide screens are unaffected).
+   Visuals strip: its two panels sit side by side in 2 columns on desktop,
+   stacked on phones. */
+.container { width: min(100% - 80px, 1180px); }
+.tool-visuals-strip > .container { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.tool-visuals-strip .visual-panel-card { margin-bottom: 0; }
+@media (max-width: 768px) { .tool-visuals-strip > .container { grid-template-columns: 1fr; } }
+</style>
 </body></html>
