@@ -587,11 +587,12 @@ function palCheck() {
   }
   var f = document.getElementById('palFormat').value;
   var z = daysFromCivil(parsed.y, parsed.mo, parsed.d);
-  var ds = digitString(parsed, f);
+  var o = { y: parsed.y, m: parsed.mo, d: parsed.d };
+  var ds = digitString(o, f);
   var rev = [...ds].reverse().join('');
   var isPal = ds === rev;
   verdict.textContent = isPal ? 'Palindrome date!' : 'Not a palindrome in this format';
-  sub.textContent = fmtLong(parsed) + ' · ' + weekdayFromDays(z) + ' · ' + FORMATS[f].label;
+  sub.textContent = fmtLong(o) + ' · ' + weekdayFromDays(z) + ' · ' + FORMATS[f].label;
   document.getElementById('palDigit').textContent = ds;
   var prev = scanPalindromes(z, f, -1, 1)[0];
   var next = scanPalindromes(z, f, 1, 1)[0];
@@ -599,7 +600,7 @@ function palCheck() {
   document.getElementById('palPrev').textContent = prev ? fmtLong(prev.o) : '—';
   document.getElementById('palNext').textContent = next ? fmtLong(next.o) : '—';
   document.getElementById('palDaysTo').textContent = next ? palFmt(next.z - z) : '—';
-  document.getElementById('palDateOut').textContent = fmtLong(parsed);
+  document.getElementById('palDateOut').textContent = fmtLong(o);
   document.getElementById('palWeekday').textContent = weekdayFromDays(z);
   document.getElementById('palFormatOut').textContent = FORMATS[f].label;
   document.getElementById('palDigitOut').textContent = ds;
