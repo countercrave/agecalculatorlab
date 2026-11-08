@@ -4,7 +4,7 @@
   
   <!-- Header -->
   <text x="40" y="56" font-family="'Fraunces', serif" font-size="22" font-weight="700" fill="#042f2a">401(k) Balance by Age: Average vs. Median Skew</text>
-  <text x="40" y="80" font-family="'Inter', sans-serif" font-size="13" fill="#5a7368">Source: Vanguard "How America Saves". Averages are pulled 2.5× to 3× higher by high-income participants.</text>
+  <text x="40" y="80" font-family="'Inter', sans-serif" font-size="13" fill="#5a7368">Source: Vanguard "How America Saves" 2026. Averages are pulled 2.5× to 3× higher by high-income participants.</text>
 
   <!-- Legend (positioned top right with ample space) -->
   <g transform="translate(540, 42)">
@@ -17,57 +17,57 @@
   <!-- Baseline reference rule -->
   <line x1="40" y1="365" x2="800" y2="365" stroke="#e1ede6" stroke-width="1.5"/>
 
-  <!-- Group 1: Ages 25-34 ($37k vs $15k) -->
+  <!-- Group 1: Ages 25-34 ($50k vs $19k) -->
   <g transform="translate(60, 0)">
-    <rect x="15" y="336" width="34" height="29" fill="#075433" rx="4"/>
-    <text x="32" y="328" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$37k</text>
+    <rect x="15" y="326" width="34" height="39" fill="#075433" rx="4"/>
+    <text x="32" y="318" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$50k</text>
     
-    <rect x="57" y="353" width="34" height="12" fill="#ff754d" rx="4"/>
-    <text x="74" y="347" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$15k</text>
+    <rect x="57" y="350" width="34" height="15" fill="#ff754d" rx="4"/>
+    <text x="74" y="342" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$19k</text>
     
     <text x="53" y="388" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042f2a" text-anchor="middle">Ages 25–34</text>
   </g>
 
-  <!-- Group 2: Ages 35-44 ($91k vs $35k) -->
+  <!-- Group 2: Ages 35-44 ($121k vs $47k) -->
   <g transform="translate(205, 0)">
-    <rect x="15" y="294" width="34" height="71" fill="#075433" rx="4"/>
-    <text x="32" y="286" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$91k</text>
+    <rect x="15" y="271" width="34" height="94" fill="#075433" rx="4"/>
+    <text x="32" y="263" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$121k</text>
     
-    <rect x="57" y="338" width="34" height="27" fill="#ff754d" rx="4"/>
-    <text x="74" y="330" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$35k</text>
+    <rect x="57" y="328" width="34" height="37" fill="#ff754d" rx="4"/>
+    <text x="74" y="320" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$47k</text>
     
     <text x="53" y="388" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042f2a" text-anchor="middle">Ages 35–44</text>
   </g>
 
-  <!-- Group 3: Ages 45-54 ($168k vs $61k) -->
+  <!-- Group 3: Ages 45-54 ($215k vs $79k) -->
   <g transform="translate(350, 0)">
-    <rect x="15" y="234" width="34" height="131" fill="#075433" rx="4"/>
-    <text x="32" y="226" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$168k</text>
+    <rect x="15" y="197" width="34" height="168" fill="#075433" rx="4"/>
+    <text x="32" y="189" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$215k</text>
     
-    <rect x="57" y="317" width="34" height="48" fill="#ff754d" rx="4"/>
-    <text x="74" y="309" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$61k</text>
+    <rect x="57" y="304" width="34" height="61" fill="#ff754d" rx="4"/>
+    <text x="74" y="296" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$79k</text>
     
     <text x="53" y="388" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042f2a" text-anchor="middle">Ages 45–54</text>
   </g>
 
-  <!-- Group 4: Ages 55-64 ($247k vs $88k) -->
+  <!-- Group 4: Ages 55-64 ($305k vs $107k) -->
   <g transform="translate(495, 0)">
-    <rect x="15" y="172" width="34" height="193" fill="#075433" rx="4"/>
-    <text x="32" y="164" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$247k</text>
+    <rect x="15" y="127" width="34" height="238" fill="#075433" rx="4"/>
+    <text x="32" y="119" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$305k</text>
     
-    <rect x="57" y="296" width="34" height="69" fill="#ff754d" rx="4"/>
-    <text x="74" y="288" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$88k</text>
+    <rect x="57" y="281" width="34" height="84" fill="#ff754d" rx="4"/>
+    <text x="74" y="273" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$107k</text>
     
     <text x="53" y="388" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042f2a" text-anchor="middle">Ages 55–64</text>
   </g>
 
-  <!-- Group 5: Age 65+ ($273k vs $88k) - Top of bar is at y=152, label at y=144, legend is at y=42 -> OVER 100px GAP! -->
+  <!-- Group 5: Age 65+ ($330k vs $103k) -->
   <g transform="translate(640, 0)">
-    <rect x="15" y="152" width="34" height="213" fill="#075433" rx="4"/>
-    <text x="32" y="144" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$273k</text>
+    <rect x="15" y="107" width="34" height="258" fill="#075433" rx="4"/>
+    <text x="32" y="99" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#075433" text-anchor="middle">$330k</text>
     
-    <rect x="57" y="296" width="34" height="69" fill="#ff754d" rx="4"/>
-    <text x="74" y="288" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$88k</text>
+    <rect x="57" y="285" width="34" height="80" fill="#ff754d" rx="4"/>
+    <text x="74" y="277" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ff754d" text-anchor="middle">$103k</text>
     
     <text x="53" y="388" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#042f2a" text-anchor="middle">Age 65+</text>
   </g>
