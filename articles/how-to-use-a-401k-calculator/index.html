@@ -204,7 +204,7 @@
           "name": "What information do I need before using the calculator?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You need your current age, planned retirement age, current balance, annual salary, contribution percentage, employer match formula, and an assumed annual return rate."
+            "text": "You need your current age, planned retirement age, current balance, annual salary, annual salary growth rate, contribution percentage, employer match formula, and an assumed annual return rate."
           }
         },
         {
@@ -405,7 +405,7 @@
 <div class="container article-layout">
 <aside class="article-toc" aria-label="Table of Contents">
 <strong>On this page</strong>
-<a href="#the-seven-core-inputs-of-a-401-k-calculator">1. The Seven Core Inputs of a 401(k) Calculator</a>
+<a href="#the-seven-core-inputs-of-a-401-k-calculator">1. The Eight Core Inputs of a 401(k) Calculator</a>
 <a href="#behind-the-math-how-the-calculation-engine-works">2. Behind the Math: How the Calculation Engine Works</a>
 <a href="#interpreting-your-results-three-key-metrics">3. Interpreting Your Results: Three Key Metrics</a>
 <a href="#running-scenario-testing-the-power-of-what-if">4. Running Scenario Testing: The Power of “What If?”</a>
@@ -431,8 +431,8 @@
 <figcaption>Figure 1: The calculation pipeline inside our 401(k) engine. Inputs flow through monthly contribution compounding, match limits, and annual returns to project future balances.</figcaption>
 </figure>
 
-<h2 id="the-seven-core-inputs-of-a-401-k-calculator">The Seven Core Inputs of a 401(k) Calculator</h2>
-<p>To produce an authentic projection, our tool requires seven primary variables. Here is how to gather and enter each one accurately:</p>
+<h2 id="the-seven-core-inputs-of-a-401-k-calculator">The Eight Core Inputs of a 401(k) Calculator</h2>
+<p>To produce an authentic projection, our tool requires eight primary variables. Here is how to gather and enter each one accurately:</p>
 
 <h3>1. Current Age and Target Retirement Age</h3>
 <p>Your current age and desired retirement age establish your <strong>investment horizon</strong> (( t )). If you are 35 and plan to retire at 65, your runway is 30 years (360 monthly contribution cycles). The longer your time horizon, the more compound returns will dominate your eventual balance. If you are uncertain about retirement age, testing 62 (early retirement), 67 (Full Retirement Age for Social Security), and 70 is standard practice.</p>
@@ -443,16 +443,19 @@
 <h3>3. Annual Gross Salary</h3>
 <p>Enter your current annual base salary before taxes and payroll deductions. This is essential because both your employee elective deferral and your employer matching contribution are calculated as percentages of your salary.</p>
 
-<h3>4. Employee Contribution Rate (%)</h3>
+<h3>4. Annual Salary Growth Rate (%)</h3>
+<p>Your salary rarely stays flat until retirement. The calculator grows your annual salary each year by your selected salary growth percentage (default 3%), so later-year contributions — and the employer match calculated from them — rise with your pay. A higher growth assumption raises your projected balance, because every future contribution is larger.</p>
+
+<h3>5. Employee Contribution Rate (%)</h3>
 <p>Enter the percentage of your salary diverted into your 401(k) plan through automatic payroll deduction. For example, on an $80,000 salary, an 8% contribution equals $6,400 per year ($533.33 per month). For 2026, the standard IRS elective deferral limit is $24,500.</p>
 
-<h3>5. Employer Match Formula</h3>
+<h3>6. Employer Match Formula</h3>
 <p>Workplace matching formulas typically follow a two-tier structure: <em>Match Percentage</em> and <em>Salary Cap</em>. For instance, a common formula is “50% match up to 6% of salary.” If you earn $80,000 and contribute 6%, your employer contributes 3% ($2,400 per year). Our tool includes an intuitive toggle that applies the exact matching rules of your employer.</p>
 
-<h3>6. Expected Annual Investment Return (%)</h3>
+<h3>7. Expected Annual Investment Return (%)</h3>
 <p>This is your assumed annual portfolio growth rate. As discussed in our detailed guide on <a href="../401k-rate-of-return/">what rate of return to use for a 401(k) calculator</a>, financial planners recommend using <strong>7%</strong> as a moderate baseline for a balanced portfolio, while testing 5% (conservative) and 9% (aggressive) bounds.</p>
 
-<h3>7. Inflation Adjustment Option</h3>
+<h3>8. Inflation Adjustment Option</h3>
 <p>Toggling inflation adjustment recalculates future balances into <strong>real purchasing power</strong> based on historical inflation rates (~2.7% to 3.0%), showing you what that future million-dollar nest egg will actually buy in today's grocery stores and housing markets.</p>
 
 <div class="cta-box">
@@ -462,28 +465,27 @@
 </div>
 
 <h2 id="behind-the-math-how-the-calculation-engine-works">Behind the Math: How the Calculation Engine Works</h2>
-<p>Many simple online calculators use annualized formulas that underestimate compound interest by applying contributions once at year-end. Real 401(k) contributions occur on every semi-monthly or monthly paycheck. Our calculation engine utilizes monthly compounding intervals:</p>
+<p>Our calculation engine runs an annual iterative simulation from your current age until your target retirement age. For each year, your salary grows by your selected salary growth percentage, your employee contribution and employer match are calculated from that year's salary, and the year's ending balance is:</p>
 
 <p style="text-align:center; font-size:1.1rem; font-weight:600; color:#042f2a; margin:24px 0;">
-Future Value = ( P 	imes (1 + rac{r}{12})^{12t} + PMT 	imes rac{(1 + rac{r}{12})^{12t} - 1}{rac{r}{12}} )
+Ending Balance = (Starting Balance + Total Contributions) × (1 + r)
 </p>
 
 <p>Where:</p>
 <ul>
-<li><strong>P:</strong> Starting 401(k) balance.</li>
-<li><strong>r:</strong> Assumed annual rate of return.</li>
-<li><strong>t:</strong> Number of years until retirement.</li>
-<li><strong>PMT:</strong> Total monthly contribution (Employee Deduction + Employer Match).</li>
+<li><strong>Starting Balance:</strong> the balance at the start of the year.</li>
+<li><strong>Total Contributions:</strong> the year’s employee contribution plus employer match.</li>
+<li><strong>r:</strong> the assumed annual rate of return.</li>
 </ul>
 
-<p>Each month, your regular payroll contribution is added to the starting balance, and investment returns are compounded across the combined amount, ensuring mathematical accuracy that mirrors actual plan administration.</p>
+<p>Each year, your contributions are added to the starting balance first, and investment growth then applies to the combined total, giving a transparent year-by-year projection.</p>
 
 <figure class="diagram-figure">
 <img src="../../assets/articles/how-to-use-a-401k-calculator/scenario-testing-decision-matrix.svg" alt="Scenario Testing Decision Matrix for 401(k) Projections" width="840" height="400" loading="lazy">
 <figcaption>Figure 2: Strategic decisions when running scenario testing. Adjusting contribution percentages, retirement age, or return assumptions illuminates financial leverage.</figcaption>
 </figure>
 
-<figure class="article-figure"><img src="../../assets/articles/how-to-use-a-401k-calculator/figure-1.webp" alt="A person using a laptop showing blurred charts" width="1280" height="720" loading="lazy" decoding="async"><figcaption>A 401(k) calculator turns seven inputs into a projection — read the three key metrics, not just the headline total.</figcaption></figure>
+<figure class="article-figure"><img src="../../assets/articles/how-to-use-a-401k-calculator/figure-1.webp" alt="A person using a laptop showing blurred charts" width="1280" height="720" loading="lazy" decoding="async"><figcaption>A 401(k) calculator turns eight inputs into a projection — read the three key metrics, not just the headline total.</figcaption></figure>
 <h2 id="interpreting-your-results-three-key-metrics">Interpreting Your Results: Three Key Metrics</h2>
 <p>When our calculator generates your results, you should evaluate three core data points:</p>
 
@@ -542,7 +544,7 @@ Future Value = ( P 	imes (1 + rac{r}{12})^{12t} + PMT 	imes rac{(1 + rac{r}{1
 <h2 id="catch-up-contributions-factoring-in-age-50-rules">Catch-Up Contributions: Factoring in Age 50+ Rules</h2>
 <p>If you are 50 or older, IRS regulations allow you to contribute beyond standard elective deferral limits. For 2026, the standard limit is $24,500, and the catch-up limit adds an additional $8,000, enabling total annual employee deferrals up to $32,500.</p>
 
-<p>Furthermore, under the <strong>SECURE 2.0 Act</strong>, an enhanced catch-up limit applies to participants aged 60, 61, 62, and 63, allowing eligible workers to contribute either $10,000 or 150% of the standard catch-up limit. If you find yourself behind on retirement savings in your fifties, modeling catch-up contributions in our calculator shows how aggressively you can close the gap during your final working years.</p>
+<p>Furthermore, under the <strong>SECURE 2.0 Act</strong>, an enhanced catch-up limit applies to participants aged 60, 61, 62, and 63, allowing eligible workers to contribute the greater of $10,000 or 150% of the standard catch-up limit. From 1 January 2026, participants age 50 or older whose prior-year FICA wages exceeded $145,000 must also make catch-up contributions as designated Roth (after-tax) contributions under SECURE 2.0 §603. If you find yourself behind on retirement savings in your fifties, modeling catch-up contributions in our calculator shows how aggressively you can close the gap during your final working years.</p>
 
 <h2 id="integrating-your-401-k-with-social-security-and-ou">Integrating Your 401(k) with Social Security and Outside Savings</h2>
 <p>Your 401(k) does not exist in a vacuum. A complete retirement plan coordinates multiple income streams:</p>
@@ -581,7 +583,7 @@ Future Value = ( P 	imes (1 + rac{r}{12})^{12t} + PMT 	imes rac{(1 + rac{r}{1
 
 <div class="faq-card">
 <h3>What information do I need before using the calculator?</h3>
-<p>You need your current age, planned retirement age, current balance, annual salary, contribution percentage, employer match formula, and an assumed annual return rate.</p>
+<p>You need your current age, planned retirement age, current balance, annual salary, annual salary growth rate, contribution percentage, employer match formula, and an assumed annual return rate.</p>
 </div>
 
 <div class="faq-card">
