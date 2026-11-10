@@ -52,7 +52,7 @@
         "headline": "SSC CGL Age Relaxation 2026: OBC, SC, ST, PwBD & Ex-Servicemen",
         "description": "Comprehensive guide to SSC CGL 2026 category-wise age relaxations, statutory deduction formulas for Ex-Servicemen, PwBD combinations, and government employee rules.",
         "datePublished": "2026-09-22T23:00:00+05:30",
-        "dateModified": "2026-09-22T23:00:00+05:30",
+        "dateModified": "2026-11-10T00:00:00+05:30",
         "mainEntityOfPage": "https://www.agecalculatorlab.com/articles/ssc-cgl-age-relaxation/",
         "author": {
           "@type": "Person",
@@ -1079,7 +1079,7 @@
         <div class="article-meta">
           <span>By <strong>Navjeet Kamboj</strong></span> &bull;
           <span>Official Notification Analysis</span> &bull;
-          <span>Updated September 2026</span> &bull;
+          <span>Updated November 10, 2026</span> &bull;
           <span>13 min read</span>
         </div>
         <h1 class="article-title">SSC CGL Age Relaxation 2026: OBC, SC, ST, PwBD &amp; Ex-Servicemen</h1>
@@ -1239,6 +1239,12 @@
                   <td><span class="cat-tag">11</span></td>
                   <td><strong>Central Govt. Civilian Employees (SC / ST)</strong></td>
                   <td><span class="relax-tag">Up to 45 Years of Age</span></td>
+                  <td>Group C posts only (Min 3 yrs regular service)</td>
+                </tr>
+                <tr>
+                  <td><span class="cat-tag">12</span></td>
+                  <td><strong>Central Govt. Civilian Employees (OBC)</strong></td>
+                  <td><span class="relax-tag">Up to 43 Years of Age</span></td>
                   <td>Group C posts only (Min 3 yrs regular service)</td>
                 </tr>
               </tbody>
@@ -1535,7 +1541,8 @@
                   <option value="ESM">Ex-Servicemen (Military Deduction + 3)</option>
                   <option value="DEF_GEN">Defence Disabled &mdash; Gen/OBC (+3 Yrs)</option>
                   <option value="DEF_SCST">Defence Disabled &mdash; SC/ST (+8 Yrs)</option>
-                  <option value="GOV_GEN">Central Govt. Employee &mdash; Gen/OBC (Up to 40)</option>
+                  <option value="GOV_GEN">Central Govt. Employee &mdash; General (Up to 40)</option>
+                  <option value="GOV_OBC">Central Govt. Employee &mdash; OBC (Up to 43)</option>
                   <option value="GOV_SCST">Central Govt. Employee &mdash; SC/ST (Up to 45)</option>
                 </select>
               </div>
@@ -1756,6 +1763,12 @@
                   <td><strong>Central Govt Civilian (General)</strong></td>
                   <td>Up to 40 Years</td>
                   <td>40 Years (Group C)</td>
+                  <td>Min 3 years regular continuous service; NOC required</td>
+                </tr>
+                <tr>
+                  <td><strong>Central Govt Civilian (OBC)</strong></td>
+                  <td>Up to 43 Years</td>
+                  <td>43 Years (Group C)</td>
                   <td>Min 3 years regular continuous service; NOC required</td>
                 </tr>
                 <tr>
@@ -2107,6 +2120,7 @@
       'DEF_GEN': { relax: 3, label: '+3 Years', desc: 'Defence personnel disabled in specified foreign or disturbed operations.' },
       'DEF_SCST': { relax: 8, label: '+8 Years', desc: 'Operational disability concession (+3) plus SC/ST allowance (+5).' },
       'GOV_GEN': { relax: 'Up to 40', label: 'Cap: 40 Yrs', desc: 'Central Govt civilian staff with min 3 yrs regular service (Group C posts only).' },
+      'GOV_OBC': { relax: 'Up to 43', label: 'Cap: 43 Yrs', desc: 'Central Govt civilian staff (OBC) with min 3 yrs regular service (Group C posts only).' },
       'GOV_SCST': { relax: 'Up to 45', label: 'Cap: 45 Yrs', desc: 'Central Govt civilian staff (SC/ST) with min 3 yrs regular service (Group C posts only).' }
     };
 
@@ -2130,6 +2144,9 @@
         } else if (catKey === 'GOV_GEN') {
           finalCeiling = '40 Years (Group C)';
           calcEarliestYear = 2026 - 40;
+        } else if (catKey === 'GOV_OBC') {
+          finalCeiling = '43 Years (Group C)';
+          calcEarliestYear = 2026 - 43;
         } else if (catKey === 'GOV_SCST') {
           finalCeiling = '45 Years (Group C)';
           calcEarliestYear = 2026 - 45;
