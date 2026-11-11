@@ -33,11 +33,11 @@
   <g transform="translate(565, 105)">
     <rect width="210" height="190" rx="8" fill="#042F2A" stroke="#FF754D" stroke-width="2"/>
     <text x="105" y="34" fill="#FFD180" font-family="'Fraunces', serif" font-size="18" font-weight="700" text-anchor="middle">30 Years Invested</text>
-    <text x="105" y="66" fill="#FF754D" font-family="'Fraunces', serif" font-size="24" font-weight="700" text-anchor="middle">~$1,350,000</text>
+    <text x="105" y="66" fill="#FF754D" font-family="'Fraunces', serif" font-size="24" font-weight="700" text-anchor="middle">~$1,300,000</text>
     <line x1="20" y1="80" x2="190" y2="80" stroke="#FF754D" stroke-width="1" stroke-dasharray="3 3"/>
     <text x="20" y="106" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Deposits: $264,000</text>
     <text x="20" y="128" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Start Capital: $50,000</text>
-    <text x="20" y="150" fill="#FFD180" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Growth: $1,036,000 (77%)</text>
+    <text x="20" y="150" fill="#FFD180" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Growth: $986,000 (76%)</text>
     <text x="105" y="174" fill="#FFAB91" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Growth delivers 3/4 of nest egg</text>
   </g>
 
