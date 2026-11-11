@@ -359,8 +359,8 @@
 <a href="#rarest">7. The rarest palindrome dates</a>
 <a href="#limits">8. Limits of this calculator</a>
 <a href="#related-tools">9. Related Calculators</a>
-<a href="#faq">9. Frequently Asked Questions</a>
-<a href="#methodology-trust">10. Methodology &amp; Data Integrity</a>
+<a href="#faq">10. Frequently Asked Questions</a>
+<a href="#methodology-trust">11. Methodology &amp; Data Integrity</a>
 </aside>
 <article class="tool-article">
 <section id="what-is">
@@ -432,7 +432,7 @@
 </section>
 
 <section id="faq" class="faq-block">
-<h2>9. Frequently Asked Questions</h2>
+<h2>10. Frequently Asked Questions</h2>
 <div class="faq-card">
 <h3>What is a palindrome date?</h3>
 <p>A date whose digits read the same forwards and backwards once the separators are removed and the day and month are zero-padded. 02/02/2020 reads 02022020 in US and European 8-digit form and 20200202 in ISO form — a palindrome in all three.</p>
@@ -480,7 +480,7 @@
 </section>
 
 <section id="methodology-trust">
-<h2 id="methodology-trust">10. Methodology &amp; Data Integrity</h2>
+<h2 id="methodology-trust">11. Methodology &amp; Data Integrity</h2>
 <p>Method: the engine converts each calendar date to an integer day count (days from the civil date, proleptic Gregorian, years 1–9999) and back, using integer arithmetic only — no Date objects, so years 1–99 convert correctly. The digit string for a format is built by zero-padding the day and month to two digits and the year to four digits (8-digit formats) or two digits (6-digit formats), joined in the format’s order with no separators. A date is a palindrome in a format when that string equals its own reversal. Previous, next and next-10 results come from stepping the day count one day at a time and testing each day; the weekday comes from the same day count.</p>
 <p>Verification: the engine’s full-century lists were checked against published palindrome counts — 12 US-format and 29 European-format palindrome dates in the 21st century, with the US list matching the published first (2 October 2001) and last (2 September 2090) dates and the European list matching its published first (10 February 2001) and last (29 February 2092) dates. The millennium US-format count (36 dates, 2001–3000, last 22 September 2290) also matches the published analysis. The structural patterns were asserted on the full lists, not sampled: every US-format palindrome date of the century falls on the 2nd of a month, every European-format one falls in February, and 29 February 2092 is the only leap-day palindrome of the century in any 8-digit format. Famous dates were checked individually: 2 February 2020 in all three 8-digit formats, 2 March 2030 in US and ISO but not European form, and 11 November 1111 in all three 8-digit forms.</p>
 <p>Worked examples in this page were computed by the same engine: 2 February 2020 (02022020 / 02022020 / 20200202); 2 March 2030 (03022030 / 20300302, not 02032030); 2 December 2021 (12022021); 2 October 2001 (10022001); 29 February 2092 (29022092); July 2027 unpadded week (7227, 72027–72927).</p>
