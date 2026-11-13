@@ -1173,7 +1173,7 @@
               <button type="button" class="band-btn" data-band="18-32">18–32 Years</button>
             </div>
 
-            <div class="table-results-counter" id="resultsCount">Showing 32 official post cadres</div>
+            <div class="table-results-counter" id="resultsCount">Showing 38 official post cadres</div>
 
             <!-- Desktop Table View -->
             <div class="post-data-table-wrap">
@@ -1315,6 +1315,8 @@
             <li><strong>Tax Assistant:</strong> Central Board of Direct Taxes (CBDT) and Central Board of Indirect Taxes &amp; Customs (CBIC).</li>
             <li><strong>Accountant / Junior Accountant:</strong> Department of Post, Ministry of Telecommunications, and Controller General of Accounts.</li>
             <li><strong>Upper Division Clerk (UDC) / Senior Administrative Assistant:</strong> Department of Water Resources, Ministry of Textiles, and Military Engineer Services (MES).</li>
+            <li><strong>Postal Assistant / Sorting Assistant:</strong> Department of Posts, Ministry of Communications.</li>
+            <li><strong>Sub-Inspector:</strong> Central Bureau of Narcotics (CBN), Ministry of Finance.</li>
           </ul>
           <p>
             <em>Statutory Boundary (General Category):</em> Born not earlier than <strong>02 August 1999</strong> and not later than <strong>01 August 2008</strong>.
@@ -1352,7 +1354,7 @@
             <li><strong>Inspector (Preventive Officer):</strong> Port and airport customs intelligence and antismuggling.</li>
             <li><strong>Inspector (Examiner):</strong> Cargo assessment and customs appraisal at major ports.</li>
             <li><strong>Inspector of Income Tax:</strong> Central Board of Direct Taxes (CBDT).</li>
-            <li><strong>Assistant Enforcement Officer (AEO):</strong> Directorate of Enforcement (ED), Department of Revenue.</li>
+            <li><strong>Assistant Audit Officer (Central and State Cadres) / Assistant Accounts Officer (State Cadre):</strong> Indian Audit &amp; Accounts Department under C&amp;AG.</li>
             <li><strong>Sub-Inspector:</strong> National Investigation Agency (NIA).</li>
             <li><strong>Divisional Accountant:</strong> Offices under Comptroller and Auditor General of India (CAG) - Pay Level 6.</li>
             <li><strong>Statistical Investigator Grade-II:</strong> Office of the Registrar General of India, Ministry of Home Affairs - Pay Level 6. Requires a Bachelor's Degree with Statistics as one of the main subjects.</li>
@@ -1834,7 +1836,13 @@
       { name: "Research Assistant", dept: "National Human Rights Commission", deptKey: "DOPT", min: 18, max: 30, band: "18-30", classif: "Group 'B'", family: "ASO" },
       { name: "Sub-Inspector", dept: "Central Bureau of Narcotics", deptKey: "CBI", min: 18, max: 27, band: "18-27", classif: "Group 'C'", family: "INSP" },
       { name: "Assistant / Assistant Superintendent", dept: "Central Information Commission", deptKey: "DOPT", min: 18, max: 30, band: "18-30", classif: "Group 'B'", family: "ASO" },
-      { name: "Upper Division Clerk (UDC)", dept: "Central Bureau of Narcotics", deptKey: "CBI", min: 18, max: 27, band: "18-27", classif: "Group 'C'", family: "AUDIT" }
+      { name: "Upper Division Clerk (UDC)", dept: "Central Bureau of Narcotics", deptKey: "CBI", min: 18, max: 27, band: "18-27", classif: "Group 'C'", family: "AUDIT" },
+      { name: "Assistant Audit Officer (Central Cadre)", dept: "Indian Audit & Accounts Department under C&AG", deptKey: "CAG", min: 18, max: 30, band: "18-30", classif: "Group 'B'", family: "AUDIT" },
+      { name: "Assistant Audit Officer (State Cadre)", dept: "Indian Audit & Accounts Department under C&AG", deptKey: "CAG", min: 18, max: 30, band: "18-30", classif: "Group 'B'", family: "AUDIT" },
+      { name: "Assistant Accounts Officer (State Cadre)", dept: "Indian Audit & Accounts Department under C&AG", deptKey: "CAG", min: 18, max: 30, band: "18-30", classif: "Group 'B'", family: "AUDIT" },
+      { name: "Postal Assistant / Sorting Assistant", dept: "Department of Posts, Ministry of Communications", deptKey: "DOPT", min: 18, max: 27, band: "18-27", classif: "Group 'C'", family: "AUDIT" },
+      { name: "Office Superintendent", dept: "Central Board of Direct Taxes (CBDT)", deptKey: "CBDT", min: 18, max: 30, band: "18-30", classif: "Group 'B'", family: "AUDIT" },
+      { name: "Section Head", dept: "Directorate General of Foreign Trade (DGFT)", deptKey: "DOPT", min: 18, max: 30, band: "18-30", classif: "Group 'B'", family: "ASO" }
     ];
 
     // 3. Render Table & Mobile Cards Function
@@ -2035,7 +2043,7 @@
         if (ageY >= 18 && ageY <= 32) openBands.push('18–32 JSO (Statistical Officers)');
 
         if (openBands.length > 0) {
-          timelineBandsDisplay.innerHTML = '<strong>Statutoriily Open Bands:</strong><br>&bull; ' + openBands.join('<br>&bull; ');
+          timelineBandsDisplay.innerHTML = '<strong>Statutorily Open Bands:</strong><br>&bull; ' + openBands.join('<br>&bull; ');
         } else {
           timelineBandsDisplay.innerHTML = '<span style="color:#DC2626; font-weight:700;">Outside all standard General bands. Check category age relaxation (OBC, SC, ST, PwBD).</span>';
         }
