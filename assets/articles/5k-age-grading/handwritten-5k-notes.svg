@@ -64,7 +64,7 @@
       <rect width="36" height="36" rx="18" fill="#075433"/>
       <text x="18" y="23" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
       <text x="50" y="18" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A">Determine WMA 2025 Age-50 Standard Time</text>
-      <text x="50" y="38" font-family="'Inter', sans-serif" font-size="13" fill="#475569">WMA Standard for 50yo Male = 14:18.9 (approx. 858.9 seconds) [Factor: 0.8790]</text>
+      <text x="50" y="38" font-family="'Inter', sans-serif" font-size="13" fill="#475569">WMA Standard for 50yo Male = 14:36.35 (approx. 876.35 seconds) [Factor: 0.8775]</text>
     </g>
 
     <!-- Step 3: Division Formula Execution -->
@@ -72,7 +72,7 @@
       <rect width="36" height="36" rx="18" fill="#075433"/>
       <text x="18" y="23" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
       <text x="50" y="18" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A">Execute Division &amp; Scale to Percentage</text>
-      <text x="50" y="38" font-family="'Inter', sans-serif" font-size="13" fill="#475569">Age Grade (%) = (858.9 / 1500) × 100 = 57.26%</text>
+      <text x="50" y="38" font-family="'Inter', sans-serif" font-size="13" fill="#475569">Age Grade (%) = (876.35 / 1500) × 100 = 58.42%</text>
     </g>
 
     <!-- Step 4: Theoretical Age-Graded Time -->
@@ -80,7 +80,7 @@
       <rect width="36" height="36" rx="18" fill="#075433"/>
       <text x="18" y="23" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
       <text x="50" y="18" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#0B233A">Calculate Theoretical Open Equivalent Time</text>
-      <text x="50" y="38" font-family="'Inter', sans-serif" font-size="13" fill="#475569">Open Equivalent = 1,500s × 0.8790 = 1,318.5s → 21:58 (Theoretical 20-30yo time)</text>
+      <text x="50" y="38" font-family="'Inter', sans-serif" font-size="13" fill="#475569">Open Equivalent = 1,500s × 0.8775 = 1,316.3s → 21:56 (Theoretical 20-30yo time)</text>
     </g>
 
     <!-- Hand-Drawn Style Annotations (Navy / Emerald ink) -->
@@ -89,11 +89,11 @@
       
       <!-- Handwritten style notes -->
       <text x="24" y="30" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">Takeaway: The 25:00 clock time is equal to a</text>
-      <text x="24" y="54" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">21:58 open performance!</text>
-      <text x="24" y="80" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="600" fill="#0B233A">→ Natural aerobic baseline intact: 57.26% places</text>
+      <text x="24" y="54" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#075433">21:56 open performance!</text>
+      <text x="24" y="80" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="600" fill="#0B233A">→ Natural aerobic baseline intact: 58.42% places</text>
       <text x="24" y="104" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="600" fill="#0B233A">runner securely in solid local tier.</text>
       <circle cx="598" cy="58" r="30" fill="none" stroke="#FF754D" stroke-width="2.5" stroke-dasharray="140 20"/>
-      <text x="598" y="64" font-family="'Inter', sans-serif" font-size="15" font-weight="900" fill="#FF754D" text-anchor="middle">57.26%</text>
+      <text x="598" y="64" font-family="'Inter', sans-serif" font-size="15" font-weight="900" fill="#FF754D" text-anchor="middle">58.42%</text>
     </g>
   </g>
 

@@ -204,7 +204,7 @@
       "name": "What is the Social Security full retirement age?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Full Retirement Age (FRA) is the age used by Social Security for determining eligibility for unreduced retirement benefits under applicable statutory rules. It varies by birth year from age 65 to 67."
+        "text": "Full Retirement Age (FRA) is the age established by federal law at which you are entitled to 100% of your primary insurance amount without any early-claiming reduction. It ranges from age 65 to 67 depending on birth year."
       }
     },
     {
@@ -212,7 +212,7 @@
       "name": "What is my Social Security retirement age?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your Full Retirement Age depends primarily on your year of birth. If you were born in 1960 or later, your FRA is 67. If born between 1943 and 1954, it is 66. Enter your exact birth date into the calculator above to find your precise milestone."
+        "text": "Your Full Retirement Age depends primarily on your birth year. For everyone born in 1960 or later, FRA is 67. For those born between 1943 and 1954, FRA is 66. For birth years between 1955 and 1959, FRA increases in two-month increments."
       }
     },
     {
@@ -220,7 +220,7 @@
       "name": "Can I collect Social Security at 62?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Generally, Social Security retirement benefits can begin as early as age 62, but claiming before Full Retirement Age results in a permanent reduction in your monthly benefit amount."
+        "text": "Yes. Age 62 is the earliest general age to claim Social Security retirement benefits. However, claiming at 62 permanently reduces your monthly check by 20% to 30% compared to waiting for your Full Retirement Age (25% to 30% for birth years 1943 and later)."
       }
     },
     {
@@ -228,7 +228,7 @@
       "name": "Is Social Security retirement age 65 or 67?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on your birth year. For workers born in 1937 or earlier, FRA was 65. Under the gradual legislative increase passed by Congress, FRA gradually increased to 67 for all workers born in 1960 or later."
+        "text": "Under current law, Social Security Full Retirement Age is 67 for all workers born in 1960 or later. Age 65 was the FRA for workers born in 1937 or earlier, but today age 65 is primarily the milestone for Medicare enrollment."
       }
     },
     {
@@ -236,7 +236,7 @@
       "name": "What is full retirement age for someone born in 1960?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For people born in 1960 or later, the current Social Security Full Retirement Age is exactly 67 years."
+        "text": "For individuals born in 1960 or later, the current Social Security Full Retirement Age is exactly 67 years old."
       }
     },
     {
@@ -244,7 +244,7 @@
       "name": "What is full retirement age for someone born in 1959?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Under the official SSA schedule, the Full Retirement Age for someone born in 1959 is 66 years and 10 months."
+        "text": "Under the official statutory schedule, Full Retirement Age for someone born in 1959 is 66 years and 10 months."
       }
     },
     {
@@ -252,7 +252,7 @@
       "name": "Can I receive Social Security after age 70?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can claim benefits at or after age 70, but delayed retirement credits stop accumulating once you reach age 70. There is no financial advantage to delaying your claim beyond age 70."
+        "text": "You can apply for Social Security after age 70, but Delayed Retirement Credits cease accumulating once you reach age 70. There is no financial benefit to delaying your claim past age 70."
       }
     },
     {
@@ -260,7 +260,7 @@
       "name": "Does Full Retirement Age mean I have to retire?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Full Retirement Age is a Social Security benefit calculation milestone, not a requirement to stop working. You can continue working full-time while receiving unreduced retirement benefits once you reach your FRA."
+        "text": "No. Full Retirement Age is a benefit milestone, not a mandatory retirement requirement. You can continue working full-time with zero benefit reduction once you reach your FRA."
       }
     },
     {
@@ -268,7 +268,7 @@
       "name": "Is Social Security FRA the same as Medicare age?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Medicare eligibility generally remains at age 65 regardless of birth year, whereas Social Security Full Retirement Age varies from 66 to 67 based on your year of birth."
+        "text": "No. Medicare eligibility generally begins at age 65 regardless of birth year, whereas Social Security Full Retirement Age is 66 to 67 depending on your birth year."
       }
     },
     {
@@ -276,7 +276,7 @@
       "name": "Does this calculator tell me how much Social Security I will receive?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. This tool calculates age-based milestones (Age 62, FRA, Age 70). Personalized dollar benefit estimates require your full lifetime earnings record and should be obtained directly from your official my Social Security account."
+        "text": "No. This tool calculates age-based milestone dates. Your dollar benefit check depends on your 35 highest-earning career years and is officially estimated through your personal my Social Security account."
       }
     }
   ]
@@ -737,7 +737,7 @@
           <p>What is the current operational status of the Social Security retirement age schedule in 2026?</p>
           <ul>
             <li><strong>Workers turning 62 in 2026:</strong> Born in 1964. Their Full Retirement Age is <strong>67 years</strong>. Reaching age 62 in 2026 means they can claim an early benefit, but it will be reduced by 30%.</li>
-            <li><strong>Workers reaching FRA in 2026:</strong> Workers born in 1959 reach their FRA (66 years and 10 months) during 2026. Workers born in 1960 reach their FRA (67 years) during 2027.</li>
+            <li><strong>Workers reaching FRA in 2026:</strong> Workers born between March and December 1959 reach their FRA (66 years and 10 months) during 2026. Workers born in 1960 reach their FRA (67 years) during 2027.</li>
             <li><strong>Workers turning 70 in 2026:</strong> Born in 1956. Their delayed retirement credits have fully maximized, and they should initiate their claims without further delay.</li>
           </ul>
         </section>
@@ -755,7 +755,7 @@
             <li><strong>Date Ingestion:</strong> The user provides their complete date of birth (Month, Day, Year).</li>
             <li><strong>January 1 Attainment Check:</strong> If the birth date is January 1, the effective birth year is decremented by 1 (<code>Effective Year = Year − 1</code>) per SSA POMS GN 00302.010.</li>
             <li><strong>Schedule Lookup:</strong> The effective birth year is mapped against the statutory 1937–1960+ schedule to extract FRA in whole years and bonus months.</li>
-            <li><strong>Calendar Arithmetic:</strong> The algorithm projects forward from the birth date by exactly 62 years (Early Claiming), FRA years + months (Unreduced Claiming), and 70 years (Maximum Delayed Credits).</li>
+            <li><strong>Calendar Arithmetic:</strong> The algorithm projects forward from the birth date by exactly 62 years (Early Claiming), FRA years + months (Unreduced Claiming), and 70 years (Maximum Delayed Credits). For January 1 births, each milestone is the day before the projected date, per the POMS GN 00302.010 attainment rule.</li>
           </ol>
         </section>
 
@@ -777,9 +777,9 @@
             <li><strong>Birth Date:</strong> January 1, 1960</li>
             <li><strong>January 1 Check:</strong> True (Attains age Dec 31; effective year = 1959)</li>
             <li><strong>Full Retirement Age:</strong> 66 Years, 10 Months (1959 statutory rule)</li>
-            <li><strong>Age 62 Milestone:</strong> January 1, 2022</li>
-            <li><strong>FRA Milestone:</strong> November 1, 2026 (Reaches FRA two months earlier than peers born later in 1960!)</li>
-            <li><strong>Age 70 Milestone:</strong> January 1, 2030</li>
+            <li><strong>Age 62 Milestone:</strong> December 31, 2021</li>
+            <li><strong>FRA Milestone:</strong> October 31, 2026 (FRA is two months lower — 66 years 10 months vs 67 — than for peers born later in 1960)</li>
+            <li><strong>Age 70 Milestone:</strong> December 31, 2029</li>
           </ul>
         </section>
 
@@ -1073,8 +1073,7 @@ function calculateSSA() {
   }
   const fraDate = new Date(targetYear, targetMonth, day);
 
-  // Age 70 date
-  const age70Date = new Date(year + 70, month - 1, day);
+  // Age 70 date\n  const age70Date = new Date(year + 70, month - 1, day);\n\n  // POMS GN 00302.010 attainment rule: a person attains an age on the day BEFORE their birthday, so for January 1 births each milestone falls one day earlier (and in the previous month)\n  if (fraInfo.isJan1) {\n    age62Date.setDate(age62Date.getDate() - 1);\n    fraDate.setDate(fraDate.getDate() - 1);\n    age70Date.setDate(age70Date.getDate() - 1);\n  }
 
   // Display outputs
   document.getElementById('resFraAge').innerText = fraString;

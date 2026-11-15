@@ -104,27 +104,27 @@
       <!-- Age 40: 64.1% -->
       <circle cx="280" cy="114" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
       <rect x="235" y="69" width="90" height="28" rx="6" fill="#075433"/>
-      <text x="280" y="88" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.10%</text>
+      <text x="280" y="88" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.09%</text>
 
       <!-- Age 45: 64.0% -->
       <circle cx="440" cy="118" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
       <rect x="395" y="73" width="90" height="28" rx="6" fill="#075433"/>
-      <text x="440" y="92" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.01%</text>
+      <text x="440" y="92" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.42%</text>
 
       <!-- Age 50: 64.1% -->
       <circle cx="600" cy="116" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
       <rect x="555" y="71" width="90" height="28" rx="6" fill="#075433"/>
-      <text x="600" y="90" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.06%</text>
+      <text x="600" y="90" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.59%</text>
 
       <!-- Age 55: 64.1% -->
       <circle cx="760" cy="113" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
       <rect x="715" y="68" width="90" height="28" rx="6" fill="#075433"/>
-      <text x="760" y="87" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.12%</text>
+      <text x="760" y="87" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.40%</text>
 
       <!-- Age 60: 64.2% -->
       <circle cx="920" cy="109" r="8" fill="#075433" stroke="#FFFFFF" stroke-width="2"/>
       <rect x="875" y="64" width="90" height="28" rx="6" fill="#075433"/>
-      <text x="920" y="83" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.22%</text>
+      <text x="920" y="83" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#9FE7BD" text-anchor="middle">64.04%</text>
     </g>
   </g>
 </svg>

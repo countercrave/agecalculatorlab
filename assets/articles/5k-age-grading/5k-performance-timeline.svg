@@ -45,7 +45,7 @@
       <line x1="20" y1="165" x2="225" y2="165" stroke="rgba(255,255,255,0.15)"/>
       
       <text x="20" y="200" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#9FE7BD">CALCULATED AGE GRADE</text>
-      <text x="20" y="240" font-family="'Fraunces', serif" font-size="36" font-weight="800" fill="#5EEAD4">63.57%</text>
+      <text x="20" y="240" font-family="'Fraunces', serif" font-size="36" font-weight="800" fill="#5EEAD4">65.33%</text>
       
       <rect x="20" y="270" width="205" height="65" rx="8" fill="rgba(0,0,0,0.2)"/>
       <text x="30" y="295" font-family="'Inter', sans-serif" font-size="11.5" fill="#D3E5DE">Competitive local level.</text>
@@ -65,11 +65,11 @@
       <line x1="20" y1="165" x2="225" y2="165" stroke="rgba(255,255,255,0.15)"/>
       
       <text x="20" y="200" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#9FE7BD">CALCULATED AGE GRADE</text>
-      <text x="20" y="240" font-family="'Fraunces', serif" font-size="36" font-weight="800" fill="#5EEAD4">64.34%</text>
+      <text x="20" y="240" font-family="'Fraunces', serif" font-size="36" font-weight="800" fill="#5EEAD4">65.64%</text>
       
       <rect x="20" y="270" width="205" height="65" rx="8" fill="rgba(0,0,0,0.2)"/>
       <text x="30" y="295" font-family="'Inter', sans-serif" font-size="11.5" fill="#D3E5DE">Clock slowed by 45s.</text>
-      <text x="30" y="315" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#9FE7BD">Grade gained +0.77%!</text>
+      <text x="30" y="315" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#9FE7BD">Grade gained +0.31%!</text>
     </g>
 
     <!-- Stage 3: Age 55 -->
@@ -85,11 +85,11 @@
       <line x1="20" y1="165" x2="225" y2="165" stroke="rgba(255,255,255,0.15)"/>
       
       <text x="20" y="200" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#9FE7BD">CALCULATED AGE GRADE</text>
-      <text x="20" y="240" font-family="'Fraunces', serif" font-size="36" font-weight="800" fill="#5EEAD4">64.77%</text>
+      <text x="20" y="240" font-family="'Fraunces', serif" font-size="36" font-weight="800" fill="#5EEAD4">65.90%</text>
       
       <rect x="20" y="270" width="205" height="65" rx="8" fill="rgba(0,0,0,0.2)"/>
       <text x="30" y="295" font-family="'Inter', sans-serif" font-size="11.5" fill="#D3E5DE">Clock slowed by 50s.</text>
-      <text x="30" y="315" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#9FE7BD">Grade gained +0.43%!</text>
+      <text x="30" y="315" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#9FE7BD">Grade gained +0.26%!</text>
     </g>
 
     <!-- Stage 4: Age 60 -->
@@ -105,11 +105,11 @@
       <line x1="20" y1="165" x2="225" y2="165" stroke="rgba(255,255,255,0.15)"/>
       
       <text x="20" y="200" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FFA07A">CALCULATED AGE GRADE</text>
-      <text x="20" y="240" font-family="'Fraunces', serif" font-size="36" font-weight="800" fill="#FF754D">65.73%</text>
+      <text x="20" y="240" font-family="'Fraunces', serif" font-size="36" font-weight="800" fill="#FF754D">66.60%</text>
       
       <rect x="20" y="270" width="205" height="65" rx="8" fill="rgba(0,0,0,0.3)"/>
       <text x="30" y="295" font-family="'Inter', sans-serif" font-size="11.5" fill="#D3E5DE">Highest lifetime grade!</text>
-      <text x="30" y="315" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#FF9A77">+2.16% above Age 45.</text>
+      <text x="30" y="315" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#FF9A77">+1.27% above Age 45.</text>
     </g>
   </g>
 
@@ -117,6 +117,6 @@
   <g transform="translate(80, 580)">
     <rect width="1055" height="68" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
     <text x="24" y="28" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Key Insight: <tspan font-weight="400" fill="#D3E5DE">Although raw clock time slowed from 21:30 to 23:50 (+2:20), the runner's</tspan></text>
-    <text x="24" y="49" font-family="'Inter', sans-serif" font-size="14" font-weight="400" fill="#D3E5DE">demographic grade increased from 63.57% to 65.73%, reflecting outstanding aerobic preservation.</text>
+    <text x="24" y="49" font-family="'Inter', sans-serif" font-size="14" font-weight="400" fill="#D3E5DE">demographic grade increased from 65.33% to 66.60%, reflecting outstanding aerobic preservation.</text>
   </g>
 </svg>
