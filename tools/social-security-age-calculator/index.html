@@ -25,12 +25,12 @@
 <meta property="og:description" content="Find your Social Security Full Retirement Age and key claiming-age milestones (62, FRA, 70) based on your birth date. Includes complete SSA schedule.">
 <meta property="og:url" content="https://www.agecalculatorlab.com/tools/social-security-age-calculator/">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.agecalculatorlab.com/assets/tools/social-security-age-calculator/social-security-age-calculator.jpg">
+<meta property="og:image" content="https://www.agecalculatorlab.com/assets/tools/social-security-age-calculator/social-security-age-calculator.webp">
 <meta property="og:site_name" content="Age Calculator Lab">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Social Security Age Calculator: Find Your Retirement Age">
 <meta name="twitter:description" content="Calculate your official Social Security full retirement age and milestones for ages 62, FRA, and 70 based on your birth year.">
-<meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/tools/social-security-age-calculator/social-security-age-calculator.jpg">
+<meta name="twitter:image" content="https://www.agecalculatorlab.com/assets/tools/social-security-age-calculator/social-security-age-calculator.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
@@ -386,7 +386,7 @@
         </div>
 
         <figure class="infographic-figure" style="margin:20px 0 0;padding:10px;">
-          <img src="../../assets/tools/social-security-age-calculator/social-security-age-calculator.jpg" alt="Editorial financial planning illustration showing older adult planning retirement timeline" width="1200" height="675">
+          <img src="../../assets/tools/social-security-age-calculator/social-security-age-calculator.webp" alt="Editorial financial planning illustration showing older adult planning retirement timeline" width="1280" height="720">
           <figcaption>Figure 1: Navigating your Social Security retirement timeline and Full Retirement Age milestones.</figcaption>
         </figure>
       </div>
@@ -1073,7 +1073,15 @@ function calculateSSA() {
   }
   const fraDate = new Date(targetYear, targetMonth, day);
 
-  // Age 70 date\n  const age70Date = new Date(year + 70, month - 1, day);\n\n  // POMS GN 00302.010 attainment rule: a person attains an age on the day BEFORE their birthday, so for January 1 births each milestone falls one day earlier (and in the previous month)\n  if (fraInfo.isJan1) {\n    age62Date.setDate(age62Date.getDate() - 1);\n    fraDate.setDate(fraDate.getDate() - 1);\n    age70Date.setDate(age70Date.getDate() - 1);\n  }
+  // Age 70 date
+  const age70Date = new Date(year + 70, month - 1, day);
+
+  // POMS GN 00302.010 attainment rule: a person attains an age on the day BEFORE their birthday, so for January 1 births each milestone falls one day earlier (and in the previous month)
+  if (fraInfo.isJan1) {
+    age62Date.setDate(age62Date.getDate() - 1);
+    fraDate.setDate(fraDate.getDate() - 1);
+    age70Date.setDate(age70Date.getDate() - 1);
+  }
 
   // Display outputs
   document.getElementById('resFraAge').innerText = fraString;

@@ -1103,12 +1103,13 @@
       anchor = addYears(start, years);
     }
     var months = 0;
+    var monthAnchor = anchor;
     while (months < 11) {
-      var nextAnchor = addMonths(anchor, months + 1);
+      var nextAnchor = addMonths(monthAnchor, 1);
       if (nextAnchor > end) break;
+      monthAnchor = nextAnchor;
       months++;
     }
-    var monthAnchor = addMonths(anchor, months);
     var days = Math.round((end - monthAnchor) / DAY_MS);
     return { years: years, months: months, days: days };
   }
@@ -4488,7 +4489,7 @@
           <div>
             <span class="aclx-guide-tag orange">Education Policy</span>
             <h3>School Entry &amp; Kindergarten Cutoff Dates by State</h3>
-            <p>50-state statutory cutoff matrix, universal transitional kindergarten (TK) rules, and birthday boundary verification for parents and districts.</p>
+            <p>School entry compares a birth date with a cutoff date — the arithmetic, the boundary cases and one worked example, for parents and districts.</p>
           </div>
           <span class="aclx-guide-read-link">Read state guide →</span>
         </div>
@@ -4497,7 +4498,7 @@
       <!-- Card 4: Years of Service vs Years of Experience -->
       <a class="aclx-guide-article-card" href="./articles/years-of-service-vs-years-of-experience/">
         <div class="aclx-guide-card-thumb-wrap">
-          <img src="./assets/thumbnails/articles/years-of-service-vs-years-of-experience.jpg" alt="Years of Service vs Years of Experience: Key Differences" width="640" height="360" loading="eager" decoding="async">
+          <img src="./assets/thumbnails/articles/years-of-service-vs-years-of-experience.webp" alt="Years of Service vs Years of Experience: Key Differences" width="640" height="360" loading="eager" decoding="async">
         </div>
         <div class="aclx-guide-card-body">
           <div>
@@ -4579,7 +4580,7 @@
         </div>
 
         <a href="./articles/school-starting-age-guide/" style="font-size:.82rem;font-weight:800;color:var(--gds-green);text-decoration:none">
-          Read State-by-State School Guide →
+          Read the school-entry guide →
         </a>
       </div>
 
@@ -4720,14 +4721,22 @@
           <p style="font-size:0.86rem;color:#5d7069;margin:0 0 14px;line-height:1.5;">Pure client-side date function with month-length borrowing and leap-day clamping support.</p>
           <div style="position:relative;background:#042f2a;border-radius:10px;padding:14px;margin-bottom:14px;overflow-x:auto;">
             <code id="code-snippet-js" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78rem;color:#a9ead1;white-space:pre-wrap;word-break:break-all;">function getExactAge(birthDate, asOf = new Date()) {
-  // Each month anniversary derives from the original birth date (anchor),
-  // clamped to month length: Jan 31 + 1 month = Feb 28, + 2 months = Mar 31.
+  // Months step from the last yearly anniversary (clamped to month length),
+  // so a short month never shifts the anchor back to the birth day-of-month:
+  // Jan 31 + 1 month = Feb 28, + 2 months = Mar 28.
   const daysIn = (y, m) =&gt; new Date(y, m + 1, 0).getDate();
-  const anniversary = (n) =&gt; {
-    const t = new Date(birthDate.getFullYear(), birthDate.getMonth() + n, 1);
-    t.setDate(Math.min(birthDate.getDate(), daysIn(t.getFullYear(), t.getMonth())));
-    return t;
-  };
+  const clamp = (y, m, d) =&gt; new Date(y, m, Math.min(d, daysIn(y, m)));
+  const addYears = (d, n) =&gt; clamp(d.getFullYear() + n, d.getMonth(), d.getDate());
+  const addMonths = (d, n) =&gt; { const t = d.getMonth() + n; return clamp(d.getFullYear() + Math.floor(t / 12), ((t % 12) + 12) % 12, d.getDate()); };
+  let y = asOf.getFullYear() - birthDate.getFullYear();
+  let anchor = addYears(birthDate, y);
+  if (anchor &gt; asOf) { y--; anchor = addYears(birthDate, y); }
+  let m = 0;
+  let monthAnchor = anchor;
+  while (m &lt; 11) { const next = addMonths(monthAnchor, 1); if (next &gt; asOf) break; monthAnchor = next; m++; }
+  const d = Math.round((asOf - monthAnchor) / 86400000);
+  return { years: y, months: m, days: d };
+};
   let y = asOf.getFullYear() - birthDate.getFullYear();
   let anchor = anniversary(y * 12);
   if (anchor &gt; asOf) { y--; anchor = anniversary(y * 12); }
@@ -5097,12 +5106,13 @@
       anchor = addYears(start, years);
     }
     var months = 0;
+    var monthAnchor = anchor;
     while (months < 11) {
-      var nextAnchor = addMonths(anchor, months + 1);
+      var nextAnchor = addMonths(monthAnchor, 1);
       if (nextAnchor > end) break;
+      monthAnchor = nextAnchor;
       months++;
     }
-    var monthAnchor = addMonths(anchor, months);
     var days = Math.round((end - monthAnchor) / DAY_MS);
     return { years: years, months: months, days: days };
   }

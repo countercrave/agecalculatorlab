@@ -67,7 +67,7 @@
 
       <!-- Row 2 -->
       <line x1="0" y1="90" x2="480" y2="90" stroke="#e2e8f0"/>
-      <text x="20" y="80" font-size="12" fill="#1e293b">ASO (CSS, MEA, IB, Railway)</text>
+      <text x="20" y="80" font-size="12" fill="#1e293b">ASO (CSS, MEA, Railway)</text>
       <text x="240" y="80" font-size="12" font-weight="700" fill="#2563eb">20 – 30 Yrs</text>
       <text x="370" y="80" font-size="12" font-weight="800" fill="#2563eb">30 Years</text>
 

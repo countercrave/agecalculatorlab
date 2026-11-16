@@ -95,7 +95,7 @@
     <!-- Label -->
     <rect x="0" y="0" width="200" height="60" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
     <text x="16" y="26" font-size="14" font-weight="700" fill="#ffffff">Band 2: 20–30 Yrs</text>
-    <text x="16" y="46" font-size="11" fill="#94a3b8">ASO (CSS, MEA, IB, Rail)</text>
+    <text x="16" y="46" font-size="11" fill="#94a3b8">ASO (CSS, MEA, Rail)</text>
     
     <!-- Corridor Bar (462 to 918 => x=402, width=456) -->
     <rect x="402" y="12" width="456" height="36" rx="18" fill="url(#b2G)" fill-opacity="0.85" filter="url(#glow)"/>
