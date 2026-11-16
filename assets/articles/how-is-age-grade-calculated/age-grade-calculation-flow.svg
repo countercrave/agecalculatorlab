@@ -89,7 +89,7 @@
     <g transform="translate(20, 280)">
       <rect x="0" y="0" width="195" height="74" rx="8" fill="#EBF5F0" />
       <text x="14" y="24" font-size="11" font-weight="700" fill="#075433">DATASET INTEGRITY</text>
-      <text x="14" y="42" font-size="11" fill="#042F2A">Calibrated against WMA 2020</text>
+      <text x="14" y="42" font-size="11" fill="#042F2A">Calibrated against WMA 2025</text>
       <text x="14" y="58" font-size="11" fill="#042F2A">empirical racing records.</text>
     </g>
   </g>
@@ -117,9 +117,9 @@
     <g transform="translate(20, 235)">
       <rect x="0" y="0" width="195" height="120" rx="8" fill="#F4F8F6" />
       <text x="14" y="24" font-size="11" font-weight="700" fill="#042F2A">F50 5K BENCHMARK</text>
-      <text x="14" y="50" font-size="20" font-weight="800" fill="#075433">16:11.18</text>
-      <text x="14" y="70" font-size="12" fill="#4A635A">971.18 total seconds</text>
-      <text x="14" y="92" font-size="11" fill="#6C8279">vs 14:06 (846s) open record</text>
+      <text x="14" y="50" font-size="20" font-weight="800" fill="#075433">16:10.67</text>
+      <text x="14" y="70" font-size="12" fill="#4A635A">970.67 total seconds</text>
+      <text x="14" y="92" font-size="11" fill="#6C8279">vs 13:54 (834s) open record</text>
     </g>
   </g>
 
@@ -140,14 +140,14 @@
       <rect x="0" y="0" width="189" height="75" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" />
       <text x="12" y="24" font-size="11" font-weight="700" fill="#9FE7BD">PERCENTAGE RATIO</text>
       <text x="12" y="46" font-size="13" font-weight="600" fill="#FFFFFF">(Age Std ÷ Actual) × 100</text>
-      <text x="12" y="64" font-size="11" fill="#D3E5DE">(971.18 ÷ 1500) × 100</text>
+      <text x="12" y="64" font-size="11" fill="#D3E5DE">(970.67 ÷ 1500) × 100</text>
     </g>
 
     <!-- Large Result Callout -->
     <g transform="translate(18, 220)">
       <rect x="0" y="0" width="189" height="135" rx="8" fill="rgba(0,0,0,0.25)" />
       <text x="14" y="28" font-size="11" font-weight="700" fill="#9FE7BD">STANDARDIZED SCORE</text>
-      <text x="14" y="74" font-size="38" font-weight="900" fill="#FFFFFF">64.75%</text>
+      <text x="14" y="74" font-size="38" font-weight="900" fill="#FFFFFF">64.71%</text>
       
       <rect x="14" y="92" width="124" height="24" rx="6" fill="url(#accentBadge)" />
       <text x="76" y="108" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">REGIONAL CLUSTER</text>

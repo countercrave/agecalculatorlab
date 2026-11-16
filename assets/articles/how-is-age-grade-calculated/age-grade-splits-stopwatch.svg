@@ -49,7 +49,7 @@
       <text x="20" y="28" font-size="13" font-weight="700" fill="#042F2A">Runner A: Male, Age 22</text>
       <text x="20" y="48" font-size="12" fill="#6C8279">Open senior peak aerobic window</text>
       <line x1="20" y1="60" x2="310" y2="60" stroke="#F0F4F2" />
-      <text x="20" y="85" font-size="26" font-weight="900" fill="#4A635A">53.1%</text>
+      <text x="20" y="85" font-size="26" font-weight="900" fill="#4A635A">52.3%</text>
       <rect x="180" y="68" width="125" height="26" rx="6" fill="#F4F8F6" />
       <text x="242" y="85" font-size="11" font-weight="700" fill="#4A635A" text-anchor="middle">Recreational Standard</text>
     </g>
@@ -61,7 +61,7 @@
       <text x="20" y="28" font-size="13" font-weight="700" fill="#075433">Runner B: Female, Age 62</text>
       <text x="20" y="48" font-size="12" fill="#075433">Adjusted for biological age curves</text>
       <line x1="20" y1="60" x2="310" y2="60" stroke="#EBF5F0" />
-      <text x="20" y="85" font-size="26" font-weight="900" fill="#075433">76.2%</text>
+      <text x="20" y="85" font-size="26" font-weight="900" fill="#075433">76.4%</text>
       <rect x="180" y="68" width="125" height="26" rx="6" fill="#FF754D" />
       <text x="242" y="85" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Regional Class Elite</text>
     </g>

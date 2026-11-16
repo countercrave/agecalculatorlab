@@ -43,7 +43,7 @@
     <circle cx="390" cy="70" r="8" fill="#FF754D"/>
     <line x1="390" y1="70" x2="390" y2="200" stroke="#FF754D" stroke-width="1.5" stroke-dasharray="4"/>
     <rect x="300" y="25" width="180" height="32" rx="6" fill="#042F2A"/>
-    <text x="390" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Break-Even ~78.5 Years</text>
+    <text x="390" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Break-Even ~78.7 Years</text>
   </g>
 
   <!-- Bottom Insight -->

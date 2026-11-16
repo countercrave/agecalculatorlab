@@ -30,7 +30,7 @@
     <text x="15" y="80" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">• Compute Employee Deferral</text>
     <text x="15" y="105" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">• Compute Match Match Cap</text>
     <text x="15" y="130" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">• Compound Existing Pool</text>
-    <text x="15" y="155" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">• Apply Monthly Rate r/12</text>
+    <text x="15" y="155" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">• Apply Annual Return (1 + r)</text>
     <text x="15" y="180" font-family="'Inter', sans-serif" font-size="11" fill="#2e4b3f">• Iterate for Each Horizon Year</text>
   </g>
 

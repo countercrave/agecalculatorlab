@@ -1013,7 +1013,7 @@
           <span>By <strong>Navjeet Kamboj</strong></span> &bull;
           <span>Official Notification Analysis</span> &bull;
           <span>Updated November 2026</span> &bull;
-          <span>14 min read</span>
+          <span>10 min read</span>
         </div>
         <h1 class="article-title">SSC CGL Post-Wise Age Limit 2026: Age Limit for Every Post</h1>
         <p class="article-lead">
@@ -1313,7 +1313,7 @@
           <ul>
             <li><strong>Auditor:</strong> Offices under Comptroller &amp; Auditor General of India (C&amp;AG), Controller General of Accounts (CGA), and Controller General of Defence Accounts (CGDA).</li>
             <li><strong>Tax Assistant:</strong> Central Board of Direct Taxes (CBDT) and Central Board of Indirect Taxes &amp; Customs (CBIC).</li>
-            <li><strong>Accountant / Junior Accountant:</strong> Department of Post, Ministry of Telecommunications, and Controller General of Accounts.</li>
+            <li><strong>Accountant / Junior Accountant:</strong> Offices under Comptroller &amp; Auditor General of India (C&amp;AG) and Controller General of Accounts (CGA).</li>
             <li><strong>Upper Division Clerk (UDC) / Senior Administrative Assistant:</strong> Department of Water Resources, Ministry of Textiles, and Military Engineer Services (MES).</li>
             <li><strong>Postal Assistant / Sorting Assistant:</strong> Department of Posts, Ministry of Communications.</li>
             <li><strong>Sub-Inspector:</strong> Central Bureau of Narcotics (CBN), Ministry of Finance.</li>
@@ -1357,7 +1357,7 @@
             <li><strong>Assistant Audit Officer (Central and State Cadres) / Assistant Accounts Officer (State Cadre):</strong> Indian Audit &amp; Accounts Department under C&amp;AG.</li>
             <li><strong>Sub-Inspector:</strong> National Investigation Agency (NIA).</li>
             <li><strong>Divisional Accountant:</strong> Offices under Comptroller and Auditor General of India (CAG) - Pay Level 6.</li>
-            <li><strong>Statistical Investigator Grade-II:</strong> Office of the Registrar General of India, Ministry of Home Affairs - Pay Level 6. Requires a Bachelor's Degree with Statistics as one of the main subjects.</li>
+            <li><strong>Statistical Investigator Grade-II:</strong> Office of the Registrar General of India, Ministry of Home Affairs - Pay Level 6. Requires a Bachelor's Degree with Statistics as one of the main subjects.</li><li><strong>Assistant Section Officer (ASO):</strong> Intelligence Bureau (IB) - Group B.</li><li><strong>Assistant Section Officer (ASO):</strong> Ministry of Electronics &amp; IT - Group B.</li><li><strong>Assistant Enforcement Officer (AEO):</strong> Enforcement Directorate (ED) - Group B.</li><li><strong>Inspector:</strong> Department of Posts - Group B.</li><li><strong>Sub-Inspector / Junior Intelligence Officer:</strong> Narcotics Control Bureau (MHA) - Group B.</li><li><strong>Executive Assistant:</strong> CBIC (Department of Revenue) - Group B.</li><li><strong>Research Assistant:</strong> National Human Rights Commission - Group B.</li><li><strong>Assistant / Assistant Superintendent:</strong> Central Information Commission - Group B.</li><li><strong>Office Superintendent:</strong> Central Board of Direct Taxes (CBDT) - Group B.</li><li><strong>Section Head:</strong> Directorate General of Foreign Trade (DGFT) - Group B.</li>
           </ul>
           <p>
             <em>Statutory Boundary (General Category):</em> Born not earlier than <strong>02 August 1996</strong> and not later than <strong>01 August 2008</strong>.
@@ -2019,19 +2019,7 @@
         var m = parseInt(parts[1], 10);
         var d = parseInt(parts[2], 10);
 
-        var crucialYear = 2026, crucialMonth = 8, crucialDay = 1;
-        var ageY = crucialYear - y;
-        var ageM = crucialMonth - m;
-        var ageD = crucialDay - d;
-
-        if (ageD < 0) {
-          ageM -= 1;
-          ageD += 31;
-        }
-        if (ageM < 0) {
-          ageY -= 1;
-          ageM += 12;
-        }
+        var crucial = new Date(Date.UTC(2026, 7, 1)); var dob = new Date(Date.UTC(y, m - 1, d)); function addYearsSafe(dt, n) { var out = new Date(dt); var mm = out.getUTCMonth(), dd = out.getUTCDate(); out.setUTCFullYear(out.getUTCFullYear() + n, mm, 1); var mx = new Date(Date.UTC(out.getUTCFullYear(), mm + 1, 0)).getUTCDate(); out.setUTCDate(Math.min(dd, mx)); return out; } function addMonthsSafe(dt, n) { var out = new Date(dt); var dd = out.getUTCDate(); out.setUTCDate(1); out.setUTCMonth(out.getUTCMonth() + n); var mx = new Date(Date.UTC(out.getUTCFullYear(), out.getUTCMonth() + 1, 0)).getUTCDate(); out.setUTCDate(Math.min(dd, mx)); return out; } var ageY = crucial.getUTCFullYear() - dob.getUTCFullYear(), anchor = addYearsSafe(dob, ageY); if (anchor > crucial) { ageY -= 1; anchor = addYearsSafe(dob, ageY); } var ageM = 0, next = addMonthsSafe(anchor, 1); while (ageM < 11 && next <= crucial) { anchor = next; ageM++; next = addMonthsSafe(anchor, 1); } var ageD = Math.round((crucial - anchor) / 86400000);
 
         timelineResultBox.classList.add('visible');
         timelineAgeDisplay.innerText = 'Age on 01 August 2026: ' + ageY + ' Years, ' + ageM + ' Months, ' + ageD + ' Days';

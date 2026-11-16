@@ -10,10 +10,10 @@
     <rect width="280" height="190" rx="8" fill="#042F2A" stroke="#52796F" stroke-width="1.5"/>
     <text x="140" y="32" fill="#D3E5DE" font-family="'Fraunces', serif" font-size="16" font-weight="700" text-anchor="middle">Without Employer Match</text>
     <line x1="20" y1="46" x2="260" y2="46" stroke="#52796F" stroke-width="1"/>
-    <text x="140" y="80" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="28" font-weight="700" text-anchor="middle">$1,164,570</text>
+    <text x="140" y="80" fill="#FFFFFF" font-family="'Fraunces', serif" font-size="28" font-weight="700" text-anchor="middle">$1,268,283</text>
     <text x="40" y="115" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Employee Deposits: $304,483</text>
     <text x="40" y="137" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Employer Match: $0</text>
-    <text x="40" y="159" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="12">• Compound Growth: $810,087</text>
+    <text x="40" y="159" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="12">• Compound Growth: $913,800</text>
     <text x="140" y="182" fill="#52796F" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">100% funded from your paychecks</text>
   </g>
 
@@ -26,10 +26,10 @@
     <text x="40" y="115" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12">• Employee Deposits: $304,483</text>
     <text x="40" y="137" fill="#FFAB91" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Employer Match: $114,181</text>
     <text x="40" y="159" fill="#FFD180" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Compound Growth: $1,132,496</text>
-    <text x="140" y="182" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">+$436,590 (+37.5%) in Extra Wealth</text>
+    <text x="140" y="182" fill="#9FE7BD" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">+$332,877 (+26.2%) in Extra Wealth</text>
   </g>
 
   <text x="420" y="320" fill="#D3E5DE" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">
-    Notice: $114k in company matching generates over $322k in additional market compound growth!
+    Notice: $114k in company matching generates over $218k in additional market compound growth!
   </text>
 </svg>

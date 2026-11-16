@@ -50,7 +50,7 @@
     "dateModified": "2026-11-11",
     "image": "https://www.agecalculatorlab.com/assets/articles/how-to-calculate-employee-tenure/featured-how-to-calculate-employee-tenure-v2.webp",
     "articleSection": "School & Employment",
-    "wordCount": 2420,
+    "wordCount": 2676,
     "author": {
       "@type": "Person",
       "name": "Navjeet Kamboj",
@@ -1019,8 +1019,8 @@
             <div class="tenure-field">
               <label for="live-ref-mode">Calculate As Of</label>
               <select id="live-ref-mode" onchange="toggleRefDateInput()">
-                <option value="today">Today's Date</option>
-                <option value="custom" selected>Custom Date (Sept 23, 2026)</option>
+                <option value="today" selected>Today's Date</option>
+                <option value="custom">Custom Date (Sept 23, 2026)</option>
                 <option value="milestone">Next 10-Year Milestone</option>
               </select>
             </div>
@@ -1593,7 +1593,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-      runLiveTenureCalc();
+      toggleRefDateInput();
     });
   </script>
 </body>
