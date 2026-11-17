@@ -810,6 +810,7 @@ function runDatingCalc() {
     var gap = older - younger;
 
     var minForOlder = Math.floor((older / 2) + 7);
+    if (minForOlder < 18) minForOlder = 18;
     var maxForYounger = (younger - 7) * 2;
 
     var satisfiesMin = younger >= minForOlder;
