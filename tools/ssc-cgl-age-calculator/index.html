@@ -1687,7 +1687,7 @@
                 </div>
                 <div class="cgl-metric-card">
                   <small>Remaining Age Margin</small>
-                  <div class="val" id="metricMargin">2 Yrs 10 Mos</div>
+                  <div class="val" id="metricMargin">3 Yrs 11 Mos</div>
                   <div class="sub" id="metricMarginSub">Before crossing upper limit</div>
                 </div>
               </div>
@@ -2802,22 +2802,28 @@
       }
     }
 
-    // Exact Calendar Difference
+    // Exact Calendar Difference (anchor-stepping, same convention as the site's shared app.js calendarDiff: whole years first, then whole months stepped from the clamped anchor, then remaining days)
+    function cglAddYearsSafe(d, n) {
+      const out = new Date(d); const m = out.getMonth(), day = out.getDate();
+      out.setFullYear(out.getFullYear() + n, m, 1);
+      const max = new Date(out.getFullYear(), m + 1, 0).getDate();
+      out.setDate(Math.min(day, max));
+      return out;
+    }
+    function cglAddMonthsSafe(d, n) {
+      const out = new Date(d); const day = out.getDate();
+      out.setDate(1); out.setMonth(out.getMonth() + n);
+      const max = new Date(out.getFullYear(), out.getMonth() + 1, 0).getDate();
+      out.setDate(Math.min(day, max));
+      return out;
+    }
     function getExactAge(birthDate, targetDate) {
       let years = targetDate.getFullYear() - birthDate.getFullYear();
-      let months = targetDate.getMonth() - birthDate.getMonth();
-      let days = targetDate.getDate() - birthDate.getDate();
-
-      if (days < 0) {
-        months--;
-        // Days in previous month
-        const prevMonth = new Date(targetDate.getFullYear(), targetDate.getMonth(), 0);
-        days += prevMonth.getDate();
-      }
-      if (months < 0) {
-        years--;
-        months += 12;
-      }
+      let anchor = cglAddYearsSafe(birthDate, years);
+      if (anchor > targetDate) { years--; anchor = cglAddYearsSafe(birthDate, years); }
+      let months = 0, next = cglAddMonthsSafe(anchor, 1);
+      while (months < 11 && next <= targetDate) { anchor = next; months++; next = cglAddMonthsSafe(anchor, 1); }
+      const days = Math.round((targetDate - anchor) / 86400000);
       return { years, months, days };
     }
 
@@ -2971,9 +2977,10 @@
       document.getElementById('metricRelaxNote').textContent = relaxLabel;
 
       if (status === 'ELIGIBLE') {
-        const remainingY = effectiveMaxAge - ageObj.years - 1;
-        const remainingM = 11 - ageObj.months;
-        document.getElementById('metricMargin').textContent = (remainingY > 0 ? remainingY + " Yrs " : "") + (remainingM >= 0 ? remainingM + " Mos" : "Final Year");
+        const totalMarginMonths = (effectiveMaxAge + 1 - ageObj.years) * 12 - ageObj.months;
+        const remainingY = Math.floor(totalMarginMonths / 12);
+        const remainingM = totalMarginMonths % 12;
+        document.getElementById('metricMargin').textContent = (remainingY > 0 ? remainingY + " Yrs " : "") + remainingM + " Mos";
         document.getElementById('metricMarginSub').textContent = "Remaining margin before cutoff";
       } else if (status === 'OVERAGE') {
         const diffY = ageObj.years - effectiveMaxAge;
